@@ -1,0 +1,18 @@
+@import "./vendors/normalize/normalize";
+@import "./vendors/fonts/fonts";
+
+@import "common/variables";
+@import "common/common";
+@import "common/bem";
+@import "common/main";
+
+@import "../components/slick/slick";
+@import "../components/buttons/buttons";
+@import "../components/navigation/navigation";
+@import "../components/forms/forms";
+@import "../components/progressbar/progressbar";
+@import "../components/modal/modal";
+@import "../components/basket/basket";
+
+@import "../components/header/header";
+@import "../components/footer/footer";

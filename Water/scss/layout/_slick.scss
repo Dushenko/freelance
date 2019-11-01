@@ -1,0 +1,214 @@
+.intro-slider {
+    position: relative;
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        z-index: 200;
+        top: 38%;
+        transition: all 0.3s ease-in-out;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            border-left: 5px solid #008b2b;
+            border-top: 5px solid #008b2b;
+            @media screen and (max-width: 768px) {
+                width: 20px;
+                height: 20px;
+                border-left: 3px solid #008b2b;
+                border-top: 3px solid #008b2b;
+            }
+        }
+        &:hover {
+
+        }
+    }
+    .slick-next {
+        right: 60px;
+        &:after {
+            transform: rotate(135deg);
+        }
+        @media screen and (max-width: 768px) {
+            right: 30px;
+        }
+
+    }
+    .slick-prev {
+        left: 30px;
+        &:after {
+            transform: rotate(-45deg);
+        }
+        @media screen and (max-width: 768px) {
+            left: 10px;
+        }
+    }
+}
+
+.product-slider {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        z-index: 200;
+        top: 38%;
+        transition: all 0.3s ease-in-out;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border-left: 3px solid #fff;
+            border-top: 3px solid #fff;
+        }
+        &:hover {
+
+        }
+        @media screen and (max-width: 768px) {
+
+        }
+    }
+    .slick-next {
+        right: -10px;
+        &:after {
+            transform: rotate(135deg);
+        }
+
+    }
+    .slick-prev {
+        left: -30px;
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .slick-dots {
+        z-index: 1000;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #fff;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            border-radius: 2px;
+        }
+
+        li {
+            position: relative;
+            color: transparent;
+            c
+            &:after {
+                @include absolute-center;
+                width: 30px;
+                height: 8px;
+                background-color: transparent;
+                border-radius: 2px;
+
+            }
+        }
+        li.slick-active {
+            &:after {
+                @include absolute-center;
+                width: 30px;
+                height: 8px;
+                background-color: #fff !important;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -55px;
+    @media screen and (max-width: 480px) {
+        bottom: -40px;
+    }
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+
+.category-slider .slick-track,
+.category-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+    margin: 0;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+    &.dragging img {
+        pointer-events: none;
+    }
+    .slick-initialized & {
+        display: block;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}

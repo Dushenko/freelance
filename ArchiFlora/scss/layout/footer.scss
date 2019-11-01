@@ -1,0 +1,123 @@
+.footer {
+	background-color: #343434;
+	padding: 80px 0;
+	@media screen and (max-width: 1024px) {
+		padding: 40px 0 50px;
+	}
+	@media screen and (max-width: 768px) {
+		padding: 30px 0 40px;
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+}
+
+.logo-footer {
+	margin: auto 0;
+	img {
+		width: 85px;
+		height: 65px;
+	}
+	@media screen and (max-width: 1024px) {
+		margin: 0;
+		img {
+			width: 50px;
+			height: 38px;
+		}
+	}
+}
+
+.footer-menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-footer {
+	@media screen and (max-width: 768px) {
+		margin-bottom: 40px;
+	}
+	@media screen and (max-width: 480px) {
+		margin-bottom: 30px;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	&__item {
+		margin: 18px 0;
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@media screen and (max-width: 1024px) {
+			margin: 12px 0;
+		}
+		@media screen and (max-width: 480px) {
+			margin: 8px 0;
+		}
+	}
+
+	&__link {
+		color: #fff;
+		font-size: 16px;
+		&:hover {
+			color: #92bd38;
+		}
+		@media screen and (max-width: 480px) {
+			font-size: 14px;
+		}
+	}
+
+	br {
+		display: none;
+		@media screen and (max-width: 480px) {
+			display: block;
+		}
+	}
+}
+
+.feedback {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+
+	&__text {
+		color: #fff;
+		font-size: 16px;
+		display: block;
+		margin-bottom: 28px;
+		@media screen and (max-width: 480px) {
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__btn {
+		color: #f46036;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 14px 30px;
+		border-radius: 30px;
+		cursor: pointer;
+		-webkit-box-shadow: 0px 0px 5px 3px rgba(137,71,53,1);
+		-moz-box-shadow: 0px 0px 5px 3px rgba(137,71,53,1);
+		box-shadow: 0px 0px 5px 3px rgba(137,71,53,1);
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			color: #fff;
+			background-color: #f46036;
+		}
+		@media screen and (max-width: 480px) {
+			font-size: 15px;
+		}
+	}
+}

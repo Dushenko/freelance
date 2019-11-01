@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agronomist</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/libs.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-mobil">
+          <div class="container">
+            <div class="logo_mobil"><a class="logo-link" href="index.html"></a></div>
+            <div class="lang lang_mobil"><a class="lang__link lang__link_active" href="#">Ru</a><a class="lang__link" href="#">En</a><a class="lang__link" href="#">De</a></div>
+            <div class="basket-mobil"><a class="basket-link" href="#"></a></div>
+            <div class="burger-opener js-burger-opener"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="header-top">
+            <div class="logo"><a class="logo-link" href="index.html"></a></div>
+            <div class="head-box head-box_consultants"><span class="head-box__title">Консультанты:</span><a class="head-box__text" href="tel:79858878755">+7-985-887-87-55</a></div>
+            <div class="head-box head-box_schedule"><span class="head-box__title">График работы:</span><span class="head-box__text">Пн-Пт  9:00-17:00</span></div>
+            <div class="head-box head-box_support"><span class="head-box__title">Техподдержка:</span><a class="head-box__text" href="mailto:order@panemparts.ru">order@panemparts.ru</a></div>
+          </div>
+          <div class="header-nav">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#start">О компании</a></li>
+                <li class="nav__item"><a class="nav__link" href="#prizes">Товары</a></li>
+                <li class="nav__item"><a class="nav__link" href="#prizes">Услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="#prizes">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="lang"><a class="lang__link lang__link_active" href="#">Ru</a><a class="lang__link" href="#">En</a><a class="lang__link" href="#">De</a></div>
+            <div class="currency"><a class="currency__link currency__link_active" href="#">RUB</a>
+              <div class="currency__box">
+                <div class="currency__wrap"><a class="currency__link currency__link_line" href="#">EUR</a><a class="currency__link" href="#">USD</a></div>
+              </div>
+            </div>
+          </div>
+          <h1 class="main-title">Техника и запчасти</h1>
+          <p class="second-title">John Deere - наиболее полная база. Находите то, что Вам нужно:</p>
+          <div class="form-wrap">
+            <form class="main-form" action="#">
+              <input class="main-form__input" type="text" placeholder="Начните вводить название или код оригинальной запчасти ...">
+              <button class="main-form__btn" type="submit"></button>
+            </form>
+            <div class="advanced-search">
+              <div class="advanced-search-content">
+                <div class="tab">
+                  <input class="tab__input" type="radio" name="tab-group" checked id="tab1">
+                  <label class="tab-title tab__label" for="tab1">Запчасти</label>
+                  <div class="tab__content"><span class="advanced-search-close"></span>
+                    <form class="spares-form" action="#">
+                      <div class="spares-form__content">
+                        <div class="spares-form__nav">
+                          <button class="spares-form__btn-nav spares-form__btn-nav_active" type="submit">Все</button>
+                          <button class="spares-form__btn-nav" type="submit">оригинал</button>
+                          <button class="spares-form__btn-nav" type="submit">аналог</button>
+                        </div>
+                        <div class="spares-form__input-wrap">
+                          <div class="spares-form__input-box">
+                            <input class="spares-form__input" type="text" value=""><span class="spares-form__description">Введите код оригинальной запчасти</span><span class="spares-form__or">Или</span>
+                          </div>
+                          <div class="spares-form__input-box">
+                            <input class="spares-form__input" type="text" value=""><span class="spares-form__description">Начните вводить название запчасти</span>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="spares-form__btn" type="submit"></button>
+                    </form>
+                  </div>
+                </div>
+                <div class="tab">
+                  <input class="tab__input" type="radio" name="tab-group" id="tab2">
+                  <label class="tab__label tab__label_margin" for="tab2">Техника</label>
+                  <div class="tab__content"><span class="advanced-search-close"></span>
+                    <form class="spares-form" action="#">
+                      <div class="spares-form__content spares-form__content_select">
+                        <div class="spares-form__select-part">
+                          <div class="spares-form__nav">
+                            <button class="spares-form__btn-nav spares-form__btn-nav_active" type="submit" value="">Все</button>
+                            <button class="spares-form__btn-nav" type="submit" value="">Новые</button>
+                            <button class="spares-form__btn-nav" type="submit" value="">Б/У</button>
+                          </div>
+                          <div class="spares-form__select-wrap">
+                            <select class="spares-form__select spares-form__select_big" name="brand">
+                              <option selected>Бренд</option>
+                              <option>Бренд 1</option>
+                              <option>Бренд 2</option>
+                              <option>Бренд 3</option>
+                            </select>
+                            <select class="spares-form__select spares-form__select_big" name="model">
+                              <option selected>Модель</option>
+                              <option>Модель 1</option>
+                              <option>Модель 2</option>
+                              <option>Модель 3</option>
+                            </select>
+                            <select class="spares-form__select spares-form__select_small" name="model">
+                              <option selected>Год от:</option>
+                              <option>2000</option>
+                              <option>2005</option>
+                              <option>2010</option>
+                            </select>
+                            <select class="spares-form__select spares-form__select_small" name="model">
+                              <option selected>Год до:</option>
+                              <option>2000</option>
+                              <option>2005</option>
+                              <option>2020</option>
+                            </select>
+                            <select class="spares-form__select spares-form__select_middle" name="model">
+                              <option selected>Местоположение:</option>
+                              <option>Москва</option>
+                              <option>Воронеж</option>
+                              <option>Ярославль</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="spares-form__range-slider-wrap"><img src="images/range.png" alt=""></div>
+                      </div>
+                      <button class="spares-form__btn" type="submit"></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><span class="advanced-search-open">Расширенный поиск</span>
+        </div>
+        <div class="burger-menu">
+          <div class="burger-info">
+            <div class="lang lang_burger"><a class="lang__link lang__link_burger lang__link_burger active" href="#">Ru</a><a class="lang__link lang__link_burger" href="#">En</a><a class="lang__link lang__link_burger" href="#">De</a></div>
+            <div class="currency-burger"><a class="active" href="#">&#8381    </a><a href="#">$</a><a href="#">€</a></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="info-section">
+          <div class="container">
+            <div class="info-wrap"><span class="info-title">ПОЛУЧИТЕ СВОЙ ЗАКАЗ</span>
+              <h2 class="section-title section-title_gray">ВЫГОДНЕЕ И БЫСТРЕЕ</h2>
+              <p class="main-text">Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности прекрасно подходит для реализации выводa</p>
+              <div class="items-wrap">
+                <div class="item"><span class="item__number">1</span>
+                  <p class="item__text">Выгодная цена, без потери качества</p>
+                </div>
+                <div class="item"><span class="item__number">2</span>
+                  <p class="item__text">Большой ассортимент аналогов</p>
+                </div>
+                <div class="item"><span class="item__number">3</span>
+                  <p class="item__text">Короткие сроки поставки до заказчика</p>
+                </div>
+                <div class="item"><span class="item__number">4</span>
+                  <p class="item__text">Более 4 лет работы с техникой и запчастями</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-box">
+              <form class="reg-form"><span class="reg-form__title">Зарегистрируйтесь</span>
+                <p class="reg-form__info">чтобы выгодно заказывать технику</p>
+                <input class="reg-form__input" type="text" placeholder="Ваш e-mail:">
+                <input class="reg-form__input" type="text" placeholder="Пароль:">
+                <input class="reg-form__input" type="text" placeholder="Пароль еще раз:">
+                <button class="reg-form__btn reg-form__reg-btn" type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="details-section">
+          <div class="container"><span class="sub-title">Запчасти ПО КАТЕГОРИЯМ</span>
+            <h2 class="section-title">детали какой техники вы ищите?</h2>
+            <div class="details-wrap md-hide">
+              <div class="detail">
+                <div class="detail__img detail__img"><img src="images/tractor.png" alt=""></div><span class="detail__text">Трактора</span>
+              </div>
+              <div class="detail">
+                <div class="detail__img detail__img"><img src="images/kombain.png" alt=""></div><span class="detail__text">Комбайны</span>
+              </div>
+              <div class="detail">
+                <div class="detail__img"></div><span class="detail__text">Сеялки</span>
+              </div>
+              <div class="detail">
+                <div class="detail__img"></div><span class="detail__text">Бороны</span>
+              </div>
+              <div class="detail">
+                <div class="detail__img"></div><span class="detail__text">Культиваторы</span>
+              </div>
+              <div class="detail">
+                <div class="detail__img"></div><span class="detail__text">Пресподборщики</span>
+              </div>
+              <div class="detail">
+                <div class="detail__img"></div><span class="detail__text">Опрыскиватели</span>
+              </div>
+              <div class="detail">
+                <div class="detail__img"></div><span class="detail__text">Разбрасыватели</span>
+              </div>
+            </div>
+            <div class="md-show"><span class="slider-nav slider-nav_gray">
+                <div class="slick-prev detail-prev"></div>
+                <div class="slick-next detail-next"></div></span>
+              <div class="details-wrap swiper-container js-slider detail-slider">
+                <div class="swiper-wrapper">
+                  <div class="detail swiper-slide">
+                    <div class="detail__img detail__img"><img src="images/tractor.png" alt=""></div><span class="detail__text">Трактора</span>
+                  </div>
+                  <div class="detail swiper-slide">
+                    <div class="detail__img detail__img"><img src="images/kombain.png" alt=""></div><span class="detail__text">Комбайны</span>
+                  </div>
+                  <div class="detail swiper-slide">
+                    <div class="detail__img"></div><span class="detail__text">Сеялки</span>
+                  </div>
+                  <div class="detail swiper-slide">
+                    <div class="detail__img"></div><span class="detail__text">Бороны</span>
+                  </div>
+                  <div class="detail swiper-slide">
+                    <div class="detail__img"></div><span class="detail__text">Культиваторы</span>
+                  </div>
+                  <div class="detail swiper-slide">
+                    <div class="detail__img"></div><span class="detail__text">Пресподборщики</span>
+                  </div>
+                  <div class="detail swiper-slide">
+                    <div class="detail__img"></div><span class="detail__text">Опрыскиватели</span>
+                  </div>
+                  <div class="detail swiper-slide">
+                    <div class="detail__img"></div><span class="detail__text">Разбрасыватели</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="new-arrivals-section">
+          <div class="container"><span class="sub-title sub-title_gray">ЗАПЧАСТИ и ТЕХНИКА</span>
+            <h2 class="section-title section-title_gray">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+            <div class="arrivals-wrap"><span class="slider-nav">
+                <div class="slick-prev arrivals-prev"></div>
+                <div class="slick-next arrivals-next"></div></span>
+              <div class="arrivals-slider swiper-container js-slider">
+                <div class="swiper-wrapper">
+                  <div class="slide swiper-slide">
+                    <div class="product">
+                      <div class="product__img"><img src="images/product1.png" alt=""></div><span class="product__price">eur 5 580</span>
+                      <h3 class="product__name">Massey Ferguson</h3><span class="product__description">Дизельный двигатель всборе</span>
+                      <div class="product__nav"><a class="product__btn product__detailed-btn" href="#">Подробнее</a><a class="product__btn product__buy-btn" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="product">
+                      <div class="product__img"><img src="images/product2.png" alt=""></div><span class="product__price">eur 25 580</span>
+                      <h3 class="product__name">John Deere 8320R</h3>
+                      <div class="product__description-wrap"><span class="product__description">Б/У</span><span class="product__description">2019 г.</span><span class="product__description">4600 Мч</span></div>
+                      <div class="product__nav"><a class="product__btn product__detailed-btn" href="#">Подробнее</a><a class="product__btn product__buy-btn" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="product">
+                      <div class="product__img"><img src="images/product3.png" alt=""></div><span class="product__price">eur 1 200</span>
+                      <h3 class="product__name">Massey Ferguson</h3><span class="product__description">Гидравлическая система</span>
+                      <div class="product__nav"><a class="product__btn product__detailed-btn" href="#">Подробнее</a><a class="product__btn product__buy-btn" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="product">
+                      <div class="product__img"><img src="images/product4.png" alt=""></div><span class="product__price">eur 25 580</span>
+                      <h3 class="product__name">John Deere 8360RT</h3>
+                      <div class="product__description-wrap"><span class="product__description">Новый</span><span class="product__description">2019 г.</span><span class="product__description">80 Мч</span></div>
+                      <div class="product__nav"><a class="product__btn product__detailed-btn" href="#">Подробнее</a><a class="product__btn product__buy-btn" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="product">
+                      <div class="product__img"><img src="images/product1.png" alt=""></div><span class="product__price">eur 5 580</span>
+                      <h3 class="product__name">Massey Ferguson</h3><span class="product__description">Дизельный двигатель всборе</span>
+                      <div class="product__nav"><a class="product__btn product__detailed-btn" href="#">Подробнее</a><a class="product__btn product__buy-btn" href="#">Купить</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="brands-section">
+          <div class="container"><span class="sub-title">детали - Оригинал и аналоги</span>
+            <h2 class="section-title">ПОПУЛЯРНЫЕ БРЕНДЫ</h2>
+            <div class="brands-wrap"><span class="slider-nav slider-nav_gray">
+                <div class="slick-prev brands-prev"></div>
+                <div class="slick-next brands-next"></div></span>
+              <div class="brands-slider swiper-container js-slider">
+                <div class="swiper-wrapper">
+                  <div class="slide swiper-slide">
+                    <div class="brand"><a class="brand-link" href="#">Horsch</a></div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="brand"><a class="brand-link" href="#">John Deere</a></div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="brand"><a class="brand-link" href="#">Krone</a></div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="brand"><a class="brand-link" href="#">Kubota</a></div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="brand"><a class="brand-link" href="#">Kuhn</a></div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="brand"><a class="brand-link" href="#">Kverneland</a></div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="brand"><a class="brand-link" href="#">Lemken</a></div>
+                  </div>
+                  <div class="slide swiper-slide">
+                    <div class="brand"><a class="brand-link" href="#">John Deere</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="report-section">
+          <div class="container">
+            <div class="top-report">
+              <div class="report-wrap report-wrap_padding"><span class="info-title">ДОБЛЕСТЬ ПРАВОЗАЩИТНИКОВ</span>
+                <h2 class="section-title section-title_gray">НЕ СЛЕДУЕТ ЗАБЫВАТЬ ДОКЛАД ПРЕДСЕДАТЕЛЯ ФЕРМЕРСКОГО ХОЗЯЙСТВА</h2>
+                <p class="main-text italic-text">Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности прекрасно подходит для реализации вывода текущих активов.</p>
+                <p class="main-text">Мы вынуждены отталкиваться от того, что понимание сути ресурсосберегающих технологий выявляет срочную потребность новых предложений. Но укрепление и развитие внутренней структуры предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Современные технологии достигли такого уровня, что консультация с широким активом однозначно фиксирует необходимость переосмысления внешнеэкономических политик. А еще интерактивные прототипы</p>
+              </div>
+              <div class="photo-wrap">
+                <div class="img-wrap"><img src="images/img1.png" alt=""></div>
+                <p class="main-text">Мы вынуждены отталкиваться от того, что понимание сути ресурсосберегающих технологий выявляет срочную потребность новых предложений. Но укрепление и развитие внутренней структуры</p>
+              </div>
+            </div>
+            <div class="bottom-report">
+              <div class="report-wrap">
+                <h3 class="report-title">НОВАЯ МОДЕЛЬ ДЕЯТЕЛЬНОСТИ ПОКАЗАЛА СЕБЯ ВО ВСЕЙ КРАСЕ</h3>
+                <p class="main-text">Мы вынуждены отталкиваться от того, что понимание сути ресурсосберегающих технологий выявляет срочную потребность новых предложений. Но укрепление и развитие внутренней структуры предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Современные технологии достигли такого уровня, что консультация с широким</p>
+              </div>
+              <div class="report-wrap"> 
+                <p class="main-text">Мы вынуждены отталкиваться от того, что понимание сути ресурсосберегающих технологий выявляет срочную потребность новых предложений. </p>
+                <p class="main-text">Но укрепление и развитие внутренней структуры предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Современные технологии достигли такого уровня, что консультация с широким активом однозначно фиксирует необходимость переосмысления внешнеэкономических политик. А еще интерактивные прототипы представляют собой не что</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="sidebar-wrap">
+        <div class="sidebar-nav"><span class="sidebar-close" data-target="sidebar-close"></span><span class="sidebar-btn user-btn" data-target="sidebar_user"></span><span class="sidebar-btn basket-btn" data-target="sidebar_basket"></span><span class="sidebar-btn star-btn" data-target="sidebar_chosen"></span><span class="sidebar-btn support-btn" data-target="sidebar_support"></span></div>
+        <div class="sidebar sidebar_user">
+          <div class="sidebar__img sidebar__img_user"></div>
+          <div class="sidebar__registration sidebar__box scroll-wrap"><a class="sidebar__main-title" href="#">Регистрация</a>
+            <form class="reg-form">
+              <input class="reg-form__input" type="text" placeholder="Ваш e-mail:">
+              <input class="reg-form__input" type="text" placeholder="Пароль:">
+              <input class="reg-form__input" type="text" placeholder="Пароль еще раз:">
+              <button class="reg-form__btn reg-form__reg-btn" type="submit">Зарегистрироваться</button>
+              <button class="reg-form__btn reg-form__enter-btn" type="submit">Войти</button>
+            </form>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#start">О компании</a></li>
+                <li class="nav__item"><a class="nav__link" href="#prizes">Товары</a></li>
+                <li class="nav__item"><a class="nav__link" href="#prizes">Услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="#prizes">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidebar__enter sidebar__box scroll-wrap"><a class="sidebar__main-title" href="#">Вход</a>
+            <form class="reg-form">
+              <input class="reg-form__input" type="text" placeholder="Ваш e-mail:">
+              <input class="reg-form__input" type="text" placeholder="Пароль:">
+              <button class="reg-form__btn reg-form__reg-btn" type="submit">Войти</button>
+              <button class="reg-form__btn reg-form__enter-btn" type="submit">Зарегистрироваться</button>
+            </form>
+            <nav class="nav nav_burger">
+              <ul class="nav__list nav__list_burger">
+                <li class="nav__item nav__item_burger"><a class="nav__link nav__link_burger" href="#start">О компании</a></li>
+                <li class="nav__item nav__item_burger"><a class="nav__link nav__link_burger" href="#prizes">Товары</a></li>
+                <li class="nav__item nav__item_burger"><a class="nav__link nav__link_burger" href="#prizes">Услуги</a></li>
+                <li class="nav__item nav__item_burger"><a class="nav__link nav__link_burger" href="#prizes">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidebar__private sidebar__box scroll-wrap"><span class="sidebar__main-title">Золотопупов</span><span class="sidebar__second-title">Александр Александрович</span><a class="sidebar__link" href="#">в Личный кабинет</a></div>
+        </div>
+        <div class="sidebar sidebar_basket">
+          <div class="sidebar__img sidebar__img_basket"></div><span class="sidebar__main-title sidebar__main-title_margin">Ваша Корзина</span>
+          <div class="sidebar__commodity-wrap scroll-wrap">
+            <div class="commodity">
+              <div class="commodity__description-wrap"><span class="commodity__name">Massey Ferguson MF 38</span>
+                <div class="commodity__info"><span class="commodity__description">Б/У</span><span class="commodity__description">2019 г.</span><span class="commodity__description">4600 Мч</span></div>
+                <div class="commodity__price-wrap"><span class="commodity__price-name">Цена: </span><span class="commodity__currency">eur </span><span class="commodity__price">25 580</span></div>
+              </div>
+              <div class="commodity__nav"><span class="commodity__star"></span><a class="commodity__btn commodity__detailed-btn" href="#">Подробнее</a><a class="commodity__btn commodity__remove-btn" href="#">Удалить</a><a class="commodity__btn commodity__buy-btn" href="#">Купить</a></div>
+            </div>
+            <div class="commodity">
+              <div class="commodity__description-wrap"><span class="commodity__name">John Deere 8320R</span>
+                <div class="commodity__info"><span class="commodity__description commodity__description_line">Дизельный двигатель всборе</span></div>
+                <div class="commodity__price-wrap"><span class="commodity__price-name">Цена: </span><span class="commodity__currency">eur </span><span class="commodity__price">25 580</span></div>
+              </div>
+              <div class="commodity__nav"><span class="commodity__star commodity__star_active"></span><a class="commodity__btn commodity__detailed-btn" href="#">Подробнее</a><a class="commodity__btn commodity__remove-btn" href="#">Удалить</a><a class="commodity__btn commodity__buy-btn" href="#">Купить</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar sidebar_chosen">
+          <div class="sidebar__img sidebar__img_chosen"></div><span class="sidebar__main-title sidebar__main-title_margin">Избранное</span>
+          <div class="sidebar__commodity-wrap scroll-wrap">
+            <div class="commodity">
+              <div class="commodity__description-wrap"><span class="commodity__name">John Deere 8320R</span>
+                <div class="commodity__info"><span class="commodity__description">Новый</span><span class="commodity__description">2019 г.</span><span class="commodity__description">4600 Мч</span></div>
+                <div class="commodity__price-wrap"><span class="commodity__price-name">Цена: </span><span class="commodity__currency">eur </span><span class="commodity__price">25 580</span></div>
+              </div>
+              <div class="commodity__nav"><span class="commodity__star commodity__star_active"></span><a class="commodity__btn commodity__detailed-btn" href="#">Подробнее</a><a class="commodity__btn commodity__remove-btn" href="#">Удалить</a><a class="commodity__btn commodity__buy-btn" href="#">В корзину</a></div>
+            </div>
+            <div class="commodity">
+              <div class="commodity__description-wrap"><span class="commodity__name">John Deere 8320R</span>
+                <div class="commodity__info"><span class="commodity__description">Новый</span><span class="commodity__description">2019 г.</span><span class="commodity__description">4600 Мч</span></div>
+                <div class="commodity__price-wrap"><span class="commodity__price-name">Цена: </span><span class="commodity__currency">eur </span><span class="commodity__price">25 580</span></div>
+              </div>
+              <div class="commodity__nav"><span class="commodity__star commodity__star_active"></span><a class="commodity__btn commodity__detailed-btn" href="#">Подробнее</a><a class="commodity__btn commodity__remove-btn" href="#">Удалить</a><a class="commodity__btn commodity__buy-btn" href="#">В корзину</a></div>
+            </div>
+            <div class="commodity">
+              <div class="commodity__description-wrap"><span class="commodity__name">John Deere 8320R</span>
+                <div class="commodity__info"><span class="commodity__description">Новый</span><span class="commodity__description">2019 г.</span><span class="commodity__description">4600 Мч</span></div>
+                <div class="commodity__price-wrap"><span class="commodity__price-name">Цена: </span><span class="commodity__currency">eur </span><span class="commodity__price">25 580</span></div>
+              </div>
+              <div class="commodity__nav"><span class="commodity__star commodity__star_active"></span><a class="commodity__btn commodity__detailed-btn" href="#">Подробнее</a><a class="commodity__btn commodity__remove-btn" href="#">Удалить</a><a class="commodity__btn commodity__buy-btn" href="#">В корзину</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar sidebar_support">
+          <div class="sidebar__img sidebar__img_support"></div><span class="sidebar__main-title sidebar__main-title_margin">Поддержка</span>
+          <div class="sidebar__chat scroll-wrap">
+            <div class="sidebar__sms sidebar__sms_user">
+              <div class="sidebar__sms-name">Вы:</div>
+              <div class="sidebar__sms-text">Здравствуйте, хочу подобрать себе многофункциональный трактор для фермерского хозяйства.</div>
+            </div>
+            <div class="sidebar__sms sidebar__sms_manager">
+              <div class="sidebar__sms-name">Менеджер Николай</div>
+              <div class="sidebar__sms-text">Здравствуйте, Какие задачи должна выполнять машина?</div>
+            </div>
+            <div class="sidebar__sms sidebar__sms_user">
+              <div class="sidebar__sms-name">Вы:</div>
+              <div class="sidebar__sms-text">Здравствуйте, хочу подобрать себе многофункциональный трактор для фермерского хозяйства.</div>
+            </div>
+            <div class="sidebar__sms sidebar__sms_manager">
+              <div class="sidebar__sms-name">Менеджер Николай</div>
+              <div class="sidebar__sms-text">Здравствуйте, Какие задачи должна выполнять машина?</div>
+            </div>
+          </div>
+          <div class="chat-form-wrap">
+            <form class="chat-form" action="#">
+              <textarea class="chat-form__textarea scroll-wrap" name="" type="text" placeholder="Ваше сообщение ..."></textarea>
+              <button class="chat-form__btn main-btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div><a class="toTop-btn"></a>
+      <div class="burger-mask"></div>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="container">
+            <div class="logo"><a class="logo-link" href="index.html"></a></div>
+            <div class="footer-nav-wrap">
+              <div class="footer-nav"><span class="footer-nav__title">Информация:</span>
+                <ul class="footer-nav__list footer-nav__list_icons">
+                  <li class="footer-nav__item footer-nav__item_tel"><a class="footer-nav__link" href="tel:79858878755">+7-985-887-87-55</a></li>
+                  <li class="footer-nav__item footer-nav__item_schedule"><a class="footer-nav__link" href="#">Пн-Пт  9:00-17:00</a></li>
+                  <li class="footer-nav__item footer-nav__item_mail"><a class="footer-nav__link" href="mailto:order@panemparts.ru">order@panemparts.ru</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav"><span class="footer-nav__title">Категории:</span>
+                <div class="footer-nav__wrap">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Трактора</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Комбайны</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Сеялки</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Бороны</a></li>
+                  </ul>
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Культиваторы</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Пресподборщики </a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Опрыскиватели</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="#">Разбрасыватели</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-wrap">
+          <div class="container">
+            <p class="copyright">© 2019 Copyright by panemparts.ru</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Avangard</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<img src="img/logo.svg" alt="Image description">
+				</div>
+
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a class="nav__link" href="#">Матчи</a></li>
+						<li class="nav__item"><a class="nav__link" href="#">Места</a></li>
+						<li class="nav__item"><a class="nav__link" href="#">Фото</a></li>
+						<li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+						<li class="nav__item"><a class="nav__link" href="#">Арена</a></li>
+						<li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+
+				<div class="call">
+					<a href="tel:74952983333" class="call__number">+7 495 298 3333</a>
+					<span class="call__order">заказать звонок</span>
+				</div>
+
+				<div class="burger-opener js-burger-opener">
+					<svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+						<path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+						<path class="line middle" d="m 70,50 h -40" />
+						<path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+					</svg>
+				</div>
+			</div>
+		</header>
+
+		<div class="burger-menu">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="#">Матчи</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Места</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Фото</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Арена</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="call">
+				<a href="tel:74952983333" class="call__number">+7 495 298 3333</a>
+			</div>
+		</div>
+
+		<main class="main">
+			<section class="error section-padding">
+				<div class="container">
+					<div class="error-text-wrap">
+						<span class="error-text">ОШИБКА 404</span>
+						<span class="error-description">Ссылка, по которой вы перешли, устарела <br> или не существует</span>
+						<a href="index.html" class="come-to-main-btn">Вернуться на главную</a>
+					</div>
+				</div>
+				<div class="error-img">
+					<img src="img/error-bg-tablet.jpg" alt="">
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer" id="bottom">
+			<div class="container">
+				<div class="logo">
+					<img src="img/logo.svg" alt="Image description">
+				</div>
+
+				<nav class="nav">
+					<ul class="nav__list nav__list_footer">
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#">Главная</a></li>
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#">Новости</a></li>
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#">Контакты</a></li>
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#">Матчи</a></li>
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#">Фото</a></li>
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#">Оферта</a></li>
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#">Места</a></li>
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#">Арена</a></li>
+					</ul>
+				</nav>
+				<div class="footer-info">
+					<p class="footer-data">ООО "Тикетc-Спартак"</p>
+					<p class="footer-data">ИНН/ОГРН: 5515295994 / 1581608523219</p>
+					<p class="footer-data">Адрес: 125424 г.Москва, Волоколамское ш., 69</p>
+				</div>
+
+				<div class="call">
+					<a href="tel:74952983333" class="call__number">+7 495 298 3333</a>
+					<span class="call__order">заказать звонок</span>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+  <script src="js/vendors/jquery/jquery-3.3.1.min.js"></script>
+  <script src="js/vendors/slick/slick-main.js"></script>
+  <script src="js/vendors/maskedinput/jquery.maskedinput.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

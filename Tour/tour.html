@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tour</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <div class="wrapper_2">
+
+      <div class="header">
+        <div class="main-container">
+          <div class="header-logo">
+            <img src="img/логобез.svg" alt="" class="header-img">
+            <div class="logo-wrap">
+              <h2 class="name-logo">ПАССАТ ТРЕВЕЛ</h2>
+              <p class="description-logo">Туроператор с 2012 года<br>РТО 008632</p>
+            </div>
+            <div class="burger-opener">
+              <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                <path
+                class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path
+                class="line middle"
+                d="m 30,50 h 40" />
+                <path
+                class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+              </svg>
+            </div>
+            <div class="nav-top">
+              <nav class="nav-t">
+                <ul class="nav-t__list">
+                  <li class="nav-t__items">
+                    <a href="#" class="nav-t__link">Япония</a>
+                  </li>
+                  <li class="nav-t__items">
+                    <a href="" class="nav-t__link">Китай</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="header-mob">
+            <div class="header-data">
+              <span>Москвa</span>
+              <a href="tell:4951155218" class="link link link_call">+7(495) 115-5218</a>
+            </div>
+            <div class="header-data">
+              <span>Санкт-Петербург</span>
+              <a href="tell:4951155218" class="link link link_call">+7(495) 115-5218</a>
+            </div>
+
+            <div class="soc-mob">
+              <div class="soc-icon-wrap">
+                <a href="whatsapp://send?phone=+120345678910" class="soc-icon">
+                  <img src="img/whatsapp.svg" alt="">
+                </a>
+                <a href="viber://chat?number=+120345678910" class="soc-icon">
+                  <img src="img/viber.svg" alt="">
+                </a>
+                <a href="skype:nikname?chat" class="soc-icon">
+                  <img src="img/skype.svg" alt="">
+                </a>
+              </div>
+              <form action="#" class="sidebar-form">
+                <input type="search" placeholder="Поиск по сайту">
+                <button type="submit"></button>
+              </form>
+            </div>
+          </div>
+
+          <div class="adress">
+            <h2 class="subtitle">Офис в Москве</h2>
+            <a href="tell:4951155218" class="link link link_call">(495) 115-5218</a>
+            <a href="#" class="link link_place">м. Строгино</a>
+            <a href="#" class="link link_email">order@pastravel.ru</a>
+          </div>
+          <div class="adress">
+            <h2 class="subtitle">Офис в Санкт-Петербурге</h2>
+            <a href="tell:8126494600" class="link link_call">(812) 649-4600, 677-3793</a>
+            <a href="#" class="link link_place">м. Маяковская</a>
+            <a href="#" class="link link_email">info@pastravel.ru</a>
+          </div>
+          <div class="soc">
+            <h2 class="subtitle">Связаться в один клик</h2>
+            <div class="soc-icon-wrap">
+              <a href="whatsapp://send?phone=+120345678910" class="soc-icon">
+                <span class="soc-name">WhatsApp</span>
+                <img src="img/whatsapp.svg" alt="">
+              </a>
+              <a href="viber://chat?number=+120345678910" class="soc-icon">
+                <span class="soc-name">Viber</span>
+                <img src="img/viber.svg" alt="">
+              </a>
+              <a href="skype:nikname?chat" class="soc-icon">
+                <span class="soc-name">Skype</span>
+                <img src="img/skype.svg" alt="">
+              </a>
+            </div>
+            <div class="about-us">
+              <a href="#" class="link link_us">О компании</a>
+              <a href="#" class="link">Как нас найти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="main-container">
+          <form action="#" class="search-form">
+            <div class="search-wrap search-wrap_arrow">
+              <span class="search-name">Страна</span>
+              <select class="search-select">
+                <option serch="serch-list">Китай</option>
+                <option serch="serch-list">Бали</option>
+                <option serch="serch-list">Гонгконг</option>
+              </select>
+            </div>
+            <div class="search-wrap search-wrap_arrow">
+              <span class="search-name">Тип тура</span>
+              <select class="search-select">
+                <option serch="serch-list">Пакетный тур</option>
+                <option serch="serch-list">Пакетный тур</option>
+                <option serch="serch-list">Пакетный тур</option>
+              </select>
+            </div>
+            <div class="search-wrap">
+              <span class="search-name">Даты тура</span>
+              <p class="calendar">
+                <input type="text" class="search-select" id="datepicker-hereNew" autocomplete="off" placeholder="10.12.2019 - 15.12.2019">
+              </p>
+            </div>
+            <button type="submit" class="search-btn">Найти</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="middle">
+        <div class="main-container">
+          <div class="sidebar" id="sideLeft">
+
+           <div class="ya-site-form ya-site-form_inited_no sidebar-form"  onclick="return {'action':'http://pastravel.ru/search.shtml','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'ïîèñê ïî ñàéòó passat.travel','suggest':true,'target':'_self','tld':'ru','type':3,'usebigdictionary':true,'searchid':2296528,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':null,'input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}"><form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" ><input type="hidden" name="searchid" value="2296528"/><input type="hidden" name="l10n" value="ru"/><input type="hidden" name="reqenc" value=""/><input type="search" name="text" value=""/ placeholder="Поиск по сайту"><button type="submit" class="submit" value=""/><img src="img/nounSearch.svg" alt=""></button></form>
+           </div>
+
+          <div class="flag_1 flag_1_padding">
+            <div class="flag_2_title">Азия</div>
+          </div>
+
+          <div class="block_link_left">
+            <ul>
+              <li><a href="indonesia/bali/">Бали</a></li>
+              <li><a href="vietnam/">Вьетнам</a></li>
+              <li><a href="china/hongkong/">Гонгконг</a></li>
+              <li><a href="india/">Индия</a></li>
+              <li><a href="china/">Китай</a></li>
+              <li><a href="china/makao/">Макао</a></li>
+              <li><a href="maldives/">Мальдивы</a></li>
+              <li><a href="myanmar/">Мьянма</a></li>
+              <li><a href="nepal/">Непал</a></li>
+              <li><a href="thailand/">Таиланд</a></li>
+              <li><a href="singapore/">Сингапур</a></li>
+              <li><a href="korea/">Южная Корея</a></li>
+              <li><a href="japan/">Япония</a></li>
+            </ul>
+          </div>
+
+          <div class="flag_1">
+            <div class="flag_2_title">Ближний Восток</div>
+          </div>
+
+          <div class="block_link_left">
+            <ul>
+              <li><a href="uae/">ОАЭ</a></li>
+            </ul>
+          </div>        
+
+          <div class="flag_1">
+            <div class="flag_2_title">Америка</div>
+          </div>
+          <div class="block_link_left">
+            <ul>
+              <li><a href="cuba/">Куба</a></li>
+              <li><a href="mexico/">Мексика</a></li>
+            </ul>
+          </div>
+
+          <div class="flag_1">
+            <div class="flag_2_title">Африка</div>
+          </div>
+          <div class="block_link_left">
+            <ul>
+              <li><a href="mauritius/">Маврикий</a></li>
+            </ul>
+          </div>
+
+          <div class="flag_1">
+            <div class="flag_2_title">Карибы</div>
+          </div>
+          <div class="block_link_left">
+            <ul>
+              <li><a href="caribbean/">Общая информация</a></li>
+              <li><a href="caribbean/aruba/">Аруба</a></li>
+              <li><a href="caribbean/antigua/">Антигуа</a></li>
+              <li><a href="caribbean/barbados/">Барбадос</a></li>
+              <li><a href="caribbean/curacao/">Кюрасао</a></li>
+              <li><a href="caribbean/sen-barts/">Сен-Бартс</a></li>
+              <li><a href="caribbean/sen-marten/">Сен-Мартен</a></li>
+              <li><a href="caribbean/st_lucia/">Сен-Лусия</a></li>
+              <li><a href="caribbean/jamaica/">Ямайка</a></li>
+            </ul>
+          </div>
+
+          <div class="flag_1">
+            <div class="flag_2_title">Южная Америка</div>
+          </div>
+
+          <div class="block_link_left">
+            <div class="block_link_left">
+              <ul>
+                <li><a href="greece/">Экскурсионные туры</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flag_1">
+            <div class="flag_2_title">Европа</div>
+          </div>
+
+          <div class="block_link_left">
+            <ul>
+              <li><a href="greece/">Греция</a></li>
+            </ul>
+          </div>
+
+          <div class="flag_1">
+            <div class="flag_2_title">Детский отдых</div>
+          </div>
+
+          <div class="block_link_left">
+            <ul>
+              <li><a href="greece/">Детские лагеря, 
+              школьные каникулы</a></li>
+            </ul>
+          </div>
+
+          <div class="flag_1">
+            <div class="flag_2_title">Свадебные туры</div>
+          </div>
+
+          <div class="block_link_left">
+            <ul>
+              <li><a href="greece/">Готовые идеи<br>
+                свадьбы за границей 
+              </a></li>
+            </ul>
+          </div>
+
+          <div class="flag-form">
+            <div class="flag-form-title">СПО</div>
+
+            <form class="flag-form-wrapp">
+              <h3 class="flag-form-subtitle">Рассылка акционных
+              туров</h3>
+              <p class="flag-form-paragraph">Все лучшие акционные туры и путешествия будут приходить в ваш почтовый ящик.</p>
+              <input type="text" placeholder="Ваш E-mail*" class="flag-form-input">
+
+              <p class="flag-form-description">Я согласен с политикой конфиденциальности
+              SPO №363093 от </p>
+              <button class="form-btn">Подписатья
+              </button>
+            </form>
+
+            <div class="flag-img-wrapp">
+              <img src="img/cardimg.jpg" alt="">
+            </div>
+
+          </div>
+        </div>
+
+        <div id="container">
+          <section class="travel-section">
+            <div class="travel-link">
+              <a href="#">Китай</a>
+              <a href="#">Экскурсионные туры</a>
+              <a href="#">Многодневные экскурсионные туры из Пекина</a>
+            </div>
+            <h2 class="section-title section-title_mod">Пекин - наследие Поднебесной, 7 дней</h2>
+
+            <div class="main-slider">
+              <div class="slide">
+                <a href="img/пекин.jpg" class="colorbox cboxElement">
+                  <img src="img/xram1.jpg" alt="">
+                </a>
+              </div>
+              <div class="slide">
+                <a href="img/у1.jpg" class="colorbox">
+                  <img src="img/у1.jpg" alt="" >
+                </a>
+              </div>
+              <div class="slide">
+                <a href="img/xram1.jpg" class="colorbox cboxElement">
+                  <img src="img/xram1.jpg" alt="" >
+                </a>
+              </div>
+              <div class="slide">
+                <a href="img/храм2.jpg" class="colorbox cboxElement">
+                  <img src="img/храм2.jpg" alt="" >
+                </a>
+              </div>
+              <div class="slide">
+                <a href="img/у1.jpg" class="colorbox cboxElement">
+                  <img src="img/у1.jpg" alt="" >
+                </a>
+              </div>
+              <div class="slide">
+                <a href="img/пекин.jpg" class="colorbox cboxElement">
+                  <img src="img/пекин.jpg" alt="" >
+                </a>
+              </div>
+            </div>
+
+            <nav class="nav-data">
+              <ui class="nav-data__list">
+                <li class="nav-data__items"><a href="#" class="nav-data__link">Гарантированные группы:</a></li>
+                <li class="nav-data__items"><a href="#" class="nav-data__link">19.06.19</a></li>
+                <li class="nav-data__items"><a href="#" class="nav-data__link">25.06.19</a></li>
+                <li class="nav-data__items"><a href="#" class="nav-data__link">05.07.19</a></li>
+                <li class="nav-data__items"><a href="#" class="nav-data__link">14.07.19</a></li>
+                <li class="nav-data__items"><a href="#" class="nav-data__link">14.07.19</a></li>
+                <li class="nav-data__items"><a href="#" class="nav-data__link">14.07.19</a></li>
+                <li class="nav-data__items"><a href="#" class="nav-data__link">14.07.19</a></li>
+              </ui>
+            </nav>
+
+            <p class="travel-description">Данный тур предлагает возможность посетить столицу Китая - Пекин. В Пекине Вы увидите множество храмов, дворцов, музеев и исторических построек, утопающих в зелени парков.В туре предусмотрены два свободных дня для прогулок, шоппинга и заказа дополнительных экскурсий по желанию.</p>
+
+            <h2 class="section-subtitle">Прайс-лист</h2>
+
+            <div class="travel-table">
+              <div class="travel-info">Стоимость тура указана на одного человека, долл.</div>
+
+              <div class="travel-block-wrap">
+                <div class="travel-block-col">1/2 DBL<br>2-местное размещение</div>
+                <div class="travel-block-col">SGL<br>одноместное размещение</div>
+                <div class="travel-block-col">TPL<br>3-местное размещение</div>
+              </div>
+
+              <div class="travel-block-line">Токио: Toyoko Inn Shinjuku Kabukicho 2*, Villa Fontaine Shinjuku 2* Канадзава: Toyoko Inn Kanazawa-eki Higashi-guchi 2*, Route Inn Kanazawa 2*</div>
+
+              <div class="travel-block-wrap">
+                <div class="travel-block-col">2270</div>
+                <div class="travel-block-col">2576</div>
+                <div class="travel-block-col">-</div>
+              </div>
+
+              <div class="travel-block-line">
+                Токио: Hotel Sunroute Higashi-Shinjuku 3*, Sun Members Shinjuku 3* 
+                Осака: Remm Shin-Osaka 3*, Shin Osaka Washington Hotel Plaza 3* 
+                Канадзава: Kanazawa Hotel 3*
+              </div>
+
+              <div class="travel-block-wrap">
+                <div class="travel-block-col">2500
+                </div>
+                <div class="travel-block-col">2835
+                </div>
+                <div class="travel-block-col">-
+                </div>
+              </div>
+
+              <div class="travel-block-line">
+                Токио: Shinjuku Granbell 4*, Shinjuku Prince 4*, Tokyo Dome Hotel 4*, 
+                Осака: Courtyard by Marriott Shin-Osaka Station 4* 
+                Канадзава: Nikko Kanazawa 4*
+              </div>
+
+              <div class="travel-block-wrap">
+                <div class="travel-block-col">2880
+                </div>
+                <div class="travel-block-col">3399
+                </div>
+                <div class="travel-block-col">2765
+                </div>
+              </div>
+
+              <div class="travel-block-line">Скидка на ребенка до 12 лет - 155 долл.</div>
+            </div>
+
+            <h2 class="section-subtitle">Программа тура</h2>
+            <div class="travel-table2">
+              <div class="travel-table-wrapp">
+                <div class="travel-col1 travel-col1_mod">Дата/Город</div>
+                <div class="travel-col2 travel-col2_mod">Экскурсионая программа</div>
+              </div>
+              <div class="travel-table-wrapp">
+                <div class="travel-col1">День вылета Москва</div>
+                <div class="travel-col2">Вечерний вылет в Пекин.</div>
+              </div>
+              <div class="travel-table-wrapp">
+                <div class="travel-col1">1-й день Пекин</div>
+                <div class="travel-col2">Прилет в Пекин. Встреча в аэропорту, трансфер и размещение в отеле 5*. Экскурсионная программа: Храм Неба Тяньтань (занесен ЮНЕСКО в список всемирного наследия человечества. Один из символов города и единственный храм круглой формы), Ламаистский Храм Юнхэгун (является монастырём и храмом школы тибетского буддизма Гэлуг). Обед в ресторане китайской кухни. Посещение центра Тибетской медицины. Возвращение в отель. <span class="travel-span">Питание: Обед</span></div>
+              </div>
+              <div class="travel-table-wrapp">
+                <div class="travel-col1">2-й день Пекин</div>
+                <div class="travel-col2">Завтрак в отеле. Экскурсионная программа с обедом в ресторане «Утка по-пекински»: площадь Небесного спокойствия Тяньаньмэнь (самая большая площадь в мире, в ее северной части расположен Мавзолей Мао Цзэдуна), Зимний Императорский Дворец Гугун (Запретный город, главный дворцовый комплекс китайских императоров), Парк Бэйхай. Пешая прогулка по знаменитой антикварной улице Люличан. Возвращение в отель. Свободное время.<span class="travel-span">Питание: Завтрак</span></div>
+              </div>
+              <div class="travel-table-wrapp">
+                <div class="travel-col1">3-й день Пекин</div>
+                <div class="travel-col2">Завтрак в отеле. Экскурсионная программа: Великая Китайская Стена (участок Бадалин - 60 км от Пекина). Символ Китая, единственное сооружение человека, которое можно увидеть из космоса невооруженным глазом. Обед в загородном ресторане китайской кухни. Летний Императорский дворец (парк Ихэюань, летняя резиденция императоров, занесён ЮНЕСКО в список всемирного наследия человечества). Внешний осмотр Олимпийских объектов: стадионы «Гнездо» и «Водный куб». Возвращение в отель. Свободное время.<span class="travel-span">Питание: Завтрак</span></div>
+              </div>
+              <div class="travel-table-wrapp">
+                <div class="travel-col1">4-й день Пекин</div>
+                <div class="travel-col2">Завтрак в отеле. Экскурсионная программа: Пекинский зоопарк и Дом Большой Панды (был построен в 1908г., его первое название - Сад десяти тысяч животных. Зоопарк знаменит коллекцией редких животных, а так же животных-эндемиков. Среди экспонатов есть южно-китайский тигр, красноногий ибис, белогубый олень, китайский аллигатор, тибетский як, кианг и многие другие). Обед в ресторане китайской кухни. Чайная церемония с дегустацией элитных сортов чая – улун, Те Гуань Инь и других. Посещение шоу “Легенды кунг-фу” (повесть о мальчике, который мечтает стать настоящим мастером кунг-фу. Шоу - сочетание современного танца с китайским традиционным боевым искусством. Над костюмами, сценографией и спецэффектами для представления работали лучшие режиссеры и дизайнеры Китая).<span class="travel-span">Питание: Завтрак</span></div>
+              </div>
+              <div class="travel-table-wrapp">
+                <div class="travel-col1">5-й день Пекин</div>
+                <div class="travel-col2">Завтрак в отеле. Свободное время для прогулок по Пекину и шопинга.<span class="travel-span">Питание: Завтрак</span></div>
+              </div>
+              <div class="travel-table-wrapp">
+                <div class="travel-col1">6-й день Пекин</div>
+                <div class="travel-col2">Завтрак в отеле. Свободное время для прогулок по Пекину и шопинга.<span class="travel-span">Питание: Завтрак</span></div>
+              </div>
+              <div class="travel-table-wrapp">
+                <div class="travel-col1">7-й день Пекин</div>
+                <div class="travel-col2">Завтрак в отеле. Трансфер в аэропорт. 11:50 Вылет в Москву регулярным рейсом а/к Аэрофлот SU205. Прилет в аэропорт Шереметьево-F в 15:00.<span class="travel-span">Питание: Завтрак</span></div>
+              </div>
+            </div>
+            <h2 class="section-subtitle">Услуги</h2>
+            <div class="travel-table3">
+              <div class="travel-table-name">В стоимость входит</div>
+              <div class="travel-wrap-description">
+                <p class="travel-description">Международный авиабилет</p>
+                <p class="travel-description">Проживание в отеле 5* в центре города</p>
+                <p class="travel-description">Питание по программе</p>
+                <p class="travel-description">Трансферы по программе</p>
+                <p class="travel-description">Экскурсии по программе с входными билетами</p>
+                <p class="travel-description">Услуги русскоговорящего гида</p>
+                <p class="travel-description">Страховка</p>
+                <p class="travel-description">Туристическая групповая виза в Китай (необходимый документ - только копия загранпаспорта)</p>
+              </div>
+              <p class="travel-paragraph">Указанная стоимость является справочной и не является публичной офертой! Для подсчета точной стоимости тура оформите заявку на расчет.</p>
+            </div>
+            <h2 class="section-subtitle">Заявка на бронирование!</h2>
+            <p class="travel-signs">Внимание! Поля, отмеченные звездочками, обязательны для заполнения!</p>
+            <div class="form-travel">
+              <div class="form-wrapp">
+                <div class="form-field">
+                  <span class="form-name">Дата начала тура*:</span>
+                  <p class="calendar">
+                    <input type="text" class="search-select" id="datepicker-hereNew" autocomplete="off">
+                  </p>
+                </div>
+                <div class="form-field"><span class="form-name">Продолжительность тура:</span>
+                  <div class="input-radio-wrapp"><input type="radio" class="form-input-radio" name="radio"><span>7 дней</span>
+                    <input type="radio" class="form-input-radio" name="radio"><span>10 дней</span>
+                    <input type="radio" class="form-input-radio" name="radio"><span>14 дней</span>
+                    <input type="radio" class="form-input-radio" name="radio"><span>Другая</span></div>
+                  </div>
+                  <div class="form-field"><span class="form-name">Тип размещения*:</span><div class="search-wrap">
+                    <select class="search-select">
+                      <option serch="serch-list">Одноместный</option>
+                      <option serch="serch-list">Одноместный</option>
+                      <option serch="serch-list">Одноместный</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-field"><span class="form-name">Ваше имя*:</span><input type="text" class="form-input"></div>
+                <div class="form-field"><span class="form-name">Ваш контактный телефон<br> 
+                (с кодом города)*:</span><input type="text" class="form-input"></div>
+                <div class="form-field"><span class="form-name">Ваш e-mail*:</span><input type="text" class="form-input"></div>
+                <div class="form-field">
+                  <span class="form-name">В какой офис отправить заявку:</span>
+                  <div class="input-radio-wrapp">
+                    <input type="radio" class="form-input-radio" name="radio2"><span>Москва</span>
+                    <input type="radio" class="form-input-radio" name="radio2"><span>Санкт-Петербург</span>
+                    <input type="radio" class="form-input-radio" name="radio2"><span>другой</span></div>
+                  </div>
+                  <span class="form-name form-name_block">Дополнительные пожелания:</span>
+                  <textarea name="text" id="" class="form-textarea" placeholder="Здесь вы можете указать количество человек, тип номера, 
+                  в котором планируете размещаться и т.д."></textarea>
+                  <div class="form-cb-wrapp">
+                    <input type="checkbox" class="form-checkbox">
+                    <p>Я ознакомлен и согласен с условиями передачи персональных<br> данных в целях бронирования тура</p>
+                  </div>
+                  <div class="form-btn-wrapp">
+                    <button class="form-btn">Отправить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="main-container">
+        <div class="footer-copyright">
+          <h3 class="footer-description">2019 ©Passat.travel</h3>
+          <a href="#" class="footer-cop-link">Карта сайта</a>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li class="footer-items"><a href="#" class="footer-link">На главную </a></li>
+            <li class="footer-items"><a href="#" class="footer-link">О нас</a></li>
+            <li class="footer-items"><a href="#" class="footer-link">Агентствам  </a></li>
+            <li class="footer-items"><a href="#" class="footer-link">Туристам</a></li>
+            <li class="footer-items"><a href="#" class="footer-link">Контакты</a></li>
+          </ul>
+
+          <div class="flag-form flag-form-footer">
+            <div class="flag-form-title">СПО</div>
+
+            <form class="flag-form-wrapp">
+              <h3 class="flag-form-subtitle">Рассылка акционных
+              туров</h3>
+              <p class="flag-form-paragraph">Все лучшие акционные туры и <br> путешествия будут приходить в ваш <br> почтовый ящик.</p>
+              <input type="text" placeholder="Ваш E-mail*" class="flag-form-input">
+
+              <button class="form-btn">Подписатья
+              </button>
+            </form>
+
+            <div class="flag-img-wrapp">
+              <img src="img/cardimg.jpg" alt="">
+            </div>
+
+            <a href="mailto:info@pastravel.ru" class="footer-email footer-email_tablet">info@pastravel.ru</a> 
+
+            <h3 class="footer-description">2019 ©Passat.travel</h3>
+
+            <div class="soc-icon-wrap">
+              <a href="whatsapp://send?phone=+120345678910" class="soc-icon">
+                <img src="img/whatsapp.svg" alt="">
+              </a>
+              <a href="viber://chat?number=+120345678910" class="soc-icon">
+                <img src="img/viber.svg" alt="">
+              </a>
+              <a href="skype:nikname?chat" class="soc-icon">
+                <img src="img/skype.svg" alt="">
+              </a>
+            </div>
+
+          </div>
+
+
+          <div class="footer-img-wrapp">
+            <img src="img/ростуризм1.jpg" alt="">
+          </div>
+        </nav>
+        <a href="mailto:info@pastravel.ru" class="footer-email">info@pastravel.ru</a> 
+        <a href="https://www.liveinternet.ru" class="footer-top"><img src="img/счетчик1.svg" alt=""></a> 
+      </div>
+    </footer>
+
+  </div>
+</div>
+<script type="text/javascript">(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/datapicker.js"></script>
+<script src="js/slick-js.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

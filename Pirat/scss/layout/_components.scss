@@ -1,0 +1,137 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans';
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  &::placeholder {
+
+  }
+}
+
+textarea {
+  resize: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  &::placeholder {
+
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  &_white {
+    color: #fff;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+.section-text {
+  color: #000;
+  font-size: 21px;
+  line-height: 33px;
+  margin-bottom: 35px;
+  text-indent: 20px;
+  &_white {
+    color: #fff;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.buy-course {
+  display: block;
+  width: 270px;
+  color: #fff;
+  background-color: #11cdef;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 45px;
+  margin: 0 auto;
+  border-radius: 5px;
+  position: relative;
+  z-index: 100;
+  @media screen and (max-width: 1024px) {
+    width: 230px;
+    font-size: 22px;
+    padding: 12px 25px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 230px;
+    font-size: 22px;
+    padding: 12px 25px;
+  }
+  &:hover {
+    background-color: #33e0ff;
+  }
+}

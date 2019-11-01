@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CountryFace</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/libs.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <section class="add-section">
+          <div class="container">
+            <div class="count count_dark"><span class="count__title count__title_left">Разместиться на карте</span>
+              <div class="count__content count__content_form">
+                <form class="add-form" action="#">
+                  <div class="add-form__fields-wrap">
+                    <div class="add-form__inputs-wrap">
+                      <div class="add-form__input-box">
+                        <input class="add-form__input" type="text" placeholder="Имя*"><span class="add-form__input-title">Имя</span>
+                      </div>
+                      <div class="add-form__input-box">
+                        <input class="add-form__input" type="text" placeholder="Фамилия*"><span class="add-form__input-title">Фамилия</span>
+                        <div class="add-form__checkbox-wrap">
+                          <input class="add-form__checkbox" type="checkbox" name="check" value="check1" id="lastName">
+                          <label class="add-form__label" for="lastName">Не показывать</label>
+                        </div>
+                      </div>
+                      <div class="add-form__input-box">
+                        <input class="add-form__input" type="text" placeholder="Город или населенный пункт"><span class="add-form__input-title">Город или населенный пункт</span>
+                      </div>
+                      <div class="add-form__input-box">
+                        <input class="add-form__input add-form__input_short" type="text" placeholder="Возраст"><span class="add-form__input-title">Возраст</span>
+                        <div class="add-form__checkbox-wrap">
+                          <input class="add-form__checkbox" type="checkbox" name="check" value="check2" id="dontShow">
+                          <label class="add-form__label" for="dontShow">Не показывать</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="add-form__photo-wrap" id="drop-area"><img src="images/photog.svg" alt="">
+                      <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                      <label class="add-form__drop-label" for="fileElem">Загрузить фото</label>
+                    </div>
+                  </div>
+                  <div class="add-form__input-box add-form__input-box_textarea"><span class="add-form__input-title">Немного о себе</span>
+                    <div class="add-form__textarea" contenteditable="true" value="textarea" data-length="300"><span class="add-form__textarea-placeholder">Немного о себе</span></div>
+                    <div class="add-form__word-count"><span class="add-form__textarea-current"></span><span>/</span><span class="add-form__word-limit">300</span></div>
+                  </div>
+                  <div class="add-form__input-box">
+                    <input class="add-form__input" type="text" placeholder="Аккаунт в Instagram"><span class="add-form__input-title">Аккаунт в Instagram</span>
+                  </div><span class="count__second-title">Контактная информация</span><span class="count__info">Для передачи выигрыша</span>
+                  <div class="add-form__input-box">
+                    <input class="add-form__input" type="text" placeholder="Номер телефона"><span class="add-form__input-title">Номер телефона</span>
+                  </div>
+                  <div class="add-form__checkbox-wrap add-form__checkbox-wrap_policy">
+                    <input class="add-form__checkbox" type="checkbox" name="check" value="check3" id="agree">
+                    <label class="add-form__label" for="agree">Я прочитал и согласен с <a class="add-form__privat-policy link-hover" href="#">Правилами проекта</a></label>
+                  </div>
+                  <button class="main-btn add-form__btn" type="submit"><span class="main-btn__text">Опубликовать</span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

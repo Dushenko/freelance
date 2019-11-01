@@ -1,0 +1,33 @@
+@import "vendors/normalize";
+@import "vendors/fonts";
+
+@import "layout/header";
+@import "layout/common";
+@import "layout/footer";
+@import "layout/bem";
+@import "layout/components";
+@import "layout/slick";
+
+ 
+@media screen and (max-width: 1920px) {
+
+}
+
+@media screen and (max-width: 1600px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+}

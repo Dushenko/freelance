@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArchiFlora</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="burger-opener">
+          <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+            <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"></path>
+            <path class="line middle" d="m 70,50 h -40"></path>
+            <path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"></path>
+          </svg>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo.svg" alt="">
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link js-nav__link" href="services-main.html">Услуги <span class="arrow arrow_main"></span></a>
+              <ul class="nav__main-sub">
+                <li class="nav__item-sub js-nav__item-sub">
+                  <a href="#" class="nav__link-sub nav__link-sub-one">Пруды и бассейны<span class="arrow arrow-one"></span></a>
+                  <ul class="nav__sub js-nav__sub-one">
+                    <li><a href="#">Строительство прудов</a></li>
+                    <li><a href="#">Строительство бассейнов</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item-sub js-nav__item-sub">
+                  <a href="#" class="nav__link-sub nav__link-sub-two">Автополив участка<span class="arrow arrow-two"></span></a>
+                  <ul class="nav__sub js-nav__sub-two">
+                    <li><a href="#">Капельный полив сада</a></li>
+                    <li><a href="#">Монтаж автополива</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item-sub js-nav__item-sub">
+                  <a href="#" class="nav__link-sub nav__link-sub-three">Дизайн и озеленение<span class="arrow arrow-three"></span></a>
+                  <ul class="nav__sub js-nav__sub-three">
+                    <li><a href="#">Дизайн сада</a></li>
+                    <li><a href="#">Озеленение сада</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
+            <li class="nav__item"><a class="nav__link" href="article.html">Видео</a></li>
+            <li class="nav__item"><a class="nav__link" href="blog.html">Блог</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <div class="contacts__tel">
+            <a class="contacts__number contacts__number_first" href="tel:0970012600">097 001 26 00</a>
+            <a class="contacts__number" href="tel:0666893131">066 689 31 31</a>
+          </div>
+          <span class="contacts__address">Харьков, ул. Клочковская, 159</span>
+        </div>
+        <a href="contacts.html" class="contact-btn">Контакты</a>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="intro-section intro-section_home">
+        <img class="home-img" src="img/home-bg.jpg" alt="">
+
+        <div class="intro-box">
+          <h3 class="intro-box__title">Строительство биопрудов и биобассейнов по немецкой технологии</h3>
+          <p class="intro-box__info">Мы просчитываем подробные сметы на строительные работы и материалы и даём гарантию на предоставленные услуги.</p>
+          <a href="#" class="intro-box__btn">Подробнее</a>
+          <a href="#" class="intro-box__video">Посмотреть видео компании</a>
+        </div>
+      </section>
+
+      <section class="home-services-section">
+        <div class="container">
+          <div class="services-wrap">
+            <a href="#" class="service-home">
+              <img src="img/home-serv-1.jpg" alt="">
+              <span class="service-name">Биобассейны</span>
+            </a>
+            <a href="#" class="service-home">
+              <img src="img/home-serv-2.jpg" alt="">
+              <span class="service-name">Автополив</span>
+            </a>
+            <a href="#" class="service-home">
+              <img src="img/home-serv-3.jpg" alt="">
+              <span class="service-name">Ландшафтное <br> проектирование</span>
+            </a>
+
+            <a class="service-btn service-btn_tablet main-btn">Подробнее об услугах</a>
+          </div>
+
+          <div class="services-wrap">
+            <div class="service-info">
+              <h2 class="main-title">Услуги</h2>
+              <h3 class="second-title">10 лет опыта в сфере <br>строительства и ландшафтного дизайна</h3>
+            </div>
+
+            <a href="#" class="service-home">
+              <img src="img/home-serv-4.jpg" alt="">
+              <span class="service-name">Биопруды</span>
+            </a>
+            <a href="#" class="service-home">
+              <img src="img/home-serv-5.jpg" alt="">
+              <span class="service-name">Гидроизоляция</span>
+            </a>
+
+            <a class="service-btn service-btn_desktop main-btn">Подробнее об услугах</a>
+
+          </div>
+        </div>
+      </section>
+      
+      <section class="portfolio-section portfolio-section_home">
+        <div class="portfolio-info portfolio-info_home">
+          <div class="info-wrap">
+            <span class="portfolio-text">Получить просчет проекта бесплатно</span>
+            <span class="portfolio-btn">Онлайн калькулятор</span>
+          </div>
+        </div>
+
+        <div class="portfolio-img" style="background-image: url('img/home-calc-img.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        </div>
+      </section>
+
+      <section class="about-section padding-section">
+        <div class="first-img">
+          <img src="img/about-img-1.jpg" alt="">
+        </div>
+        <div class="info-wrap">
+          <h2 class="main-title">О компании</h2>
+          <h3 class="second-title">10 лет опыта в сфере строительства и ландшафтного дизайна</h3>
+          <p class="about-text">Мы составляем договор на строительные работы, просчитываем подробные сметы на работы и материалы, не берём необоснованных предоплат.</p>
+          <a href="#" class="main-btn main-btn_desktop">Подробнее</a>
+        </div>
+        <div class="second-img">
+          <img src="img/about-img-2.jpg" alt="">
+        </div>
+        <div class="count-wrap">
+          <span class="count-info">40+ <br> Водоемов</span>
+          <span class="count-info">170+ <br> Проектов</span>
+          <span class="count-info">2 000 000 л <br> Очищенной воды</span>
+          <a href="#" class="main-btn main-btn_tablet">Подробнее</a>
+        </div>
+      </section>
+
+      <section class="portfolio-slider-section">
+        <div class="portfolio-slider">
+          <a class="portfolio-slide" href="#">
+            <div class="slide-img" style="background-image: url('img/port-img-1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+            </div>
+          </a>
+          <a class="portfolio-slide" href="#">
+            <div class="slide-img" style="background-image: url('img/port-img-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+            </div>
+          </a>
+          <a class="portfolio-slide" href="#">
+            <div class="slide-text">
+              <div class="text-wrap">
+                <h2 class="main-title">Портфолио</h2>
+                <h3 class="second-title">10 лет опыта в сфере строительства и ландшафтного дизайна</h3>
+              </div>
+              <div class="img-wrap" style="background-image: url('img/port-img-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+            </div>
+          </a>
+          <a class="portfolio-slide" href="#">
+            <div class="slide-img" style="background-image: url('img/port-img-1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+            </div>
+          </a>
+          <a class="portfolio-slide" href="#">
+            <div class="slide-text">
+              <div class="text-wrap">
+                <h2 class="main-title">Портфолио</h2>
+                <h3 class="second-title">10 лет опыта в сфере строительства и ландшафтного дизайна</h3>
+              </div>
+              <div class="img-wrap" style="background-image: url('img/port-img-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+            </div>
+          </a>
+        </div>
+        <div class="slider-btn">
+          <div class="slick-prev">c33</div>
+          <div class="slick-next">33c</div>
+        </div>
+      </section>
+
+      <section class="portfolio-map-section padding-section">
+        <div class="portfolio-map-title">
+          <div class="container">
+            <h2 class="main-title">Карта объектов</h2>
+            <h3 class="second-title">10 лет опыта в сфере строительства и ландшафтного дизайна</h3>
+          </div>
+        </div>
+
+        <div class="portfolio-map">
+          <div id="map"></div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contacts-wrap contacts-wrap_home">
+          <div class="contacts-images">
+          </div>
+
+          <div class="contact contact_home">
+            <span class="contact__title">Давайте дружить</span>
+
+            <span class="contact__second-title">Зачем подписываться на наши новости в соц. сетях?</span>
+
+            <span class="contact__sub">Видеть все наши объекты первыми.</span>
+            <span class="contact__sub">Задавать вопросы и получать исчерпывающие ответы по ландшафту.</span>
+            <span class="contact__sub">Узнавать много нового и интересного из нашего блога.</span>
+
+            <div class="contact__soc">
+              <a class="contact__link" href="#"><img src="img/youtube.png" alt=""></a>
+              <a class="contact__link" href="#"><img src="img/google.png" alt=""></a>
+              <a class="contact__link" href="#"><img src="img/facebook.png" alt=""></a>
+              <a class="contact__link" href="#"><img src="img/instagram.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="logo-footer">
+          <a href="#">
+            <img src="img/logo.svg" alt="">
+          </a>
+        </div>
+
+        <nav class="nav-footer">
+          <ul class="nav-footer__list">
+            <li class="nav-footer__item"><a class="nav-footer__link" href="about.html">О компании</a></li>
+            <li class="nav-footer__item"><a class="nav-footer__link" href="portfolio.html">Портфолио</a></li>
+            <li class="nav-footer__item"><a class="nav-footer__link" href="services.html">Новости</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-footer">
+          <ul class="nav-footer__list">
+            <li class="nav-footer__item"><a class="nav-footer__link" href="#">Биопруды и <br> биобассейны</a></li>
+            <li class="nav-footer__item"><a class="nav-footer__link" href="#">Онлайн <br> калькулятор</a></li>
+            <li class="nav-footer__item"><a class="nav-footer__link" href="#">Автополив <br> монтаж</a></li>
+          </ul>
+        </nav>
+
+        <div class="feedback">
+          <span class="feedback__text">Хотите оставить нам отзыв?</span>
+
+          <span class="feedback__btn">Контакты</span>
+        </div>
+
+      </div>
+    </footer>
+
+    <div class="burger-mask">
+      <div class="burger-mask__mask"></div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/slick-js.js"></script>
+  <script src="js/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHiaYa33H2IBDqwp13BOJzMZeQncRH0lM&callback=initMap">
+  </script>
+</body>
+</html>

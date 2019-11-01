@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NeoBet</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/libs.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="logo"><a class="logo-link" href="index.html"><img src="images/logo.png" alt=""></a></div>
+          <div class="burger-menu">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="lk-profile.html">Личный кабинет</a></li>
+                 <li class="nav__item"><a class="nav__link" href="support.html">Тех поддержка</a></li>
+                <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+              </ul>
+            </nav>
+            <div class="soc"><a class="vk-link" href="#"><img src="images/VK_Logo.png" alt=""></a></div><a class="enter-btn bdr-hover" href="login.html">Вход</a><a class="reg-btn bdr-hover" href="registration.html">Регистрация</a>
+            <div class="lang"><a class="lang__link lang__link_active" href="#">Ru</a>
+              <div class="lang__hidden"><a class="lang__link" href="#">En</a><a class="lang__link" href="#">Ua</a></div>
+            </div>
+          </div>
+          <div class="burger-opener">
+            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+              <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"></path>
+              <path class="line middle" d="m 30,50 h 40"></path>
+              <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path>
+            </svg>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="slider-section">
+          <div class="container">
+            <div class="main-slider js-main-slider">
+              <div class="slide">
+                <div class="slide__holder">
+                  <h2 class="slide__title">Раздаем скины</h2>
+                  <p class="slide__text">Делай ставки - получай лут!</p><a class="slide__more-btn" href="#"> <span>Подробнее</span></a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__holder">
+                  <h2 class="slide__title">Раздаем скины</h2>
+                  <p class="slide__text">Делай ставки - получай лут!</p><a class="slide__more-btn" href="#"> <span>Подробнее</span></a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__holder">
+                  <h2 class="slide__title">Раздаем скины</h2>
+                  <p class="slide__text">Делай ставки - получай лут!</p><a class="slide__more-btn" href="#"> <span>Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-4 sidebar">
+                <div class="games">
+                  <div class="games__header"><span class="games__title">Игры</span><span class="games__choice">Выбрать все</span>
+                    <div class="center">
+                      <input class="cbx" type="checkbox" name="allgame" id="cbx1">
+                      <label class="toggle" for="cbx1"><span></span></label>
+                    </div>
+                  </div>
+                  <div class="games__content scroll">
+                    <div class="games__box">
+                      <div class="games__img">
+                        <div class="games__img-wrap"><img src="images/img1.png" alt=""></div>
+                      </div>
+                      <div class="games__name">Counter-Strike</div>
+                      <div class="center">
+                        <input class="cbx" type="checkbox" id="cbx2">
+                        <label class="toggle" for="cbx2"><span></span></label>
+                      </div>
+                    </div>
+                    <div class="games__box">
+                      <div class="games__img">
+                        <div class="games__img-wrap"><img src="images/img2.png" alt=""></div>
+                      </div>
+                      <div class="games__name">Dota 2</div>
+                      <div class="center">
+                        <input class="cbx" type="checkbox" id="cbx3">
+                        <label class="toggle" for="cbx3"><span></span></label>
+                      </div>
+                    </div>
+                    <div class="games__box">
+                      <div class="games__img">
+                        <div class="games__img-wrap"><img src="images/img1.png" alt=""></div>
+                      </div>
+                      <div class="games__name">Counter-Strike</div>
+                      <div class="center">
+                        <input class="cbx" type="checkbox" id="cbx4">
+                        <label class="toggle" for="cbx4"><span></span></label>
+                      </div>
+                    </div>
+                    <div class="games__box">
+                      <div class="games__img">
+                        <div class="games__img-wrap"><img src="images/img2.png" alt=""></div>
+                      </div>
+                      <div class="games__name">Dota 2</div>
+                      <div class="center">
+                        <input class="cbx" type="checkbox" id="cbx5">
+                        <label class="toggle" for="cbx5"><span></span></label>
+                      </div>
+                    </div>
+                    <div class="games__box">
+                      <div class="games__img">
+                        <div class="games__img-wrap"><img src="images/img1.png" alt=""></div>
+                      </div>
+                      <div class="games__name">Counter-Strike</div>
+                      <div class="center">
+                        <input class="cbx" type="checkbox" id="cbx6">
+                        <label class="toggle" for="cbx6"><span></span></label>
+                      </div>
+                    </div>
+                    <div class="games__box">
+                      <div class="games__img">
+                        <div class="games__img-wrap"><img src="images/img2.png" alt=""></div>
+                      </div>
+                      <div class="games__name">Dota 2</div>
+                      <div class="center">
+                        <input class="cbx" type="checkbox" id="cbx7">
+                        <label class="toggle" for="cbx7"><span></span></label>
+                      </div>
+                    </div>
+                    <div class="games__box">
+                      <div class="games__img">
+                        <div class="games__img-wrap"><img src="images/img1.png" alt=""></div>
+                      </div>
+                      <div class="games__name">Counter-Strike</div>
+                      <div class="center">
+                        <input class="cbx" type="checkbox" id="cbx8">
+                        <label class="toggle" for="cbx8"><span></span></label>
+                      </div>
+                    </div>
+                    <div class="games__box">
+                      <div class="games__img">
+                        <div class="games__img-wrap"><img src="images/img2.png" alt=""></div>
+                      </div>
+                      <div class="games__name">Dota 2</div>
+                      <div class="center">
+                        <input class="cbx" type="checkbox" id="cbx9">
+                        <label class="toggle" for="cbx9"><span></span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="soc-wrap"><a class="soc-wrap__link" href="#"><img src="images/vk1.png" alt=""></a><a class="soc-wrap__link" href="#"><img src="images/fb1.png" alt=""></a><a class="soc-wrap__link" href="#"><img src="images/in1.png" alt=""></a><a class="soc-wrap__link" href="#"><img src="images/tw1.png" alt=""></a></div>
+                <div class="games">
+                  <div class="games__header"><span class="games__title games__title_gray">Профиль</span></div>
+                  <div class="games__profile">
+                    <div class="games__profile-wrap">
+                      <div class="games__photo"><img src="images/ph1.jpg" alt=""></div>
+                      <div class="games__info"><span class="games__nickname">Никнейм</span><span class="games__sum-wrap"><img src="images/monet.png" alt=""><span class="games__sum">12 500</span></span></div>
+                      <div class="games__redaction"><img src="images/redac.png" alt=""></div>
+                    </div>
+                    <div class="games__nav"><a class="games__nav-link" href="#">Пополнить счет</a><a class="games__nav-link" href="#">Настройки профиля</a></div>
+                  </div>
+                </div>
+                <div class="games">
+                  <div class="games__header"><span class="games__title games__title_gray">Топ пользователей</span></div>
+                  <div class="games__top-user"><span class="games__number">1</span>
+                    <div class="games__photo games__photo_small"><img src="images/ph1.jpg" alt=""></div>
+                    <div class="games__info"><span class="games__nickname games__nickname_small">Никнейм</span><span class="games__level">Lv.21</span></div><span class="games__sum-wrap"><img src="images/monet.png" alt=""><span class="games__sum">12 500</span></span>
+                  </div>
+                  <div class="games__top-user"><span class="games__number">2</span>
+                    <div class="games__photo games__photo_small"><img src="images/ph1.jpg" alt=""></div>
+                    <div class="games__info"><span class="games__nickname games__nickname_small">Никнейм</span><span class="games__level">Lv.21</span></div><span class="games__sum-wrap"><img src="images/monet.png" alt=""><span class="games__sum">12 500</span></span>
+                  </div>
+                  <div class="games__top-user"><span class="games__number">3</span>
+                    <div class="games__photo games__photo_small"><img src="images/ph1.jpg" alt=""></div>
+                    <div class="games__info"><span class="games__nickname games__nickname_small">Никнейм</span><span class="games__level">Lv.21</span></div><span class="games__sum-wrap"><img src="images/monet.png" alt=""><span class="games__sum">12 500</span></span>
+                  </div>
+                  <div class="games__top-user"><span class="games__number">4</span>
+                    <div class="games__photo games__photo_small"><img src="images/ph1.jpg" alt=""></div>
+                    <div class="games__info"><span class="games__nickname games__nickname_small">Никнейм</span><span class="games__level">Lv.21</span></div><span class="games__sum-wrap"><img src="images/monet.png" alt=""><span class="games__sum">12 500</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-12 col-xl-8 content">
+                <div class="content-header">
+                  <div class="content-btn-wrap"><a class="match-btn active" href="#">Матчи</a><a class="match-btn" href="#">Турниры</a></div>
+                  <div class="content-btn-wrap"><a class="content-btn active" href="#">Активные</a><a class="content-btn" href="#">Результаты</a></div>
+                </div>
+                <div class="match-wrap">
+                  <div class="match">
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn" href="#"> <span>Поставить</span></a>
+                    </div>
+                    <div class="match__info">
+                      <div class="match__game"><img src="images/img11.png" alt=""></div><a class="match__watch active" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+                    </div>
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn" href="#"> <span>Поставить</span></a>
+                    </div>
+                  </div>
+                  <div class="match">
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn" href="#"> <span>Поставить</span></a>
+                    </div>
+                    <div class="match__info">
+                      <div class="match__game"><img src="images/img2.png" alt=""></div><a class="match__watch" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+                    </div>
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn" href="#"><span>Поставить</span></a>
+                    </div>
+                  </div>
+                  <div class="match">
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn" href="#"><span>Поставить</span></a>
+                    </div>
+                    <div class="match__info">
+                      <div class="match__game"><img src="images/img1.png" alt=""></div><a class="match__watch active" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+                    </div>
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn" href="#"><span>Поставить</span></a>
+                    </div>
+                  </div>
+                  <div class="match">
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn" href="#"><span>Поставить</span></a>
+                    </div>
+                    <div class="match__info">
+                      <div class="match__game"><img src="images/img11.png" alt=""></div><a class="match__watch" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+                    </div>
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn" href="#"><span>Поставить</span></a>
+                    </div>
+                  </div>
+                  <div class="match">
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn" href="#"><span>Поставить</span></a>
+                    </div>
+                    <div class="match__info">
+                      <div class="match__game"><img src="images/img1.png" alt=""></div><a class="match__watch" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+                    </div>
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn" href="#"><span>Поставить</span></a>
+                    </div>
+                  </div>
+                  <div class="match">
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn match__btn_win" href="#">
+                        <p class="match__btn-text">WIN</p></a>
+                    </div>
+                    <div class="match__info">
+                      <div class="match__game"><img src="images/img12.png" alt=""></div><a class="match__watch" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+                    </div>
+                    <div class="match__team">
+                      <div class="match__logo"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn" href="#"><span>Поставить</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-pagination"><a class="show-more-btn" href="#">Показать еще</a>
+                  <div class="pagination">
+                    <button class="pagination__btn pagination__btn_prev"></button>
+                    <div class="pagination__counter"><span class="pagination__count">6</span><span class="pagination__count">из</span><span class="pagination__count">38</span></div>
+                    <button class="pagination__btn pagination__btn_next"></button>
+                  </div>
+                </div>
+                <div class="additionally-container">
+                  <div class="additionally-head"><span class="additionally-title">Дополнительные события</span></div>
+                  <div class="content-tabs"><span class="tab tab_padding">Дата </span><span class="tab tab_padding">Игра</span><span class="tab tab_choise">Выбор</span></div>
+                  <div class="additionally-wrap">
+                    <div class="event">
+                      <div class="event__header">
+                        <div class="event__game-wrap">
+                          <div class="event__data-wrap"><a class="event__data active" href="#">life</a></div>
+                          <div class="event__game"><img src="images/img1.png" alt=""><span class="event__winner">MAP 3 WINNER</span></div>
+                        </div>
+                        <div class="event__choise">
+                          <div class="event__team-wrap event__team-wrap_reverse"><span class="event__team-name">Black Ananas</span>
+                            <div class="event__team-logo"><img src="images/img7.png" alt=""></div>
+                          </div><span class="event__rating">1,43</span><span class="event__count">5 : 2</span><span class="event__rating">2,6</span>
+                          <div class="event__team-wrap">
+                            <div class="event__team-logo"><img src="images/img8.png" alt=""></div><span class="event__team-name">Hero</span>
+                          </div>
+                        </div><span class="event__arrow"></span>
+                      </div>
+                      <div class="event__hidden-wrap">
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="event">
+                      <div class="event__header">
+                        <div class="event__game-wrap">
+                          <div class="event__data-wrap"><a class="event__data active" href="#">life</a></div>
+                          <div class="event__game"><img src="images/img1.png" alt=""><span class="event__winner">MAP 3 WINNER</span></div>
+                        </div>
+                        <div class="event__choise">
+                          <div class="event__team-wrap event__team-wrap_reverse"><span class="event__team-name">Black Ananas</span>
+                            <div class="event__team-logo"><img src="images/img7.png" alt=""></div>
+                          </div><span class="event__rating">1,43</span><span class="event__count">5 : 2</span><span class="event__rating">2,6</span>
+                          <div class="event__team-wrap">
+                            <div class="event__team-logo"><img src="images/img8.png" alt=""></div><span class="event__team-name">Hero</span>
+                          </div>
+                        </div><span class="event__arrow"></span>
+                      </div>
+                      <div class="event__hidden-wrap">
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="event">
+                      <div class="event__header">
+                        <div class="event__game-wrap">
+                          <div class="event__data-wrap"><a class="event__data active" href="#">life</a></div>
+                          <div class="event__game"><img src="images/img1.png" alt=""><span class="event__winner">MAP 3 WINNER</span></div>
+                        </div>
+                        <div class="event__choise">
+                          <div class="event__team-wrap event__team-wrap_reverse"><span class="event__team-name">Black Ananas</span>
+                            <div class="event__team-logo"><img src="images/img7.png" alt=""></div>
+                          </div><span class="event__rating">1,43</span><span class="event__count">5 : 2</span><span class="event__rating">2,6</span>
+                          <div class="event__team-wrap">
+                            <div class="event__team-logo"><img src="images/img8.png" alt=""></div><span class="event__team-name">Hero</span>
+                          </div>
+                        </div><span class="event__arrow"></span>
+                      </div>
+                      <div class="event__hidden-wrap">
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                        <div class="event__hidden-line">
+                          <div class="event__data-wrap"></div>
+                          <div class="event__game"><span class="event__winner">MAP 3 WINNER</span></div>
+                          <div class="event__choise"><span class="event__team-name">AGF</span><span class="event__rating">1,43</span><span class="event__count event__count_gray">-</span><span class="event__rating">2,6</span><span class="event__team-name">Akopalipsa</span></div><a class="event__info-link" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"><img class="footer-bg" src="images/box.png" alt="">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4 footer-info">
+              <div class="logo"><a class="logo-link" href="index.html"><img src="images/logo.png" alt=""></a></div>
+              <p class="footer-copyright">© Copyright 2016-2018 Livestream Gaming Ltd. Все права защищены. Азартные игры могут вызывать зависимость. </p>
+            </div>
+            <div class="col-12 col-lg-8 footer-nav-wrap">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 nav"><span class="nav__title">NeonBet</span>
+                  <ul class="nav__list nav__list_column">
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">Правила сервиса</a></li>
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">Конфиденциальность</a></li>
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">Ответственная игра</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 nav"><span class="nav__title">Информация</span>
+                  <ul class="nav__list nav__list_column">
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">FAQ</a></li>
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">Бонусы и акции</a></li>
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">Биткоин FAQ</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 nav"><span class="nav__title">Поддержка</span>
+                  <ul class="nav__list nav__list_column nav__list_icons">
+                    <li class="nav__item nav__item_column nav__item_icon nav__item_tel"><a class="nav__link" href="tel:+79095463445">+7 909 546 34 45</a></li>
+                    <li class="nav__item nav__item_column nav__item_icon nav__item_schedule"><a class="nav__link" href="#">работаем 24/7</a></li>
+                    <li class="nav__item nav__item_column nav__item_icon nav__item_mail"><a class="nav__link" href="mailto:support@neon.bet">support@neon.bet</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="mask-bet"></div>
+      <div class="twich-wrap">
+        <div class="twich-header">
+          <div class="lang-wrap">
+            <div class="lang"><a class="lang__link" href="#">RU</a></div>
+            <div class="lang"><a class="lang__link" href="#">EN</a></div>
+          </div><span class="twich-close"></span>
+        </div>
+        <div class="twich-video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p5VD49suIUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="bet"><span class="bet__open-btn">Ваши ставки</span>
+        <div class="bet__content">
+          <div class="bet__header"><a class="match-btn bet__btn active" href="#">Ординар</a><a class="match-btn bet__btn" href="#">Экспресс</a></div>
+          <div class="bet__match-wrap scroll">
+            <div class="match match_bet">
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn match__btn_check" href="#"></a>
+              </div>
+              <div class="match__info">
+                <div class="match__game"><img src="images/img11.png" alt=""></div><a class="match__watch active" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+              </div>
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn match__btn_close" href="#"></a>
+              </div>
+            </div>
+            <div class="match match_bet">
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn match__btn_close" href="#"></a>
+              </div>
+              <div class="match__info">
+                <div class="match__game"><img src="images/img11.png" alt=""></div><a class="match__watch active" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+              </div>
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn match__btn_check" href="#"></a>
+              </div>
+            </div>
+            <div class="match match_bet">
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn match__btn_check" href="#"></a>
+              </div>
+              <div class="match__info">
+                <div class="match__game"><img src="images/img11.png" alt=""></div><a class="match__watch active" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+              </div>
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn match__btn_close" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="bet__event-wrap">
+            <div class="bet__event-container scroll">
+              <div class="event event_bet">
+                <div class="event__dott"><img src="images/circle.png" alt=""></div>
+                <div class="event__choise event__choise_bet">
+                  <div class="event__team-bet_bet">
+                    <div class="event__team-logo event__team-logo_bet event__team-logo_mask"><img src="images/img7.png" alt=""></div><span class="event__team-name event__team-name_bet">Black Ananas</span>
+                  </div><span class="event__rating event__rating_bet">1,43</span>
+                  <div class="event__game"><img src="images/img1.png" alt=""><span class="event__count">5 : 2</span><span class="event__winner">MAP 3 WINNER</span></div><span class="event__rating event__rating_bet">2,6</span>
+                  <div class="event__team-bet">
+                    <div class="event__team-logo event__team-logo_bet"><img src="images/img8.png" alt=""></div><span class="event__team-name event__team-name_bet">Hero</span>
+                  </div>
+                </div>
+              </div>
+              <div class="event event_bet">
+                <div class="event__dott"><img src="images/circle.png" alt=""></div>
+                <div class="event__choise event__choise_bet">
+                  <div class="event__team-bet_bet">
+                    <div class="event__team-logo event__team-logo_bet"><img src="images/img7.png" alt=""></div><span class="event__team-name event__team-name_bet">Black Ananas</span>
+                  </div><span class="event__rating event__rating_bet">1,43</span>
+                  <div class="event__game"><img src="images/img1.png" alt=""><span class="event__count">5 : 2</span><span class="event__winner">MAP 3 WINNER</span></div><span class="event__rating event__rating_bet">2,6</span>
+                  <div class="event__team-bet">
+                    <div class="event__team-logo event__team-logo_bet event__team-logo_mask"><img src="images/img8.png" alt=""></div><span class="event__team-name event__team-name_bet">Hero</span>
+                  </div>
+                </div>
+              </div>
+              <div class="event event_bet">
+                <div class="event__dott"><img src="images/circle.png" alt=""></div>
+                <div class="event__choise event__choise_bet">
+                  <div class="event__team-bet_bet">
+                    <div class="event__team-logo event__team-logo_bet event__team-logo_mask"><img src="images/img7.png" alt=""></div><span class="event__team-name event__team-name_bet">Black Ananas</span>
+                  </div><span class="event__rating event__rating_bet">1,43</span>
+                  <div class="event__game"><img src="images/img1.png" alt=""><span class="event__count">5 : 2</span><span class="event__winner">MAP 3 WINNER</span></div><span class="event__rating event__rating_bet">2,6</span>
+                  <div class="event__team-bet">
+                    <div class="event__team-logo event__team-logo_bet"><img src="images/img8.png" alt=""></div><span class="event__team-name event__team-name_bet">Hero</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bet-form">
+            <form action="" name="bet-form">
+              <div class="bet-form__input-wrap">
+                <input class="bet-form__input" type="text" name="bet-sum" placeholder="Введите сумму">
+                <button class="match-btn bet-form__btn active" type="submit">Оплатить</button>
+              </div>
+              <div class="bet-form__info-wrap"><span class="bet-form__info">Пользователь получит: </span><span class="bet-form__sum">12 579 р</span></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

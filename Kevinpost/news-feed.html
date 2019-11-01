@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kevinpost | News feed</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/libs.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="top">
+        <div class="modal" id="request-modal">
+          <div class="modal__container">
+            <div class="modal__title">Оставить заявку
+            </div><img class="modal__exit" src="images/modal-exit.svg" alt="" role="presentation"/>
+            <form class="modal__request">
+              <div class="modal__request-col"><input class="modal__input-text modal__input" type="text" placeholder="Как в Вам обращаться?"/><input class="modal__input-text modal__input" type="text" placeholder="ИНН"/><input class="modal__input-text modal__input" type="text" placeholder="Email"/><input class="modal__input-text modal__input" type="text" placeholder="Телефон"/>
+              </div>
+              <div class="modal__request-col"><textarea class="modal__input modal__request-area" placeholder="Ваша заявка"></textarea>
+                <div class="modal__row modal__request-row">
+                  <label class="modal__input-file">Прикрепить файл<input type="file"/>
+                  </label>
+                  <button class="modal__input-submit" type="submit">Оставить заявку
+                  </button>
+                </div>
+                <p class="modal__note">
+                  Нажимая кнопку "оставить заявку", Вы соглашаетесь с 
+                  условиями <a href="#">пользовательского соглашения</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal" id="call-modal">
+          <div class="modal__container">
+            <div class="modal__title">Заказать звонок
+            </div><img class="modal__exit" src="images/modal-exit.svg" alt="" role="presentation"/><input class="modal__input-text modal__input" type="text" placeholder="Телефон"/>
+            <div class="modal__row modal__call-row">
+              <button class="modal__input-submit" type="submit">Заказать
+              </button>
+              <p class="modal__note">
+                Нажимая кнопку "заказать", Вы соглашаетесь с 
+                условиями <a href="#">пользовательского соглашения</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="question-modal">
+          <div class="modal__container">
+            <div class="modal__title">Задать вопрос
+            </div><img class="modal__exit" src="images/modal-exit.svg" alt="" role="presentation"/><input class="modal__input-text modal__input" type="text" placeholder="Как к вам обращаться?"/><input class="modal__input-text modal__input" type="text" placeholder="Email"/><textarea class="modal__input modal__request-area" placeholder="Ваше сообщение"></textarea>
+            <div class="modal__row modal__quest-row">
+              <p class="modal__note">
+                Нажимая кнопку "Отправить", Вы соглашаетесь с 
+                условиями <a href="#">пользовательского соглашения</a>
+              </p>
+              <button class="modal__input-submit" type="submit">Отправить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="logo"><a href="#"><img src="images/Logo.png" alt=""></a></div>
+          <div class="header-content">
+            <div class="header-info">
+              <div class="burger-wrp">
+                <div class="burger"></div>
+              </div>
+              <input class="header__phone-input" type="text" placeholder="Запасные части и расходники"><a class="phone-logo" href="index.html"><img src="images/phone-logo.png">
+                <p>Kevinpost</p></a>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                  <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
+                  <li class="nav__item"><a class="nav__link" href="delivery.html">Оплата и доставка</a></li>
+                  <li class="nav__item"><a class="nav__link" href="entity.html">Юр. Лицам</a></li>
+                  <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+                  <li class="nav__item"><a class="nav__link open-modal" data-modal="#request-modal">Оставить заявку</a></li>
+                  <li class="nav__item"><a class="nav__link open-modal" data-modal="#call-modal">Заказать звонок</a></li>
+                </ul>
+              </nav>
+              <div class="basket">
+                <IMG class="phone-search" src="images/phone-search.png"></IMG><a class="basket__link" href="busket.html"><span class="basket__count">12</span></a>
+              </div>
+              <div class="contacts"><a class="contacts__link contacts__link_tel" href="tel:84995555555">8 (499) 555-55-55</a><a class="contacts__link contacts__link_mail" href="mailto:zakaz@kevinpost.ru">zakaz@kevinpost.ru</a></div>
+            </div>
+            <div class="header-search"><a class="orders" href="orders-feed.html">Лента заказов</a>
+              <form class="search-form">
+                <input class="search-form__input" type="text" placeholder="Что вы хотите найти?">
+                <button class="search-form__btn" type="submit">Найти</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="sidebar">
+            <div class="catalog catalog-menu">
+              <div class="catalog__wrp">
+                <div class="catalog__sub-title-wrp"><img class="catalog__phone-close" src="images/catalog-close.svg" alt="" role="presentation"/><span class="catalog__sub-title"></span>
+                </div>
+                <div class="catalog__slide"><span class="catalog__title">Каталог товаров</span><span class="catalog__btn"></span>
+                </div>
+                <div class="catalog__link catalog__link_has-children">Строительное оборудование
+                  <div class="catalog__submenu"><a class="catalog__link catalog__sublink" href="catalog.html">Строительное оборудование1</a><a class="catalog__link catalog__sublink" href="catalog.html">Строительное оборудование1</a><a class="catalog__link catalog__sublink" href="catalog.html">Строительное оборудование1</a><a class="catalog__link catalog__sublink" href="catalog.html">Строительное оборудование1</a><a class="catalog__link catalog__sublink" href="catalog.html">Строительное оборудование1</a><a class="catalog__link catalog__sublink" href="catalog.html">Строительное оборудование1</a>
+                  </div>
+                </div><a class="catalog__link" href="catalog.html">Оборудование для работы с арматурой</a><a class="catalog__link" href="catalog.html">Складская техника</a><a class="catalog__link" href="catalog.html">Подъемное и такелажное оборудование</a>
+                <div class="catalog__link catalog__link_has-children">Колеса и фурнитура
+                  <div class="catalog__submenu"><a class="catalog__link catalog__sublink" href="catalog.html">Колёса и фурнитура 2</a><a class="catalog__link catalog__sublink" href="catalog.html">Колёса и фурнитура 2</a><a class="catalog__link catalog__sublink" href="catalog.html">Колёса и фурнитура 2</a><a class="catalog__link catalog__sublink" href="catalog.html">Колёса и фурнитура 2</a><a class="catalog__link catalog__sublink" href="catalog.html">Колёса и фурнитура 2</a>
+                  </div>
+                </div><a class="catalog__link" href="catalog.html">Запасные части и расходники</a><a class="catalog__link" href="catalog.html">Специальная техника</a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <nav class="page-nav"><a class="page-nav__link" href="index.html">Главная</a><span class="page-nav__arrow"></span><a class="page-nav__link page-nav__link_active" href="#">Новости</a>
+            </nav>
+            <h1 class="section-title">Новости</h1>
+            <div class="news-feed">
+                            <article><a class="new" href="single.html"><img class="new__img" src="images/stanok.png" alt="" role="presentation"/>
+                              <div><time class="new__date">27.02.19</time><span class="new__title">Станки для резки и гибки арматуры Zitrek</span><span class="new__descript">
+                                 Обновление ассортимента продукции: <br>	Станки для резки и гибки арматуры Zitrek
+                                	Станки для резки и гибки арматуры Zitrek
+                                	Станки для резки и гибки арматуры Zitrek</span>
+                              </div></a>
+                            </article>
+                            <article><a class="new" href="single.html"><img class="new__img" src="images/stanok.png" alt="" role="presentation"/>
+                              <div><time class="new__date">27.02.19</time><span class="new__title">Станки для резки и гибки арматуры Zitrek</span><span class="new__descript">
+                                 Обновление ассортимента продукции: <br>	Станки для резки и гибки арматуры Zitrek
+                                	Станки для резки и гибки арматуры Zitrek
+                                	Станки для резки и гибки арматуры Zitrek</span>
+                              </div></a>
+                            </article>
+                            <article><a class="new" href="single.html"><img class="new__img" src="images/stanok.png" alt="" role="presentation"/>
+                              <div><time class="new__date">27.02.19</time><span class="new__title">Станки для резки и гибки арматуры Zitrek</span><span class="new__descript">
+                                 Обновление ассортимента продукции: <br>	Станки для резки и гибки арматуры Zitrek
+                                	Станки для резки и гибки арматуры Zitrek
+                                	Станки для резки и гибки арматуры Zitrek</span>
+                              </div></a>
+                            </article>
+                            <article><a class="new" href="single.html"><img class="new__img" src="images/stanok.png" alt="" role="presentation"/>
+                              <div><time class="new__date">27.02.19</time><span class="new__title">Станки для резки и гибки арматуры Zitrek</span><span class="new__descript">
+                                 Обновление ассортимента продукции: <br>	Станки для резки и гибки арматуры Zitrek
+                                	Станки для резки и гибки арматуры Zitrek
+                                	Станки для резки и гибки арматуры Zitrek</span>
+                              </div></a>
+                            </article>
+                            <article><a class="new" href="single.html"><img class="new__img" src="images/stanok.png" alt="" role="presentation"/>
+                              <div><time class="new__date">27.02.19</time><span class="new__title">Станки для резки и гибки арматуры Zitrek</span><span class="new__descript">
+                                 Обновление ассортимента продукции: <br>	Станки для резки и гибки арматуры Zitrek
+                                	Станки для резки и гибки арматуры Zitrek
+                                	Станки для резки и гибки арматуры Zitrek</span>
+                              </div></a>
+                            </article>
+            </div>
+            <div class="pagination">
+              <div class="pagination__prev"><svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.48212 23.2313L13.0887 12.6247L2.42936 2.07113" stroke="#8E1537" stroke-width="4" stroke-linecap="round"/>
+</svg>
+              </div><a class="pagination__link pagination__link_active" href="#">1</a><a class="pagination__link" href="#">2</a><a class="pagination__link" href="#">3</a><a class="pagination__link" href="#">4</a><a class="pagination__link" href="#">5</a><a class="pagination__link" href="#">6</a><a class="pagination__link" href="#">7</a><a class="pagination__link" href="#">8</a>
+              <div class="pagination__next"><svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.48212 23.2313L13.0887 12.6247L2.42936 2.07113" stroke="#8E1537" stroke-width="4" stroke-linecap="round"/>
+</svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section>
+        <nav class="footer-pnav">
+          <ul class="footer-pnav__list">
+            <li class="footer-pnav__item"><a class="footer-pnav__link" href="index.html">Главная</a>
+            </li>
+            <li class="footer-pnav__item"><a class="footer-pnav__link" href="about.html">О компании</a>
+            </li>
+            <li class="footer-pnav__item"><a class="footer-pnav__link" href="delivery.html">Оплата и доставка</a>
+            </li>
+            <li class="footer-pnav__item"><a class="footer-pnav__link" href="entity.html">Юр. Лицам</a>
+            </li>
+            <li class="footer-pnav__item"><a class="footer-pnav__link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="footer-pnav__item"><a class="footer-pnav__link open-modal" data-modal="#request-modal">Оставить заявку</a>
+            </li>
+            <li class="footer-pnav__item"><a class="footer-pnav__link open-modal" data-modal="#call-modal">Заказать звонок</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <footer class="footer">
+        <div class="container"><a class="footer-full-version" href="#">Полная версия сайта</a><a href="#top" id="toTop">
+            <p>На верх</p></a>
+          <div class="footer-menu-wrap">
+            <nav class="footer-nav"><span class="footer-nav__title">Главное меню</span>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__isstem"><a class="footer-nav__link" href="delivery.html">Оплата и доставка</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="contacts.html">Контакты</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="about,html">Компания</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="index.html">Главная</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="entity.html">Юр.лицам</a></li>
+              </ul>
+            </nav>
+            <nav class="footer-nav"><span class="footer-nav__title">Каталог товаров</span>
+              <div class="footer-nav__wrap">
+                <ul class="footer-nav__list footer-nav__list_short">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="catalog.html">Строительное оборудование</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="catalog.html">Складская техника</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="catalog.html">Оборудование для работы с арматурой</a></li>
+                </ul>
+                <ul class="footer-nav__list footer-nav__list_short">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="catalog.html">Подъемное и такелажное оборудование</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="catalog.html">Колёса и фурнитура</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="catalog.html">Запасные части и расходники</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="catalog.html">Специальная техника</a></li>
+                </ul>
+              </div>
+            </nav>
+            <nav class="footer-nav"><span class="footer-nav__title">Обратная связь</span>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a class="footer-nav__link open-modal" data-modal="#request-modal">Оставить заявку</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link open-modal" data-modal="#call-modal">Заказать звонок</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link open-modal" data-modal="#question-modal">Заказать вопрос</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-bottom"><span class="copyrigh">© 2019 «KEVNPOST»</span>
+            <div class="contacts contacts_left"><a class="contacts__link contacts__link_tel contacts__link_white" href="tel:84995555555">8 (499) 555-55-55</a><a class="contacts__link contacts__link_mail contacts__link_white" href="mailto:zakaz@kevinpost.ru">zakaz@kevinpost.ru</a></div>
+            <div class="logo"><a class="logo__link" href="index.html"><img class="logo__img" src="images/Logo.png" alt=""></a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

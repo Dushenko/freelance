@@ -1,0 +1,138 @@
+.header {
+    background-color: #081734;
+    padding: 25px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        img {
+            @media screen and (max-width: 480px) {
+                width: 60%;
+            }
+        }
+    }
+    .navigation {
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        &__link {
+            margin-right: 60px;
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            @media screen and (max-width: 1024px) {
+                margin-right: 10px;
+                margin-left: 10px;
+                text-align: center;
+            }
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        &__btn {
+            margin-right: 100px;
+            @media screen and (max-width: 1024px) {
+                margin-right: 60px;
+            }
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        &__login {
+            font-size: 17px;
+            color: #0bafa0;
+            margin-right: 30px;
+            position: relative;
+            white-space: nowrap;
+            @media screen and (max-width: 1024px) {
+                margin-right: 10px;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 15px;
+            }
+            &::after {
+                content: '';
+                background-image: url('../img/icons/Userpic.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 45px;
+                height: 45px;
+                display: block;
+                position: absolute;
+                top: -15px;
+                left: -55px;
+                @media screen and (max-width: 480px) {
+                    width: 30px;
+                    height: 30px;
+                    background-size: 100%;
+                    top: -9px;
+                    left: -38px;
+                }
+            }
+        }
+        &__lang {
+            display: block;
+            width: 31px;
+            height: 23px;
+            background-image: url('../img/rus.png');
+            @media screen and (max-width: 480px) {
+                width: 29px;
+                height: 20px;
+                background-size: 100%;
+            }
+        }
+    }
+
+    .main-btn {
+        padding: 13px 15px 13px;
+    }
+}
+
+.lang {
+    width: 79px;
+    cursor: pointer;
+    margin: 0 -15px 0 10px;
+    z-index: 10000;
+    &__link {
+        color: #0bae9f;
+        display: flex;
+        align-items: center;
+        padding: 0 2px;
+        font-weight: 700;
+        margin-top: -3px;
+        border-radius: 8px;
+        img {
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .8);
+        }
+    }
+    &__wrap {
+        position: relative;
+    }
+    &__list {
+        padding: 3px;
+        &_current {
+            padding-right: 12px;
+            position: relative;
+        }
+    }
+    &__drop {
+        transition: all .3s ease;
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        &.show {
+            display: block;
+        }
+    }
+}

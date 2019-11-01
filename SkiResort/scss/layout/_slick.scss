@@ -1,0 +1,234 @@
+.restaurant-slider {
+    position: relative;
+    max-width: 1150px;
+    @media screen and (max-width: 1920px) {
+        max-width: 1060px;
+    }
+    @media screen and (max-width: 1600px) {
+        max-width: 750px;
+    }
+    @media screen and (max-width: 1024px) {
+        max-width: 500px;
+    }
+    .slick-prev {
+        @media screen and (max-width: 768px) {
+            left: 40%;
+            top: 238px;
+        }
+    }
+    .slick-next {
+        @media screen and (max-width: 768px) {
+            right: 40%;
+            top: 238px;
+        }
+    }
+}
+
+.offer-slider {
+    position: relative;
+    max-width: 1150px;
+    @media screen and (max-width: 1600px) {
+        max-width: 750px;
+    }
+    @media screen and (max-width: 1024px) {
+        max-width: 380px;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 280px;
+    }
+    .slick-prev {
+        top: 110px;
+        @media screen and (max-width: 768px) {
+            top: 236px;
+            left: 90px;
+        }
+    }
+    .slick-next {
+        top: 110px;
+        @media screen and (max-width: 768px) {
+            top: 236px;
+            right: 90px;
+        }
+    }
+    .slick-dots {
+        margin: 20px auto 0;
+        color: #c5ab7c;
+        text-align: center;
+        li {
+            display: inline;
+            text-align: center;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        li button {
+            font-family: 'SF UI Display';
+            font-size: 1.2rem;
+        }
+        li.slick-active button {
+            font-size: 1.5rem;
+            color: #d99e37;
+            border-bottom: 2px solid #d99e37;
+        }
+
+    }
+}
+
+.conference-slider {
+    position: relative;
+    width: 50%;
+    height: 300px;
+    .slick-prev {
+        background-color: rgba(0, 0, 0, 0.77);
+        position: absolute;
+        left: 10px;
+        bottom: 40%;
+        width: 34px;
+        height: 34px;
+        border: 1px solid #fffc00;
+        z-index: 1;
+    }
+    .slick-next {
+        background-color: rgba(0, 0, 0, 0.77);
+        position: absolute;
+        right: 10px;
+        top: 49%;
+        width: 34px;
+        height: 34px;
+        border: 1px solid #fffc00;
+    }
+}
+
+.slick-prev {
+    position: absolute;
+    left: -50px;
+    top: 42%;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #fffc00;
+    z-index: 999999;
+    &:after {
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 8px;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #fffc00;
+        border-left: 2px solid #fffc00;
+        transform: rotate(-45deg);
+    }
+    &:before {
+        position: absolute;
+        content: '';
+        top: 15px;
+        left: 7px;
+        width: 20px;
+        height: 2px;
+        background: #fffc00;
+    }
+}
+
+.slick-next {
+    position: absolute;
+    right: -50px;
+    top: 42%;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #fffc00;
+    z-index: 999999;
+    &:after {
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 13px;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #fffc00;
+        border-right: 2px solid #fffc00;
+        transform: rotate(45deg);
+    }
+    &:before {
+        position: absolute;
+        content: '';
+        top: 15px;
+        left: 7px;
+        width: 20px;
+        height: 2px;
+        background: #fffc00;
+    }
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+
+.category-slider .slick-track,
+.category-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+    margin: 0 10px 0;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+    &.dragging img {
+        pointer-events: none;
+    }
+    .slick-initialized & {
+        display: block;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}

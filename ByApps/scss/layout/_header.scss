@@ -1,0 +1,231 @@
+.header {
+	background-image: url('../img/header-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	@media screen and (max-width: 1024px) {
+		
+	}
+	.logo {
+		
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.header-menu {
+	padding: 20px 0;
+	margin-bottom: 120px;
+	@media screen and (max-width: 768px) {
+		padding: 10px 0;
+		margin-bottom: 80px;
+	}
+	@media screen and (max-width: 480px) {
+		padding: 10px 0;
+		margin-bottom: 50px;
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.call-wrap {
+		@media screen and (max-width: 1024px) {
+			margin-left: auto;
+		}
+	}
+
+	.call-desktop {
+		color: #fff;
+		font-size: 13px;
+		padding: 15px 28px;
+		margin: 0 15px;
+		border: 1px solid rgba(255, 255, 255, .6);
+		border-radius: 100px;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			background-color: #00B140;
+			border: 1px solid transparent;
+		}
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	.call-tablet {
+		display: none;
+		width: 45px;
+		height: 45px;
+		border: 1px solid rgba(255, 255, 255, .6);
+		border-radius: 50%;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			background-color: #00B140;
+			border: 1px solid transparent;
+		}
+		@media screen and (max-width: 768px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.lang {
+		width: 86px;
+		cursor: pointer;
+		margin-left: 10px;
+		&__link {
+			color: #fff;
+			display: flex;
+			align-items: center;
+			img {
+				margin-right: 10px;
+			}
+		}
+		&__wrap {
+			position: relative;
+		}
+		&__list {
+			padding: 3px;
+			&_current {
+				padding-right: 25px;
+				position: relative;
+				&:after {
+					width: 8px;
+					height: 8px;
+					content: '';
+					position: absolute;
+					top: 7px;
+					right: 7px;
+					border-left: 2px solid rgba(255, 255, 255, .5);
+					border-top: 2px solid rgba(255, 255, 255, .5);
+					-webkit-transform: rotate(-135deg);
+					transform: rotate(-135deg);
+				}
+			}
+			&:hover {
+				.lang__drop {
+					display: block;
+				}
+			}
+		}
+		&__drop {
+			display: none;
+			position: absolute;
+			top: 30px;
+			left: 0;
+		}
+	}
+}
+
+.header-info {
+	.main-text {
+		font-family: Bebas Neue;
+		color: #EFF5FB;
+		font-size: 56px;
+		line-height: 67px;
+		letter-spacing: 3px;
+		text-align: center;
+		margin-bottom: 64px;
+		@media screen and (max-width: 1024px) {
+			line-height: 58px;
+			font-size: 48px;
+		}
+		@media screen and (max-width: 768px) {
+			line-height: 43px;
+			font-size: 32px;
+			margin-bottom: 40px;
+		}
+		@media screen and (max-width: 510px) {
+			margin-bottom: 30px;
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+//nav
+.nav {
+	margin-left: auto;
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__item {
+		margin: 0 15px;
+	}
+
+	&__link {
+		color: #fff;
+		font-size: 16px;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -6px;
+			right: 0;
+			width: 100%;
+			height: 2px;
+			background: #FFA944;
+			border-radius: 100px;
+			z-index: -1;
+			transform: scaleX(0);
+			transform-origin: left;
+			transition: transform .5s;
+		}
+		&:hover:after {
+			transform: scaleX(1);
+			transform-origin: left;
+			z-index: 10;
+		}
+	}
+}
+
+
+// .burger-menu {
+// 	position: absolute;
+// 	z-index: 10;
+// 	top: 0;
+// 	left: -350px;
+// 	width: 350px;
+// 	height: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	padding: 50px 0;
+// 	z-index: 100;
+// 	transition: all .5s ease-in-out;
+// 	background-color: rgba(255, 255, 255, .9);
+// 	@media screen and (max-width: 480px) {
+// 		width: 100%;
+// 		left: -100%;
+// 	}
+// }
+
+// .burger-menu.show {
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 1000;
+// 	transition: all .5s ease-in-out;
+// }
+
+// .burger-opener {
+// 	position: absolute;
+// 	z-index: 2000;
+// 	top: 6px;
+// 	right: 6px;
+// 	display: none;
+// 	@media screen and (max-width: 768px) {
+// 		display: block;
+// 	}
+// }

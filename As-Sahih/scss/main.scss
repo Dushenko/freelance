@@ -1,0 +1,36 @@
+@import "vendors/normalize";
+@import "vendors/include-media";
+@import "vendors/fonts";
+
+@import "layout/header";
+@import "layout/common";
+@import "layout/footer";
+@import "layout/components";
+@import "layout/slick";
+@import "layout/dropdown";
+@import "layout/player";
+
+
+$breakpoints: (
+	'phone': 480px,
+	'tablet': 768px,
+	'desktop': 1024px,
+	'widescreen': 1200px
+	);
+
+
+@include media("<widescreen") {
+	
+}
+
+@include media("<desktop") {
+	
+}
+
+@include media("<tablet") {
+	
+}
+
+@include media("<phone") {
+
+}

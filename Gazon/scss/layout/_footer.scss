@@ -1,0 +1,86 @@
+.footer {
+	.container {
+		display: flex;
+		@media screen and (max-width: 800px) {
+			@include flex-column-center;
+		}
+	}
+	.footer-content {
+		padding: 50px 0 80px;
+		@media screen and (max-width: 1024px) {
+			padding: 30px 0 40px;
+		}
+
+	}
+	.adress-wrap {
+		margin-right: 100px;
+		@media screen and (max-width: 1024px) {
+			margin-right: 40px;
+		}
+		@media screen and (max-width: 800px) {
+			margin: 0 0 20px;
+		}
+	}
+	.logo {
+		width: 300px;
+		margin-bottom: 20px;
+		img {
+			width: 100%;
+		}
+	}
+	.soc-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: auto;
+		@media screen and (max-width: 800px) {
+			margin: 0;
+		}
+	}
+	.soc-title {
+		color: #fff;
+		font-size: 20px;
+		font-weight: 500;
+		margin: 30px 0 50px;
+		@media screen and (max-width: 800px) {
+			margin: 0 0 20px;
+		}
+	}
+	.soc-icons {
+		display: flex;
+		margin-bottom: 80px;
+		@media screen and (max-width: 800px) {
+			margin: 0 0 30px;
+		}
+	}
+	.soc-link {
+		width: 60px;
+		height: 60px;
+		margin: 0 12px;
+		@media screen and (max-width: 1024px) {
+			width: 50px;
+			height: 50px;
+			margin: 0 8px;
+		}
+		img {
+			width: 100%;
+		}
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	.inc {
+		background-color: #404040;
+		padding: 30px 0;
+		@media screen and (max-width: 768px) {
+			padding: 15px 0;
+		}
+	}
+	.inc-text {
+		color: #fff;
+		font-size: 16px;
+		font-weight: 500;
+		text-align: center;
+	}
+}
+

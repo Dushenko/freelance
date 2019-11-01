@@ -1,0 +1,171 @@
+* {
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Roboto';
+}
+
+a {
+	transition: all 0.3s ease-in-out;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	&:hover {
+		color: #228a24;
+	}
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+input {
+	outline: none;
+	-webkit-appearance: none;
+}
+
+button {
+	transition: all 0.3s ease-in-out;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.active {
+	a {
+		color: #228a24;
+	}
+}
+
+.border {
+	border: 1px solid #dce2ec;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	i {
+		margin-right: 10px;
+		color: #5fa467;
+	}
+}
+
+.sidebar-title {
+	color: #000;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.main-title {
+	background-image: url('../img/intro-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 70px 0;
+	margin-bottom: 50px;
+	text-align: center;
+	@include media("<desktop") {
+		padding: 40px 0;
+		margin-bottom: 40px;
+	}
+	@include media("<tablet") {
+		padding: 55px 0 20px;
+		margin-bottom: 30px;
+	}
+	@include media("<phone") {
+		padding: 50px 0;
+		margin-bottom: 20px;
+	}
+	h2 {
+		font-size: 3.2rem;
+		font-weight: 500;
+		padding: 0;
+		margin-bottom: 20px;
+		@include media("<tablet") {
+			font-size: 2rem;
+			margin-bottom: 15px;
+		}
+		@include media("<phone") {
+			font-size: 1.4rem;
+			margin-bottom: 10px;
+		}
+	}
+	p {
+		font-size: 1.2rem;
+		@include media("<tablet") {
+			font-size: 1rem;
+		}
+		@include media("<phone") {
+			font-size: .8rem;
+		}
+	}
+}
+
+.content-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.marquee{
+	width: 77%;
+	margin: 0 20px 20px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.marquee span {
+	color: #000;
+	font-size: .7rem;
+	display: inline-block;
+	-webkit-animation: marquee 20s infinite linear;
+	animation: marquee 20s infinite linear;
+}
+
+@-webkit-keyframes marquee {
+	0%{-webkit-transform: translate(0, 0);}
+	100%{-webkit-transform: translate(-100%, 0);}
+}
+@keyframes marquee{
+	0%{transform: translate(0, 0);}
+	100%{transform: translate(-100%, 0)}
+}
+
+.audioplayer {
+	@include media("<tablet") {
+		height: 2.2em!important;
+	}
+}
+
+.content-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	@include media("<tablet") {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

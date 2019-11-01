@@ -1,0 +1,78 @@
+.progressbar {
+  display: flex;
+  flex-direction: column;
+  &__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    &_common {
+      margin-bottom: 20px;
+    }
+    &_second-team {
+      align-items: flex-end;
+    }
+  }
+  &__score {
+    color: $mask;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 70px;
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  &__line-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &_second-team {
+      align-items: flex-end;
+    }
+  }
+  &__line-name {
+    color: $mask;
+    font-size: 16px;
+    margin-bottom: 5px;
+    &_common {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 10px;
+    }
+  }
+  &__line {
+    position: relative;
+    max-width: 100%;
+    background-color: $progressbar;
+    height: 10px;
+    border-radius: 5px;
+    &_team {
+      width: 250px;
+    }
+    &_common {
+      width: 300px;
+    }
+  }
+  &__counter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    z-index: 1;
+    &_first-team {
+      background-color: $black;
+    }
+    &_second-team {
+      background-color: $gray;
+    }
+  }
+  &__first-team-count,
+  &__second-team-count {
+    font-weight: bold;
+  }
+}

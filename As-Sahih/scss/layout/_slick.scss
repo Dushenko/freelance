@@ -1,0 +1,187 @@
+.slider {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.prev {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	color: #fff;
+	border: none;
+	background-color: #d6cfe5;
+	border-radius: 50%;
+	z-index: 100;
+	&:before {
+		position: absolute;
+		content: '';
+		top: 10px;
+		left: 12px;
+		width: 8px;
+		height: 8px;
+		border-top: 2px solid #fff;
+		border-left: 2px solid #fff;
+		transform: rotate(-45deg);
+	}
+	@include media("<tablet") {
+		visibility: hidden;
+	}
+}
+.next {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	color: #fff;
+	border: none;
+	background-color: #d6cfe5;
+	border-radius: 50%;
+	z-index: 100;
+	&:before {
+		position: absolute;
+		content: '';
+		top: 10px;
+		left: 9px;
+		width: 8px;
+		height: 8px;
+		border-top: 2px solid #fff;
+		border-right: 2px solid #fff;
+		transform: rotate(45deg);
+	}
+	@include media("<tablet") {
+		visibility: hidden;
+	}
+}
+
+.prev {
+	top: 44%;
+	left: -24px;
+	@include media("<desktop") {
+		left: 0;
+	}
+}
+
+.next {
+	bottom: 44%;
+	right: -24px;
+	@include media("<desktop") {
+		right: 0;
+	}
+}
+
+#articles-slider {
+	.prev,
+	.next {
+		font-size: 2rem;
+		position: absolute;
+		background-color: #228a24;
+		border: none;
+		z-index: 101;
+		background-color: transparent;
+	}
+	.prev {
+		visibility: visible;
+		top: 1807px;
+		left: 35%;
+		&:before {
+			border-top: 2px solid #228a24;
+			border-left: 2px solid #228a24;
+		}
+		@include media("<widescreen") {
+			top: 1807px;
+			left: 30%;
+		}
+		@include media("<desktop") {
+			top: 1807px;
+			left: 28%;
+		}
+		@include media("<tablet") {
+			top: 1807px;
+			left: 22%;
+		}
+		@include media("<phone") {
+			top: 1887px;
+			left: 14%;
+		}
+	}
+
+	.next {
+		visibility: visible;
+		top: 1807px;
+		right: 35%;
+		&:before {
+			border-top: 2px solid #228a24;
+			border-right: 2px solid #228a24;
+		}
+		@include media("<widescreen") {
+			top: 1807px;
+			right: 30%;
+		}
+		@include media("<desktop") {
+			top: 1807px;
+			right: 28%;
+		}
+		@include media("<tablet") {
+			top: 1807px;
+			right: 22%;
+		}
+		@include media("<phone") {
+			top: 1887px;
+			right: 14% !important;
+		}
+	}
+
+	.slick-dots {
+		position: absolute;
+		bottom: -146px;
+		color: #5fa467;
+		border: none;
+		z-index: 100;
+		background-color: transparent;
+		@include media("<tablet") {
+			bottom: -145px;
+		}
+	}
+}
+
+#ramazan-slider {
+	width: 98%;
+	.slick-dots {
+		bottom: -45px;
+		visibility: visible;
+		@include media("<phone") {
+			visibility: hidden;
+		}
+	}
+
+	.prev,
+	.next {
+		font-size: 2rem;
+		position: absolute;
+		background-color: #228a24;
+		border: none;
+		z-index: 101;
+		background-color: transparent;
+	}
+
+	.prev {
+		visibility: visible;
+		left: -16px;
+		top: 50%;
+		transform: translateY(-50%);
+		&:before {
+			border-top: 2px solid #228a24;
+			border-left: 2px solid #228a24;
+		}
+	}
+
+	.next {
+		visibility: visible;
+		right: -16px;
+		top: 50%;
+		transform: translateY(-50%);
+		&:before {
+			border-top: 2px solid #228a24;
+			border-right: 2px solid #228a24;
+		}
+	}
+}

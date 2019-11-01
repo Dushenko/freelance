@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./fontawesome/css/all.css">
+	<link href="./select/jquery.formstyler.css" rel="stylesheet" />
+	<link href="./select/jquery.formstyler.theme.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<a class="logo" href="./index.html" class="pull-left">
+					<img src="./images/logo.png">
+				</a>
+				<div class="dropdown-container">
+					<div class="dropdown">
+						<span data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							UAH
+							<i class="fa fa-caret-down dropdown-toggle anim" aria-hidden="true"></i>
+						</span>
+						
+						<ul class="dropdown-menu anim">
+							<li><a href="#">RUB</a></li>
+							<li><a href="#">USD</a></li>
+							<li><a href="#">EUR</a></li>
+						</ul>
+					</div>
+					<div class="dropdown">
+						<span data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							en
+							<i class="fa fa-caret-down dropdown-toggle anim" aria-hidden="true"></i>
+						</span>
+						<ul class="dropdown-menu anim">
+							<li><a href="#">rus</a></li>
+							<li><a href="#">Ukr</a></li>
+							<li><a href="#">Jap</a></li>
+						</ul>
+					</div>
+				</div>
+				<ul class="header-menu">
+					<li><a href="product.html">about</a></li>
+					<li><a href="catalog.html">catalog</a></li>
+					<li class="contacts-scroll"><a href="#contacts">contacts</a></li>
+				</ul>
+				
+				<button class="popup-button anim" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать звонок </button>
+
+				<a class="header-call" href="tel:+971 52 619 2299">+971 52 619 2299</a>
+
+				<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+					<div class="modal-dialog modal-sm" role="document">
+						<div class="modal-content">
+							<form action="post">
+								<p>Оставьте ваш номер телефона</p>
+								<input type="tel:+380" placeholder="+380 XXXXXXXXXX">
+								<p>Мы свяжемся с вами в ближайшее время</p>
+								<button>Заказать</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<main>
+			<section class="product">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 product-info">
+							<div class="galery">
+								<div class="slider slider-for">
+									<div><img src="images/product-img-1.jpg" alt=""></div>
+									<div><img src="images/product-img-2.jpg" alt=""></div>
+									<div><img src="images/product-img-3.jpg" alt=""></div>
+									<div><img src="images/product-img-4.jpg" alt=""></div>
+									<div><img src="images/product-img-5.jpg" alt=""></div>
+									<div><img src="images/product-img-6.jpg" alt=""></div>
+								</div>
+								<div class="slider slider-nav">
+									<div><img src="images/product-img-1.jpg" alt=""></div>
+									<div><img src="images/product-img-2.jpg" alt=""></div>
+									<div><img src="images/product-img-3.jpg" alt=""></div>
+									<div><img src="images/product-img-4.jpg" alt=""></div>
+									<div><img src="images/product-img-5.jpg" alt=""></div>
+									<div><img src="images/product-img-6.jpg" alt=""></div>
+								</div>
+							</div>
+							<div class="h2">Описание</div>
+							<p>We have a wide range of Perkins Generators UK all from 10kva-2000kva. For more information please do not hesitate to contact us. You are also more then Welcome to visit us in our Showroom in Al Garhoud, Airport Road, Dubai, United Arab Emirates.</p>
+							<div class="h2">Характеристика</div>
+							<table>
+								<tbody>
+									<tr>
+										<td>Год</td>
+										<td>1990</td>
+									</tr>
+									<tr>
+										<td>Пробег (km)</td>
+										<td>15 000</td>
+									</tr>
+									<tr>
+										<td>Коробка передач</td>
+										<td>Автомат</td>
+									</tr>
+									<tr>
+										<td>Двигатель (L)</td>
+										<td>1.6</td>
+									</tr>
+									<tr>
+										<td>Привод</td>
+										<td>Задний</td>
+									</tr>
+									<tr>
+										<td>Цвет</td>
+										<td>Красный</td>
+									</tr>
+									<tr>
+										<td>VIN</td>
+										<td>765867GJHSVD</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 product-form">
+							<div class="h2">NISSAN SENTRA S 1.8L</div>
+							<div class="price">$7878</div>
+							<form action="index.html" class="form" method="post">
+								<input type="text" name="name" placeholder="Имя*" required id="">
+								<input type="text" name="phone" placeholder="Номер телефона*" required id="">
+								<input type="text" name="email" placeholder="Электронная почта*" required id="">
+								<textarea name="message" placeholder="Сообщение*"></textarea>
+								<button class="popup-button anim">Отправить запрос</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="green">
+				<div class="container container-smaller">
+					<div class="h1">подписаться на новости</div>
+					<div class="subscription">
+						<button >Отправить</button>
+						<div class="input-block">
+							<input type="text" placeholder="Введите свой адрес электронной почты">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts" id="contacts">
+				<div class="container container-smaller">
+					<div class="h1">Контакты</div>
+					<div class="row">
+						<form action="index.html" class="form" method="post">
+							<div class="col-xs-12 col-md-6 text-center contact-left">
+								<input type="text" name="name" placeholder="Имя*" required id="">
+								<input type="text" name="phone" placeholder="Номер телефона*" required id="">
+								<input type="text" name="email" placeholder="Электронная почта*" required id="">
+							</div>
+							<div class="col-xs-12 col-md-6 text-center contact-right">
+								<textarea name="message" placeholder="Сообщение*"></textarea>
+							</div>
+							<div class="col-xs-12 button">
+								<button type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="map"></div>	
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-top">
+				<div class="container container-smaller">
+					<a href="https://goo.gl/maps/mZU6Rp7bsSK2" class="pull-left">Sharjah, Industrial area 4, Street 27, Office 7</a>						
+					<a href="tel:+971 52 619 22 99" class="pull-left footer-call">+971 52 619 22 99</a>						
+					<a href="mailto:info@bestway.ae" class="pull-right">info@bestway.ae</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container container-smaller">			
+					<a href="#" class="logo pull-left"><img src="./images/logo.png" alt="logo">
+					</a>				
+					<p class="copyright pull-left">© BEST WAY USED CARS TRADING 2018</p>						
+					<div class="pull-right footer-social">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<p>Подписывайся на наши<br>странички в соц сетях</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="./select/jquery.formstyler.min.js"></script>
+	<script src="./slick/slick.min.js"></script>
+	<script src='./js/main.js'></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHFfgCQnXbGOgf4tzRu6ox-yfeamoHZwo&callback=initMap"
+	async defer></script>
+</div>
+</body>
+</html>

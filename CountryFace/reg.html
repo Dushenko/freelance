@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CountryFace</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/libs.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <section class="reg-section">
+          <div class="container">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+            <div class="count count_dark"><span class="count__title">Зарегистрироваться</span>
+              <div class="reg-wrap">
+                <form class="add-form" action="#"><span class="reg-title">Через эл. почту</span>
+                  <div class="add-form__input-box">
+                    <input class="add-form__input" type="text" placeholder="Электронная почта"><span class="add-form__input-title">Электронная почта</span>
+                  </div>
+                  <div class="add-form__input-box">
+                    <input class="add-form__input" type="text" placeholder="Пароль"><span class="add-form__input-title">Пароль</span>
+                  </div>
+                  <button class="main-btn" type="submit"> <span class="main-btn__text">Зарегистрироваться</span></button>
+                </form>
+                <div class="or-wrap"><span class="or">Или</span></div>
+                <div class="soc-wrap"><span class="reg-title">Войти через соцсети</span>
+                  <form class="soc-form" action="#">
+                    <button class="soc-form__btn soc-form__btn_vk" type="submit">Войти через ВКонтакте</button>
+                    <button class="soc-form__btn soc-form__btn_od" type="submit">Войти через Одноклассники</button>
+                    <button class="soc-form__btn soc-form__btn_fb" type="submit">Войти через Facebook</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="phone-modal modal-box">
+          <div class="container">
+            <div class="count count_dark count_modal"><span class="count__reg-title">Остался всего один шаг!</span><span class="count__second-title count__second-title_modal">Укажите номер телефона</span>
+              <form class="add-form" action="#">
+                <div class="add-form__input-box">
+                  <input class="add-form__input" type="tel" placeholder="+7(900)123-34-12" required>
+                </div>
+                <p class="add-form__text">Номер телефона будет использован только для подтверждения, что вы реальный человек, и никогда — для рекламы</p>
+                <button class="main-btn" type="submit"> <span class="main-btn__text">отправить код</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="code-modal modal-box">
+          <div class="container">
+            <div class="count count_dark count_modal"><span class="count__reg-title">Остался всего один шаг!</span><span class="count__second-title count__second-title_modal">Введите код из SMS</span>
+              <form class="add-form" action="#">
+                <div class="add-form__input-box">
+                  <input class="add-form__input" type="text" placeholder="Код из SMS" required><span class="add-form__input-title">Код из SMS</span>
+                </div>
+                <p class="add-form__text">Код успешно отправлен! Повторить отправку можно через <span class="add-form__text-sec">59 </span>сек.</p>
+                <button class="main-btn" type="submit"> <span class="main-btn__text">Подтвердить</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="thank-modal modal-box">
+          <div class="container">
+            <div class="count count_dark count_modal"><span class="count__second-title count__second-title_modal">Спасибо! Номер подтвержден</span><span class="count__reg-title">Теперь можно голосовать за участников</span>
+              <button class="main-btn" type="submit"> <span class="main-btn__text">Ок, отлично</span></button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

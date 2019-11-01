@@ -1,0 +1,101 @@
+* {
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Museo';
+}
+
+a {
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+h1, h2, h3, h4, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	outline: none;
+	-webkit-appearance: none;
+
+	&::placeholder {
+
+	}
+}
+
+textarea {
+	resize: none;
+	outline: none;
+	-webkit-appearance: none;
+	&::placeholder {
+
+	}
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	transition: all 0.3s ease-in-out;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+#wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.wrapper_2 {
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.main-container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+#middle {
+	.main-container {
+		display: flex;
+	}
+}
+
+.section-title {
+	position: relative;
+	font-size: 25px;
+	font-weight: 400;
+	margin: 0 0 30px 45px;
+	@media screen and (max-width: 768px) {
+		display: inline;
+		font-size: 20px;
+		padding: 0 0 30px;
+		margin: 0;
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		width: 51px;
+		height: 51px;
+		background: #ffe132;
+		top: 50%;
+		left: -15px;
+		transform: translateY(-50%);
+		z-index: -1;
+		border-radius: 50%;
+		@media screen and (max-width: 768px) {
+			top: 24%;
+		}
+	}
+}

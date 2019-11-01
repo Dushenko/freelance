@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArchiFlora</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="burger-opener">
+          <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+            <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"></path>
+            <path class="line middle" d="m 70,50 h -40"></path>
+            <path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"></path>
+          </svg>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo.svg" alt="">
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link js-nav__link" href="services-main.html">Услуги <span class="arrow arrow_main"></span></a>
+              <ul class="nav__main-sub">
+                <li class="nav__item-sub js-nav__item-sub">
+                  <a href="#" class="nav__link-sub nav__link-sub-one">Пруды и бассейны<span class="arrow arrow-one"></span></a>
+                  <ul class="nav__sub js-nav__sub-one">
+                    <li><a href="#">Строительство прудов</a></li>
+                    <li><a href="#">Строительство бассейнов</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item-sub js-nav__item-sub">
+                  <a href="#" class="nav__link-sub nav__link-sub-two">Автополив участка<span class="arrow arrow-two"></span></a>
+                  <ul class="nav__sub js-nav__sub-two">
+                    <li><a href="#">Капельный полив сада</a></li>
+                    <li><a href="#">Монтаж автополива</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item-sub js-nav__item-sub">
+                  <a href="#" class="nav__link-sub nav__link-sub-three">Дизайн и озеленение<span class="arrow arrow-three"></span></a>
+                  <ul class="nav__sub js-nav__sub-three">
+                    <li><a href="#">Дизайн сада</a></li>
+                    <li><a href="#">Озеленение сада</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
+            <li class="nav__item"><a class="nav__link" href="article.html">Видео</a></li>
+            <li class="nav__item"><a class="nav__link" href="blog.html">Блог</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <div class="contacts__tel">
+            <a class="contacts__number contacts__number_first" href="tel:0970012600">097 001 26 00</a>
+            <a class="contacts__number" href="tel:0666893131">066 689 31 31</a>
+          </div>
+          <span class="contacts__address">Харьков, ул. Клочковская, 159</span>
+        </div>
+        <a href="contacts.html" class="contact-btn">Контакты</a>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="contact-section">
+
+        <div class="contacts-wrap">
+          <div class="map">
+            <div id="map"></div>
+          </div>
+
+          <div class="contact">
+            <span class="contact__title">Наши контакты</span>
+
+            <span class="contact__second-title">Звоните, приходите и расскажите о своих идеях</span>
+
+            <div class="contact__tel">
+              <a class="contact__number contact__number_first" href="tel:0970012600">097 001 26 00</a>
+              <a class="contact__number" href="tel:0666893131">066 689 31 31</a>
+            </div>
+            <span class="contact__address">Харьков, ул. Клочковская, 159 <br> ТЦ Марс, 3 этаж (возле Будмена)</span>
+
+            <span class="contact__time">Режим работы <br> Понедельник-Пятница <br> 10:00-18:00 <br> Лучше заранее договориться о встрече, так как <br> мы можем быть на объектах!</span>
+
+            <span class="contact__second-title">Подписывайтесь на наши новости 
+            в социальных сетях</span>
+
+            <div class="contact__soc">
+              <a class="contact__link" href="#"><img src="img/youtube.png" alt=""></a>
+              <a class="contact__link" href="#"><img src="img/google.png" alt=""></a>
+              <a class="contact__link" href="#"><img src="img/facebook.png" alt=""></a>
+              <a class="contact__link" href="#"><img src="img/instagram.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-section">
+          <div class="portfolio-info">
+            <div class="info-wrap">
+              <span class="portfolio-text">Узнать больше о команде</span>
+              <span class="portfolio-btn">Подробнее</span>
+            </div>
+          </div>
+
+          <div class="portfolio-img" style="background-image: url('img/team-img.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="logo-footer">
+          <a href="#">
+            <img src="img/logo.svg" alt="">
+          </a>
+        </div>
+
+        <nav class="nav-footer">
+          <ul class="nav-footer__list">
+            <li class="nav-footer__item"><a class="nav-footer__link" href="#">О компании</a></li>
+            <li class="nav-footer__item"><a class="nav-footer__link" href="#">Портфолио</a></li>
+            <li class="nav-footer__item"><a class="nav-footer__link" href="#">Новости</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-footer">
+          <ul class="nav-footer__list">
+            <li class="nav-footer__item"><a class="nav-footer__link" href="#">Биопруды и <br> биобассейны</a></li>
+            <li class="nav-footer__item"><a class="nav-footer__link" href="#">Онлайн <br> калькулятор</a></li>
+            <li class="nav-footer__item"><a class="nav-footer__link" href="#">Автополив <br> монтаж</a></li>
+          </ul>
+        </nav>
+
+        <div class="feedback">
+          <span class="feedback__text">Хотите оставить нам отзыв?</span>
+
+          <span class="feedback__btn">Контакты</span>
+        </div>
+
+      </div>
+    </footer>
+
+    <div class="burger-mask">
+      <div class="burger-mask__mask"></div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/slick-js.js"></script>
+  <script src="js/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHiaYa33H2IBDqwp13BOJzMZeQncRH0lM&callback=initMap">
+  </script>
+</body>
+</html>

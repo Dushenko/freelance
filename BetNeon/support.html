@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NeoBet</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/libs.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="logo"><a class="logo-link" href="index.html"><img src="images/logo.png" alt=""></a></div>
+          <div class="burger-menu">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#start">Тех поддержка</a></li>
+                <li class="nav__item"><a class="nav__link" href="#prizes">Общие вопросы</a></li>
+                <li class="nav__item"><a class="nav__link" href="#prizes">Новости</a></li>
+              </ul>
+            </nav>
+            <div class="soc"><a class="vk-link" href="#"><img src="images/VK_Logo.png" alt=""></a></div><a class="enter-btn bdr-hover" href="#">Вход</a><a class="reg-btn bdr-hover" href="#">Регистрация</a>
+            <div class="lang"><a class="lang__link lang__link_active" href="#">Ru</a>
+              <div class="lang__hidden"><a class="lang__link" href="#">En</a><a class="lang__link" href="#">Ua</a></div>
+            </div>
+          </div>
+          <div class="burger-opener">
+            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+              <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"></path>
+              <path class="line middle" d="m 30,50 h 40"></path>
+              <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path>
+            </svg>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="slider-section">
+          <div class="container">
+            <div class="main-slider js-main-slider">
+              <div class="slide">
+                <div class="slide__holder">
+                  <h2 class="slide__title">Раздаем скины</h2>
+                  <p class="slide__text">Делай ставки - получай лут!</p><a class="slide__more-btn" href="#"> <span>Подробнее</span></a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__holder">
+                  <h2 class="slide__title">Раздаем скины</h2>
+                  <p class="slide__text">Делай ставки - получай лут!</p><a class="slide__more-btn" href="#"> <span>Подробнее</span></a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__holder">
+                  <h2 class="slide__title">Раздаем скины</h2>
+                  <p class="slide__text">Делай ставки - получай лут!</p><a class="slide__more-btn" href="#"> <span>Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="profile-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 profile-wrap">
+                <div class="readcrumbs"><a class="readcrumbs__link" href="#">Главная</a><span class="readcrumbs__arrow">></span><a class="readcrumbs__link readcrumbs__link_active" href="#">Техподдержка</a></div>
+                <div class="profile-lk profile-lk_padding">
+                  <h1 class="title">Техническая поддержка</h1>
+                  <form action="" method="post">
+                    <div class="ticket-form">
+                      <h2 class="subtitle">Создать новый тикет</h2>
+                      <div class="row">
+                        <div class="col-12 col-lg-6 ticket-form__input-wrap">
+                          <div class="ticket-form__input ticket-form__input_name">
+                            <input type="text" name="user-name" placeholder="Ваше имя">
+                          </div>
+                          <div class="ticket-form__input ticket-form__input_mail">
+                            <input type="text" name="mail" placeholder="Ваш e-mail">
+                          </div>
+                          <select class="select-nice" name="theme">
+                            <option value="1">Тема</option>
+                            <option value="1">Тема 1</option>
+                            <option value="1">Тема 2</option>
+                            <option value="1">Тема 3</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-lg-6 ticket-form__input-wrap">
+                          <div class="ticket-form__input ticket-form__input_text">
+                            <textarea type="text" name="message" placeholder="Введите текст сообщения"></textarea>
+                          </div>
+                          <div class="ticket-form__info-wrap"><span class="ticket-form__info">Гарантируем конфидициальность ваших данных</span>
+                            <button class="ticket-form__btn match-btn active" type="submit">Создать тикет</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tickets">
+                      <div class="tickets__header"><span class="tickets__info tickets__info_data">Дата</span><span class="tickets__info tickets__info_ticket">Тикет</span><span class="tickets__info tickets__info_status">Статус</span></div>
+                      <div class="tickets__ticket-line">
+                        <div class="tickets__data-wrap tickets__info_data"><span class="tickets__data">14.04.19</span><span class="tickets__time">13:35</span></div>
+                        <div class="tickets__info_ticket">
+                          <p class="tickets__text">Я бы хотел узнать, будет ли проведен турнир по игре DODA 2 16 июня?</p>
+                        </div>
+                        <div class="tickets__info_status"><span class="tickets__status tickets__status_process" title="В процессе">В процессе</span></div>
+                      </div>
+                      <div class="tickets__ticket-line">
+                        <div class="tickets__data-wrap tickets__info_data"><span class="tickets__data">14.04.19</span><span class="tickets__time">13:35</span></div>
+                        <div class="tickets__info_ticket">
+                          <p class="tickets__text">Уточните, пожалуйста,  сколько будет игроков в команде, в турнире по игре DODA 2?  Можно Пригласить друзей?</p>
+                        </div>
+                        <div class="tickets__info_status"><span class="tickets__status tickets__status_expects" title="Ожидает ответа">Ожидает ответа</span></div>
+                      </div>
+                      <div class="tickets__ticket-line">
+                        <div class="tickets__data-wrap tickets__info_data"><span class="tickets__data">14.04.19</span><span class="tickets__time">13:35</span></div>
+                        <div class="tickets__info_ticket">
+                          <p class="tickets__text">Я бы хотел узнать, будет ли проведен турнир по игре DODA 2 16 июня?</p>
+                        </div>
+                        <div class="tickets__info_status"><span class="tickets__status tickets__status_given" title="Ответ дан">Ответ дан</span></div>
+                      </div>
+                      <div class="tickets__ticket-line">
+                        <div class="tickets__data-wrap tickets__info_data"><span class="tickets__data">14.04.19</span><span class="tickets__time">13:35</span></div>
+                        <div class="tickets__info_ticket">
+                          <p class="tickets__text">Уточните, пожалуйста,  сколько будет игроков в команде, в турнире по игре DODA 2?  Можно Пригласить друзей?</p>
+                        </div>
+                        <div class="tickets__info_status"><span class="tickets__status tickets__status_close" title="Тикет закрыт">Тикет закрыт</span></div>
+                      </div>
+                      <div class="tickets__ticket-line">
+                        <div class="tickets__data-wrap tickets__info_data"><span class="tickets__data">14.04.19</span><span class="tickets__time">13:35</span></div>
+                        <div class="tickets__info_ticket">
+                          <p class="tickets__text">Я бы хотел узнать, будет ли проведен тернир по игре DODA 2 16 июня?</p>
+                        </div>
+                        <div class="tickets__info_status"><span class="tickets__status tickets__status_expects" title="Ожидает ответа">Ожидает ответа</span></div>
+                      </div>
+                      <div class="tickets__ticket-line">
+                        <div class="tickets__data-wrap tickets__info_data"><span class="tickets__data">14.04.19</span><span class="tickets__time">13:35</span></div>
+                        <div class="tickets__info_ticket">
+                          <p class="tickets__text">Уточните, пожалуйста,  сколько будет игроков в команде, в турнире по игре DODA 2?  Можно Пригласить друзей?</p>
+                        </div>
+                        <div class="tickets__info_status"><span class="tickets__status tickets__status_expects" title="Ожидает ответа">Ожидает ответа</span></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"><img class="footer-bg" src="images/box.png" alt="">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4 footer-info">
+              <div class="logo"><a class="logo-link" href="index.html"><img src="images/logo.png" alt=""></a></div>
+              <p class="footer-copyright">© Copyright 2016-2018 Livestream Gaming Ltd. Все права защищены. Азартные игры могут вызывать зависимость. </p>
+            </div>
+            <div class="col-12 col-lg-8 footer-nav-wrap">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 nav"><span class="nav__title">NeonBet</span>
+                  <ul class="nav__list nav__list_column">
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">Правила сервиса</a></li>
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">Конфиденциальность</a></li>
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">Ответственная игра</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 nav"><span class="nav__title">Информация</span>
+                  <ul class="nav__list nav__list_column">
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">FAQ</a></li>
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">Бонусы и акции</a></li>
+                    <li class="nav__item nav__item_column"><a class="nav__link" href="#">Биткоин FAQ</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 nav"><span class="nav__title">Поддержка</span>
+                  <ul class="nav__list nav__list_column nav__list_icons">
+                    <li class="nav__item nav__item_column nav__item_icon nav__item_tel"><a class="nav__link" href="tel:+79095463445">+7 909 546 34 45</a></li>
+                    <li class="nav__item nav__item_column nav__item_icon nav__item_schedule"><a class="nav__link" href="#">работаем 24/7</a></li>
+                    <li class="nav__item nav__item_column nav__item_icon nav__item_mail"><a class="nav__link" href="mailto:support@neon.bet">support@neon.bet</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="mask-bet"></div>
+      <div class="twich-wrap">
+        <div class="twich-header">
+          <div class="lang-wrap">
+            <div class="lang"><a class="lang__link" href="#">RU</a></div>
+            <div class="lang"><a class="lang__link" href="#">EN</a></div>
+          </div><span class="twich-close"></span>
+        </div>
+        <div class="twich-video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p5VD49suIUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="bet"><span class="bet__open-btn">Ваши ставки</span>
+        <div class="bet__content">
+          <div class="bet__header"><a class="match-btn bet__btn active" href="#">Ординар</a><a class="match-btn bet__btn" href="#">Экспресс</a></div>
+          <div class="bet__match-wrap scroll">
+            <div class="match match_bet">
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn match__btn_check" href="#"></a>
+              </div>
+              <div class="match__info">
+                <div class="match__game"><img src="images/img11.png" alt=""></div><a class="match__watch active" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+              </div>
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn match__btn_close" href="#"></a>
+              </div>
+            </div>
+            <div class="match match_bet">
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn match__btn_close" href="#"></a>
+              </div>
+              <div class="match__info">
+                <div class="match__game"><img src="images/img11.png" alt=""></div><a class="match__watch active" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+              </div>
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn match__btn_check" href="#"></a>
+              </div>
+            </div>
+            <div class="match match_bet">
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img7.png" alt=""></div><span class="match__team-name">WAcademy</span><span class="match__team-rating">1,43</span><a class="match__btn match__btn_check" href="#"></a>
+              </div>
+              <div class="match__info">
+                <div class="match__game"><img src="images/img11.png" alt=""></div><a class="match__watch active" href="#">LIFE</a><span class="match__time">14:14</span><span class="match__data">14 мар</span><span class="match__vs">vs</span>
+              </div>
+              <div class="match__team">
+                <div class="match__logo match__logo_bet"><img src="images/img8.png" alt=""></div><span class="match__team-name">Unique Team</span><span class="match__team-rating">5,27</span><a class="match__btn match__btn_close" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="bet__event-wrap">
+            <div class="bet__event-container scroll">
+              <div class="event event_bet">
+                <div class="event__dott"><img src="images/circle.png" alt=""></div>
+                <div class="event__choise event__choise_bet">
+                  <div class="event__team-bet_bet">
+                    <div class="event__team-logo event__team-logo_bet event__team-logo_mask"><img src="images/img7.png" alt=""></div><span class="event__team-name event__team-name_bet">Black Ananas</span>
+                  </div><span class="event__rating event__rating_bet">1,43</span>
+                  <div class="event__game"><img src="images/img1.png" alt=""><span class="event__count">5 : 2</span><span class="event__winner">MAP 3 WINNER</span></div><span class="event__rating event__rating_bet">2,6</span>
+                  <div class="event__team-bet">
+                    <div class="event__team-logo event__team-logo_bet"><img src="images/img8.png" alt=""></div><span class="event__team-name event__team-name_bet">Hero</span>
+                  </div>
+                </div>
+              </div>
+              <div class="event event_bet">
+                <div class="event__dott"><img src="images/circle.png" alt=""></div>
+                <div class="event__choise event__choise_bet">
+                  <div class="event__team-bet_bet">
+                    <div class="event__team-logo event__team-logo_bet"><img src="images/img7.png" alt=""></div><span class="event__team-name event__team-name_bet">Black Ananas</span>
+                  </div><span class="event__rating event__rating_bet">1,43</span>
+                  <div class="event__game"><img src="images/img1.png" alt=""><span class="event__count">5 : 2</span><span class="event__winner">MAP 3 WINNER</span></div><span class="event__rating event__rating_bet">2,6</span>
+                  <div class="event__team-bet">
+                    <div class="event__team-logo event__team-logo_bet event__team-logo_mask"><img src="images/img8.png" alt=""></div><span class="event__team-name event__team-name_bet">Hero</span>
+                  </div>
+                </div>
+              </div>
+              <div class="event event_bet">
+                <div class="event__dott"><img src="images/circle.png" alt=""></div>
+                <div class="event__choise event__choise_bet">
+                  <div class="event__team-bet_bet">
+                    <div class="event__team-logo event__team-logo_bet event__team-logo_mask"><img src="images/img7.png" alt=""></div><span class="event__team-name event__team-name_bet">Black Ananas</span>
+                  </div><span class="event__rating event__rating_bet">1,43</span>
+                  <div class="event__game"><img src="images/img1.png" alt=""><span class="event__count">5 : 2</span><span class="event__winner">MAP 3 WINNER</span></div><span class="event__rating event__rating_bet">2,6</span>
+                  <div class="event__team-bet">
+                    <div class="event__team-logo event__team-logo_bet"><img src="images/img8.png" alt=""></div><span class="event__team-name event__team-name_bet">Hero</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bet-form">
+            <form action="" name="bet-form">
+              <div class="bet-form__input-wrap">
+                <input class="bet-form__input" type="text" name="bet-sum" placeholder="Введите сумму">
+                <button class="match-btn bet-form__btn active" type="submit">Оплатить</button>
+              </div>
+              <div class="bet-form__info-wrap"><span class="bet-form__info">Пользователь получит: </span><span class="bet-form__sum">12 579 р</span></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

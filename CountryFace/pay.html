@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CountryFace</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/libs.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <section class="pay-section">
+          <div class="container"><span class="section-title">Забронировать место</span>
+            <div class="count count_dark"><span class="count__title">Варианты размещения</span>
+              <form class="pay-form" action="#">
+                <div class="variant-wrap">
+                  <div class="variant">
+                    <input class="pay-form__input-radio" type="radio" name="variant" value="standart" id="standart">
+                    <label class="pay-form__label" for="standart"></label>
+                    <div class="variant__info"><span class="variant__title">Стандарт</span><span class="variant__item">Размещение анкеты на сайте</span><span class="variant__item">Участие во всех розыгрышах</span></div>
+                  </div>
+                  <div class="variant variant_vip">
+                    <input class="pay-form__input-radio" type="radio" name="variant" value="vip" id="vip">
+                    <label class="pay-form__label" for="vip"></label>
+                    <div class="variant__info"><span class="variant__title">VIP</span><span class="variant__item">Можно редактировать анкету</span><span class="variant__item">Участие во всех розыгрышах</span><span class="variant__item">Подсветка анкеты на карте</span><span class="variant__item">Публикация ссылки на ваш сайт,  инстаграм, или любой другой ресурс.</span><img class="variant__img" src="images/polygon.png" alt=""></div>
+                  </div>
+                </div><span class="count__title">Оплата</span>
+                <div class="pay-wrap">
+                  <div class="pay">
+                    <input class="pay-form__input-radio" type="radio" name="pay" value="bankCard" id="bankCard">
+                    <label class="pay-form__label pay-form__label_pay" for="bankCard"></label>
+                    <div class="pay__logo"><img src="images/credit-card.png" alt=""><span class="pay__logo-title">Банковская карта</span></div>
+                  </div>
+                  <div class="pay">
+                    <input class="pay-form__input-radio" type="radio" name="pay" value="qiwi" id="qiwi">
+                    <label class="pay-form__label pay-form__label_pay" for="qiwi"></label>
+                    <div class="pay__logo"><img src="images/qiwi.png" alt=""></div>
+                  </div>
+                  <div class="pay">
+                    <input class="pay-form__input-radio" type="radio" name="pay" value="yandex" id="yandex">
+                    <label class="pay-form__label pay-form__label_pay" for="yandex"></label>
+                    <div class="pay__logo"><img src="images/yandex.png" alt=""></div>
+                  </div>
+                  <div class="pay">
+                    <input class="pay-form__input-radio" type="radio" name="pay" value="web" id="web">
+                    <label class="pay-form__label pay-form__label_pay" for="web"></label>
+                    <div class="pay__logo"><img src="images/web.png" alt=""></div>
+                  </div>
+                  <div class="pay">
+                    <input class="pay-form__input-radio" type="radio" name="pay" value="alfa" id="alfa">
+                    <label class="pay-form__label pay-form__label_pay" for="alfa"></label>
+                    <div class="pay__logo"><img src="images/alfa.png" alt=""></div>
+                  </div>
+                  <div class="pay">
+                    <input class="pay-form__input-radio" type="radio" name="pay" value="paypal" id="paypal">
+                    <label class="pay-form__label pay-form__label_pay" for="paypal"></label>
+                    <div class="pay__logo"><img src="images/paypal.png" alt=""></div>
+                  </div>
+                  <div class="pay">
+                    <input class="pay-form__input-radio" type="radio" name="pay" value="mobilePhone" id="mobilePhone">
+                    <label class="pay-form__label pay-form__label_pay" for="mobilePhone"></label>
+                    <div class="pay__logo"><img src="images/mobile-phone-1.png" alt=""><span class="pay__logo-title">Со счета мобильного</span></div>
+                  </div>
+                </div><span class="count__info">Промо-код (если есть)</span>
+                <div class="pay-form__input-wrap">
+                  <div class="add-form__input-box">
+                    <input class="add-form__input" type="text" placeholder="Ваш промо-код"><span class="add-form__input-title">Ваш промо-код</span>
+                  </div><span class="pay-form__sum-wrap"><span class="pay-form__sum">100</span><span class="pay-form__currency">&#8381</span></span>
+                </div>
+                <div class="add-form__checkbox-wrap add-form__checkbox-wrap_policy">
+                  <input class="add-form__checkbox" type="checkbox" name="check4" value="check4" required id="agreePolicy">
+                  <label class="add-form__label" for="agreePolicy"> <span>Я принимаю</span><a class="add-form__privat-policy add-form__privat-policy_small link-hover" href="#">правила участия в проекте</a><span>, а также даю согласие на обработку персональных данных.</span></label>
+                </div>
+                <button class="main-btn main-btn_notActive" type="submit"><span class="main-btn__text">Перейти к оплате</span></button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

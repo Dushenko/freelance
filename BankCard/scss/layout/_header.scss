@@ -1,0 +1,71 @@
+.header {
+	padding: 35px 0 30px;
+	border-bottom: 2px solid #eee;
+	&__tab.active {
+		font-weight: bold;
+	}
+	&__link {
+		position: relative;
+		color: #000;
+		font-size: 1.4rem;
+		margin-right: 70px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__order,
+	&__card  {
+		position: absolute;
+		top: 6px;
+		width: 20px;
+		height: 20px;
+		font-size: .8rem;
+		color: #fff;
+		border-radius: 50%;
+		padding: 0 6px;
+		margin: 0 0 0 6px;
+	}
+	&__order {
+		background-color: #7db541;
+	}
+	&__card {
+		background-color: #f44336;
+	}
+	&__checkbox {
+		padding-left: 45px;
+		margin: 0 -15px 0 auto;
+		a {
+			color: #b8b8b8;
+			font-size: 1.2rem;
+			margin-right: 20px;
+		}
+	}
+	&__tgSwitch {
+		position: relative;
+		top: 7px;
+		height: 15px;
+		width: 30px;
+		background: #d8d9db;
+		padding: 3px;
+		border-radius: 20px;
+		transition: .4s;
+		cursor: pointer;
+	}
+	&__tgSwitch.active {
+		background: #4bd865;
+	}
+	&__tgSwitch > .slider {
+		position: absolute;
+		top: -5px;
+		left: -12px;
+		width: 25px;
+		height: 25px;
+		background: #f8f8f8;
+		border: 1px solid #dbdbdb;
+		border-radius: 50%;
+		transition: .4s;
+	}
+	&__tgSwitch > input {
+		display: none;
+	}
+}

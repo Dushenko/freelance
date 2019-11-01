@@ -1,0 +1,70 @@
+.footer {
+	background: linear-gradient(to right, #FB6340, #FBB140);
+	padding: 50px 0;
+	@media screen and (max-width: 1024px) {
+		padding: 35px 0;
+	}
+	@media screen and (max-width: 768px) {
+		padding: 20px 0;
+	}
+}
+
+.soc {
+	margin-bottom: 50px;
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 30px;
+	}
+	@media screen and (max-width: 768px) {
+		margin-bottom: 20px;	
+	}
+}
+
+.mail,
+.telegram {
+	position: relative;
+	padding-left: 55px;
+	&:hover {
+		color: #ffc390;
+	}
+}
+
+.mail {
+	&:before {
+		position: absolute;
+		content: url('../img/mail.png');
+		left: 0;
+		top: 65%;
+		transform: translateY(-50%);
+	}
+}
+
+.telegram {
+	&:before {
+		position: absolute;
+		content: url('../img/telegram.png');
+		left: 0;
+		top: 65%;
+		transform: translateY(-50%);
+	}
+}
+
+.soc-link {
+	display: block;
+	color: #fff;
+	font-size: 24px;
+	margin-bottom: 30px;
+	@media screen and (max-width: 1024px) {
+		font-size: 20px;
+		margin-bottom: 25px;
+	}
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+		margin-bottom: 20px;	
+	}
+}
+
+.copyright {
+	text-align: center;
+	margin-bottom: 0;
+}
+

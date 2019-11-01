@@ -1,0 +1,395 @@
+.header-top {
+	background-color: #303030;
+	padding: 12px 0;
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.menu {
+		display: flex;
+		&__item {
+			margin-right: 40px;
+		}
+
+		&__link {
+			color: #9e9d9d;
+			font-size: 12px;
+			font-weight: 300;
+			&:hover {
+				color: #f1a001;
+			}
+		}
+	}
+
+	.lang-btn {
+		color: #e9a520;
+		font-size: 14px;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.header-menu {
+	position: relative;
+	background-color: #222;
+	padding: 30px 0;
+	@media screen and (max-width: 1024px) {
+		padding: 0;
+	}
+	.container {
+		// position: relative;
+		display: flex;
+		align-items: center;
+		@media screen and (max-width: 1024px) {
+			justify-content: space-between;
+		}
+	}
+
+	.logo {
+		margin-right: 35px;
+		@media screen and (max-width: 1150px) {
+			margin-right: 18px;
+		}
+		@media screen and (max-width: 1024px) {
+			margin: 0;
+		}
+		img {
+			@media screen and (max-width: 768px) {
+				width: 100px;
+			}
+		}
+	}
+
+	.search {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		@media screen and (max-width: 1024px) {
+			margin: 0;
+		}
+		i {
+			color: #fff;
+			font-size: 18px;
+			&:hover {
+				color: #f1a001;
+			}
+		}
+	}
+
+	.message,
+	.search-btn {
+		cursor: pointer;
+	}
+
+	.icon {
+		width: 30px;
+		height: 30px;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			fill: #f1a001;
+		}
+		@media screen and (max-width: 768px) {
+			width: 25px;
+			height: 25px;
+		}
+	}
+
+	.form-icon {
+		fill: #f1a001;
+	}
+
+	.icon.active {
+		fill: #f1a001;
+	}
+
+	.message {
+		@media screen and (max-width: 1024px) {
+			display: none;
+		}
+	}
+
+	.search-btn {
+		margin-left: 25px;
+		@media screen and (max-width: 1150px) {
+			margin-left: 15px;
+		}
+		@media screen and (max-width: 1024px) {
+			margin-left: 10px;
+		}
+	}
+
+	.search-btn.hidden {
+		visibility: hidden;
+	}
+
+	.search-box {
+		display: none;
+		@media screen and (max-width: 1024px) {
+			display: block;
+			position: absolute;
+			right: 25px;
+			top: 16%;
+			z-index: 60;
+			.icon {
+				width: 20px;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			top: 20%;
+		}
+	}
+
+	//forms
+
+	.main-form {
+		width: 0;
+		overflow: hidden;
+		transition: .3s;
+		@media screen and (max-width: 1024px) {
+			
+		}
+	}
+
+	.main-form.active {
+		width: 230px;
+		margin-left: 20px;
+		@media screen and (max-width: 1150px) {
+			margin-left: 10px;
+		}
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+			background-color: #222;
+			margin: 0;
+			padding: 5px 15px;
+		}
+	}
+
+	.form-input {
+		background-color: #fff;
+		width: 230px;
+		height: 32px;
+		padding: 10px 12px;
+		&::placeholder {
+			color: #9e9d9d;
+			font-size: 14px;
+			font-weight: 300;
+		}
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+			border-radius: 5px;
+		}
+	}
+
+	.search-form {
+		position: relative;
+		@media screen and (max-width: 1024px) {
+			position: absolute;
+			top: 72px;
+			left: 0;
+			right: 0;
+			z-index: 50;
+			height: 43px;
+			background-color: #222;
+		}
+		@media screen and (max-width: 768px) {
+			top: 52px;
+		}
+	}
+}
+
+.nav {
+	@media screen and (max-width: 1024px) {
+		position: absolute;
+		top: 72px;
+		left: -100%;
+		z-index: 20;
+		background-color: #222;
+		display: flex;
+		flex-direction: column;
+		padding: 0 15px 15px;
+		transition: all 0.3s ease-in-out;
+	}
+	@media screen and (max-width: 768px) {
+		top: 52px;
+	}
+	&__list {
+		display: flex;
+		@media screen and (max-width: 1024px) {
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item {
+		margin: 0 16px;
+		@media screen and (max-width: 1150px) {
+			margin: 0 13px;
+		}
+		@media screen and (max-width: 1024px) {
+			margin: 0 0 10px;
+		}
+	}
+
+	&__link {
+		color: #fff;
+		font-size: 16px;
+
+		&_active {
+			color: #f1a001;
+		}
+		&:hover {
+			color: #f1a001;
+		}
+		@media screen and (max-width: 1150px) {
+			font-size: 14px;
+		}
+		@media screen and (max-width: 1024px) {
+			font-size: 18px;
+		}
+	}
+}
+
+.hashtag-wrap {
+	padding: 11px 0 14px;
+	border-bottom: 1px solid #dedede;
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+}
+
+.hashtags {
+	display: flex;
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 20px;
+	}
+	&__item {
+		margin-right: 38px;
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+			border: 1px #727272 solid;
+			border-radius: 5px;
+			padding: 8px;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__link {
+		color: #f1a001;
+		font-size: 16px;
+		font-weight: bold;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			color: #d88f00;
+		}
+	}
+}
+
+//burger
+
+.hashtags-burger,
+.soc-burger {
+	display: none;
+	@media screen and (max-width: 1024px) {
+		display: block;
+	}
+}
+
+.soc-burger {
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 0 !important;
+		display: flex;
+		.soc__link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 42px;
+			height: 42px;
+			border: 1px #727272 solid;
+			border-radius: 5px;
+			padding: 7px;
+			margin-right: 5px;
+		}
+	}
+}
+
+.nav.show {
+	left: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.burger-opener {
+	display: none;
+	margin-left: -15px;
+	@media screen and (max-width: 1024px) {
+		display: block;
+	}
+}
+
+//burger-mask
+.burger-mask {
+	display: none;
+	&__mask {
+		position: absolute;
+		top: 72px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .23);
+		z-index: 10;
+		@media screen and (max-width: 768px) {
+			top: 52px;
+		}
+	}
+}
+.burger-mask.show {
+	display: block;
+}
+
+// Burger
+.ham {
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 600ms;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	@media screen and (max-width: 768px) {
+		width: 50px;
+	}
+}
+.hamRotate.active {
+	transform: rotate(45deg);
+}
+.hamRotate180.active {
+	transform: rotate(180deg);
+}
+.line {
+	fill: none;
+	transition: stroke-dasharray 600ms, stroke-dashoffset 600ms;
+	stroke: #f1a001;
+	stroke-width: 4;
+	stroke-linecap: round;
+}
+.ham4 .top {
+	stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+	stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+	stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+	stroke-dashoffset: -68px;
+}

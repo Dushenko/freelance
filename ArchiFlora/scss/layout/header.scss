@@ -1,0 +1,350 @@
+.header {
+	padding: 15px 0;
+	@media screen and (max-width: 1024px) {
+		height: 55px;
+	}
+	.container {
+		position: relative;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.header-shadow {
+	position: relative;
+	z-index: 100;
+	-webkit-box-shadow: 0px 2px 30px 5px rgba(232,232,232,1);
+	-moz-box-shadow: 0px 2px 30px 5px rgba(232,232,232,1);
+	box-shadow: 0px 2px 30px 5px rgba(232,232,232,1);
+	&_widescreen {
+		@media screen and (max-width: 1200px) {
+			box-shadow: none;
+		}
+	}
+	&_desktop {
+		position: relative;
+		z-index: 100;
+		box-shadow: none;
+		@media screen and (max-width: 1200px) {
+			-webkit-box-shadow: 0px 2px 30px 5px rgba(232,232,232,1);
+			-moz-box-shadow: 0px 2px 30px 5px rgba(232,232,232,1);
+			box-shadow: 0px 2px 30px 5px rgba(232,232,232,1);
+		}
+	}
+	&_tablet {
+		@media screen and (max-width: 768px) {
+			box-shadow: none;
+		}
+	}
+}
+
+.logo {
+	img {
+		width: 75px;
+		height: 55px;
+	}
+	@media screen and (max-width: 1024px) {
+		position: absolute;	
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		img {
+			width: 45px;
+			height: 35px;
+		}
+	}
+}
+
+.nav {
+	overflow: hidden;
+	@media screen and (max-width: 1024px) {
+		width: 350px;
+		padding: 45px 37px 25px;
+		position: absolute;	
+		top: -1850%;
+		left: 40px;
+		background-color: #fff;
+		transition: all 0.3s ease-in-out;
+		z-index: 1500;
+	}
+	@media screen and (max-width: 768px) {
+		left: 0;
+	}
+	@media screen and (max-width: 480px) {
+		width: 100%;
+		padding: 45px 24px 25px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		@media screen and (max-width: 1024px) {
+			flex-direction: column;
+		}
+	}
+
+	&__item {
+		position: relative;
+		margin: 0 25px;
+		@media screen and (max-width: 1024px) {
+			margin: 0;
+			border-bottom: 1px solid #e8e8e8;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+
+	&__link {
+		display: block;
+		color: #343434;
+		font-size: 18px;
+		font-weight: 500;
+		&_active {
+			color: #92bd38;
+		}
+		&:hover {
+			color: #92bd38;
+		}
+		@media screen and (max-width: 1024px) {
+			text-transform: uppercase;
+			font-size: 17px;
+			font-weight: 400;
+			padding: 25px 0;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 16px;
+			padding: 18px 0;
+		}
+	}
+
+	&__main-sub {
+		position: relative;
+		background-color: #f6f6f6;
+		display: none;
+		&_open {
+			display: block;
+		}
+		&:before {
+			position: absolute;
+			content: '';
+			width: 170%;
+			height: 100%;
+			background: #f6f6f6;
+			top: 0;
+			left: -80px;
+			z-index: -1;
+		}
+	}
+	&__item-sub {
+		position: relative;
+		background-color: #f6f6f6;
+		padding: 15px 0 15px 15px;
+	}
+	&__link-sub {
+		text-transform: uppercase;
+		font-size: 17px;
+		font-weight: 400;
+		color: #343434;
+		&.active {
+			color: #4274ae;
+		}
+	}
+	&__sub {
+		width: 100%;
+		display: none;
+		&_open {
+			display: block;
+		}
+		li {
+			width: 100%;
+			a {
+				color: #3f4048;
+				padding: 20px 0 5px 20px;
+			}
+			&:hover a {
+				color: #4274ae;
+			}
+		}
+	}
+	.arrow {
+		position: absolute;
+		content: '';
+		top: 20px;
+		right: 5px;
+		width: 7px;
+		height: 7px;
+		border-top: 1px solid #3f4048;
+		border-left: 1px solid #3f4048;
+		-webkit-transform: rotate(135deg);
+		transform: rotate(135deg);
+		transition: .5s;
+		display: none;
+		&_main {
+			top: 32px;
+			@media screen and (max-width: 768px) {
+				top: 25px;
+			}
+		}
+		@media screen and (max-width: 1024px) {
+			display: block;
+		}
+	}
+	.arrow.active {
+		transition: .5s;
+		transform: rotate(45deg);
+	}
+}
+
+
+.nav.show {
+	top: -15px;
+	transition: all 0.3s ease-in-out;
+}
+
+.contacts {
+	font-family: 'Comfortaa';
+	color: #343434;
+	font-size: 16px;
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+	&__tel {
+		display: flex;
+		margin-bottom: 15px;
+	}
+
+	&__number {
+		position: relative;
+		color: #343434;
+		&_first {
+			margin-right: 50px;
+		}
+		&:before {
+			position: absolute;
+			content: url('../img/tel.png');
+			top: 50%;
+			left: -25px;
+			transform: translateY(-50%);
+		}
+		&:hover {
+			color: #92bd38;
+		}
+	}
+
+	&__address {
+		position: relative;
+		&:before {
+			position: absolute;
+			content: url('../img/home.png');
+			top: 50%;
+			left: -25px;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.contact-btn {
+	display: none;
+	color: #f46036;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 10px 20px;
+	margin: 0 30px 0 auto;
+	border-radius: 30px;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 5px 3px rgba(250,185,166,0.72);
+	-moz-box-shadow: 0px 0px 5px 3px rgba(250,185,166,0.72);
+	box-shadow: 0px 0px 5px 3px rgba(250,185,166,0.72);
+	&:hover {
+		color: #fff;
+		background-color: #f46036;
+		transition: all 0.3s ease-in-out;
+	}
+	@media screen and (max-width: 1024px) {
+		display: block;
+	}
+	@media screen and (max-width: 768px) {
+		margin: 0 5px 0 auto;
+	}
+	@media screen and (max-width: 480px) {
+		font-size: 12px;
+		font-weight: 400;
+		padding: 6px 10px;
+	}
+}
+
+.burger-opener {
+	position: absolute;
+	z-index: 2000;
+	top: 50%;
+	left: 55px;
+	transform: translateY(-50%);
+	display: none;
+	@media screen and (max-width: 1024px) {
+		display: block;
+	}
+	@media screen and (max-width: 768px) {
+		left: 15px;
+	}
+	@media screen and (max-width: 480px) {
+		left: 0px;
+	}
+}
+
+// burger-mask
+
+.burger-mask {
+	display: none;
+	&__mask {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .23);
+		z-index: 80;
+	}
+}
+.burger-mask.show {
+	display: block;
+}
+
+
+// Burger
+.ham {
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 600ms;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.hamRotate.active {
+	transform: rotate(45deg);
+}
+.hamRotate180.active {
+	transform: rotate(180deg);
+}
+.line {
+	fill: none;
+	transition: stroke-dasharray 600ms, stroke-dashoffset 600ms;
+	stroke: #92bd38;
+	stroke-width: 3.5;
+	stroke-linecap: round;
+}
+.ham4 .top {
+	stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+	stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+	stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+	stroke-dashoffset: -68px;
+}
+// Burger End

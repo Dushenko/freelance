@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>card</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		
+		<header class="header">
+			<div class="container">
+				<div class="row header__content">
+					<div class="col-5 d-flex header__nav">
+						<a href="#" class="header__link header__tab orders-opener">Заказы<span class="header__order">1</span></a>
+						<a href="#" class="header__link header__tab couriers-opener">Курьеры</a>
+						<a href="#" class="header__link header__tab tabItem">Карты<span class="header__card">1</span></a>
+					</div>
+					<div class="col-3 header__checkbox d-flex">
+						<a href="#">Автоматический</a>
+						<div class="header__tgSwitch">
+							<div class="slider"></div>
+							<input type="checkbox" checked>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+
+			<section class="admin-section ">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-12">
+							<span class="title">Новые</span>
+						</div>
+					</div>
+
+					<div class="row new-order align-items-center">
+						<div class="col-1">					
+							<img class="new-order__logo" src="img/img-1.png" alt="">
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center new-order__order new-order__box">
+							<span class="new-order__title">Заказ</span>
+							<span class="new-order__info" >200422</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center new-order__operator new-order__box">	
+							<span class="new-order__title">Оператор</span>
+							<span class="new-order__info" >Петя</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center new-order__bank new-order__box">		
+							<span class="new-order__title">Банк</span>
+							<span class="new-order__info" >Сбербанк</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center new-order__sum new-order__box">
+							<span class="new-order__title">Сумма</span>
+							<span class="new-order__info" >20 000р</span>
+						</div>
+						<div class="col-2 new-order__btn">					
+							<span class="new-order__button">Выдать</span>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<span class="title">Выданы</span>
+						</div>
+					</div>
+
+					<div class="row issued-order align-items-center">
+						<div class="col-1">					
+							<img class="issued-order__logo" src="img/img-1.png" alt="">
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__order issued-order__box">
+							<span class="issued-order__title">Заказ</span>
+							<span class="issued-order__info" >200422</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__operator issued-order__box">		
+							<span class="issued-order__title">Оператор</span>
+							<span class="issued-order__info" >Петя</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__bank issued-order__box">	
+							<span class="completed-order__title">Банк</span>
+							<span class="completed-order__info" >Сбербанк</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__sum issued-order__box">
+							<span class="issued-order__title">Сумма</span>
+							<span class="issued-order__info" >20 000р</span>
+						</div>
+						<div class="col-2 issued-order__btn offset-5">
+							<span class="issued-order__button">Изменить</span>
+							<label class="issued-order__checkbox">
+								<input type="checkbox" checked="checked">
+								<span class="issued-order__checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="row issued-order align-items-center">
+						<div class="col-1">
+							<img class="issued-order__logo" src="img/img-1.png" alt="">
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__order issued-order__box">
+							<span class="issued-order__title">Заказ</span>
+							<span class="issued-order__info" >200422</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__operator issued-order__box">		
+							<span class="issued-order__title">Оператор</span>
+							<span class="issued-order__info" >Петя</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__bank issued-order__box">	
+							<span class="completed-order__title">Банк</span>
+							<span class="completed-order__info" >Сбербанк</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__sum issued-order__box">
+							<span class="issued-order__title">Сумма</span>
+							<span class="issued-order__info" >20 000р</span>
+						</div>
+						<div class="col-3 issued-order__numbers d-flex flex-column">
+							<span class="issued-order__numbers-sum">15 000р + 5 000 = 20 000р</span>
+							<span class="issued-order__time">2м. назад &nbsp &nbsp &nbsp &nbsp 1м. назад</span>
+						</div>
+						<div class="col-2 issued-order__btn">
+							<span class="issued-order__button">Изменить</span>
+							<label class="issued-order__checkbox">
+								<input type="checkbox" checked="checked">
+								<span class="issued-order__checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="row issued-order align-items-center">
+						<div class="col-1">					
+							<img class="issued-order__logo" src="img/img-2.png" alt="">
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__order issued-order__box">
+							<span class="issued-order__title">Заказ</span>
+							<span class="issued-order__info" >200422</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__operator issued-order__box">		
+							<span class="issued-order__title">Оператор</span>
+							<span class="issued-order__info" >Петя</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center issued-order__bank issued-order__box">	
+							<span class="completed-order__title">Монета</span>
+							<span class="completed-order__info" >Bitcoin</span>
+						</div>
+						<div class="col-2 d-flex flex-column justify-content-center issued-order__sum issued-order__box">
+							<span class="issued-order__title">Сумма</span>
+							<span class="issued-order__info" >1.2412521 BTC</span>
+						</div>
+						<div class="col-3 issued-order__numbers d-flex flex-column">
+							<span class="issued-order__numbers-sum">1.2412521 BTC (0/3)</span>
+							<span class="issued-order__time">0x22000001dddd23r3r1323t24yerg</span>
+						</div>
+						<div class="col-2 issued-order__btn">
+							<span class="issued-order__button">Изменить</span>
+							<label class="issued-order__checkbox">
+								<input type="checkbox" checked="checked">
+								<span class="issued-order__checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<span class="title">Завершённые</span>
+						</div>
+					</div>
+
+					<div class="row completed-order align-items-center">
+						<div class="col-1">					
+							<img class="completed-order__logo" src="img/img-1.png" alt="">
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center completed-order__order completed-order__box">
+							<span class="completed-order__title">Заказ</span>
+							<span class="completed-order__info" >200422</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center completed-order__operator completed-order__box">
+							<span class="completed-order__title">Оператор</span>
+							<span class="completed-order__info" >Петя</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center completed-order__bank completed-order__box">
+							<span class="completed-order__title">Банк</span>
+							<span class="completed-order__info" >Сбербанк</span>
+						</div>
+						<div class="col-1 d-flex flex-column justify-content-center completed-order__sum completed-order__box">
+							<span class="completed-order__title">Сумма</span>
+							<span class="completed-order__info" >20 000р</span>
+						</div>
+						<div class="col-1 completed-order__checkbox">
+							<span class="completed-order__check"></span>
+						</div>
+					</div>
+
+					<div class="popup">
+						<div class="row popup__header">
+							<div class="col-6">
+								<span class="popup__main-title">Заказ на сумму 220 000 руб, осталось ещё 0 руб</span>
+							</div>
+							<div class="col-2 popup__btn">
+								<span class="popup__button">Выдать</span>
+							</div>
+						</div>
+
+						<div class="row popup__order align-items-center">
+							<div class="col-3  d-flex flex-column">
+								<span class="popup__title">Сбербанк</span>
+								<span class="popup__card">0000 0000 0000 0000</span>
+								<span class="popup__name">Иванов Иван Иванович</span>
+							</div>
+							<div class="col-1 d-flex flex-column">
+								<span class="popup__title">Баланс</span>
+								<span class="popup__sum">104p</span>
+							</div>
+							<div class="col-1 d-flex flex-column">
+								<span class="popup__title">День</span>
+								<span class="popup__sum">130 000р</span>
+							</div>
+							<div class="col-1 d-flex flex-column">
+								<span class="popup__title">Месяц</span>
+								<span class="popup__sum">650 000р</span>
+							</div>
+							<div class="col-3 offset-3">
+								<form action="#">
+									<input class="popup__number" type="text">
+								</form>
+								<label class="popup__checkbox">
+									<input type="checkbox" checked="checked">
+									<span class="popup__checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="row popup__order align-items-center">
+							<div class="col-3  d-flex flex-column">
+								<span class="popup__title">Сбербанк</span>
+								<span class="popup__card">0000 0000 0000 0000</span>
+								<span class="popup__name">Иванов Иван Иванович</span>
+							</div>
+							<div class="col-1 d-flex flex-column">
+								<span class="popup__title">Баланс</span>
+								<span class="popup__sum">104p</span>
+							</div>
+							<div class="col-1 d-flex flex-column">
+								<span class="popup__title">День</span>
+								<span class="popup__sum">130 000р</span>
+							</div>
+							<div class="col-1 d-flex flex-column">
+								<span class="popup__title">Месяц</span>
+								<span class="popup__sum">650 000р</span>
+							</div>
+							<div class="col-3 offset-3">
+								<form action="#">
+									<input class="popup__number" type="text">
+								</form>
+								<label class="popup__checkbox">
+									<input type="checkbox" checked="checked">
+									<span class="popup__checkmark"></span>
+								</label>
+							</div>
+						</div>	
+					</div>	
+
+				</div>
+			</section>
+
+			<section class="orders-section">
+				<div class="orders-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-1">
+								<span class="orders-header__name">Заказы</span>
+							</div>
+							<div class="col-1 orders-header__message justify-content-end">
+								<img src="img/message.png" alt="">
+								<span class="orders-header__number">1</span>
+							</div>
+							<div class="col-2 orders-header__checkbox d-flex justify-content-end">
+								<a href="#">Петя</a>
+								<div class="orders-header__tgSwitch">
+									<div class="slider"></div>
+									<input type="checkbox" checked>
+								</div>
+							</div>
+							<div class="col-1 d-flex justify-content-end">
+								<span class="orders-header__button"></span>
+							</div>
+
+							<div class="orders-header__popup-message">
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<span class="orders-title">В обработке</span>
+						</div>
+					</div>
+
+					<div class="row order align-items-center">
+						<div class="col-1 d-flex flex-column order__order order__box">
+							<span class="order__title">Заказ</span>
+							<span class="order__info">200422</span>
+						</div>
+						<div class="col-2 d-flex flex-column order__operator order__box">
+							<span class="order__title">Отдаю</span>
+							<span class="order__info"><img class="order__currency" src="img/bank-1.png" alt="">200 000 RUB</span>
+						</div>
+						<div class="col-2 d-flex flex-column order__bank order__box">		
+							<span class="order__title">Получаю</span>
+							<span class="order__info"><img class="order__currency" src="img/btc-1.png" alt="">0.4385987 BTC</span>
+						</div>
+						<div class="col-3 d-flex flex-column order__time order__box">
+							<span class="order__title">Реквизиты</span>
+							<span class="order__info">14r3EmdkRX5NMfE7M2Wx6Hv348Cg6EuyAH</span>
+						</div>
+						<div class="col-2 d-flex flex-column order__box">
+							<span class="order__title">Создан</span>
+							<span class="order__info">30 сек. назад</span>
+						</div>
+						<div class="col-1 order__btn d-flex align-items-center justify-content-end">
+							<span class="order__title">Реквизиты выданы</span>
+						</div>
+						<div class="col-1 order__button d-flex align-items-center justify-content-end">
+							<span class="order__green order__green-dot"><img class="chat-opener" src="img/btn-2.png" alt=""></span>
+							<span class="order__dots"></span>
+						</div>
+					</div>
+
+					<div class="row order align-items-center">
+						<div class="col-1 d-flex flex-column order__order order__box">
+							<span class="order__title">Заказ</span>
+							<span class="order__info">200422</span>
+						</div>
+						<div class="col-2 d-flex flex-column order__operator order__box">
+							<span class="order__title">Отдаю</span>
+							<span class="order__info"><img src="img/bank-1.png" alt="">200 000 RUB</span>
+						</div>
+						<div class="col-2 d-flex flex-column order__bank order__box">		
+							<span class="order__title">Получаю</span>
+							<span class="order__info"><img src="img/btc-1.png" alt="">0.4385987 BTC</span>
+						</div>
+						<div class="col-3 d-flex flex-column order__time order__box">
+							<span class="order__title">Реквизиты</span>
+							<span class="order__info">14r3EmdkRX5NMfE7M2Wx6Hv348Cg6EuyAH</span>
+						</div>
+						<div class="col-2 d-flex flex-column order__box">
+							<span class="order__title">Создан</span>
+							<span class="order__info">30 сек. назад</span>
+						</div>
+						<div class="col-1 order__btn d-flex align-items-center justify-content-end">
+							<span class="order__title">Выплата отправлена</span>
+						</div>
+						<div class="col-1 order__button d-flex align-items-center justify-content-end">
+							<span class="order__green"><img src="img/btn-2.png" alt=""></span>
+							<span class="order__dots"></span>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<span class="orders-title">Завершённые</span>
+						</div>
+					</div>
+
+					<div class="row order align-items-center">
+						<div class="col-1 d-flex flex-column order__order order__box">
+							<span class="order__title">Заказ</span>
+							<span class="order__info">200422</span>
+						</div>
+						<div class="col-2 d-flex flex-column order__operator order__box">
+							<span class="order__title">Отдаю</span>
+							<span class="order__info"><img src="img/bank-1.png" alt="">200 000 RUB</span>
+						</div>
+						<div class="col-2 d-flex flex-column order__bank order__box">		
+							<span class="order__title">Получаю</span>
+							<span class="order__info"><img src="img/btc-1.png" alt="">0.4385987 BTC</span>
+						</div>
+						<div class="col-3 d-flex flex-column order__time order__box">
+							<span class="order__title">Реквизиты</span>
+							<span class="order__info">14r3EmdkRX5NMfE7M2Wx6Hv348Cg6EuyAH</span>
+						</div>
+						<div class="col-2 d-flex flex-column order__box">
+							<span class="order__title">Создан</span>
+							<span class="order__info">30 сек. назад</span>
+						</div>
+						<div class="col-1 order__btn d-flex align-items-center justify-content-end">
+							<span class="order__title">Выполнена</span>
+						</div>
+						<div class="col-1 order__button d-flex align-items-center justify-content-end">
+							<span class="order__green"><img src="img/btn-2.png" alt=""></span>
+							<span class="order__dots"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="chat-section">
+				<div class="container">
+					<div class="row requisites-header align-items-center">
+						<div class="col-5">
+							<span class="requisites-header__title">Реквизиты запрошены, ожидаем оплату</span>
+						</div>
+						<div class="col-3 offset-2 d-flex justify-content-end">
+							<span class="requisites-header__button">Запросить реквизиты</span>
+						</div>
+						<div class="col-2 d-flex justify-content-end">
+
+							<label class="requisites-header__checkbox">
+								<input type="checkbox" checked="checked">
+								<span class="requisites-header__checkmark"></span>
+							</label>
+							<label class="requisites-header__checkbox">
+								<input type="checkbox" checked="checked">
+								<span class="requisites-header__checkmark-close"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="requisites-content">
+						<div class="requisites-info">
+							<div class="row">
+								<div class="col-12">
+									<span class="requisites-info__main-title">Заказ 324-244</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 requisites-info__box">
+									<span class="requisites-info__title">Отдаю</span>
+									<span class="requisites-info__info"><img class="requisites-info__currency" src="img/bank-1.png" alt="">200 000 RUB</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 requisites-info__box">
+									<span class="requisites-info__title">Получаю</span>
+									<span class="requisites-info__info"><img class="requisites-info__currency" src="img/btc-1.png" alt="">0.4385987 BTC</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 requisites-info__box">
+									<span class="requisites-info__title">Реквизиты</span>
+									<span class="requisites-info__info">14r3EmdkRX5NMfE7M2Wx6Hv348Cg6EuyAH</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 requisites-info__box">
+									<span class="requisites-info__title">Создан</span>
+									<span class="requisites-info__info">30 сек. назад</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 requisites-info__box">
+									<span class="requisites-info__title">Актуален еще</span>
+									<span class="requisites-info__info">1 час 30 мин.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="requisites-chat">
+							<div class="row">
+								<span class="requisites-chat__name">Согласуйте детали с клиентом</span>
+							</div>
+
+							<div class="requisites-chat__window">
+								<p>Отправили!</p>
+								<p>Пожалуйста, оставьте отзыв: Bestchange, WWH, Center, Bits.media, Exploit, MMGP.
+								Или вы можете оставить отзыв на нашем сайте.</p>
+								<p>Спасибо! Будем рады видеть вас снова</p>
+							</div>
+
+							<div class="requisites-chat__text">
+								<input class="requisites-chat__input" type="text" placeholder="Введите сообщение и нажмите Enter">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="couriers-section">
+
+				<div class="row couriers-header">
+					<div class="container">
+						<div class="col-1">
+							<span class="title title-tab request-opener">Запросы</span>
+						</div>
+						<div class="col-1">
+							<span class="title title-tab courier-opener">Курьеры</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="requests">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<span class="couriers-title">Текущие</span>
+							</div>
+						</div>
+
+						<div class="row request">
+							<div class="col-1 request__logo d-flex align-items-center">
+								<img src="img/img-1.png" alt="">
+							</div>
+							<div class="col-1 d-flex flex-column justify-content-start request__order request__box">
+								<span class="request__title">Заявка</span>
+								<span class="request__info" >103</span>
+							</div>
+							<div class="col-3 d-flex flex-column justify-content-start request__operator request__box">	
+								<span class="request__title">Реквизиты</span>
+								<span class="request__info">0000 0000 0000 0000</span>
+								<span class="request__info">Иванов Иван Иванович</span>
+							</div>
+							<div class="col-1 d-flex flex-column justify-content-start request__bank request__box">		
+								<span class="request__title">Курьер</span>
+								<span class="request__info" >Анатолий</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start request__time request__box">
+								<span class="request__title">Прошло</span>
+								<span class="request__info" >32 минуты</span>
+							</div>
+							<div class="col-2 request__btn d-flex align-items-center justify-content-end">
+								<span class="request__sum">100 000 руб</span>
+								<span class="request__button"></span>
+							</div>
+
+							<div class="request__popup">
+								<p>Редактировать данные</p>
+								<p>Удалить</p>
+							</div>
+						</div>
+
+						<div class="row request">
+							<div class="col-1 request__logo-alpha d-flex align-items-center">
+								<img class="request__image" src="img/alpha.png" alt="">
+							</div>
+							<div class="col-1 d-flex flex-column justify-content-start request__order request__box">
+								<span class="request__title">Заявка</span>
+								<span class="request__info" >104</span>
+							</div>
+							<div class="col-3 d-flex flex-column justify-content-start request__operator request__box">	
+								<span class="request__title">Реквизиты</span>
+								<span class="request__info">1111 0000 0000 0000</span>
+								<span class="request__info">Пётр Войко Игоревич</span>
+							</div>
+							<div class="col-1 d-flex flex-column justify-content-start request__bank request__box">		
+								<span class="request__title">Курьер</span>
+								<span class="request__info" >Василий</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start request__time request__box">
+								<span class="request__title">Прошло</span>
+								<span class="request__info" >1 час 15 минут</span>
+							</div>
+							<div class="col-2 request__btn d-flex align-items-center justify-content-end">
+								<span class="request__sum">100 000 руб</span>
+								<span class="request__button"></span>
+							</div>
+
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<span class="couriers-title">Завершённые</span>
+							</div>
+						</div>
+
+						<div class="row request">
+							<div class="col-1 request__logo d-flex align-items-center">
+								<img src="img/img-1.png" alt="">
+							</div>
+							<div class="col-1 d-flex flex-column justify-content-start request__order request__box">
+								<span class="request__title">Заявка</span>
+								<span class="request__info" >103</span>
+							</div>
+							<div class="col-3 d-flex flex-column justify-content-start request__operator request__box">	
+								<span class="request__title">Реквизиты</span>
+								<span class="request__info">0000 0000 0000 0000</span>
+								<span class="request__info">Иванов Иван Иванович</span>
+							</div>
+							<div class="col-1 d-flex flex-column justify-content-start request__bank request__box">		
+								<span class="request__title">Курьер</span>
+								<span class="request__info" >Анатолий</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start request__time request__box">
+								<span class="request__title">Прошло</span>
+								<span class="request__info" >32 минуты</span>
+							</div>
+							<div class="col-2 request__btn d-flex align-items-center justify-content-end">
+								<span class="request__sum">100 000 руб</span>
+								<span class="request__button"></span>
+							</div>
+
+						</div>
+
+						<div class="row request">
+							<div class="col-1 request__logo-alpha d-flex align-items-center">
+								<img class="request__image" src="img/alpha.png" alt="">
+							</div>
+							<div class="col-1 d-flex flex-column justify-content-start request__order request__box">
+								<span class="request__title">Заявка</span>
+								<span class="request__info" >104</span>
+							</div>
+							<div class="col-3 d-flex flex-column justify-content-start request__operator request__box">	
+								<span class="request__title">Реквизиты</span>
+								<span class="request__info">1111 0000 0000 0000</span>
+								<span class="request__info">Пётр Войко Игоревич</span>
+							</div>
+							<div class="col-1 d-flex flex-column justify-content-start request__bank request__box">		
+								<span class="request__title">Курьер</span>
+								<span class="request__info" >Василий</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start request__time request__box">
+								<span class="request__title">Прошло</span>
+								<span class="request__info" >1 час 15 минут</span>
+							</div>
+							<div class="col-2 request__btn d-flex align-items-center justify-content-end">
+								<span class="request__sum">100 000 руб</span>
+								<span class="request__button"></span>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="couriers">
+					<div class="container">
+
+						<div class="row">
+							<div class="col-12">
+								<span class="couriers-title">Всего 2 курьера</span>
+							</div>
+						</div>
+
+						<div class="row courier">
+							<div class="col-1 d-flex flex-column justify-content-start courier__order courier__box">
+								<span class="courier__title">Курьер</span>
+								<span class="courier__info" >Сергей</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start courier__operator courier__box">	
+								<span class="courier__title">Заявок за день</span>
+								<span class="courier__info">20</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start courier__bank courier__box">		
+								<span class="courier__title">Текущих заявок</span>
+								<span class="courier__info">1</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start courier__time courier__box">
+								<span class="courier__title">Наличные</span>
+								<span class="courier__info">500 200 руб.</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start courier__box">
+								<span class="courier__title">Действие</span>
+								<span class="courier__info">Cash-out</span>
+							</div>
+							<div class="col-2 courier__btn d-flex align-items-center justify-content-end">
+								<span class="courier__title">Работает</span>
+							</div>
+						</div>
+
+						<div class="row courier">
+							<div class="col-1 d-flex flex-column justify-content-start courier__order courier__box">
+								<span class="courier__title">Курьер</span>
+								<span class="courier__info">Олег</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start courier__operator courier__box">	
+								<span class="courier__title">Заявок за день</span>
+								<span class="courier__info">67</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start courier__bank courier__box">		
+								<span class="courier__title">Текущих заявок</span>
+								<span class="courier__info">13</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start courier__time courier__box">
+								<span class="courier__title">Наличные</span>
+								<span class="courier__info">1 200 250 руб.</span>
+							</div>
+							<div class="col-2 d-flex flex-column justify-content-start courier__box">
+								<span class="courier__title">Действие</span>
+								<span class="courier__info">Cash-in</span>
+							</div>
+							<div class="col-2 courier__btn d-flex align-items-center justify-content-end">
+								<span class="courier__title">Работает</span>
+							</div>
+						</div>
+						
+						<div class="row rest">
+							<div class="col-12">
+								<div class="row rest__main">
+									<div class="col-1 d-flex flex-column justify-content-start courier__order courier__box">
+										<span class="rest__title">Курьер</span>
+										<span class="rest__info">Олег</span>
+									</div>
+									<div class="col-2 d-flex flex-column justify-content-start rest__operator rest__box">	
+										<span class="rest__title">Заявок за день</span>
+										<span class="rest__info">0</span>
+									</div>
+									<div class="col-2 d-flex flex-column justify-content-start rest__bank rest__box">		
+										<span class="rest__title">Текущих заявок</span>
+										<span class="rest__info">0</span>
+									</div>
+									<div class="col-2 d-flex flex-column justify-content-start rest__time rest__box">
+										<span class="rest__title">Наличные</span>
+										<span class="rest__info">0 руб.</span>
+									</div>
+									<div class="col-2 rest__btn d-flex align-items-center justify-content-end">
+										<span class="rest__title">Отдыхает</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<span class="rest__time">Вчера</span>
+							</div>
+							<div class="col-12">
+								<div class="row rest__box">
+									<div class="col-1 d-flex flex-column justify-content-start rest__box">
+										<span class="rest__hour">14:05</span>
+										<span class="rest__hour">12:35</span>
+									</div>
+									<div class="col-2 d-flex flex-column justify-content-start rest__box">	
+										<span class="rest__plus">+12 233 RUB</span>
+										<span class="rest__minus">-1000 RUB</span>
+									</div>
+									<div class="col-3 d-flex flex-column justify-content-start rest__box">		
+										<span class="rest__info">Снятие</span>
+										<span class="rest__info">Сдал наличные Евгению</span>
+									</div>
+									<div class="col-5 d-flex flex-column justify-content-start rest__box">
+										<span class="rest__info">Сбербанк: 0000 0000 0000 0000 Петров Петр Петрович</span>
+									</div>
+									<div class="col-1 d-flex flex-column justify-content-start rest__box">
+										<span class="rest__info">1032</span>
+									</div>	
+								</div>
+							</div>
+							<div class="col-12">
+								<span class="rest__time">22.10.2018</span>
+							</div>
+							<div class="col-12">
+								<div class="row rest__box">
+									<div class="col-1 d-flex flex-column justify-content-start rest__box">
+										<span class="rest__hour">10:05</span>
+									</div>
+									<div class="col-2 d-flex flex-column justify-content-start rest__box">	
+										<span class="rest__plus">+1233 RUB</span>
+									</div>
+									<div class="col-3 d-flex flex-column justify-content-start rest__box">		
+										<span class="rest__info">Снятие</span>
+									</div>
+									<div class="col-5 d-flex flex-column justify-content-start rest__box">
+										<span class="rest__info">Сбербанк: 0000 0000 0000 0000 Петров Петр Петрович</span>
+									</div>
+									<div class="col-1 d-flex flex-column justify-content-start rest__box">
+										<span class="rest__info">1032</span>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+
+</body>

@@ -1,0 +1,167 @@
+/* -------------------------- */
+.principle-section {
+   background-image: url(../img/bg4.jpg);
+   padding: 140px 0 170px;
+   color: #fff;
+}
+
+.principle-section .section-title {
+   background: url(../img/titlebg4.png);
+   padding: 30px 0;
+   margin-bottom: 40px;
+   line-height: 29px;
+}
+
+.principle-title-description {
+   max-width: 850px;
+   margin: 0 auto;
+}
+
+.principle-text {
+   font-size: 22px;
+   font-weight: 300;
+   text-align: center;
+   line-height: 1.273;
+}
+
+.principle-example-title {
+   font-size: 30px;
+   font-weight: 800;
+   text-align: center;
+   margin-top: 35px;
+}
+
+.priciple-example-text {
+   max-width: 460px;
+}
+
+.principle-example-wrp {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+   border-bottom: 1px solid #8398b6;
+   padding-bottom: 28px;
+   margin-bottom: 31px;
+}
+
+.principle-example-wrp .principle-text {
+   text-align: left;
+   margin-top: 42px;
+}
+ 
+
+.principle-total {
+   font-weight: 800;
+   font-size: 22px;
+   margin-top: 38px;
+}
+ 
+.principle-img {
+   margin-top: 42px;
+   padding-left: 20px;
+}
+
+.principle-contrast {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+.principle-bonuses {
+   margin-top: -40px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-left: -100px;
+}
+
+.principle-bonuses div {
+   margin-left: 50px;
+}
+
+.principle-bonus {
+   padding-top: 40px;
+}
+
+.principle-bonus .principle-text {
+   text-align-last: left;
+   line-height: 1.45;
+   font-size: 20px;
+} 
+ 
+.principle-text-bold {
+   font-weight: 800;
+}
+
+.principle-frame {
+   padding: 60px 48px;
+   text-align-last: left;
+   max-width: 388px;
+   line-height: 1.208;
+   background: url(../img/principle-frame.png) no-repeat right bottom;
+}
+
+.principle-frame .principle-text-bold{
+   font-size: 24px;
+}
+
+.principle-btn-wrp {
+   margin-top: 50px;
+   text-align: center;
+}
+
+@media screen and (max-width: 1160px) {
+   .principle-contrast {
+      flex-direction: column;
+      align-items: center;
+   }
+   .principle-frame {
+      margin-top: 40px;
+   }
+   .principle-section {
+      padding-top: 90px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .principle-section .section-title {
+      font-size: 23px;
+   }
+   .principle-example-title,
+   .principle-frame .principle-text-bold {
+      font-size: 20px;
+   }
+   .principle-text {
+      font-size: 13px;
+   }
+
+   .principle-text {
+      font-size: 15px;
+   }
+   .principle-example-wrp .principle-text {
+      text-align: center;
+   }
+   .principle-img {
+      padding-left: 0;
+      width: 100%;
+      max-width: 500px;
+   }
+   .principle-total {
+      font-size: 17px;
+      line-height: 1.3;
+      text-align: center;
+   }
+   
+   .principle-section {
+      padding-top: 40px;
+   }
+
+   .principle-bonus .principle-text {
+      font-size: 15px;
+   }
+
+   .principle-frame {
+     padding: 60px 30px;
+   }
+}

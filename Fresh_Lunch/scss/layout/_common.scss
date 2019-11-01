@@ -1,0 +1,1321 @@
+.main {
+	background-image: url(../img/bg-main.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: flex-end;
+	color: #272E36;
+	img {
+		max-width: 100%;
+	}
+	@include media("<tablet") {
+		display: flex;
+		justify-content: center;
+	}
+	.info {
+		background-color: rgba(255,255,255, 0.7);
+		padding: 40px 18px 65px;
+		margin-right: 155px;
+		text-align: center;
+		@include media("<tablet") {
+			padding: 20px 12px 30px;
+			margin: 0;
+		}
+		h1 {
+			font-size: 2.6rem;
+			line-height: 1.4;
+			margin-bottom: 30px;
+			@include media("<tablet") {
+				font-size: 1.5rem;
+				margin-bottom: 20px;
+			}
+		}
+		p {
+			font-size: 1.5rem;
+			line-height: 1.2;
+			margin-bottom: 80px;
+			@include media("<tablet") {
+				font-size: 1rem;
+				margin-bottom: 30px;
+			}
+		}
+		a {
+			color: #fff;
+			background-color: #46a69c;
+			text-align: center;
+			padding: 20px 15px;
+			border-radius: 10px;
+			font-size: 1.2rem;
+			&:hover {
+				color: #000;
+				background-color: #23eae1;
+			}
+			@include media("<tablet") {
+				padding: 12px 10px;
+				font-size: .8rem;
+			}
+		}
+	}
+}
+
+.menu,
+.menu-home {
+	.menu-selection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 50px 0;
+		border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+		@include media("<tablet") {
+			padding: 20px 0;
+		}
+		h2 {
+			font-size: 1.8rem;
+			margin-right: 15px;
+			@include media("<tablet") {
+				font-size: 1.3rem;
+				margin: 0 0 10px 0;
+			}
+		}
+		p {
+			color: #000;
+			margin-bottom: 0;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+	.dishes {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #f1f1f6;
+
+	}
+	.dish {
+		max-width: 800px;
+		margin: 0 15px;
+		@include media("<tablet") {
+			text-align: center;
+		}
+	}
+	.description {
+		display: flex;
+		justify-content: space-between;
+		@include media("<tablet") {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+	.info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}	
+	.details {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		@include media("<phone") {
+			-ms-align-items: center;
+			align-items: center;
+		}
+		a {
+			font-size: 1rem;
+			margin-bottom: 10px;
+		}
+	}
+
+	img {
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-size: 1rem;
+		margin-bottom: 5px;
+	}
+	a {
+		color: #e9714b;
+		font-size: 1.1rem;
+		text-decoration: underline;
+		&:hover {
+			color: #de0000;
+		}
+	}
+	p {
+		color: #828282;
+		font-size: .9rem;
+		margin-bottom: 40px;
+		@include media("<tablet") {
+			margin-bottom: 20px;
+		}
+	}
+	i {
+		color: #828282;
+	}
+}
+
+.menu-details {
+	padding: 40px 0;
+	color: #5c6887;
+	@include media("<tablet") {
+		padding: 20px 0;
+	}
+	.container {
+		max-width: 950px;
+	}
+	.description {
+		display: flex;
+		justify-content: space-between;
+		@include media("<tablet") {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.time {
+		@include media("<tablet") {
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 10px;
+		}
+	}
+	.kitchen-appliances {
+		@include media("<tablet") {
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 10px;
+		}
+	}
+	h2 {
+		margin-bottom: 15px;
+	}
+	img {
+		margin-bottom: 15px;
+	}
+	p {
+		margin-bottom: 10px;
+		line-height: 1.2;
+		@include media("<tablet") {
+			font-size: .8rem;
+		}
+	}
+}
+
+.how-it-work {
+	padding: 70px 0 30px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+	h2 {
+		text-align: center;
+		font-size: 1.8rem;
+		margin-bottom: 40px;
+		@include media("<tablet") {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.what-you-get {
+	padding: 45px 0 30px;
+	text-align: center;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+	@include media("<tablet") {
+		padding: 20px 0 10px;
+	}
+	h2 {
+		font-size: 1.8rem;
+		margin-bottom: 40px;
+		@include media("<tablet") {
+			font-size: 1.5rem;
+			margin-bottom: 20px;
+		}
+	}
+	img {
+		cursor: pointer;
+		margin-bottom: 40px;
+		@include media("<tablet") {
+			margin-bottom: 20px;
+		}
+	}
+	.info {
+		display: flex;
+		justify-content: center;
+		@include media("<tablet") {
+			display: flex;
+			flex-direction: column;
+		}
+		div {
+			margin: 0 15px 0;
+			@include media("<tablet") {
+				margin: 0 0 15px 0;
+			}
+		}
+		h4 {
+			margin-bottom: 10px;
+			font-size: 1.3rem;
+			@include media("<tablet") {
+				font-size: 1rem;
+			}
+		}
+		p {
+			font-size: .9rem;
+			@include media("<tablet") {
+				font-size: .7rem;
+			}
+		}
+	}
+}
+
+.what_it_looks_like {
+	padding: 45px 0 30px;
+	text-align: center;
+	@include media("<tablet") {
+		padding: 20px 0 20px;
+	}
+	h2 {
+		margin-bottom: 40px;
+		@include media("<tablet") {
+			margin-bottom: 20px;
+		}
+	}
+	.cocoen {
+		max-width: 650px;
+		max-height: 625px;
+		box-sizing: border-box;
+		cursor: pointer;
+		line-height: 0;
+		margin: 0 auto;
+		
+		padding: 0;
+		position: relative;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.cocoen * {
+		box-sizing: inherit;
+	}
+
+	.cocoen::after,
+	.cocoen::before {
+		box-sizing: inherit;
+	}
+
+	.cocoen img,
+	.cocoen picture>img {
+		max-width: none;
+	}
+
+	.cocoen>img,
+	.cocoen>picture>img {
+		display: block;
+		width: 100%;
+	}
+
+	.cocoen>div:first-child,
+	picture .cocoen>div {
+		height: 100%;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		width: 50%
+	}
+
+	.cocoen-drag {
+		background: #fff;
+		bottom: 0;
+		cursor: ew-resize;
+		left: 50%;
+		margin-left: -1px;
+		position: absolute;
+		top: 0;
+		width: 4px;
+	}
+
+	.cocoen-drag::before {
+		content: '';
+		position: absolute;
+		background-image: url('../img/drag.png');
+		width: 52px;
+		height: 30px;
+		left: calc(50% - 26px);
+		top: calc(50% - 15px);
+	}
+}
+
+.authorization {
+	padding: 180px 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	@include media("<tablet") {
+		padding: 30px 0;
+	}
+	h3 {
+		font-size: 2rem;
+		margin-bottom: 15px;
+		@include media("<tablet") {
+			font-size: 1.5rem;
+		}
+	}
+	p {
+		font-size: .9rem;
+		margin-bottom: 60px;
+		@include media("<tablet") {
+			font-size: .7rem;
+			margin-bottom: 30px;
+			padding: 0 15px;
+			br {
+				display: none;
+			}
+		}
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		input {
+			width: 280px;
+			padding: 15px 10px;
+			margin-bottom: 15px;
+			border: 1px solid #bdbdbd;
+			border-radius: 8px;
+			@include media("<tablet") {
+				width: 180px;
+				padding: 12px 10px;
+			}
+		}
+		a {
+			color: #fff;
+			width: 280px;
+			padding: 15px 10px;
+			background-color: #00b8b0;
+			border-radius: 8px;
+			&:hover {
+				color: #000;
+				background-color: #23eae1;
+			}
+			@include media("<tablet") {
+				width: 180px;
+				padding: 12px 10px;
+			}
+		}
+	}
+}
+
+.sms-code {
+	padding: 180px 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	@include media("<tablet") {
+		padding: 30px 0;
+	}
+	h3 {
+		font-size: 2rem;
+		margin-bottom: 15px;
+		@include media("<tablet") {
+			font-size: 1.5rem;
+		}
+	}
+	p {
+		font-size: .9rem;
+		margin-bottom: 60px;
+		@include media("<tablet") {
+			font-size: .7rem;
+			margin-bottom: 20px;
+			padding: 0 15px;
+			br {
+				display: none;
+			}
+		}
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		input {
+			width: 130px;
+			padding: 15px 10px;
+			margin-bottom: 15px;
+			border: 1px solid #bdbdbd;
+			border-radius: 8px;
+			text-align: center;
+			@include media("<tablet") {
+				width: 100px;
+				padding: 12px 10px;
+			}
+		}
+		a {
+			color: #00b8b0;
+			font-weight: 900;
+			border-bottom: 2px solid #00b8b0;
+			&:hover {
+				transform: scale(1.1, 1.1);
+			}
+		}
+	}
+}
+
+.re-request-sms-code {
+	padding: 180px 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	@include media("<tablet") {
+		padding: 30px 0;
+	}
+	h3 {
+		font-size: 2rem;
+		margin-bottom: 15px;
+		@include media("<tablet") {
+			font-size: 1.5rem;
+		}
+	}
+	p {
+		font-size: .9rem;
+		margin-bottom: 60px;
+		@include media("<tablet") {
+			font-size: .7rem;
+			margin-bottom: 20px;
+			padding: 0 15px;
+			br {
+				display: none;
+			}
+		}
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		input {
+			max-width: 130px;
+			padding: 15px 10px;
+			margin-bottom: 15px;
+			border: 1px solid #bdbdbd;
+			border-radius: 8px;
+			text-align: center;
+			@include media("<tablet") {
+				width: 100px;
+				padding: 12px 10px;
+			}
+		}
+	}
+}
+
+.settings {
+	background-color: #f2f1f6;
+	padding: 20px 0;
+	.container {
+		max-width: 970px;
+	}
+	h4 {
+		color: #908f90;
+		font-size: 1.4rem;
+		margin-bottom: 10px;
+		@include media("<phone") {
+			font-size: .8rem;
+		}
+	}
+	a {
+		color: #676c72;
+		font-size: 1.1rem;
+		font-weight: 900;
+		&:hover {
+			color: #000;
+		}
+		@include media("<phone") {
+			font-size: .8rem;
+		}
+	}
+	.box,
+	.box-top,
+	.box-middle,
+	.box-bottom {
+		background-color: #fff;
+		height: 56px;
+		margin-bottom: 3px;
+		padding: 18px 15px;
+		display: flex;
+		justify-content: space-between;
+		@include media("<phone") {
+			height: 40px;
+			padding: 12px 10px;
+		}
+		i {
+			color: #676c72;
+		}
+	}
+	.box {
+		border-radius: 8px;
+	}
+	.box-top {
+		border-radius: 8px 8px 0 0;
+	}
+	.box-bottom {
+		border-radius: 0 0 8px 8px;
+	}
+	.box-head {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		@include media("<phone") {
+			margin-bottom: 15px;
+		}
+		img {
+			margin-right: 25px;
+			@include media("<phone") {
+				margin-right: 10px;
+			}
+		}
+		h3 {
+			margin-bottom: 15px;
+		}
+		a {
+			margin-left: auto;
+		}
+	}
+	.subscriptions,
+	.discounts,
+	.useful-information,
+	.contact {
+		margin-bottom: 70px;
+		@include media("<phone") {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.orders {
+	padding: 200px 0;
+	background-color: #f1f1f6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	@include media("<tablet") {
+		padding: 100px 0;
+	}
+	@include media("<phone") {
+		padding: 50px 0;
+	}
+	h2 {
+		margin-bottom: 20px;
+		@include media("<phone") {
+			font-size: 1rem;
+			br {
+				display: none;
+			}
+		}
+
+	}
+	a {
+		padding: 15px;
+	}
+}
+
+.my-addresses,
+.add-address {
+	padding: 100px 0;
+	@include media("<phone") {
+		padding: 50px 0;
+	}
+	h2 {
+		margin-bottom: 12px;
+		@include media("<phone") {
+			font-size: 1rem;
+		}
+	}
+	a {
+		font-size: 1.5rem;
+		color: #ff742c;
+		margin-bottom: 12px;
+		@include media("<phone") {
+			font-size: 1rem;
+		}
+	}
+	form {
+		max-width: 400px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		input {
+			width: 100%;
+			margin-bottom: 10px;
+			border: 1px solid #8d95ab;
+			border-radius: 8px;
+			padding: 15px;
+		}
+		a {
+			width: 160px;
+			font-size: 1.2rem;
+			padding: 15px 5px;
+			color: #fff;
+			background-color: #00c7c2;
+			text-align: center;
+			border-radius: 8px;
+			@include media("<phone") {
+				width: 120px;
+				font-size: .8rem;
+				padding: 10px 5px;
+			}
+		}
+		@include media("<phone") {
+			max-width: 280px;
+		}
+	}
+	.wrap {
+		width: 400px;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		padding: 15px 0 15px 50px;
+		margin-bottom: 45px;
+		cursor: pointer;
+		font-size: 1.4rem;
+		border-top: 1px solid #8d95ab;
+		border-bottom: 1px solid #8d95ab;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		&:input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+		}
+		@include media("<phone") {
+			padding: 15px 0 15px 50px;
+			width: 280px;
+			font-size: 1rem;	
+		}
+	}
+	.checkmark {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		height: 35px;
+		width: 35px;
+		background-color: #fff;
+		border: 1px solid #8d95ab;
+		border-radius: 8px;
+		&::after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+		@include media("<phone") {
+			top: 7px;
+		}
+	}
+
+	.wrap input:checked ~ .checkmark {
+		background-color: #00c7c2;
+		border: none;
+	}
+
+	.wrap input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	.wrap .checkmark:after {
+		left: 10px;
+		top: 1px;
+		width: 12px;
+		height: 22px;
+		border: solid white;
+		border-width: 0 3px 3px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+}
+
+.personal-information {
+	padding: 50px 0;
+	form {
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+		@include media("<phone") {
+			width: 280px;
+		}
+		h4 {
+			color: #5c6887;
+			margin-bottom: 5px;
+		}
+		input {
+			width: 100%;
+			border: 1px solid #8d95ab;
+			border-radius: 8px;
+			padding: 15px;
+			margin-bottom: 30px;
+			@include media("<phone") {
+				padding: 10px;
+				margin-bottom: 15px;
+			}
+		}
+		a {
+			margin-left: auto;
+			width: 160px;
+			font-size: 1.2rem;
+			padding: 15px 5px;
+			color: #fff;
+			background-color: #00c7c2;
+			text-align: center;
+			border-radius: 8px;
+			@include media("<phone") {
+				width: 120px;
+				font-size: .8rem;
+				padding: 10px 5px;
+			}
+		}
+	}
+}
+
+.my-cards {
+	padding: 50px 0;
+	h2 {
+		margin-bottom: 20px;
+		@include media("<phone") {
+			font-size: 1rem;
+		}
+	}
+	form {
+		max-width: 400px;
+		input {
+			width: 100%;
+			margin-bottom: 20px;
+			border: none;
+			border-bottom: 1px solid #8d95ab;
+		}
+		@include media("<phone") {
+			max-width: 280px;
+		}
+	}
+	a {
+		font-size: 1.5rem;
+		color: #ff742c;
+		&:hover {
+			color: #e95001;
+		}
+		@include media("<phone") {
+			font-size: 1rem;
+		}
+	}
+}
+
+.add-card {
+	padding: 50px 0;
+	form {
+		max-width: 450px;
+		input {
+			width: 100%;
+			margin-bottom: 20px;
+			border: none;
+			border-bottom: 1px solid #8d95ab;
+		}
+	}
+	h2 {
+		@include media("<phone") {
+			font-size: 1.2rem;
+			
+		}
+	}
+	a {
+		font-size: 1.5rem;
+		color: #ff742c;
+		margin-bottom: 30px;
+		&:hover {
+			color: #e95001;
+		}
+		@include media("<phone") {
+			font-size: 1rem;
+			margin-bottom: 20px;
+		}
+
+	}
+	.new-card {
+		background-image: url('../img/bg-form.jpg');
+		background-repeat: no-repeat;
+		margin-bottom: 25px;
+		form {
+			max-width: 450px;
+			padding: 25px;
+		}
+		input {
+			border: 1px solid #999;
+			padding: 10px;
+			border-radius: 5px;
+			&::placeholder {
+				font-size: .7rem;
+				color: #707b96;
+				font-weight: 700;
+			}
+		}
+		.number {
+			width: 200px;
+		}
+		.bottom {
+			display: flex;
+			justify-content: flex-end;
+			input {
+				width: 80px;
+			}
+		}
+		.data {
+			margin-right: 50px;
+		}
+		p {
+			font-size: .5rem;
+			margin: 6px;
+			font-weight: 700;	
+		}
+	}
+	.add {
+		max-width: 450px;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #8d95ab;
+		h3 {
+			font-size: .8rem;
+			line-height: 1.6;
+			@include media("<phone") {
+				font-size: .5rem;
+				margin-right: 10px;
+				br {
+					display: none;
+				}
+			}
+		}
+		.btn {
+			width: 120px;
+			font-size: 1rem;
+			padding: 15px 5px;
+			color: #fff;
+			&:hover {
+				color: #000;
+			}
+			@include media("<phone") {
+				width: 100px;
+				font-size: .8rem;
+				padding: 10px 5px;
+			}
+		}
+	}
+}
+
+.blog {
+	padding: 50px;
+	background-color: #f2fcfc;
+	.box {
+		display: flex;
+		background-color: #fff;
+		margin-bottom: 15px;
+		padding-right: 40px;
+		@include media("<tablet") {
+			display: flex;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			padding: 0;
+		}
+	}
+	img {
+		margin-right: 40px;
+		@include media("<tablet") {
+			margin: 0;
+		}
+	}
+	.text {
+		padding: 40px 0;
+		text-align: center;
+		@include media("<tablet") {
+			padding: 20px;
+		}
+		h3 {
+			margin-bottom: 10px;
+			@include media("<phone") {
+				font-size: .9rem;
+			}
+		}
+		p {
+			@include media("<phone") {
+				font-size: .8rem;
+			}
+		}
+	}
+	@include media("<tablet") {
+		padding: 20px;
+	}
+}
+
+.menu-home {
+	.dishes {
+		padding: 45px 0;
+		@include media("<phone") {
+			padding: 30px 0;
+		}
+	}
+	.dropdown-head {
+		.box {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-ms-align-items: center;
+			align-items: center;
+			@include media("<phone") {
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				-webkit-flex-direction: column;
+				-moz-flex-direction: column;
+				-ms-flex-direction: column;
+				-o-flex-direction: column;
+				flex-direction: column;
+			}
+		}
+		h3 {
+			@include media("<phone") {
+				margin-bottom: 15px;
+				font-size: 1rem;
+			}
+		}
+		.btn {
+			margin-left: 20px;
+			@include media("<phone") {
+				margin: 0;
+				font-size: .8rem;
+				padding: 10px 5px;
+			}
+		}
+		a:hover {
+			color: #fff;
+		}
+		.dropdown {
+			margin-right: 20px;
+			@include media("<tablet") {
+				margin-bottom: 15px;
+			}
+			@include media("<phone") {
+				margin: 0 0 15px 0;
+			}
+		}
+		@include media("<tablet") {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+		}
+	}
+}
+
+.payment {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 50px 0;
+	@include media("<tablet") {
+		padding: 30px 0;
+	}
+	h2 {
+		margin-bottom: 30px;
+		@include media("<phone") {
+			margin-bottom: 20px;
+			font-size: 1.2rem;
+		}
+	}
+	a {
+		width: 200px;
+		margin: 0 20px;
+		color: #fff;
+		padding: 15px;
+		border-radius: 5px;
+		@include media("<desktop") {
+			width: 180px;
+			margin: 0 15px;
+			padding: 12px;
+		}
+		@include media("<tablet") {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			margin: 0 auto 10px;
+		}
+	}
+	.visa {
+		background-color: #00c7c2;
+		&:hover {
+			background-color: #23eae1;
+		}
+	}
+	.privat {
+		background-color: #b8b261;
+		&:hover {
+			background-color: #d3cb5f;
+		}
+	}
+	.receipt {
+		background-color: #ff742c;
+		&:hover {
+			background-color: #e95001;
+		}
+	}
+}
+
+.orders-accepted {
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f2f1f6;
+	.top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	.order-box {
+		background-color: #fff;
+		margin-bottom: 100px;
+		h2 {
+			margin: 0 0 15px 10px;
+		}
+	}
+
+	.images {
+		margin-bottom: 20px;
+		img {
+			margin: 0 5px px 0;
+			max-width: 100%;
+		}
+	}
+	.bottom {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		h2 {
+			margin: 0 20px 0 10px;
+
+		}
+		p {
+			color: #7a7a7a;
+		}
+		a {
+			margin: 0 10px 0 auto;
+			text-decoration: underline;
+			color: #02b8b0;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.new-order {
+		display: flex;
+		justify-content: center;
+		background-color: #fff;
+		padding: 15px;
+		border-radius: 8px;
+		color: #e0633c;
+		font-size: 1.2rem;
+	}
+}
+
+.selection-of-dishes {
+	padding-bottom: 50px;
+	@include media("<tablet") {
+		padding-bottom: 30px;
+	}
+	.top {
+		padding: 10px 0;
+		margin-bottom: 40px;
+		border-bottom: 1px solid #5c6887;
+		@include media("<tablet") {
+			margin-bottom: 20px;
+		}
+		.container {
+			display: flex;
+			align-items: center;
+			@include media("<phone") {
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				-webkit-flex-direction: column;
+				-moz-flex-direction: column;
+				-ms-flex-direction: column;
+				-o-flex-direction: column;
+				flex-direction: column;
+				-ms-align-items: center;
+				align-items: center;
+			}
+			h3 {
+				color: #ff742c;
+				margin: 0 20px;
+				@include media("<tablet") {
+					margin: 0 10px 0 20px;
+				}
+				@include media("<phone") {
+					margin-bottom: 10px;
+				}
+			}
+			a {
+				margin-left: auto;
+				padding: 15px;
+				@include media("<tablet") {
+					padding: 12px 8px;
+				}
+				@include media("<phone") {
+					margin: 0;
+					font-size: .8rem;
+					padding: 10px;
+				}
+			}
+			.dropdown {
+				@include media("<phone") {
+					margin-bottom: 10px;
+				}
+				.dropbtn {
+					padding: 10px;
+					color: #ff742c;
+					border: 1px solid #ff742c;
+					&:hover {
+						border: 1px solid #ff742c;
+						color: #fff;
+						background-color: #ff742c;
+					}
+				}
+				&:hover .dropbtn {
+					background-color: #ff742c;
+					color: #fff;
+					border: 1px solid #ff742c;
+				}
+				.dropdown-content {
+					a {
+						color: #000;
+						&:hover {
+							border-radius: 5px;
+							background-color: #ff742c;
+							color: #fff;
+						}
+						&:last-of-type {
+							border-bottom: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.choice {
+		.container {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		h3 {
+			margin-bottom: 20px;
+		}
+		a {
+			color: #ff742c;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.box {
+			margin: 0 10px 40px;
+			@include media("<phone") {
+				margin: 0 0 20px 0;
+			}
+		}
+		.bottom {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.wrap {
+			width: 50px;
+			position: relative;
+			cursor: pointer;
+			font-size: 1.4rem;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			&:input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+				height: 0;
+				width: 0;
+			}
+		}
+
+		.checkmark {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			height: 40px;
+			width: 40px;
+			background-color: #fff;
+			border: 1px solid #8d95ab;
+			border-radius: 50%;
+			&::after {
+				content: "";
+				position: absolute;
+				display: none;
+			}
+		}
+
+		.wrap input:checked ~ .checkmark {
+			background-color: #00c7c2;
+			border: none;
+		}
+
+		.wrap input:checked ~ .checkmark:after {
+			display: block;
+		}
+
+		.wrap .checkmark:after {
+			left: 15px;
+			top: 8px;
+			width: 8px;
+			height: 16px;
+			border: solid white;
+			border-width: 0 3px 3px 0;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+	}
+}

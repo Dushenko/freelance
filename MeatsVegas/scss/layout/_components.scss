@@ -1,0 +1,250 @@
+* {
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat';
+}
+
+a {
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+input {
+	border: none;
+	background-color: transparent;
+	outline: none;
+	-webkit-appearance: none;
+	&::placeholder {
+		
+	}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+textarea {
+	resize: none;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	-webkit-appearance: none;
+	&::placeholder {
+
+	}
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	transition: all 0.3s ease-in-out;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+.wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-image: url("../img/BlackBG.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 2%;
+}
+
+.container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	z-index: 2;
+}
+
+.main-padding {
+	@media screen and (min-width: 768px) {
+		
+	}
+	
+}
+
+.section-padding {
+	padding: 44px 0 144px;
+	@media screen and (max-width: 1024px) {
+		padding: 40px 0 80px;
+	}
+	@media screen and (max-width: 768px) {
+		padding: 40px 0;
+	}
+}
+
+.section-title {
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 41px;
+	@media screen and (max-width: 1024px) {
+		font-size: 28px;
+	}
+	@media screen and (max-width: 768px) {
+		margin-bottom: 30px;
+		font-size: 22px;
+	}
+	&_margin-left {
+		margin-left: 30px;
+	}
+	&_line {
+		position: relative;
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 11px;
+			z-index: 2;
+			background-image: url('../img/divider-red.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		&:before {
+			left: 0;
+		}
+		&:after {
+			right: 0;
+		}
+	}
+}
+
+.abs-lines,
+.abs-lines-1,
+.abs-lines-2 {
+	position: absolute;
+	z-index: 1;
+	width: 100vw;
+	height: 273px;
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100vw;
+		height: 45px;
+		z-index: 2;
+		left: 0;
+		right: 0;
+		background-image: url('../img/divider-purple.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	&:before {
+		top: 0;
+
+	}
+	&:after {
+		bottom: 0;
+	}
+}
+
+.btn-toTop {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 30px;
+	z-index: 999999;
+	cursor: pointer;
+	@media screen and (max-width: 1024px) {
+		right: 15px;
+	}
+	@media screen and (max-width: 768px) {
+		bottom: 20px;
+		right: -10px;
+	}
+	span {
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 24px;
+		@media screen and (max-width: 768px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		@media screen and (max-width: 480px) {
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+	img {
+		width: 80px;
+		height: 80px;
+		@media screen and (max-width: 768px) {
+			width: 50%;
+		}
+	}
+}
+
+.number {
+	color: #f63c16;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: uppercase;
+	.number-color {
+		color: #ffffff;
+	}
+}
+
+.call-btn {
+	width: 182px;
+	height: 70px;
+	position: relative;
+	padding: 27px 25px;
+	height: 70px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #ffffff;
+	background-image: url('../img/phone.svg');
+	background-repeat: no-repeat;
+	background-size: 110%;
+	background-position: center;
+
+	&:hover {
+		background-image: url('../img/phone-hover.svg');
+	}
+}
+
+.basket-btn {
+	position: relative;
+	padding: 29px 25px;
+	height: 70px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #ffffff;
+	background-image: url('../img/basket.svg');
+	background-repeat: no-repeat;
+	background-size: 114%;
+	background-position: center;
+
+	&:hover {
+		background-image: url('../img/basket-hover.svg');
+	}
+}
