@@ -2232,14 +2232,17 @@ input::-webkit-inner-spin-button{
       background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='6' viewBox='0 0 9 6'%3E%3Cpath fill='%23469EE3' fill-rule='evenodd' d='M8.571 1.036a.533.533 0 0 1-.159.376l-3.75 3.75c-.1.1-.234.16-.376.16a.533.533 0 0 1-.377-.16l-3.75-3.75A.533.533 0 0 1 0 1.036.54.54 0 0 1 .536.5h7.5a.54.54 0 0 1 .535.536z'/%3E%3C/svg%3E%0A");
       background-size:contain;
       background-repeat:no-repeat;
-      background-position:center; }
+      background-position:center;
+      z-index:1; }
 
 .order-form__select{
     width:182px;
     height:29px;
     font-size:12px;
     color:#8d8d8d;
-    padding:6px 11px 7px; }
+    padding:6px 11px 7px;
+    position:relative;
+    z-index:2; }
 
 .order-form__option{
     font-size:12px;
@@ -2277,6 +2280,19 @@ input::-webkit-inner-spin-button{
     border:solid 1px #4398db;
     background-color:#4398db; }
 
+.order-form__input-checbox[type="checkbox"]:checked + label:after{
+    content:'';
+    position:absolute;
+    width:5px;
+    height:10px;
+    border-bottom:1px solid #fff;
+    border-right:1px solid #fff;
+    top:-1px;
+    left:8px;
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg); }
+
 .order-form__label{
     font-size:12px;
     color:#8d8d8d;
@@ -2302,16 +2318,12 @@ input::-webkit-inner-spin-button{
       border:solid 1px #d8d8d8;
       background-color:#ffffff; }
 
-.order-form__label:first-of-type{
-      margin-right:50px; }
+.order-form__rules{
+    margin:18px 50px 0 0;
+    font-size:12px;
+    color:#4398db; }
 
-.order-form__label a{
-      color:#4398db; }
-
-.order-form__label a:hover{
-        text-decoration:underline; }
-
-.order-form__label:hover{
+.order-form__rules:hover{
       text-decoration:underline; }
 
 .order-form__btn{
@@ -2444,6 +2456,19 @@ input::-webkit-inner-spin-button{
 .searchForm__input-checbox[type="checkbox"]:checked + label:before{
   border:solid 1px #4398db;
   background-color:#4398db; }
+
+.searchForm__input-checbox[type="checkbox"]:checked + label:after{
+  content:'';
+  position:absolute;
+  width:5px;
+  height:10px;
+  border-bottom:1px solid #fff;
+  border-right:1px solid #fff;
+  top:-6px;
+  left:8px;
+  -webkit-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  transform:rotate(45deg); }
 
 .searchForm__label{
   position:relative;
@@ -2674,8 +2699,9 @@ input::-webkit-inner-spin-button{
 .mainForm__select-wrap:after{
       content:'';
       position:absolute;
+      z-index:-1;
       top:50%;
-      right:-10px;
+      right:0;
       -webkit-transform:translateY(-50%);
       -ms-transform:translateY(-50%);
       transform:translateY(-50%);
@@ -2687,7 +2713,8 @@ input::-webkit-inner-spin-button{
       background-position:center; }
 
 .mainForm__select{
-    color:#ffffff; }
+    color:#ffffff;
+    padding-right:12px; }
 
 .mainForm__select option{
       font-size:14px;
@@ -3108,10 +3135,12 @@ input::-webkit-inner-spin-button{
   padding-right:40px; }
 
 .toursForm .citySelect__select{
-    font-size:20px !important; }
+    font-size:20px !important;
+    padding-right:18px; }
 
 .toursForm .citySelect:after{
-    right:26px; }
+    right:40px;
+    z-index:-1; }
 
 .toursFilter{
   display:-webkit-box;
@@ -3169,7 +3198,8 @@ input::-webkit-inner-spin-button{
     content:'';
     position:absolute;
     top:8px;
-    right:-18px; }
+    right:-8px;
+    z-index:-1; }
 
 .citySelect__select{
     font-size:14px;
@@ -3255,6 +3285,41 @@ input::-webkit-inner-spin-button{
 
 .data-form__btn_password{
     width:177px; }
+
+.tourForm__wrap{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-align:center;
+  align-items:center; }
+
+@media screen and (max-width: 620px){
+    .tourForm__wrap{
+      margin-bottom:10px; } }
+
+@media screen and (max-width: 430px){
+    .tourForm__wrap{
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      flex-direction:column;
+      -webkit-box-align:start !important;
+      align-items:flex-start !important; } }
+
+.tourForm__field{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-align:center;
+  align-items:center;
+  margin-right:10px; }
+
+.tourForm__field span{
+    font-size:12px;
+    font-weight:500;
+    color:#333333;
+    margin-right:10px; }
+
+@media screen and (max-width: 430px){
+    .tourForm__field{
+      margin-bottom:10px; } }
 
 body.compensate-for-scrollbar{
   overflow:hidden; }
@@ -4481,9 +4546,7 @@ body.compensate-for-scrollbar{
 @media screen and (max-width: 1150px){
       .lk-box__data{
         width:150px;
-        margin:0 auto 15px;
-        -webkit-box-align:center;
-        align-items:center; } }
+        margin:0 10px 15px; } }
 
 .lk-box__gray{
     font-size:16px;
@@ -6142,32 +6205,75 @@ body.compensate-for-scrollbar{
     -webkit-box-pack:center;
     justify-content:center; }
 
-.how-buy-section .buy-tabs-wrap{
+.how-buy-section .tabs-slider{
     max-width:591px;
     width:100%;
     box-shadow:0 0 20px 0 rgba(197, 197, 197, 0.5);
     border:solid 2px #deedf9;
-    background-color:#ffffff;
-    position:relative; }
+    background:#fff;
+    position:relative;
+    z-index:1; }
+
+@media screen and (min-width: 768px){
+      .how-buy-section .tabs-slider{
+        background:#e0effb; } }
 
 @media screen and (min-width: 1024px){
-      .how-buy-section .buy-tabs-wrap{
+      .how-buy-section .tabs-slider{
         margin:-118px 100px 0 0;
         height:356px; } }
 
-.how-buy-section .buy-tabs-wrap:after{
+@media screen and (max-width: 600px){
+      .how-buy-section .tabs-slider{
+        max-width:400px; } }
+
+@media screen and (max-width: 400px){
+      .how-buy-section .tabs-slider{
+        max-width:290px; } }
+
+.how-buy-section .tabs-slider:after{
+      display:none;
       content:'';
       position:absolute;
       width:100%;
       height:100%;
-      background:#e0effb;
+      background:#fff;
       z-index:-1;
       bottom:-20px;
       right:-20px;
       box-shadow:0 0 20px 0 rgba(197, 197, 197, 0.5); }
 
+@media screen and (min-width: 768px){
+        .how-buy-section .tabs-slider:after{
+          display:block; } }
+
+.how-buy-section .tabs-slider .owl-dots{
+      position:absolute;
+      top:25px;
+      left:30px; }
+
+@media screen and (max-width: 400px){
+        .how-buy-section .tabs-slider .owl-dots{
+          left:15px; } }
+
+@media screen and (min-width: 768px){
+        .how-buy-section .tabs-slider .owl-dots{
+          top:35px;
+          left:40px; } }
+
+.how-buy-section .tabs-slider .owl-dots .owl-dot{
+        width:10px;
+        height:10px;
+        border:solid 1px #c0c0c0;
+        margin-right:8px;
+        border-radius:50%; }
+
+.how-buy-section .tabs-slider .owl-dots .owl-dot.active{
+          background-color:#4094d6;
+          border:solid 1px #4094d6; }
+
 .how-buy-section .buy-tabs{
-    padding:30px;
+    padding:70px 30px 30px;
     position:relative; }
 
 .how-buy-section .buy-tabs:after{
@@ -6175,7 +6281,7 @@ body.compensate-for-scrollbar{
       position:absolute;
       width:60px;
       height:120px;
-      top:18px;
+      top:25px;
       right:20px;
       background-image:url("../images/how-img.png");
       background-repeat:no-repeat;
@@ -6188,7 +6294,11 @@ body.compensate-for-scrollbar{
 
 @media screen and (min-width: 1024px){
       .how-buy-section .buy-tabs{
-        padding:45px 41px 72px; } }
+        padding:70px 41px 72px; } }
+
+@media screen and (max-width: 400px){
+      .how-buy-section .buy-tabs{
+        padding:60px 15px 15px; } }
 
 .how-buy-section .buy-tabs__list{
       display:-webkit-box;
@@ -6206,11 +6316,8 @@ body.compensate-for-scrollbar{
         background-color:#4094d6;
         border:solid 1px #4094d6; }
 
-.how-buy-section .buy-tabs__content{
-      display:none; }
-
 .how-buy-section .buy-tabs__content.active{
-        display:block; }
+      display:block; }
 
 .how-buy-section .buy-tabs__step{
       font-size:12px;
@@ -6503,7 +6610,7 @@ body.compensate-for-scrollbar{
       transform:scaleX(1); }
 
 .popular-articles-section{
-  padding:59px 0 224px;
+  padding:59px 0 80px;
   background-position:center 100%;
   background-size:cover;
   background-position:center; }
@@ -6658,7 +6765,8 @@ body.compensate-for-scrollbar{
     background-color:#4094d6;
     padding:28px 30px 20px;
     margin-bottom:30px;
-    box-shadow:0 0 20px 0 rgba(197, 197, 197, 0.5); }
+    box-shadow:0 0 20px 0 rgba(197, 197, 197, 0.5);
+    z-index:10; }
 
 @media screen and (max-width: 400px){
       .articles-section .find-tours{
@@ -6740,13 +6848,6 @@ body.compensate-for-scrollbar{
       -o-object-fit:cover;
       object-fit:cover; }
 
-.calendar__scroll-wrap{
-    overflow:hidden;
-    overflow-x:auto; }
-
-.calendar__scroll{
-    width:570px; }
-
 .calendar__county{
     position:absolute;
     z-index:1;
@@ -6772,6 +6873,14 @@ body.compensate-for-scrollbar{
     align-items:center;
     border-bottom:1px solid #bdbdbd; }
 
+@media screen and (max-width: 620px){
+      .calendar__nav{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+        flex-direction:column;
+        -webkit-box-align:start;
+        align-items:flex-start; } }
+
 .calendar__more{
     width:130px;
     padding:10px 0;
@@ -6787,6 +6896,14 @@ body.compensate-for-scrollbar{
     align-items:center;
     padding:10px 11px; }
 
+@media screen and (max-width: 620px){
+      .calendar__bottom{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+        flex-direction:column;
+        -webkit-box-align:start;
+        align-items:flex-start; } }
+
 .calendar__year-btn{
     font-size:12px;
     text-align:center;
@@ -6796,6 +6913,10 @@ body.compensate-for-scrollbar{
     position:relative;
     border-radius:5px;
     cursor:pointer; }
+
+@media screen and (max-width: 620px){
+      .calendar__year-btn{
+        margin-bottom:10px; } }
 
 .calendar__year-btn:before{
       content:'';
@@ -6818,25 +6939,6 @@ body.compensate-for-scrollbar{
     font-size:12px;
     color:#333333; }
 
-.tourForm__wrap{
-  display:-webkit-box;
-  display:flex;
-  -webkit-box-align:center;
-  align-items:center; }
-
-.tourForm__field{
-  display:-webkit-box;
-  display:flex;
-  -webkit-box-align:center;
-  align-items:center;
-  margin-right:10px; }
-
-.tourForm__field span{
-    font-size:12px;
-    font-weight:500;
-    color:#333333;
-    margin-right:10px; }
-
 .tourTable{
   padding:0 11px; }
 
@@ -6847,19 +6949,26 @@ body.compensate-for-scrollbar{
 .tourTable__head, .tourTable__line{
     display:-webkit-box;
     display:flex;
-    padding:18px 11px; }
+    -webkit-box-align:center;
+    align-items:center;
+    padding:18px 10px; }
+
+@media screen and (max-width: 620px){
+      .tourTable__head, .tourTable__line{
+        padding:12px 10px; } }
 
 .tourTable__head span, .tourTable__line span{
       width:20%;
       font-weight:500;
       font-size:12px;
-      color:#333333; }
+      color:#333333;
+      margin-right:4px; }
 
 .tourTable__head:nth-child(2n), .tourTable__line:nth-child(2n){
       background-color:rgba(64, 148, 214, 0.1); }
 
 .tourTable__line{
-    padding:10px 11px; }
+    padding:10px; }
 
 .tourTable__line span{
       font-weight:400; }
@@ -6875,16 +6984,19 @@ body.compensate-for-scrollbar{
   display:-webkit-box;
   display:flex;
   -webkit-box-align:center;
-  align-items:center; }
+  align-items:center;
+  padding-right:12px;
+  z-index:2;
+  cursor:pointer; }
 
-.select select{
-    width:auto;
-    font-size:12px;
-    font-weight:500;
-    color:#48a2e9;
-    text-decoration:underline; }
-
-.select span{
+.select:after{
+    content:'';
+    position:absolute;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    right:-2px;
     width:9px;
     height:5px;
     background-size:contain;
@@ -6892,14 +7004,12 @@ body.compensate-for-scrollbar{
     background-position:center;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='4' viewBox='0 0 7 4'%3E%3Cpath fill='%2348A2E9' fill-rule='evenodd' d='M6.857.429a.426.426 0 0 1-.127.3l-3 3a.426.426 0 0 1-.301.128.426.426 0 0 1-.302-.127l-3-3A.426.426 0 0 1 0 .429C0 .194.194 0 .429 0h6c.234 0 .428.194.428.429z'/%3E%3C/svg%3E%0A"); }
 
-.select:after{
-    content:'';
-    position:absolute;
-    top:50%;
-    right:-10px;
-    -webkit-transform:translateY(-50%);
-    -ms-transform:translateY(-50%);
-    transform:translateY(-50%); }
+.select select{
+    width:100%;
+    font-size:12px;
+    font-weight:500;
+    color:#48a2e9;
+    text-decoration:underline; }
 
 .intro-section{
   background-image:url("../images/intro-bg.png");
@@ -7760,8 +7870,8 @@ body.compensate-for-scrollbar{
       .hotel-description-section .conditions-wrap{
         padding:20px 0 15px;
         margin-bottom:10px;
-        -webkit-box-pack:center;
-        justify-content:center;
+        -webkit-box-pack:start;
+        justify-content:flex-start;
         left:auto; } }
 
 .hotel-description-section .condition{
@@ -8493,6 +8603,10 @@ body.compensate-for-scrollbar{
         -webkit-box-direction:normal;
         flex-direction:column; } }
 
+@media screen and (max-width: 768px){
+      .tourCard__wrap{
+        width:100%; } }
+
 .tourCard__img-wrap{
     width:139px;
     height:54px;
@@ -8547,6 +8661,10 @@ body.compensate-for-scrollbar{
 .tourCard__details{
     font-size:14px;
     color:#333333; }
+
+@media screen and (max-width: 768px){
+      .tourCard__details{
+        text-align:center; } }
 
 @media screen and (max-width: 1024px){
     .tourCard__info-wrap{
@@ -9083,6 +9201,39 @@ body.compensate-for-scrollbar{
   position:relative;
   z-index:2; }
 
+.newsletter-section .thanks-before{
+    display:none !important; }
+
+.newsletter-section .thanks-after{
+    position:relative;
+    padding:100px 92px 125px !important; }
+
+.newsletter-section .thanks-after:before{
+      content:'';
+      position:absolute;
+      bottom:0;
+      right:200px;
+      width:342px;
+      height:256px;
+      background-size:contain;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='342' height='256' viewBox='0 0 342 256'%3E%3Cg fill='none' fill-rule='nonzero' opacity='.349'%3E%3Cpath fill='%23449ADF' d='M300.266.855v131.253l40.817-27.077v250.573H.333V109.16L41.15 135.32V.855h259.116zm-13.758 13.768h-231.6V144.04l115.57 74.345 116.03-77.099V14.623z'/%3E%3Cpath fill='%234398DC' d='M170.479 37.569c36.689 0 66.499 29.83 66.499 67.003s-29.81 67.003-66.5 67.003c-36.688 0-66.498-29.83-66.498-67.003s29.81-67.003 66.499-67.003zm39.899 53.694L199.371 79.79l-36.689 34.878-15.593-14.685-11.006 11.473 26.6 25.7 47.695-45.893z'/%3E%3C/g%3E%3C/svg%3E%0A"); }
+
+@media screen and (max-width: 1024px){
+        .newsletter-section .thanks-after:before{
+          left:50%;
+          -webkit-transform:translateX(-50%);
+          -ms-transform:translateX(-50%);
+          transform:translateX(-50%);
+          right:auto;
+          width:290px;
+          height:200px; } }
+
+@media screen and (max-width: 1024px){
+      .newsletter-section .thanks-after{
+        padding:40px 92px 180px !important; } }
+
 .newsletter-section .newsletter-wrap{
     background-color:#fff;
     padding:65px 92px 89px;
@@ -9260,6 +9411,10 @@ body.compensate-for-scrollbar{
     -webkit-animation-fill-mode:forwards;
     animation-fill-mode:forwards; }
 
+@media screen and (max-width: 1024px){
+      .buy-tours-section .buy-text{
+        max-width:100%; } }
+
 @media screen and (max-width: 768px){
       .buy-tours-section .buy-text{
         font-size:12px;
@@ -9267,6 +9422,10 @@ body.compensate-for-scrollbar{
 
 .buy-tours-section .buy-text:nth-of-type(1){
       max-width:548px; }
+
+@media screen and (max-width: 1024px){
+        .buy-tours-section .buy-text:nth-of-type(1){
+          max-width:100%; } }
 
 .buy-tours-section .buy-text:nth-of-type(3){
       margin-bottom:11px; }
@@ -9606,7 +9765,11 @@ body.compensate-for-scrollbar{
   animation-fill-mode:forwards; }
 
 .installment-section{
-  padding:60px 0 100px; }
+  padding:100px 0; }
+
+@media screen and (max-width: 1700px){
+    .installment-section{
+      padding:70px 0 100px; } }
 
 @media screen and (max-width: 1400px){
     .installment-section{
@@ -9624,7 +9787,7 @@ body.compensate-for-scrollbar{
     background-image:url("../images/partner-bg.png");
     background-repeat:no-repeat;
     background-position:center bottom;
-    background-size:100%; }
+    background-size:100% 60%; }
 
 .installment-section .pay-latter{
     margin-bottom:100px; }

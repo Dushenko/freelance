@@ -117,7 +117,7 @@
                   <div class="order-form__input-wrap">
                     <input class="order-form__input" type="text" placeholder="Имя*">
                     <input class="order-form__input" type="number" placeholder="Персональный код">
-                    <input class="order-form__input" type="number" placeholder="Дата рождения">
+                    <input class="order-form__input" type="number" placeholder="Дата рождения" autocomplete="off" id="datepicker-hereNew">
                     <input class="order-form__input" type="text" placeholder="Фамилия*">
                     <input class="order-form__input" type="text" placeholder="Номер паспорта">
                     <input class="order-form__input" type="number" placeholder="Паспорт действителен до">
@@ -145,7 +145,7 @@
                     <input class="order-form__input" type="text" placeholder="Email*">
                     <input class="order-form__input" type="number" placeholder="Номер мобильного телефона*">
                     <input class="order-form__input-checbox" type="checkbox" name="rules" id="rules">
-                    <label class="order-form__label" for="rules">Я прочитал и согласился с <a href="#">правилами пользования.</a></label>
+                    <label class="order-form__label" for="rules">Я прочитал и согласился с </label><a class="order-form__rules" href="#">правилами пользования.</a>
                     <input class="order-form__input-checbox" type="checkbox" name="distribution" id="distribution">
                     <label class="order-form__label" for="distribution">Подписаться на рассылку</label>
                   </div>
@@ -229,7 +229,7 @@
                   <input class="feedbackForm__input" type="text">
                 </div>
                 <div class="feedbackForm__filds"><span class="feedbackForm__title">Введите ваш телефон</span>
-                  <input class="feedbackForm__input" type="text">
+                  <input class="feedbackForm__input" type="number">
                 </div>
                 <div class="feedbackForm__textarea-wrap"><span class="feedbackForm__title">Куда вы хотели бы поехать</span>
                   <textarea class="feedbackForm__textarea"></textarea>

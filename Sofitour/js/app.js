@@ -1,4 +1,5 @@
 //=require ../blocks/**/*.js
+//=require ../components/**/*.js
 $(document).ready(function() {
 
 	// burger
@@ -128,18 +129,167 @@ $(document).ready(function() {
 	//plus - minus 
 	$('.minus').click(function () {
 		var $input = $(this).parent().find('input');
+		var inputType = $(this).parent().find('input').attr('data-js');
+		if(inputType == 'from') {
+			var secondinput = $(this).parent().parent().find('.number__wrap_to');
+		} else {
+			var secondinput = $(this).parent().parent().find('.number__wrap_from');
+		}
+
+		var secondinputVal = secondinput.find('input').val()
+
 		var count = parseInt($input.val()) - 1;
 		count = count < 1 ? 1 : count;
+		
 		$input.val(count);
 		$input.change();
+
+		if(count < parseInt(secondinputVal) && inputType == 'to') {
+			secondinput.find('input').val(count)
+			secondinput.find('input').change();
+		}
+
+		var inputFrom = inputType == 'from' ? count : parseInt(secondinput.find('input').val());
+		var inputTo = inputType == 'from' ? parseInt(secondinput.find('input').val()) : count;
+		var mainInput = $(this).parent().parent().parent().find('.js-quantity-input')
+		EditDays(inputFrom, inputTo, mainInput)
+
 		return false;
 	});
 	$('.plus').click(function () {
 		var $input = $(this).parent().find('input');
-		$input.val(parseInt($input.val()) + 1);
+		var inputType = $(this).parent().find('input').attr('data-js');
+
+		if(inputType == 'from') {
+			var secondinput = $(this).parent().parent().find('.number__wrap_to');
+		} else {
+			var secondinput = $(this).parent().parent().find('.number__wrap_from');
+		}
+
+		var secondinputVal = secondinput.find('input').val();
+		
+		var count = parseInt($input.val()) + 1;
+		count = count >= 18 ? 18 : count;
+
+		if(count > secondinputVal && inputType == 'from') {
+			secondinput.find('input').val(count)
+			secondinput.find('input').change();
+		}
+		$input.val(count);
 		$input.change();
-		return false;
+		var inputFrom = inputType == 'from' ? count : parseInt(secondinput.find('input').val());
+		var inputTo = inputType == 'from' ? parseInt(secondinput.find('input').val()) : count;
+		var mainInput = $(this).parent().parent().parent().find('.js-quantity-input')
+		EditDays(inputFrom, inputTo, mainInput)
 	});
+
+	function EditDays(form, to, parent) {
+		let inputText = '';
+		if(form == to) {
+			if(form == 1) {
+				inputText = `на 1 ночь`;
+			}
+			else if (form <= 4) {
+				inputText = `на ${to} ночи`;
+			}
+			else {
+				inputText = `на ${to} ночей`;
+			}
+		}
+		else if(to <= 4) {
+			inputText = `на ${form}-${to} ночи`;
+		}
+		else {
+			inputText = `на ${form}-${to} ночей`;
+		}
+
+		parent.val(inputText);
+		parent.change();
+
+	}
+
+	$('input[name=adult]').on('change', function(){
+		var adult = parseInt($(this).parent().find('input[name=adult]:checked').val());
+		//var adult = parseInt($('input[name=adult]:checked').val());
+		var child = $(this).parent().parent().find('input[name=child]:checked');
+		var baby = $(this).parent().parent().find('input[name=baby]:checked');
+
+		var parent = $(this).parent().parent().parent();
+
+		editHumans(adult, parseInt(child.val()), parseInt(baby.val()), parent)
+
+	})
+
+	$('input[name=child]').on('change', function(){
+		var child = parseInt($(this).parent().find('input[name=child]:checked').val());
+		var adult = $(this).parent().parent().find('input[name=adult]:checked');
+		var baby = $(this).parent().parent().find('input[name=baby]:checked');
+
+		var summ = child + parseInt(baby.val());
+		
+		if(summ > 3) {
+			var minus = 3 - child;
+			$(this).parent().parent().find('input[name=baby]').eq(minus).trigger('click')
+		}
+
+		var parent = $(this).parent().parent().parent();
+		var child = parseInt($(this).parent().find('input[name=child]:checked').val());
+		var baby = $(this).parent().parent().find('input[name=baby]:checked');
+		editHumans(parseInt(adult.val()), child, parseInt(baby.val()), parent)
+	})
+
+	$('input[name=baby]').on('change', function(){
+		var baby = parseInt($(this).parent().find('input[name=baby]:checked').val());
+		var adult = $(this).parent().parent().find('input[name=adult]:checked');
+		var child = $(this).parent().parent().find('input[name=child]:checked');
+
+		var summ = baby + parseInt(child.val());
+		
+		
+		if(summ > 3) {
+			console.log(summ)
+			var minus = 3 - baby;
+			$(this).parent().parent().find('input[name=child]').eq(minus).trigger('click')
+		}
+
+		var parent = $(this).parent().parent().parent();
+		var baby = parseInt($(this).parent().find('input[name=baby]:checked').val());
+		var child = $(this).parent().parent().find('input[name=child]:checked');
+		editHumans(parseInt(adult.val()), parseInt(child.val()), baby, parent)
+	})
+
+	function editHumans (adult, child, baby, parent) {
+		var adultText = '';
+		if(adult == 1) {
+			adultText = `1 взрослый`;
+		}
+		else {
+			adultText = `${adult} взрослых`
+		}
+
+		var babyText = '';
+
+		if(child == baby && child != 0) {
+			var babyTotal = child + baby;
+			babyText = `и ${babyTotal} детей`;
+		}
+		else if(baby > 0 && child > 0) {
+			var babyTotal = child + baby;
+			babyText = `и ${babyTotal} детей`;
+		}
+		else if (child != 0 && baby == 0) {
+			babyText = child > 1 ? `и ${child} детей` : `и ${child} ребенок`;	
+		}
+		else if (child == 0 && baby != 0) {
+			babyText = baby > 1 ? `и ${baby} младенцев` : `и ${baby} младенец`;
+		}
+
+		var totalText = `${adultText} ${babyText}`;
+		
+		parent.find('.js-tourists-input').val(totalText);
+		parent.find('.js-tourists-input').change();
+	}
+
 
 	// mainForm inputs
 	$('.js-quantity-input').focus(function () {
@@ -159,7 +309,7 @@ $(document).ready(function() {
 
 	// datepicker
 	$( "#datepicker-hereNew").datepicker({
-		minDate: new Date(),
+		minDate: new Date(1900, 1, 1),
 	});
 
 	// sidebarBtn open
@@ -246,10 +396,6 @@ $(document).ready(function() {
 
 	$(".gallery a").fancybox();
 
-
-
-
-
 	//sliders
 	$('.carousel-partner').owlCarousel({
 		items: 1,
@@ -291,9 +437,11 @@ $(document).ready(function() {
 			},
 			1150: {
 				items: 3,
+				dots: false
 			},
 			1780: {
 				items: 4,
+				dots: false
 			}
 		}
 	});
@@ -324,11 +472,25 @@ $(document).ready(function() {
 
 	$('.pay-slider').owlCarousel({
 		items: 2,
+		slideBy: 2,
 		loop: true,
 		margin: 0,
 		nav: true,
 		dots: false,
-		// autoplay: true,
+		autoplay: true,
+		mouseDrag: true,
+		touchDrag: true,
+		smartSpeed: 600
+	});
+
+	$('.tabs-slider').owlCarousel({
+		items: 1,
+		slideBy: 1,
+		loop: true,
+		margin: 0,
+		nav: false,
+		dots: true,
+		autoplay: true,
 		mouseDrag: true,
 		touchDrag: true,
 		smartSpeed: 600
@@ -417,4 +579,18 @@ $(document).ready(function() {
 		owl_1.trigger('prev.owl.carousel',500);
 	});
 
+});
+
+
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".js-hide"); // тут указываем ID элемента
+		var blockClosed = $(".tourists");
+		var blockClose = $(".number");
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			blockClosed.removeClass('active'); // скрываем его
+		blockClose.removeClass('active');
+	}
+});
 });
