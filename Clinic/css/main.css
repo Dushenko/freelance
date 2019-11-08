@@ -284,12 +284,16 @@ button{
   width:100%;
   margin:0 auto;
   padding:0 15px; }
+.small-container{
+  max-width:980px; }
 .scroll-wrap::-webkit-scrollbar{
   width:3px;
   background-color:#ccc; }
 .scroll-wrap::-webkit-scrollbar-thumb{
   background-color:#152b39;
   border-radius:2px; }
+.breadcrumbs-wrap .new-container{
+  max-width:1364px; }
 .banner{
   background-repeat:no-repeat;
   background-size:cover;
@@ -567,6 +571,8 @@ button{
 @media screen and (max-width: 768px){
     .header-logo{
       padding:20px 0; } }
+.header-logo .new-container{
+    max-width:1364px; }
 .logo{
   width:400px;
   height:50px;
@@ -13567,6 +13573,92 @@ button{
   line-height:120%;
   color:#2D3663;
   margin-bottom:15px; }
+.organiz{
+  margin:0 0 35px;
+  display:-webkit-box;
+  display:flex;
+  max-width:980px;
+  width:100%; }
+@media screen and (max-width: 768px){
+    .organiz{
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      flex-direction:column;
+      margin:0 0 15px; } }
+.organiz__img{
+    -webkit-box-flex:0;
+    flex:none;
+    width:180px;
+    height:73px;
+    overflow:hidden;
+    margin-right:27px; }
+.organiz__img img{
+      width:100%;
+      height:100%;
+      -o-object-fit:cover;
+      object-fit:cover; }
+@media screen and (max-width: 768px){
+      .organiz__img{
+        margin:0 auto 25px; } }
+.organiz__name{
+    display:block;
+    font-family:'MuseoSans medium';
+    font-size:24px;
+    color:#2D3663;
+    margin-bottom:16px; }
+.organiz__text{
+    display:block;
+    font-family:'Roboto Slab';
+    font-style:normal;
+    font-weight:300;
+    font-size:16px;
+    line-height:22px;
+    color:#2D3663;
+    margin-bottom:10px; }
+.program-doc{
+  display:block;
+  font-family:'MuseoSans medium';
+  font-size:24px;
+  color:#2D3663;
+  padding-left:30px;
+  margin-bottom:22px;
+  position:relative; }
+.program-doc:after{
+    position:absolute;
+    content:'';
+    width:18px;
+    height:18px;
+    left:0;
+    top:2px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image:url("data:image/svg+xml,%3Csvg width='17' height='19' viewBox='0 0 17 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.4286 9.57143C16.4286 9.19196 16.2835 8.82366 16.0156 8.56696L8.75 1.30134C8.48214 1.03348 8.11384 0.877231 7.73438 0.877231C7.35491 0.877231 6.99777 1.03348 6.72991 1.30134L5.89286 2.13839C5.625 2.39509 5.46875 2.76339 5.46875 3.14286C5.46875 3.52232 5.625 3.89062 5.89286 4.14732L9.16295 7.42857H1.3058C0.502232 7.42857 0 8.09821 0 8.85714V10.2857C0 11.0446 0.502232 11.7143 1.3058 11.7143H9.16295L5.89286 14.9844C5.625 15.2522 5.46875 15.6205 5.46875 16C5.46875 16.3795 5.625 16.7478 5.89286 17.0156L6.72991 17.8527C6.99777 18.1094 7.35491 18.2656 7.73438 18.2656C8.11384 18.2656 8.48214 18.1094 8.75 17.8527L16.0156 10.5871C16.2835 10.3192 16.4286 9.95089 16.4286 9.57143Z' fill='%233099D5'/%3E%3C/svg%3E%0A"); }
+.program-doc_small{
+    font-size:14px;
+    margin-bottom:12px; }
+.content-title{
+  font-family:'MuseoSans medium';
+  font-size:30px;
+  color:#2D3663;
+  margin-bottom:26px; }
+.sub-title{
+  font-family:'Roboto Slab';
+  font-weight:700;
+  font-size:18px;
+  color:#2D3663;
+  margin:0 0 20px 0; }
+.list-links{
+  margin-bottom:20px; }
+.list-links li{
+    margin-bottom:4px; }
+.list-links a{
+    font-family:'Roboto Slab';
+    font-weight:300;
+    font-size:16px;
+    color:#2D3663; }
+.list-links a:hover{
+      color:#3099D5; }
 .payCheck{
   margin:0 auto 22px;
   font-family:'MuseoSans medium'; }
@@ -13656,7 +13748,14 @@ button{
     background-image:url("data:image/svg+xml,%3Csvg width='9' height='13' viewBox='0 0 9 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.26562 6.5C4.23438 6.39062 4.21094 6.25 4.19531 6.07812C4.17969 5.89062 4.17188 5.73438 4.17188 5.60938C4.17188 5.46875 4.1875 5.39844 4.21875 5.39844C4.3125 5.39844 4.35938 5.55469 4.35938 5.86719C4.35938 6.17969 4.32812 6.39062 4.26562 6.5ZM4.21875 7.60156C4.4375 8.00781 4.71094 8.32812 5.03906 8.5625C4.85156 8.59375 4.35938 8.76562 3.5625 9.07812C3.76562 8.70312 3.98438 8.21094 4.21875 7.60156ZM2.01562 10.5312C2.07812 10.3594 2.35156 10.0469 2.83594 9.59375C2.74219 9.75 2.64844 9.89062 2.55469 10.0156C2.46094 10.125 2.38281 10.2188 2.32031 10.2969C2.25781 10.3594 2.20312 10.4141 2.15625 10.4609C2.10938 10.4922 2.07031 10.5156 2.03906 10.5312C2.02344 10.5312 2.01562 10.5312 2.01562 10.5312ZM5.8125 4.25H9V11.9375C9 12.0938 8.94531 12.2266 8.83594 12.3359C8.72656 12.4453 8.59375 12.5 8.4375 12.5H0.5625C0.40625 12.5 0.273438 12.4453 0.164062 12.3359C0.0546875 12.2266 0 12.0938 0 11.9375V1.0625C0 0.90625 0.0546875 0.773438 0.164062 0.664062C0.273438 0.554687 0.40625 0.5 0.5625 0.5H5.25V3.6875C5.25 3.84375 5.30469 3.97656 5.41406 4.08594C5.52344 4.19531 5.65625 4.25 5.8125 4.25ZM5.625 8.28125C5.17188 8 4.83594 7.57812 4.61719 7.01562C4.80469 6.28125 4.85938 5.78125 4.78125 5.51562C4.73438 5.29688 4.625 5.14844 4.45312 5.07031C4.29688 4.97656 4.13281 4.96094 3.96094 5.02344C3.78906 5.08594 3.6875 5.19531 3.65625 5.35156C3.5625 5.69531 3.625 6.29688 3.84375 7.15625C3.48438 8 3.16406 8.67188 2.88281 9.17188C2.42969 9.39062 2.05469 9.64844 1.75781 9.94531C1.46094 10.2422 1.40625 10.5156 1.59375 10.7656C1.71875 10.9219 1.89062 11 2.10938 11C2.5 11 2.97656 10.5156 3.53906 9.54688C4.50781 9.23438 5.125 9.05469 5.39062 9.00781C5.95312 9.30469 6.45312 9.45312 6.89062 9.45312C7.20312 9.45312 7.39844 9.32031 7.47656 9.05469C7.55469 8.78906 7.51562 8.58594 7.35938 8.44531C7.10938 8.21094 6.53125 8.15625 5.625 8.28125ZM8.83594 2.96094C8.94531 3.07031 9 3.20312 9 3.35938V3.5H6V0.5H6.14062C6.29688 0.5 6.42969 0.554687 6.53906 0.664062L8.83594 2.96094ZM7.10156 8.9375C7.00781 9.04688 6.67188 8.97656 6.09375 8.72656C6.76562 8.71094 7.10156 8.78125 7.10156 8.9375Z' fill='%23fff'/%3E%3C/svg%3E%0A"); }
 .mainInfo{
   display:-webkit-box;
-  display:flex; }
+  display:flex;
+  margin-bottom:28px; }
+@media screen and (max-width: 768px){
+    .mainInfo{
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      flex-direction:column;
+      margin-bottom:40px; } }
 .mainInfo__img{
     width:230px;
     height:230px;
@@ -13665,6 +13764,12 @@ button{
     border-radius:10px;
     -webkit-box-flex:0;
     flex:none; }
+@media screen and (max-width: 768px){
+      .mainInfo__img{
+        max-width:325px;
+        width:100%;
+        height:325px;
+        margin:0 0 20px; } }
 .mainInfo__img img{
       width:100%;
       height:100%;
@@ -13674,9 +13779,11 @@ button{
     display:block;
     font-family:'MuseoSans medium';
     font-size:24px;
-    line-height:100%;
     color:#2D3663;
-    margin-bottom:23px; }
+    margin-bottom:20px; }
+@media screen and (max-width: 768px){
+      .mainInfo__name{
+        margin-bottom:18px; } }
 .mainInfo .skills{
     margin-bottom:12px;
     display:-webkit-box;
@@ -13697,7 +13804,8 @@ button{
     display:-webkit-box;
     display:flex;
     -webkit-box-align:center;
-    align-items:center; }
+    align-items:center;
+    margin-bottom:0; }
 .mainInfo__item{
     margin-right:12px; }
 .mainInfo__link{
@@ -13722,7 +13830,7 @@ button{
   font-family:'Roboto Slab';
   font-weight:300;
   font-size:16px;
-  line-height:140%;
+  line-height:22px;
   color:#2D3663;
   margin-bottom:20px; }
 .info_margin{
@@ -13734,6 +13842,8 @@ button{
     width:100%; }
 .doctor-profile .main-btn{
   margin-top:15px; }
+.doctor-profile .section-title{
+  margin:0 0 28px !important; }
 .specialists-wrap{
   display:-webkit-box;
   display:flex;
@@ -13746,7 +13856,10 @@ button{
     margin:0 20px 40px; }
 @media screen and (max-width: 768px){
       .specialists-wrap .team-item{
-        margin:0 0 20px;
+        padding:30px 15px; } }
+@media screen and (max-width: 600px){
+      .specialists-wrap .team-item{
+        margin:0 15px 20px;
         padding:30px 15px; } }
 .specialists-wrap .team-item .image{
     width:420px;
