@@ -73,6 +73,27 @@
                       <label class="statementForm__label">Отчество (если есть)</label>
                       <input class="statementForm__input" type="text" placeholder="Отчество">
                     </div><span class="statementForm__sub-title">Выберите вид услуги</span>
+                    <div class="statementForm__row">
+                      <div class="statementForm__field">
+                        <input class="statementForm__input-checkbox" type="radio" id="oms" name="polis">
+                        <label class="statementForm__label-checkbox radio" for="oms">Полис ОМС</label>
+                      </div>
+                      <input class="statementForm__input" type="text" placeholder="Введите номер полиса ОМС">
+                    </div>
+                    <div class="statementForm__row">
+                      <div class="statementForm__field">
+                        <input class="statementForm__input-checkbox" type="radio" id="dms" name="polis">
+                        <label class="statementForm__label-checkbox radio" for="dms">Полис ДМС</label>
+                      </div>
+                      <input class="statementForm__input" type="text" placeholder="Введите номер полиса ДМС">
+                    </div>
+                    <div class="statementForm__row">
+                      <div class="statementForm__field">
+                        <input class="statementForm__input-checkbox" type="radio" id="pay" name="polis">
+                        <label class="statementForm__label-checkbox radio" for="pay">Платная услуга</label>
+                      </div>
+                    </div>
+                    <p class="statementForm__text">Если Вы записались на платный прием к врачу, Вам необходимо прийти за 15-30 минут до назначенного времени приема для оформления договора на оказание платных медицинских услуг. При себе необходимо иметь паспорт.</p>
                     <div class="statementForm__capcha"><img src="images/capcha.png" alt=""></div>
                     <button class="main-btn main-btn_blue" type="submit">Записаться</button>
                   </div>
