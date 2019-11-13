@@ -40,39 +40,99 @@
           <h2 class="section-title">Выбор услуги</h2>
           <div class="research-title">
             <h2 class="content-title">Все исследования</h2>
+            <form class="filterForm" action="#" method="" id="">
+              <div class="filterForm__wrap">
+                <div class="filterForm__search">
+                  <div class="searchInput">
+                    <input class="searchInput__input" type="text" placeholder="Поиск по исследованиям">
+                    <botton class="searchInput__btn" type="submit"></botton>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="tabs">
-            <div class="tab active"><span class="tab-name">Анализы по категориям</span></div>
-            <div class="tab"><span class="tab-name">Анализы по заболеваниям</span></div>
-            <div class="tab"><span class="tab-name">Анализы по органам и системам организма</span></div>
-          </div>
-          <div class="research-wrap research-wrap_all-service">
-            <div class="direction"><span class="direction-title">Гастроэнтерология</span>
-              <div class="service"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
-                <div class="service__basket-icon"></div>
+          <div class="js-tabs">
+            <ul class="js-tab-btn tabs">
+              <li class="tab active"><span class="tab-name">Анализы по категориям</span></li>
+              <li class="tab"><span class="tab-name">Анализы по заболеваниям</span></li>
+              <li class="tab"><span class="tab-name">Анализы по органам и системам организма</span></li>
+            </ul>
+            <div class="research-wrap research-wrap_tabs js-tab-content active">
+              <div class="direction"><span class="direction-title">Гастроэнтерология</span>
+                <div class="js-accordion">
+                  <div class="service js-title"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span><a class="service__basket-icon" href="#"></a></div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга. Состав: Клинический анализ крови с лейкоцитарной формулой (5DIFF), Протрoмбин % (по Квику), Фибриноген, Антитромбин III, Холестерин общий, Холестерин-ЛПНП, Холестерин-ЛПОНП, Коэффициент атерогенности, Церулоплазмин, АТ к фосфолипидам (СКРИНИНГ)</p>
+                  </div>
+                  <div class="service js-title"><span class="service__name">Исследование кала на простейшие и яйца гельминтов системой ПАРАСЕП (методом обогащения)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span><a class="service__basket-icon" href="#"></a></div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга. Состав: Клинический анализ крови с лейкоцитарной формулой (5DIFF), Протрoмбин % (по Квику), Фибриноген, Антитромбин III, Холестерин общий, Холестерин-ЛПНП, Холестерин-ЛПОНП, Коэффициент атерогенности, Церулоплазмин, АТ к фосфолипидам (СКРИНИНГ)</p>
+                  </div>
+                  <div class="service js-title"><span class="service__name">Биопсия 5-й категории сложности без дополнительных методов исследования</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span><a class="service__basket-icon" href="#"></a></div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга. Состав: Клинический анализ крови с лейкоцитарной формулой (5DIFF), Протрoмбин % (по Квику), Фибриноген, Антитромбин III, Холестерин общий, Холестерин-ЛПНП, Холестерин-ЛПОНП, Коэффициент атерогенности, Церулоплазмин, АТ к фосфолипидам (СКРИНИНГ)</p>
+                  </div>
+                  <div class="service js-title"><span class="service__name">Биопсия 2-й категории сложности без дополнительных методов исследования</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span><a class="service__basket-icon" href="#"></a></div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга. Состав: Клинический анализ крови с лейкоцитарной формулой (5DIFF), Протрoмбин % (по Квику), Фибриноген, Антитромбин III, Холестерин общий, Холестерин-ЛПНП, Холестерин-ЛПОНП, Коэффициент атерогенности, Церулоплазмин, АТ к фосфолипидам (СКРИНИНГ)</p>
+                  </div>
+                </div>
               </div>
-              <div class="service"><span class="service__name">Исследование кала на простейшие и яйца гельминтов системой ПАРАСЕП (методом обогащения)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
-                <div class="service__basket-icon"></div>
-              </div>
-              <div class="service"><span class="service__name">Биопсия 5-й категории сложности без дополнительных методов исследования</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
-                <div class="service__basket-icon"></div>
-              </div>
-              <div class="service"><span class="service__name">Биопсия 2-й категории сложности без дополнительных методов исследования</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
-                <div class="service__basket-icon"></div>
+              <div class="direction"><span class="direction-title">Кардиология</span>
+                <div class="js-accordion">
+                  <div class="service js-title"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
+                    <div class="service__basket-icon"></div>
+                  </div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга.</p>
+                  </div>
+                  <div class="service js-title"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
+                    <div class="service__basket-icon"></div>
+                  </div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга.</p>
+                  </div>
+                  <div class="service js-title"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
+                    <div class="service__basket-icon"></div>
+                  </div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга.</p>
+                  </div>
+                  <div class="service js-title"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
+                    <div class="service__basket-icon"></div>
+                  </div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга.</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="direction"><span class="direction-title">Кардиология</span>
-              <div class="service"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
-                <div class="service__basket-icon"></div>
+            <div class="research-wrap research-wrap_tabs js-tab-content">
+              <div class="direction"><span class="direction-title">Гастроэнтерология</span>
+                <div class="js-accordion">
+                  <div class="service js-title"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span><a class="service__basket-icon" href="#"></a></div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга. Состав: Клинический анализ крови с лейкоцитарной формулой (5DIFF), Протрoмбин % (по Квику), Фибриноген, Антитромбин III, Холестерин общий, Холестерин-ЛПНП, Холестерин-ЛПОНП, Коэффициент атерогенности, Церулоплазмин, АТ к фосфолипидам (СКРИНИНГ)</p>
+                  </div>
+                  <div class="service js-title"><span class="service__name">Исследование кала на простейшие и яйца гельминтов системой ПАРАСЕП (методом обогащения)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span><a class="service__basket-icon" href="#"></a></div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга. Состав: Клинический анализ крови с лейкоцитарной формулой (5DIFF), Протрoмбин % (по Квику), Фибриноген, Антитромбин III, Холестерин общий, Холестерин-ЛПНП, Холестерин-ЛПОНП, Коэффициент атерогенности, Церулоплазмин, АТ к фосфолипидам (СКРИНИНГ)</p>
+                  </div>
+                </div>
               </div>
-              <div class="service"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
-                <div class="service__basket-icon"></div>
-              </div>
-              <div class="service"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
-                <div class="service__basket-icon"></div>
-              </div>
-              <div class="service"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span>
-                <div class="service__basket-icon"></div>
+            </div>
+            <div class="research-wrap research-wrap_tabs js-tab-content">
+              <div class="direction"><span class="direction-title">Хеликобактер</span>
+                <div class="js-accordion">
+                  <div class="service js-title"><span class="service__name">Хеликобактер пилори (Helicobacter pylori)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span><a class="service__basket-icon" href="#"></a></div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга. Состав: Клинический анализ крови с лейкоцитарной формулой (5DIFF), Протрoмбин % (по Квику), Фибриноген, Антитромбин III, Холестерин общий, Холестерин-ЛПНП, Холестерин-ЛПОНП, Коэффициент атерогенности, Церулоплазмин, АТ к фосфолипидам (СКРИНИНГ)</p>
+                  </div>
+                  <div class="service js-title"><span class="service__name">Исследование кала на простейшие и яйца гельминтов системой ПАРАСЕП (методом обогащения)</span><a class="service__info-icon" href="#"></a><span class="service__price">800</span><a class="service__basket-icon" href="#"></a></div>
+                  <div class="service-content">
+                    <p class="service-text">Исследование предназначено для дифференциальной диагностики сосудистых заболеваний, в том числе головного мозга. Состав: Клинический анализ крови с лейкоцитарной формулой (5DIFF), Протрoмбин % (по Квику), Фибриноген, Антитромбин III, Холестерин общий, Холестерин-ЛПНП, Холестерин-ЛПОНП, Коэффициент атерогенности, Церулоплазмин, АТ к фосфолипидам (СКРИНИНГ)</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
-  var headers = document.querySelectorAll('.accordion .payCheck__area');
+  var headers = document.querySelectorAll('.js-accordion .js-title');
 
   for (var i = 0; i < headers.length; i++) {
     headers[i].addEventListener('click', openCurrAccordion);
@@ -36,4 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   }
+
+  $(function () {
+    $("ul.js-tab-btn").on("click", "li:not(.active)", function () {
+      $(this).addClass("active").siblings().removeClass("active").closest("div.js-tabs").find("div.js-tab-content").removeClass("active").eq($(this).index()).addClass("active");
+    });
+  });
 });

@@ -660,7 +660,8 @@ button{
         display:none; }
 @media screen and (max-width: 768px){
         .statementForm__column .main-btn{
-          width:328px; } }
+          max-width:328px;
+          width:100%; } }
 .statementForm__field{
     display:-webkit-box;
     display:flex;
@@ -13619,6 +13620,9 @@ button{
   color:#2D3663;
   margin-bottom:22px;
   padding-left:30px; }
+@media screen and (max-width: 768px){
+    .direction-title{
+      padding-left:0; } }
 .condition-title{
   display:block;
   font-family:'MuseoSans medium';
@@ -13640,12 +13644,27 @@ button{
   display:-webkit-box;
   display:flex;
   -webkit-box-pack:justify;
-  justify-content:space-between; }
+  justify-content:space-between;
+  margin-bottom:0; }
+@media screen and (max-width: 768px){
+    .tabs{
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      flex-direction:column; } }
 .tab{
   width:33%;
   background:#3099D5;
   border-radius:10px 10px 0px 0px;
-  padding:27px 10px; }
+  padding:27px 10px;
+  cursor:pointer; }
+@media screen and (max-width: 1024px){
+    .tab{
+      padding:10px; } }
+@media screen and (max-width: 768px){
+    .tab{
+      width:100%;
+      border-radius:10px;
+      margin-bottom:5px; } }
 .tab:hover, .tab.active{
     background:#EDF3F6; }
 .tab:hover .tab-name, .tab.active .tab-name{
@@ -14201,14 +14220,19 @@ button{
     -webkit-box-direction:normal;
     flex-direction:column;
     padding:27px; }
-.research-wrap_all-service{
-    display:-webkit-box;
-    display:flex;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-    flex-direction:column;
+.research-wrap_tabs{
     padding:27px;
-    border-radius:0 0 10px 10px; }
+    border-radius:0 0 10px 10px;
+    display:none; }
+@media screen and (max-width: 768px){
+      .research-wrap_tabs{
+        padding:10px; } }
+.research-wrap_tabs.active{
+      display:-webkit-box;
+      display:flex;
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      flex-direction:column; }
 .research-title{
   display:-webkit-box;
   display:flex;
@@ -14292,18 +14316,26 @@ button{
   display:flex;
   -webkit-box-align:center;
   align-items:center;
-  padding:8px 30px;
-  margin-bottom:10px;
+  padding:10px 30px;
   background-color:#fff;
   border-radius:10px;
-  -webkit-box-pack:end;
-  justify-content:flex-end; }
+  cursor:pointer; }
+@media screen and (max-width: 1024px){
+    .service{
+      padding:20px 10px; } }
+@media screen and (max-width: 768px){
+    .service{
+      flex-wrap:wrap; } }
 .service__name{
     max-width:670px;
     font-family:'Roboto Slab';
     font-size:16px;
     color:#2D3663;
     margin-right:auto; }
+@media screen and (max-width: 768px){
+      .service__name{
+        width:100%;
+        margin-bottom:20px; } }
 .service__info-icon{
     -webkit-box-flex:0;
     flex:none;
@@ -14320,6 +14352,9 @@ button{
 .service__info-icon:hover{
       background-color:#2D3663;
       background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='401.998px' height='401.998px' viewBox='0 0 401.998 401.998' style='enable-background:new 0 0 401.998 401.998;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M164.454,91.363h73.098c4.945,0,9.226-1.807,12.847-5.424c3.61-3.614,5.421-7.898,5.421-12.847V18.274 c0-4.948-1.811-9.229-5.428-12.85C246.777,1.812,242.49,0,237.544,0h-73.091c-4.946,0-9.229,1.812-12.847,5.424 c-3.615,3.617-5.424,7.902-5.424,12.85v54.818c0,4.949,1.809,9.233,5.424,12.847C155.224,89.556,159.507,91.363,164.454,91.363z' /%3E%3Cpath fill='%23fff' d='M286.936,334.331c-3.613-3.617-7.897-5.427-12.847-5.427h-18.274V164.452c0-4.947-1.807-9.229-5.421-12.845 c-3.62-3.617-7.904-5.426-12.847-5.426H127.912c-4.949,0-9.231,1.809-12.847,5.426c-3.618,3.616-5.424,7.898-5.424,12.845v36.547 c0,4.946,1.807,9.231,5.424,12.845c3.615,3.621,7.898,5.428,12.847,5.428h18.274v109.633h-18.274 c-4.949,0-9.231,1.81-12.847,5.427c-3.618,3.614-5.424,7.898-5.424,12.847v36.546c0,4.948,1.807,9.232,5.424,12.854 c3.615,3.61,7.898,5.421,12.847,5.421h146.177c4.949,0,9.233-1.811,12.847-5.421c3.614-3.621,5.421-7.905,5.421-12.854v-36.546 C292.357,342.229,290.56,337.945,286.936,334.331z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A"); }
+@media screen and (max-width: 1024px){
+      .service__info-icon{
+        margin-left:20px; } }
 .service__price{
     -webkit-box-flex:0;
     flex:none;
@@ -14327,6 +14362,9 @@ button{
     font-family:'Roboto Slab';
     font-size:24px;
     color:#2D3663; }
+@media screen and (max-width: 1024px){
+      .service__price{
+        margin-left:40px; } }
 .service__basket-icon{
     -webkit-box-flex:0;
     flex:none;
@@ -14337,6 +14375,33 @@ button{
     background-repeat:no-repeat;
     background-position:center;
     background-image:url("data:image/svg+xml,%3Csvg width='34' height='29' viewBox='0 0 34 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.4235 26C13.4235 24.5938 12.2584 23.4286 10.8521 23.4286C9.44587 23.4286 8.28069 24.5938 8.28069 26C8.28069 27.4062 9.44587 28.5714 10.8521 28.5714C12.2584 28.5714 13.4235 27.4062 13.4235 26ZM31.4236 26C31.4236 24.5938 30.2584 23.4286 28.8521 23.4286C27.4459 23.4286 26.2807 24.5938 26.2807 26C26.2807 27.4062 27.4459 28.5714 28.8521 28.5714C30.2584 28.5714 31.4236 27.4062 31.4236 26ZM33.995 4.14286C33.995 3.43973 33.4124 2.85714 32.7093 2.85714H8.58203C8.38114 1.89286 8.34096 0.285714 6.99498 0.285714H1.85212C1.149 0.285714 0.566406 0.868302 0.566406 1.57143C0.566406 2.27455 1.149 2.85714 1.85212 2.85714H5.95034L9.50614 19.3906C9.18471 20.0134 8.28069 21.5201 8.28069 22.1429C8.28069 22.846 8.86328 23.4286 9.56641 23.4286H30.1378C30.841 23.4286 31.4236 22.846 31.4236 22.1429C31.4236 21.4397 30.841 20.8571 30.1378 20.8571H11.6557C11.8566 20.4554 12.1378 20.0335 12.1378 19.5714C12.1378 19.0893 11.9771 18.6272 11.8767 18.1652L32.8499 15.7143C33.4927 15.6339 33.995 15.0714 33.995 14.4286V4.14286Z' fill='%233099D5'/%3E%3C/svg%3E%0A"); }
+@media screen and (max-width: 1024px){
+      .service__basket-icon{
+        margin-left:40px; } }
+.service-content{
+  max-height:0px;
+  overflow:hidden;
+  -webkit-transition:max-height .3s ease;
+  transition:max-height .3s ease;
+  margin-bottom:10px;
+  position:relative;
+  top:-10px;
+  background-color:#fff;
+  border-radius:0 0 10px 10px;
+  padding:0 30px 0 30px; }
+@media screen and (max-width: 1024px){
+    .service-content{
+      padding:0 10px 0 10px; } }
+.service-text{
+  background-color:#fff;
+  padding:8px 0 8px 0;
+  max-width:760px;
+  width:100%;
+  font-family:'Roboto Slab';
+  font-style:normal;
+  font-weight:300;
+  font-size:15px;
+  color:rgba(45, 54, 99, 0.75); }
 .payCheck{
   margin:0 auto 22px;
   font-family:'MuseoSans medium'; }
