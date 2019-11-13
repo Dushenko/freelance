@@ -407,7 +407,6 @@ button{
       color:#2d3663 !important; }
 .main-btn_appoi{
     min-width:310px;
-    width:100%;
     height:60px;
     padding:15px 65px 15px 35px;
     border-radius:37.0292px;
@@ -433,6 +432,8 @@ button{
     max-width:615px;
     width:100%; }
 .doc{
+  max-width:920px;
+  width:100%;
   display:-webkit-box;
   display:flex;
   -webkit-box-align:center;
@@ -13614,7 +13615,7 @@ button{
   width:310px;
   display:-webkit-box;
   display:flex;
-  margin-bottom:15px; }
+  margin:0 50px 15px 0; }
 .letter__title{
     font-family:'MuseoSans medium';
     width:37px;
