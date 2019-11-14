@@ -28,16 +28,25 @@
       <main class="main">
         <div class="breadcrumbs-wrap">
           <div class="new-container">
-            <h1 class="main-title">Государственные программы</h1>
+            <h1 class="main-title">Записаться на приём</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
-              <li class="breadcrumbs__item breadcrumbs__item_active"><a class="breadcrumbs__link" href="#">Государственные программы</a></li>
+              <li class="breadcrumbs__item breadcrumbs"><a class="breadcrumbs__link" href="#">Записаться на приём</a></li>
             </ul>
           </div>
         </div>
         <div class="new-container">
-          <div class="small-container">
-            <p class="info">Территориальная программа государственных гарантий бесплатного оказания гражданам медицинской помощи в городе Москве на 2017 год и на плановый период 2018 и 2019 годов</p><a class="program-doc" href="#">Программа 1</a><a class="program-doc" href="#">Программа 2</a>
+          <h2 class="section-title">Выбор даты и времени</h2>
+          <div class="timeSelection">
+            <div class="timeSelection__date">
+              <div class="timeSelection__calendar calendarcol-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                <div id="calendar"></div>
+              </div>
+              <div class="timeSelection__time time col-xs-12 col-sm-5 col-md-5 col-lg-4 col-xl-3">
+                <ul class="time__cells"></ul>
+              </div>
+            </div>
+            <div class="timeSelection__result"><span id="result">Выбрано: <span class="time__date">10 октября, </span><span class="time__time">13.15</span></span></div><a class="main-btn main-btn_blue" href="#">Записаться</a>
           </div>
         </div>
       </main>

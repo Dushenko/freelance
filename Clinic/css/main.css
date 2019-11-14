@@ -1242,6 +1242,9 @@ Copyright (c) 2014 Daniel Eden
   -webkit-box-pack:center;
   justify-content:center;
   margin-right:25px; }
+@media screen and (max-width: 768px){
+    .timeSelection__calendar{
+      margin:0 0 20px; } }
 .timeSelection__time{
   background-color:#EDF3F6;
   border-radius:10px;
@@ -1318,6 +1321,18 @@ Copyright (c) 2014 Daniel Eden
   line-height:1;
   font-size:12px;
   font-family:"MuseoSans regular", sans-serif; }
+.timeSelection__result{
+  margin-bottom:20px; }
+.timeSelection__result span{
+    font-family:'MuseoSans medium';
+    font-size:18px;
+    color:#2D3663; }
+.timeSelection{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column; }
 /*! This file is auto-generated */
 @font-face{
   font-family:dashicons;
