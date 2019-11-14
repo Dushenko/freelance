@@ -97,7 +97,7 @@ function createCalendar(calendar, element, adjuster, init){
   function AddLabels(){
     var labels = document.createElement('ul');
     labels.className = 'cld-labels';
-    var labelsList = ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
+    var labelsList = ["Вск", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
     for(var i = 0; i < labelsList.length; i++){
       var label = document.createElement('li');
       label.className += "cld-label";
