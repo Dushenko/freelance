@@ -36,4 +36,10 @@ $(document).ready(function () {
       }
     }]
   });
+  $('.scroll-down').on('click', () => {
+    fullpage_api.moveSectionDown();
+  })
+  $('.scroll-up').on('click', () => {
+    fullpage_api.moveSectionUp();
+  })
 });
