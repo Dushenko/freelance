@@ -303,18 +303,23 @@ section{
       .advantage__title{
         font-size:18px; } }
 .main-btn{
-  padding:18px;
+  padding:12px;
   display:inline-block;
   text-transform:uppercase;
-  font-size:18px;
+  font-size:15px;
   font-weight:700;
   letter-spacing:0.55px;
   text-align:center;
   color:#a58861;
-  border:3px solid #a58861; }
+  border:2px solid #a58861; }
 .main-btn:hover{
     color:#fff;
     background-color:#a58861; }
+@media screen and (min-width: 1024px){
+    .main-btn{
+      padding:18px;
+      font-size:18px;
+      border:3px solid #a58861; } }
 @media screen and (min-width: 1500px){
     .main-btn{
       padding:25px;
@@ -385,9 +390,10 @@ section{
   line-height:0.54;
   color:#dcdcdc; }
 .scroll-down{
-  width:59px;
-  height:57px;
+  width:50px;
+  height:7.5vh;
   position:absolute;
+  bottom:0;
   background-color:#141414;
   background-repeat:no-repeat;
   background-position:center;
@@ -406,10 +412,10 @@ section{
     -ms-transform:translateY(-50%);
     transform:translateY(-50%); }
 .scroll-up{
-  width:59px;
-  height:57px;
+  width:50px;
+  height:7.5vh;
   bottom:0;
-  left:50%;
+  left:40%;
   position:absolute;
   background-color:#141414;
   background-repeat:no-repeat;
@@ -609,7 +615,7 @@ section{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    top:38%; }
+    top:23%; }
 .main-slider .slick-prev{
     left:-40px;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9.588' height='17.409' viewBox='0 0 9.588 17.409'%3E%3Cdefs%3E%3Cstyle%3E .cls-1%7Bfill:%23fff%7D %3C/style%3E%3C/defs%3E%3Cg id='download' transform='rotate(90 31.84 31.84)'%3E%3Cpath id='Expand_More' d='M15.911 54.349l-7.206 7.208L1.5 54.349a.879.879 0 0 0-1.243 1.243l7.826 7.829a.877.877 0 0 0 1.242 0l7.826-7.829a.878.878 0 1 0-1.241-1.243z' class='cls-1'/%3E%3C/g%3E%3C/svg%3E%0A"); }
@@ -617,12 +623,26 @@ section{
     right:-20px;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9.588' height='17.409' viewBox='0 0 9.588 17.409'%3E%3Cdefs%3E%3Cstyle%3E .cls-1%7Bfill:%23141414%7D %3C/style%3E%3C/defs%3E%3Cg id='download' transform='rotate(90 4.794 4.794)'%3E%3Cpath id='Expand_More' d='M15.911 9.329L8.705 2.122 1.5 9.33A.879.879 0 0 1 .257 8.087L8.083.258a.877.877 0 0 1 1.242 0l7.826 7.829A.878.878 0 1 1 15.91 9.33z' class='cls-1'/%3E%3C/g%3E%3C/svg%3E%0A"); }
 .main-slider .slide-holder{
-    position:relative; }
+    position:relative;
+    height:80vh; }
+@media screen and (max-width: 1024px){
+      .main-slider .slide-holder{
+        display:-webkit-box;
+        display:flex;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+        flex-direction:column; } }
 .main-slider .img-slider-wrap{
     width:50%; }
 .main-slider .img-slider .small-slide{
     width:100%;
     height:420px; }
+@media screen and (max-width: 1200px){
+      .main-slider .img-slider .small-slide{
+        height:300px; } }
+@media screen and (max-width: 1024px){
+      .main-slider .img-slider .small-slide{
+        height:200px; } }
 .main-slider .img-slider .small-slide img{
       width:100%;
       height:100%;
@@ -663,11 +683,16 @@ section{
     top:0;
     width:40%;
     padding-top:10px; }
+@media screen and (max-width: 1024px){
+      .main-slider .slide-info{
+        position:relative; } }
 .main-slider .slide-info h3{
       font-size:36px;
       font-weight:normal;
-      line-height:1.67;
-      margin-bottom:8px; }
+      margin-bottom:12px; }
+@media screen and (max-width: 1024px){
+        .main-slider .slide-info h3{
+          font-size:25px; } }
 .main-slider .slide-info p{
       font-family:'Oswald';
       font-size:16px;
@@ -680,11 +705,11 @@ section{
           font-size:18px; } }
 .section{
   position:relative; }
-.section .scroll-down{
-    bottom:0;
-    left:46.7%; }
 .first-section{
   position:relative; }
+.first-section .scroll-down{
+    bottom:0;
+    left:calc(50% - 50px); }
 .first-section .container{
     display:-webkit-box;
     display:flex;
@@ -699,7 +724,7 @@ section{
 .first-section .bg-img{
     position:absolute;
     width:calc(50% + 50px);
-    height:85%;
+    height:85vh;
     top:50%;
     right:0;
     -webkit-transform:translateY(-50%);
@@ -711,6 +736,17 @@ section{
       height:100%;
       -o-object-fit:cover;
       object-fit:cover; }
+.first-section .bg-img:after{
+      content:'';
+      width:20%;
+      height:73%;
+      position:absolute;
+      bottom:0;
+      left:0;
+      background-image:url("../images/cup.png");
+      background-size:contain;
+      background-repeat:no-repeat;
+      background-position:bottom; }
 .first-section .section-title{
     max-width:865px;
     width:100%;
@@ -733,6 +769,10 @@ section{
   background-size:30%;
   background-position:bottom center;
   background-repeat:no-repeat; }
+.second-section .scroll-down{
+    left:100px; }
+.second-section .scroll-down:after{
+      color:#000; }
 .second-section .main-title{
     max-width:800px;
     width:100%;
@@ -747,12 +787,17 @@ section{
     justify-content:space-between; }
 .third-section{
   position:relative; }
+.third-section .scroll-down{
+    bottom:0;
+    left:calc(62% - 50px); }
+.third-section .scroll-down:after{
+      color:#000; }
 .third-section .main-title{
     margin-bottom:50px; }
 .third-section .bg-img{
     position:absolute;
     width:calc(38% + 50px);
-    height:85%;
+    height:85vh;
     top:50%;
     right:0;
     -webkit-transform:translateY(-50%);
@@ -799,6 +844,10 @@ section{
     margin:0 -30px; }
 .fourth-section{
   position:relative; }
+.fourth-section .fp-tableCell{
+    height:auto !important; }
+.fourth-section .scroll-down{
+    left:100px; }
 .fourth-section .container{
     width:90%; }
 .fourth-section:before{
@@ -811,7 +860,7 @@ section{
     background-color:#a58861;
     z-index:-1; }
 .fourth-section .section-title{
-    margin:20px 0;
+    padding:20px 0;
     text-align:right; }
 .fourth-section .bg-img{
     position:absolute;
@@ -833,6 +882,10 @@ section{
   background-position:center bottom;
   background-repeat:no-repeat;
   height:100%; }
+.five-section .scroll-down{
+    left:58%; }
+.five-section .scroll-down:after{
+      color:#000; }
 .five-section .container{
     height:75%; }
 .five-section .main-title{

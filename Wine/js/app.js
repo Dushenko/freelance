@@ -1,6 +1,5 @@
 "use strict";
 
-//=require ../blocks/**/*.js
 $(document).ready(function () {
   $('.main-slider').slick({
     slidesToShow: 1,
@@ -36,10 +35,10 @@ $(document).ready(function () {
       }
     }]
   });
-  $('.scroll-down').on('click', () => {
+  $('.scroll-down').on('click', function () {
     fullpage_api.moveSectionDown();
-  })
-  $('.scroll-up').on('click', () => {
+  });
+  $('.scroll-up').on('click', function () {
     fullpage_api.moveSectionUp();
-  })
+  });
 });
