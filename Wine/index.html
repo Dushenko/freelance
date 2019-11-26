@@ -24,7 +24,7 @@
 							<h2 class="section-title">Проектирование и изготовление винных погребов и винных комнат</h2>
 							<p class="info-text">Берем на себя весь процесс: от проекта винного погреба до подбора
 							напитков для вашей личной коллекции</p>
-							<a class="main-btn" href="#">РАССЧИТАТЬ СТОИМОСТЬ</a>
+							<span class="main-btn js-form" href="#">РАССЧИТАТЬ СТОИМОСТЬ</span>
 						</div>
 					</div>
 					<div class="scroll-down"></div>
@@ -156,8 +156,8 @@
 								холодильником.</p>
 								<h3>Срок изготовления:</h3>
 								<p>На реализацию данного проекта под ключ нам понадобилось три месяца, включая
-								разработку проекта и монтаж изделий на объекте.</p><a class="main-btn"
-								href="#">УЗНАТЬ СТОИМОСТЬ ПРОЕКТА</a>
+								разработку проекта и монтаж изделий на объекте.</p><span class="main-btn js-form"
+								href="#">УЗНАТЬ СТОИМОСТЬ ПРОЕКТА</span>
 							</div>
 						</div>
 					</div>
@@ -267,7 +267,7 @@
 						class="advantage__title">Опыт работы более 5 лет</span>
 					</div>
 				</div>
-				<div class="btn-wrap padding-nav"><a class="main-btn" href="#">ПОЛУЧИТЬ РАСЧЕТ</a></div>
+				<div class="btn-wrap padding-nav"><span class="main-btn js-form" href="#">ПОЛУЧИТЬ РАСЧЕТ</span></div>
 			</div>
 			<div class="scroll-down"></div>
 		</section>
@@ -323,6 +323,18 @@
 		<div class="counter">
 		</div>
 
+		<div class="mask js-mask"></div>
+        <div class="modal js-modal">
+          <form class="modalForm" action="#">
+            <div class="modalForm__wrap"><span class="modalForm__title">Оставьте заявку</span>
+              <p class="modalForm__text">мы перезвоним вам в ближайшее время</p>
+              <input class="modalForm__input" type="text" placeholder="Введите Ваше имя">
+              <input class="modalForm__input" type="text" placeholder="Введите Ваш телефон">
+              <button class="modalForm__btn main-btn" type="submit">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+
 		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 		<script type="text/javascript" src="js/fullpage.js"></script>
 		<script type="text/javascript" src="js/examples.js"></script>
@@ -334,14 +346,19 @@
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage'],
 				navigation: true,
 				navigationPosition: 'left',
-				navigationTooltips: ['First page', 'Second page', '3rdPage', '4rdPage', '5rdPage', 'Six and last page'],
 				responsiveWidth: 900,
 				afterLoad: function (origin, destination, direction) {
 					var loadedSlide = fullpage_api.getActiveSection()
 					var numContainer = $('.counter')
 					numContainer.html("0" + (loadedSlide.index + 1));
+					if($('.fourth-section').hasClass('active')) {
+						$('#fp-nav').addClass('change-color');
+					} else {
+						$('#fp-nav').removeClass('change-color');
+					}
 				},
-				afterResponsive: function (isResponsive) {}
+				afterResponsive: function (isResponsive) {
+				}
 			});
 		</script>
 

@@ -41,4 +41,14 @@ $(document).ready(function () {
   $('.scroll-up').on('click', function () {
     fullpage_api.moveSectionUp();
   });
+
+  $('.js-form').on('click', function () {
+    $('.js-mask').fadeIn('active');
+    $('.js-modal').fadeIn('active');
+  });
+
+  $('.js-mask').on('click', function () {
+    $(this).fadeOut('active');
+    $('.js-modal').fadeOut('active');
+  });
 });

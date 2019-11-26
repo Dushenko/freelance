@@ -434,6 +434,76 @@ section{
     -webkit-transform:translateY(-50%);
     -ms-transform:translateY(-50%);
     transform:translateY(-50%); }
+.mask{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:200;
+  width:100%;
+  height:100vh;
+  background-color:#a58861;
+  display:none; }
+.mask.active{
+    display:block; }
+.modal{
+  position:fixed;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  z-index:300;
+  display:none; }
+.modal.active{
+    display:block; }
+.modalForm__wrap{
+  background-color:#fff;
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  -webkit-box-align:center;
+  align-items:center;
+  padding:30px 40px; }
+.modalForm__title{
+  text-transform:uppercase;
+  margin-bottom:10px;
+  font-size:29px; }
+.modalForm__text{
+  margin-bottom:40px;
+  font-family:'Oswald'; }
+.modalForm__input{
+  padding:9px 5px;
+  margin-bottom:25px;
+  max-width:300px;
+  width:100%;
+  border-bottom:2px solid #e6e6e6;
+  font-family:'Oswald';
+  font-size:16px;
+  font-weight:300;
+  color:#989898; }
+.modalForm__input::-webkit-input-placeholder{
+    font-family:'Oswald';
+    font-size:18px;
+    font-weight:300;
+    color:#989898; }
+.modalForm__input::-ms-input-placeholder{
+    font-family:'Oswald';
+    font-size:18px;
+    font-weight:300;
+    color:#989898; }
+.modalForm__input::placeholder{
+    font-family:'Oswald';
+    font-size:18px;
+    font-weight:300;
+    color:#989898; }
+.modalForm__btn{
+  width:260px; }
+.js-form{
+  cursor:pointer;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease; }
 .mainForm__input-wrap{
   display:-webkit-box;
   display:flex;
@@ -764,17 +834,17 @@ section{
       height:73%;
       position:absolute;
       bottom:0;
-      left:0;
+      left:-25px;
       background-image:url("../images/cup.png");
       background-size:contain;
       background-repeat:no-repeat;
       background-position:bottom; }
 .first-section .section-title{
-    max-width:865px;
+    max-width:550px;
     width:100%;
     margin-bottom:10px; }
 .first-section .info-text{
-    max-width:639px;
+    max-width:500px;
     width:100%;
     margin-bottom:40px; }
 .first-section:before{
