@@ -20,9 +20,7 @@
           </div>
         </div>
         <div class="header-logo">
-          <div class="new-container">
-            <div class="logo"><img src="images/logo.png" alt=""></div>
-          </div>
+          <div class="new-container"><a class="new-logo" href="#"><img src="images/logo2.png" alt=""></a></div>
         </div>
       </header>
       <main class="main">
@@ -89,7 +87,9 @@
                       <input class="statementForm__input-checkbox" type="checkbox" id="data" name="data">
                       <label class="statementForm__label-checkbox" for="data">Согласен на обработку  <a href="#">персональных данных </a></label>
                     </div>
-                    <div class="statementForm__capcha"><img src="images/capcha.png" alt=""></div>
+                    <div class="statementForm__capcha">
+                      <div class="g-recaptcha" data-sitekey="6Lf3hsQUAAAAAJav62YK_EXFFlevcoD6dIBe8LBk"></div>
+                    </div>
                     <button class="main-btn main-btn_blue" type="submit">Отправить</button>
                   </div>
                 </div>
@@ -236,6 +236,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs/caleandar.js"></script>
     <script src="js/libs/timeSelection.js"></script>

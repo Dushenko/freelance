@@ -20,9 +20,7 @@
           </div>
         </div>
         <div class="header-logo">
-          <div class="new-container">
-            <div class="logo"><img src="images/logo.png" alt=""></div>
-          </div>
+          <div class="new-container"><a class="new-logo" href="#"><img src="images/logo2.png" alt=""></a></div>
         </div>
       </header>
       <main class="main">
@@ -60,7 +58,7 @@
                 </div>
               </div>
               <div class="contacts-form"><span class="contacts-data">Контактные данные</span>
-                <form class="statementForm statementForm_gray">
+                <form class="statementForm statementForm_gray" action="#" method="#" id="#">
                   <div class="statementForm__wrap">
                     <div class="statementForm__column">
                       <div class="statementForm__field">
@@ -104,7 +102,9 @@
                         </div>
                       </div>
                       <p class="statementForm__text">Если Вы записались на платный прием к врачу, Вам необходимо прийти за 15-30 минут до назначенного времени приема для оформления договора на оказание платных медицинских услуг. При себе необходимо иметь паспорт.</p>
-                      <div class="statementForm__capcha"><img src="images/capcha.png" alt=""></div>
+                      <div class="statementForm__capcha">
+                        <div class="g-recaptcha" data-sitekey="6Lf3hsQUAAAAAJav62YK_EXFFlevcoD6dIBe8LBk"></div>
+                      </div>
                       <button class="main-btn main-btn_blue" type="submit">Записаться</button>
                     </div>
                   </div>
@@ -252,6 +252,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs/caleandar.js"></script>
     <script src="js/libs/timeSelection.js"></script>
