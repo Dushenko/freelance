@@ -26,7 +26,7 @@
           <h2 class="terminal-title">Запись к стоматологу-терапевту</h2>
           <div class="data-time-wrap">
             <div class="data-time">
-              <div class="data-wrap"><span class="data terminal-tt">23 октября 2019</span><span class="time terminal-tt">11:00</span></div><a class="main-btn tetminal-choose" href="#">Выбрать время</a>
+              <div class="data-wrap"><span class="data terminal-tt">23 октября 2019</span><span class="time terminal-tt">11:00</span></div><a class="main-btn tetminal-choose js-tetminal-choose" href="#">Выбрать время</a>
             </div><span class="choose-doctor terminal-tf">Выберите доктора</span>
             <div class="doc-wrap scroll-wrap">
               <div class="doc terminal-docs">
@@ -40,6 +40,24 @@
               <div class="doc terminal-docs">
                 <div class="doc__logo terminal-logo"><img src="images/portrait.png" alt=""></div>
                 <div class="doc__info"><span class="doc__name terminal-tn">Карпова Беатриса Александровна</span><span class="doc__specialization terminal-tf">Стоматолог-терапевт</span><span class="doc__sub-info terminal-to">КМН, стаж работы 14 лет</span></div>
+              </div>
+            </div>
+            <div class="mask js-mask">
+              <div class="terminal-choose-data"><span class="choose-data-close"></span>
+                <h2 class="section-title">Выбор даты и времени</h2>
+                <div class="timeSelection">
+                  <div class="timeSelection__date">
+                    <div class="timeSelection__calendar calendarcol-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 term-cal">
+                      <div id="calendar"></div>
+                    </div>
+                    <div class="timeSelection__time time col-xs-12 col-sm-5 col-md-5 col-lg-4 col-xl-3 term-time">
+                      <ul class="time__cells"></ul>
+                    </div>
+                  </div>
+                  <div class="terminal-sbwrap">
+                    <div class="timeSelection__result"><span id="result">Выбрано: <span class="time__date">10 октября, </span><span class="time__time">13.15</span></span></div><a class="main-btn main-btn_blue terminal-confirm" href="#">Подтвердить			</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
     $('.js-keyboard').removeClass('active');
     $('.statementForm__field').removeClass('active');
   });
+  $('.js-filter').click(function () {
+    $('.js-cal').addClass('active');
+  });
+  $('.js-mainbtn').click(function () {
+    $('.js-cal').removeClass('active');
+  });
 
   if ($('.js-keyboard').length) {
     var v = $('.statementForm__field.active input').val();
