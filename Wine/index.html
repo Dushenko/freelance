@@ -284,84 +284,89 @@
 									<button class="main-btn mainForm__btn" type="submit">ПОЛУЧИТЬ РАСЧЕТ</button>
 								</div>
 							</form>
-							<div class="info">
-								<ul class="info__list info__list_contacts">
-									<li class="info__item info__item_address"><a class="info__link" href="#">Московская
-										область, 14км Новорижского шоссе, с.п. Павловская Слобода, д. Лобаново, дом
-									256</a></li>
-									<li class="info__item info__item_email"><a class="info__link"
-										href="mailto:welcom@beautycold.ru">welcom@beautycold.ru</a></li>
-										<li class="info__item info__item_phone"><a class="info__link"
-											href="tel:84991103553">8 (499) 110-35-53</a></li>
-										</ul>
-										<ul class="info__list">
-											<div class="info__title">Каталог</div>
-											<li class="info__item"><a class="info__link" href="#">Хранение шуб</a></li>
-											<li class="info__item"><a class="info__link" href="#">Хранение вина</a></li>
-											<li class="info__item"><a class="info__link" href="#">Хранение сигар</a></li>
-											<li class="info__item"><a class="info__link" href="#">Хранение продуктов</a></li>
-										</ul>
-										<ul class="info__list">
-											<div class="info__title">О нас</div>
-											<li class="info__item"><a class="info__link" href="#">О нас</a></li>
-											<li class="info__item"><a class="info__link" href="#">Гарантия и сервис</a></li>
-											<li class="info__item"><a class="info__link" href="#">Политика
-											конфиденциальности</a></li>
-											<li class="info__item"><a class="info__soc info__soc_inst" href="#"></a><a
-												class="info__soc info__soc_whats" href="#"></a><a
-												class="info__soc info__soc_viber" href="#"></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="scroll-up mob-none"></div>
-							</section>
+							<div class="info-wrap">
+								<ul class="info info_contacts">
+									<li class="info__item info__item_address">
+										<a class="info__link" href="#">Московская область, 14км Новорижского шоссе, с.п. Павловская Слобода, д. Лобаново, дом 256</a>
+									</li>
+									<li class="info__item info__item_email">
+										<a class="info__link" href="mailto:welcom@beautycold.ru">welcom@beautycold.ru</a>
+									</li>
+									<li class="info__item info__item_phone">
+										<a class="info__link" href="tel:84991103553">8 (499) 110-35-53</a>
+									</li>
+								</ul>
+								<ul class="info">
+									<div class="info__title">Каталог</div>
+									<li class="info__item"><a class="info__link" href="#">Хранение шуб</a></li>
+									<li class="info__item"><a class="info__link" href="#">Хранение вина</a></li>
+									<li class="info__item"><a class="info__link" href="#">Хранение сигар</a></li>
+									<li class="info__item"><a class="info__link" href="#">Хранение продуктов</a></li>
+								</ul>
+								<ul class="info">
+									<div class="info__title">О нас</div>
+									<li class="info__item"><a class="info__link" href="#">О нас</a></li>
+									<li class="info__item"><a class="info__link" href="#">Гарантия и сервис</a></li>
+									<li class="info__item"><a class="info__link" href="#">Политика
+									конфиденциальности</a></li>
+									<li class="info__item">
+										<a class="info__soc info__soc_inst" href="#"></a>
+										<a class="info__soc info__soc_whats" href="#"></a>
+										<a class="info__soc info__soc_viber" href="#"></a>
+									</li>
+								</ul>
+							</div>
 						</div>
-					</main>
-				</div>
+					</div>
+					<div class="scroll-up mob-none"></div>
+				</section>
+			</div>
+		</main>
+	</div>
 
-				<div class="counter mob-none">
-				</div>
+	<div class="counter mob-none">
+	</div>
 
-				<div class="mask js-mask"></div>
-				<div class="modal js-modal">
-					<form class="modalForm" action="#">
-						<div class="modalForm__wrap"><span class="modalForm__title">Оставьте заявку</span>
-							<p class="modalForm__text">мы перезвоним вам в ближайшее время</p>
-							<input class="modalForm__input" type="text" placeholder="Введите Ваше имя">
-							<input class="modalForm__input" type="text" placeholder="Введите Ваш телефон">
-							<button class="modalForm__btn main-btn" type="submit">Отправить заявку</button>
-						</div>
-					</form>
-				</div>
+	<div class="mask js-mask"></div>
 
-				<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-				<script type="text/javascript" src="js/fullpage.js"></script>
-				<script type="text/javascript" src="js/examples.js"></script>
-				<script type="text/javascript" src="js/slick-js.js"></script>
-				<script type="text/javascript" src="js/app.js"></script>
+	<div class="modal js-modal">
+		<form class="modalForm" action="#">
+			<div class="modalForm__wrap"><span class="modalForm__title">Оставьте заявку</span>
+				<p class="modalForm__text">мы перезвоним вам в ближайшее время</p>
+				<input class="modalForm__input" type="text" placeholder="Введите Ваше имя">
+				<input class="modalForm__input" type="text" placeholder="Введите Ваш телефон">
+				<button class="modalForm__btn main-btn" type="submit">Отправить заявку</button>
+			</div>
+		</form>
+	</div>
 
-				<script type="text/javascript">
-					var myFullpage = new fullpage('#fullpage', {
-						anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage'],
-						navigation: true,
-						navigationPosition: 'left',
-						responsiveWidth: 900,
-						afterLoad: function (origin, destination, direction) {
-							var loadedSlide = fullpage_api.getActiveSection()
-							var numContainer = $('.counter')
-							numContainer.html("0" + (loadedSlide.index + 1));
-							if($('.fourth-section').hasClass('active')) {
-								$('#fp-nav').addClass('change-color');
-							} else {
-								$('#fp-nav').removeClass('change-color');
-							}
-						},
-						afterResponsive: function (isResponsive) {
-						}
-					});
-				</script>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript" src="js/slick-js.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 
-			</body>
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage'],
+			navigation: true,
+			navigationPosition: 'left',
+			responsiveWidth: 900,
+			afterLoad: function (origin, destination, direction) {
+				var loadedSlide = fullpage_api.getActiveSection()
+				var numContainer = $('.counter')
+				numContainer.html("0" + (loadedSlide.index + 1));
+				if($('.fourth-section').hasClass('active')) {
+					$('#fp-nav').addClass('change-color');
+				} else {
+					$('#fp-nav').removeClass('change-color');
+				}
+			},
+			afterResponsive: function (isResponsive) {
+			}
+		});
+	</script>
 
-			</html>
+</body>
+
+</html>

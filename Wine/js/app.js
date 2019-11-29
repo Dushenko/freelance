@@ -5,7 +5,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: true,
-    dots: false,
+    dots: true,
     arrows: true,
     infinite: true
   });
