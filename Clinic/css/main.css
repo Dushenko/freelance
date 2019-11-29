@@ -284,6 +284,12 @@ button{
   width:100%;
   margin:0 auto;
   padding:0 15px; }
+.po-container{
+  max-width:1440px;
+  width:100%;
+  margin:0 auto;
+  padding:0 50px;
+  min-height:35vw; }
 .terminal-container{
   max-width:1280px;
   width:100%;
@@ -410,6 +416,13 @@ button{
       box-shadow:inset 0 0px 0 0 #2d3663;
       background-color:#fff !important;
       color:#2d3663 !important; }
+.main-btn_po{
+    width:255px !important;
+    height:40px !important;
+    padding:0 30px 0 0 !important;
+    margin:0; }
+.main-btn_po:after{
+      display:block !important; }
 .main-btn_appoi{
     min-width:310px;
     height:60px;
@@ -14304,6 +14317,160 @@ button{
     line-height:22px;
     color:#2D3663;
     margin-bottom:10px; }
+.missed{
+  max-width:913px;
+  width:100%;
+  background-color:#EDF3F6;
+  border-radius:10px;
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-align:center;
+  align-items:center;
+  margin-bottom:16px; }
+.missed .recordData{
+    max-width:480px; }
+.missed .main-btn_violet{
+    margin:0 36px 0 auto !important; }
+.missed .pdf-link a{
+    width:204px;
+    height:40px;
+    padding:13px 20px;
+    font-size:14px;
+    margin:0; }
+.missed .pdf-link a:before{
+      right:20px; }
+.research-name,
+.po-results{
+  margin-left:5px;
+  font-family:'MuseoSans medium';
+  font-size:14px;
+  color:#2D3663; }
+.research-name{
+  max-width:330px; }
+.price-research{
+  font-family:'MuseoSans light';
+  font-weight:300;
+  font-size:24px;
+  margin-bottom:40px;
+  color:#2D3663; }
+.price-pdf{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  -webkit-box-align:end;
+  align-items:flex-end;
+  margin:0 36px 0 auto; }
+.office-links{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-align:center;
+  align-items:center;
+  -webkit-box-pack:justify;
+  justify-content:space-between;
+  margin-bottom:30px; }
+.officeLink{
+  width:283px;
+  padding:30px 26px;
+  background-color:#FFFFFF;
+  box-shadow:0px 0px 32px rgba(48, 153, 213, 0.3);
+  border-radius:10px;
+  position:relative; }
+.officeLink__title{
+    font-family:'MuseoSans medium';
+    font-size:18px;
+    color:#2D3663; }
+.officeLink:before{
+    position:absolute;
+    content:'';
+    width:20px;
+    height:20px;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    right:26px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image:url("data:image/svg+xml,%3Csvg width='17' height='19' viewBox='0 0 17 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.4286 9.57143C16.4286 9.19196 16.2835 8.82366 16.0156 8.56696L8.75 1.30134C8.48214 1.03348 8.11384 0.877231 7.73438 0.877231C7.35491 0.877231 6.99777 1.03348 6.72991 1.30134L5.89286 2.13839C5.625 2.39509 5.46875 2.76339 5.46875 3.14286C5.46875 3.52232 5.625 3.89062 5.89286 4.14732L9.16295 7.42857H1.3058C0.502232 7.42857 0 8.09821 0 8.85714V10.2857C0 11.0446 0.502232 11.7143 1.3058 11.7143H9.16295L5.89286 14.9844C5.625 15.2522 5.46875 15.6205 5.46875 16C5.46875 16.3795 5.625 16.7478 5.89286 17.0156L6.72991 17.8527C6.99777 18.1094 7.35491 18.2656 7.73438 18.2656C8.11384 18.2656 8.48214 18.1094 8.75 17.8527L16.0156 10.5871C16.2835 10.3192 16.4286 9.95089 16.4286 9.57143Z' fill='%233099D5'/%3E%3C/svg%3E%0A"); }
+.office-main-wrap{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-align:start;
+  align-items:flex-start; }
+.office-main-wrap .recordData{
+    margin-right:0; }
+.data-links{
+  max-width:913px;
+  width:100%;
+  -webkit-box-flex:0;
+  flex:none;
+  margin-right:30px; }
+.data-links .main-btn_violet{
+    width:410px;
+    height:60px;
+    padding:22px 40px;
+    margin-top:36px;
+    text-align:left; }
+.data-links .main-btn_violet:after{
+      display:block; }
+.data-links .contacts-form{
+    max-width:913px;
+    width:100%; }
+.data-links input{
+    width:410px !important; }
+.data-links .statementForm__column{
+    width:100%;
+    margin-right:0;
+    display:-webkit-box;
+    display:flex;
+    flex-wrap:wrap;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    flex-direction:row; }
+.data-links .statementForm__field{
+    max-width:410px;
+    margin-right:17px; }
+.data-links .main-btn_blue{
+    width:240px;
+    padding:22px 20px; }
+.data-links .main-btn_blue:after{
+      display:none !important; }
+.forget{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-align:center;
+  align-items:center;
+  -webkit-box-pack:justify;
+  justify-content:space-between;
+  padding:0 30px;
+  margin-bottom:11px; }
+.forget label{
+    margin:0; }
+.forget-reg{
+  font-family:'Roboto Slab';
+  font-size:16px;
+  color:#3099D5; }
+.butt-wrap{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-pack:justify;
+  justify-content:space-between;
+  -webkit-box-align:center;
+  align-items:center;
+  padding-right:30px; }
+.butt-wrap .main-btn_violet{
+    margin:0;
+    min-width:150px !important;
+    max-width:150px !important;
+    height:42px !important;
+    padding:0 30px 0 0; }
+.butt-wrap .main-btn_violet:after{
+      display:block !important; }
+.po-contacts-form{
+  width:555px !important; }
 .program-doc{
   display:block;
   font-family:'MuseoSans medium';

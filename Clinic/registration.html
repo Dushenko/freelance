@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clinic</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="new-header">
+        <div class="header-top">
+          <div class="new-container">
+            <div class="element element_phone"><a class="element__link" href="#">+7 495 434-24-91</a></div>
+            <div class="element element_address"><a class="element__link" href="#">Москва, улица Миклухо-Маклая, 10</a></div>
+            <div class="element element_data"><span class="element__day">ПН-ПТ:</span><span class="element__time">08:00-20:00,</span><span class="element__day">СБ:</span><span class="element__time">09:00-18:00</span></div>
+          </div>
+        </div>
+        <div class="header-logo">
+          <div class="new-container"><a class="new-logo" href="#"><img src="images/logo2.png" alt=""></a></div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="breadcrumbs-wrap">
+          <div class="new-container">
+            <h1 class="main-title">Регистрация</h1>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item breadcrumbs__item_active"><a class="breadcrumbs__link" href="#">Регистрация</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="po-container">
+          <div class="contacts-wrap">
+            <div class="contacts-form"><span class="contacts-data">Контактные данные</span>
+              <form class="statementForm statementForm_gray" action="#" method="#" id="#">
+                <div class="statementForm__wrap">
+                  <div class="statementForm__column">
+                    <div class="statementForm__field">
+                      <label class="statementForm__label">Электронная почта</label>
+                      <input class="statementForm__input" type="text" placeholder="name@example.com">
+                    </div>
+                    <div class="statementForm__field">
+                      <label class="statementForm__label">Телефон</label>
+                      <input class="statementForm__input" type="text" placeholder="+5 (555) 555 - 55 - 55">
+                    </div>
+                    <div class="statementForm__field">
+                      <label class="statementForm__label">Фамилия</label>
+                      <input class="statementForm__input" type="text" placeholder="Фамилия">
+                    </div>
+                    <div class="statementForm__field">
+                      <label class="statementForm__label">Имя</label>
+                      <input class="statementForm__input" type="text" placeholder="Имя">
+                    </div>
+                    <div class="statementForm__field">
+                      <label class="statementForm__label">Отчество (если есть)</label>
+                      <input class="statementForm__input" type="text" placeholder="Отчество">
+                    </div>
+                    <div class="statementForm__field">
+                      <label class="statementForm__label">Полис ОМС</label>
+                      <input class="statementForm__input" type="text" placeholder="Введите номер полиса ОМС">
+                    </div>
+                    <div class="statementForm__field">
+                      <label class="statementForm__label">Полис ДМС</label>
+                      <input class="statementForm__input" type="text" placeholder="Введите номер полиса ДМС">
+                    </div>
+                    <div class="statementForm__field">
+                      <label class="statementForm__label">Придумайте пароль</label>
+                      <input class="statementForm__input" type="text" placeholder="Придумайте пароль">
+                    </div>
+                    <div class="statementForm__field">
+                      <label class="statementForm__label">Повторите пароль</label>
+                      <input class="statementForm__input" type="text" placeholder="Повторите пароль">
+                    </div>
+                    <div class="statementForm__capcha">
+                      <div class="g-recaptcha" data-sitekey="6Lf3hsQUAAAAAJav62YK_EXFFlevcoD6dIBe8LBk"></div>
+                    </div>
+                    <button class="main-btn main-btn_violet main-btn_po" type="submit">Зарегистрироваться</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs/caleandar.js"></script>
+    <script src="js/libs/timeSelection.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
