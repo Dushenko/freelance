@@ -102,6 +102,10 @@
     transform: translateY(-50%);
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
+    
+    @media screen and (max-width: 1024px) {
+        display: none !important;
+    }
 }
 #fp-nav.fp-right {
     right: 17px;
