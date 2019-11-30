@@ -316,6 +316,78 @@ select{
   to{
     box-shadow:0 0 0 0 rgba(80, 238, 139, 0); } }
 
+.form__wrap{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  -webkit-box-align:center;
+  align-items:center; }
+
+.form__input-wrap{
+  position:relative; }
+
+.form__input-wrap:after{
+    content:'*';
+    position:absolute;
+    color:red;
+    left:175px;
+    top:8px;
+    z-index:1; }
+
+.form__input-wrap.active:after{
+    display:none; }
+
+.form__input{
+  width:255px;
+  height:45px;
+  border-radius:10px;
+  background-color:#f5f5f5;
+  margin-bottom:12px;
+  padding:0 10px; }
+
+.form__input::-webkit-input-placeholder{
+    color:#b7b7b7;
+    font-size:14px;
+    font-weight:400;
+    line-height:64px;
+    text-align:center; }
+
+.form__input::-ms-input-placeholder{
+    color:#b7b7b7;
+    font-size:14px;
+    font-weight:400;
+    line-height:64px;
+    text-align:center; }
+
+.form__input::placeholder{
+    color:#b7b7b7;
+    font-size:14px;
+    font-weight:400;
+    line-height:64px;
+    text-align:center; }
+
+.form .main-btn{
+  width:255px;
+  margin:18px 0 0; }
+
+.form .main-btn:before{
+    display:none; }
+
+@media screen and (max-width: 600px){
+    .form .main-btn:after{
+      top:0px;
+      left:35px; } }
+
+.form .main-btn .btn-text{
+    padding:0; }
+
+.form .main-btn .bg-img{
+    background-image:url("../images/form-btn.png");
+    width:255px;
+    height:62px; }
+
 .header{
   margin:36px 0 55px; }
 
@@ -510,6 +582,114 @@ select{
       -ms-transform:translateX(-50%);
       transform:translateX(-50%); } }
 
+.mask{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  content:url("../images/modal.jpg");
+  z-index:10;
+  display:none; }
+
+.modal{
+  position:fixed;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  width:346px;
+  border-radius:10px;
+  background-color:#ffffff;
+  padding:45px 40px 60px;
+  z-index:20;
+  display:none; }
+
+@media screen and (max-width: 600px){
+    .modal{
+      padding:30px 20px 50px;
+      width:300px; } }
+
+.modal_thanks{
+    padding-bottom:180px;
+    background-image:url("../images/thanks-bg.png");
+    background-repeat:no-repeat;
+    background-position:center bottom; }
+
+.modal__wrap{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -webkit-box-align:center;
+    align-items:center; }
+
+.modal__title{
+    color:#111111;
+    font-size:24px;
+    font-weight:400;
+    line-height:33px;
+    text-align:center;
+    display:block;
+    margin-bottom:40px; }
+
+.modal__main-title{
+    color:#111111;
+    font-size:36px;
+    font-weight:700;
+    line-height:1;
+    margin-bottom:18px; }
+
+.modal__sub-title{
+    color:#5a6267;
+    font-family:"Bebas Neue";
+    font-size:18px;
+    font-weight:300;
+    letter-spacing:1.8px;
+    margin-bottom:40px; }
+
+.modal__info{
+    width:175px;
+    color:#7e8387;
+    font-size:12px;
+    font-weight:400;
+    line-height:21px;
+    margin-bottom:10px;
+    text-align:center; }
+
+.modal__tel{
+    color:#111111;
+    font-size:19px;
+    font-weight:400;
+    letter-spacing:0.19px; }
+
+.modal__close{
+    position:absolute;
+    top:-15px;
+    right:-20px;
+    width:20px;
+    height:20px;
+    cursor:pointer; }
+
+.modal__close:before, .modal__close:after{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:20px;
+      height:1px;
+      background:#fff;
+      -webkit-transform:rotate(45deg);
+      -ms-transform:rotate(45deg);
+      transform:rotate(45deg); }
+
+.modal__close:after{
+      -webkit-transform:rotate(-45deg);
+      -ms-transform:rotate(-45deg);
+      transform:rotate(-45deg); }
+
 .main-title{
   color:#c4ccd1;
   font-family:"Bebas Neue";
@@ -544,6 +724,16 @@ select{
 @media screen and (max-width: 600px){
     .general-title{
       font-size:40px; } }
+
+.section-title{
+  color:#ffffff;
+  font-family:"Bebas Neue";
+  font-size:21px;
+  font-weight:700;
+  line-height:32px;
+  letter-spacing:4.2px;
+  margin-bottom:85px;
+  text-align:center; }
 
 .content-wrap{
   padding-top:5vw;
@@ -637,17 +827,10 @@ select{
       background-position:center;
       background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='510.127px' height='510.127px' viewBox='0 0 510.127 510.127' style='enable-background:new 0 0 510.127 510.127;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23b0cecf' d='M34.786,428.963h81.158v69.572c0,3.385,1.083,6.156,3.262,8.322c2.173,2.18,4.951,3.27,8.335,3.27h60.502 c3.14,0,5.857-1.09,8.152-3.27c2.295-2.166,3.439-4.938,3.439-8.322v-69.572h182.964c3.377,0,6.156-1.076,8.334-3.256 c2.18-2.178,3.262-4.951,3.262-8.336v-46.377c0-3.365-1.082-6.156-3.262-8.322c-2.172-2.18-4.957-3.27-8.334-3.27H199.628v-42.754 h123.184c48.305,0,87.73-14.719,118.293-44.199c30.551-29.449,45.834-67.49,45.834-114.125c0-46.604-15.283-84.646-45.834-114.125 C410.548,14.749,371.116,0,322.812,0H127.535c-3.385,0-6.157,1.089-8.335,3.256c-2.173,2.179-3.262,4.969-3.262,8.335v227.896 H34.786c-3.384,0-6.157,1.145-8.335,3.439c-2.172,2.295-3.262,5.012-3.262,8.151v53.978c0,3.385,1.083,6.158,3.262,8.336 c2.179,2.18,4.945,3.256,8.335,3.256h81.158v42.754H34.786c-3.384,0-6.157,1.09-8.335,3.27c-2.172,2.166-3.262,4.951-3.262,8.322 v46.377c0,3.385,1.083,6.158,3.262,8.336C28.629,427.887,31.401,428.963,34.786,428.963z M199.628,77.179h115.938 c25.6,0,46.248,7.485,61.953,22.46c15.697,14.976,23.549,34.547,23.549,58.691c0,24.156-7.852,43.733-23.549,58.691 c-15.705,14.988-36.354,22.473-61.953,22.473H199.628V77.179z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"); }
 
-.section-title{
-  color:#ffffff;
-  font-family:"Bebas Neue";
-  font-size:21px;
-  font-weight:700;
-  line-height:32px;
-  letter-spacing:4.2px;
-  margin-bottom:85px;
-  text-align:center; }
-
 .main-btn{
+  cursor:pointer;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
   position:relative;
   width:487px; }
 

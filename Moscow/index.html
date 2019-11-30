@@ -23,7 +23,7 @@
           </div>
         </div>
       </header>
-      <mainc>
+      <main>
         <section class="main-section">
           <div class="container">
             <h2 class="main-title">Лучшие площади </h2>
@@ -34,7 +34,7 @@
                 <div class="info"><span class="info__name">пентхаусы</span><span class="info__price">от 30 000 000</span></div>
               </div>
               <div class="info-col info-col_center">
-                <h2 class="section-title">Получите каталог объектов недвижимости со свободными лотами </h2><a class="main-btn" href="a"> <span class="btn-text">Cкачать каталог объектов</span><span class="bg-img"></span></a>
+                <h2 class="section-title">Получите каталог объектов недвижимости со свободными лотами </h2><span class="main-btn js-open-modal"><span class="btn-text">Cкачать каталог объектов</span><span class="bg-img"></span></span>
               </div>
               <div class="info-col info-col_right">
                 <div class="info"><span class="info__name">офисы</span><span class="info__price">от 10 000 000</span></div>
@@ -43,10 +43,27 @@
             </div>
           </div>
         </section>
-      </mainc>
+      </main>
+      <div class="mask js-mask"></div>
+      <div class="modal js-modal-form"><span class="modal__close js-modal-close"></span><span class="modal__title">Чтобы получить презентацию объекта, заполните поля</span>
+        <form class="form" action="#">
+          <div class="form__wrap">
+            <input class="form__input" type="text" placeholder="Ваше имя">
+            <div class="form__input-wrap">
+              <input class="form__input" type="text" placeholder="Ваш телефон">
+            </div>
+            <button class="form__btn main-btn js-thanks" type="submi"><span class="btn-text">Cкачать</span><span class="bg-img"></span></button>
+          </div>
+        </form>
+      </div>
+      <div class="modal modal_thanks js-modal-thanks">
+        <div class="modal__wrap"><span class="modal__close js-modal-close"></span><span class="modal__main-title">Спасибо</span><span class="modal__sub-title">Ваш каталог уже скачивается.</span>
+          <p class="modal__info">Для подробной консультации обращайтесь по телефону</p><a class="modal__tel" href="tel:84957409988">8 495 740-99-88</a>
+        </div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/libs/libs.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
