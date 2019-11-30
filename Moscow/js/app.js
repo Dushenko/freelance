@@ -22,4 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.form__input').focus(function () {
     $(this).parent().addClass('active');
   });
+  $('.form__input').focus(function () {
+    $(this).addClass('active');
+  });
 });
