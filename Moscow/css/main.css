@@ -726,3 +726,10 @@ select{
 @media screen and (max-width: 600px){
       .main-btn:before{
         right:-85px; } }
+
+.mob{
+  display:none; }
+
+@media screen and (max-width: 800px){
+    .mob{
+      display:block; } }
