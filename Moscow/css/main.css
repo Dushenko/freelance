@@ -529,12 +529,21 @@ select{
     .main-title{
       margin-bottom:30px; } }
 
+@media screen and (max-width: 600px){
+    .main-title{
+      font-size:20px;
+      margin-bottom:20px; } }
+
 .general-title{
   font-weight:700;
   font-size:60px;
   text-transform:uppercase;
   text-align:center;
   color:#fff; }
+
+@media screen and (max-width: 600px){
+    .general-title{
+      font-size:40px; } }
 
 .content-wrap{
   padding-top:5vw;
@@ -642,6 +651,10 @@ select{
   position:relative;
   width:487px; }
 
+@media screen and (max-width: 600px){
+    .main-btn{
+      width:300px; } }
+
 @media screen and (max-width: 800px){
     .main-btn{
       margin-bottom:100px; } }
@@ -660,7 +673,13 @@ select{
     font-weight:700;
     text-transform:uppercase;
     letter-spacing:1.8px;
+    white-space:nowrap;
     padding:37px 0 35px 70px; }
+
+@media screen and (max-width: 600px){
+      .main-btn .btn-text{
+        font-size:15px;
+        padding:37px 0 35px 0; } }
 
 .main-btn .bg-img{
     content:'';
@@ -677,6 +696,11 @@ select{
     transform:translate(-50%, -50%);
     z-index:1; }
 
+@media screen and (max-width: 600px){
+      .main-btn .bg-img{
+        width:460px;
+        margin-top:5px; } }
+
 .main-btn:after{
     content:'';
     position:absolute;
@@ -687,9 +711,18 @@ select{
     height:22px;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16' height='23'%3E%3Cimage width='16' height='22' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAABrklEQVQ4T43UTYiOURjG8d8MJmOlbK0slJRG2SlZoQn5SBYSNSRsJGwpqdloNmM3K2IjHwvJjIRMs0EhCRsl+djJV6zorvtMj/c97/vOqWdznnP+57ru+zqnT/tYgCEM4AW+V9bMTvW1/NyNI3iI31iHGZzF3xqoCdiEvRjBASzBGA5iUULaGE3AXWzHTizFcwynoinswI9WQgHMx3VsxRncxDM8wHqcxH086QSI+dt5Yg3QsY5NC1dxCvsaCj6mlWmc61XE5TiUbSsW3mAVzuMzfmEC3wqstY0xX7NwDCswmUX9gMe4UAD9GMTPLoBS1KfZqbB7MQDR7/Af8l4n5EZ2IbJxB6GgAMLeNuzH1wBsxGqMprywsCE3FKtb8A4vs8D/ARYigrILX3A44xtBqo3L2NNUEItCwelMYmQ+lFWz3yDOWihzUZSow3i329cNEJ24hRN4NQdIm4LYE5foEqL6f3pAqoASpHt41AMQxX5fS+LaDMrxHoArcXdqgNgXP6/lV+Nszo6NdAJENiJYyzIT8bzFmIc1+dwdja51ApRTF2Ml4qGNEdl4i09lwT8ayWzmQL06agAAAABJRU5ErkJggg=='/%3E%3C/svg%3E"); }
 
+@media screen and (max-width: 600px){
+      .main-btn:after{
+        top:-4px;
+        left:-30px; } }
+
 .main-btn:before{
     content:url("../images/magazine.png");
     position:absolute;
     z-index:3;
     top:-58px;
     right:-40px; }
+
+@media screen and (max-width: 600px){
+      .main-btn:before{
+        right:-85px; } }
