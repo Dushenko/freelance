@@ -11,11 +11,15 @@ document.addEventListener('DOMContentLoaded', function () {
     $('.js-mask').fadeOut();
     $('.modal').fadeOut();
   });
+  $('.js-mask').click(function () {
+    $(this).fadeOut();
+    $('.modal').fadeOut();
+  });
   $('.js-thanks').click(function () {
     $('.js-modal-form').fadeOut();
     $('.js-modal-thanks').fadeIn();
   });
   $('.form__input').focus(function () {
-    $('.form__input-wrap').addClass('active');
+    $(this).parent().addClass('active');
   });
 });
