@@ -485,8 +485,9 @@ select{
       .tel-wrap .tel{
         font-size:13px;
         width:165px;
-        height:36px;
-        margin-bottom:10px; } }
+        height:32px;
+        margin-bottom:10px;
+        padding-top:11px; } }
 
 .tel-wrap .tel:hover{
       -webkit-transform:scale(1.05);
@@ -524,7 +525,7 @@ select{
       .tel-wrap .back{
         width:165px;
         height:20px;
-        top:19px; } }
+        top:15px; } }
 
 .tel-wrap .work-status{
     color:#fefefe;
@@ -539,8 +540,7 @@ select{
 
 @media screen and (max-width: 480px){
       .tel-wrap .work-status{
-        font-size:8px;
-        padding-top:12px; } }
+        font-size:8px; } }
 
 .tel-wrap .dot{
     width:7px;
