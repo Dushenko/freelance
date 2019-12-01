@@ -1,0 +1,84 @@
+.mainForm {
+
+	&__input-wrap {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 50px;
+		@media screen and (min-width: 1500px) {
+			margin-bottom: 70px;
+		}
+	}
+
+	&__input {
+		padding: 9px 5px;
+		margin-bottom: 25px;
+		max-width: 300px;
+		width: 100%;
+		border-bottom: 2px solid #e6e6e6;
+		font-family: 'Oswald';
+		font-size: 16px;
+		font-weight: 300;
+		color: #989898;
+		&::placeholder {
+			font-family: 'Oswald';
+			font-size: 18px;
+			font-weight: 300;
+			color: #989898;
+		}
+		@media screen and (min-width: 1500px) {
+			max-width: 440px;
+			font-size: 18px;
+			margin-bottom: 45px;
+		}
+	}
+
+	&__btn {
+		width: 300px;
+		@media screen and (min-width: 1500px) {
+			width: 440px;
+		}
+	}
+}
+
+.modalForm {
+	&__wrap {
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 30px 40px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		font-size: 29px;
+	}
+
+	&__text {
+		margin-bottom: 40px;
+		font-family: 'Oswald';
+	}
+
+	&__input {
+		padding: 9px 5px;
+		margin-bottom: 25px;
+		max-width: 300px;
+		width: 100%;
+		border-bottom: 2px solid #e6e6e6;
+		font-family: 'Oswald';
+		font-size: 16px;
+		font-weight: 300;
+		color: #989898;
+		&::placeholder {
+			font-family: 'Oswald';
+			font-size: 18px;
+			font-weight: 300;
+			color: #989898;
+		}
+	}
+
+	&__btn {
+		width: 260px;
+	}
+}

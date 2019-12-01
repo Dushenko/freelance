@@ -1,0 +1,30 @@
+header.header
+	.container
+		a(href="#").logo
+			img(src="images/logo.svg", alt="")
+
+		.lang-wrap
+			a(href="#").lang RU
+			span /
+			a(href="#").lang.active UA
+
+		nav.nav.js-nav
+			ul.nav__list
+				li.nav__item
+					a(href="#section1").nav__link Що таке патч
+				li.nav__item
+					a(href="#").nav__link Користування
+				li.nav__item
+					a(href="#").nav__link Переваги
+				li.nav__item
+					a(href="#").nav__link Естетика
+				li.nav__item
+					a(href="#").nav__link Cертифікати
+				li.nav__item
+					a(href="#").nav__link Акції
+				li.nav__item
+					a(href="#").nav__link Замовити
+				li.nav__item
+					a(href="#").nav__link Партнери
+
+	include ../burger/burger

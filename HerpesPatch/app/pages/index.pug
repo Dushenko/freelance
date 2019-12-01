@@ -1,0 +1,36 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		
+		section.first-section.section#section0
+			
+		section.second-section.section#section1
+
+		section.third-section.section#section2
+
+		section.fourth-section.section#section3
+
+		section.five-section.section#section4
+
+		section.six-section.section#section5
+
+		.mask
+
+		.modal
+			form(action="#").modalForm
+				.modalForm__wrap
+					span.modalForm__title Оставьте заявку
+					p.modalForm__text мы перезвоним вам в ближайшее время
+					input(type="text" placeholder="Введите Ваше имя").modalForm__input 
+					input(type="text" placeholder="Введите Ваш телефон").modalForm__input 
+					button(type="submit").modalForm__btn.main-btn Отправить заявку
+
+block footer
+	include ../blocks/footer/footer
