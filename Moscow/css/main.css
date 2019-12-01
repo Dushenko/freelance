@@ -483,7 +483,7 @@ select{
 
 @media screen and (max-width: 480px){
       .tel-wrap .tel{
-        font-size:15px;
+        font-size:13px;
         width:165px;
         height:36px;
         margin-bottom:10px; } }
@@ -536,6 +536,11 @@ select{
     padding-left:10px;
     display:-webkit-box;
     display:flex; }
+
+@media screen and (max-width: 480px){
+      .tel-wrap .work-status{
+        font-size:8px;
+        padding-top:12px; } }
 
 .tel-wrap .dot{
     width:7px;
@@ -998,8 +1003,12 @@ select{
         left:-30px; } }
 
 .main-btn:before{
-    content:url("../images/magazine.png");
+    content:url("");
     position:absolute;
+    width:100px;
+    height:90px;
+    background-image:url("../images/magazine.png");
+    background-size:cover;
     z-index:3;
     top:-58px;
     right:-40px; }
@@ -1007,6 +1016,13 @@ select{
 @media screen and (max-width: 600px){
       .main-btn:before{
         right:-85px; } }
+
+@media screen and (max-width: 480px){
+      .main-btn:before{
+        width:100px;
+        height:65px;
+        top:-29px;
+        right:-43px; } }
 
 .mob{
   display:none; }
