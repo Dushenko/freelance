@@ -27,7 +27,7 @@
 		padding-top: 20px;
 		margin: 0 20px 0 50px;
 		@media screen and (min-width: 1550px) {
-			margin: 0 20px 0 110px;
+			margin: 0 50px 0 110px;
 		}
 		@media screen and (max-width: 1350px) {
 			margin-right: auto;
@@ -68,6 +68,7 @@
 			transition: all .3s ease;
 		}
 	}
+
 	&__list {
 		display: flex;
 		@media screen and (max-width: 1350px) {
@@ -81,7 +82,7 @@
 			margin: 0 0 0 30px;
 		}
 		@media screen and (min-width: 1550px) {
-			margin: 0 0 0 45px;
+			margin: 0 0 0 57px;
 		}
 	}
 
