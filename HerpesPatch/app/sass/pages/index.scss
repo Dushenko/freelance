@@ -14,6 +14,38 @@
 
 .one-section {
 	background-image: url('../images/bg-1.jpg');
+	
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.img-wrap {
+		width: 58%;
+		height: 100%;
+		img {
+			@include img-style;
+		}
+	}
+
+	.info-wrap {
+		width: 42%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main-title {
+		margin-bottom: 16px;
+	}
+
+	.second-title {
+		margin-bottom: 36px;
+	}
+
+	.info-text {
+		margin-bottom: 58px;
+	}
 }
 
 .two-section {
@@ -22,6 +54,39 @@
 
 .three-section {
 	background-image: url('../images/bg-2.jpg');
+	
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.main-title {
+		margin-bottom: 130px;
+	}
+
+	.info-wrap {
+		width: 39%;
+	}
+
+	.using-wrap {
+		width: 54%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.using {
+		&:nth-child(1) {
+			padding-right: 70px;
+		}
+		&:nth-child(2) {
+			padding-left: 40px;
+		}
+		&:nth-child(3) {
+			margin-left: -10px;
+			padding-right: 100px;
+		}
+	}
 }
 
 .four-section {
@@ -34,6 +99,34 @@
 
 .six-section {
 	background-image: url('../images/bg-2.jpg');
+	
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.info-wrap {
+		margin-bottom: 110px;
+	}
+
+	.info-text {
+		max-width: 522px;
+		width: 100%;
+	}
+
+	.certificates-wrap {
+		display: flex;
+	}
+
+	.certificate {
+		width: 368px;
+		height: 475px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 24px rgba(77, 77, 77, 0.4);
+		border-radius: 21px;
+		margin-left: 68px;
+	}
 }
 
 .seven-section {
@@ -42,4 +135,31 @@
 
 .eight-section {
 	background-image: url('../images/bg-1.jpg');
+	
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.info-wrap {
+		width: 30%;
+		margin-bottom: 160px;
+	}
+
+	.partners-wrap {
+		width: 57%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.partner {
+		width: 245px;
+		height: 101px;
+		margin: 0 50px 100px;
+		img {
+			@include img-style;
+		}
+	}
 }
