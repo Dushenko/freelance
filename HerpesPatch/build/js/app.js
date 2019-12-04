@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $('.js-burger').click(function () {
     $(this).toggleClass('is-open');
+    $(this).toggleClass('fixed-center');
     $('.js-nav').toggleClass('active');
   });
 });
@@ -84,14 +85,21 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.js-mask').on('click', function () {
     $(this).fadeOut('active');
     $('.js-modal').fadeOut('active');
+  }); //footer
+
+  $('.js-footer-open').click(function () {
+    $('.js-footer').addClass('active');
+  });
+  $('.js-footer-close').click(function () {
+    $('.js-footer').removeClass('active');
   });
 
-  if ($(window).width() < 1024) {
+  if ($(window).width() < 768) {
     fullpage_api.setResponsive(true);
   }
 
   $(window).resize(function () {
-    if ($(window).width() < 1024) {
+    if ($(window).width() < 768) {
       fullpage_api.setResponsive(true);
     }
   });

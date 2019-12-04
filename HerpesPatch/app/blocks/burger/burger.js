@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	$('.js-burger').click( function () {
 		$(this).toggleClass('is-open');
+		$(this).toggleClass('fixed-center');
 		$('.js-nav').toggleClass('active');
 	});
 

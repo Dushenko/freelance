@@ -1,7 +1,7 @@
 .header {
 	position: fixed;
 	top: 24px;
-	left: 15px;
+	left: 0px;
 	z-index: 10;
 	@media screen and (min-width: 1350px) {
 		top: 40px;
@@ -14,8 +14,12 @@
 	}
 
 	.logo {
-		width: 135px;
-		height: 68px;
+		width: 78px;
+		height: 39px;
+		@media screen and (min-width: 768px) {
+			width: 135px;
+			height: 68px;
+		}
 		img {
 			width: 100%;
 			height: 100%;
@@ -24,8 +28,12 @@
 
 	.lang-wrap {
 		display: flex;
-		padding-top: 20px;
-		margin: 0 20px 0 50px;
+		padding-top: 4px;
+		margin: 0 20px 0 40px;
+		@media screen and (min-width: 768px) {
+			padding-top: 20px;
+			margin: 0 20px 0 50px;
+		}
 		@media screen and (min-width: 1550px) {
 			margin: 0 50px 0 110px;
 		}
@@ -33,11 +41,13 @@
 			margin-right: auto;
 		}
 		.lang {
-			font-size: 16px;
+			font-size: 12px;
 			text-transform: uppercase;
 			color: #FFFFFF;
 			font-weight: 400;
-
+			@media screen and (min-width: 768px) {
+				font-size: 16px;
+			}
 			&.active {
 				font-weight: 700;
 			}
@@ -58,26 +68,31 @@
 		width: 232px;
 		height: 100vh;
 		top: 0;
-		right: -232px;
+		right: -100%;
 		transition: all .3s ease;
 		padding: 68px 52px 20px;
 		background: linear-gradient(180deg, #8051A1 0%, #43056F 100%);
+	}
 
-		&.active {
-			right: 0;
-			transition: all .3s ease;
-		}
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+
+	&.active {
+		right: 0;
+		transition: all .3s ease;
 	}
 
 	&__list {
 		display: flex;
 		@media screen and (max-width: 1350px) {
 			flex-direction: column;
+			align-items: center;
 		}
 	}
 
 	&__item {
-		margin: 0 0 42px;
+		margin: 0 0 20px;
 		@media screen and (min-width: 1350px) {
 			margin: 0 0 0 30px;
 		}
@@ -88,9 +103,12 @@
 
 	&__link {
 		position: relative;
-		font-size: 15px;
+		font-size: 18px;
 		color: #FFFFFF;
 		white-space: nowrap;
+		@media screen and (min-width: 768px) {
+			font-size: 15px;
+		}
 		@media screen and (min-width: 1350px) {
 			font-size: 16px;
 		}
@@ -110,5 +128,17 @@
 				background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.5879 3.04945L2.8022 14.8352C2.71978 15 2.55494 15 2.39011 15C2.22527 15 2.06044 15 1.97802 14.8352L0.164835 13.022C0.0824176 12.9396 0 12.7747 0 12.6099C0 12.4451 0.0824176 12.3626 0.164835 12.1978L11.9506 0.412088C12.1154 0.32967 12.1978 0.247253 12.3626 0.247253C12.5275 0.247253 12.6923 0.32967 12.7747 0.412088L14.5879 2.22527C14.7527 2.30769 14.7527 2.47253 14.7527 2.63736C14.7527 2.8022 14.7527 2.96703 14.5879 3.04945ZM3.2967 1.15385L2.39011 1.48352L2.06044 2.39011L1.81319 1.48352L0.906593 1.15385L1.81319 0.906593L2.06044 0L2.30769 0.906593L3.2967 1.15385ZM7.41758 2.96703L5.6044 3.46154L5.02747 5.27473L4.45055 3.46154L2.71978 2.96703L4.53297 2.39011L5.10989 0.576923L5.68681 2.39011L7.41758 2.96703ZM9.14835 1.15385L8.24176 1.48352L7.99451 2.39011L7.66484 1.48352L6.84066 1.15385L7.74725 0.906593L7.99451 0L8.24176 0.906593L9.14835 1.15385ZM13.3516 2.63736L12.3626 1.64835L9.72527 4.36813L10.7143 5.35714L13.3516 2.63736ZM15 7.08791L14.0934 7.33517L13.8462 8.24176L13.5989 7.33517L12.6923 7.08791L13.5989 6.84066L13.8462 5.93407L14.0934 6.84066L15 7.08791Z' fill='%23DE0270'/%3E%3C/svg%3E%0A");
 			}
 		}
+	}
+}
+
+.mob-content {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+	.soc {
+		padding-top: 20px;
 	}
 }
