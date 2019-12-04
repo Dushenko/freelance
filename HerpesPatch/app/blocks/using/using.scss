@@ -1,12 +1,20 @@
 .using {
 	display: flex;
-	align-items: center;
+
+	@media screen and (min-width: 768px){
+		align-items: center;
+	}
 
 	&__img {
-		width: 200px;
-		height: 200px;
-		margin-right: 28px;
+		width: 39px;
+		height: 39px;
+		margin-right: 16px;
 		flex: none;
+		@media screen and (min-width: 768px){
+			width: 200px;
+			height: 200px;
+			margin-right: 28px;
+		}
 		img {
 			@include img-style;
 		}
@@ -19,15 +27,23 @@
 
 	&__name {
 		font-weight: 700;
-		font-size: 24px;
-		line-height: 29px;
+		font-size: 16px;
+		line-height: 20px;
 		color: #FFFFFF;
 		margin-bottom: 8px;
+		@media screen and (min-width: 768px){
+			font-size: 24px;
+			line-height: 29px;
+		}
 	}
 
 	&__text {
-		font-size: 16px;
-		line-height: 26px;
+		font-size: 14px;
+		line-height: 18px;
 		color: #FFFFFF;
+		@media screen and (min-width: 768px){
+			font-size: 16px;
+			line-height: 26px;
+		}
 	}
 }

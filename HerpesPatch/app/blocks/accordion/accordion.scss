@@ -1,5 +1,8 @@
 .accordion {
-	margin: 0 0 50px;
+	margin: 0 0 32px;
+	@media screen and (min-width: 768px){
+		margin: 0 0 50px;
+	}
 
 	&:last-child {
 		margin-bottom: 0;
@@ -13,31 +16,47 @@
 	}
 
 	&__img {
-		margin-right: 16px;
+		margin-right: 12px;
+		@media screen and (min-width: 768px){
+			margin-right: 16px;
+		}
 		img {
-			width: 60px;
-			height: 60px;
+			width: 39px;
+			height: 39px;
+			@media screen and (min-width: 768px){
+				width: 60px;
+				height: 60px;
+			}
 		}
 	}
 
 	&__name {
-		width: 340px;
+		width: 100%;
 		font-weight: 700;
-		font-size: 24px;
-		line-height: 29px;
+		font-size: 18px;
+		line-height: 22px;
 		color: #FFFFFF;
 		text-shadow: 0px 17px 50px rgba(0, 0, 0, 0.05);
+		@media screen and (min-width: 768px){
+			font-size: 24px;
+			width: 340px;
+			line-height: 29px;
+		}
 	}
 
 	&__btn {
-		width: 52px;
-		height: 52px;
+		width: 31px;
+		height: 31px;
+		@media screen and (min-width: 768px){
+			width: 52px;
+			height: 52px;
+		}
 		@include bg-img-center
-		
+
 		&.down {
 			background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 22L26.5 32L37 22' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='26' cy='26' r='24.5' transform='rotate(-180 26 26)' stroke='white' stroke-width='3'/%3E%3C/svg%3E%0A");
 		}
-		
+
 		&.top {
 			background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M37 30L26.5 20L16 30' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='26' cy='26' r='24.5' stroke='white' stroke-width='3'/%3E%3C/svg%3E%0A");
 		}
@@ -48,10 +67,15 @@
 	}
 
 	&__text {
-		width: 92%;
-		font-size: 16px;
+		width: 100%;
+		font-size: 14px;
 		line-height: 24px;
 		color: #FFFFFF;
+		padding-left: 3px;
 		text-shadow: 0px 17px 50px rgba(0, 0, 0, 0.05);
+		@media screen and (min-width: 768px){
+			font-size: 16px;
+			width: 92%;
+		}
 	}
 }

@@ -5,9 +5,10 @@
 		font-size: 34px;
 		color: #FFFFFF;
 		text-shadow: 0px 17px 50px rgba(0, 0, 0, 0.05);
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 		@media screen and (min-width: 768px){
 			font-size: 60px;
+			margin-bottom: 30px;
 		}
 		@media screen and (min-width: 1024px){
 
@@ -35,11 +36,14 @@
 
 	h4 {
 		font-weight: 700;
-		font-size: 20px;
+		font-size: 14px;
 		line-height: 30px;
 		color: #FFFFFF;
 		text-shadow: 0px 17px 50px rgba(0, 0, 0, 0.05);
 		margin-bottom: 5px;
+		@media screen and (min-width: 768px){
+			font-size: 20px;
+		}
 	}
 
 	p {
@@ -58,13 +62,21 @@
 
 	.typography-wrap {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
+		@media screen and (min-width: 768px) {
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
 
 		p {
-			width: 48%;
 			position: relative;
 			padding-left: 30px;
-			margin: 0 26px 18px 0;
+			margin: 0 0 23px;
+			font-size: 16px;
+			@media screen and (min-width: 768px) {
+				width: 48%;
+				margin: 0 26px 18px 0;
+			}
 
 			&:nth-child(2n) {
 				margin-right: 0;
