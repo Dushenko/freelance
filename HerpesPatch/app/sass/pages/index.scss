@@ -141,6 +141,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		@media screen and (min-width: 1200px) {
+			flex-direction: row;
+		}
 	}
 
 	.typography {
@@ -159,6 +162,7 @@
 		
 		@media screen and (min-width: 768px) {
 			width: 30%;
+			height: auto;
 			margin-bottom: 0;
 		}
 
@@ -220,8 +224,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		@media screen and (min-width: 768px) {
-
+		@media screen and (min-width: 1200px) {
+			flex-direction: row;
+			align-items: center;
 		}
 	}
 
@@ -246,6 +251,9 @@
 
 	.using {
 		margin-bottom: 30px;
+		@media screen and (min-width: 768px) {
+			margin-bottom: 0;
+		}
 		&:nth-child(1) {
 			@media screen and (min-width: 768px) {
 				padding-right: 70px;
@@ -276,6 +284,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		@media screen and (min-width: 1200px) {
+			flex-direction: row;
+		}
 	}
 
 	.typography {
@@ -303,6 +314,7 @@
 		
 		@media screen and (min-width: 768px) {
 			width: 37.4%;
+			height: auto;
 			margin-bottom: 0;
 		}
 		
@@ -351,7 +363,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 1200px) {
 			justify-content: flex-start;
 			flex-direction: row;
 		}
@@ -378,6 +390,7 @@
 		height: 251px;
 		@media screen and (min-width: 768px) {
 			width: 40%;
+			height: auto;
 		}
 		img {
 			@include img-style;
@@ -397,7 +410,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 1200px) {
 			flex-direction: row;
 		}
 	}
@@ -450,7 +463,7 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 1200px) {
 			flex-direction: row;
 			justify-content: flex-start;
 		}
@@ -498,7 +511,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 1200px) {
 			flex-direction: row;
 		}
 	}
@@ -533,5 +546,18 @@
 		img {
 			@include img-style;
 		}
+	}
+}
+
+.contact-ssection {
+	padding: 15px 0 40px;
+	background: linear-gradient(180deg, #8051A1 0%, #5A2B7C 100%);
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+	.mob-content {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
 	}
 }

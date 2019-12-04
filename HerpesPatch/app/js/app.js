@@ -29,17 +29,25 @@ document.addEventListener('DOMContentLoaded', function(){
 		$('.js-footer').removeClass('active');
 	});
 
-
-
-
-	if ($(window).width() < 768) {
-		fullpage_api.setResponsive(true);
-	}
-
-	$(window).resize(function() {
-		if ($(window).width() < 768) {
-			fullpage_api.setResponsive(true);
-		}
+	//scroll
+	$('.nav__link').on('click', function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1500);
 	});
-	
+
+
+
+
+	// if ($(window).width() < 768) {
+	// 	fullpage_api.setResponsive(true);
+	// }
+
+	// $(window).resize(function() {
+	// 	if ($(window).width() < 768) {
+	// 		fullpage_api.setResponsive(true);
+	// 	}
+	// });
+
 });

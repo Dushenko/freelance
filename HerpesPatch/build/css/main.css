@@ -1312,6 +1312,9 @@ select{
   -webkit-box-align:center;
   align-items:center;
   flex-wrap:wrap; }
+@media screen and (min-width: 768px){
+    .priceForm__wrap{
+      flex-wrap:nowrap; } }
 .priceForm__field{
   display:-webkit-box;
   display:flex;
@@ -1946,6 +1949,11 @@ select{
     flex-direction:column;
     -webkit-box-align:center;
     align-items:center; }
+@media screen and (min-width: 1200px){
+      .two-section .container{
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+        flex-direction:row; } }
 .two-section .typography{
     margin-bottom:15px; }
 @media screen and (min-width: 768px){
@@ -1960,6 +1968,7 @@ select{
 @media screen and (min-width: 768px){
       .two-section .video-wrap{
         width:30%;
+        height:auto;
         margin-bottom:0; } }
 .two-section .video-wrap img{
       width:100%;
@@ -2014,6 +2023,13 @@ select{
     flex-direction:column;
     -webkit-box-align:start;
     align-items:flex-start; }
+@media screen and (min-width: 1200px){
+      .three-section .container{
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+        flex-direction:row;
+        -webkit-box-align:center;
+        align-items:center; } }
 @media screen and (min-width: 768px){
     .three-section .typography{
       width:39%;
@@ -2031,6 +2047,9 @@ select{
         width:54%; } }
 .three-section .using{
     margin-bottom:30px; }
+@media screen and (min-width: 768px){
+      .three-section .using{
+        margin-bottom:0; } }
 @media screen and (min-width: 768px){
       .three-section .using:nth-child(1){
         padding-right:70px; } }
@@ -2055,6 +2074,11 @@ select{
     flex-direction:column;
     -webkit-box-align:center;
     align-items:center; }
+@media screen and (min-width: 1200px){
+      .four-section .container{
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+        flex-direction:row; } }
 .four-section .typography{
     margin-bottom:30px; }
 @media screen and (min-width: 768px){
@@ -2073,6 +2097,7 @@ select{
 @media screen and (min-width: 768px){
       .four-section .img-wrap{
         width:37.4%;
+        height:auto;
         margin-bottom:0; } }
 .four-section .img-wrap img{
       width:100%;
@@ -2114,7 +2139,7 @@ select{
     flex-direction:column;
     -webkit-box-align:center;
     align-items:center; }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
       .five-section .container{
         -webkit-box-pack:start;
         justify-content:flex-start;
@@ -2138,7 +2163,8 @@ select{
     height:251px; }
 @media screen and (min-width: 768px){
       .five-section .img-wrap{
-        width:40%; } }
+        width:40%;
+        height:auto; } }
 .five-section .img-wrap img{
       width:100%;
       height:100%;
@@ -2158,7 +2184,7 @@ select{
     flex-direction:column;
     -webkit-box-align:center;
     align-items:center; }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
       .six-section .container{
         -webkit-box-orient:horizontal;
         -webkit-box-direction:normal;
@@ -2201,7 +2227,7 @@ select{
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
     flex-direction:column; }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
       .seven-section .container{
         -webkit-box-orient:horizontal;
         -webkit-box-direction:normal;
@@ -2245,7 +2271,7 @@ select{
     flex-direction:column;
     -webkit-box-align:center;
     align-items:center; }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
       .eight-section .container{
         -webkit-box-orient:horizontal;
         -webkit-box-direction:normal;
@@ -2280,3 +2306,18 @@ select{
       height:100%;
       -o-object-fit:cover;
       object-fit:cover; }
+.contact-ssection{
+  padding:15px 0 40px;
+  background:-webkit-linear-gradient(top, #8051A1 0%, #5A2B7C 100%);
+  background:linear-gradient(180deg, #8051A1 0%, #5A2B7C 100%); }
+@media screen and (min-width: 768px){
+    .contact-ssection{
+      display:none; } }
+.contact-ssection .mob-content{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:reverse;
+    flex-direction:column-reverse;
+    -webkit-box-align:center;
+    align-items:center; }
