@@ -55,8 +55,10 @@ $(document).ready(function () {
     var convertion = priceProduct.toFixed(0);
     var price = parseFloat($("#quantity").val());
     var total = (convertion * price).toFixed(0);
+    window.totalPrice = total;
     var finalPrice = total.toString().replace(/\./g, ',');
-    $("#total-price").val(finalPrice);
+    var priceElement = document.querySelector("#total-price");
+    priceElement.innerHTML = finalPrice;
   }
 
   $(document).ready(function () {
@@ -69,7 +71,28 @@ $(document).ready(function () {
     var removeLetters = $(this).val().replace(/[^0-9]/g, '');
     $(this).val(removeLetters);
   });
-});
+}); // submit button
+
+(function () {
+  var submitButton = document.querySelector('.priceForm__btn');
+
+  if (submitButton) {
+    submitButton.addEventListener('click', function () {
+      var formData = new FormData();
+      formData.append('count', window.totalPrice);
+      $.ajax({
+        url: '#',
+        type: 'post',
+        dataType: 'multipart/form-data',
+        data: formData,
+        success: function success(data) {
+          console.log(data);
+        }
+      });
+    });
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
@@ -113,5 +136,17 @@ document.addEventListener('DOMContentLoaded', function () {
     loopBottom: true,
     loopHorizontal: false,
     responsive: 768
+  }); //form
+
+  var formData = new FormData();
+  formData.append('count', 23);
+  $.ajax({
+    url: '#',
+    type: 'post',
+    dataType: 'multipart/form-data',
+    data: formData,
+    success: function success(data) {
+      console.log(data);
+    }
   });
 });

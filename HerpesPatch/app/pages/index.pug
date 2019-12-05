@@ -22,7 +22,7 @@ block content
 					.img-wrap
 						img(src="images/img-1.png", alt="")
 				
-			section.two-section.section#section1
+			section(data-anchor="firstPage").two-section.section#section1
 				.container
 					.typography
 						h2 Що таке  Herpes Patch
@@ -65,7 +65,7 @@ block content
 							.accordion__content
 								p.accordion__text коли висип ще не утворився, але вже відчувається свербыж та поколювання, патч моментально позбавить від неприємних симптомів та зупинить подальший розвиток запалення.
 
-			section.three-section.section#section2
+			section(data-anchor="secondPage").three-section.section#section2
 				.container
 					.typography
 						h2 Спосіб застосування
@@ -150,7 +150,7 @@ block content
 							form.priceForm
 								.priceForm__wrap
 									.priceForm__field
-										input#total-price(readonly="readonly" value="0,00")
+										span#total-price
 										span.priceForm__currency ₴
 										strong.skuBestPrice 600
 									.priceForm__counter

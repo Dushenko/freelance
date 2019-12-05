@@ -15,9 +15,9 @@
         <div class="container"><a class="logo" href="#"><img src="images/logo.svg" alt=""></a>
           <div class="lang-wrap"><a class="lang" href="#">RU</a><span>/</span><a class="lang active" href="#">UA</a></div>
           <nav class="nav js-nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#section1">Що таке патч</a></li>
-              <li class="nav__item"><a class="nav__link" href="#section2">Користування</a></li>
+            <ul class="nav__list" id="menu">
+              <li class="nav__item" data-menuanchor="firstPage"><a class="nav__link" href="#firstPage">Що таке патч</a></li>
+              <li class="nav__item" data-menuanchor="secondPage"><a class="nav__link" href="#secondPage">Користування</a></li>
               <li class="nav__item"><a class="nav__link" href="#section3">Переваги</a></li>
               <li class="nav__item"><a class="nav__link" href="#section4">Естетика</a></li>
               <li class="nav__item"><a class="nav__link" href="#section5">Cертифікати</a></li>
@@ -63,7 +63,7 @@
               <div class="img-wrap"><img src="images/img-1.png" alt=""></div>
             </div>
           </section>
-          <section class="two-section section" id="section1">
+          <section class="two-section section" data-anchor="firstPage" id="section1">
             <div class="container">
               <div class="typography">
                 <h2>Що таке  Herpes Patch</h2>
@@ -114,7 +114,7 @@
               </div>
             </div>
           </section>
-          <section class="three-section section" id="section2">
+          <section class="three-section section" data-anchor="secondPage" id="section2">
             <div class="container">
               <div class="typography">
                 <h2>Спосіб застосування</h2>
@@ -211,9 +211,7 @@
                 <div class="typography-price">
                   <form class="priceForm">
                     <div class="priceForm__wrap">
-                      <div class="priceForm__field">
-                        <input id="total-price" readonly="readonly" value="0,00"><span class="priceForm__currency">₴</span><strong class="skuBestPrice">600</strong>
-                      </div>
+                      <div class="priceForm__field"><span id="total-price"></span><span class="priceForm__currency">₴</span><strong class="skuBestPrice">600</strong></div>
                       <div class="priceForm__counter">
                         <input id="minus" type="button" value="-">
                         <input id="quantity" type="text" value="1" name="quantity">
@@ -281,7 +279,7 @@
               <div class="mainForm__wrap"><span class="mainForm__title">Зворотній  зв’язок</span>
                 <input class="mainForm__input" type="text" placeholder="Ім’я">
                 <input class="mainForm__input" type="text" placeholder="Телефон">
-                <button class="mainForm__btn" type="submit">ЗАМОВИТИ</button>
+                <button class="mainForm__btn main-btn" type="submit">ЗАМОВИТИ</button>
               </div>
             </form>
           </div>

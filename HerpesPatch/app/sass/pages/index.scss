@@ -123,6 +123,10 @@
 				border-radius: 16px;
 				z-index: 9;
 				padding: 7px 0;
+
+				&:after {
+					border-radius: 16px;
+				}
 			}
 		}
 	}

@@ -9,11 +9,11 @@ header.header
 			a(href="#").lang.active UA
 
 		nav.nav.js-nav
-			ul.nav__list
-				li.nav__item
-					a(href="#section1").nav__link Що таке патч
-				li.nav__item
-					a(href="#section2").nav__link Користування
+			ul.nav__list#menu
+				li(data-menuanchor="firstPage").nav__item
+					a(href="#firstPage").nav__link Що таке патч
+				li(data-menuanchor="secondPage").nav__item
+					a(href="#secondPage").nav__link Користування
 				li.nav__item
 					a(href="#section3").nav__link Переваги
 				li.nav__item

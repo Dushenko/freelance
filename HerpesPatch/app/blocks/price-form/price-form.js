@@ -25,13 +25,16 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 $(document).ready(function() {
+
   function updatePrice() {
-  	var priceProduct = parseFloat($.trim($('.skuBestPrice').html().replace(",", "").replace("R$", "")));	
+    var priceProduct = parseFloat($.trim($('.skuBestPrice').html().replace(",", "").replace("R$", "")));  
     var convertion = ((priceProduct)).toFixed(0);
     var price = parseFloat($("#quantity").val());
     var total = ((convertion) * (price)).toFixed(0);
+    window.totalPrice = total
     var finalPrice = total.toString().replace(/\./g, ',');
-    $("#total-price").val(finalPrice);
+    var priceElement = document.querySelector("#total-price")
+    priceElement.innerHTML = finalPrice
   }
   $(document).ready(function (){ updatePrice();});
   $(document).on("click", "input", updatePrice);
@@ -43,4 +46,26 @@ $(document).ready(function() {
     $(this).val(removeLetters);
   });
 });
+
+// submit button
+(function() {
+  var submitButton = document.querySelector('.priceForm__btn')
+
+  if(submitButton) {
+    submitButton.addEventListener('click', function() {
+      const formData = new FormData()
+      formData.append('count', window.totalPrice)
+  
+      $.ajax({
+        url: '#',
+        type: 'post',
+        dataType: 'multipart/form-data',
+        data: formData,
+        success: function(data) {
+          console.log(data)
+        }
+      });
+    })
+  }
+})()
 
