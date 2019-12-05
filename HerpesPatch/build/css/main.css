@@ -482,6 +482,48 @@ select{
     transform:translate(0, 0);
     opacity:1; } }
 
+@media screen and (max-width: 768px){
+  .mov .typography{
+    position:relative;
+    opacity:0;
+    -webkit-transform:translate(0, 200px);
+    -ms-transform:translate(0, 200px);
+    transform:translate(0, 200px);
+    -webkit-transition:all 1s ease;
+    transition:all 1s ease; }
+  .mov .partners-wrap,
+  .mov .certificates-wrap,
+  .mov .typography-wrap,
+  .mov .accordion-wrap,
+  .mov .video-wrap,
+  .mov .img-wrap,
+  .mov .using-wrap{
+    position:relative;
+    opacity:0;
+    -webkit-transform:translate(0, 200px);
+    -ms-transform:translate(0, 200px);
+    transform:translate(0, 200px);
+    -webkit-transition:all 1s ease;
+    transition:all 1s ease; } }
+
+@media screen and (max-width: 768px){
+  .anim .typography{
+    opacity:1;
+    -webkit-transform:translate(0, 0);
+    -ms-transform:translate(0, 0);
+    transform:translate(0, 0); }
+  .anim .partners-wrap,
+  .anim .certificates-wrap,
+  .anim .typography-wrap,
+  .anim .accordion-wrap,
+  .anim .video-wrap,
+  .anim .img-wrap,
+  .anim .using-wrap{
+    opacity:1;
+    -webkit-transform:translate(0, 0);
+    -ms-transform:translate(0, 0);
+    transform:translate(0, 0); } }
+
 .hamburglar{
   position:fixed;
   top:0px;
@@ -2302,28 +2344,6 @@ html.fp-enabled,
     .section.active .video-wrap,
     .section.active .img-wrap,
     .section.active .using-wrap{
-      -webkit-animation-name:right-animation;
-      animation-name:right-animation;
-      -webkit-animation-duration:1s;
-      animation-duration:1s;
-      -webkit-animation-fill-mode:forwards;
-      animation-fill-mode:forwards; } }
-
-@media screen and (max-width: 768px){
-    .section .typography{
-      -webkit-animation-name:left-animation;
-      animation-name:left-animation;
-      -webkit-animation-duration:1s;
-      animation-duration:1s;
-      -webkit-animation-fill-mode:forwards;
-      animation-fill-mode:forwards; }
-    .section .partners-wrap,
-    .section .certificates-wrap,
-    .section .typography-wrap,
-    .section .accordion-wrap,
-    .section .video-wrap,
-    .section .img-wrap,
-    .section .using-wrap{
       -webkit-animation-name:right-animation;
       animation-name:right-animation;
       -webkit-animation-duration:1s;

@@ -47,26 +47,6 @@
 			}
 		}
 	}
-	
-	@media screen and (max-width: 768px) {
-		.typography {
-			animation-name: left-animation;
-			animation-duration: 1s;
-			animation-fill-mode: forwards;
-		}
-
-		.partners-wrap,
-		.certificates-wrap,
-		.typography-wrap,
-		.accordion-wrap,
-		.video-wrap,
-		.img-wrap,
-		.using-wrap {
-			animation-name: right-animation;
-			animation-duration: 1s;
-			animation-fill-mode: forwards;
-		}
-	}
 }
 
 .one-section {

@@ -1,23 +1,67 @@
 @keyframes left-animation {
-  0%{
-    transform: translate(-200px, 0);
-    opacity: 0;
-  }
+	0%{
+		transform: translate(-200px, 0);
+		opacity: 0;
+	}
 
-  100%{
-    transform: translate(0, 0);
-    opacity: 1;;
-  }
+	100%{
+		transform: translate(0, 0);
+		opacity: 1;
+	}
 }
 
 @keyframes right-animation {
-  0%{
-    transform: translate(200px, 0);
-    opacity: 0;
-  }
+	0%{
+		transform: translate(200px, 0);
+		opacity: 0;
+	}
 
-  100%{
-    transform: translate(0, 0);
-    opacity: 1;;
-  }
+	100%{
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+.mov {
+	@media screen and (max-width: 768px) {
+		.typography {
+			position: relative;
+			opacity: 0;
+			transform: translate(0, 200px);
+			transition: all 1s ease;
+		}
+
+		.partners-wrap,
+		.certificates-wrap,
+		.typography-wrap,
+		.accordion-wrap,
+		.video-wrap,
+		.img-wrap,
+		.using-wrap {
+			position: relative;
+			opacity: 0;
+			transform: translate(0, 200px);
+			transition: all 1s ease;
+		}
+	}
+}
+
+.anim {
+	@media screen and (max-width: 768px) {
+		.typography {
+			opacity: 1;
+			transform: translate(0, 0);
+		}
+
+		.partners-wrap,
+		.certificates-wrap,
+		.typography-wrap,
+		.accordion-wrap,
+		.video-wrap,
+		.img-wrap,
+		.using-wrap {
+			opacity: 1;
+			transform: translate(0, 0);
+		}
+	}
 }

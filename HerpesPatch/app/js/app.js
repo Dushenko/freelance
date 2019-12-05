@@ -3,21 +3,15 @@
 document.addEventListener('DOMContentLoaded', function(){
 	'use strict';
 	
-	$('.scroll-down').on('click', () => {
-		fullpage_api.moveSectionDown();
-	})
-	$('.scroll-up').on('click', () => {
-		fullpage_api.moveSectionUp();
-	})
-
-	$('.js-form').on('click', function () {
-		$('.js-mask').fadeIn('active');
-		$('.js-modal').fadeIn('active');
+	//video
+	$('.js-video-open').click( function () {
+		$('.js-video').fadeIn(1500);
+		$('.main').fadeOut(1000);
 	});
 
-	$('.js-mask').on('click', function () {
-		$(this).fadeOut('active');
-		$('.js-modal').fadeOut('active');
+	$('.js-video-close').click( function () {
+		$('.js-video').fadeOut();
+		$('.main').fadeIn();
 	});
 
 	//footer
@@ -37,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		$('body,html').animate({scrollTop: top}, 1000);
 	});
 
+	//fullpage
 	$("#fullpage").fullpage({
 		menu:'#menu',
 		scrollBar:false,
@@ -53,16 +48,18 @@ document.addEventListener('DOMContentLoaded', function(){
 	// 	fullpage_api.destroy('all');
 	// }
 
-	//video
-	$('.js-video-open').click( function () {
-		$('.js-video').fadeIn(1500);
-		$('.main').fadeOut(1000);
+	//animation
+	$(window).scroll(function() {
+		$('.mov').each(function(){
+			var imagePos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass('anim');
+			}
+		});
 	});
 
-	$('.js-video-close').click( function () {
-		$('.js-video').fadeOut();
-		$('.main').fadeIn();
-	});
+	
 	
 
 });
