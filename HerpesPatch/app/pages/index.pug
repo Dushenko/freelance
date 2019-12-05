@@ -22,13 +22,13 @@ block content
 					.img-wrap
 						img(src="images/img-1.png", alt="")
 				
-			section(data-anchor="firstPage").two-section.section#section1
+			section.two-section.section#section1
 				.container
 					.typography
 						h2 Що таке  Herpes Patch
 						p Антигерпетичні патчі - це лікувальний прозорий клейкий пластир, що щільно фіксується на шкірі та механічно локалізує герпетичне ураження. Використовується на всіх етапах розвитку застуди на губах та в області носогубного трикутника. Підходить для всіх типів шкіри.
 					.video-wrap
-						span.video-btn
+						span.video-btn.js-video-open
 						img(src="images/video.png", alt="")
 
 					.accordion-wrap
@@ -65,7 +65,7 @@ block content
 							.accordion__content
 								p.accordion__text коли висип ще не утворився, але вже відчувається свербыж та поколювання, патч моментально позбавить від неприємних симптомів та зупинить подальший розвиток запалення.
 
-			section(data-anchor="secondPage").three-section.section#section2
+			section.three-section.section#section2
 				.container
 					.typography
 						h2 Спосіб застосування
@@ -200,6 +200,9 @@ block content
 							a(href="mailto:Info@hp.com").mail Info@hp.com
 							a(href="tel:+380948588694").tel +38 094 858 86 94
 							p.address 03190, м. Київ, вул. Черняхівського, буд. 16/30, оф. 3
-
+			
+	.video.js-video
+		span.video-close.js-video-close
+		iframe(src="https://www.youtube.com/embed/sG6aWhZnbfw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 block footer
 	include ../blocks/footer/footer

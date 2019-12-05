@@ -136,17 +136,12 @@ document.addEventListener('DOMContentLoaded', function () {
     loopBottom: true,
     loopHorizontal: false,
     responsive: 768
-  }); //form
+  }); //video
 
-  var formData = new FormData();
-  formData.append('count', 23);
-  $.ajax({
-    url: '#',
-    type: 'post',
-    dataType: 'multipart/form-data',
-    data: formData,
-    success: function success(data) {
-      console.log(data);
-    }
+  $('.js-video-open').click(function () {
+    $('.js-video').fadeIn();
+  });
+  $('.js-video-close').click(function () {
+    $('.js-video').fadeOut();
   });
 });

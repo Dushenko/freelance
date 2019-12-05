@@ -49,20 +49,14 @@ document.addEventListener('DOMContentLoaded', function(){
 		responsive: 768,
 	});
 
-
-	//form
-
-	const formData = new FormData()
-	formData.append('count', 23)
-
-	$.ajax({
-		url: '#',
-		type: 'post',
-		dataType: 'multipart/form-data',
-		data: formData,
-		success: function(data) {
-			console.log(data)
-		}
+	//video
+	$('.js-video-open').click( function () {
+		$('.js-video').fadeIn();
 	});
+
+	$('.js-video-close').click( function () {
+		$('.js-video').fadeOut();
+	});
+	
 
 });

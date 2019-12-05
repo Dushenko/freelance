@@ -442,6 +442,26 @@ select{
         font-size:16px;
         width:92%; } }
 
+@-webkit-keyframes block-animation{
+  0%{
+    -webkit-transform:translate(-200px, 0);
+    transform:translate(-200px, 0);
+    opacity:0; }
+  100%{
+    -webkit-transform:translate(0, 0);
+    transform:translate(0, 0);
+    opacity:1; } }
+
+@keyframes block-animation{
+  0%{
+    -webkit-transform:translate(-200px, 0);
+    transform:translate(-200px, 0);
+    opacity:0; }
+  100%{
+    -webkit-transform:translate(0, 0);
+    transform:translate(0, 0);
+    opacity:1; } }
+
 .hamburglar{
   position:fixed;
   top:0px;
@@ -1837,18 +1857,6 @@ html.fp-enabled,
         height:55px;
         top:calc(50% - 28px); } }
 
-.priceForm__field input{
-    font-weight:700;
-    color:#FFFFFF;
-    text-shadow:0px 17px 50px rgba(0, 0, 0, 0.05);
-    font-size:30px;
-    width:80px; }
-
-@media screen and (min-width: 768px){
-      .priceForm__field input{
-        font-size:74px;
-        width:180px; } }
-
 .priceForm__field span{
     color:#FFFFFF;
     text-shadow:0px 17px 50px rgba(0, 0, 0, 0.05);
@@ -2258,6 +2266,14 @@ html.fp-enabled,
     .section .container{
       height:auto;
       padding-top:0; } }
+
+.section.active .typography{
+    -webkit-animation-name:block-animation;
+    animation-name:block-animation;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; }
 
 .one-section{
   overflow:hidden;
@@ -3088,3 +3104,39 @@ html.fp-enabled,
     flex-direction:column-reverse;
     -webkit-box-align:center;
     align-items:center; }
+
+.video{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  z-index:20; }
+
+.video iframe{
+    width:100%;
+    height:100%; }
+
+.video .video-close{
+    position:fixed;
+    top:30px;
+    right:30px;
+    z-index:21;
+    cursor:pointer;
+    width:52px;
+    height:52px;
+    -webkit-transition:all .3s ease;
+    transition:all .3s ease;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image:url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Ccircle cx='36' cy='36' r='24.5' stroke='%23C4C4C4' stroke-width='3'/%3E%3C/g%3E%3Cline x1='26.0873' y1='26.1377' x2='46.7587' y2='46.8091' stroke='%23C4C4C4' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='46.7588' y1='26.9838' x2='26.0874' y2='47.6551' stroke='%23C4C4C4' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='72' height='72' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='5'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3CfeBlend mode='color-dodge' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A"); }
+
+.video .video-close:hover{
+      -webkit-transform:scale(1.1);
+      -ms-transform:scale(1.1);
+      transform:scale(1.1); }
+
+.video.active{
+    display:block; }
