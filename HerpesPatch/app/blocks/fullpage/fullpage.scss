@@ -8,6 +8,7 @@
  *
  * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
  */
+ 
  html.fp-enabled,
  .fp-enabled body {
     margin: 0;
@@ -99,14 +100,14 @@
     top: 50%;
     transform: translateY(-50%);
     opacity: 1;
-    right: 35px;
+    right: 31px;
     margin: 0 !important;
 }
 #fp-nav.fp-right {
-     right: 35px;
+     right: 31px;
 }
 #fp-nav.fp-left {
-     right: 35px;
+     right: 31px;
 }
 .fp-slidesNav{
     position: absolute;

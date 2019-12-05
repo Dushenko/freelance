@@ -11,6 +11,9 @@ $scale: 1;			  // icon scale 68/68 default
 	width: 68px;
 	height: 68px;
 	transform: scale(.6);
+	@media screen and (min-width: 768px) {
+		right: 22px;
+	}
 	@media screen and (min-width: 1350px) {
 		display: none;
 	}

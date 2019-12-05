@@ -16,7 +16,7 @@
 			flex-direction: row;
 			align-items: center;
 			justify-content: space-between;
-			width: 660px;
+			width: 606px;
 			height: 117px;
 		}
 		@media screen and (min-width: 1200px){
@@ -71,7 +71,7 @@
 		&::placeholder {
 			font-size: 14px;
 			color: #0D1B39;
-			@media screen and (min-width: 1024px) {
+			@media screen and (min-width: 1600px) {
 				font-size: 16px;
 			}
 		}
