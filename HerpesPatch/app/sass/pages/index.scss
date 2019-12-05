@@ -28,7 +28,19 @@
 
 	&.active {
 		.typography {
-			animation-name: block-animation;
+			animation-name: left-animation;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		}
+		
+		.partners-wrap,
+		.certificates-wrap,
+		.typography-wrap,
+		.accordion-wrap,
+		.video-wrap,
+		.img-wrap,
+		.using-wrap {
+			animation-name: right-animation;
 			animation-duration: 1s;
 			animation-fill-mode: forwards;
 		}
@@ -42,6 +54,7 @@
 		background-image: url('../images/bg-1.jpg');
 	}
 	.container {
+		height: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

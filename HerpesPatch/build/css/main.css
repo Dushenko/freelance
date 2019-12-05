@@ -442,7 +442,7 @@ select{
         font-size:16px;
         width:92%; } }
 
-@-webkit-keyframes block-animation{
+@-webkit-keyframes left-animation{
   0%{
     -webkit-transform:translate(-200px, 0);
     transform:translate(-200px, 0);
@@ -452,10 +452,30 @@ select{
     transform:translate(0, 0);
     opacity:1; } }
 
-@keyframes block-animation{
+@keyframes left-animation{
   0%{
     -webkit-transform:translate(-200px, 0);
     transform:translate(-200px, 0);
+    opacity:0; }
+  100%{
+    -webkit-transform:translate(0, 0);
+    transform:translate(0, 0);
+    opacity:1; } }
+
+@-webkit-keyframes right-animation{
+  0%{
+    -webkit-transform:translate(200px, 0);
+    transform:translate(200px, 0);
+    opacity:0; }
+  100%{
+    -webkit-transform:translate(0, 0);
+    transform:translate(0, 0);
+    opacity:1; } }
+
+@keyframes right-animation{
+  0%{
+    -webkit-transform:translate(200px, 0);
+    transform:translate(200px, 0);
     opacity:0; }
   100%{
     -webkit-transform:translate(0, 0);
@@ -2268,8 +2288,22 @@ html.fp-enabled,
       padding-top:0; } }
 
 .section.active .typography{
-    -webkit-animation-name:block-animation;
-    animation-name:block-animation;
+    -webkit-animation-name:left-animation;
+    animation-name:left-animation;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; }
+
+.section.active .partners-wrap,
+  .section.active .certificates-wrap,
+  .section.active .typography-wrap,
+  .section.active .accordion-wrap,
+  .section.active .video-wrap,
+  .section.active .img-wrap,
+  .section.active .using-wrap{
+    -webkit-animation-name:right-animation;
+    animation-name:right-animation;
     -webkit-animation-duration:1s;
     animation-duration:1s;
     -webkit-animation-fill-mode:forwards;
@@ -2284,6 +2318,7 @@ html.fp-enabled,
       background-image:url("../images/bg-1.jpg"); } }
 
 .one-section .container{
+    height:100%;
     display:-webkit-box;
     display:flex;
     -webkit-box-align:center;

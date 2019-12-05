@@ -139,9 +139,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }); //video
 
   $('.js-video-open').click(function () {
-    $('.js-video').fadeIn();
+    $('.js-video').fadeIn(1500);
+    $('.main').fadeOut(1000);
   });
   $('.js-video-close').click(function () {
     $('.js-video').fadeOut();
+    $('.main').fadeIn();
   });
 });
