@@ -13,25 +13,25 @@ block content
 				.call-btn.js-footer-open
 					span Зворотній зв’язок
 				.container
-					.typography
+					.typography.left-anim
 						h2 Herpes Patch
 						h3 Врода без жодних обмежень
 						p Новий та самий ефективний спосіб для приховування симптомів герпесу та його лікування
 						a(href="#").main-btn ДІЗНАТИСЯ БІЛЬШЕ
 
-					.img-wrap
+					.img-wrap.right-anim
 						img(src="images/img-1.png", alt="")
 				
 			section.mov.two-section.section#section1
 				.container
-					.typography
+					.typography.left-anim
 						h2 Що таке  Herpes Patch
 						p Антигерпетичні патчі - це лікувальний прозорий клейкий пластир, що щільно фіксується на шкірі та механічно локалізує герпетичне ураження. Використовується на всіх етапах розвитку застуди на губах та в області носогубного трикутника. Підходить для всіх типів шкіри.
-					.video-wrap
+					.video-wrap.right-anim
 						span.video-btn.js-video-open
 						img(src="images/video.png", alt="")
 
-					.accordion-wrap
+					.accordion-wrap.right-anim
 						.accordion
 							.accordion__head
 								.accordion__img
@@ -67,10 +67,10 @@ block content
 
 			section.mov.three-section.section#section2
 				.container
-					.typography
+					.typography.left-anim
 						h2 Спосіб застосування
 
-					.using-wrap
+					.using-wrap.right-anim
 						.using
 							.using__img
 								img(src="images/img-2.png", alt="")
@@ -94,14 +94,14 @@ block content
 
 			section.mov.four-section.section#section3
 				.container
-					.typography
+					.typography.left-anim
 						h2 Переваги  Herpes Patch
 						p Невидимий антигерпетичний пластир захищає шкіру, зменшує дискомфорт, сприяє швидкому загоєнню. Складається з гідроколоїдної матриці на поліуретанової підкладці, що має корисні характеристики для захисту і лікування герпесу. Підтримує «контрольований» рівень вологості рани, необхідний для її правильного загоєння.
 
-					.img-wrap
+					.img-wrap.right-anim
 						img(src="images/img-4.png", alt="")
 
-					.accordion-wrap
+					.accordion-wrap.right-anim
 						.accordion
 							.accordion__head
 								h3.accordion__name Безпечний  та лікуючий
@@ -123,27 +123,27 @@ block content
 
 			section.mov.five-section.section#section4
 				.container
-					.typography
+					.typography.left-anim
 						h2 Естетика та  непомітність
-						.typography-wrap
+						.typography-wrap.right-anim
 							p Бездоганно маскує висип та є чудовою основою під make-up
 							p Гіпоалергенний, загоюючий, не викликає подразнення
 							p Запобігає прояву анестезуючих рубців
-					.img-wrap
+					.img-wrap.right-anim
 						img(src="images/img-5.png", alt="")
 
 			section.mov.six-section.section#section5
 				.container
-					.typography
+					.typography.left-anim
 						h2 Сертифікати
 						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-					.certificates-wrap
+					.certificates-wrap.right-anim
 						.certificate
 						.certificate
 
 			section.mov.seven-section.section#section6
 				.container
-					.typography
+					.typography.left-anim
 						h2 Замовлення  та доставка
 
 						.typography-price
@@ -169,10 +169,10 @@ block content
 
 			section.mov.eight-section.section#section7
 				.container
-					.typography
+					.typography.left-anim
 						h2 Наші  партнери
 
-					.partners-wrap
+					.partners-wrap.right-anim
 						.partner
 							img(src="images/partner.svg", alt="")
 						.partner
@@ -201,8 +201,16 @@ block content
 							a(href="tel:+380948588694").tel +38 094 858 86 94
 							p.address 03190, м. Київ, вул. Черняхівського, буд. 16/30, оф. 3
 			
-	//- .video.js-video
-	//- 	span.video-close.js-video-close
-	//- 	iframe(src="https://www.youtube.com/embed/sG6aWhZnbfw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+	.video.js-video
+		span.video-close.js-video-close
+		iframe(src="https://www.youtube.com/embed/sG6aWhZnbfw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+	.mask.js-mask
+
+	.modal.js-modal
+		p Дякуємо 
+			|
+			br 
+			| за замовлення!
 block footer
 	include ../blocks/footer/footer

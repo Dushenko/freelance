@@ -24,20 +24,14 @@
 
 .mov {
 	@media screen and (max-width: 768px) {
-		.typography {
+		.left-anim {
 			position: relative;
 			opacity: 0;
 			transform: translate(0, 200px);
 			transition: all 1s ease;
 		}
 
-		.partners-wrap,
-		.certificates-wrap,
-		.typography-wrap,
-		.accordion-wrap,
-		.video-wrap,
-		.img-wrap,
-		.using-wrap {
+		.right-anim {
 			position: relative;
 			opacity: 0;
 			transform: translate(0, 200px);
@@ -48,18 +42,12 @@
 
 .anim {
 	@media screen and (max-width: 768px) {
-		.typography {
+		.left-anim {
 			opacity: 1;
 			transform: translate(0, 0);
 		}
 
-		.partners-wrap,
-		.certificates-wrap,
-		.typography-wrap,
-		.accordion-wrap,
-		.video-wrap,
-		.img-wrap,
-		.using-wrap {
+		.right-anim {
 			opacity: 1;
 			transform: translate(0, 0);
 		}
