@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		$(this).toggleClass('is-open');
 		$(this).toggleClass('fixed-center');
 		$('.js-nav').toggleClass('active');
+		$('.header').toggleClass('index');
 	});
 
 });

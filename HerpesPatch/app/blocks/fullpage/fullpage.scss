@@ -13,14 +13,12 @@
     margin: 0;
     padding: 0;
     overflow:hidden;
-
-    /*Avoid flicker on slides transitions for mobile phones #336 */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .fp-section {
     position: relative;
-    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
-    -moz-box-sizing: border-box; /* <=28 */
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 .fp-slide {
@@ -35,7 +33,7 @@
     height: 100%;
     overflow: hidden;
     position: relative;
-    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    -webkit-transition: all 0.3s ease-out; 
     transition: all 0.3s ease-out;
 }
 .fp-section.fp-table, .fp-slide.fp-table {
@@ -54,10 +52,10 @@
     position: relative;
 }
 .fp-controlArrow {
-    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
-    -moz-user-select: none; /* mozilla browsers */
-    -khtml-user-select: none; /* webkit (konqueror) browsers */
-    -ms-user-select: none; /* IE10+ */
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -khtml-user-select: none;
+    -ms-user-select: none;
     position: absolute;
     z-index: 4;
     top: 50%;
@@ -103,10 +101,6 @@
     opacity: 1;
     right: 35px;
     margin: 0 !important;
-    
-    @media screen and (max-width: 1024px) {
-        display: none !important;
-    }
 }
 #fp-nav.fp-right {
      right: 35px;
@@ -222,7 +216,6 @@
     height: auto !important;
 }
 
-/*Only display content to screen readers*/
 .fp-sr-only{
     position: absolute;
     width: 1px;

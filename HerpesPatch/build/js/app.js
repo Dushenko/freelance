@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $(this).toggleClass('is-open');
     $(this).toggleClass('fixed-center');
     $('.js-nav').toggleClass('active');
+    $('.header').toggleClass('index');
   });
 });
 document.addEventListener('DOMContentLoaded', function () {
@@ -101,12 +102,16 @@ document.addEventListener('DOMContentLoaded', function () {
     $('body,html').animate({
       scrollTop: top
     }, 1500);
-  }); // if ($(window).width() < 768) {
-  // 	fullpage_api.setResponsive(true);
-  // }
-  // $(window).resize(function() {
-  // 	if ($(window).width() < 768) {
-  // 		fullpage_api.setResponsive(true);
-  // 	}
-  // });
+  });
+  $("#fullpage").fullpage({
+    menu: '#menu',
+    scrollBar: false,
+    navigation: true,
+    slidesNavigation: true,
+    navigationPosition: 'left',
+    loopTop: true,
+    loopBottom: true,
+    loopHorizontal: false,
+    responsive: 768
+  });
 });
