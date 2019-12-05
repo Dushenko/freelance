@@ -27,12 +27,34 @@
 	}
 
 	&.active {
+		@media screen and (min-width: 768px) {
+			.typography {
+				animation-name: left-animation;
+				animation-duration: 1s;
+				animation-fill-mode: forwards;
+			}
+
+			.partners-wrap,
+			.certificates-wrap,
+			.typography-wrap,
+			.accordion-wrap,
+			.video-wrap,
+			.img-wrap,
+			.using-wrap {
+				animation-name: right-animation;
+				animation-duration: 1s;
+				animation-fill-mode: forwards;
+			}
+		}
+	}
+	
+	@media screen and (max-width: 768px) {
 		.typography {
 			animation-name: left-animation;
 			animation-duration: 1s;
 			animation-fill-mode: forwards;
 		}
-		
+
 		.partners-wrap,
 		.certificates-wrap,
 		.typography-wrap,
@@ -98,7 +120,10 @@
 	}
 
 	.typography {
-		margin-top: -70px;
+		position: relative;
+		z-index: 10;
+		height: 100%;
+		padding-top: 100px;
 		display: flex;
 		flex-direction: column;
 		@media screen and (min-width: 768px) {

@@ -2287,27 +2287,49 @@ html.fp-enabled,
       height:auto;
       padding-top:0; } }
 
-.section.active .typography{
-    -webkit-animation-name:left-animation;
-    animation-name:left-animation;
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
-    -webkit-animation-fill-mode:forwards;
-    animation-fill-mode:forwards; }
+@media screen and (min-width: 768px){
+    .section.active .typography{
+      -webkit-animation-name:left-animation;
+      animation-name:left-animation;
+      -webkit-animation-duration:1s;
+      animation-duration:1s;
+      -webkit-animation-fill-mode:forwards;
+      animation-fill-mode:forwards; }
+    .section.active .partners-wrap,
+    .section.active .certificates-wrap,
+    .section.active .typography-wrap,
+    .section.active .accordion-wrap,
+    .section.active .video-wrap,
+    .section.active .img-wrap,
+    .section.active .using-wrap{
+      -webkit-animation-name:right-animation;
+      animation-name:right-animation;
+      -webkit-animation-duration:1s;
+      animation-duration:1s;
+      -webkit-animation-fill-mode:forwards;
+      animation-fill-mode:forwards; } }
 
-.section.active .partners-wrap,
-  .section.active .certificates-wrap,
-  .section.active .typography-wrap,
-  .section.active .accordion-wrap,
-  .section.active .video-wrap,
-  .section.active .img-wrap,
-  .section.active .using-wrap{
-    -webkit-animation-name:right-animation;
-    animation-name:right-animation;
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
-    -webkit-animation-fill-mode:forwards;
-    animation-fill-mode:forwards; }
+@media screen and (max-width: 768px){
+    .section .typography{
+      -webkit-animation-name:left-animation;
+      animation-name:left-animation;
+      -webkit-animation-duration:1s;
+      animation-duration:1s;
+      -webkit-animation-fill-mode:forwards;
+      animation-fill-mode:forwards; }
+    .section .partners-wrap,
+    .section .certificates-wrap,
+    .section .typography-wrap,
+    .section .accordion-wrap,
+    .section .video-wrap,
+    .section .img-wrap,
+    .section .using-wrap{
+      -webkit-animation-name:right-animation;
+      animation-name:right-animation;
+      -webkit-animation-duration:1s;
+      animation-duration:1s;
+      -webkit-animation-fill-mode:forwards;
+      animation-fill-mode:forwards; } }
 
 .one-section{
   overflow:hidden;
@@ -2371,7 +2393,10 @@ html.fp-enabled,
       object-fit:contain; }
 
 .one-section .typography{
-    margin-top:-70px;
+    position:relative;
+    z-index:10;
+    height:100%;
+    padding-top:100px;
     display:-webkit-box;
     display:flex;
     -webkit-box-orient:vertical;

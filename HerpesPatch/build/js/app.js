@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
         top = $(id).offset().top;
     $('body,html').animate({
       scrollTop: top
-    }, 1500);
+    }, 1000);
   });
   $("#fullpage").fullpage({
     menu: '#menu',
@@ -136,7 +136,10 @@ document.addEventListener('DOMContentLoaded', function () {
     loopBottom: true,
     loopHorizontal: false,
     responsive: 768
-  }); //video
+  }); // if ($(window).width() < 768) {
+  // 	fullpage_api.destroy('all');
+  // }
+  //video
 
   $('.js-video-open').click(function () {
     $('.js-video').fadeIn(1500);

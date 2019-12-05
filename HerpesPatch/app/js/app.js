@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		event.preventDefault();
 		var id  = $(this).attr('href'),
 		top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 1500);
+		$('body,html').animate({scrollTop: top}, 1000);
 	});
 
 	$("#fullpage").fullpage({
@@ -48,6 +48,10 @@ document.addEventListener('DOMContentLoaded', function(){
 		loopHorizontal:false,
 		responsive: 768,
 	});
+
+	// if ($(window).width() < 768) {
+	// 	fullpage_api.destroy('all');
+	// }
 
 	//video
 	$('.js-video-open').click( function () {
