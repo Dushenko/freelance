@@ -177,10 +177,12 @@
 			flex-wrap: wrap;
 			align-items: flex-start;
 			justify-content: flex-start;
+			height: 100%;
 		}
 		@media screen and (min-width: 1200px) {
 			flex-direction: row;
 			align-items: center;
+			height: 100%;
 		}
 	}
 
@@ -344,6 +346,7 @@
 			}
 		}
 		&:nth-child(3) {
+			margin-bottom: 0;
 			@media screen and (min-width: 1200px) {
 				margin-left: -10px;
 				padding-right: 100px;
@@ -363,16 +366,31 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 768px) {
+			flex-wrap: wrap;
 			flex-direction: row;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		@media screen and (min-width: 1200px) {
+			align-items: center;
+			align-content: space-between;
 		}
 	}
 
 	.typography {
 		margin-bottom: 30px;
 		@media screen and (min-width: 768px) {
-			width: 35%;
+			width: 100%;
+			order: 1;
+			margin-bottom: 5px;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 30%;
 			margin: 0 auto 0 0;
+		}
+		@media screen and (min-width: 1920px) {
+			width: 35%;
 		}
 
 		h2 {
@@ -380,7 +398,7 @@
 		}
 
 		p {
-			@media screen and (min-width: 768px) {
+			@media screen and (min-width: 1600px) {
 				width: 88%;
 			}
 		}
@@ -390,11 +408,19 @@
 		width: 282px;
 		height: 282px;
 		margin-bottom: 65px;
-		
 		@media screen and (min-width: 768px) {
-			width: 37.4%;
+			width: 60%;
 			height: auto;
-			margin-bottom: 0;
+			order: 3;
+			margin: -70px 0 0 0;
+		}
+		@media screen and (min-width: 1024px) {
+			margin: -30px 0 0 0;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 34%;
+			height: auto;
+			margin: 0;
 		}
 		
 		img {
@@ -405,8 +431,20 @@
 	.accordion-wrap {
 		width: 100%;
 		@media screen and (min-width: 768px) {
-			width: 22%;
-			margin-left: auto;
+			width: 35%;
+			order: 2;
+			margin: -70px 10px 0 0;
+		}
+		@media screen and (min-width: 1024px) {
+			margin: -30px 10px 0 0;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 29%;
+			margin: 0 0 0 auto;
+			order: 4;
+		}
+		@media screen and (min-width: 1920px) {
+			width: 27%;
 		}
 
 		.accordion {
@@ -418,8 +456,17 @@
 				font-size: 16px;
 				line-height: 20px;
 				@media screen and (min-width: 768px) {
+					font-size: 18px;
+					line-height: 22px;
+				}
+				@media screen and (min-width: 1600px) {
 					font-size: 24px;
 					line-height: 29px;
+				}
+			}
+			&__text {
+				@media screen and (min-width: 768px) {
+					width: 100%;
 				}
 			}
 		}
@@ -451,14 +498,14 @@
 	.typography {
 		width: 100%;
 		margin: 0 0 30px;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 1200px) {
 			width: 43%;
 			margin: 0 40px 0 0;
 		}
 		
 		h2 {
 			margin-bottom: 22px;
-			@media screen and (min-width: 768px) {
+			@media screen and (min-width: 1024px) {
 				margin-bottom: 55px;
 			}
 		}
@@ -468,8 +515,14 @@
 		width: 251px;
 		height: 251px;
 		@media screen and (min-width: 768px) {
+			width: 500px;
+			height: 500px;
+			margin-left: auto;
+		}
+		@media screen and (min-width: 1200px) {
 			width: 40%;
 			height: auto;
+			margin: 0;
 		}
 		img {
 			@include img-style;
@@ -497,6 +550,9 @@
 	.typography {
 		margin-bottom: 40px;
 		@media screen and (min-width: 768px) {
+			width: 100%;
+		}
+		@media screen and (min-width: 1200px) {
 			margin-bottom: 90px;
 		}
 
@@ -505,7 +561,7 @@
 		}
 
 		p {
-			@media screen and (min-width: 768px) {
+			@media screen and (min-width: 1200px) {
 				max-width: 522px;
 				width: 100%;
 			}
@@ -524,9 +580,24 @@
 		border-radius: 21px;
 		margin: 0 8px;
 		@media screen and (min-width: 768px) {
+			width: 245px;
+			height: 317px;
+			margin: 0 23px;
+		}
+		@media screen and (min-width: 1024px) {
 			width: 368px;
 			height: 475px;
-			margin: 0 0 0 68px;
+			margin: 0 34px;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 238px;
+			height: 307px;
+			margin: 0 22px;
+		}
+		@media screen and (min-width: 1600px) {
+			width: 368px;
+			height: 475px;
+			margin: 0 34px;
 		}
 	}
 }
@@ -545,18 +616,27 @@
 		@media screen and (min-width: 1200px) {
 			flex-direction: row;
 			justify-content: flex-start;
+			align-items: center;
 		}
 	}
 	
 	.typography {
 		width: 100%;
 		margin-bottom: 25px;
-		@media screen and (min-width: 768px) {
-			width: 43%;
-			margin: 0 280px 0 0;
+		@media screen and (min-width: 1200px) {
+			width: 60%;
+			margin: 0 50px 0 0;
+		}
+		@media screen and (min-width: 1600px) {
+			width: 50%;
+			margin: 0 200px 0 0;
 		}
 		&:nth-child(2) {
-			@media screen and (min-width: 768px) {
+			width: 100%;
+			@media screen and (min-width: 1200px) {
+				width: 33%;
+			}
+			@media screen and (min-width: 1600px) {
 				width: 33%;
 				margin: 0 0 110px;
 			}
@@ -599,8 +679,14 @@
 		width: 100%;
 		margin-bottom: 40px;
 		@media screen and (min-width: 768px) {
+			margin-bottom: 110px;
+		}
+		@media screen and (min-width: 1200px) {
 			width: 30%;
 			margin-bottom: 160px;
+		}
+		@media screen and (min-width: 1920px) {
+			width: 42%;
 		}
 	}
 
@@ -608,7 +694,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 1200px) {
 			width: 57%;
 		}
 	}
@@ -618,9 +704,21 @@
 		height: 70px;
 		margin: 0 21px 42px;
 		@media screen and (min-width: 768px) {
+			width: 224px;
+			height: 93px;
+			margin: 0 50px 100px;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 287px;
+			height: 119px;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 203px;
+			height: 84px;
+		}
+		@media screen and (min-width: 1600px) {
 			width: 245px;
 			height: 101px;
-			margin: 0 50px 100px;
 		}
 		img {
 			@include img-style;

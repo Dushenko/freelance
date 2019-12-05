@@ -80,6 +80,15 @@
 	}
 
 	&__btn {
+		@media screen and (min-width: 1200px) {
+			width: 149px;
+			padding: 5px 20px;
+		}
+		@media screen and (min-width: 1600px) {
+			width: auto;
+			padding: 5px 20px;
+		}
+
 		@media screen and (max-width: 767px) {
 			width: 192px;
 			height: 39px;
