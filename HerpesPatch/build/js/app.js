@@ -103,12 +103,16 @@ document.addEventListener('DOMContentLoaded', function () {
   'use strict'; //video
 
   $('.js-video-open').click(function () {
-    $('.js-video').fadeIn(1500);
-    $('.main').fadeOut(1000);
+    $('.js-video').fadeIn();
+    $('.js-mask').fadeIn(1000);
   });
   $('.js-video-close').click(function () {
     $('.js-video').fadeOut();
-    $('.main').fadeIn();
+    $('.js-mask').fadeOut();
+    var videoURL = $('#video').prop('src');
+    videoURL = videoURL.replace("&autoplay=1", "");
+    $('#video').prop('src', '');
+    $('#video').prop('src', videoURL);
   }); //footer
 
   $('.js-footer-open').click(function () {

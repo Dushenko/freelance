@@ -68,10 +68,16 @@
 
 	.img-wrap {
 		position: absolute;
-		width: 306px;
-		height: 306px;
-		bottom: -30px;
-		right: -70px;
+		width: 107%;
+		height: auto;
+		bottom: -6%;
+		right: -20%;
+		@media screen and (min-width: 480px) {
+			width: 92%;
+		}
+		@media screen and (min-width: 650px) {
+			width: 82%;
+		}
 		@media screen and (min-width: 768px) {
 			width: 100%;
 			height: 80%;
@@ -776,11 +782,12 @@
 .video {
 	display: none;
 	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	z-index: 20;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 40vw;
+	z-index: 40;
 
 	iframe {
 		width: 100%;
@@ -789,9 +796,9 @@
 
 	.video-close {
 		position: fixed;
-		top: 30px;
-		right: 30px;
-		z-index: 21;
+		top: -50px;
+		right: -50px;
+		z-index: 41;
 		cursor: pointer;
 		width: 52px;
 		height: 52px;
@@ -800,13 +807,22 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Ccircle cx='36' cy='36' r='24.5' stroke='%23C4C4C4' stroke-width='3'/%3E%3C/g%3E%3Cline x1='26.0873' y1='26.1377' x2='46.7587' y2='46.8091' stroke='%23C4C4C4' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='46.7588' y1='26.9838' x2='26.0874' y2='47.6551' stroke='%23C4C4C4' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='72' height='72' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='5'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3CfeBlend mode='color-dodge' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
-		
+		@media screen and (max-width: 768px) {
+			width: 30px;
+			height: 30px;
+			top: -30px;
+			right: -30px;
+		}
 		&:hover {
 			transform: scale(1.1);
 		}
 	}
 
-	&.active {
-		display: block;
-	}
+	// &.active {
+	// 	display: block !important;
+	// }
+
+	// &.none {
+	// 	display: none !important;
+	// }
 }
