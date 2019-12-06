@@ -619,6 +619,7 @@
 		box-shadow: 0px 4px 24px rgba(77, 77, 77, 0.4);
 		border-radius: 21px;
 		margin: 0 8px;
+		overflow: hidden;
 		@media screen and (min-width: 768px) {
 			width: 245px;
 			height: 317px;
@@ -638,6 +639,10 @@
 			width: 368px;
 			height: 475px;
 			margin: 0 34px;
+		}
+
+		img {
+			@include img-style;
 		}
 	}
 }
@@ -817,12 +822,4 @@
 			transform: scale(1.1);
 		}
 	}
-
-	// &.active {
-	// 	display: block !important;
-	// }
-
-	// &.none {
-	// 	display: none !important;
-	// }
 }

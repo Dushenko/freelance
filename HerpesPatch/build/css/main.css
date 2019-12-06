@@ -1723,7 +1723,7 @@ html.fp-enabled,
 
 @media screen and (min-width: 768px){
       .header .lang-wrap{
-        padding-top:15px;
+        padding-top:20px;
         margin:0 20px 0 50px; } }
 
 @media screen and (max-width: 1350px){
@@ -1818,6 +1818,21 @@ html.fp-enabled,
       .nav__item{
         margin:0 0 0 57px; } }
 
+.nav__item.active .nav__link{
+      color:#DE0270; }
+
+.nav__item.active .nav__link:after{
+        content:'';
+        position:absolute;
+        top:2px;
+        left:-20px;
+        width:15px;
+        height:15px;
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-image:url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.5879 3.04945L2.8022 14.8352C2.71978 15 2.55494 15 2.39011 15C2.22527 15 2.06044 15 1.97802 14.8352L0.164835 13.022C0.0824176 12.9396 0 12.7747 0 12.6099C0 12.4451 0.0824176 12.3626 0.164835 12.1978L11.9506 0.412088C12.1154 0.32967 12.1978 0.247253 12.3626 0.247253C12.5275 0.247253 12.6923 0.32967 12.7747 0.412088L14.5879 2.22527C14.7527 2.30769 14.7527 2.47253 14.7527 2.63736C14.7527 2.8022 14.7527 2.96703 14.5879 3.04945ZM3.2967 1.15385L2.39011 1.48352L2.06044 2.39011L1.81319 1.48352L0.906593 1.15385L1.81319 0.906593L2.06044 0L2.30769 0.906593L3.2967 1.15385ZM7.41758 2.96703L5.6044 3.46154L5.02747 5.27473L4.45055 3.46154L2.71978 2.96703L4.53297 2.39011L5.10989 0.576923L5.68681 2.39011L7.41758 2.96703ZM9.14835 1.15385L8.24176 1.48352L7.99451 2.39011L7.66484 1.48352L6.84066 1.15385L7.74725 0.906593L7.99451 0L8.24176 0.906593L9.14835 1.15385ZM13.3516 2.63736L12.3626 1.64835L9.72527 4.36813L10.7143 5.35714L13.3516 2.63736ZM15 7.08791L14.0934 7.33517L13.8462 8.24176L13.5989 7.33517L12.6923 7.08791L13.5989 6.84066L13.8462 5.93407L14.0934 6.84066L15 7.08791Z' fill='%23DE0270'/%3E%3C/svg%3E%0A"); }
+
 .nav__link{
     position:relative;
     font-size:18px;
@@ -1832,10 +1847,10 @@ html.fp-enabled,
       .nav__link{
         font-size:16px; } }
 
-.nav__link:hover, .nav__link.active{
+.nav__link:hover{
       color:#DE0270; }
 
-.nav__link:hover:after, .nav__link.active:after{
+.nav__link:hover:after{
         content:'';
         position:absolute;
         top:2px;
@@ -1989,7 +2004,6 @@ html.fp-enabled,
 
 .priceForm__counter input{
     cursor:pointer;
-    width:35px;
     text-align:center;
     font-size:18px;
     color:#FFFFFF;
@@ -1998,6 +2012,9 @@ html.fp-enabled,
 @media screen and (min-width: 768px){
       .priceForm__counter input{
         font-size:29px; } }
+
+.priceForm__counter input:nth-child(2){
+      width:50px; }
 
 @media screen and (min-width: 1200px){
   .priceForm__btn{
@@ -2021,6 +2038,73 @@ html.fp-enabled,
 
 .priceForm .skuBestPrice{
   display:none; }
+
+.slick-slide{
+  float:left;
+  height:100%;
+  min-height:1px;
+  display:none;
+  margin:0 15px; }
+
+[dir="rtl"] .slick-slide{
+    float:right; }
+
+.slick-slide img{
+    display:block; }
+
+.slick-slide.slick-loading img{
+    display:none; }
+
+.slick-slide.dragging img{
+    pointer-events:none; }
+
+.slick-initialized .slick-slide{
+    display:block; }
+
+.slick-loading .slick-slide{
+    visibility:hidden; }
+
+.slick-vertical .slick-slide{
+    display:block;
+    height:auto;
+    border:1px solid transparent; }
+
+.slick-list{
+  position:relative;
+  overflow:hidden;
+  display:block;
+  margin:0;
+  padding:0; }
+
+.slick-list:focus{
+    outline:none; }
+
+.slick-list.dragging{
+    cursor:pointer;
+    cursor:hand; }
+
+.category-slider .slick-track,
+.category-slider .slick-list{
+  -webkit-transform:translate3d(0, 0, 0);
+  -ms-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0); }
+
+.slick-track{
+  height:100%;
+  position:relative;
+  left:0;
+  top:0;
+  display:block; }
+
+.slick-track:before, .slick-track:after{
+    content:"";
+    display:table; }
+
+.slick-track:after{
+    clear:both; }
+
+.slick-loading .slick-track{
+    visibility:hidden; }
 
 .typography h2{
   font-weight:700;
@@ -3041,7 +3125,8 @@ html.fp-enabled,
     background:#FFFFFF;
     box-shadow:0px 4px 24px rgba(77, 77, 77, 0.4);
     border-radius:21px;
-    margin:0 8px; }
+    margin:0 8px;
+    overflow:hidden; }
 
 @media screen and (min-width: 768px){
       .six-section .certificate{
@@ -3066,6 +3151,12 @@ html.fp-enabled,
         width:368px;
         height:475px;
         margin:0 34px; } }
+
+.six-section .certificate img{
+      width:100%;
+      height:100%;
+      -o-object-fit:cover;
+      object-fit:cover; }
 
 .seven-section{
   padding-top:50px; }
