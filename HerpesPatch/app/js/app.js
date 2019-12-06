@@ -44,10 +44,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		responsive: 768,
 	});
 
-	// if ($(window).width() < 768) {
-	// 	fullpage_api.destroy('all');
-	// }
-
 	//animation
 	$(window).scroll(function() {
 		$('.mov').each(function(){
@@ -58,8 +54,5 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		});
 	});
-
-	
-	
 
 });

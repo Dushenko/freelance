@@ -8,4 +8,11 @@ document.addEventListener('DOMContentLoaded', function(){
 		$('.header').toggleClass('index');
 	});
 
+	$('.nav__link').click( function () {
+		$('.js-burger').removeClass('is-open');
+		$('.js-burger').removeClass('fixed-center');
+		$('.js-nav').removeClass('active');
+		$('.header').removeClass('index');
+	});
+
 });

@@ -25,6 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
     $('.js-nav').toggleClass('active');
     $('.header').toggleClass('index');
   });
+  $('.nav__link').click(function () {
+    $('.js-burger').removeClass('is-open');
+    $('.js-burger').removeClass('fixed-center');
+    $('.js-nav').removeClass('active');
+    $('.header').removeClass('index');
+  });
 });
 document.addEventListener('DOMContentLoaded', function () {
   'use strict';
@@ -131,10 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loopBottom: true,
     loopHorizontal: false,
     responsive: 768
-  }); // if ($(window).width() < 768) {
-  // 	fullpage_api.destroy('all');
-  // }
-  //animation
+  }); //animation
 
   $(window).scroll(function () {
     $('.mov').each(function () {
