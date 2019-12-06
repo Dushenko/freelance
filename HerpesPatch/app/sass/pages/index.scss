@@ -50,12 +50,15 @@
 		background-image: url('../images/bg-1.jpg');
 	}
 	.container {
-		height: 100%;
+		height: calc(100% - 45px);
+		margin-top: -45px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		@media screen and (min-width: 768px) {
 			align-items: flex-start;
+			margin-top: 0;
+			height: 100%;
 		}
 		@media screen and (min-width: 1200px) {
 			align-items: center;
