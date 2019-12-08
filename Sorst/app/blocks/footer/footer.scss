@@ -2,36 +2,47 @@
 	font-size: 14px;
 	color: #1B222A;
 	padding-bottom: 45px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: bottom center;
-	background-image: url('../images/footer-bg.jpg');
+	@media screen and (min-width: 768px) {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom center;
+		background-image: url('../images/footer-bg.jpg');
+	}
 	a {
 		color: #1B222A;
 	}
-	.section-title {
 
+	.section-title {
+		margin-bottom: 40px;
 	}
 
 	.footer-wrap {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
 		@media screen and (min-width: 1200px) {
 			margin-bottom: 100px;
 		}
+		
 		.contact {
 			font-size: 14px;
 			color: #1B222A;
 		}
 
 		.footer-soc {
-			margin-top: 30px;
+			@media screen and (min-width: 768px) {
+				margin-top: 30px;
+			}
 		}
 	}
 
 	.col {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 55px;
 
 		&_left {
 			align-items: flex-start;
@@ -45,12 +56,16 @@
 		}
 
 		&_right {
-			align-items: flex-end;
-
+			align-items: flex-start;
+			@media screen and (min-width: 768px) {
+				align-items: flex-end;
+			}
 			p {
-				text-align: right;
 				line-height: 2.4;
 				margin-bottom: 20px;
+				@media screen and (min-width: 768px) {
+					text-align: right;
+				}
 			}
 
 			.main-btn {
@@ -63,6 +78,9 @@
 		&_center {
 			a {
 				margin-bottom: 32px;
+				&:last-child {
+					margin-bottom: 0;
+				}
 				@media screen and (min-width: 1200px) {
 					margin-bottom: 42px;
 				}
