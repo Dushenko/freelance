@@ -1,0 +1,105 @@
+.header {
+	padding: 45px 0;
+	background-color: #ccc;
+	.container {
+		max-width: 1820px;
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+		
+		@media screen and (min-width: 1200px) {
+			width: 180px;
+			height: 33px;
+		}
+		@media screen and (min-width: 1920px) {
+			width: 249px;
+			height: 46px;
+		}
+		img {
+			@include img-style;
+		}
+	}
+}
+
+.nav {
+	margin-left: auto;
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin: 0 31px;
+		@media screen and (min-width: 1200px) {
+			margin: 0 15px;
+		}
+		@media screen and (min-width: 1920px) {
+			margin: 0 31px;
+		}
+	}
+
+	&__link {
+		font-size: 14px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		@media screen and (min-width: 1200px) {
+			font-size: 12px;
+		}
+		@media screen and (min-width: 1920px) {
+			font-size: 14px;
+		}
+
+		&:hover,
+		&.active {
+			color: #ED1C24;
+		}
+	}
+}
+
+.info-wrap {
+	display: flex;
+	align-items: center;
+
+	.call {
+		width: 33px;
+		height: 33px;
+		margin-right: 40px;
+		cursor: pointer;
+		background-color: rgba(0, 0, 0, 0.1);
+		border: 1px solid #DEEFFF;
+		transition: all .3s ease;
+		box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.1);
+		background-repeat: no-repeat;
+		background-size: 50%;
+		background-position: center;
+		background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.989136 10.9373C0.989136 11.2786 1.265 11.5544 1.60629 11.5544C7.40016 11.5544 12.098 6.85665 12.098 1.06278C12.098 0.721495 11.8221 0.445626 11.4808 0.445626L9.32075 0.445626C8.98008 0.445626 8.70421 0.721495 8.70421 1.06278C8.70421 1.83299 8.58016 2.57358 8.35305 3.26726C8.3333 3.32898 8.32342 3.39378 8.32342 3.45797C8.32342 3.61534 8.3839 3.77333 8.50425 3.89368L9.86385 5.25204C8.97514 6.99983 7.54642 8.42855 5.79925 9.31849L4.43719 7.96074C4.26809 7.79102 4.02431 7.74103 3.81078 7.80954C3.11647 8.03665 2.37589 8.1607 1.60629 8.1607C1.265 8.1607 0.989136 8.43657 0.989136 8.77724L0.989136 10.9373Z' fill='%23ED1C24'/%3E%3C/svg%3E%0A");
+		@media screen and (min-width: 1200px) {
+			margin: 0 20px 0 45px;
+		}
+		@media screen and (min-width: 1920px) {
+			width: 50px;
+			height: 50px;
+			margin: 0 40px 0 90px;
+		}
+
+		&:hover {
+			background-color: #DEEFFF;
+		}
+	}
+
+	.lang {
+		font-size: 14px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		@media screen and (min-width: 1200px) {
+			font-size: 12px;
+		}
+		@media screen and (min-width: 1920px) {
+			font-size: 14px;
+		}
+	}
+}

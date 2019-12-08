@@ -1,0 +1,89 @@
+.footer {
+	font-size: 14px;
+	color: #1B222A;
+	padding-bottom: 45px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	background-image: url('../images/footer-bg.jpg');
+	a {
+		color: #1B222A;
+	}
+	.section-title {
+
+	}
+
+	.footer-wrap {
+		display: flex;
+		justify-content: space-between;
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 100px;
+		}
+		.contact {
+			font-size: 14px;
+			color: #1B222A;
+		}
+
+		.footer-soc {
+			margin-top: 30px;
+		}
+	}
+
+	.col {
+		display: flex;
+		flex-direction: column;
+
+		&_left {
+			align-items: flex-start;
+
+			.contact {
+				width: 189px;
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 33px;
+			}
+		}
+
+		&_right {
+			align-items: flex-end;
+
+			p {
+				text-align: right;
+				line-height: 2.4;
+				margin-bottom: 20px;
+			}
+
+			.main-btn {
+				@media screen and (min-width: 1200px) {
+					width: 315px;
+				}
+			}
+		}
+
+		&_center {
+			a {
+				margin-bottom: 32px;
+				@media screen and (min-width: 1200px) {
+					margin-bottom: 42px;
+				}
+			}
+		}
+	}
+
+	.copyright-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		span {
+			line-height: 1.7;
+		}
+
+		.copyright-img {
+			margin-top: 16px;
+			width: 24px;
+			height: 28px;
+			background-image: url("data:image/svg+xml,%3Csvg width='24' height='28' viewBox='0 0 24 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.440308 2.2468C7.70452 -0.6031 15.6726 -0.6031 22.9368 2.2468L21.3712 3.03467C15.079 0.824003 8.29493 0.824003 2.00279 3.03467L0.440308 2.2468Z' fill='%231B222A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.1447 27.7026L3.39601 22.4937C0.315686 20.4388 0 19.069 0 17.0141V3.12354L1.45088 3.853V17.0073C1.43226 17.5317 1.48272 18.0563 1.60075 18.5655C1.91962 19.8121 3.16961 20.7436 4.27929 21.4902L11.1447 26.1033V27.7026Z' fill='%231B222A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.3736 3.12354V17.0073C23.3736 19.0621 23.0547 20.432 19.9776 22.4868L12.2322 27.7026V26.1033L19.0943 21.4902C20.204 20.7436 21.438 19.8121 21.7729 18.5655C21.8909 18.0563 21.9413 17.5317 21.9227 17.0073V3.853L23.3736 3.12354Z' fill='%231B222A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.6918 9.69888L16.0108 13.3291L14.0688 10.5893C14.8022 13.0208 15.1211 14.0619 17.2576 21.0586L11.6869 16.7024L6.12252 21.062C8.2526 14.0654 8.57466 13.0243 9.31125 10.5927L7.36932 13.3325L2.68188 9.69888H9.57273L11.6869 2.66113C12.7615 6.23651 13.3673 8.26051 13.801 9.69888H20.6918Z' fill='%231B222A'/%3E%3C/svg%3E%0A");
+		}
+	}
+}

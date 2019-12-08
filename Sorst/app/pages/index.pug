@@ -1,0 +1,131 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.intro-section
+			.container
+
+		section.aplication-section
+			.container
+				h2.section-title applications
+
+				.aplications-wrap
+					.aplication
+						img(src="images/ap1.jpg", alt="")
+						a(href="#").main-btn.aplication__link Категория 1 
+					.aplication
+						img(src="images/ap2.jpg", alt="")
+						a(href="#").main-btn.aplication__link Категория 2
+					.aplication
+						img(src="images/ap3.jpg", alt="")
+						a(href="#").main-btn.aplication__link Категория 3
+					.aplication
+						img(src="images/ap4.jpg", alt="")
+						a(href="#").main-btn.aplication__link Категория 4
+					.aplication
+						img(src="images/ap5.jpg", alt="")
+						a(href="#").main-btn.aplication__link Категория 5
+					.aplication
+						img(src="images/ap6.jpg", alt="")
+						a(href="#").main-btn.aplication__link Категория 6
+
+
+		section.about-us-section
+			.container
+
+
+		section.production-section
+			.container
+				.section-head
+					h2.section-title Quality and Production
+					a(href="#").link-btn View grid views
+				.prod-wrap.prod-slider.js-prod-slider
+					.slide
+						a(href="#").production.typography
+							.production__img
+								img(src="images/prod1.jpg", alt="")
+							.production__wrap
+								h3 High materials level
+								p The correct material is crucial. The ideal metal is relatively soft. High-tensile materials, such as some forms of stainless steel and titanium, are suitable to only a limited extent. The differing characteristics of the metals play an important role in the choice of material for your project. 
+					.slide
+						a(href="#").production.typography
+							.production__img
+								img(src="images/prod1.jpg", alt="")
+							.production__wrap
+								h3 Advantages
+								p The mesh is formed from a single piece of metal. This means that there is nothing to work loose, no fretting strands or strained joins or welds. This makes expanded metal mesh ideal for forming and advantageous for further processing such as flat-rolling and cutting. The stability of the mesh makes it the perfect choice of material in numerous components. 
+					.slide
+						a(href="#").production.typography
+							.production__img
+								img(src="images/prod1.jpg", alt="")
+							.production__wrap
+								h3 Manufacturing Technology
+								p "The metal is inserted on rollers or in the form of plates into the rear of the machine.
+								p Each machine is fitted with a special blade which defines the mesh width.
+					.slide
+						a(href="#").production.typography
+							.production__img
+								img(src="images/prod1.jpg", alt="")
+							.production__wrap
+								h3 A world of possibilities
+								p Our products offer you unlimited possibilities. However you may imagine your expanded metal, we definitely have the right products for you and are open to your ideas. Whether for home or business room fixtures, handrails, machine components, façades or noise/privacy protection; Sorst products combine aesthetic with design.
+
+		section.aplication-section
+			.container
+
+		section.articles-section
+			.container
+				.section-head
+					h2.section-title articles
+					a(href="#").link-btn all articles
+
+				.articles-wrap
+					.article.typography
+						.article__img
+							img(src="images/art1.jpg", alt="")
+						.article__wrap
+							.article__date
+								span 18:40
+								span 20.08.2019
+							h3 Название статьи номер тридцать три
+							p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							a(href="#").article__link see more
+					.article.typography
+						.article__img
+							img(src="images/art1.jpg", alt="")
+						.article__wrap
+							.article__date
+								span 18:40
+								span 20.08.2019
+							h3 Название статьи номер тридцать три
+							p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							a(href="#").article__link see more
+					.article.typography
+						.article__img
+							img(src="images/art1.jpg", alt="")
+						.article__wrap
+							.article__date
+								span 18:40
+								span 20.08.2019
+							h3 Название статьи номер тридцать три
+							p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							a(href="#").article__link see more
+
+
+
+
+
+	.fix-soc
+		a(href="#").soc.soc_inst
+		a(href="#").soc.soc_fb
+		a(href="#").soc.soc_you
+
+
+block footer
+	include ../blocks/footer/footer		

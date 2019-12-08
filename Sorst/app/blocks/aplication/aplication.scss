@@ -1,0 +1,52 @@
+.aplication {
+	position: relative;
+	
+	@media screen and (min-width: 768px) {
+		
+	}
+	@media screen and (min-width: 1024px) {
+		
+	}
+	@media screen and (min-width: 1200px) {
+		width: 330px;
+		height: 218px;
+		margin: 0 24px 48px;
+		box-shadow: 0px 11px 28px rgba(0, 0, 0, 0.1);
+	}
+	@media screen and (min-width: 1920px) {
+		width: 400px;
+		height: 264px;
+		box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.1);
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__link {
+		position: absolute !important;
+
+		@media screen and (min-width: 768px) {
+
+		}
+		@media screen and (min-width: 1024px) {
+
+		}
+		@media screen and (min-width: 1200px) {
+			width: 232px;
+			height: 52px;
+			left: -28px;
+			bottom: 28px;
+		}
+		@media screen and (min-width: 1920px) {
+			width: 281px;
+			height: 64px;
+		}
+
+		&:hover {
+			transform: translateX(28px);
+		}
+	}
+}

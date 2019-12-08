@@ -1,0 +1,80 @@
+.intro-section {
+	height: 400px;
+	background: linear-gradient(287.5deg, #042056 -14.08%, #042056 80.88%);
+}
+
+.aplication-section {
+	@media screen and (min-width: 768px) {
+		
+	}
+	@media screen and (min-width: 1024px) {
+		
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 73px 0 110px;
+	}
+	@media screen and (min-width: 1920px) {
+		padding: 150px 0 225px;
+	}
+
+	.section-title {
+		@media screen and (min-width: 1920px) {
+			margin-left: -26px;
+		}
+	}
+
+	.aplications-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		@media screen and (min-width: 1920px) {
+			margin: 0px -25px;
+		}
+	}
+}
+
+.about-us-section {
+	background: #EEF1F7;
+}
+
+.production-section {
+	padding-top: 80px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #D8D8D8;
+	@media screen and (min-width: 1200px){
+		padding-top: 120px;
+	}
+	@media screen and (min-width: 1920px){
+		padding-top: 210px 0;
+	}
+	
+	.prod-wrap {
+		@media screen and (min-width: 768px){
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		@media screen and (min-width: 1920px){
+			margin: 0 -14px;
+		}
+	}
+}
+
+
+
+
+.articles-section {
+	padding: 80px 0;
+	@media screen and (min-width: 1200px){
+		padding: 120px 0;
+	}
+	@media screen and (min-width: 1920px){
+		padding: 120px 0 180px;
+	}
+
+	.articles-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
