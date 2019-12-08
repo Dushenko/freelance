@@ -1,0 +1,125 @@
+.product-slider {
+	position: relative;
+	
+	.slick-slide {
+		margin: 0;
+	}
+
+	.slick-dots {
+		position: absolute;
+		bottom: -43px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		justify-content: center;
+		li {
+			font-size: 0;
+			position: relative;
+			margin: 0 13px;
+			width: 11px;
+			height: 10px;
+			border: 1px solid #26247B;
+			@media screen and (min-width: 768px) {
+				margin: 0 9px;
+			}
+
+			&.slick-active,
+			&:hover {
+				background: #ED1C24;
+				border: 1px solid #ED1C24;
+			}
+		}
+		@media screen and (min-width: 768px) {
+			bottom: 61px;
+			z-index: 11;
+			left: 105px;
+		}
+		@media screen and (min-width: 1024px) {
+			bottom: 80px;
+			left: 120px;
+		}
+		@media screen and (min-width: 1920px) {
+			bottom: 86px;
+		}
+	}
+
+	.slick-arrow {
+		bottom: -45px;
+		@media screen and (min-width: 768px) {
+			border-top: 3px solid #B0D0FF;
+			border-left: 3px solid #B0D0FF;
+			z-index: 11;
+			bottom: 59px;
+		}
+		@media screen and (min-width: 1024px) {
+			bottom: 77px;
+		}
+		@media screen and (min-width: 1920px) {
+			bottom: 84px;
+		}
+	}
+
+	.slick-prev {
+		left: 22%;
+		@media screen and (min-width: 480px) {
+			left: 26%;
+		}
+		@media screen and (min-width: 600px) {
+			left: 35%;
+		}
+		@media screen and (min-width: 768px) {
+			left: 36px;
+		}
+		@media screen and (min-width: 1024px) {
+			left: 50px;
+		}
+	}
+
+	.slick-next {
+		right: 22%;
+		@media screen and (min-width: 480px) {
+			right: 26%;
+		}
+		@media screen and (min-width: 600px) {
+			right: 35%;
+		}
+		@media screen and (min-width: 768px) {
+			left: 157px;
+			right: auto;
+		}
+		@media screen and (min-width: 1024px) {
+			left: 172px;
+		}
+	}
+}
+
+.prod-slider {
+	position: relative;
+	.slick-arrow {
+		bottom: -50px;
+	}
+
+	.slick-prev {
+		left: 40%;
+	}
+
+	.slick-next {
+		right: 40%;
+	}
+}
+
+.slick-arrow {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-top: 4px solid #B0D0FF;
+	border-left: 4px solid #B0D0FF;
+}
+
+.slick-prev {
+	transform: rotate(-45deg);
+}
+
+.slick-next {
+	transform: rotate(135deg);
+}

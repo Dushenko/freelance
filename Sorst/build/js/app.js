@@ -5,6 +5,7 @@ $(document).ready(function () {
     dots: false,
     arrows: true,
     infinite: true,
+    autoplay: true,
     responsive: [{
       breakpoint: 3000,
       settings: "unslick"
@@ -15,6 +16,13 @@ $(document).ready(function () {
         slidesToScroll: 1
       }
     }]
+  });
+  $('.js-product-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    infinite: true
   });
 });
 $(document).ready(function () {});
