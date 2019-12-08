@@ -25,4 +25,12 @@ $(document).ready(function () {
     infinite: true
   });
 });
-$(document).ready(function () {});
+$(document).ready(function () {
+  $('.js-burger').click(function () {
+    $(this).toggleClass('active');
+    $('.js-nav').toggleClass('active');
+  });
+  $('.js-lang').click(function () {
+    $('.langs').slideToggle('active');
+  });
+});

@@ -3,7 +3,7 @@ header.header
 		a(href="#").logo
 			img(src="images/logo.svg", alt="")
 
-		nav.nav
+		nav.nav.js-nav
 			ul.nav__list
 				li.nav__item
 					a(href="index.html").nav__link about us
@@ -19,9 +19,22 @@ header.header
 					a(href="contact.html").nav__link contact
 				li.nav__item
 					a(href="shop.html").nav__link online shop
+			.fix-soc
+				a(href="#").soc.soc_inst
+				a(href="#").soc.soc_fb
+				a(href="#").soc.soc_you
 
 		.info-wrap
 			span.call 
 
-			.lang-wrap
+			.lang-wrap.js-lang
 				a(href="#").lang EN
+				.langs
+					a(href="#").lang EN
+					a(href="#").lang RU
+					a(href="#").lang DE
+
+		.burger.js-burger
+			span
+			span
+			span
