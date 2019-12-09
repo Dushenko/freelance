@@ -96,4 +96,19 @@ document.addEventListener('DOMContentLoaded', function () {
       $(this).addClass("active").siblings().removeClass("active").closest("div.js-tabs").find("div.js-tab-content").removeClass("active").eq($(this).index()).addClass("active");
     });
   });
+
+  if ($(window).width() < 1440) {
+    $('.burgerNav__link').click(function () {
+      // $('.burgerNav__sub-list').slideUp().sibling().removeClass('active');
+      $(this).next().slideToggle();
+      $(this).toggleClass('active');
+    });
+  }
+
+  $('.burger-btn').click(function () {
+    $('.burgerNav').addClass('active');
+  });
+  $('.close-burger').click(function () {
+    $('.burgerNav').removeClass('active');
+  });
 });
