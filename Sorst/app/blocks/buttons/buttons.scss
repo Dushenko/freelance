@@ -71,11 +71,18 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 40%;
+		transition: all .3s ease;
 		border: 1px solid rgba(27, 34, 42, 0.2);
 		background-image: url("data:image/svg+xml,%3Csvg width='13' height='14' viewBox='0 0 13 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.793 7.54369L2.36293 12.4108C1.81259 12.7285 1.12467 12.3314 1.12467 11.6959L1.12467 1.96169C1.12467 1.32621 1.81259 0.92904 2.36293 1.24678L10.793 6.11387C11.3433 6.43161 11.3433 7.22596 10.793 7.54369Z' stroke='%23ED1C24' stroke-width='1.65101'/%3E%3C/svg%3E%0A");
 		@media screen and (min-width: 1920px) {
 			width: 50px;
 			height: 50px;
+		}
+	}
+	&:hover {
+		&:after {
+			border: 1px solid #0A0854;
+			background-color: #0A0854;
 		}
 	}
 }

@@ -77,12 +77,16 @@
 
 		&_center {
 			a {
+				position: relative;
 				margin-bottom: 32px;
 				&:last-child {
 					margin-bottom: 0;
 				}
 				@media screen and (min-width: 1200px) {
 					margin-bottom: 42px;
+				}
+				&:hover {
+					opacity: 0.7;
 				}
 			}
 		}
@@ -95,6 +99,7 @@
 
 		span {
 			line-height: 1.7;
+			text-align: center;
 		}
 
 		.copyright-img {

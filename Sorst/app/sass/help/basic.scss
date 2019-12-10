@@ -13,8 +13,17 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 	box-sizing: border-box;
 }
 
+html {
+	&.overflow {
+		overflow: hidden;
+	}
+}
+
 body {
 	font-family: 'Gotham Pro';
+	&.overflow {
+		overflow: hidden;
+	}
 }
 
 a {
