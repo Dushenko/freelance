@@ -4,21 +4,92 @@ block head
 	- var pageTitle = '';
 
 block header
-	include ../blocks/header/header
+	include ../blocks/header/header_white
 
 block content
 	main.main
 
-		section.wow.fadeInUp.about-us-section
+		section.wow.fadeInUp.tovar-section
+			.container
+				.slider-wrap
+					.tovar-slider
+						.big-slider.js-big-slider
+							.slide
+								img(src="slide1.jpg", alt="")
+							.slide
+								img(src="slide2.jpg", alt="")
+							.slide
+								img(src="slide3.jpg", alt="")
+							.slide
+								img(src="slide1.jpg", alt="")
+							.slide
+								img(src="slide2.jpg", alt="")
+							.slide
+								img(src="slide3.jpg", alt="")
+						.small-slider.js-small-slider
+							.slide
+								img(src="slide1.jpg", alt="")
+							.slide
+								img(src="slide2.jpg", alt="")
+							.slide
+								img(src="slide3.jpg", alt="")
+							.slide
+								img(src="slide1.jpg", alt="")
+							.slide
+								img(src="slide2.jpg", alt="")
+							.slide
+								img(src="slide3.jpg", alt="")
+				
+				.tovar-info
+					h2.section-title Название товара номер один
+					h3.tovar-vendor Артикул товара
+					p.tovar-description Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					.info-table
+
+
+
+
+		section.wow.fadeInUp.similar-section
+			.container
+				.section-head
+					h2.section-title Похожие товары
+					a(href="#").link-btn Все товары
+				.similar-wrap.tablet-slider.js-tablet-slider
+					.slide
+						a(href="#").tovar(style="background-image: url(images/tovar.jpg)")
+							.tovar__head
+								span.tovar__category Категория
+								.tovar__shop
+									span.tovar__basket
+									span.tovar__favorite
+							span.tovar__name Название товара
+					.slide
+						a(href="#").tovar(style="background-image: url(images/tovar.jpg)")
+							.tovar__head
+								span.tovar__category Категория
+								.tovar__shop
+									span.tovar__basket
+									span.tovar__favorite
+							span.tovar__name Название товара
+					.slide
+						a(href="#").tovar(style="background-image: url(images/tovar.jpg)")
+							.tovar__head
+								span.tovar__category Категория
+								.tovar__shop
+									span.tovar__basket
+									span.tovar__favorite
+							span.tovar__name Название товара
+
+		section.wow.fadeInUp.about-us-section.about-us-section_big
 			.container
 				.about-wrap
 					.about-img
-						img(src="images/about.jpg", alt="")
+						img(src="images/man-img.jpg", alt="")
 					.about-info.typography
-						h2 О компании
-						p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						h2 Название статьи номер тридцать
+						p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
-						a(href="#").link-btn more information
+						a(href="#").link-btn Смотреть
 
 		section.wow.fadeInUp.articles-section.articles-section_bg
 			.container
@@ -26,7 +97,7 @@ block content
 					h2.section-title articles
 					a(href="#").link-btn all articles
 
-				.articles-wrap
+				.articles-wrap.tablet-slider.js-tablet-slider
 					a(href="#").article.typography
 						.article__img
 							img(src="images/art1.jpg", alt="")
@@ -70,6 +141,3 @@ block content
 					br
 					| 30179 Hannover
 				a(href="mailto:info@sorst.de").mail info@sorst.de
-
-block footer
-	include ../blocks/footer/footer

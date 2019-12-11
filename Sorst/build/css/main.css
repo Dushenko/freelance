@@ -2762,13 +2762,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width:100%;
   max-width:1820px; }
 
-.header .container{
-    max-width:1820px;
-    display:-webkit-box;
-    display:flex;
-    -webkit-box-align:center;
-    align-items:center; }
-
 @media screen and (min-width: 768px){
     .header{
       top:25px; } }
@@ -2784,6 +2777,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media screen and (min-width: 1920px){
     .header{
       top:48px; } }
+
+@media screen and (min-width: 1200px){
+    .header_white .nav__link{
+      color:#0A0854; } }
+
+.header_white .lang{
+    color:#0A0854 !important; }
+
+.header_white .burger span{
+    background-color:#0A0854; }
+
+.header_white .burger.active span{
+    background-color:#fff; }
+
+.header .container{
+    max-width:1820px;
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-align:center;
+    align-items:center; }
 
 .header .logo{
     width:140px;
@@ -3509,6 +3522,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .prod-slider .slick-next{
     right:40%; }
 
+.tablet-slider{
+  position:relative; }
+
+.tablet-slider .slick-arrow{
+    bottom:-50px; }
+
+.tablet-slider .slick-prev{
+    left:40%; }
+
+.tablet-slider .slick-next{
+    right:40%; }
+
+.tablet-slider .tovar{
+    margin:0 auto; }
+
+@media screen and (max-width: 1024px){
+      .tablet-slider .tovar{
+        box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1); } }
+
+@media screen and (max-width: 1024px){
+    .tablet-slider .article{
+      box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1); } }
+
+@media screen and (max-width: 1024px){
+    .tablet-slider .article__img{
+      width:100%;
+      height:auto; } }
+
 .slick-arrow{
   padding:0;
   display:block;
@@ -3703,6 +3744,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-weight:700;
     color:#F5F9FF;
     padding:5px 5px 5px 9px;
+    margin-right:15px;
     background:rgba(0, 14, 148, 0.7); }
 
 @media screen and (min-width: 768px){
@@ -3930,10 +3972,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     align-items:flex-start; } }
 
 .catalog-section .shop-filter{
+  position:relative;
   margin-bottom:26px; }
 
 .catalog-section .filter-form{
   display:none; }
+
+.catalog-section .filter-form.active{
+    display:block;
+    position:absolute;
+    z-index:1;
+    top:68px;
+    left:0;
+    width:100%;
+    height:500px;
+    background:#ccc;
+    box-shadow:0px 14px 34px rgba(0, 0, 0, 0.1); }
 
 @media screen and (min-width: 1024px){
     .catalog-section .filter-form{
@@ -3943,6 +3997,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       margin-right:33px;
       background:#F5F9FF;
       box-shadow:0px 14px 34px rgba(0, 0, 0, 0.1); } }
+
+@media screen and (min-width: 1200px){
+    .catalog-section .filter-form{
+      width:322px; } }
 
 .footer-section{
   background:#61A0FF;
@@ -4243,6 +4301,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         height:449px;
         top:60px; } }
 
+@media screen and (min-width: 1024px){
+    .about-us-section_big .about-img{
+      width:50% !important; } }
+
+.about-us-section_big p{
+    -webkit-columns:auto !important;
+    columns:auto !important; }
+
 .about-us-section .about-wrap{
     display:-webkit-box;
     display:flex;
@@ -4269,11 +4335,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       content:'';
       position:absolute;
       width:100%;
-      height:calc(100% - 60px);
-      top:30px;
+      bottom:0;
+      height:60%;
       left:0;
-      background:rgba(97, 160, 255, 0.8);
+      background:rgba(0, 14, 148, 0.5);
       z-index:1; }
+
+@media screen and (min-width: 768px){
+        .about-us-section .about-img:after{
+          height:calc(100% - 60px);
+          top:30px;
+          bottom:auto; } }
 
 @media screen and (min-width: 1920px){
         .about-us-section .about-img:after{
@@ -4298,6 +4370,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         margin-right:123px; } }
 
 .about-us-section .about-img img{
+      display:block;
       width:100%;
       height:100%;
       -o-object-fit:cover;
@@ -4425,3 +4498,40 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     flex-wrap:wrap;
     -webkit-box-pack:center;
     justify-content:center; }
+
+.tovar-section{
+  padding:300px 0;
+  position:relative; }
+
+.tovar-section:before{
+    content:url("../images/vector1.png");
+    position:absolute;
+    right:0;
+    top:18%;
+    z-index:-2; }
+
+.similar-section{
+  padding:50px 0 110px; }
+
+@media screen and (min-width: 1024px){
+    .similar-section{
+      padding:90px 0 110px; } }
+
+@media screen and (min-width: 1920px){
+    .similar-section{
+      padding:100px 0 150px; } }
+
+@media screen and (min-width: 1024px){
+    .similar-section .similar-wrap{
+      display:-webkit-box;
+      display:flex;
+      -webkit-box-pack:center;
+      justify-content:center; } }
+
+@media screen and (min-width: 1024px){
+    .similar-section .similar-wrap .tovar{
+      margin:0 21px 40px; } }
+
+@media screen and (min-width: 1200px){
+    .similar-section .similar-wrap .tovar{
+      margin:0 35px 50px; } }

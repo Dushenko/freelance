@@ -1,0 +1,37 @@
+.tovar-section {
+	padding: 300px 0;
+	position: relative;
+
+	&:before {
+		content: url('../images/vector1.png');
+		position: absolute;
+		right: 0;
+		top: 18%;
+		z-index: -2;
+	}
+}
+
+.similar-section {
+	padding: 50px 0 110px;
+	@media screen and (min-width: 1024px){
+		padding: 90px 0 110px;
+	}
+	@media screen and (min-width: 1920px){
+		padding: 100px 0 150px;
+	}
+	.similar-wrap {
+		@media screen and (min-width: 1024px){
+			display: flex;
+			justify-content: center;
+		}
+
+		.tovar {
+			@media screen and (min-width: 1024px){
+				margin: 0 21px 40px;
+			}
+			@media screen and (min-width: 1200px){
+				margin: 0 35px 50px;
+			}
+		}
+	}
+}

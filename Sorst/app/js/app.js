@@ -22,10 +22,17 @@ $(document).ready(function () {
 		})
 	}
 
+	//lang
 	$('.js-lang').click( function () {
 		$('.langs').slideToggle('active');
 	});
 
+	//filter
+	$('.js-filter-btn').click( function () {
+		$('.js-filter-form').toggleClass('active');
+	});
+
+	//wow animation
 	new WOW().init();
 
 });

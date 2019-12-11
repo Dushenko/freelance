@@ -6,11 +6,6 @@
 	transform: translateX(-50%);
 	width: 100%;
 	max-width: 1820px;
-	.container {
-		max-width: 1820px;
-		display: flex;
-		align-items: center;
-	}
 	@media screen and (min-width: 768px) {
 		top: 25px;
 	}
@@ -22,6 +17,38 @@
 	}
 	@media screen and (min-width: 1920px) {
 		top: 48px;
+	}
+
+	&_white {
+		.nav {
+			&__link {
+				@media screen and (min-width: 1200px) {
+					color: #0A0854;
+				}
+			}
+		}
+
+		.lang {
+			color: #0A0854 !important;
+		}
+
+		.burger {
+			span {
+				background-color: #0A0854;
+			}
+
+			&.active {
+				span {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+
+	.container {
+		max-width: 1820px;
+		display: flex;
+		align-items: center;
 	}
 
 	.logo {
@@ -73,7 +100,7 @@
 			display: none !important;
 		}
 	}
-	
+
 	@media screen and (min-width: 1200px) {
 		margin-left: auto;
 		position: relative;
