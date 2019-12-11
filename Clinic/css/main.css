@@ -541,8 +541,6 @@ span.header{
 @media (max-width: 768px){
   a{
     text-align:center; } }
-.new-logo{
-  width:200px !important; }
 .filterForm{
   padding:0; }
 .filterForm__wrap{
@@ -1173,7 +1171,7 @@ span.header{
 .new-logo{
   -webkit-box-flex:0;
   flex:none;
-  max-width:445px !important;
+  max-width:445px;
   width:100%;
   height:auto;
   overflow:hidden; }
