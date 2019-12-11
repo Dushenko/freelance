@@ -1,0 +1,35 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header_white
+
+block content
+	main.main
+
+		section.contact-section
+			.container
+				.contact-wrap
+					.contacts
+						h2.section-title Contacts
+						p.address Sorst Streckmetall GmbH
+							|
+							br
+							| Wohlenbergstr. 11
+							br
+							| 30179 Hannover
+						span Tel: 
+							a(href="tel:4905116767560") +49 (0)5 11 - 67 67 56 0
+						span Fax: 
+							a(href="tel:49051167675656")  +49 (0)5 11 - 67 67 56 56
+						span E-Mail: 
+							a(href="mailto:info@sorst.de") info@sorst.de
+						a(href="#").main-btn обратная связь
+
+					.map
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162688.01380683962!2d30.419018585662467!3d50.42246761331941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1576090165900!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="")
+
+				.contacts-img
+					img(src="images/img11.jpg", alt="")

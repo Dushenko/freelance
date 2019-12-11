@@ -21,10 +21,13 @@
 	}
 
 	&:before {
-		content: url('../images/vector1.png');
-		position: absolute;
-		right: 0;
-		bottom: -37%;
+		@media screen and (min-width: 768px) {
+			content: url('../images/vector1.png');
+			position: absolute;
+			right: 0;
+			bottom: -37%;
+			z-index: -1;
+		}
 	}
 
 	.intro-img {
@@ -79,7 +82,7 @@
 	}
 
 	.main-title {
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 		@media screen and (min-width: 768px) {
 			margin-bottom: 20px;
 		}
@@ -93,9 +96,19 @@
 		font-size: 12px;
 		line-height: 1.7;
 		color: #C8E1FF;
+		margin-bottom: 25px;
 		@media screen and (min-width: 768px) {
 			display: none;
 		}
+	}
+
+	.history {
+		font-weight: bold;
+		font-size: 16px;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: #61A0FF;
+		margin-bottom: 30px;
 	}
 
 	.link-btn {
@@ -149,6 +162,7 @@
 		position: absolute;
 		left: 0;
 		top: 8%;
+		z-index: -1;
 	}
 
 	.section-title {
@@ -184,6 +198,10 @@
 	top: -30px;
 	@media screen and (min-width: 1920px){
 		top: -60px;
+	}
+
+	&_img {
+		
 	}
 
 	&:before {

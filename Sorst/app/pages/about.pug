@@ -1,0 +1,72 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+
+		section.intro-section
+			.intro-img
+				img(src="images/intro.jpg", alt="")
+			.container
+				.intro-wrap
+					h1.main-title SorST streckmetall
+					span.history history
+					p.intro-text 100 Years Experience in expanded Mesh! 1867 Sorst was initially founded as locksmith‘s shop by Wilhelm SORST, located in Hannover, Köbelinger Straße. 1901 launch of industrial manufacturing perforated steel. Seven years later new building was built in Hannover, Schulenburger Landstraße/Sorst Straße.
+
+					p.intro-text 1919 started the manufacturing of expanded mesh, perforated metal and steel lockers. Only two years after – 1921 - Sorst became leading manufacturer for expanded and perforated metal in Germany. 1998 split into 2 divisions, Sorst Streckmetall took over the expanded mesh and moved to the current Premises in Wohlenberstraße in Hannover. Since 2016 Sorst is the Leader in Germany and one of leading brands in Europe for expanded mesh.
+					
+			.fix-soc
+				a(href="#").soc.soc_inst
+				a(href="#").soc.soc_fb
+				a(href="#").soc.soc_you
+
+		section.wow.fadeInUp.about-section
+			.container
+				.intro-text
+					p We only
+						mark achieve the best through 
+						| constantly improving ourselves
+				.advantages-wrap
+					.typography
+						h2 Преимущества
+						p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+					.img-wrap
+						a(href="#").main-btn Смотреть видео
+						img(src="images/man-img.jpg", alt="")
+
+					ul.advantages-list
+						li Преимущество номер 1
+						li Преимущество номер 1
+						li Преимущество номер 1
+						li Преимущество номер 1
+						li Преимущество номер 1
+
+		section.wow.fadeInUp.about-us-section.about-us-section_big
+			.container
+				.about-wrap
+					.about-img
+						img(src="images/img10.jpg", alt="")
+					.about-info.typography
+						h2 Participation in the exhibitions
+						p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+						a(href="#").link-btn see more
+
+		section.wow.fadeInUp.footer-section
+			.container
+				.link-wrap
+					a(href="tel:4905116767560").tel +49 (0)511-676756-0
+					a(href="tel:49051167675656").fax +49 (0)511-6767565-6
+				p.address Sorst Streckmetall GmbH
+					|
+					br
+					| Wohlenbergstr. 11
+					br
+					| 30179 Hannover
+				a(href="mailto:info@sorst.de").mail info@sorst.de

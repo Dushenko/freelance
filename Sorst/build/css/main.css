@@ -3815,11 +3815,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       background-image:url("data:image/svg+xml,%3Csvg width='13' height='14' viewBox='0 0 13 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.793 7.54369L2.36293 12.4108C1.81259 12.7285 1.12467 12.3314 1.12467 11.6959L1.12467 1.96169C1.12467 1.32621 1.81259 0.92904 2.36293 1.24678L10.793 6.11387C11.3433 6.43161 11.3433 7.22596 10.793 7.54369Z' stroke='%23ED1C24' stroke-width='1.65101'/%3E%3C/svg%3E%0A"); }
 
 .typography h2{
+  font-weight:400;
   letter-spacing:0.06em;
   text-transform:uppercase;
-  color:#1550A7; }
+  color:#1550A7;
+  font-size:18px; }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1024px){
     .typography h2{
       font-size:24px;
       margin-bottom:34px; } }
@@ -3867,6 +3869,206 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .typography p{
       font-size:14px;
       line-height:1.7; } }
+
+.about-section{
+  padding:60px 0;
+  position:relative;
+  z-index:1; }
+
+@media screen and (min-width: 1024px){
+    .about-section{
+      padding:120px 0 170px; } }
+
+.about-section:before{
+    content:url("../images/vector.png");
+    position:absolute;
+    left:0;
+    top:10%;
+    z-index:-1; }
+
+.about-section .intro-text{
+    margin-bottom:80px; }
+
+@media screen and (min-width: 1920px){
+      .about-section .intro-text{
+        margin-bottom:100px; } }
+
+.about-section .intro-text p{
+      max-width:200px;
+      margin:0 auto;
+      width:100%;
+      font-weight:700;
+      font-size:12px;
+      line-height:200%;
+      color:#1B222A;
+      text-align:center;
+      position:relative; }
+
+@media screen and (min-width: 768px){
+        .about-section .intro-text p{
+          font-size:16px; } }
+
+@media screen and (min-width: 1024px){
+        .about-section .intro-text p{
+          font-size:20px;
+          min-width:255px; } }
+
+@media screen and (min-width: 1200px){
+        .about-section .intro-text p{
+          font-size:25px;
+          max-width:320px; } }
+
+@media screen and (min-width: 1920px){
+        .about-section .intro-text p{
+          font-size:36px;
+          max-width:496px; } }
+
+.about-section .intro-text p:before, .about-section .intro-text p:after{
+        content:'';
+        position:absolute;
+        width:35px;
+        height:27px;
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-image:url("data:image/svg+xml,%3Csvg width='39' height='30' viewBox='0 0 39 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H17V15L10 30H0V0Z' fill='%23ED1C24'/%3E%3Cpath d='M22 0H39V15L32 30H22V0Z' fill='%23ED1C24'/%3E%3C/svg%3E%0A"); }
+
+.about-section .intro-text p:before{
+        top:-20px;
+        left:-30px; }
+
+.about-section .intro-text p:after{
+        right:-30px;
+        bottom:-20px; }
+
+.about-section .intro-text p mark{
+        color:#ed1c24; }
+
+.about-section .advantages-wrap{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    position:relative; }
+
+.about-section .advantages-wrap .typography{
+      margin-bottom:25px; }
+
+@media screen and (min-width: 1024px){
+        .about-section .advantages-wrap .typography{
+          width:50%;
+          margin:0 0 34px auto;
+          padding-left:33px; } }
+
+@media screen and (min-width: 1200px){
+        .about-section .advantages-wrap .typography{
+          padding-left:60px; } }
+
+@media screen and (min-width: 1920px){
+        .about-section .advantages-wrap .typography{
+          padding-left:90px; } }
+
+.about-section .advantages-wrap .typography h2{
+        margin-bottom:20px; }
+
+.about-section .advantages-wrap .img-wrap{
+      position:relative;
+      width:100%;
+      height:auto;
+      margin-bottom:35px;
+      box-shadow:0px 14px 34px rgba(0, 0, 0, 0.1); }
+
+@media screen and (min-width: 1024px){
+        .about-section .advantages-wrap .img-wrap{
+          width:50%;
+          position:absolute;
+          left:0;
+          top:0; } }
+
+.about-section .advantages-wrap .img-wrap img{
+        display:block;
+        width:100%;
+        height:auto;
+        -o-object-fit:cover;
+        object-fit:cover; }
+
+@media screen and (min-width: 768px){
+          .about-section .advantages-wrap .img-wrap img{
+            max-height:428px; } }
+
+.about-section .advantages-wrap .img-wrap .main-btn{
+        position:absolute;
+        left:-15px;
+        bottom:15px;
+        z-index:1; }
+
+@media screen and (min-width: 768px){
+          .about-section .advantages-wrap .img-wrap .main-btn{
+            left:0;
+            bottom:30px; } }
+
+.about-section .advantages-wrap .advantages-list{
+      display:-webkit-box;
+      display:flex;
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      flex-direction:column; }
+
+@media screen and (min-width: 768px){
+        .about-section .advantages-wrap .advantages-list{
+          -webkit-box-orient:horizontal;
+          -webkit-box-direction:normal;
+          flex-direction:row;
+          flex-wrap:wrap; } }
+
+@media screen and (min-width: 1024px){
+        .about-section .advantages-wrap .advantages-list{
+          width:50%;
+          -webkit-box-orient:vertical;
+          -webkit-box-direction:normal;
+          flex-direction:column;
+          margin-left:auto;
+          padding-left:33px; } }
+
+@media screen and (min-width: 1200px){
+        .about-section .advantages-wrap .advantages-list{
+          padding-left:60px; } }
+
+@media screen and (min-width: 1920px){
+        .about-section .advantages-wrap .advantages-list{
+          padding-left:90px; } }
+
+.about-section .advantages-wrap .advantages-list li{
+        position:relative;
+        padding-left:40px;
+        font-weight:700;
+        font-size:14px;
+        line-height:19px;
+        letter-spacing:0.2em;
+        text-transform:uppercase;
+        color:#0A0854;
+        margin-bottom:10px; }
+
+@media screen and (min-width: 768px){
+          .about-section .advantages-wrap .advantages-list li{
+            margin:0 25px 30px; } }
+
+@media screen and (min-width: 1024px){
+          .about-section .advantages-wrap .advantages-list li{
+            margin:0 0 30px; } }
+
+.about-section .advantages-wrap .advantages-list li:before{
+          content:'';
+          position:absolute;
+          top:calc(50% - 15px);
+          left:0;
+          width:30px;
+          height:30px;
+          background-repeat:no-repeat;
+          background-size:contain;
+          background-position:center;
+          background-image:url("data:image/svg+xml,%3Csvg width='34' height='32' viewBox='0 0 34 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M17 1.23607L19.1921 7.98278C19.4599 8.80682 20.2278 9.36475 21.0943 9.36475H28.1882L22.4491 13.5344C21.7481 14.0437 21.4548 14.9465 21.7225 15.7705L23.9147 22.5172L18.1756 18.3475C17.4746 17.8382 16.5254 17.8382 15.8244 18.3475L10.0853 22.5172L12.2775 15.7705C12.5452 14.9465 12.2519 14.0437 11.5509 13.5344L5.81184 9.36475H12.9057C13.7722 9.36475 14.5401 8.80683 14.8079 7.98278L17 1.23607Z' stroke='%23ED1C24' stroke-width='2'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.809814' y='0.236069' width='32.3802' height='31.2857' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A"); }
 
 .first-bg{
   position:relative;
@@ -4080,6 +4282,97 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .footer-section .fax:before{
     background-image:url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.8027 4.49219H22.0703V0.732422C22.0703 0.32793 21.7424 0 21.3379 0H11.084C10.6795 0 10.3516 0.32793 10.3516 0.732422V4.49219H8.76074C8.4584 3.63975 7.64429 3.02734 6.68945 3.02734H5.12695C4.17212 3.02734 3.35801 3.63975 3.05566 4.49219H2.19727C0.985693 4.49219 0 5.47788 0 6.68945V21.3379C0 22.5495 0.985693 23.5352 2.19727 23.5352H3.05566C3.35801 24.3876 4.17212 25 5.12695 25H6.68945C7.64429 25 8.4584 24.3876 8.76074 23.5352H22.8027C24.0143 23.5352 25 22.5495 25 21.3379V6.68945C25 5.47788 24.0143 4.49219 22.8027 4.49219ZM2.92969 22.0703H2.19727C1.79341 22.0703 1.46484 21.7417 1.46484 21.3379V6.68945C1.46484 6.2856 1.79341 5.95703 2.19727 5.95703H2.92969V22.0703ZM7.42188 22.8027C7.42188 23.2066 7.09331 23.5352 6.68945 23.5352H5.12695C4.7231 23.5352 4.39453 23.2066 4.39453 22.8027V5.22461C4.39453 4.82075 4.7231 4.49219 5.12695 4.49219H6.68945C7.09331 4.49219 7.42188 4.82075 7.42188 5.22461V22.8027ZM11.8164 1.46484H20.6055V4.49219H11.8164V1.46484ZM23.5352 21.3379C23.5352 21.7417 23.2066 22.0703 22.8027 22.0703H8.88672V5.95703H22.8027C23.2066 5.95703 23.5352 6.2856 23.5352 6.68945V21.3379Z' fill='white'/%3E%3Cpath d='M12.5488 19.1406H11.084C10.6795 19.1406 10.3516 19.4686 10.3516 19.873C10.3516 20.2775 10.6795 20.6055 11.084 20.6055H12.5488C12.9533 20.6055 13.2812 20.2775 13.2812 19.873C13.2812 19.4686 12.9533 19.1406 12.5488 19.1406Z' fill='white'/%3E%3Cpath d='M16.9434 19.1406H15.4785C15.074 19.1406 14.7461 19.4686 14.7461 19.873C14.7461 20.2775 15.074 20.6055 15.4785 20.6055H16.9434C17.3479 20.6055 17.6758 20.2775 17.6758 19.873C17.6758 19.4686 17.3479 19.1406 16.9434 19.1406Z' fill='white'/%3E%3Cpath d='M21.3379 19.1406H19.873C19.4686 19.1406 19.1406 19.4686 19.1406 19.873C19.1406 20.2775 19.4686 20.6055 19.873 20.6055H21.3379C21.7424 20.6055 22.0703 20.2775 22.0703 19.873C22.0703 19.4686 21.7424 19.1406 21.3379 19.1406Z' fill='white'/%3E%3Cpath d='M12.5488 16.2109H11.084C10.6795 16.2109 10.3516 16.5389 10.3516 16.9434C10.3516 17.3479 10.6795 17.6758 11.084 17.6758H12.5488C12.9533 17.6758 13.2812 17.3479 13.2812 16.9434C13.2812 16.5389 12.9533 16.2109 12.5488 16.2109Z' fill='white'/%3E%3Cpath d='M16.9434 16.2109H15.4785C15.074 16.2109 14.7461 16.5389 14.7461 16.9434C14.7461 17.3479 15.074 17.6758 15.4785 17.6758H16.9434C17.3479 17.6758 17.6758 17.3479 17.6758 16.9434C17.6758 16.5389 17.3479 16.2109 16.9434 16.2109Z' fill='white'/%3E%3Cpath d='M21.3379 16.2109H19.873C19.4686 16.2109 19.1406 16.5389 19.1406 16.9434C19.1406 17.3479 19.4686 17.6758 19.873 17.6758H21.3379C21.7424 17.6758 22.0703 17.3479 22.0703 16.9434C22.0703 16.5389 21.7424 16.2109 21.3379 16.2109Z' fill='white'/%3E%3Cpath d='M12.5488 13.2812H11.084C10.6795 13.2812 10.3516 13.6092 10.3516 14.0137C10.3516 14.4182 10.6795 14.7461 11.084 14.7461H12.5488C12.9533 14.7461 13.2812 14.4182 13.2812 14.0137C13.2812 13.6092 12.9533 13.2812 12.5488 13.2812Z' fill='white'/%3E%3Cpath d='M16.9434 13.2812H15.4785C15.074 13.2812 14.7461 13.6092 14.7461 14.0137C14.7461 14.4182 15.074 14.7461 15.4785 14.7461H16.9434C17.3479 14.7461 17.6758 14.4182 17.6758 14.0137C17.6758 13.6092 17.3479 13.2812 16.9434 13.2812Z' fill='white'/%3E%3Cpath d='M21.3379 13.2812H19.873C19.4686 13.2812 19.1406 13.6092 19.1406 14.0137C19.1406 14.4182 19.4686 14.7461 19.873 14.7461H21.3379C21.7424 14.7461 22.0703 14.4182 22.0703 14.0137C22.0703 13.6092 21.7424 13.2812 21.3379 13.2812Z' fill='white'/%3E%3Cpath d='M21.3379 7.42188H11.084C10.6795 7.42188 10.3516 7.7498 10.3516 8.1543V11.084C10.3516 11.4885 10.6795 11.8164 11.084 11.8164H21.3379C21.7424 11.8164 22.0703 11.4885 22.0703 11.084V8.1543C22.0703 7.7498 21.7424 7.42188 21.3379 7.42188ZM20.6055 10.3516H11.8164V8.88672H20.6055V10.3516Z' fill='white'/%3E%3C/svg%3E%0A"); }
 
+.contact-section{
+  position:relative;
+  padding:100px 0 50px; }
+
+@media screen and (min-width: 1024px){
+    .contact-section{
+      padding:120px 0 80px; } }
+
+@media screen and (min-width: 1200px){
+    .contact-section{
+      padding:180px 0 80px; } }
+
+.contact-section:before{
+    content:url("../images/vector.png");
+    position:absolute;
+    left:0;
+    top:22%;
+    z-index:-1; }
+
+.contact-section .contact-wrap{
+    margin-bottom:50px; }
+
+@media screen and (min-width: 768px){
+      .contact-section .contact-wrap{
+        display:-webkit-box;
+        display:flex;
+        -webkit-box-pack:justify;
+        justify-content:space-between; } }
+
+.contact-section .contacts{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -webkit-box-align:start;
+    align-items:flex-start;
+    margin:0 0 40px;
+    font-size:18px;
+    line-height:1.2;
+    color:#1B222A; }
+
+@media screen and (min-width: 768px){
+      .contact-section .contacts{
+        width:325px;
+        margin:0 30px 0 0;
+        -webkit-box-flex:0;
+        flex:none; } }
+
+.contact-section .contacts .section-title{
+      margin-bottom:30px; }
+
+.contact-section .contacts .address{
+      margin-bottom:30px; }
+
+.contact-section .contacts span{
+      margin-bottom:15px; }
+
+.contact-section .contacts a{
+      color:#1B222A; }
+
+.contact-section .contacts a:hover{
+        text-decoration:underline; }
+
+.contact-section .contacts .main-btn{
+      margin-top:40px; }
+
+.contact-section .contacts .main-btn:hover{
+        text-decoration:none; }
+
+.contact-section .map{
+    width:100%;
+    box-shadow:0px 11px 26px rgba(0, 0, 0, 0.1); }
+
+.contact-section .map iframe{
+      width:100%;
+      height:100%; }
+
+.contact-section .contacts-img{
+    width:100%;
+    height:24vw;
+    min-height:350px;
+    max-height:470px;
+    box-shadow:0px 11px 26px rgba(0, 0, 0, 0.1); }
+
+.contact-section .contacts-img img{
+      width:100%;
+      height:100%;
+      -o-object-fit:cover;
+      object-fit:cover; }
+
 .intro-section{
   position:relative;
   z-index:1;
@@ -4102,11 +4395,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .intro-section{
       max-height:840px; } }
 
-.intro-section:before{
-    content:url("../images/vector1.png");
-    position:absolute;
-    right:0;
-    bottom:-37%; }
+@media screen and (min-width: 768px){
+    .intro-section:before{
+      content:url("../images/vector1.png");
+      position:absolute;
+      right:0;
+      bottom:-37%;
+      z-index:-1; } }
 
 .intro-section .intro-img{
     width:90vw;
@@ -4166,7 +4461,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         width:43%; } }
 
 .intro-section .main-title{
-    margin-bottom:50px; }
+    margin-bottom:30px; }
 
 @media screen and (min-width: 768px){
       .intro-section .main-title{
@@ -4180,11 +4475,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-bottom:10px;
     font-size:12px;
     line-height:1.7;
-    color:#C8E1FF; }
+    color:#C8E1FF;
+    margin-bottom:25px; }
 
 @media screen and (min-width: 768px){
       .intro-section .intro-text{
         display:none; } }
+
+.intro-section .history{
+    font-weight:bold;
+    font-size:16px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:#61A0FF;
+    margin-bottom:30px; }
 
 .intro-section .link-btn{
     color:#fff; }
@@ -4234,7 +4538,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content:url("../images/vector.png");
     position:absolute;
     left:0;
-    top:8%; }
+    top:8%;
+    z-index:-1; }
 
 .aplication-section .section-title{
     margin-bottom:27px; }
