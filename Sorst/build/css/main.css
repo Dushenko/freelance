@@ -3719,14 +3719,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -o-object-fit:cover;
     object-fit:cover; }
 
-.tovar:hover{
+.tovar:hover .tovar__wrap{
     box-shadow:0px 0px 3px rgba(0, 0, 0, 0.5); }
 
 .tovar:hover .tovar__name{
-      color:#fff;
-      -webkit-transition:all .3s ease;
-      transition:all .3s ease;
-      background:rgba(0, 14, 148, 0.7); }
+    color:#fff;
+    -webkit-transition:all .3s ease;
+    transition:all .3s ease;
+    background:rgba(0, 14, 148, 0.7); }
 
 .tovar__head{
     display:-webkit-box;
@@ -4173,6 +4173,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   display:-webkit-box;
   display:flex;
   flex-wrap:wrap; }
+
+@media screen and (min-width: 1024px){
+    .catalog-section .catalog-wrap_three .tovar{
+      width:33.33%; } }
 
 @media screen and (min-width: 768px){
     .catalog-section .catalog-wrap{
