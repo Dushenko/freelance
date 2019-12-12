@@ -1,0 +1,59 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+
+		section.intro-section.intro-section_tech
+			.intro-img
+				img(src="images/tech.jpg", alt="")
+			.container
+				.intro-wrap
+					span.time 10.12.2019
+					h1.main-title Заголовок статьи
+					p.intro-text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					
+			.fix-soc
+				a(href="#").soc.soc_inst
+				a(href="#").soc.soc_fb
+				a(href="#").soc.soc_you
+
+		section.category-section
+			.container
+				.category-wrap
+					.category
+						.category__text.typography
+							h2 FaCades
+							p Boredom has no chance against Sorst expanded metal façades
+
+							p In industrial architecture, development and production are no longer concealed behind high walls. On the contrary: the architecture should emphasize the function and character of the industrial plant. Transparency creates trust and enables the observer to participate in the procedures within.  
+						.category__img
+							img(src="images/cat.jpg", alt="")
+
+					.category
+						.category__text.typography
+							h2 Ceiling Linings
+							p Style and Ambience – Sorst Expanded Metal Ceilings
+
+							p Today, it is difficult to imagine offices and commercial premises without suspended ceilings. The production process of expanded metal endows the expanded metal ceiling with a special character which offers, according to the customer’s requirements, a free or restricted view into the roof cavity. A further advantage is the possibility to optimally illuminate the space under the expanded metal ceiling through, for example, the deflection of artificial or natural light. Interesting variations in light design can be generated when the lights are installed above the lattice construction. The diverse surface structures of our inexhaustible spectrum of mesh variations enable the creation of an unusual ambience. Whether rhombus or square mesh, open or closed system, our wide spectrum bestows an individual appearance upon your premises.  
+
+						.category__img
+							img(src="images/cat.jpg", alt="")
+
+					.category
+						.category__text.typography
+							h2 FaCades
+							p Boredom has no chance against Sorst expanded metal façades
+
+							p In industrial architecture, development and production are no longer concealed behind high walls. On the contrary: the architecture should emphasize the function and character of the industrial plant. Transparency creates trust and enables the observer to participate in the procedures within.  
+						.category__img
+							img(src="images/cat.jpg", alt="")
+
+		
+block footer
+	include ../blocks/footer/footer
