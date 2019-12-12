@@ -29,13 +29,12 @@
 			z-index: -1;
 		}
 	}
-
+	
 	.intro-img {
 		width: 90vw;
 		height: 47vw;
 		margin: 0 0 22px auto;
-		overflow: hidden;
-
+		
 		@media screen and (min-width: 768px) {
 			position: absolute;
 			width: 50%;
@@ -52,7 +51,15 @@
 			max-height: 602px;
 			width: 53%;
 		}
+	}
 
+	.intro-img { 
+		overflow: hidden;
+
+		&_overflow {
+			overflow: visible;
+			margin-bottom: 60px;
+		}
 		img {
 			width: 100%;
 			height: auto;
@@ -97,13 +104,13 @@
 		line-height: 1.7;
 		color: #C8E1FF;
 		margin-bottom: 25px;
-		@media screen and (min-width: 768px) {
-			display: none;
-		}
+		// @media screen and (min-width: 768px) {
+		// 	display: none;
+		// }
 	}
 
 	.history {
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 16px;
 		letter-spacing: 0.06em;
 		text-transform: uppercase;

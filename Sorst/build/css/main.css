@@ -2792,6 +2792,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-color:#fff; }
 
 .header .container{
+    padding:0 24px;
     max-width:1820px;
     display:-webkit-box;
     display:flex;
@@ -3549,6 +3550,115 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .tablet-slider .article__img{
       width:100%;
       height:auto; } }
+
+.about-slider{
+  position:relative;
+  width:100%;
+  margin-bottom:60px; }
+
+.about-slider:after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:36px;
+    background-color:#fff; }
+
+@media screen and (min-width: 768px){
+      .about-slider:after{
+        display:none; } }
+
+.about-slider .slick-slide{
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow:hidden; }
+
+.about-slider .slick-slide img{
+      width:100%;
+      height:100% !important;
+      -o-object-fit:cover;
+      object-fit:cover; }
+
+.about-slider .slick-dots{
+    position:absolute;
+    bottom:12px;
+    z-index:11;
+    left:32px;
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:center;
+    justify-content:center; }
+
+.about-slider .slick-dots li{
+      font-size:0;
+      position:relative;
+      margin:0 13px;
+      width:11px;
+      height:10px;
+      border:1px solid #26247B;
+      cursor:pointer; }
+
+@media screen and (min-width: 768px){
+        .about-slider .slick-dots li{
+          margin:0 9px; } }
+
+.about-slider .slick-dots li.slick-active, .about-slider .slick-dots li:hover{
+        background:#ED1C24;
+        border:1px solid #ED1C24; }
+
+@media screen and (min-width: 768px){
+      .about-slider .slick-dots{
+        bottom:-37px;
+        left:136px; } }
+
+@media screen and (min-width: 1200px){
+      .about-slider .slick-dots{
+        left:186px; } }
+
+@media screen and (min-width: 1920px){
+      .about-slider .slick-dots{
+        bottom:-67px;
+        left:256px; } }
+
+.about-slider .slick-prev{
+    left:20px;
+    bottom:10px;
+    z-index:2; }
+
+@media screen and (min-width: 768px){
+      .about-slider .slick-prev{
+        left:100px;
+        bottom:-40px; } }
+
+@media screen and (min-width: 1200px){
+      .about-slider .slick-prev{
+        left:150px; } }
+
+@media screen and (min-width: 1920px){
+      .about-slider .slick-prev{
+        bottom:-70px;
+        left:220px; } }
+
+.about-slider .slick-next{
+    left:250px;
+    bottom:10px;
+    z-index:2; }
+
+@media screen and (min-width: 768px){
+      .about-slider .slick-next{
+        left:330px;
+        bottom:-40px; } }
+
+@media screen and (min-width: 1200px){
+      .about-slider .slick-next{
+        left:380px; } }
+
+@media screen and (min-width: 1920px){
+      .about-slider .slick-next{
+        bottom:-70px;
+        left:450px; } }
 
 .slick-arrow{
   padding:0;
@@ -4426,8 +4536,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .intro-section .intro-img{
     width:90vw;
     height:47vw;
-    margin:0 0 22px auto;
-    overflow:hidden; }
+    margin:0 0 22px auto; }
 
 @media screen and (min-width: 768px){
       .intro-section .intro-img{
@@ -4446,6 +4555,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       .intro-section .intro-img{
         max-height:602px;
         width:53%; } }
+
+.intro-section .intro-img{
+    overflow:hidden; }
+
+.intro-section .intro-img_overflow{
+      overflow:visible;
+      margin-bottom:60px; }
 
 .intro-section .intro-img img{
       width:100%;
@@ -4498,12 +4614,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     color:#C8E1FF;
     margin-bottom:25px; }
 
-@media screen and (min-width: 768px){
-      .intro-section .intro-text{
-        display:none; } }
-
 .intro-section .history{
-    font-weight:bold;
+    font-weight:700;
     font-size:16px;
     letter-spacing:0.06em;
     text-transform:uppercase;
@@ -4846,17 +4958,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .similar-section{
       padding:100px 0 150px; } }
 
-@media screen and (min-width: 1024px){
-    .similar-section .similar-wrap{
+@media screen and (min-width: 768px){
+    .similar-section .categories-wrap{
       display:-webkit-box;
-      display:flex;
-      -webkit-box-pack:center;
-      justify-content:center; } }
+      display:flex; } }
 
 @media screen and (min-width: 1024px){
-    .similar-section .similar-wrap .tovar{
-      margin:0 21px 40px; } }
+    .similar-section .categories-wrap .slide{
+      width:33.33%; } }
 
-@media screen and (min-width: 1200px){
-    .similar-section .similar-wrap .tovar{
-      margin:0 35px 50px; } }
+.similar-section .categories-wrap .tovar{
+    width:100%; }
+
+@media screen and (min-width: 1024px){
+      .similar-section .categories-wrap .tovar{
+        width:100%; } }

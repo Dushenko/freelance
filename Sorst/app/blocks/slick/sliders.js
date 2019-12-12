@@ -20,6 +20,14 @@ $(document).ready(function () {
 		]
 	});
 
+	$('.js-about-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: true,
+		infinite: true,
+	});
+
 	$('.js-product-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
