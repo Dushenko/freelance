@@ -3044,18 +3044,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .info-table span{
   font-size:12px;
   color:#868686;
-  width:50%;
+  min-width:110px;
   padding-right:15px; }
+
+@media screen and (min-width: 1024px){
+    .info-table span{
+      min-width:175px; } }
 
 .info-table span:nth-child(2){
     font-weight:700;
     color:#1B222A;
-    text-align:right;
     padding-right:0; }
-
-@media screen and (min-width: 1920px){
-      .info-table span:nth-child(2){
-        text-align:left; } }
 
 .product{
   display:-webkit-box;
@@ -4541,8 +4540,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       width:322px; } }
 
 .footer-section{
+  position:relative;
   background:#61A0FF;
   padding:32px 0; }
+
+.footer-section:before{
+    content:url("../images/vector2.png");
+    position:absolute;
+    left:0;
+    top:-350px;
+    z-index:-1; }
 
 .footer-section .container{
     display:-webkit-box;
@@ -5084,7 +5091,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     content:url("../images/vector1.png");
     position:absolute;
     right:0;
-    bottom:0;
+    top:100px;
     z-index:-2; }
 
 .product-section_bg:before{
@@ -5120,6 +5127,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         position:absolute;
         right:15px;
         top:15px; } }
+
+.product-section .btn-wrap{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:end;
+    justify-content:flex-end;
+    margin-top:40px; }
 
 .articles-section{
   padding:80px 0; }
@@ -5198,7 +5212,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       margin-bottom:40px; } }
 
 .categories-section{
-  padding:50px 0 110px; }
+  padding:50px 0 110px;
+  position:relative; }
 
 @media screen and (min-width: 1024px){
     .categories-section{
@@ -5207,6 +5222,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media screen and (min-width: 1920px){
     .categories-section{
       padding:100px 0 100px; } }
+
+@media screen and (min-width: 1024px){
+    .categories-section_bg{
+      padding:100px 0; } }
+
+.categories-section_bg:before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    width:100%;
+    height:80%;
+    background:rgba(64, 140, 253, 0.05);
+    z-index:-1; }
 
 .categories-section .categories-wrap{
     display:-webkit-box;

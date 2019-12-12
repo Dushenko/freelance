@@ -1,0 +1,112 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+
+		section.intro-section
+			.intro-img.intro-img_overflow
+				.about-slider.js-about-slider
+					.slide
+						img(src="images/intro.jpg", alt="")
+					.slide
+						img(src="images/intro.jpg", alt="")
+					.slide
+						img(src="images/intro.jpg", alt="")
+					.slide
+						img(src="images/intro.jpg", alt="")
+					.slide
+						img(src="images/intro.jpg", alt="")
+					.slide
+						img(src="images/intro.jpg", alt="")
+
+			.container
+				.intro-wrap
+					h1.main-title SorST streckmetall
+					span.history history
+					p.intro-text 100 Years Experience in expanded Mesh! 1867 Sorst was initially founded as locksmith‘s shop by Wilhelm SORST, located in Hannover, Köbelinger Straße. 1901 launch of industrial manufacturing perforated steel. Seven years later new building was built in Hannover, Schulenburger Landstraße/Sorst Straße.
+
+			.fix-soc
+				a(href="#").soc.soc_inst
+				a(href="#").soc.soc_fb
+				a(href="#").soc.soc_you
+
+		section.wow.fadeInUp.articles-section.articles-section_bg
+			.container
+				.section-head
+					h2.section-title Все статьи
+					a(href="#").link-btn Больше статей
+
+				.articles-wrap.tablet-slider.js-tablet-slider
+					a(href="#").article.typography
+						.article__img
+							img(src="images/art1.jpg", alt="")
+						.article__wrap
+							.article__date
+								span 18:40
+								span 20.08.2019
+							h3 Название статьи номер тридцать три
+							p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							span.article__link see more
+					a(href="#").article.typography
+						.article__img
+							img(src="images/art1.jpg", alt="")
+						.article__wrap
+							.article__date
+								span 18:40
+								span 20.08.2019
+							h3 Название статьи номер тридцать три
+							p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							span.article__link see more
+					a(href="#").article.typography
+						.article__img
+							img(src="images/art1.jpg", alt="")
+						.article__wrap
+							.article__date
+								span 18:40
+								span 20.08.2019
+							h3 Название статьи номер тридцать три
+							p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							span.article__link see more
+
+		section.wow.fadeInUp.categories-section.categories-section_bg
+			.container
+				.section-head
+					h2.section-title Популярные товары
+					a(href="#").link-btn Все товары
+				.categories-wrap
+					a(href="#").tovar
+						.tovar__wrap
+							img(src="images/tovar.jpg", alt="")
+							.tovar__head
+								span.tovar__category Категория
+								
+					a(href="#").tovar
+						.tovar__wrap
+							img(src="images/tovar.jpg", alt="")
+							.tovar__head
+								span.tovar__category Категория
+
+					a(href="#").tovar
+						.tovar__wrap
+							img(src="images/tovar.jpg", alt="")
+							.tovar__head
+								span.tovar__category Категория
+
+		section.wow.fadeInUp.footer-section
+			.container
+				.link-wrap
+					a(href="tel:4905116767560").tel +49 (0)511-676756-0
+					a(href="tel:49051167675656").fax +49 (0)511-6767565-6
+				p.address Sorst Streckmetall GmbH
+					|
+					br
+					| Wohlenbergstr. 11
+					br
+					| 30179 Hannover
+				a(href="mailto:info@sorst.de").mail info@sorst.de

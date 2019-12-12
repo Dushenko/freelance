@@ -355,7 +355,7 @@
 			content: url('../images/vector1.png');
 			position: absolute;
 			right: 0;
-			bottom: 0;
+			top: 100px;
 			z-index: -2;
 		}
 	}
@@ -400,6 +400,12 @@
 			right: 15px;
 			top: 15px;
 		}
+	}
+
+	.btn-wrap {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 40px;
 	}
 }
 
