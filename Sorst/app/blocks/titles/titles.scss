@@ -26,12 +26,11 @@
 		color: #fff;
 	}
 
-	@media screen and (min-width: 768px) {
-		
+	&_center {
+		text-align: center;
 	}
-	@media screen and (min-width: 1024px) {
-		
-	}
+
+	
 	@media screen and (min-width: 1200px) {
 		font-size: 24px;
 		margin-bottom: 34px;

@@ -74,6 +74,16 @@
 		@media screen and (min-width: 1024px){
 			padding: 100px 0;
 		}
+
+		.categories-wrap {
+			box-shadow: none !important;
+			padding: 0 !important;
+			margin: 0;
+			@media screen and (min-width: 768px){
+				margin: 0 -15px;
+			}
+		}
+
 		&:before {
 			content: '';
 			position: absolute;

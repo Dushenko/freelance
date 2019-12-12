@@ -1,0 +1,107 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header_white
+
+block content
+	main.main
+
+		section.category-section
+			.container
+				h2.section-title.section-title_center architecture
+
+				.category-wrap
+					.category
+						.category__text.typography
+							h2 FaCades
+							p Boredom has no chance against Sorst expanded metal façades
+
+							p In industrial architecture, development and production are no longer concealed behind high walls. On the contrary: the architecture should emphasize the function and character of the industrial plant. Transparency creates trust and enables the observer to participate in the procedures within.  
+						.category__img
+							img(src="images/cat.jpg", alt="")
+
+					.category
+						.category__text.typography
+							h2 Ceiling Linings
+							p Style and Ambience – Sorst Expanded Metal Ceilings
+
+							p Today, it is difficult to imagine offices and commercial premises without suspended ceilings. The production process of expanded metal endows the expanded metal ceiling with a special character which offers, according to the customer’s requirements, a free or restricted view into the roof cavity. A further advantage is the possibility to optimally illuminate the space under the expanded metal ceiling through, for example, the deflection of artificial or natural light. Interesting variations in light design can be generated when the lights are installed above the lattice construction. The diverse surface structures of our inexhaustible spectrum of mesh variations enable the creation of an unusual ambience. Whether rhombus or square mesh, open or closed system, our wide spectrum bestows an individual appearance upon your premises.  
+
+						.category__img
+							img(src="images/cat.jpg", alt="")
+
+					.category
+						.category__text.typography
+							h2 FaCades
+							p Boredom has no chance against Sorst expanded metal façades
+
+							p In industrial architecture, development and production are no longer concealed behind high walls. On the contrary: the architecture should emphasize the function and character of the industrial plant. Transparency creates trust and enables the observer to participate in the procedures within.  
+						.category__img
+							img(src="images/cat.jpg", alt="")
+
+
+		section.wow.fadeInUp.product-section
+			.container
+				h2.section-title реализованные 
+					br
+					| архитектурные 
+					br
+					| проекты
+				.slider-wrap
+					.product-slider.js-product-slider
+						.slide
+							.product
+								.product__img
+									img(src="images/prod2.jpg", alt="")
+								a(href="#").product__info.typography
+									span 03.10.18
+									h3 Название проекта номер тридцать
+									p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Duis aute irure dolor in reprehenderit in voluptate velit. 
+						.slide
+							.product
+								.product__img
+									img(src="images/prod2.jpg", alt="")
+								a(href="#").product__info.typography
+									span 03.10.18
+									h3 Название проекта номер тридцать
+									p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						.slide
+							.product
+								.product__img
+									img(src="images/prod2.jpg", alt="")
+								a(href="#").product__info.typography
+									span 03.10.18
+									h3 Название проекта номер тридцать
+									p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					
+					a(href="#").product-link Все проекты
+				
+		section.wow.fadeInUp.categories-section.categories-section_bg
+			.container
+				.section-head
+					h2.section-title Популярные товары
+					a(href="#").link-btn Все товары
+				.categories-wrap
+					a(href="#").tovar
+						.tovar__wrap
+							img(src="images/tovar.jpg", alt="")
+							.tovar__head
+								span.tovar__category Категория
+								
+					a(href="#").tovar
+						.tovar__wrap
+							img(src="images/tovar.jpg", alt="")
+							.tovar__head
+								span.tovar__category Категория
+
+					a(href="#").tovar
+						.tovar__wrap
+							img(src="images/tovar.jpg", alt="")
+							.tovar__head
+								span.tovar__category Категория
+
+block footer
+	include ../blocks/footer/footer
