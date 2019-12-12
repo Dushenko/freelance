@@ -14,10 +14,55 @@
 	@media screen and (min-width: 1024px) {
 		height: 43vw;
 	}
-	@media screen and (min-width: 1200px) {
-	}
 	@media screen and (min-width: 1920px) {
 		max-height: 840px;
+	}
+
+	&_tech {
+		padding-bottom: 70px;
+		height: auto;
+		@media screen and (min-width: 768px) {
+			padding-bottom: 90px;
+		}
+		.intro-img {
+			max-height: 418px;
+			@media screen and (min-width: 768px) {
+				top: auto !important;
+				bottom: 0 !important;
+			}
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 60px;
+			left: 0;
+			bottom: 0;
+			background: #61A0FF;
+			z-index: -1;
+			@media screen and (min-width: 768px) {
+				height: 80px;
+			}
+		}
+
+		.container {
+			position: relative;
+			height: 100%;
+		}
+
+		.select-wrap {
+			position: absolute;
+			bottom: -63px;
+			left: 50%;
+			transform: translateX(-50%);
+			margin: 0;
+			@media screen and (min-width: 768px) {
+				left: 15px;
+				transform: translateX(0);
+				bottom: -74px;
+			}
+		}
 	}
 
 	&:before {
@@ -34,7 +79,8 @@
 		width: 90vw;
 		height: 47vw;
 		margin: 0 0 22px auto;
-		
+		overflow: hidden;
+
 		@media screen and (min-width: 768px) {
 			position: absolute;
 			width: 50%;
@@ -51,18 +97,16 @@
 			max-height: 602px;
 			width: 53%;
 		}
-	}
-
-	.intro-img { 
-		overflow: hidden;
 
 		&_overflow {
 			overflow: visible;
 			margin-bottom: 60px;
 		}
+
 		img {
 			width: 100%;
-			height: auto;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 
@@ -81,6 +125,9 @@
 		}
 		@media screen and (min-width: 1200px) {
 			padding: 120px 0 0 120px;
+		}
+		@media screen and (min-width: 1440px) {
+			padding: 120px 0 0 0;
 		}
 		@media screen and (min-width: 1920px) {
 			padding: 150px 0 0 0;

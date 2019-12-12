@@ -4810,6 +4810,57 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .intro-section{
       max-height:840px; } }
 
+.intro-section_tech{
+    padding-bottom:70px;
+    height:auto; }
+
+@media screen and (min-width: 768px){
+      .intro-section_tech{
+        padding-bottom:90px; } }
+
+.intro-section_tech .intro-img{
+      max-height:418px; }
+
+@media screen and (min-width: 768px){
+        .intro-section_tech .intro-img{
+          top:auto !important;
+          bottom:0 !important; } }
+
+.intro-section_tech:after{
+      content:'';
+      position:absolute;
+      width:100%;
+      height:60px;
+      left:0;
+      bottom:0;
+      background:#61A0FF;
+      z-index:-1; }
+
+@media screen and (min-width: 768px){
+        .intro-section_tech:after{
+          height:80px; } }
+
+.intro-section_tech .container{
+      position:relative;
+      height:100%; }
+
+.intro-section_tech .select-wrap{
+      position:absolute;
+      bottom:-63px;
+      left:50%;
+      -webkit-transform:translateX(-50%);
+      -ms-transform:translateX(-50%);
+      transform:translateX(-50%);
+      margin:0; }
+
+@media screen and (min-width: 768px){
+        .intro-section_tech .select-wrap{
+          left:15px;
+          -webkit-transform:translateX(0);
+          -ms-transform:translateX(0);
+          transform:translateX(0);
+          bottom:-74px; } }
+
 @media screen and (min-width: 768px){
     .intro-section:before{
       content:url("../images/vector1.png");
@@ -4821,7 +4872,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .intro-section .intro-img{
     width:90vw;
     height:47vw;
-    margin:0 0 22px auto; }
+    margin:0 0 22px auto;
+    overflow:hidden; }
 
 @media screen and (min-width: 768px){
       .intro-section .intro-img{
@@ -4841,16 +4893,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         max-height:602px;
         width:53%; } }
 
-.intro-section .intro-img{
-    overflow:hidden; }
-
 .intro-section .intro-img_overflow{
       overflow:visible;
       margin-bottom:60px; }
 
 .intro-section .intro-img img{
       width:100%;
-      height:auto; }
+      height:100%;
+      -o-object-fit:cover;
+      object-fit:cover; }
 
 .intro-section .intro-wrap{
     display:-webkit-box;
@@ -4875,6 +4926,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media screen and (min-width: 1200px){
       .intro-section .intro-wrap{
         padding:120px 0 0 120px; } }
+
+@media screen and (min-width: 1440px){
+      .intro-section .intro-wrap{
+        padding:120px 0 0 0; } }
 
 @media screen and (min-width: 1920px){
       .intro-section .intro-wrap{

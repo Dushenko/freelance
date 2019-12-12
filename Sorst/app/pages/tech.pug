@@ -1,0 +1,88 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.intro-section.intro-section_tech
+			.intro-img
+				img(src="images/tech.jpg", alt="")
+			.container
+				.intro-wrap
+					h1.main-title Manufacturing Technology
+					span.history How expanded metal is produced
+					p.intro-text The metal is inserted on rollers or in the form of plates into the rear of the machine. Each machine is fitted with a special blade which defines the mesh width. The machines are programmed with the necessary parameters and manually controlled by our qualified employees. During the elongation process the raw metal sheet is reformed through systematic slitting and predefined stretching. The metal is either formed into rolls or cut to defined sizes.
+				.select-wrap.js-select
+					span Advantages
+					.select-content.js-scroll
+						ul.select.scroll-wrap
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+							li
+								a(href="#") Advantages
+
+			.fix-soc
+				a(href="#").soc.soc_inst
+				a(href="#").soc.soc_fb
+				a(href="#").soc.soc_you
+
+		section.category-section
+			.container
+				.category-wrap
+					.category
+						.category__text.typography
+							h2 The material metals are made of
+
+							p The correct material is crucial. The ideal metal is relatively soft. High-tensile materials, such as some forms of stainless steel and titanium, are suitable to only a limited extent. The differing characteristics of the metals play an important role in the choice of material for your project.
+
+							p Particularly in the case of stainless steel, we recommend that you obtain detailed advice from the planning phase onwards in order to do justice to the visual characteristics and planarity of the elements. The choice of mesh and the correct dimensioning of the element sizes dictate the applicability of the material. "For the production of expanded metal we predominantly deploy steel, aluminium, sendzimir steel and stainless steel.
+
+							p It is also possible to expand other material. Our specialists are at your disposal for further information. 
+
+						.category__img
+							img(src="images/man-img.jpg", alt="")
+		
+		section.wow.fadeInUp.footer-section
+			.container
+				.link-wrap
+					a(href="tel:4905116767560").tel +49 (0)511-676756-0
+					a(href="tel:49051167675656").fax +49 (0)511-6767565-6
+				p.address Sorst Streckmetall GmbH
+					|
+					br
+					| Wohlenbergstr. 11
+					br
+					| 30179 Hannover
+				a(href="mailto:info@sorst.de").mail info@sorst.de
