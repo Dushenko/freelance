@@ -3070,26 +3070,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media screen and (min-width: 768px){
     .product{
-      width:738px;
+      width:calc(100% - 30px);
+      margin:0 auto;
       -webkit-box-orient:horizontal;
       -webkit-box-direction:normal;
       flex-direction:row;
       -webkit-box-align:end;
       align-items:flex-end; } }
 
-@media screen and (min-width: 1024px){
-    .product{
-      width:998px; } }
+@media screen and (min-width: 768px){
+    .product_revers .product__img{
+      margin-left:auto; } }
 
-@media screen and (min-width: 1200px){
-    .product{
-      width:1178px; } }
-
-@media screen and (min-width: 1920px){
-    .product{
-      width:1320px; } }
-
-.product .product__img{
+.product__img{
     -webkit-box-flex:0;
     flex:none;
     width:290px;
@@ -3098,26 +3091,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     box-shadow:0px 5px 10px rgba(0, 0, 0, 0.1); }
 
 @media screen and (min-width: 768px){
-      .product .product__img{
-        width:515px;
-        height:350px; } }
+      .product__img{
+        width:62%;
+        height:40vw;
+        max-height:500px; } }
 
-@media screen and (min-width: 1024px){
-      .product .product__img{
-        width:639px;
-        height:398px; } }
-
-@media screen and (min-width: 1200px){
-      .product .product__img{
-        width:820px;
-        height:433px; } }
-
-@media screen and (min-width: 1920px){
-      .product .product__img{
-        width:979px;
-        height:513px; } }
-
-.product .product__img img{
+.product__img img{
       width:100%;
       height:100%;
       -o-object-fit:cover;
@@ -3142,20 +3121,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       .product__info{
         top:auto;
         bottom:37px;
-        right:15px;
-        width:340px;
+        left:50%;
+        width:45%;
         position:absolute;
-        padding:34px 80px 34px 26px; } }
+        padding:25px; } }
 
 @media screen and (min-width: 1024px){
       .product__info{
-        right:62px;
-        bottom:52px; } }
-
-@media screen and (min-width: 1920px){
-      .product__info{
-        width:400px;
-        right:26px; } }
+        left:50%;
+        bottom:52px;
+        padding:30px; } }
 
 .product__info:before{
       content:'';
@@ -3213,7 +3188,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       position:absolute;
       line-height:66px;
       bottom:37px;
-      left:26px;
+      left:15px;
       z-index:10; } }
 
 @media screen and (min-width: 1024px){
@@ -3232,7 +3207,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       width:464px;
       height:81px;
       line-height:85px;
-      left:3px; } }
+      left:15px; } }
 
 .product-link:after{
     content:'';
@@ -3362,8 +3337,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width:290px;
   height:47px;
   border:1px solid #0A0854;
-  padding:15px 20px 10px 15px;
-  overflow:hidden;
+  padding:15px 20px 15px 15px;
   background-color:#fff;
   margin-bottom:24px;
   position:relative;
@@ -3400,24 +3374,48 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position:center;
     background-image:url("data:image/svg+xml,%3Csvg width='13' height='11' viewBox='0 0 13 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.36618 9.4975C6.98136 10.1645 6.01864 10.1645 5.63381 9.4975L1.59663 2.49972C1.21202 1.83306 1.69316 1 2.46282 1L10.5372 1C11.3068 1 11.788 1.83306 11.4034 2.49972L7.36618 9.4975Z' stroke='%23ED1C24' stroke-width='2'/%3E%3C/svg%3E%0A"); }
 
+.select-wrap span{
+    font-weight:700;
+    font-size:14px !important;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:#0A0854 !important; }
+
+@media screen and (min-width: 768px){
+      .select-wrap span{
+        font-size:16px !important; } }
+
+.select-content{
+  padding:15px 20px 15px 15px;
+  display:none;
+  border:1px solid #0A0854;
+  border-top:none;
+  background-color:#fff;
+  position:absolute;
+  left:-1px;
+  top:48px;
+  width:290px;
+  z-index:1; }
+
+.select-content.active{
+    display:block; }
+
 .select{
   display:-webkit-box;
   display:flex;
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
   flex-direction:column;
-  padding-right:15px; }
-
-.select.active{
-    height:400px;
-    overflow:hidden;
-    overflow-y:auto; }
+  padding-right:15px;
+  height:400px;
+  overflow:hidden;
+  overflow-y:auto; }
 
 .select li{
     margin-bottom:10px; }
 
 .select a{
-    font-weight:bold;
+    font-weight:700;
     font-size:14px;
     letter-spacing:0.06em;
     text-transform:uppercase;
@@ -3840,7 +3838,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           right:27%; } }
 
 .tovar-slider .small-slider{
-    display:none; }
+    display:none;
+    cursor:pointer; }
 
 @media screen and (min-width: 768px){
       .tovar-slider .small-slider{
@@ -4878,7 +4877,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position:absolute;
     left:0;
     top:8%;
-    z-index:-1; }
+    z-index:0; }
 
 .aplication-section .section-title{
     margin-bottom:27px; }
@@ -5075,27 +5074,43 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media screen and (min-width: 768px){
     .product-section{
-      padding:78px 0 0; } }
+      padding:78px 0; } }
+
+@media screen and (min-width: 1200px){
+    .product-section_first{
+      padding:150px 0 50px; } }
+
+.product-section_first:before{
+    content:url("../images/vector1.png");
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index:-2; }
+
+.product-section_bg:before{
+    content:url("../images/vector.png");
+    position:absolute;
+    left:0;
+    top:7%;
+    z-index:-1; }
+
+@media screen and (min-width: 768px){
+    .product-section_revers .product-link{
+      left:auto;
+      right:0;
+      bottom:0; } }
+
+.product-section .container{
+    position:relative;
+    max-width:1385px; }
 
 .product-section .slider-wrap{
     position:relative; }
 
 @media screen and (min-width: 768px){
       .product-section .slider-wrap{
-        width:790px;
+        width:100%;
         margin:0 auto; } }
-
-@media screen and (min-width: 1024px){
-      .product-section .slider-wrap{
-        width:1050px; } }
-
-@media screen and (min-width: 1200px){
-      .product-section .slider-wrap{
-        width:1230px; } }
-
-@media screen and (min-width: 1920px){
-      .product-section .slider-wrap{
-        width:1328px; } }
 
 .product-section .section-title{
     margin-bottom:30px; }
@@ -5103,16 +5118,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media screen and (min-width: 768px){
       .product-section .section-title{
         position:absolute;
-        right:10%;
-        top:90px; } }
-
-@media screen and (min-width: 900px){
-      .product-section .section-title{
-        right:15%; } }
-
-@media screen and (min-width: 1400px){
-      .product-section .section-title{
-        right:21%; } }
+        right:15px;
+        top:15px; } }
 
 .articles-section{
   padding:80px 0; }
@@ -5195,11 +5202,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media screen and (min-width: 1024px){
     .categories-section{
-      padding:90px 0 110px; } }
+      padding:90px 0 50px; } }
 
 @media screen and (min-width: 1920px){
     .categories-section{
-      padding:100px 0 150px; } }
+      padding:100px 0 100px; } }
 
 .categories-section .categories-wrap{
     display:-webkit-box;

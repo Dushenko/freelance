@@ -335,6 +335,7 @@
 
 	.small-slider {
 		display: none;
+		cursor: pointer;
 		@media screen and (min-width: 768px){
 			display: block;
 			margin: 0 0 0 -5px;
