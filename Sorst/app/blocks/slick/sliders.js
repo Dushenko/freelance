@@ -71,4 +71,23 @@ $(document).ready(function () {
 		]
 	});
 
+	$('.js-big-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: true,
+		pauseOnHover: true,
+		infinite: true,
+		focusOnSelect: false,
+		asNavFor: '.js-small-slider'
+	});
+	$('.js-small-slider').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		asNavFor: '.js-big-slider',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true
+	});
+
 });

@@ -1,17 +1,55 @@
 .tovar-section {
-	padding: 300px 0;
+	padding: 90px 0 50px;
 	position: relative;
+
+	@media screen and (min-width: 1024px){
+		padding: 150px 0 10px;
+	}
+	@media screen and (min-width: 1920px){
+		padding: 237px 0 10px;
+	}
+
+	.container {
+		position: relative;
+	}
 
 	&:before {
 		content: url('../images/vector1.png');
 		position: absolute;
 		right: 0;
-		top: 18%;
+		top: -35%;
 		z-index: -2;
+	}
+
+	.tovar-info {
+		@media screen and (min-width: 768px){
+			width: 50%;
+			padding: 0 15px 0 20px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+		}
+		@media screen and (min-width: 1200px){
+			padding: 0 15px 0 50px;
+		}
+		@media screen and (min-width: 1920px){
+			width: 35%;
+			padding-top: 50px;
+		}
+		h2, p {
+			margin-bottom: 30px;
+		}
+
+		h2 {
+			@media screen and (min-width: 1920px){
+				font-weight: 37;
+				margin-bottom: 40px;
+			}
+		}
 	}
 }
 
-.similar-section {
+.categories-section {
 	padding: 50px 0 110px;
 	@media screen and (min-width: 1024px){
 		padding: 90px 0 110px;
@@ -19,9 +57,14 @@
 	@media screen and (min-width: 1920px){
 		padding: 100px 0 150px;
 	}
+
 	.categories-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 15px 15px 0;
+		box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.1);
 		@media screen and (min-width: 768px){
-			display: flex;
+			padding: 30px 15px 0;
 		}
 
 		.slide {
@@ -32,10 +75,11 @@
 
 		.tovar {
 			width: 100%;
-			@media screen and (min-width: 1024px){
-				width: 100%;
+			@media screen and (min-width: 768px){
+				width: 50%;
 			}
-			@media screen and (min-width: 1200px){
+			@media screen and (min-width: 1024px){
+				width: 33.33%;
 			}
 		}
 	}

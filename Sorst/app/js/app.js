@@ -22,6 +22,13 @@ $(document).ready(function () {
 		})
 	}
 
+	//select 
+	$('.js-select').click( function () {
+		$(this).toggleClass('active');
+		$('.js-scroll').toggleClass('active');
+	});
+
+
 	//lang
 	$('.js-lang').click( function () {
 		$('.langs').slideToggle('active');

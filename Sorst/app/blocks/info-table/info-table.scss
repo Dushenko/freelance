@@ -1,0 +1,23 @@
+.info-table {
+	.row {
+		display: flex;
+		margin-bottom: 15px;
+	}
+
+	span {
+		font-size: 12px;
+		color: #868686;
+		width: 50%;
+		padding-right: 15px;
+
+		&:nth-child(2) {
+			font-weight: 700;
+			color: #1B222A;
+			text-align: right;
+			padding-right: 0;
+			@media screen and (min-width: 1920px){
+				text-align: left;
+			}
+		}
+	}
+}
