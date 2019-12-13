@@ -1,0 +1,49 @@
+.error-section {
+	height: 100vh;
+	background-image: url('../images/404.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100vh;
+		padding-top: 114px;
+	}
+
+	.error-number {
+		font-weight: 900;
+		font-size: 103px;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: #1B222A;
+		margin-bottom: 32px;
+		@media screen and (min-width: 768px) {
+			font-size: 114px;
+			margin-bottom: 40px;
+		}
+		@media screen and (min-width: 1024px) {
+
+		}
+	}
+
+	.error-text {
+		max-width: 440px;
+		width: 100%;
+		font-size: 12px;
+		line-height: 170%;
+		text-align: center;
+		color: #1B222A;
+		margin-bottom: 40px;
+		@media screen and (min-width: 768px) {
+			margin-bottom: 50px;
+		}
+		@media screen and (min-width: 1024px) {
+			font-size: 14px;
+		}
+	}
+}

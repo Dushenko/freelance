@@ -1,0 +1,20 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header_white
+
+block content
+	main.main
+
+		section.error-section
+			.container
+				span.error-number 404
+				p.error-text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+				a(href="index.html").main-btn back to home
+
+
+			
+		

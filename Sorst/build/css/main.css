@@ -2899,6 +2899,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         margin:0 31px; } }
 
 .nav__link{
+    font-weight:500;
     font-size:14px;
     letter-spacing:0.1em;
     text-transform:uppercase;
@@ -2958,6 +2959,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   position:relative; }
 
 .lang-wrap .lang{
+    font-weight:500;
     font-size:14px;
     letter-spacing:0.1em;
     text-transform:uppercase;
@@ -3475,23 +3477,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   position:relative;
   cursor:pointer; }
 
-.select-wrap.active{
-    height:auto; }
-
 .select-wrap.active:after{
-      -webkit-transform:rotate(180deg);
-      -ms-transform:rotate(180deg);
-      transform:rotate(180deg); }
-
-.select-wrap:before{
-    content:'';
-    position:absolute;
-    width:40px;
-    height:45px;
-    top:0;
-    right:0;
-    z-index:1;
-    background-color:#fff; }
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg); }
 
 .select-wrap:after{
     content:'';
@@ -3525,7 +3514,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-color:#fff;
   position:absolute;
   left:-1px;
-  top:48px;
+  top:46px;
   width:290px;
   z-index:1; }
 
@@ -4331,6 +4320,57 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       font-size:14px;
       line-height:1.7; } }
 
+.error-section{
+  height:100vh;
+  background-image:url("../images/404.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover; }
+
+.error-section .container{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    align-items:center;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    height:100vh;
+    padding-top:114px; }
+
+.error-section .error-number{
+    font-weight:900;
+    font-size:103px;
+    text-align:center;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:#1B222A;
+    margin-bottom:32px; }
+
+@media screen and (min-width: 768px){
+      .error-section .error-number{
+        font-size:114px;
+        margin-bottom:40px; } }
+
+.error-section .error-text{
+    max-width:440px;
+    width:100%;
+    font-size:12px;
+    line-height:170%;
+    text-align:center;
+    color:#1B222A;
+    margin-bottom:40px; }
+
+@media screen and (min-width: 768px){
+      .error-section .error-text{
+        margin-bottom:50px; } }
+
+@media screen and (min-width: 1024px){
+      .error-section .error-text{
+        font-size:14px; } }
+
 .about-section{
   padding:60px 0;
   position:relative;
@@ -5089,6 +5129,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         padding:120px 0 0 120px; } }
 
 @media screen and (min-width: 1440px){
+      .intro-section .intro-wrap{
+        padding:120px 0 0 50px; } }
+
+@media screen and (min-width: 1600px){
       .intro-section .intro-wrap{
         padding:120px 0 0 0; } }
 
