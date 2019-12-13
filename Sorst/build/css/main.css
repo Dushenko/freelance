@@ -3781,6 +3781,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       .about-slider:after{
         display:none; } }
 
+@media screen and (min-width: 768px){
+    .about-slider .slick-list{
+      max-height:430px; } }
+
 .about-slider .slick-slide{
     margin:0;
     width:100%;
@@ -4983,12 +4987,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media screen and (min-width: 768px){
     .intro-section{
-      height:47vw;
       background-image:url("../images/main.bg.png"); } }
-
-@media screen and (min-width: 1024px){
-    .intro-section{
-      height:43vw; } }
 
 @media screen and (min-width: 1920px){
     .intro-section{
@@ -5083,23 +5082,40 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       .intro-section .intro-img{
         position:absolute;
         width:50%;
-        height:33vw;
+        max-height:320px;
         margin:0;
         right:0;
         top:105px; } }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1024px){
+      .intro-section .intro-img{
+        max-height:400px; } }
+
+@media screen and (min-width: 1400px){
       .intro-section .intro-img{
         top:139px; } }
 
 @media screen and (min-width: 1920px){
       .intro-section .intro-img{
-        max-height:602px;
+        max-height:502px;
         width:53%; } }
 
 .intro-section .intro-img_overflow{
       overflow:visible;
       margin-bottom:60px; }
+
+@media screen and (min-width: 768px){
+        .intro-section .intro-img_overflow{
+          margin-bottom:20px; } }
+
+@media screen and (min-width: 1400px){
+        .intro-section .intro-img_overflow{
+          top:139px;
+          bottom:auto; } }
+
+@media screen and (min-width: 1920px){
+        .intro-section .intro-img_overflow{
+          bottom:0; } }
 
 .intro-section .intro-img img{
       width:100%; }

@@ -163,6 +163,12 @@
 			display: none;
 		}
 	}
+
+	.slick-list {
+		@media screen and (min-width: 768px) {
+			max-height: 430px;
+		}
+	}
 	
 	.slick-slide {
 		margin: 0;
