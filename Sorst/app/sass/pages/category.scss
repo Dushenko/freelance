@@ -10,15 +10,35 @@
 	.section-title {
 		margin-bottom: 50px;
 	}
+
+	p {
+		margin-bottom: 30px;
+	}
 }
 
 .category-wrap {
+
+	&_article {
+		.category {
+			&__text {
+				@media screen and (min-width: 768px){
+					width: 40%;
+				}
+			}
+
+			&__img {
+				@media screen and (min-width: 768px){
+					width: 60%;
+				}
+			}
+		}
+	}
 
 	.category {
 		display: flex;
 		flex-direction: column;
 
-		&:nth-child(2n+1) {
+		&:nth-of-type(2n+1) {
 			@media screen and (min-width: 768px){
 				flex-direction: row;
 			}
@@ -30,7 +50,7 @@
 			}
 		}
 
-		&:nth-child(2n) {
+		&:nth-of-type(2n) {
 			@media screen and (min-width: 768px){
 				flex-direction: row-reverse;
 			}

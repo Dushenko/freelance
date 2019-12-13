@@ -25,7 +25,7 @@
             </ul>
             <div class="fix-soc"><a class="soc soc_inst" href="#"></a><a class="soc soc_fb" href="#"></a><a class="soc soc_you" href="#"></a></div>
           </nav>
-          <div class="info-wrap"><span class="call"> </span>
+          <div class="info-wrap"><span class="call js-open-modal"></span>
             <div class="lang-wrap js-lang"><a class="lang" href="#">EN</a>
               <div class="langs"><a class="lang" href="#">EN</a><a class="lang" href="#">RU</a><a class="lang" href="#">DE</a></div>
             </div>
@@ -33,6 +33,26 @@
           <div class="burger js-burger"><span></span><span></span><span></span></div>
         </div>
       </header>
+      <div class="mask js-mask"></div>
+      <div class="modal js-modal"><span class="modal-close js-modal-close"></span>
+        <form class="modalForm" action="#" id="" method="">
+          <div class="modalForm__wrap"><span class="modalForm__title">Feedback</span>
+            <input class="modalForm__input" type="text" placeholder="First name">
+            <input class="modalForm__input" type="text" placeholder="Email">
+            <input class="modalForm__input" type="text" placeholder="Contact number">
+            <label class="modalForm__label">Your question</label>
+            <textarea class="modalForm__textarea" type="text" placeholder=""></textarea>
+            <button class="modalForm__btn main-btn" type="submit">send</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal js-thanks"><span class="modal-close js-modal-close"></span>
+        <form class="modalForm" action="#" id="" method="">
+          <div class="modalForm__wrap"><span class="modalForm__title">thanks!</span>
+            <p class="modalForm__text">In the near future, our staff will contact you.</p>
+          </div>
+        </form>
+      </div>
       <main class="main">
         <section class="catalog-section first-bg">
           <div class="container">
@@ -122,7 +142,7 @@
             <div class="col col_center"><a href="#">Legal Notice</a><a href="#">Data Privacy Policy</a><a href="#">Terms and Conditions</a></div>
             <div class="col col_right">
               <p>
-                 Sorst Streckmetall GmbH<br>Wohlenbergstr. 11<br>30179 Hannover </p><a class="main-btn" href="#">Connect with us</a>
+                 Sorst Streckmetall GmbH<br>Wohlenbergstr. 11<br>30179 Hannover </p><a class="main-btn js-open-modal" href="#">Connect with us</a>
             </div>
           </div>
           <div class="copyright-wrap"><span>Copyright:xxxxxxxxxxxxxxxxx</span><span>Copyright photos: Sorst Streckmetall GmbH </span><span>Liability</span>

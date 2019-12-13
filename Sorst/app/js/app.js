@@ -39,6 +39,17 @@ $(document).ready(function () {
 		$('.js-filter-form').toggleClass('active');
 	});
 
+	//modal
+	$(".js-open-modal").click( function () {
+		$('.js-mask').fadeIn();
+		$('.js-modal').fadeIn();
+	});
+
+	$(".js-modal-close").click( function () {
+		$('.js-mask').fadeOut();
+		$('.js-modal').fadeOut();
+	});
+
 	//wow animation
 	new WOW().init();
 

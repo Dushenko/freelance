@@ -3056,6 +3056,139 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     color:#1B222A;
     padding-right:0; }
 
+.mask{
+  position:fixed;
+  width:100%;
+  height:100vh;
+  background-color:rgba(0, 0, 0, 0.5);
+  z-index:50;
+  display:none; }
+
+.mask.active{
+    display:block; }
+
+.modal{
+  position:fixed;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  z-index:60;
+  display:none; }
+
+.modal.active{
+    display:block; }
+
+.modal .modal-close{
+    position:absolute;
+    top:22px;
+    right:11px;
+    width:20px;
+    height:20px;
+    cursor:pointer; }
+
+.modal .modal-close:before, .modal .modal-close:after{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:15px;
+      height:2px;
+      background:#0A0854;
+      -webkit-transform:rotate(45deg);
+      -ms-transform:rotate(45deg);
+      transform:rotate(45deg); }
+
+.modal .modal-close:after{
+      -webkit-transform:rotate(-45deg);
+      -ms-transform:rotate(-45deg);
+      transform:rotate(-45deg); }
+
+.modalForm__wrap{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  -webkit-box-align:center;
+  align-items:center;
+  width:290px;
+  background-color:#fff;
+  border:5px solid #DEEFFF;
+  box-shadow:0px 14px 34px rgba(0, 0, 0, 0.1);
+  padding:30px 15px 16px; }
+
+@media screen and (min-width: 768px){
+    .modalForm__wrap{
+      width:410px;
+      padding:34px 24px 39px; } }
+
+.modalForm__title{
+  font-weight:700;
+  font-size:16px;
+  line-height:15px;
+  text-align:center;
+  letter-spacing:0.2em;
+  text-transform:uppercase;
+  color:#0A0854;
+  margin-bottom:26px; }
+
+.modalForm__input{
+  width:260px;
+  height:37px;
+  border:1px solid #0A0854;
+  font-size:14px;
+  color:#1B222A;
+  padding:18px 15px;
+  margin-bottom:22px; }
+
+@media screen and (min-width: 768px){
+    .modalForm__input{
+      width:350px; } }
+
+.modalForm__input::-webkit-input-placeholder{
+    font-size:14px;
+    color:#1B222A; }
+
+.modalForm__input::-ms-input-placeholder{
+    font-size:14px;
+    color:#1B222A; }
+
+.modalForm__input::placeholder{
+    font-size:14px;
+    color:#1B222A; }
+
+.modalForm__textarea{
+  width:260px;
+  height:100px;
+  border:1px solid #0A0854;
+  font-size:14px;
+  color:#1B222A;
+  padding:15px;
+  margin-bottom:22px;
+  resize:none; }
+
+@media screen and (min-width: 768px){
+    .modalForm__textarea{
+      width:350px; } }
+
+.modalForm__label{
+  font-size:14px;
+  line-height:170%;
+  color:#1B222A;
+  padding-left:15px;
+  margin-right:auto; }
+
+.modalForm__text{
+  font-size:16px;
+  line-height:130%;
+  text-align:center;
+  color:#1B222A; }
+
+.modalForm__btn{
+  margin-left:auto; }
+
 .product{
   display:-webkit-box;
   display:flex;
@@ -4412,6 +4545,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .category-section .section-title{
     margin-bottom:50px; }
 
+.category-section p{
+    margin-bottom:30px; }
+
+@media screen and (min-width: 768px){
+  .category-wrap_article .category__text{
+    width:40%; } }
+
+@media screen and (min-width: 768px){
+  .category-wrap_article .category__img{
+    width:60%; } }
+
 .category-wrap .category{
   display:-webkit-box;
   display:flex;
@@ -4420,23 +4564,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   flex-direction:column; }
 
 @media screen and (min-width: 768px){
-    .category-wrap .category:nth-child(2n+1){
+    .category-wrap .category:nth-of-type(2n+1){
       -webkit-box-orient:horizontal;
       -webkit-box-direction:normal;
       flex-direction:row; } }
 
 @media screen and (min-width: 768px){
-    .category-wrap .category:nth-child(2n+1) .category__text{
+    .category-wrap .category:nth-of-type(2n+1) .category__text{
       padding-right:30px; } }
 
 @media screen and (min-width: 768px){
-    .category-wrap .category:nth-child(2n){
+    .category-wrap .category:nth-of-type(2n){
       -webkit-box-orient:horizontal;
       -webkit-box-direction:reverse;
       flex-direction:row-reverse; } }
 
 @media screen and (min-width: 768px){
-    .category-wrap .category:nth-child(2n) .category__text{
+    .category-wrap .category:nth-of-type(2n) .category__text{
       padding-left:30px; } }
 
 .category{
@@ -4810,6 +4954,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .intro-section{
       max-height:840px; } }
 
+.intro-section_bg .intro-img{
+    max-height:418px; }
+
+@media screen and (min-width: 768px){
+      .intro-section_bg .intro-img{
+        top:auto !important;
+        bottom:0 !important; } }
+
+.intro-section_bg .intro-img img{
+      width:100%;
+      height:100%;
+      -o-object-fit:cover;
+      object-fit:cover; }
+
 .intro-section_tech{
     padding-bottom:70px;
     height:auto; }
@@ -4825,6 +4983,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         .intro-section_tech .intro-img{
           top:auto !important;
           bottom:0 !important; } }
+
+.intro-section_tech .intro-img img{
+        width:100%;
+        height:100%;
+        -o-object-fit:cover;
+        object-fit:cover; }
 
 .intro-section_tech:after{
       content:'';
@@ -4898,10 +5062,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       margin-bottom:60px; }
 
 .intro-section .intro-img img{
-      width:100%;
-      height:100%;
-      -o-object-fit:cover;
-      object-fit:cover; }
+      width:100%; }
 
 .intro-section .intro-wrap{
     display:-webkit-box;
@@ -4935,6 +5096,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       .intro-section .intro-wrap{
         padding:150px 0 0 0;
         width:43%; } }
+
+.intro-section .time{
+    font-size:16px;
+    line-height:15px;
+    letter-spacing:0.26em;
+    text-transform:uppercase;
+    color:#FFFFFF;
+    margin-bottom:20px; }
 
 .intro-section .main-title{
     margin-bottom:30px; }

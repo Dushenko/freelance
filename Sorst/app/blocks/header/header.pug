@@ -25,7 +25,7 @@ header.header
 				a(href="#").soc.soc_you
 
 		.info-wrap
-			span.call 
+			span.call.js-open-modal
 
 			.lang-wrap.js-lang
 				a(href="#").lang EN
@@ -38,3 +38,24 @@ header.header
 			span
 			span
 			span
+
+.mask.js-mask
+
+.modal.js-modal
+	span.modal-close.js-modal-close
+	form(action="#" id="" method="").modalForm
+		.modalForm__wrap
+			span.modalForm__title Feedback
+			input(type="text" placeholder="First name").modalForm__input
+			input(type="text" placeholder="Email").modalForm__input
+			input(type="text" placeholder="Contact number").modalForm__input
+			label.modalForm__label Your question
+			textarea(type="text" placeholder="").modalForm__textarea
+			button(type="submit").modalForm__btn.main-btn send
+
+.modal.js-thanks
+	span.modal-close.js-modal-close
+	form(action="#" id="" method="").modalForm
+		.modalForm__wrap
+			span.modalForm__title thanks!
+			p.modalForm__text In the near future, our staff will contact you.

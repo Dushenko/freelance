@@ -25,7 +25,7 @@
             </ul>
             <div class="fix-soc"><a class="soc soc_inst" href="#"></a><a class="soc soc_fb" href="#"></a><a class="soc soc_you" href="#"></a></div>
           </nav>
-          <div class="info-wrap"><span class="call"> </span>
+          <div class="info-wrap"><span class="call js-open-modal"></span>
             <div class="lang-wrap js-lang"><a class="lang" href="#">EN</a>
               <div class="langs"><a class="lang" href="#">EN</a><a class="lang" href="#">RU</a><a class="lang" href="#">DE</a></div>
             </div>
@@ -33,6 +33,26 @@
           <div class="burger js-burger"><span></span><span></span><span></span></div>
         </div>
       </header>
+      <div class="mask js-mask"></div>
+      <div class="modal js-modal"><span class="modal-close js-modal-close"></span>
+        <form class="modalForm" action="#" id="" method="">
+          <div class="modalForm__wrap"><span class="modalForm__title">Feedback</span>
+            <input class="modalForm__input" type="text" placeholder="First name">
+            <input class="modalForm__input" type="text" placeholder="Email">
+            <input class="modalForm__input" type="text" placeholder="Contact number">
+            <label class="modalForm__label">Your question</label>
+            <textarea class="modalForm__textarea" type="text" placeholder=""></textarea>
+            <button class="modalForm__btn main-btn" type="submit">send</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal js-thanks"><span class="modal-close js-modal-close"></span>
+        <form class="modalForm" action="#" id="" method="">
+          <div class="modalForm__wrap"><span class="modalForm__title">thanks!</span>
+            <p class="modalForm__text">In the near future, our staff will contact you.</p>
+          </div>
+        </form>
+      </div>
       <main class="main">
         <section class="intro-section">
           <div class="intro-img"><img src="images/intro.jpg" alt=""></div>
@@ -131,23 +151,23 @@
             <div class="section-head">
               <h2 class="section-title">articles</h2><a class="link-btn" href="#">all articles</a>
             </div>
-            <div class="articles-wrap"><a class="article typography" href="#">
+            <div class="articles-wrap"><a class="article typography" href="article.html">
                 <div class="article__img"><img src="images/art1.jpg" alt=""></div>
                 <div class="article__wrap">
                   <div class="article__date"><span>18:40</span><span>20.08.2019</span></div>
-                  <h3>Название статьи номер тридцать три</h3>
+                  <h3>Article title number thirty three</h3>
                   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><span class="article__link">see more</span>
-                </div></a><a class="article typography" href="#">
-                <div class="article__img"><img src="images/art1.jpg" alt=""></div>
+                </div></a><a class="article typography" href="article.html">
+                <div class="article__img"><img src="images/art.jpg" alt=""></div>
                 <div class="article__wrap">
                   <div class="article__date"><span>18:40</span><span>20.08.2019</span></div>
-                  <h3>Название статьи номер тридцать три</h3>
+                  <h3>Article title number thirty three</h3>
                   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><span class="article__link">see more</span>
-                </div></a><a class="article typography" href="#">
-                <div class="article__img"><img src="images/art1.jpg" alt=""></div>
+                </div></a><a class="article typography" href="article.html">
+                <div class="article__img"><img src="images/cat.jpg" alt=""></div>
                 <div class="article__wrap">
                   <div class="article__date"><span>18:40</span><span>20.08.2019</span></div>
-                  <h3>Название статьи номер тридцать три</h3>
+                  <h3>Article title number thirty three</h3>
                   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><span class="article__link">see more</span>
                 </div></a></div>
           </div>
@@ -165,7 +185,7 @@
             <div class="col col_center"><a href="#">Legal Notice</a><a href="#">Data Privacy Policy</a><a href="#">Terms and Conditions</a></div>
             <div class="col col_right">
               <p>
-                 Sorst Streckmetall GmbH<br>Wohlenbergstr. 11<br>30179 Hannover </p><a class="main-btn" href="#">Connect with us</a>
+                 Sorst Streckmetall GmbH<br>Wohlenbergstr. 11<br>30179 Hannover </p><a class="main-btn js-open-modal" href="#">Connect with us</a>
             </div>
           </div>
           <div class="copyright-wrap"><span>Copyright:xxxxxxxxxxxxxxxxx</span><span>Copyright photos: Sorst Streckmetall GmbH </span><span>Liability</span>
