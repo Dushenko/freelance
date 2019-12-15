@@ -41,21 +41,16 @@
 		position: absolute !important;
 		bottom: 19px;
 		left: -20px;
-		@media screen and (min-width: 768px) {
-
-		}
-		@media screen and (min-width: 1024px) {
-
-		}
+		
 		@media screen and (min-width: 1200px) {
-			width: 232px;
-			height: 52px;
+			min-width: 232px;
+			min-height: 52px;
 			left: -28px;
 			bottom: 28px;
 		}
 		@media screen and (min-width: 1920px) {
-			width: 281px;
-			height: 64px;
+			min-width: 281px;
+			min-height: 64px;
 		}
 	}
 }

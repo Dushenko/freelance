@@ -2,6 +2,7 @@
     position: relative;
     overflow: hidden;
     display: block;
+    height: 100%;
     margin: 0;
     padding: 0;
     &:focus {
@@ -37,6 +38,9 @@
     .slick-loading & {
         visibility: hidden;
     }
+}
+.slick-slide > div {
+    height: 100%;
 }
 .slick-slide {
     float: left;
