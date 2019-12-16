@@ -16,10 +16,19 @@
           <div class="new-container">
             <div class="element element_phone"><a class="element__link" href="#">+7 495 434-24-91</a></div>
             <div class="element element_address"><a class="element__link" href="#">Москва, улица Миклухо-Маклая, 10</a></div>
-            <div class="element element_data"><span class="element__day">ПН-ПТ:</span><span class="element__time">08:00-20:00,</span><span class="element__day">СБ:</span><span class="element__time">09:00-18:00</span></div>
+            <div class="element element_data">
+              <h2 class="header-data"><span>ПН-ПТ: </span>08:00-20:00, <span>СБ: </span>09:00-18:00</h2>
+            </div>
+            <div class="lk-wrapper"><a href="#">Профиль</a><a href="#">Выход</a>
+              <form class="searchForm js-form" action="#">
+                <div class="searchForm__wrap"><span class="searchForm__icon searchForm__icon_open js-form-open"></span><span class="searchForm__icon searchForm__icon_close js-form-close"></span>
+                  <input class="searchForm__input" type="text" placeholder="Поиск">
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="header-logo">
+        <div class="header-logo nav-dark">
           <div class="new-container">
             <div class="burger-menu"><a class="new-logo" href="#"><img src="images/main-logo.svg" alt=""></a>
               <nav class="burgerNav">
@@ -27,15 +36,15 @@
                   <div class="burger-logo"><img src="images/main-logo.svg" alt=""></div><span class="close-burger"></span>
                 </div>
                 <ul class="burgerNav__list">
-                  <li class="burgerNav__item"><a class="burgerNav__link" href="#">Центр</a>
+                  <li class="burgerNav__item"><a class="burgerNav__link has-children" href="#">Центр</a>
                     <ul class="burgerNav__sub-list">
-                      <li class="burgerNav__sub-item"><a class="burgerNav__sub-link" href="https://vk.com/feed">O центре</a></li>
+                      <li class="burgerNav__sub-item"><a class="burgerNav__sub-link" href="#">O центре</a></li>
                       <li class="burgerNav__sub-item"><a class="burgerNav__sub-link" href="#">Новости</a></li>
                     </ul>
                   </li>
                   <li class="burgerNav__item"><a class="burgerNav__link" href="#">Услуги и цены</a></li>
                   <li class="burgerNav__item"><a class="burgerNav__link" href="#">Специалисты</a></li>
-                  <li class="burgerNav__item"><a class="burgerNav__link" href="#">Пациенту</a>
+                  <li class="burgerNav__item"><a class="burgerNav__link has-children" href="#">Пациенту</a>
                     <ul class="burgerNav__sub-list">
                       <li class="burgerNav__sub-item"><a class="burgerNav__sub-link" href="#">Условия приёма</a></li>
                       <li class="burgerNav__sub-item"><a class="burgerNav__sub-link" href="#">Страховые организации</a></li>
@@ -44,7 +53,7 @@
                       <li class="burgerNav__sub-item"><a class="burgerNav__sub-link" href="#">Запись на приём</a></li>
                     </ul>
                   </li>
-                  <li class="burgerNav__item"><a class="burgerNav__link noafter" href="#">Контакты</a></li><a class="main-btn main-btn_blue" href="#">Запись на приём</a>
+                  <li class="burgerNav__item"><a class="burgerNav__link" href="#">Контакты</a></li><a class="main-btn main-btn_blue" href="#">Запись на приём</a>
                 </ul><a class="signin-po" href="#">Вход в личный кабинет</a>
               </nav><span class="burger-btn"></span>
             </div>
@@ -75,8 +84,8 @@
               </div>
               <div class="filterForm__search">
                 <div class="searchInput">
-                  <input class="searchInput__input" type="text" placeholder="Поиск врача по имени">
-                  <botton class="searchInput__btn" type="submit"></botton>
+                  <input class="searchInput__input" type="search" placeholder="Поиск врача по имени">
+                  <button class="searchInput__btn" type="submit"></button>
                 </div>
               </div>
             </div>
@@ -96,7 +105,7 @@
             </div>
             <div class="team-item"><a class="image" href="#"><img src="images/doctor1.jpg" alt=""></a><a href="#">
                 <h5 class="header">Карпова Беатриса Александровна</h5></a>
-              <p class="subheader">Терапия</p>
+              <p class="subheader">Кардиологически вмешательный процесс</p>
               <p class="cut">КМН, стаж работы 14 лет</p>
               <div class="social">
                 <ul>
@@ -180,6 +189,18 @@
             </div>
           </div>
           <div class="show-more"><span class="main-btn main-btn_violet">Все специалисты</span></div>
+          <div id="paginate">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#" rel="prev"></a></li>
+              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">8</a></li>
+              <li class="page-item"><a class="page-link" href="#">9</a></li>
+              <li class="page-item"><a class="page-link" href="#" rel="next"></a></li>
+            </ul>
+          </div>
         </div>
       </main>
       <section id="ltx-widgets-footer" style="padding-bottom: 120px;">
@@ -324,6 +345,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs/caleandar.js"></script>
     <script src="js/libs/timeSelection.js"></script>
+    <script src="js/libs/jsscript03.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

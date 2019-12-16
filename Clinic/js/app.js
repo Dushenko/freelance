@@ -103,12 +103,20 @@ document.addEventListener('DOMContentLoaded', function () {
       $(this).next().slideToggle();
       $(this).toggleClass('active');
     });
-  }
+  } //burger
+
 
   $('.burger-btn').click(function () {
     $('.burgerNav').addClass('active');
   });
   $('.close-burger').click(function () {
     $('.burgerNav').removeClass('active');
+  }); //search form
+
+  $('.js-form-open').click(function () {
+    $('.js-form').addClass('show');
+  });
+  $('.js-form-close').click(function () {
+    $('.js-form').removeClass('show');
   });
 });
