@@ -15493,9 +15493,18 @@ button{
   flex-wrap:wrap;
   margin:0 -10px; }
 .specialists-wrap .team-item{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -webkit-box-align:center;
+    align-items:center;
+    -webkit-box-pack:center;
+    justify-content:center;
     max-width:280px;
     width:100%;
-    padding:24px 12px 57px;
+    padding:23px 12px 20px;
     margin:0 10px 20px; }
 @media screen and (max-width: 768px){
       .specialists-wrap .team-item{
@@ -15505,21 +15514,22 @@ button{
         margin:0 7px 10px;
         padding:15px 7px; } }
 .specialists-wrap .team-item .image{
-    width:210px;
-    height:210px; }
+    width:203px;
+    height:203px; }
 @media screen and (max-width: 768px){
       .specialists-wrap .team-item .image{
         width:130px;
-        height:130px; } }
+        height:130px;
+        text-align:center; } }
 .specialists-wrap .header{
     font-family:'MuseoSans medium';
-    font-size:15px !important;
+    font-size:14px !important;
     color:#2D3663;
     margin-bottom:5px !important; }
 .specialists-wrap .subheader{
-    max-width:200px;
+    max-width:100%;
     min-width:55px;
-    padding:3px 10px !important; }
+    padding:4px 10px !important; }
 .specialists-wrap .social .soc-links{
     width:35px;
     height:35px;
@@ -15543,7 +15553,7 @@ button{
 .team-item{
   text-align:center;
   background-color:#edf3f6;
-  padding:64px 16px;
+  padding:64px 10px;
   border-radius:8px;
   background-clip:padding-box;
   display:-webkit-box;
@@ -15574,7 +15584,7 @@ button{
   font-size:14px;
   padding:0 40px; }
 .team-item .cut{
-  margin-top:16px; }
+  margin-top:15px; }
 .team-item .image{
   width:355px;
   height:355px;
@@ -15582,7 +15592,7 @@ button{
   position:relative;
   margin:0 auto;
   display:inline-block;
-  margin-bottom:30px;
+  margin-bottom:23px;
   border-radius:50%;
   -webkit-transition:all .3s ease;
   transition:all .3s ease; }
@@ -15624,7 +15634,7 @@ button{
 .team-item ul{
   list-style:none;
   text-align:center;
-  margin:24px 0 0 -6px;
+  margin:0;
   padding:0; }
 .team-item ul li{
   display:inline-block;
