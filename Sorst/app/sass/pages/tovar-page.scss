@@ -13,17 +13,6 @@
 		position: relative;
 	}
 
-	// &:after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	z-index: -1;
-	// 	width: 100%;
-	// 	height: 40vw;
-	// 	left: 0;
-	// 	top: 30%;
-	// 	background: #F5F9FF;
-	// }
-
 	&:before {
 		content: url('../images/vector1.png');
 		position: absolute;

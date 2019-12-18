@@ -1,5 +1,21 @@
 "use strict";
 
+$(document).ready(function () {
+  $(".accordion > .accordion__head").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).siblings(".accordion__content").slideUp(200);
+      $(".accordion > .accordion__head .accordion__btn").removeClass("top").addClass("down");
+    } else {
+      $(".accordion > .accordion__head .accordion__btn").removeClass("top").addClass("down");
+      $(this).find(".accordion__btn").removeClass("down").addClass("top");
+      $(".accordion > .accordion__head").removeClass("active");
+      $(this).addClass("active");
+      $(".accordion__content").slideUp(200);
+      $(this).siblings(".accordion__content").slideDown(200);
+    }
+  });
+});
 $(document).ready(function () {});
 $(document).ready(function () {
   $('.js-prod-slider').slick({
@@ -30,7 +46,10 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: true,
     arrows: true,
-    infinite: true
+    infinite: true,
+    appendDots: $('.dots'),
+    prevArrow: $('.prev'),
+    nextArrow: $('.next')
   });
   $('.js-product-slider').slick({
     slidesToShow: 1,
@@ -81,6 +100,18 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
+  //tabs
+  $(function () {
+    $("ul.js-tab-btn").on("click", "li:not(.active)", function () {
+      $(this).addClass("active").siblings().removeClass("active").closest("div.js-tabs").find("div.js-tab-content").removeClass("active").eq($(this).index()).addClass("active");
+    });
+  });
+  $('.js-tab-btn li a').click(function () {
+    var selected = $(this).text();
+    $('.select-text').text(selected);
+  });
+});
+$(document).ready(function () {
   // $('.js-burger').click( function () {
   // 	$(this).toggleClass('active');
   // 	$('.js-nav').toggleClass('active');
@@ -122,6 +153,21 @@ $(document).ready(function () {
   $(".js-modal-close").click(function () {
     $('.js-mask').fadeOut();
     $('.js-modal').fadeOut();
+  }); //video
+
+  $(".js-open-video").click(function () {
+    $('.js-video-mask').fadeIn();
+    $('.js-video').fadeIn();
+    $('body').addClass('overflow');
+  });
+  $('.js-close-video').click(function () {
+    $('.js-video').fadeOut();
+    $('.js-video-mask').fadeOut();
+    $('body').removeClass('overflow');
+    var videoURL = $('#video').prop('src');
+    videoURL = videoURL.replace("&autoplay=1", "");
+    $('#video').prop('src', '');
+    $('#video').prop('src', videoURL);
   }); //close custom select
 
   jQuery(function ($) {

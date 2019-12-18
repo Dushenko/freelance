@@ -44,22 +44,69 @@ block content
 					p We only
 						mark achieve the best through 
 						| constantly improving ourselves
+
+				.about-text.typography
+					h2 About US
+
+					p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+					p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
 				.advantages-wrap
 					.typography
 						h2 advantages
 						p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
 					.img-wrap
-						a(href="#").main-btn Watch the video
+						a(href="#").main-btn.js-open-video Watch the video
 						img(src="images/man-img.jpg", alt="")
-
-					ul.advantages-list
-						li engineering
-						li service
-						li added value
-						li samples
-						li substitution
-						li quality management
+						.video-mask.js-video-mask
+						.video-wrap.js-video
+							span.video-close.js-close-video
+							iframe(src="https://www.youtube.com/embed/tt2k8PGm-TI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")#video
+					.advantages-list
+						.accordion
+							.accordion__head
+								span engineering
+							.accordion__content
+								.typography
+									p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						.accordion
+							.accordion__head
+								span service
+							.accordion__content
+								.typography
+									p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						.accordion
+							.accordion__head
+								span service
+							.accordion__content
+								.typography
+									p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						.accordion
+							.accordion__head
+								span added value
+							.accordion__content
+								.typography
+									p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						.accordion
+							.accordion__head
+								span samples
+							.accordion__content
+								.typography
+									p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						.accordion
+							.accordion__head
+								span substitution
+							.accordion__content
+								.typography
+									p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						.accordion
+							.accordion__head
+								span quality management
+							.accordion__content
+								.typography
+									p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 		section.wow.fadeInUp.about-us-section.about-us-section_big
 			.container

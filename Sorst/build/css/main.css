@@ -276,10 +276,19 @@ select{
   overflow:hidden; }
 
 .container{
-  max-width:1355px;
+  max-width:1250px;
   width:100%;
   margin:0 auto;
   padding:0 15px; }
+
+@media screen and (min-width: 768px){
+    .container{
+      padding:0 25px; } }
+
+@media screen and (min-width: 1500px){
+    .container{
+      max-width:1350px;
+      padding:0 15px; } }
 
 .section-head{
   display:-webkit-box;
@@ -313,6 +322,54 @@ select{
 .scroll-wrap::-webkit-scrollbar-thumb{
   background-color:#ED1C24;
   border-radius:2px; }
+
+.accordion{
+  margin-bottom:20px; }
+
+.accordion__head span{
+    cursor:pointer;
+    position:relative;
+    padding-left:40px;
+    font-weight:700;
+    font-size:14px;
+    line-height:19px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:#0A0854;
+    margin-bottom:10px; }
+
+@media screen and (min-width: 768px){
+      .accordion__head span{
+        margin:0 25px 30px; } }
+
+@media screen and (min-width: 1024px){
+      .accordion__head span{
+        margin:0 0 30px; } }
+
+.accordion__head span:before{
+      content:'';
+      position:absolute;
+      top:calc(50% - 15px);
+      left:0;
+      width:30px;
+      height:30px;
+      background-repeat:no-repeat;
+      background-size:contain;
+      background-position:center;
+      background-image:url("data:image/svg+xml,%3Csvg width='34' height='32' viewBox='0 0 34 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M17 1.23607L19.1921 7.98278C19.4599 8.80682 20.2278 9.36475 21.0943 9.36475H28.1882L22.4491 13.5344C21.7481 14.0437 21.4548 14.9465 21.7225 15.7705L23.9147 22.5172L18.1756 18.3475C17.4746 17.8382 16.5254 17.8382 15.8244 18.3475L10.0853 22.5172L12.2775 15.7705C12.5452 14.9465 12.2519 14.0437 11.5509 13.5344L5.81184 9.36475H12.9057C13.7722 9.36475 14.5401 8.80683 14.8079 7.98278L17 1.23607Z' stroke='%23ED1C24' stroke-width='2'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.809814' y='0.236069' width='32.3802' height='31.2857' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A"); }
+
+.accordion__content{
+    display:none; }
+
+.accordion .typography{
+    width:100% !important;
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    margin:15px 0 0 0 !important;
+    padding:0 0 0 40px !important; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -3204,17 +3261,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media screen and (min-width: 768px){
     .product{
-      width:calc(100% - 30px);
+      width:calc(100% - 20px);
       margin:0 auto;
       -webkit-box-orient:horizontal;
       -webkit-box-direction:normal;
       flex-direction:row;
       -webkit-box-align:end;
       align-items:flex-end; } }
-
-@media screen and (min-width: 768px){
-    .product_revers .product__img{
-      margin-left:auto; } }
 
 .product__img{
     -webkit-box-flex:0;
@@ -3304,44 +3357,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-transform:uppercase;
   color:#0A0854;
   font-weight:700;
-  margin:auto;
   padding-right:30px;
-  position:relative;
-  display:block;
-  text-align:right;
-  height:120px;
-  background:#FFFFFF;
-  line-height:167px;
-  z-index:-1;
-  box-shadow:0px 1px 5px rgba(0, 0, 0, 0.1); }
-
-@media screen and (min-width: 768px){
-    .product-link{
-      width:336px;
-      height:62px;
-      position:absolute;
-      line-height:66px;
-      bottom:37px;
-      left:15px;
-      z-index:10; } }
-
-@media screen and (min-width: 1024px){
-    .product-link{
-      bottom:52px;
-      width:390px;
-      height:68px;
-      line-height:72px; } }
-
-@media screen and (min-width: 1200px){
-    .product-link{
-      padding-right:45px; } }
-
-@media screen and (min-width: 1920px){
-    .product-link{
-      width:464px;
-      height:81px;
-      line-height:85px;
-      left:15px; } }
+  margin-left:30px;
+  position:relative; }
 
 .product-link:after{
     content:'';
@@ -3349,19 +3367,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width:11px;
     height:12px;
     right:10px;
-    top:64%;
+    top:2px;
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
     background-image:url("data:image/svg+xml,%3Csvg width='13' height='14' viewBox='0 0 13 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.793 7.54369L2.36293 12.4108C1.81259 12.7285 1.12467 12.3314 1.12467 11.6959L1.12467 1.96169C1.12467 1.32621 1.81259 0.92904 2.36293 1.24678L10.793 6.11387C11.3433 6.43161 11.3433 7.22596 10.793 7.54369Z' stroke='%23ED1C24' stroke-width='1.65101'/%3E%3C/svg%3E%0A"); }
-
-@media screen and (min-width: 768px){
-      .product-link:after{
-        top:44%; } }
-
-@media screen and (min-width: 1200px){
-      .product-link:after{
-        right:25px; } }
 
 .production{
   position:relative;
@@ -3468,10 +3478,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transition:all .3s ease; }
 
 .select-wrap{
-  width:290px;
+  min-width:290px;
+  width:auto;
   height:47px;
   border:1px solid #0A0854;
-  padding:15px 20px 15px 15px;
+  padding:15px 40px 15px 15px;
   background-color:#fff;
   margin-bottom:24px;
   position:relative;
@@ -3515,7 +3526,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   position:absolute;
   left:-1px;
   top:46px;
-  width:290px;
+  width:calc(100% + 2px);
   z-index:1; }
 
 .select-content.active{
@@ -3623,112 +3634,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .slick-loading .slick-track{
     visibility:hidden; }
 
+.slider-wrap{
+  position:relative; }
+
 .product-slider{
   position:relative; }
 
 .product-slider .slick-slide{
     margin:0; }
-
-.product-slider .slick-dots{
-    position:absolute;
-    bottom:-43px;
-    left:50%;
-    -webkit-transform:translateX(-50%);
-    -ms-transform:translateX(-50%);
-    transform:translateX(-50%);
-    display:-webkit-box;
-    display:flex;
-    -webkit-box-pack:center;
-    justify-content:center; }
-
-.product-slider .slick-dots li{
-      font-size:0;
-      position:relative;
-      margin:0 13px;
-      width:11px;
-      height:10px;
-      border:1px solid #26247B;
-      cursor:pointer; }
-
-@media screen and (min-width: 768px){
-        .product-slider .slick-dots li{
-          margin:0 9px; } }
-
-.product-slider .slick-dots li.slick-active, .product-slider .slick-dots li:hover{
-        background:#ED1C24;
-        border:1px solid #ED1C24; }
-
-@media screen and (min-width: 768px){
-      .product-slider .slick-dots{
-        bottom:61px;
-        z-index:11;
-        left:105px; } }
-
-@media screen and (min-width: 1024px){
-      .product-slider .slick-dots{
-        bottom:80px;
-        left:120px; } }
-
-@media screen and (min-width: 1920px){
-      .product-slider .slick-dots{
-        bottom:86px; } }
-
-.product-slider .slick-arrow{
-    bottom:-45px; }
-
-@media screen and (min-width: 768px){
-      .product-slider .slick-arrow{
-        border-top:3px solid #B0D0FF;
-        border-left:3px solid #B0D0FF;
-        z-index:11;
-        bottom:59px; } }
-
-@media screen and (min-width: 1024px){
-      .product-slider .slick-arrow{
-        bottom:77px; } }
-
-@media screen and (min-width: 1920px){
-      .product-slider .slick-arrow{
-        bottom:84px; } }
-
-.product-slider .slick-prev{
-    left:22%; }
-
-@media screen and (min-width: 480px){
-      .product-slider .slick-prev{
-        left:26%; } }
-
-@media screen and (min-width: 600px){
-      .product-slider .slick-prev{
-        left:35%; } }
-
-@media screen and (min-width: 768px){
-      .product-slider .slick-prev{
-        left:36px; } }
-
-@media screen and (min-width: 1024px){
-      .product-slider .slick-prev{
-        left:50px; } }
-
-.product-slider .slick-next{
-    right:22%; }
-
-@media screen and (min-width: 480px){
-      .product-slider .slick-next{
-        right:26%; } }
-
-@media screen and (min-width: 600px){
-      .product-slider .slick-next{
-        right:35%; } }
-
-@media screen and (min-width: 768px){
-      .product-slider .slick-next{
-        left:157px;
-        right:auto; } }
-
-@media screen and (min-width: 1024px){
-      .product-slider .slick-next{
-        left:172px; } }
 
 .prod-slider{
   position:relative; }
@@ -3992,6 +3905,84 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           padding:0 5px;
           height:90px; } }
 
+.my-navigation{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-align:center;
+  align-items:center;
+  -webkit-box-pack:center;
+  justify-content:center;
+  background:#FFFFFF;
+  padding:20px 10px;
+  box-shadow:0px 1px 5px rgba(0, 0, 0, 0.1); }
+
+@media screen and (min-width: 768px){
+    .my-navigation{
+      -webkit-box-pack:start;
+      justify-content:flex-start;
+      position:absolute;
+      bottom:37px;
+      left:10px;
+      z-index:10; } }
+
+@media screen and (min-width: 1024px){
+    .my-navigation{
+      bottom:52px; } }
+
+.my-navigation .slick-dots{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:center;
+    justify-content:center;
+    margin:0 10px; }
+
+.my-navigation .slick-dots li{
+      font-size:0;
+      position:relative;
+      margin:0 6px;
+      width:11px;
+      height:10px;
+      border:1px solid #26247B;
+      cursor:pointer; }
+
+@media screen and (min-width: 768px){
+        .my-navigation .slick-dots li{
+          margin:0 9px; } }
+
+.my-navigation .slick-dots li.slick-active, .my-navigation .slick-dots li:hover{
+        background:#ED1C24;
+        border:1px solid #ED1C24; }
+
+.my-navigation .btn-slide{
+    position:relative;
+    padding:0;
+    display:block;
+    width:15px;
+    height:15px;
+    border-top:4px solid #B0D0FF;
+    border-left:4px solid #B0D0FF;
+    -webkit-transition:all .3s ease;
+    transition:all .3s ease; }
+
+.my-navigation .btn-slide:hover{
+      border-color:#1550A7; }
+
+.my-navigation .prev{
+    -webkit-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg); }
+
+.my-navigation .next{
+    -webkit-transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+    transform:rotate(135deg); }
+
+@media screen and (max-width: 768px){
+    .my-navigation .product-link{
+      position:absolute;
+      right:0;
+      bottom:-40px; } }
+
 .slick-arrow{
   padding:0;
   display:block;
@@ -4026,7 +4017,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   transform:translateY(-50%);
   z-index:10; }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1320px){
     .fix-soc{
       display:-webkit-box;
       display:flex;
@@ -4086,6 +4077,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .footer-soc .soc_you{
       background-image:url("data:image/svg+xml,%3Csvg width='26' height='27' viewBox='0 0 26 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24.6444 1.95778C23.7358 0.56722 22.0582 0 18.8544 0H7.22471C3.9476 0 2.24161 0.603809 1.33641 2.08427C0.453857 3.52772 0.453857 5.65453 0.453857 8.5981V17.5609C0.453857 23.2635 1.501 26.1589 7.22471 26.1589H18.8545C21.6328 26.1589 23.1723 25.6584 24.1683 24.4312C25.1897 23.1728 25.6255 21.1181 25.6255 17.5609V8.5981C25.6255 5.49386 25.5572 3.3545 24.6444 1.95778ZM17.621 13.2953C17.3527 13.4758 11.3331 16.8487 11.3331 16.8487C11.2151 16.9281 11.086 16.9675 10.957 16.9675C10.811 16.9675 10.6653 16.9169 10.5363 16.8164C10.2934 16.6268 10.145 16.2878 10.145 15.9222V8.83829C10.145 8.47324 10.293 8.13454 10.5354 7.94491C10.778 7.75528 11.0796 7.74232 11.3313 7.91062L17.6191 11.4411C17.8878 11.6207 18.0566 11.9778 18.057 12.3674C18.0573 12.7573 17.8893 13.1149 17.621 13.2953Z' fill='%233D8AFF'/%3E%3C/svg%3E%0A"); }
 
+.tabs{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  -webkit-box-align:start;
+  align-items:flex-start; }
+
+.tabs__content{
+    display:none; }
+
+.tabs__content.active{
+      display:block; }
+
 .main-title{
   font-size:18px;
   line-height:1.3;
@@ -4104,6 +4110,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media screen and (min-width: 1920px){
     .main-title{
       font-size:37px; } }
+
+a.main-title:hover{
+  color:#1550A7; }
 
 .section-title{
   font-size:18px;
@@ -4294,19 +4303,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .typography h3{
   font-weight:700;
-  font-size:14px;
+  font-size:16px;
   line-height:24px;
   letter-spacing:0.06em;
   text-transform:uppercase;
   color:#0A0854; }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
     .typography h3{
-      font-size:16px; } }
+      font-size:18px; } }
 
 @media screen and (min-width: 1200px){
     .typography h3{
       font-size:20px; } }
+
+.typography h4{
+  font-weight:500;
+  font-size:15px;
+  line-height:20px;
+  color:#0A0854;
+  margin-bottom:20px; }
+
+@media screen and (min-width: 768px){
+    .typography h4{
+      font-size:16px; } }
+
+@media screen and (min-width: 1200px){
+    .typography h4{
+      font-size:18px; } }
 
 .typography span{
   font-size:14px;
@@ -4330,6 +4354,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .typography p{
       font-size:14px;
       line-height:1.7; } }
+
+.typography ol li{
+  margin:0 0 10px;
+  font-size:14px;
+  font-weight:400;
+  line-height:1.2;
+  position:relative;
+  padding-left:12px; }
+
+@media screen and (min-width: 768px){
+    .typography ol li{
+      font-size:15px; } }
+
+@media screen and (min-width: 1024px){
+    .typography ol li{
+      font-size:16px; } }
+
+.typography ol li:before{
+    content:'';
+    position:absolute;
+    width:6px;
+    height:6px;
+    top:5px;
+    left:0;
+    background:#000;
+    border-radius:50%; }
 
 .error-section{
   height:100vh;
@@ -4385,7 +4435,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .about-section{
   padding:60px 0;
   position:relative;
-  z-index:1; }
+  z-index:35; }
 
 @media screen and (min-width: 1024px){
     .about-section{
@@ -4455,6 +4505,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .about-section .intro-text p mark{
         color:#ed1c24; }
+
+.about-section .about-text{
+    margin-bottom:40px; }
+
+.about-section .about-text h2, .about-section .about-text p{
+      margin-bottom:20px; }
 
 .about-section .advantages-wrap{
     display:-webkit-box;
@@ -4527,19 +4583,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       -webkit-box-direction:normal;
       flex-direction:column; }
 
-@media screen and (min-width: 768px){
-        .about-section .advantages-wrap .advantages-list{
-          -webkit-box-orient:horizontal;
-          -webkit-box-direction:normal;
-          flex-direction:row;
-          flex-wrap:wrap; } }
-
 @media screen and (min-width: 1024px){
         .about-section .advantages-wrap .advantages-list{
           width:50%;
-          -webkit-box-orient:vertical;
-          -webkit-box-direction:normal;
-          flex-direction:column;
           margin-left:auto;
           padding-left:33px; } }
 
@@ -4551,36 +4597,58 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         .about-section .advantages-wrap .advantages-list{
           padding-left:90px; } }
 
-.about-section .advantages-wrap .advantages-list li{
-        position:relative;
-        padding-left:40px;
-        font-weight:700;
-        font-size:14px;
-        line-height:19px;
-        letter-spacing:0.2em;
-        text-transform:uppercase;
-        color:#0A0854;
-        margin-bottom:10px; }
+.video-mask{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background-color:rgba(0, 0, 0, 0.5);
+  z-index:50;
+  display:none; }
 
-@media screen and (min-width: 768px){
-          .about-section .advantages-wrap .advantages-list li{
-            margin:0 25px 30px; } }
+.video-close{
+  position:absolute;
+  top:-50px;
+  right:-50px;
+  z-index:41;
+  cursor:pointer;
+  width:52px;
+  height:52px;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-image:url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Ccircle cx='36' cy='36' r='24.5' stroke='%23C4C4C4' stroke-width='3'/%3E%3C/g%3E%3Cline x1='26.0873' y1='26.1377' x2='46.7587' y2='46.8091' stroke='%23C4C4C4' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='46.7588' y1='26.9838' x2='26.0874' y2='47.6551' stroke='%23C4C4C4' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='72' height='72' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='5'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3CfeBlend mode='color-dodge' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A"); }
 
-@media screen and (min-width: 1024px){
-          .about-section .advantages-wrap .advantages-list li{
-            margin:0 0 30px; } }
+@media screen and (max-width: 768px){
+    .video-close{
+      width:30px;
+      height:30px;
+      top:-30px;
+      right:-30px; } }
 
-.about-section .advantages-wrap .advantages-list li:before{
-          content:'';
-          position:absolute;
-          top:calc(50% - 15px);
-          left:0;
-          width:30px;
-          height:30px;
-          background-repeat:no-repeat;
-          background-size:contain;
-          background-position:center;
-          background-image:url("data:image/svg+xml,%3Csvg width='34' height='32' viewBox='0 0 34 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M17 1.23607L19.1921 7.98278C19.4599 8.80682 20.2278 9.36475 21.0943 9.36475H28.1882L22.4491 13.5344C21.7481 14.0437 21.4548 14.9465 21.7225 15.7705L23.9147 22.5172L18.1756 18.3475C17.4746 17.8382 16.5254 17.8382 15.8244 18.3475L10.0853 22.5172L12.2775 15.7705C12.5452 14.9465 12.2519 14.0437 11.5509 13.5344L5.81184 9.36475H12.9057C13.7722 9.36475 14.5401 8.80683 14.8079 7.98278L17 1.23607Z' stroke='%23ED1C24' stroke-width='2'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.809814' y='0.236069' width='32.3802' height='31.2857' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A"); }
+.video-close:hover{
+    -webkit-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    transform:scale(1.1); }
+
+.video-wrap{
+  position:fixed;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  z-index:60;
+  display:none;
+  width:80vw;
+  height:80vh; }
+
+.video-wrap iframe{
+    width:100%;
+    height:100%; }
 
 .category-section{
   padding:80px 0 0;
@@ -4601,69 +4669,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .category-section p{
     margin-bottom:30px; }
 
-@media screen and (min-width: 768px){
-  .category-wrap_article .category__text{
-    width:40%; } }
-
-@media screen and (min-width: 768px){
-  .category-wrap_article .category__img{
-    width:60%; } }
-
-.category-wrap .category{
-  display:-webkit-box;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  flex-direction:column; }
-
-@media screen and (min-width: 768px){
-    .category-wrap .category:nth-of-type(2n+1){
-      -webkit-box-orient:horizontal;
-      -webkit-box-direction:normal;
-      flex-direction:row; } }
-
-@media screen and (min-width: 768px){
-    .category-wrap .category:nth-of-type(2n+1) .category__text{
-      padding-right:30px; } }
-
-@media screen and (min-width: 768px){
-    .category-wrap .category:nth-of-type(2n){
-      -webkit-box-orient:horizontal;
-      -webkit-box-direction:reverse;
-      flex-direction:row-reverse; } }
-
-@media screen and (min-width: 768px){
-    .category-wrap .category:nth-of-type(2n) .category__text{
-      padding-left:30px; } }
-
-.category{
-  margin-bottom:30px; }
-
-@media screen and (min-width: 768px){
-    .category{
-      margin-bottom:50px; } }
-
-@media screen and (min-width: 768px){
-    .category__text{
-      width:50%; } }
-
-@media screen and (min-width: 768px){
-    .category__img{
-      width:50%; } }
-
-.category__img img{
+.category-section .typography img{
     width:100%;
     height:100%;
-    max-height:400px;
     -o-object-fit:cover;
     object-fit:cover; }
 
-.category h2, .category p{
-    margin-bottom:20px; }
+@media screen and (min-width: 768px){
+    .category-section .typography .alignright{
+      float:right;
+      max-width:50%;
+      width:auto;
+      height:auto;
+      margin:0 0 30px 30px; } }
 
 @media screen and (min-width: 768px){
-      .category h2, .category p{
-        margin-bottom:30px; } }
+    .category-section .typography .alignleft{
+      float:left;
+      max-width:50%;
+      width:auto;
+      height:auto;
+      margin:0 30px 30px 0; } }
 
 .first-bg{
   position:relative;
@@ -4995,13 +5021,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-position:center;
   background-image:url("../images/intro-bg.jpg"); }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
     .intro-section{
-      background-image:url("../images/main.bg.png"); } }
+      padding:125px 0 44px; } }
 
 @media screen and (min-width: 1920px){
     .intro-section{
-      max-height:840px; } }
+      max-height:840px;
+      padding:200px 0 44px; } }
 
 .intro-section_bg .intro-img{
     max-height:418px; }
@@ -5018,6 +5045,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       object-fit:cover; }
 
 .intro-section_tech{
+    z-index:3;
     padding-bottom:70px;
     height:auto; }
 
@@ -5083,32 +5111,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       z-index:-1; } }
 
 .intro-section .intro-img{
+    max-height:418px;
     width:90vw;
     height:47vw;
     margin:0 0 22px auto;
     overflow:hidden; }
-
-@media screen and (min-width: 768px){
-      .intro-section .intro-img{
-        position:absolute;
-        width:50%;
-        max-height:320px;
-        margin:0;
-        right:0;
-        top:105px; } }
-
-@media screen and (min-width: 1024px){
-      .intro-section .intro-img{
-        max-height:400px; } }
-
-@media screen and (min-width: 1400px){
-      .intro-section .intro-img{
-        top:139px; } }
-
-@media screen and (min-width: 1920px){
-      .intro-section .intro-img{
-        max-height:502px;
-        width:53%; } }
 
 .intro-section .intro-img_overflow{
       overflow:visible;
@@ -5127,8 +5134,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         .intro-section .intro-img_overflow{
           bottom:0; } }
 
+@media screen and (min-width: 768px){
+      .intro-section .intro-img{
+        position:absolute;
+        width:50%;
+        max-height:320px;
+        margin:0;
+        right:0;
+        bottom:0; } }
+
+@media screen and (min-width: 1024px){
+      .intro-section .intro-img{
+        max-height:400px; } }
+
+@media screen and (min-width: 1920px){
+      .intro-section .intro-img{
+        max-height:502px;
+        width:42%; } }
+
 .intro-section .intro-img img{
-      width:100%; }
+      width:100%;
+      height:100%;
+      -o-object-fit:cover;
+      object-fit:cover; }
 
 .intro-section .intro-wrap{
     display:-webkit-box;
@@ -5144,28 +5172,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media screen and (min-width: 768px){
       .intro-section .intro-wrap{
         padding-top:50px;
-        width:45%; } }
-
-@media screen and (min-width: 1024px){
-      .intro-section .intro-wrap{
-        padding:70px 0 0 100px; } }
-
-@media screen and (min-width: 1200px){
-      .intro-section .intro-wrap{
-        padding:120px 0 0 120px; } }
-
-@media screen and (min-width: 1440px){
-      .intro-section .intro-wrap{
-        padding:120px 0 0 50px; } }
-
-@media screen and (min-width: 1600px){
-      .intro-section .intro-wrap{
-        padding:120px 0 0 0; } }
+        padding-right:30px;
+        width:50%; } }
 
 @media screen and (min-width: 1920px){
       .intro-section .intro-wrap{
-        padding:150px 0 0 0;
-        width:43%; } }
+        width:53%; } }
 
 .intro-section .time{
     font-size:16px;
@@ -5425,21 +5437,28 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .production-section{
       padding-top:120px; } }
 
-@media screen and (min-width: 1920px){
-    .production-section{
-      padding-top:210px 0; } }
-
 @media screen and (min-width: 768px){
     .production-section .prod-wrap{
       display:-webkit-box;
       display:flex;
       flex-wrap:wrap;
       -webkit-box-pack:center;
-      justify-content:center; } }
+      justify-content:center;
+      margin:0 -10px; } }
 
-@media screen and (min-width: 1920px){
-    .production-section .prod-wrap{
-      margin:0 -14px; } }
+@media screen and (min-width: 768px){
+    .production-section .prod-wrap .slide{
+      width:50%;
+      padding:0 10px 20px; } }
+
+@media screen and (min-width: 1024px){
+    .production-section .prod-wrap .slide{
+      width:25%;
+      padding:0 10px; } }
+
+.production-section .prod-wrap .slide .production{
+    width:100%;
+    margin:0; }
 
 .product-section{
   position:relative;
@@ -5467,15 +5486,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     top:7%;
     z-index:-1; }
 
-@media screen and (min-width: 768px){
-    .product-section_revers .product-link{
-      left:auto;
-      right:0;
-      bottom:0; } }
-
 .product-section .container{
     position:relative;
-    max-width:1385px; }
+    max-width:1260px; }
+
+@media screen and (min-width: 1500px){
+      .product-section .container{
+        max-width:1380px; } }
 
 .product-section .slider-wrap{
     position:relative; }

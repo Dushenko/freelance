@@ -1,8 +1,9 @@
 .select-wrap {
-	width: 290px;
+	min-width: 290px;
+	width: auto;
 	height: 47px;
 	border: 1px solid #0A0854;
-	padding: 15px 20px 15px 15px;
+	padding: 15px 40px 15px 15px;
 	background-color: #fff;
 	margin-bottom: 24px;
 	position: relative;
@@ -48,7 +49,7 @@
 	position: absolute;
 	left: -1px;
 	top: 46px;
-	width: 290px;
+	width: calc(100% + 2px);
 	z-index: 1;
 	&.active {
 		display: block;

@@ -33,7 +33,10 @@ $(document).ready(function () {
 		slidesToScroll: 1,
 		dots: true,
 		arrows: true,
-		infinite: true
+		infinite: true,
+		appendDots: $('.dots'),
+		prevArrow: $('.prev'),
+		nextArrow: $('.next')
 	});
 
 	$('.js-product-slider').slick({

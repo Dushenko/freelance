@@ -1,7 +1,7 @@
 .about-section {
 	padding: 60px 0;
 	position: relative;
-	z-index: 1;
+	z-index: 35;
 	@media screen and (min-width: 1024px) {
 		padding: 120px 0 170px;
 	}
@@ -73,6 +73,13 @@
 		}
 	}
 
+	.about-text {
+		margin-bottom: 40px;
+		h2, p {
+			margin-bottom: 20px;
+		}
+	}
+
 	.advantages-wrap {
 		display: flex;
 		flex-direction: column;
@@ -138,13 +145,9 @@
 		.advantages-list {
 			display: flex;
 			flex-direction: column;
-			@media screen and (min-width: 768px) {
-				flex-direction: row;
-				flex-wrap: wrap;
-			}
+			
 			@media screen and (min-width: 1024px) {
 				width: 50%;
-				flex-direction: column;
 				margin-left: auto;
 				padding-left: 33px;
 			}
@@ -154,37 +157,57 @@
 			@media screen and (min-width: 1920px) {
 				padding-left: 90px;
 			}
-
-			li {
-				position: relative;
-				padding-left: 40px;
-				font-weight: 700;
-				font-size: 14px;
-				line-height: 19px;
-				letter-spacing: 0.2em;
-				text-transform: uppercase;
-				color: #0A0854;
-				margin-bottom: 10px;
-				@media screen and (min-width: 768px) {
-					margin: 0 25px 30px;
-				}
-				@media screen and (min-width: 1024px) {
-					margin: 0 0 30px;
-				}
-
-				&:before {
-					content: '';
-					position: absolute;
-					top: calc(50% - 15px);
-					left: 0;
-					width: 30px;
-					height: 30px;
-					background-repeat: no-repeat;
-					background-size: contain;
-					background-position: center;
-					background-image: url("data:image/svg+xml,%3Csvg width='34' height='32' viewBox='0 0 34 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M17 1.23607L19.1921 7.98278C19.4599 8.80682 20.2278 9.36475 21.0943 9.36475H28.1882L22.4491 13.5344C21.7481 14.0437 21.4548 14.9465 21.7225 15.7705L23.9147 22.5172L18.1756 18.3475C17.4746 17.8382 16.5254 17.8382 15.8244 18.3475L10.0853 22.5172L12.2775 15.7705C12.5452 14.9465 12.2519 14.0437 11.5509 13.5344L5.81184 9.36475H12.9057C13.7722 9.36475 14.5401 8.80683 14.8079 7.98278L17 1.23607Z' stroke='%23ED1C24' stroke-width='2'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.809814' y='0.236069' width='32.3802' height='31.2857' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
-				}
-			}
 		}
+	}
+}
+
+.video-mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 50;
+	display: none;
+}
+
+.video-close {
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	z-index: 41;
+	cursor: pointer;
+	width: 52px;
+	height: 52px;
+	transition: all .3s ease;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Ccircle cx='36' cy='36' r='24.5' stroke='%23C4C4C4' stroke-width='3'/%3E%3C/g%3E%3Cline x1='26.0873' y1='26.1377' x2='46.7587' y2='46.8091' stroke='%23C4C4C4' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='46.7588' y1='26.9838' x2='26.0874' y2='47.6551' stroke='%23C4C4C4' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='72' height='72' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='5'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3CfeBlend mode='color-dodge' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+	@media screen and (max-width: 768px) {
+		width: 30px;
+		height: 30px;
+		top: -30px;
+		right: -30px;
+	}
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.video-wrap {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 60;
+	display: none;
+	width: 80vw;
+	height: 80vh;
+
+	iframe {
+		width: 100%;
+		height: 100%;
 	}
 }

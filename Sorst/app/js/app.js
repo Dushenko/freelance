@@ -50,6 +50,24 @@ $(document).ready(function () {
 		$('.js-modal').fadeOut();
 	});
 
+	//video
+	$(".js-open-video").click( function () {
+		$('.js-video-mask').fadeIn();
+		$('.js-video').fadeIn();
+		$('body').addClass('overflow');
+	});
+
+	$('.js-close-video').click( function () {
+		$('.js-video').fadeOut();
+		$('.js-video-mask').fadeOut();
+		$('body').removeClass('overflow');
+		var videoURL = $('#video').prop('src');
+		videoURL = videoURL.replace("&autoplay=1", "");
+		$('#video').prop('src','');
+		$('#video').prop('src',videoURL);
+	});
+	
+
 	//close custom select
 	jQuery(function($){
 		$(document).mouseup(function (e){ // событие клика по веб-документу

@@ -7,15 +7,12 @@
 	background-position: center;
 	background-image: url('../images/intro-bg.jpg');
 
-	@media screen and (min-width: 768px) {
-		// height: 47vw;
-		background-image: url('../images/main.bg.png');
-	}
-	@media screen and (min-width: 1024px) {
-		// height: 43vw;
+	@media screen and (min-width: 1200px) {
+		padding: 125px 0 44px;
 	}
 	@media screen and (min-width: 1920px) {
 		max-height: 840px;
+		padding: 200px 0 44px;
 	}
 
 	&_bg {
@@ -35,6 +32,7 @@
 	}
 
 	&_tech {
+		z-index: 3;
 		padding-bottom: 70px;
 		height: auto;
 		@media screen and (min-width: 768px) {
@@ -96,31 +94,13 @@
 			z-index: -1;
 		}
 	}
-	
+
 	.intro-img {
+		max-height: 418px;
 		width: 90vw;
 		height: 47vw;
 		margin: 0 0 22px auto;
 		overflow: hidden;
-
-		@media screen and (min-width: 768px) {
-			position: absolute;
-			width: 50%;
-			max-height: 320px;
-			margin: 0;
-			right: 0;
-			top: 105px;
-		}
-		@media screen and (min-width: 1024px) {
-			max-height: 400px;
-		}
-		@media screen and (min-width: 1400px) {
-			top: 139px;
-		}
-		@media screen and (min-width: 1920px) {
-			max-height: 502px;
-			width: 53%;
-		}
 
 		&_overflow {
 			overflow: visible;
@@ -136,11 +116,59 @@
 				bottom: 0;
 			}
 		}
+		
+		@media screen and (min-width: 768px) {
+			position: absolute;
+			width: 50%;
+			max-height: 320px;
+			margin: 0;
+			right: 0;
+			bottom: 0;
+		}
+		@media screen and (min-width: 1024px) {
+			max-height: 400px;
+		}
+		@media screen and (min-width: 1920px) {
+			max-height: 502px;
+			width: 42%;
+		}
 
 		img {
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
+	
+	// .intro-img {
+	// 	width: 90vw;
+	// 	height: 47vw;
+	// 	margin: 0 0 22px auto;
+	// 	overflow: hidden;
+
+	// 	@media screen and (min-width: 768px) {
+	// 		position: absolute;
+	// 		width: 50%;
+	// 		max-height: 320px;
+	// 		margin: 0;
+	// 		right: 0;
+	// 		top: 105px;
+	// 	}
+	// 	@media screen and (min-width: 1024px) {
+	// 		max-height: 400px;
+	// 	}
+	// 	@media screen and (min-width: 1400px) {
+	// 		top: 139px;
+	// 	}
+	// 	@media screen and (min-width: 1920px) {
+	// 		max-height: 502px;
+	// 		width: 42%;
+	// 	}
+
+	// 	img {
+	// 		width: 100%;
+	// 	}
+	// }
 
 	.intro-wrap {
 		display: flex;
@@ -150,23 +178,11 @@
 
 		@media screen and (min-width: 768px) {
 			padding-top: 50px;
-			width: 45%;
-		}
-		@media screen and (min-width: 1024px) {
-			padding: 70px 0 0 100px;
-		}
-		@media screen and (min-width: 1200px) {
-			padding: 120px 0 0 120px;
-		}
-		@media screen and (min-width: 1440px) {
-			padding: 120px 0 0 50px;
-		}
-		@media screen and (min-width: 1600px) {
-			padding: 120px 0 0 0;
+			padding-right: 30px;
+			width: 50%;
 		}
 		@media screen and (min-width: 1920px) {
-			padding: 150px 0 0 0;
-			width: 43%;
+			width: 53%;
 		}
 	}
 
@@ -414,18 +430,29 @@
 	@media screen and (min-width: 1200px){
 		padding-top: 120px;
 	}
-	@media screen and (min-width: 1920px){
-		padding-top: 210px 0;
-	}
 
 	.prod-wrap {
 		@media screen and (min-width: 768px){
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			margin: 0 -10px;
 		}
-		@media screen and (min-width: 1920px){
-			margin: 0 -14px;
+
+		.slide {
+			@media screen and (min-width: 768px){ 
+				width: 50%;
+				padding: 0 10px 20px;
+			}
+			@media screen and (min-width: 1024px){ 
+				width: 25%;
+				padding: 0 10px;
+			}
+
+			.production {
+				width: 100%;
+				margin: 0;
+			}
 		}
 	}
 }
@@ -461,19 +488,12 @@
 		}
 	}
 
-	&_revers {
-		.product-link  {
-			@media screen and (min-width: 768px){
-				left: auto;
-				right: 0;
-				bottom: 0;
-			}
-		}
-	}
-
 	.container {
 		position: relative;
-		max-width: 1385px;
+		max-width: 1260px;
+		@media screen and (min-width: 1500px){
+			max-width: 1380px;
+		}
 	}
 
 	.slider-wrap {
