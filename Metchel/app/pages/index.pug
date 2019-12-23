@@ -1,0 +1,93 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.intro-section
+			.container
+
+
+		section.advantages-section
+			.container
+				.advantages
+					.advantage
+						.advantage__img
+							img(src="images/advantage1.png", alt="")
+						p.advantage__info Только лучшие сертифицированные комплектующие от заводов производителей
+					.advantage
+						.advantage__img
+							img(src="images/advantage2.png", alt="")
+						p.advantage__info Индивидуальный подход к каждому заказчику
+					.advantage
+						.advantage__img
+							img(src="images/advantage3.png", alt="")
+						p.advantage__info Хорошие цены из-за отсутствия посредников (своё производство)
+					.advantage
+						.advantage__img
+							img(src="images/advantage4.png", alt="")
+						p.advantage__info Мы применяем в производстве только высококачественную сталь
+					.advantage
+						.advantage__img
+							img(src="images/advantage5.png", alt="")
+						p.advantage__info Гарантийное и послегарантийное обслуживание
+					.advantage
+						.advantage__img
+							img(src="images/advantage6.png", alt="")
+						p.advantage__info Срок изготовления от 3-х дней	
+
+
+		section.suggestions-section
+			.container
+				.left-block
+					span.subtitle 01 > Что мы предлагаем
+					h2.section-title Что мы предлагаем
+					p.sectio-info Наша компания занимается изготовлением, восстановлением и ремонтом кузовов зерновозов, самосвалов, полуприцепов в г. Энгельс, Саратовская область. Сплав отличного оборудования, современных технологий и большой опыт нашего дружного коллектива позволяет переоборудовать любой грузовик в самосвал с установкой гидравлического оборудования.
+					h3.section-subtitle Есть вопрос? Задайте его нам!
+					a(href="#").question Задать вопрос
+				.right-block
+					.card
+						h3.card__title Производство самосвалов
+						a(href="#").card__details Подробнее
+						.card__img
+							img(src="images/card1.png", alt="")
+					.card
+						h3.card__title Производство зерновозов
+						a(href="#").card__details Подробнее
+						.card__img
+							img(src="images/card2.png", alt="")
+
+		section.services-section
+			.container
+				span.subtitle 02 > Услуги по ремонту
+				h2.section-title Услуги по ремонту самосвалов и зерновозов
+
+		section.request-section
+			.container
+
+
+		section.process-section
+			.container
+
+
+		section.projects-section
+			.container
+
+
+		section.reviews-section
+			.container
+
+
+		section.questions-section
+			.container
+
+
+		section.contacts-section
+			.container
+
+block footer
+	include ../blocks/footer/footer		

@@ -1,0 +1,16 @@
+.footer {
+	min-height: 52px;
+	padding: 19px 0;
+	background-color: #0c005a;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	p {
+		font-size: 14px;
+		color: #fff;
+	}
+}
