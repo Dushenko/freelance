@@ -283,7 +283,7 @@ button{
   max-width:1244px;
   width:100%;
   margin:0 auto;
-  padding:0 15px;
+  padding:0 15px 30px;
   min-height:60vh; }
 .po-container{
   max-width:1360px;
@@ -728,6 +728,12 @@ span.header{
     color:rgba(45, 54, 99, 0.75);
     margin:0 0 11px 30px;
     font-family:'MuseoSans medium'; }
+.statementForm__answ{
+    margin:30px 0 15px;
+    font-size:17px;
+    color:#2D3663;
+    font-weight:500;
+    text-align:left; }
 .statementForm__input{
     width:328px;
     height:60px;
@@ -750,9 +756,8 @@ span.header{
 .statementForm__label-checkbox a{
       margin-right:5px; }
 .statementForm__label-checkbox.radio{
-      font-family:'MuseoSans medium';
       white-space:nowrap;
-      font-weight:500; }
+      font-weight:300; }
 .statementForm__label-checkbox.radio:before{
         border-radius:50%; }
 .statementForm__label-checkbox:before{
@@ -816,6 +821,16 @@ span.header{
     text-align:left;
     max-width:630px;
     margin-bottom:15px; }
+.statementForm__number-wrap{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-align:center;
+    align-items:center; }
+.statementForm .filter-section{
+    width:200px; }
+.statementForm .filter-section .cal-section{
+      left:0;
+      box-shadow:0px 0px 5px 0px rgba(0, 0, 0, 0.75); }
 .header-top{
   padding:18px 0;
   border-bottom:2px dashed #EDF3F6;
@@ -8204,7 +8219,7 @@ body.error404 .page-404-default .ltx-empty-space{
   margin-top:-100px; }
 @media (min-width: 1200px) and (max-width: 1599px){
   .ltx-diag-icons h2{
-    font-size:40px; } }
+    font-size:22px; } }
 .ltx-diag-icons > .vc_row > .wpb_column:first-child > .vc_column-inner{
   -webkit-border-radius:8px;
   -webkit-background-clip:padding-box;
@@ -14346,6 +14361,13 @@ button{
 @media screen and (max-width: 800px){
       .appointment .main-btn{
         margin:0 0 30px; } }
+.cke-content ul{
+  color:#333;
+  font-family:'MuseoSans regular'; }
+.cke-content li{
+  list-style:initial;
+  font-weight:300;
+  font-size:15px; }
 .document{
   display:block;
   font-family:'MuseoSans medium';
@@ -14455,6 +14477,8 @@ button{
   border-radius:10px;
   padding:23px 29px;
   width:calc(100% - 390px); }
+.contacts-form_full-width{
+    width:100%; }
 @media screen and (max-width: 1024px){
     .contacts-form{
       width:100%; } }
