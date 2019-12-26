@@ -283,8 +283,7 @@ button{
   max-width:1244px;
   width:100%;
   margin:0 auto;
-  padding:0 15px 30px;
-  min-height:60vh; }
+  padding:0 15px; }
 .po-container{
   max-width:1360px;
   width:100%;
@@ -959,7 +958,7 @@ span.header{
     .burgerNav:after{
       content:'';
       position:absolute;
-      top:208px;
+      top:198px;
       left:0;
       width:100%;
       height:1px;
@@ -981,6 +980,12 @@ span.header{
   display:flex;
   -webkit-box-align:center;
   align-items:center; }
+.burgerNav__list::-webkit-scrollbar{
+    width:5px;
+    background-color:#ccc; }
+.burgerNav__list::-webkit-scrollbar-thumb{
+    background-color:#3099D5;
+    border-radius:2px; }
 @media screen and (max-width: 1440px){
     .burgerNav__list{
       display:-webkit-box;
@@ -988,14 +993,15 @@ span.header{
       -webkit-box-orient:vertical;
       -webkit-box-direction:normal;
       flex-direction:column;
-      -webkit-box-pack:end;
-      justify-content:flex-end;
       -webkit-box-align:start;
       align-items:flex-start;
-      padding-top:120px; } }
+      margin-top:136px;
+      height:63vh;
+      overflow:hidden;
+      overflow-y:auto; } }
 @media screen and (max-width: 768px){
     .burgerNav__list{
-      padding-top:90px; } }
+      margin-top:115px; } }
 .burgerNav__item{
   margin-right:33px;
   position:relative; }
@@ -1108,7 +1114,10 @@ span.header{
       transform:translate(0);
       padding-left:50px;
       display:none;
-      z-index:1; } }
+      z-index:1;
+      zoom:0;
+      -webkit-transition:none;
+      transition:none; } }
 @media screen and (max-width: 768px){
     .burgerNav__sub-list{
       padding:0 0 0 15px;
@@ -1120,7 +1129,7 @@ span.header{
   color:#FFFFFF; }
 @media screen and (max-width: 1440px){
     .burgerNav .main-btn.main-btn_blue{
-      margin:37px auto 46px;
+      margin:16px auto 20px;
       width:400px;
       position:absolute;
       top:94px;
@@ -1130,7 +1139,7 @@ span.header{
       margin:0;
       width:290px;
       left:calc(50% - 145px);
-      top:85px; } }
+      top:71px; } }
 .signin-po{
   display:none;
   font-family:'MuseoSans medium';
@@ -1176,7 +1185,7 @@ span.header{
       display:flex;
       -webkit-box-align:center;
       align-items:center;
-      padding:18px 15px;
+      padding:4px 15px 3px;
       background-color:#fff;
       width:100% !important;
       -webkit-box-pack:justify;
