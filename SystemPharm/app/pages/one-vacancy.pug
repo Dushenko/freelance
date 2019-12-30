@@ -1,0 +1,66 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.one-vacancy-section
+					.container
+
+						.vacancy.vacancy_one
+							.vacancy__img
+								img(src="images/vacancy.jpg", alt="")
+							.vacancy__info.typography
+								h3 Медицинский представитель
+								h4 Черниговская область
+
+								.vacancy__requirements
+									p Требуемый опыт работы: 1–3 года
+									p Полная занятость, сменный график
+									p Крупная фармацевтическая компания "System Pharm" приглашает на работу фармацевтов / провизоров.
+								
+								h5 Требуемые навыки
+								.vacancy__skills
+									span.vacancy__skill Пользователь ПК
+									span.vacancy__skill Продажи
+									span.vacancy__skill Консультирование
+									span.vacancy__skill Пользователь ПК
+									span.vacancy__skill Навыки продаж
+									span.vacancy__skill Консультирование
+									span.vacancy__skill Пользователь ПК
+									span.vacancy__skill Навыки
+									span.vacancy__skill Консультирование
+									span.vacancy__skill Пользователь ПК
+
+								h5 Обязанности
+								ol
+									li Консультирование пациентов о фармакологических свойствах лекарственных средств;
+									li Осуществлять отпуск лекарственных средств и изделий медицинского назначения.
+
+
+								h5 Требования
+								ol
+									li Высшее или среднее специальное фармацевтическое образование;
+									li Приветствуется опыт аналогичной работы;
+									li Организованность, тактичность, аккуратность;
+									li Ответственность, доброжелательность;
+									li ладение техникой продаж.
+
+								h5 Условия
+								ol
+									li Трудоустройства согласно ТК РК.
+									li Отпуск 24 календарных дней.
+									li Оклад+бонус.
+
+								a(href="one-vacancy.html").section-link отправить резюме
+
+
+		block footer
+			include ../blocks/footer/footer

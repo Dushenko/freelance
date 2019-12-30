@@ -651,6 +651,12 @@ select{
       font-size:13px;
       line-height:16px; } }
 
+.typography h5{
+  font-size:14px;
+  line-height:17px;
+  text-transform:unset;
+  margin-bottom:17px; }
+
 .typography span{
   display:block;
   font-size:15px;
@@ -873,17 +879,36 @@ select{
       display:-webkit-box;
       display:flex; } }
 
+@media screen and (min-width: 1200px){
+    .vacancy-section .vacancy-box{
+      max-width:950px;
+      width:100%; } }
+
+.vacancy-section .vacancy-info{
+    margin-bottom:50px; }
+
+@media screen and (min-width: 1200px){
+      .vacancy-section .vacancy-info{
+        margin-bottom:75px; } }
+
 @media screen and (min-width: 1920px){
-    .vacancy-section .vacancy-info{
-      -webkit-box-flex:0;
-      flex:none;
-      width:540px;
-      margin-right:85px; } }
+      .vacancy-section .vacancy-info{
+        -webkit-box-flex:0;
+        flex:none;
+        width:540px;
+        margin-right:85px; } }
 
 @media screen and (min-width: 1920px){
     .vacancy-section h1{
       font-size:52px;
       line-height:62px; } }
+
+.one-vacancy-section{
+  padding:8vw 0; }
+
+@media screen and (min-width: 1920px){
+    .one-vacancy-section{
+      padding:120px 0; } }
 
 .vacancy{
   display:-webkit-box;
@@ -900,6 +925,59 @@ select{
       flex-direction:row;
       -webkit-box-align:start;
       align-items:flex-start; } }
+
+@media screen and (min-width: 768px){
+    .vacancy_one{
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      flex-direction:column; } }
+
+@media screen and (min-width: 1024px){
+    .vacancy_one{
+      -webkit-box-orient:horizontal;
+      -webkit-box-direction:normal;
+      flex-direction:row; } }
+
+.vacancy_one .vacancy__img{
+    margin:0 0 24px; }
+
+@media screen and (min-width: 768px){
+      .vacancy_one .vacancy__img{
+        width:268px;
+        height:268px; } }
+
+@media screen and (min-width: 1024px){
+      .vacancy_one .vacancy__img{
+        margin:0 50px 0 0; } }
+
+@media screen and (min-width: 1200px){
+      .vacancy_one .vacancy__img{
+        width:422px;
+        height:422px; } }
+
+@media screen and (min-width: 1920px){
+      .vacancy_one .vacancy__img{
+        margin:0 130px 0 0; } }
+
+.vacancy_one .vacancy__info{
+    background:transparent;
+    box-shadow:none;
+    padding:0; }
+
+.vacancy_one .vacancy__info p{
+      color:#fff;
+      opacity:1;
+      margin-bottom:0; }
+
+.vacancy_one .vacancy__info h4{
+      opacity:0.7; }
+
+@media screen and (min-width: 1024px){
+        .vacancy_one .vacancy__info h4{
+          margin-bottom:50px; } }
+
+.vacancy_one .section-link{
+    margin-left:0 !important; }
 
 .vacancy__img{
     position:relative;
@@ -957,14 +1035,57 @@ select{
       .vacancy__info{
         padding:50px 30px 30px; } }
 
-.vacancy p{
-    color:#758BE1;
-    opacity:0.7;
-    font-size:12px; }
+.vacancy__info h3, .vacancy__info h4{
+      margin-bottom:20px; }
+
+.vacancy__info ol{
+      margin-bottom:25px !important; }
 
 @media screen and (min-width: 1024px){
-      .vacancy p{
-        font-size:14px; } }
+        .vacancy__info ol{
+          margin-bottom:30px !important; } }
+
+.vacancy__info li{
+      color:#758BE1 !important; }
+
+.vacancy__info p{
+      color:#758BE1;
+      opacity:0.7;
+      font-size:12px; }
+
+@media screen and (min-width: 1024px){
+        .vacancy__info p{
+          font-size:14px; } }
+
+.vacancy__requirements{
+    margin-bottom:25px; }
+
+.vacancy__skills{
+    margin-bottom:15px;
+    display:-webkit-box;
+    display:flex;
+    flex-wrap:wrap; }
+
+@media screen and (min-width: 1024px){
+      .vacancy__skills{
+        margin-bottom:30px; } }
+
+.vacancy__skill{
+    background:#000000;
+    box-shadow:0px 9px 29px rgba(255, 0, 138, 0.17), inset 0px 4px 4px #091133;
+    border-radius:12px;
+    font-weight:300;
+    text-align:center;
+    padding:11px 18px;
+    letter-spacing:0.05em !important;
+    color:#758BE1 !important;
+    font-size:12px !important;
+    text-transform:unset !important;
+    margin:0 12px 12px 0 !important; }
+
+@media screen and (min-width: 1024px){
+      .vacancy__skill{
+        font-size:14px !important; } }
 
 .vacancy .section-link{
     margin-left:auto; }

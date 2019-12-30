@@ -10,7 +10,18 @@
 		}
 	}
 
+	.vacancy-box {
+		@media screen and (min-width: 1200px) {
+			max-width: 950px;
+			width: 100%;
+		}
+	}
+
 	.vacancy-info {
+		margin-bottom: 50px;
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 75px;
+		}
 		@media screen and (min-width: 1920px) {
 			flex: none;
 			width: 540px;
@@ -26,6 +37,13 @@
 	}
 }
 
+.one-vacancy-section {
+	padding: 8vw 0;
+	@media screen and (min-width: 1920px) {
+		padding: 120px 0;
+	}
+}
+
 .vacancy {
 	display: flex;
 	flex-direction: column;
@@ -34,6 +52,55 @@
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
 		align-items: flex-start;
+	}
+
+	&_one {
+		@media screen and (min-width: 768px) {
+			flex-direction: column;
+		}
+		@media screen and (min-width: 1024px) {
+			flex-direction: row;
+		}
+		.vacancy__img {
+			margin: 0 0 24px;
+			@media screen and (min-width: 768px) {
+				width: 268px;
+				height: 268px;
+			}
+			@media screen and (min-width: 1024px) {
+				margin: 0 50px 0 0;
+			}
+			@media screen and (min-width: 1200px) {
+				width: 422px;
+				height: 422px;
+			}
+			@media screen and (min-width: 1920px) {
+				margin: 0 130px 0 0;
+			}
+		}
+
+		.vacancy__info {
+			background: transparent;
+			box-shadow: none;
+			padding: 0;
+
+			p {
+				color: #fff;
+				opacity: 1;
+				margin-bottom: 0;
+			}
+
+			h4 {
+				opacity: 0.7;
+				@media screen and (min-width: 1024px) {
+					margin-bottom: 50px;
+				}
+			}
+		}
+
+		.section-link {
+			margin-left: 0 !important;
+		}
 	}
 
 	&__img {
@@ -86,14 +153,59 @@
 		@media screen and (min-width: 1024px) {
 			padding: 50px 30px 30px;
 		}
+
+		h3, h4 {
+			margin-bottom: 20px;
+		}
+
+		ol {
+			margin-bottom: 25px !important;
+			@media screen and (min-width: 1024px) {
+				margin-bottom: 30px !important;
+			}
+		}
+
+		li {
+			color: #758BE1 !important;
+		}
+
+		p {
+			color: #758BE1;
+			opacity: 0.7;
+			font-size: 12px;
+			@media screen and (min-width: 1024px) {
+				font-size: 14px;
+			}
+		}
 	}
 
-	p {
-		color: #758BE1;
-		opacity: 0.7;
-		font-size: 12px;
+	&__requirements {
+		margin-bottom: 25px;
+	}
+
+	&__skills {
+		margin-bottom: 15px;
+		display: flex;
+		flex-wrap: wrap;
 		@media screen and (min-width: 1024px) {
-			font-size: 14px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__skill {
+		background: #000000;
+		box-shadow: 0px 9px 29px rgba(255, 0, 138, 0.17), inset 0px 4px 4px #091133;
+		border-radius: 12px;
+		font-weight: 300;
+		text-align: center;
+		padding: 11px 18px;
+		letter-spacing: 0.05em !important;
+		color: #758BE1 !important;
+		font-size: 12px !important;
+		text-transform: unset !important;
+		margin: 0 12px 12px 0 !important;
+		@media screen and (min-width: 1024px) {
+			font-size: 14px !important;
 		}
 	}
 
