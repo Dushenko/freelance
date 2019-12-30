@@ -2,9 +2,18 @@
 
 $(document).ready(function () {
   //burger
-  $('.js-burger').click(function () {
-    $(this).toggleClass('active');
-    $('.js-nav').toggleClass('active');
-  });
+  if (document.querySelector('.js-burger')) {
+    $('.js-burger').click(function () {
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $('.js-nav').removeClass('active');
+        $('body').removeClass('overflow');
+      } else {
+        $(this).addClass('active');
+        $('body').addClass('overflow');
+        $('.js-nav').addClass('active');
+      }
+    });
+  }
 });
 $(document).ready(function () {});
