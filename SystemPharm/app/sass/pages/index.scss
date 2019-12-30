@@ -1,0 +1,102 @@
+.intro-section {
+	padding: 30px 0 60px;
+	@media screen and (min-width: 768px) {
+		padding: 100px 0 75px;
+	}
+	@media screen and (min-width: 1024px) {
+		padding: 100px 0 120px;
+	}
+	@media screen and (min-width: 1920px) {
+		padding: 195px 0 330px;
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	.intro-wrap {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		@media screen and (min-width: 768px) {
+			max-width: 380px;
+		}
+		@media screen and (min-width: 1024px) {
+			max-width: 740px;
+		}
+
+		span {
+			font-size: 15px;
+			line-height: 17px;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			color: #FF008A;
+			margin-bottom: 24px;
+		}
+	}
+
+	.video-link {
+		position: relative;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 14px;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		padding-left: 70px;
+		margin-top: 30px;
+
+		&:hover {
+			color: #FF008A;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: 47px;
+			height: 47px;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			background-size: contain;
+			background-image: url("data:image/svg+xml,%3Csvg width='47' height='48' viewBox='0 0 47 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.1294 23.5671C28.7867 23.9537 28.7867 24.9043 28.1294 25.2909L22.1486 28.809C21.482 29.2012 20.6416 28.7205 20.6416 27.9471L20.6416 20.9109C20.6416 20.1375 21.482 19.6568 22.1486 20.049L28.1294 23.5671Z' stroke='white' stroke-width='2'/%3E%3Ccircle cx='23.5' cy='24.0781' r='23' stroke='%23FF419F'/%3E%3C/svg%3E%0A");
+		}
+	}
+
+	.soc-wrap {
+		display: none;
+
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-direction: column;
+		}
+
+		a {
+			width: 15px;
+			height: 15px;
+			margin-top: 30px;
+			@media screen and (min-width: 1024px) {
+				margin-top: 60px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}
+
+.about-section {
+	padding-bottom: 16vw;
+
+	@media screen and (min-width: 1920px) {
+		padding-bottom: 220px;
+	}
+	
+	.link-wrap {
+		display: flex;
+		justify-content: flex-end;
+	}
+}

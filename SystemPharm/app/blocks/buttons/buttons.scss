@@ -1,0 +1,16 @@
+.section-link {
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #FF419F;
+
+	@media screen and (min-width: 1024px) {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	&:hover {
+		color: #fff;
+	}
+}

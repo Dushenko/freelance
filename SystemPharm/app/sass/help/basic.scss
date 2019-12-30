@@ -89,7 +89,6 @@ select {
 	background-position: center;
 
 	&.index-bg {
-		height: 2000px;
 		background-image: url('../images/index-bg.jpg');
 	}
 	
@@ -102,10 +101,14 @@ select {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1250px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	&_width {
+		max-width: 1600px;
+	}
 }
 
 .main-title {
