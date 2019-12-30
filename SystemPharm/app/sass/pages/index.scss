@@ -28,15 +28,6 @@
 		@media screen and (min-width: 1024px) {
 			max-width: 740px;
 		}
-
-		span {
-			font-size: 15px;
-			line-height: 17px;
-			letter-spacing: 0.2em;
-			text-transform: uppercase;
-			color: #FF008A;
-			margin-bottom: 24px;
-		}
 	}
 
 	.video-link {
@@ -114,7 +105,7 @@
 	}
 }
 
-.vacancy-section {
+.vacancy-slider-section {
 	padding-bottom: 15vw;
 
 	@media screen and (min-width: 1920px) {

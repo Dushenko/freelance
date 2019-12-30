@@ -1,0 +1,52 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.vacancy-section
+					.container.container_width
+						.vacancy-info.typography
+							span Карьера
+							h1 Стань частью команды
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+						.vacancy-wrap
+							.vacancy
+								.vacancy__img
+									img(src="images/vacancy.jpg", alt="")
+								.vacancy__info.typography
+									h3 Медицинский представитель
+									h4 Киевская область
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consecteturabore et dolore magna aliqua. 
+									a(href="#").section-link смотреть
+
+							.vacancy
+								.vacancy__img
+									img(src="images/vacancy.jpg", alt="")
+								.vacancy__info.typography
+									h3 Медицинский представитель
+									h4 Львовская область
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consecteturabore et dolore magna aliqua. 
+									a(href="#").section-link смотреть
+
+							.vacancy
+								.vacancy__img
+									img(src="images/vacancy.jpg", alt="")
+								.vacancy__info.typography
+									h3 Медицинский представитель
+									h4 Черниговская область
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consecteturabore et dolore magna aliqua. 
+									a(href="#").section-link смотреть
+
+
+
+		block footer
+			include ../blocks/footer/footer
