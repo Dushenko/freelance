@@ -1,0 +1,39 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.product-section
+					.container.container_width
+
+
+				section.production-section
+					.container.container_width.typography
+						h2 другая продукция
+						.production-wrap
+							a(href="#").production
+								.production__img
+									img(src="images/production.png", alt="")
+								h3.production__name Органический селен 100мг
+							a(href="#").production
+								.production__img
+									img(src="images/production.png", alt="")
+								h3.production__name Органический селен 100мг
+							a(href="#").production
+								.production__img
+									img(src="images/production.png", alt="")
+								h3.production__name Органический селен 100мг
+
+						.btn-wrap
+							a(href="#").section-link Вся продукция
+
+		block footer
+			include ../blocks/footer/footer

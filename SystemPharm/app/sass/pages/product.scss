@@ -1,0 +1,26 @@
+.production-section {
+	padding: 8vw 0;
+
+	h2 {
+		text-align: center;
+	}
+}
+
+.production-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.production {
+	width: 100%;
+
+	@media screen and (min-width: 480px) {
+		width: 50%;
+	}
+	@media screen and (min-width: 768px) {
+		width: 33.33%;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 25%;
+	}
+}
