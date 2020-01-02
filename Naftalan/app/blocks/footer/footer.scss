@@ -1,0 +1,31 @@
+.footer {
+	background-color: #cbcbcb;
+	padding: 79px 0 116px;
+	.nav {
+		display: flex;
+		ul {
+			margin-right: 300px;
+		}
+		li {
+			margin-bottom: 20px;
+		}
+		a {
+			color: #000000;
+			font-size: 30px;
+			font-weight: 400;
+			letter-spacing: 0.6px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.copyright {
+		display: block;
+		text-align: right;
+		color: #000000;
+		font-size: 24px;
+		font-weight: 200;
+		letter-spacing: 0.48px;
+	}
+
+}
