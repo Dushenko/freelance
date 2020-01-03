@@ -1,0 +1,43 @@
+.aboutus-section {
+	padding: 60px 0 40px;
+	.section-title {
+		margin-bottom: 36px;
+	}
+
+	.info-block {
+		display: flex;
+		align-items: flex-start;
+		margin-top: 100px;
+	}
+
+	.contacts {
+		background-color: #d9d9d9;
+		max-width: 540px;
+		width: 100%;
+		flex: none;
+		padding: 87px 50px;
+		margin-right: 20px;
+	}
+	.contact {
+		margin-bottom: 35px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		span {
+			margin-right: 7px;
+			opacity: 0.67;
+			color: #000000;
+			font-size: 25px;
+			font-weight: 400;
+			letter-spacing: 0.75px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.map {
+		width: calc(100% - 560px);
+		min-height: 328px;
+		height: 27vw;
+	}
+}

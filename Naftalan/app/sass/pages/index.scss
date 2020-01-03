@@ -1,5 +1,22 @@
 .intro-section {
-	padding: 15vh 0 0;
+	padding-top: 10vw;
+	height: 75vw;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		width: 0;
+		height: 0;
+		left: 0;
+		bottom: 0;
+		border-right: 100vw solid transparent;
+		border-bottom: 15vw solid #ffad17;
+	}
 
 	.title-img {
 		width: 100%;
@@ -11,28 +28,43 @@
 			object-fit: contain;
 		}
 	}
-	.container-max {
-		position: relative;
-	}
+}
 
-	.order-title {
-		color: #000000;
-		font-size: 45px;
-		font-weight: 700;
-		margin-bottom: 83px;
-	}
-	.order {
+.order-section {
+	background-color: #ffad17;
+	position: relative;
+	padding: 50px 0;
+
+	.container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		// background-size: auto;
-		// background-repeat: no-repeat;
-		// background-image: url('../images/order-bg.png');
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		width: 0;
+		height: 0;
+		left: 0;
+		bottom: -15vw;
+		border-left: 100vw solid transparent;
+		border-top: 15vw solid #ffad17;
 	}
 }
 
+.order-title {
+	display: block;
+	text-align: center;
+	color: #000000;
+	font-size: 45px;
+	font-weight: 700;
+	margin-bottom: 83px;
+}
+
 .info-section {
-	padding: 0 0 15vh;
+	padding: 15vw 0;
 	.info-description {
 		display: block;
 		font-size: 31px;
@@ -44,4 +76,43 @@
 			margin-bottom: 30px;
 		}
 	}
+}
+.overflow {
+	overflow: hidden;
+}
+
+.politics-section {
+	padding: 3vw  0 8vw;
+	.section-title {
+		margin-bottom: 36px;
+	}
+	.description {
+		color: #000000;
+		font-size: 31px;
+		font-weight: 400;
+		letter-spacing: 0.93px;
+		line-height: 62px;
+	}
+}
+.main-btn {
+	max-width: 505px;
+	width: 100%;
+	text-align: center;
+	color: #ffffff;
+	font-size: 45px;
+	font-weight: 500;
+	letter-spacing: 0.9px;
+	border-radius: 64px;
+	background-color: #1eb989;
+	padding: 38px 0;
+	&:hover {
+	}
+}
+.title-section {
+	padding: 5vw 0 0;
+}
+.search-section {
+	background-color: #28a261;
+	padding: 93px 0;
+	margin-bottom: 90px;
 }

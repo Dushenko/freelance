@@ -1,0 +1,31 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.aboutus-section
+			.container
+				h2.section-title О нас
+				p.section-info Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				.info-block
+					.contacts
+						.contact
+							span Телефон:
+							span +994511113322
+						.contact
+							span E-mail:
+							span serifsafarov@outlook.com
+						.contact
+							span Адрес:
+							span Баку, ул. Гасаноглы 7
+					.map
+						iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6152.409941002342!2d-80.84029333098194!3d35.22824852310104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a022d78b3de7%3A0x9f5c6731be8cbf86!2sUNC%20Charlotte%20Center%20City!5e0!3m2!1sru!2sua!4v1578012062856!5m2!1sru!2sua', width='100%', height='100%', frameborder='0', style='border:0;', allowfullscreen='')
+
+
+block footer
+	include ../blocks/footer/footer

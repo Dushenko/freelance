@@ -231,6 +231,12 @@ template{
   font-weight:100;
   font-style:normal; }
 
+@font-face{
+  font-family:'Segoe Print';
+  src:url("../fonts/SegoePrint.woff2") format("woff2"), url("../fonts/SegoePrint.woff") format("woff");
+  font-weight:normal;
+  font-style:normal; }
+
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
   margin:0;
   padding:0;
@@ -388,6 +394,111 @@ select{
     background-color:#28a261;
     padding:30px 117px; }
 
+.suppForm__title{
+  display:block;
+  color:#393939;
+  font-size:59px;
+  font-weight:400;
+  margin-bottom:77px; }
+
+.suppForm__input-wrap{
+  position:relative; }
+
+.suppForm__input-wrap:after{
+    position:absolute;
+    content:'';
+    width:35px;
+    height:35px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    top:50px;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    right:35px; }
+
+.suppForm__input-wrap_mail:after{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='36' viewBox='0 0 33 36'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23707070' d='M13.308 18.821c.115-1.136.293-2.137.531-3.015a7.875 7.875 0 0 1 .936-2.205 3.942 3.942 0 0 1 1.411-1.34c.556-.3 1.217-.458 1.991-.458.41 0 .815.054 1.197.158l-.769 8.811c-.22.657-.46 1.192-.72 1.597-.257.405-.518.72-.783.945-.263.225-.524.38-.772.464a2.162 2.162 0 0 1-.67.124c-.9 0-1.553-.428-1.958-1.283-.407-.857-.538-2.124-.396-3.795zM32.63 16.62c.104-2.473-.157-4.728-.783-6.764-.625-2.036-1.588-3.787-2.889-5.25-1.3-1.462-2.925-2.591-4.869-3.397C22.142.405 19.894 0 17.343 0c-2.565 0-4.883.464-6.962 1.395A16.056 16.056 0 0 0 5.006 5.24c-1.494 1.643-2.669 3.582-3.524 5.828C.622 13.318.137 15.76.02 18.403c-.101 2.896.182 5.447.85 7.643.67 2.198 1.686 4.032 3.045 5.506 1.359 1.476 3.05 2.587 5.071 3.334 2.023.747 4.343 1.12 6.957 1.12a17.827 17.827 0 0 0 3.816-.427 14.88 14.88 0 0 0 1.827-.528 7.918 7.918 0 0 0 1.546-.765l-.713-3.209c-.414.18-.873.344-1.382.495-.508.149-1.042.284-1.604.396a17.802 17.802 0 0 1-3.411.367c-1.958 0-3.69-.29-5.198-.869a9.277 9.277 0 0 1-3.766-2.619c-1.008-1.165-1.746-2.619-2.223-4.36-.477-1.742-.664-3.767-.563-6.084.106-2.138.473-4.129 1.103-5.963a15.268 15.268 0 0 1 2.619-4.785 12.08 12.08 0 0 1 4-3.182c1.553-.765 3.308-1.147 5.265-1.147 2.061 0 3.839.326 5.324.974a9.466 9.466 0 0 1 3.654 2.745c.945 1.179 1.624 2.6 2.038 4.261.412 1.66.567 3.499.464 5.508a16.24 16.24 0 0 1-.365 2.948c-.209.904-.486 1.696-.832 2.367-.349.668-.765 1.192-1.238 1.575a2.439 2.439 0 0 1-2.308.454 1.458 1.458 0 0 1-.657-.427c-.187-.205-.322-.482-.405-.82-.083-.341-.097-.782-.03-1.327l.986-11.34c-.398-.27-.799-.535-1.197-.792a8.517 8.517 0 0 0-1.305-.688 8.307 8.307 0 0 0-1.575-.473 10.55 10.55 0 0 0-2.03-.173 7.785 7.785 0 0 0-3.392.754c-1.049.502-1.98 1.222-2.79 2.155-.815.934-1.49 2.061-2.03 3.382-.54 1.319-.909 2.795-1.098 4.415a11.916 11.916 0 0 0 .144 3.604 7.807 7.807 0 0 0 1.103 2.763 5.276 5.276 0 0 0 1.9 1.766c.761.412 1.605.619 2.534.619 2.124 0 3.82-.85 5.08-2.552a4.801 4.801 0 0 0 1.895 1.942c.813.457 1.746.686 2.804.686 1.507 0 2.797-.319 3.877-.956a8.264 8.264 0 0 0 2.655-2.513 11.655 11.655 0 0 0 1.566-3.537 18.57 18.57 0 0 0 .598-4.028z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+.suppForm__input-wrap_tel:after{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' viewBox='0 0 33 33'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23707070' d='M31.032 1.67L24.49.162a1.52 1.52 0 0 0-1.73.874L19.743 8.08a1.506 1.506 0 0 0 .434 1.761l3.81 3.12a23.309 23.309 0 0 1-11.144 11.144l-3.12-3.811a1.508 1.508 0 0 0-1.76-.434L.919 22.878a1.527 1.527 0 0 0-.88 1.736l1.509 6.54c.157.68.76 1.17 1.471 1.17 16.107 0 29.183-13.05 29.183-29.182 0-.704-.485-1.314-1.17-1.471z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+.suppForm__input-wrap_ta:after{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' viewBox='0 0 33 33'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23707070' d='M24.488 14.593h-3.265v-3.265h3.265zm-6.53 0h-3.265v-3.265h3.265zm-6.53 0H8.163v-3.265h3.265zM29.386-.1H3.266C1.468-.1.015 1.37.015 3.165L0 32.551l6.53-6.53h22.856a3.275 3.275 0 0 0 3.265-3.265V3.165A3.275 3.275 0 0 0 29.386-.1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+.suppForm__input{
+  color:#393939;
+  font-size:30px;
+  font-weight:400;
+  padding:32px 70px 32px 40px;
+  width:100%;
+  border-radius:50px;
+  border:1px solid #707070;
+  background-color:#ffffff;
+  margin-bottom:41px; }
+
+.suppForm__textarea{
+  min-height:100px;
+  color:#393939;
+  font-size:30px;
+  font-weight:400;
+  height:270px;
+  width:100%;
+  border-radius:50px;
+  border:1px solid #707070;
+  background-color:#ffffff;
+  padding:15px 70px 15px 35px; }
+
+.searchForm__wrap{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-align:center;
+  align-items:center;
+  -webkit-box-pack:justify;
+  justify-content:space-between; }
+
+.searchForm__input{
+  color:#000000;
+  font-size:36px;
+  font-weight:600;
+  letter-spacing:0.72px;
+  width:250px;
+  padding:30px 20px;
+  border-radius:50px;
+  background-color:#ffffff; }
+
+.searchForm__input::-webkit-input-placeholder{
+    opacity:0.36;
+    color:#000000;
+    font-size:36px;
+    font-weight:600;
+    letter-spacing:0.72px; }
+
+.searchForm__input::-ms-input-placeholder{
+    opacity:0.36;
+    color:#000000;
+    font-size:36px;
+    font-weight:600;
+    letter-spacing:0.72px; }
+
+.searchForm__input::placeholder{
+    opacity:0.36;
+    color:#000000;
+    font-size:36px;
+    font-weight:600;
+    letter-spacing:0.72px; }
+
+.searchForm__btn{
+  color:#000000;
+  font-size:36px;
+  font-weight:600;
+  letter-spacing:0.72px;
+  width:350px;
+  padding:30px 20px;
+  border-radius:50px;
+  background-color:#ffffff; }
+
 .header{
   background-color:#f6f6f6; }
 
@@ -458,12 +569,67 @@ select{
         background-position:center;
         background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23393939' d='M15.918 11.579l-3.584-1.537a.768.768 0 0 0-.896.221l-1.588 1.94a11.862 11.862 0 0 1-5.67-5.671l1.939-1.587a.766.766 0 0 0 .22-.896L4.805.464a.773.773 0 0 0-.88-.445L.595.787A.768.768 0 0 0 0 1.536c0 8.209 6.654 14.85 14.85 14.85a.768.768 0 0 0 .748-.596l.769-3.328a.777.777 0 0 0-.449-.883z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
 
+.mask{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:10;
+  background-color:rgba(0, 0, 0, 0.3);
+  -webkit-transition:all 1s ease;
+  transition:all 1s ease;
+  display:none; }
+
+.mask.active{
+    display:block; }
+
+.tourModal{
+  -webkit-transition:all 0.5s ease;
+  transition:all 0.5s ease;
+  position:fixed;
+  top:50%;
+  -webkit-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  left:50%;
+  z-index:20;
+  border-radius:52px;
+  background-color:#ffffff;
+  max-width:1006px;
+  width:100%;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  -webkit-box-align:center;
+  align-items:center;
+  padding:120px 0;
+  display:none; }
+
+.tourModal.active{
+    display:-webkit-box;
+    display:flex; }
+
+.tourModal .order-title{
+    font-weight:400; }
+
+.tourModal .close-modal{
+    cursor:pointer;
+    position:absolute;
+    top:72px;
+    right:60px;
+    width:38px;
+    height:38px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37' height='38' viewBox='0 0 37 38'%3E%3Cg%3E%3Cg%3E%3Cpath d='M37 4.226L33.274.5 18.5 15.274 3.726.5 0 4.226 14.773 19 0 33.774 3.726 37.5 18.5 22.727 33.274 37.5 37 33.774 22.226 19z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
 .main-title{
   color:#393939;
   text-align:center;
   font-size:80px;
-  font-weight:400;
-  margin-bottom:8vh; }
+  font-weight:400; }
 
 .info-title{
   display:block;
@@ -473,8 +639,212 @@ select{
   font-weight:600;
   letter-spacing:0.93px; }
 
+.section-title{
+  text-transform:uppercase;
+  color:#000000;
+  font-size:55px;
+  font-weight:500;
+  letter-spacing:1.65px;
+  text-align:center; }
+
+.section-info{
+  color:#000000;
+  font-size:31px;
+  font-weight:400;
+  letter-spacing:0.93px;
+  line-height:62px; }
+
+.find-title{
+  opacity:0.83;
+  color:#393939;
+  font-family:"Segoe Print";
+  font-size:80px;
+  font-weight:400;
+  letter-spacing:1.6px; }
+
+.tour-title{
+  color:#393939;
+  font-size:80px;
+  font-weight:400;
+  letter-spacing:1.6px;
+  margin-bottom:73px; }
+
+.aboutus-section{
+  padding:60px 0 40px; }
+
+.aboutus-section .section-title{
+    margin-bottom:36px; }
+
+.aboutus-section .info-block{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-align:start;
+    align-items:flex-start;
+    margin-top:100px; }
+
+.aboutus-section .contacts{
+    background-color:#d9d9d9;
+    max-width:540px;
+    width:100%;
+    -webkit-box-flex:0;
+    flex:none;
+    padding:87px 50px;
+    margin-right:20px; }
+
+.aboutus-section .contact{
+    margin-bottom:35px; }
+
+.aboutus-section .contact:last-child{
+      margin-bottom:0; }
+
+.aboutus-section .contact span{
+      margin-right:7px;
+      opacity:0.67;
+      color:#000000;
+      font-size:25px;
+      font-weight:400;
+      letter-spacing:0.75px; }
+
+.aboutus-section .contact span:last-child{
+        margin-right:0; }
+
+.aboutus-section .map{
+    width:calc(100% - 560px);
+    min-height:328px;
+    height:27vw; }
+
+.find-section{
+  padding:8vw 0 0;
+  height:49vw;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:bottom center;
+  position:relative; }
+
+.tours-section{
+  padding:0 0 5vw; }
+
+.tours-section .tour-title:last-of-type{
+    margin-top:160px; }
+
+.tours-section .main-btn{
+    display:block;
+    margin:5vw auto 0; }
+
+.tours{
+  display:-webkit-box;
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 -20px; }
+
+.tour{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  max-width:25%;
+  height:auto;
+  width:100%;
+  padding:0 20px;
+  margin-bottom:40px; }
+
+.tour__img{
+    width:100%;
+    height:360px; }
+
+.tour__img img{
+      width:100%;
+      height:100%;
+      -o-object-fit:cover;
+      object-fit:cover; }
+
+.tour__info{
+    padding:37px 0 0 37px;
+    box-shadow:0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color:#ffffff; }
+
+.tour__name{
+    display:block;
+    color:#393939;
+    font-size:21px;
+    font-weight:600;
+    margin-bottom:12px; }
+
+.tour__description{
+    display:block;
+    opacity:0.68;
+    color:#393939;
+    font-size:16px;
+    font-weight:400;
+    margin-bottom:15px; }
+
+.tour__price-wrap{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
+    -webkit-box-align:center;
+    align-items:center; }
+
+.tour__price{
+    color:#393939;
+    font-size:18px;
+    font-weight:500; }
+
+.tour__more{
+    width:41px;
+    height:41px;
+    letter-spacing:2px;
+    background-color:#28a261;
+    text-align:center;
+    font-size:26px;
+    font-weight:700;
+    color:#fff; }
+
+.support-section .container{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-pack:center;
+  justify-content:center;
+  -webkit-box-align:center;
+  align-items:center; }
+
+.support-section .supp-img{
+  -webkit-box-flex:0;
+  flex:none;
+  width:680px;
+  height:auto;
+  margin-right:63px; }
+
+.support-section .supp-img img{
+    width:100%;
+    height:100%;
+    -o-object-fit:contain;
+    object-fit:contain; }
+
+.support-section .form-wrap{
+  max-width:610px;
+  width:100%; }
+
 .intro-section{
-  padding:15vh 0 0; }
+  padding-top:10vw;
+  height:75vw;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:bottom center;
+  position:relative; }
+
+.intro-section:before{
+    content:'';
+    position:absolute;
+    z-index:1;
+    width:0;
+    height:0;
+    left:0;
+    bottom:0;
+    border-right:100vw solid transparent;
+    border-bottom:15vw solid #ffad17; }
 
 .intro-section .title-img{
     width:100%;
@@ -487,16 +857,12 @@ select{
       -o-object-fit:contain;
       object-fit:contain; }
 
-.intro-section .container-max{
-    position:relative; }
+.order-section{
+  background-color:#ffad17;
+  position:relative;
+  padding:50px 0; }
 
-.intro-section .order-title{
-    color:#000000;
-    font-size:45px;
-    font-weight:700;
-    margin-bottom:83px; }
-
-.intro-section .order{
+.order-section .container{
     display:-webkit-box;
     display:flex;
     -webkit-box-orient:vertical;
@@ -505,8 +871,27 @@ select{
     -webkit-box-align:center;
     align-items:center; }
 
+.order-section:before{
+    content:'';
+    position:absolute;
+    z-index:1;
+    width:0;
+    height:0;
+    left:0;
+    bottom:-15vw;
+    border-left:100vw solid transparent;
+    border-top:15vw solid #ffad17; }
+
+.order-title{
+  display:block;
+  text-align:center;
+  color:#000000;
+  font-size:45px;
+  font-weight:700;
+  margin-bottom:83px; }
+
 .info-section{
-  padding:0 0 15vh; }
+  padding:15vw 0; }
 
 .info-section .info-description{
     display:block;
@@ -518,3 +903,108 @@ select{
 .info-section .info-description:first-of-type{
       text-indent:50px;
       margin-bottom:30px; }
+
+.overflow{
+  overflow:hidden; }
+
+.politics-section{
+  padding:3vw  0 8vw; }
+
+.politics-section .section-title{
+    margin-bottom:36px; }
+
+.politics-section .description{
+    color:#000000;
+    font-size:31px;
+    font-weight:400;
+    letter-spacing:0.93px;
+    line-height:62px; }
+
+.main-btn{
+  max-width:505px;
+  width:100%;
+  text-align:center;
+  color:#ffffff;
+  font-size:45px;
+  font-weight:500;
+  letter-spacing:0.9px;
+  border-radius:64px;
+  background-color:#1eb989;
+  padding:38px 0; }
+
+.title-section{
+  padding:5vw 0 0; }
+
+.search-section{
+  background-color:#28a261;
+  padding:93px 0;
+  margin-bottom:90px; }
+
+.det-tour-section{
+  padding:3vw 0 10vw; }
+
+.det-tour-section .tour-name{
+    color:#393939;
+    font-size:80px;
+    font-weight:400;
+    margin-bottom:47px; }
+
+.det-tour-section .det-tour{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
+    -webkit-box-align:start;
+    align-items:flex-start;
+    margin-bottom:42px; }
+
+.det-tour-section .tour-img{
+    max-width:950px;
+    width:100%;
+    margin-right:20px;
+    height:auto; }
+
+.det-tour-section .tour-img img{
+      width:100%;
+      height:100%;
+      -o-object-fit:contain;
+      object-fit:contain; }
+
+.det-tour-section .tour-info{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -webkit-box-align:center;
+    align-items:center;
+    max-width:644px;
+    width:100%; }
+
+.det-tour-section .main-info{
+    background-color:#d9d9d9;
+    width:100%;
+    padding:52px 30px 52px 100px;
+    margin-bottom:115px; }
+
+.det-tour-section .block{
+    margin-bottom:65px; }
+
+.det-tour-section .block:last-child{
+      margin:0; }
+
+.det-tour-section .block span{
+      margin-right:20px;
+      color:#545454;
+      font-size:40px;
+      font-weight:500;
+      letter-spacing:0.32px; }
+
+.det-tour-section .block span:last-child{
+        margin:0; }
+
+.det-tour-section .tour-description{
+    color:#393939;
+    font-size:37px;
+    font-weight:500;
+    letter-spacing:0.74px; }

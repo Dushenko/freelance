@@ -1,0 +1,181 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.find-section(style="background-image: url('images/find-bg.jpg')")
+			.container
+				h2.find-title Найди подходящий именно тебе тур
+		section.tours-section
+			.container
+				h3.tour-title Популярные туры
+				.tours
+					.tour
+						.tour__img
+							img(src="images/tour1.jpg", alt="")
+						.tour__info
+							span.tour__name Лагыч
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour1.jpg", alt="")
+						.tour__info
+							span.tour__name Лагыч
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour1.jpg", alt="")
+						.tour__info
+							span.tour__name Лагыч
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour1.jpg", alt="")
+						.tour__info
+							span.tour__name Лагыч
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour1.jpg", alt="")
+						.tour__info
+							span.tour__name Лагыч
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour1.jpg", alt="")
+						.tour__info
+							span.tour__name Лагыч
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour1.jpg", alt="")
+						.tour__info
+							span.tour__name Лагыч
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour1.jpg", alt="")
+						.tour__info
+							span.tour__name Лагыч
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+				h3.tour-title Новые туры
+				.tours
+					.tour
+						.tour__img
+							img(src="images/tour2.jpg", alt="")
+						.tour__info
+							span.tour__name Гобустан
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour2.jpg", alt="")
+						.tour__info
+							span.tour__name Гобустан
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour2.jpg", alt="")
+						.tour__info
+							span.tour__name Гобустан
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour2.jpg", alt="")
+						.tour__info
+							span.tour__name Гобустан
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour2.jpg", alt="")
+						.tour__info
+							span.tour__name Гобустан
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour2.jpg", alt="")
+						.tour__info
+							span.tour__name Гобустан
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour2.jpg", alt="")
+						.tour__info
+							span.tour__name Гобустан
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+					.tour
+						.tour__img
+							img(src="images/tour2.jpg", alt="")
+						.tour__info
+							span.tour__name Гобустан
+							p.tour__description Посетите один из древнейших городов Азербайджана
+							.tour__price-wrap 
+								span.tour__price 150$
+								a(href="#").tour__more ...
+		section.support-section
+			.container
+				.supp-img
+					img(src="images/supp.png", alt="")
+				.form-wrap
+					form(action="#").suppForm
+						span.suppForm__title Остались вопросы?
+						.suppForm__input-wrap.suppForm__input-wrap_mail
+							input(type="text").suppForm__input
+						.suppForm__input-wrap.suppForm__input-wrap_tel
+							input(type="text").suppForm__input
+						.suppForm__input-wrap.suppForm__input-wrap_ta
+							textarea(name="").suppForm__textarea
+
+
+
+block footer
+	include ../blocks/footer/footer

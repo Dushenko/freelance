@@ -1,0 +1,47 @@
+.mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.3);
+	transition: all 1s ease;
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+.tourModal {
+	transition: all 0.5s ease;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	z-index: 20;
+	border-radius: 52px;
+	background-color: #ffffff;
+	max-width: 1006px;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	padding: 120px 0;
+	display: none;
+	&.active {
+		display: flex;
+	}
+	.order-title {
+		font-weight: 400;
+	}
+	.close-modal {
+		cursor: pointer;
+		position: absolute;
+		top: 72px;
+		right: 60px;
+		width: 38px;
+		height: 38px;
+		@include bg-img-center;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37' height='38' viewBox='0 0 37 38'%3E%3Cg%3E%3Cg%3E%3Cpath d='M37 4.226L33.274.5 18.5 15.274 3.726.5 0 4.226 14.773 19 0 33.774 3.726 37.5 18.5 22.727 33.274 37.5 37 33.774 22.226 19z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	}
+}

@@ -28,20 +28,21 @@
         </div>
       </header>
       <main class="main">
-        <section class="intro-section">
-          <div class="container-max">
+        <section class="intro-section" style="background-image: url('images/intro.jpg')">
+          <div class="container">
             <h1 class="main-title">НАФТАЛАН</h1>
-            <div class="title-img"><img src="images/intro.jpg" alt=""></div>
-            <div class="order">
-              <h2 class="order-title">Оформление заказа</h2>
-              <form class="mainForm" action="#">
-                <input class="mainForm__input" type="text" placeholder="Кол-во людей">
-                <input class="mainForm__input" type="text" placeholder="Ф.И.О. контактного лица">
-                <input class="mainForm__input" type="text" placeholder="Телефон">
-                <input class="mainForm__input" type="text" placeholder="E-mail">
-                <button class="mainForm__btn" type="submit">Заказать</button>
-              </form>
-            </div>
+          </div>
+        </section>
+        <section class="order-section">
+          <div class="container">
+            <h2 class="order-title">Оформление заказа</h2>
+            <form class="mainForm" action="#">
+              <input class="mainForm__input" type="text" placeholder="Кол-во людей">
+              <input class="mainForm__input" type="text" placeholder="Ф.И.О. контактного лица">
+              <input class="mainForm__input" type="text" placeholder="Телефон">
+              <input class="mainForm__input" type="text" placeholder="E-mail">
+              <button class="mainForm__btn" type="submit">Заказать</button>
+            </form>
           </div>
         </section>
         <section class="info-section">
@@ -68,8 +69,19 @@
           <p class="copyright">Copyright SHARIFF</p>
         </div>
       </footer>
+      <div class="mask"></div>
+      <div class="tourModal"><span class="close-modal"></span>
+        <h2 class="order-title">Оформление заказа</h2>
+        <form class="mainForm" action="#">
+          <input class="mainForm__input" type="text" placeholder="Кол-во людей">
+          <input class="mainForm__input" type="text" placeholder="Ф.И.О. контактного лица">
+          <input class="mainForm__input" type="text" placeholder="Телефон">
+          <input class="mainForm__input" type="text" placeholder="E-mail">
+          <button class="mainForm__btn" type="submit">Заказать</button>
+        </form>
+      </div>
     </div>
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="libs/libs.min.js"></script>
     <script src="js/app.js"></script>
   </body>

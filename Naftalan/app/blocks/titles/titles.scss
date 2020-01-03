@@ -3,7 +3,7 @@
 	text-align: center;
 	font-size: 80px;
 	font-weight: 400;
-	margin-bottom: 8vh;
+	// margin-bottom: 8vh;
 }
 .info-title {
 	display: block;
@@ -12,4 +12,38 @@
 	font-size: 31px;
 	font-weight: 600;
 	letter-spacing: 0.93px;
+}
+
+.section-title {
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 55px;
+	font-weight: 500;
+	letter-spacing: 1.65px;
+	text-align: center;
+}
+
+.section-info {
+	color: #000000;
+	font-size: 31px;
+	font-weight: 400;
+	letter-spacing: 0.93px;
+	line-height: 62px;
+}
+
+.find-title {
+	opacity: 0.83;
+	color: #393939;
+	font-family: "Segoe Print";
+	font-size: 80px;
+	font-weight: 400;
+	letter-spacing: 1.6px;
+}
+
+.tour-title {
+	color: #393939;
+	font-size: 80px;
+	font-weight: 400;
+	letter-spacing: 1.6px;
+	margin-bottom: 73px;
 }

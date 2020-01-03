@@ -8,19 +8,19 @@ block header
 
 block content
 	main.main
-		section.intro-section
-			.container-max
+		section.intro-section(style="background-image: url('images/intro.jpg')")
+			.container
 				h1.main-title НАФТАЛАН
-				.title-img
-					img(src="images/intro.jpg", alt="")
-				.order
-					h2.order-title Оформление заказа
-					form(action="#").mainForm
-						input(type="text" placeholder="Кол-во людей").mainForm__input
-						input(type="text" placeholder="Ф.И.О. контактного лица").mainForm__input
-						input(type="text" placeholder="Телефон").mainForm__input
-						input(type="text" placeholder="E-mail").mainForm__input
-						button(type='submit').mainForm__btn Заказать
+				
+		section.order-section
+			.container
+				h2.order-title Оформление заказа
+				form(action="#").mainForm
+					input(type="text" placeholder="Кол-во людей").mainForm__input
+					input(type="text" placeholder="Ф.И.О. контактного лица").mainForm__input
+					input(type="text" placeholder="Телефон").mainForm__input
+					input(type="text" placeholder="E-mail").mainForm__input
+					button(type='submit').mainForm__btn Заказать
 		section.info-section
 			.container
 				span.info-title ЛЕГЕНФА О НАФТАЛАНЕ
