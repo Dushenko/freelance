@@ -54,17 +54,12 @@
 	}
 }
 
-.order-title {
-	display: block;
-	text-align: center;
-	color: #000000;
-	font-size: 45px;
-	font-weight: 700;
-	margin-bottom: 83px;
-}
-
 .info-section {
-	padding: 15vw 0;
+	padding: 16vw 0;
+	@media screen and (min-width: 1350px) {
+		padding: 200px 0 150px;
+	}
+
 	.info-description {
 		display: block;
 		font-size: 31px;

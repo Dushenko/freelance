@@ -1,0 +1,35 @@
+.typography {
+
+	h2 {
+		font-size: 25px;
+		font-weight: 600;
+		margin-bottom: 40px;
+
+		@media screen and (min-width: 768px) {
+			font-size: 30px;
+		}
+		@media screen and (min-width: 1350px) {
+			font-size: 35px;
+		}
+	}
+
+	p {
+		font-size: 21px;
+		font-weight: 400;
+		letter-spacing: 0.63px;
+		line-height: 38px;
+		margin-bottom: 30px;
+
+		@media screen and (min-width: 768px) {
+			font-size: 25px;
+		}
+		@media screen and (min-width: 1350px) {
+			font-size: 31px;
+			line-height: 62px;
+		}
+
+		&:first-of-type {
+			text-indent: 50px;
+		}
+	}
+}

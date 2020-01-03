@@ -15,6 +15,10 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 
 body {
 	font-family: 'Montserrat';
+
+	&.overflow {
+		overflow: hidden;
+	}
 }
 
 a {
@@ -93,31 +97,18 @@ select {
 
 	}
 }
+
 .container-max {
 	max-width: 1920px;
 	width: 100%;
 	margin: 0 auto;
 }
+
 .container {
 	max-width: 1670px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
-}
-
-.main-title {
-	
-	@media screen and (min-width: 768px) {
-	}
-	@media screen and (min-width: 1024px) {
-	}
-}
-
-.section-title {
-
-	@media screen and (max-width: 768px) {
-		
-	}
 }
 
 //scroll
