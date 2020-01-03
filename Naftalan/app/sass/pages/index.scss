@@ -77,7 +77,7 @@
 }
 
 .politics-section {
-	padding: 3vw  0 8vw;
+	padding: 5vw  0 8vw;
 	.section-title {
 		margin-bottom: 36px;
 	}
@@ -90,17 +90,23 @@
 	}
 }
 .main-btn {
-	max-width: 505px;
+	max-width: 300px;
 	width: 100%;
 	text-align: center;
 	color: #ffffff;
-	font-size: 45px;
+	font-size: 25px;
 	font-weight: 500;
 	letter-spacing: 0.9px;
 	border-radius: 64px;
 	background-color: #1eb989;
-	padding: 38px 0;
+	padding: 23px 0;
 	&:hover {
+	}
+	@media screen and (min-width: 425px) {
+		padding: 38px 0;
+		max-width: 505px;
+		width: 100%;
+		font-size: 45px;
 	}
 }
 .title-section {

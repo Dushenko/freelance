@@ -32,33 +32,66 @@
 .section-title {
 	text-transform: uppercase;
 	color: #000000;
-	font-size: 55px;
+	font-size: 30px;
 	font-weight: 500;
 	letter-spacing: 1.65px;
 	text-align: center;
+	@media screen and (min-width: 768px) {
+		font-size: 55px;
+	}
 }
 
 .section-info {
 	color: #000000;
-	font-size: 31px;
+	font-size: 18px;
 	font-weight: 400;
 	letter-spacing: 0.93px;
-	line-height: 62px;
+	line-height: 30px;
+	@media screen and (min-width: 768px) {
+		font-size: 31px;
+		line-height: 62px;
+	}
 }
 
 .find-title {
+	text-align: center;
 	opacity: 0.83;
 	color: #393939;
 	font-family: "Segoe Print";
-	font-size: 80px;
+	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 1.6px;
+	
+	@media screen and (min-width: 470px) {
+		font-size: 20px;
+	}
+	@media screen and (min-width: 860px) {
+		font-size: 40px;
+	}
+	@media screen and (min-width: 1366px) {
+		font-size: 60px;
+	}
+	@media screen and (min-width: 1635px) {
+		font-size: 80px;
+	}
 }
 
 .tour-title {
 	color: #393939;
-	font-size: 80px;
 	font-weight: 400;
 	letter-spacing: 1.6px;
-	margin-bottom: 73px;
+	font-size: 20px;
+	margin-bottom: 15px;
+	@media screen and (min-width: 1024px) {
+		font-size: 80px;
+		margin-bottom: 73px;
+	}
+	@media screen and (min-width: 1024px) {
+		font-size: 60px;
+		margin-bottom: 50px;
+	}
+	@media screen and (min-width: 440px) {
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
 }

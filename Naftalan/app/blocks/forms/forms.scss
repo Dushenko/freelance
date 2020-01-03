@@ -61,23 +61,37 @@
 
 .suppForm {
 	&__title {
+		text-align: center;
 		display: block;
 		color: #393939;
-		font-size: 59px;
+		font-size: 20px;
 		font-weight: 400;
-		margin-bottom: 77px;
+		margin-bottom: 37px;
+		@media screen and (min-width: 1336px) {
+			font-size: 59px;
+			margin-bottom: 77px;
+		}
+		@media screen and (min-width: 425px) {
+			font-size: 30px;
+		}
 	}
 	&__input-wrap {
 		position: relative;
 		&:after {
 			position: absolute;
 			content: '';
-			width: 35px;
-			height: 35px;
+			width: 18px;
+			height: 18px;
 			@include bg-img-center;
-			top: 50px;
+			top: 30px;
 			transform: translateY(-50%);
-			right: 35px;
+			right: 20px;
+			@media screen and (min-width: 425px) {
+				width: 35px;
+				height: 35px;
+				top: 50px;
+				right: 35px;
+			}
 		}
 		&_mail {
 			&:after {
@@ -97,26 +111,38 @@
 	}
 	&__input {
 		color: #393939;
-		font-size: 30px;
+		font-size: 22px;
 		font-weight: 400;
-		padding: 32px 70px 32px 40px;
+		padding: 16px 45px 16px 20px;
 		width: 100%;
 		border-radius: 50px;
 		border: 1px solid #707070;
 		background-color: #ffffff;
-		margin-bottom: 41px;
+		margin-bottom: 20px;
+		@media screen and (min-width: 425px) {
+			margin-bottom: 41px;
+			font-size: 30px;
+			padding: 32px 70px 32px 40px;
+		}
 	}
 	&__textarea {
 		min-height: 100px;
 		color: #393939;
-		font-size: 30px;
+		font-size: 22px;
 		font-weight: 400;
-		height: 270px;
+		height: 150px;
 		width: 100%;
-		border-radius: 50px;
+		border-radius: 30px;
 		border: 1px solid #707070;
 		background-color: #ffffff;
-		padding: 15px 70px 15px 35px;
+		padding: 15px 45px 15px 17px;
+		@media screen and (min-width: 425px) {
+			border-radius: 50px;
+			height: 220px;
+			margin-bottom: 41px;
+			font-size: 30px;
+			padding: 15px 70px 15px 35px;
+		}
 	}
 }
 
