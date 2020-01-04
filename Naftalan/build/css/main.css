@@ -564,17 +564,33 @@ select{
 .searchForm__wrap{
   display:-webkit-box;
   display:flex;
-  -webkit-box-align:center;
-  align-items:center;
-  -webkit-box-pack:justify;
-  justify-content:space-between; }
+  flex-wrap:wrap;
+  margin:-20px; }
+
+.searchForm__input-wrap{
+  padding:0 20px;
+  width:100%;
+  margin:0 0 20px; }
+
+@media screen and (min-width: 480px){
+    .searchForm__input-wrap{
+      width:50%; } }
+
+@media screen and (min-width: 768px){
+    .searchForm__input-wrap{
+      width:33.33%; } }
+
+@media screen and (min-width: 1024px){
+    .searchForm__input-wrap{
+      width:25%;
+      margin:0; } }
 
 .searchForm__input{
+  width:100%;
   color:#000000;
-  font-size:36px;
+  font-size:17px;
   font-weight:600;
   letter-spacing:0.72px;
-  width:250px;
   padding:30px 20px;
   border-radius:50px;
   background-color:#ffffff; }
@@ -582,33 +598,49 @@ select{
 .searchForm__input::-webkit-input-placeholder{
     opacity:0.36;
     color:#000000;
-    font-size:36px;
+    font-size:17px;
     font-weight:600;
     letter-spacing:0.72px; }
 
 .searchForm__input::-ms-input-placeholder{
     opacity:0.36;
     color:#000000;
-    font-size:36px;
+    font-size:17px;
     font-weight:600;
     letter-spacing:0.72px; }
 
 .searchForm__input::placeholder{
     opacity:0.36;
     color:#000000;
-    font-size:36px;
+    font-size:17px;
     font-weight:600;
     letter-spacing:0.72px; }
 
+@media screen and (min-width: 768px){
+      .searchForm__input::-webkit-input-placeholder{
+        font-size:36px; }
+      .searchForm__input::-ms-input-placeholder{
+        font-size:36px; }
+      .searchForm__input::placeholder{
+        font-size:36px; } }
+
+@media screen and (min-width: 768px){
+    .searchForm__input{
+      font-size:36px; } }
+
 .searchForm__btn{
+  width:100%;
   color:#000000;
-  font-size:36px;
+  font-size:17px;
   font-weight:600;
   letter-spacing:0.72px;
-  width:350px;
   padding:30px 20px;
   border-radius:50px;
   background-color:#ffffff; }
+
+@media screen and (min-width: 768px){
+    .searchForm__btn{
+      font-size:36px; } }
 
 .header{
   background-color:#f6f6f6; }
@@ -817,6 +849,8 @@ select{
     display:block; }
 
 .tourModal{
+  max-width:700px;
+  width:96%;
   -webkit-transition:all 0.5s ease;
   transition:all 0.5s ease;
   position:fixed;
@@ -828,34 +862,100 @@ select{
   z-index:20;
   border-radius:52px;
   background-color:#ffffff;
-  max-width:1006px;
-  width:100%;
   -webkit-box-orient:vertical;
   -webkit-box-direction:normal;
   flex-direction:column;
   -webkit-box-align:center;
   align-items:center;
-  padding:120px 0;
-  display:none; }
+  display:none;
+  padding:30px 20px; }
+
+@media screen and (min-width: 425px){
+    .tourModal{
+      padding:30px 40px;
+      max-width:500px; } }
+
+@media screen and (min-width: 768px){
+    .tourModal{
+      padding:30px 60px;
+      max-width:700px; } }
+
+.tourModal .mainForm__input{
+    margin-bottom:15px; }
+
+.tourModal .mainForm__btn{
+    margin-top:30px; }
+
+@media screen and (min-width: 768px){
+      .tourModal .mainForm__btn{
+        margin:0 0 0 auto; } }
+
+.tourModal .mainForm__input{
+    font-size:15px; }
+
+@media screen and (min-width: 425px){
+      .tourModal .mainForm__input{
+        font-size:20px; } }
+
+@media screen and (min-width: 768px){
+      .tourModal .mainForm__input{
+        font-size:36px; } }
+
+.tourModal .mainForm__input::-webkit-input-placeholder{
+      font-size:15px; }
+
+.tourModal .mainForm__input::-ms-input-placeholder{
+      font-size:15px; }
+
+.tourModal .mainForm__input::placeholder{
+      font-size:15px; }
+
+@media screen and (min-width: 425px){
+        .tourModal .mainForm__input::-webkit-input-placeholder{
+          font-size:20px; }
+        .tourModal .mainForm__input::-ms-input-placeholder{
+          font-size:20px; }
+        .tourModal .mainForm__input::placeholder{
+          font-size:20px; } }
+
+@media screen and (min-width: 768px){
+        .tourModal .mainForm__input::-webkit-input-placeholder{
+          font-size:36px; }
+        .tourModal .mainForm__input::-ms-input-placeholder{
+          font-size:36px; }
+        .tourModal .mainForm__input::placeholder{
+          font-size:36px; } }
 
 .tourModal.active{
     display:-webkit-box;
     display:flex; }
 
 .tourModal .order-title{
-    font-weight:400; }
+    font-weight:400;
+    font-size:19px;
+    margin-bottom:30px; }
+
+@media screen and (min-width: 768px){
+      .tourModal .order-title{
+        font-size:30px;
+        margin-bottom:40px; } }
 
 .tourModal .close-modal{
     cursor:pointer;
     position:absolute;
-    top:72px;
-    right:60px;
-    width:38px;
-    height:38px;
+    top:6%;
+    right:6%;
+    width:15px;
+    height:15px;
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37' height='38' viewBox='0 0 37 38'%3E%3Cg%3E%3Cg%3E%3Cpath d='M37 4.226L33.274.5 18.5 15.274 3.726.5 0 4.226 14.773 19 0 33.774 3.726 37.5 18.5 22.727 33.274 37.5 37 33.774 22.226 19z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+@media screen and (min-width: 768px){
+      .tourModal .close-modal{
+        width:37px;
+        height:37px; } }
 
 .main-title{
   color:#393939;
@@ -943,20 +1043,113 @@ select{
   font-size:20px;
   margin-bottom:15px; }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 440px){
     .tour-title{
-      font-size:80px;
-      margin-bottom:73px; } }
+      font-size:40px;
+      margin-bottom:30px; } }
 
 @media screen and (min-width: 1024px){
     .tour-title{
       font-size:60px;
       margin-bottom:50px; } }
 
-@media screen and (min-width: 440px){
+@media screen and (min-width: 1366px){
     .tour-title{
-      font-size:40px;
-      margin-bottom:30px; } }
+      font-size:80px;
+      margin-bottom:73px; } }
+
+.tours-wrap{
+  display:-webkit-box;
+  display:flex;
+  flex-wrap:wrap; }
+
+@media screen and (min-width: 480px){
+    .tours-wrap{
+      margin:0 -10px; } }
+
+@media screen and (min-width: 1024px){
+    .tours-wrap{
+      margin:0 -20px; } }
+
+.tour{
+  width:100%;
+  margin-bottom:40px; }
+
+@media screen and (min-width: 480px){
+    .tour{
+      padding:0 10px;
+      width:50%; } }
+
+@media screen and (min-width: 768px){
+    .tour{
+      width:33.33%; } }
+
+@media screen and (min-width: 1024px){
+    .tour{
+      width:25%;
+      padding:0 20px; } }
+
+.tour__wrap{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column; }
+
+.tour__img{
+    width:100%;
+    height:360px; }
+
+.tour__img img{
+      width:100%;
+      height:100%; }
+
+.tour__info{
+    padding:15px 0 0 15px;
+    box-shadow:0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color:#ffffff; }
+
+@media screen and (min-width: 768px){
+      .tour__info{
+        padding:37px 0 0 37px; } }
+
+.tour__name{
+    display:block;
+    color:#393939;
+    font-size:21px;
+    font-weight:600;
+    margin-bottom:12px; }
+
+.tour__description{
+    display:block;
+    opacity:0.68;
+    color:#393939;
+    font-size:16px;
+    font-weight:400;
+    margin-bottom:15px; }
+
+.tour__price-wrap{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
+    -webkit-box-align:center;
+    align-items:center; }
+
+.tour__price{
+    color:#393939;
+    font-size:18px;
+    font-weight:500; }
+
+.tour__more{
+    width:41px;
+    height:41px;
+    letter-spacing:2px;
+    background-color:#28a261;
+    text-align:center;
+    font-size:26px;
+    font-weight:700;
+    color:#fff; }
 
 .typography h2{
   text-transform:uppercase;
@@ -1006,7 +1199,7 @@ select{
       line-height:62px; } }
 
 .typography p:first-of-type{
-    text-indent:50px; }
+    text-indent:40px; }
 
 .aboutus-section{
   padding:30px 0 20px; }
@@ -1121,99 +1314,6 @@ select{
 .tours-section .main-btn{
     display:block;
     margin:5vw auto 0; }
-
-.tours-wrap{
-  display:-webkit-box;
-  display:flex;
-  flex-wrap:wrap; }
-
-@media screen and (min-width: 480px){
-    .tours-wrap{
-      margin:0 -10px; } }
-
-@media screen and (min-width: 1024px){
-    .tours-wrap{
-      margin:0 -20px; } }
-
-.tour{
-  width:100%;
-  margin-bottom:40px; }
-
-@media screen and (min-width: 480px){
-    .tour{
-      padding:0 10px;
-      width:50%; } }
-
-@media screen and (min-width: 768px){
-    .tour{
-      width:33.33%; } }
-
-@media screen and (min-width: 1024px){
-    .tour{
-      width:25%;
-      padding:0 20px; } }
-
-.tour__wrap{
-    display:-webkit-box;
-    display:flex;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-    flex-direction:column; }
-
-.tour__img{
-    width:100%;
-    height:360px; }
-
-.tour__img img{
-      width:100%;
-      height:100%; }
-
-.tour__info{
-    padding:15px 0 0 15px;
-    box-shadow:0 3px 6px rgba(0, 0, 0, 0.16);
-    background-color:#ffffff; }
-
-@media screen and (min-width: 768px){
-      .tour__info{
-        padding:37px 0 0 37px; } }
-
-.tour__name{
-    display:block;
-    color:#393939;
-    font-size:21px;
-    font-weight:600;
-    margin-bottom:12px; }
-
-.tour__description{
-    display:block;
-    opacity:0.68;
-    color:#393939;
-    font-size:16px;
-    font-weight:400;
-    margin-bottom:15px; }
-
-.tour__price-wrap{
-    display:-webkit-box;
-    display:flex;
-    -webkit-box-pack:justify;
-    justify-content:space-between;
-    -webkit-box-align:center;
-    align-items:center; }
-
-.tour__price{
-    color:#393939;
-    font-size:18px;
-    font-weight:500; }
-
-.tour__more{
-    width:41px;
-    height:41px;
-    letter-spacing:2px;
-    background-color:#28a261;
-    text-align:center;
-    font-size:26px;
-    font-weight:700;
-    color:#fff; }
 
 .support-section .main-btn{
   display:block;
@@ -1368,24 +1468,46 @@ select{
   padding:3vw 0 10vw; }
 
 .det-tour-section .tour-name{
+    text-align:left;
+    text-transform:none;
     color:#393939;
-    font-size:80px;
+    font-size:30px;
     font-weight:400;
-    margin-bottom:47px; }
+    margin-bottom:20px; }
+
+@media screen and (min-width: 425px){
+      .det-tour-section .tour-name{
+        font-size:60px;
+        margin-bottom:37px; } }
+
+@media screen and (min-width: 1024px){
+      .det-tour-section .tour-name{
+        font-size:80px;
+        margin-bottom:47px; } }
 
 .det-tour-section .det-tour{
     display:-webkit-box;
     display:flex;
-    -webkit-box-pack:justify;
-    justify-content:space-between;
-    -webkit-box-align:start;
-    align-items:flex-start;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -webkit-box-align:center;
+    align-items:center;
     margin-bottom:42px; }
+
+@media screen and (min-width: 1024px){
+      .det-tour-section .det-tour{
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+        flex-direction:row;
+        -webkit-box-pack:justify;
+        justify-content:space-between;
+        -webkit-box-align:start;
+        align-items:flex-start; } }
 
 .det-tour-section .tour-img{
     max-width:950px;
     width:100%;
-    margin-right:20px;
     height:auto; }
 
 .det-tour-section .tour-img img{
@@ -1393,6 +1515,10 @@ select{
       height:100%;
       -o-object-fit:contain;
       object-fit:contain; }
+
+@media screen and (min-width: 1024px){
+      .det-tour-section .tour-img{
+        margin-right:20px; } }
 
 .det-tour-section .tour-info{
     display:-webkit-box;
@@ -1408,24 +1534,42 @@ select{
 .det-tour-section .main-info{
     background-color:#d9d9d9;
     width:100%;
-    padding:52px 30px 52px 100px;
-    margin-bottom:115px; }
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:center;
+    justify-content:center;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -webkit-box-align:start;
+    align-items:flex-start;
+    padding:4vw 5vw;
+    margin-bottom:8vw; }
 
 .det-tour-section .block{
-    margin-bottom:65px; }
+    margin-bottom:25px; }
 
 .det-tour-section .block:last-child{
       margin:0; }
 
 .det-tour-section .block span{
-      margin-right:20px;
+      margin-right:10px;
       color:#545454;
-      font-size:40px;
+      font-size:20px;
       font-weight:500;
       letter-spacing:0.32px; }
 
 .det-tour-section .block span:last-child{
         margin:0; }
+
+@media screen and (min-width: 425px){
+        .det-tour-section .block span{
+          font-size:40px;
+          margin-right:10px; } }
+
+@media screen and (min-width: 425px){
+      .det-tour-section .block{
+        margin-bottom:65px; } }
 
 .det-tour-section .tour-description{
     color:#393939;

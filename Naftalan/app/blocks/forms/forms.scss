@@ -149,34 +149,59 @@
 .searchForm {
 	&__wrap {
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 - 20px;
+	}
+	&__input-wrap {
+		padding: 0 20px;
+		width: 100%;
+		margin: 0 0 20px;
+		@media screen and (min-width: 480px) {
+			width: 50%;
+		}
+		@media screen and (min-width: 768px) {
+			width: 33.33%;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 25%;
+			margin: 0;
+		}
+
 	}
 	&__input {
+		width: 100%;
 		color: #000000;
-		font-size: 36px;
+		font-size: 17px;
 		font-weight: 600;
 		letter-spacing: 0.72px;
-		width: 250px;
 		padding: 30px 20px;
 		border-radius: 50px;
 		background-color: #ffffff;
 		&::placeholder {
 			opacity: 0.36;
 			color: #000000;
-			font-size: 36px;
+			font-size: 17px;
 			font-weight: 600;
 			letter-spacing: 0.72px;
+			@media screen and (min-width: 768px) {
+				font-size: 36px;
+			}
+		}
+		@media screen and (min-width: 768px) {
+			font-size: 36px;
 		}
 	}
 	&__btn {
+		width: 100%;
 		color: #000000;
-		font-size: 36px;
+		font-size: 17px;
 		font-weight: 600;
 		letter-spacing: 0.72px;
-		width: 350px;
 		padding: 30px 20px;
 		border-radius: 50px;
 		background-color: #ffffff;
+		@media screen and (min-width: 768px) {
+			font-size: 36px;
+		}
 	}
 }
