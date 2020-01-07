@@ -7,10 +7,12 @@ $(document).ready(function () {
 				$(this).removeClass('active');
 				$('.js-nav').removeClass('active');
 				$('body').removeClass('overflow');
+				$('html').removeClass('overflow');
 			} else {
 				$(this).addClass('active');
-				$('body').addClass('overflow');
 				$('.js-nav').addClass('active');
+				$('body').addClass('overflow');
+				$('html').addClass('overflow');
 			}
 		})
 	}
