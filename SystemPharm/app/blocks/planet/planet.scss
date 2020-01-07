@@ -1,0 +1,42 @@
+.planet {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+
+	&__ball {
+		width: 28px;
+		height: 28px;
+		background-color: #fff;
+		border-radius: 50%;
+	}
+
+	&__line {
+		border-radius: 50%;
+		border: 2px solid #565657;
+		position: absolute;
+		transform: rotate(17deg);
+		
+		&_one {
+			width: 150px;
+			height: 100px;
+			top: 25px;
+			left: 0;
+		}
+
+		&_two {
+			width: 100px;
+			height: 150px;
+			top: -2px;
+			left: 25px;
+		}
+		animation-name: rotation;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+}

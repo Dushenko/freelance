@@ -1,0 +1,114 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.about-section
+					.container.container_width
+						.about-wrap.typography
+							span О НАС
+							h1 Компания system pharm
+						.about-content
+							.about-info
+								.typography
+									h2 общая информация
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+									a(href="#").section-link история компании
+
+							.about-img(style="background-image: url('images/about.jpg')")
+							.about-img(style="background-image: url('images/about1.jpg')")
+							.about-img(style="background-image: url('images/about.jpg')")
+
+							.about-info
+								.typography
+									h3 Производство
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+
+				section.team-section
+					.container.container_width
+						.typography
+							h2 Наша команда
+						.team-wrap
+							.empty
+							a(href="#").team.small.bottom
+								img(src="images/team3.jpg", alt="")
+							.empty
+							a(href="#").team.big.bottom
+								img(src="images/team1.jpg", alt="")
+							.empty
+							a(href="#").team.ball.middle.top
+								span 30
+								span бухгалтеров
+							.empty
+							a(href="#").team.small.bottom
+								img(src="images/team1.jpg", alt="")
+							.empty
+							a(href="#").team.middle.bottom
+								img(src="images/team3.jpg", alt="")
+							.empty
+							a(href="#").team.middle.bottom
+								img(src="images/team4.jpg", alt="")
+							.empty
+							a(href="#").team.ball.middle.top
+								span 100
+								span продавцов
+							.empty
+							a(href="#").team.big.center
+								img(src="images/team2.jpg", alt="")
+							.empty
+							.empty
+							a(href="#").team.small.center
+								img(src="images/team4.jpg", alt="")
+							.empty
+							.empty
+							.empty
+							.empty
+							.empty
+							a(href="#").team.middle.top
+								img(src="images/team3.jpg", alt="")
+							.empty
+							.empty
+							.empty
+							a(href="#").team.small.top
+								img(src="images/team3.jpg", alt="")
+							.empty
+							a(href="#").team.ball.middle.top
+								span 50+
+								span магазинов
+
+				section.production-section
+					.container.container_width
+						.typography
+							h2 наша продукция
+						.production-wrap
+							a(href="#").production
+								.production__img
+									img(src="images/production.png", alt="")
+								h3.production__name Органический селен 100мг
+							a(href="#").production
+								.production__img
+									img(src="images/production1.png", alt="")
+								h3.production__name Органический селен 100мг
+							a(href="#").production
+								.production__img
+									img(src="images/production2.png", alt="")
+								h3.production__name Органический селен 100мг
+							a(href="#").production
+								.production__img
+									img(src="images/production3.png", alt="")
+								h3.production__name Органический селен 100мг
+
+						.btn-wrap
+							a(href="#").section-link Вся продукция
+
+		block footer
+			include ../blocks/footer/footer

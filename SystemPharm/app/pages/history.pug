@@ -1,0 +1,78 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg.history-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.history-section
+					.container.container_width
+						.typography
+							h1 Достижения
+							
+						.achievements-wrap
+							.achievement
+								.achievement__wrap
+									span.achievement__count 150
+									h2.achievement__name точек
+									p.achievement__info открыто для продажи наших препаратов за 2019 год
+									.achievement__icon.achievement__icon_point
+
+							.achievement
+								.achievement__wrap
+									span.achievement__count 30000
+									h2.achievement__name товаров
+									p.achievement__info продано за 2019 год
+									.achievement__icon.achievement__icon_goods
+							
+							.achievement
+								.achievement__wrap
+									span.achievement__count 550
+									h2.achievement__name Работников
+									p.achievement__info начали работать с SystemPharm  за 2019 год
+									.achievement__icon.achievement__icon_work
+						
+						.history-wrap
+							.history
+								.history__info.typography
+									h2 2019
+									.history__text.scroll-wrap
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									
+								.history__img
+									img(src="images/team1.jpg", alt="")
+
+							.history
+								.history__info.typography
+									h2 2018
+									.history__text.scroll-wrap
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+									
+								.history__img
+									img(src="images/team2.jpg", alt="")
+
+							.history
+								.history__info.typography
+									h2 2017
+									.history__text.scroll-wrap
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+									
+								.history__img
+									img(src="images/team3.jpg", alt="")
+
+							
+
+
+
+		block footer
+			include ../blocks/footer/footer

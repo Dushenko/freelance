@@ -1,0 +1,25 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.products-section
+					.container.container_width
+						.typography
+							span Продукты
+							h2 Наша продукция
+
+							.select
+					
+
+
+		block footer
+			include ../blocks/footer/footer

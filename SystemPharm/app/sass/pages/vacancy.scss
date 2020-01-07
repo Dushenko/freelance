@@ -1,18 +1,18 @@
 .vacancy-section {
 	padding: 8vw 0;
-	@media screen and (min-width: 1920px) {
+	@media screen and (min-width: 1360px) {
 		padding: 120px 0;
 	}
 
 	.container {
-		@media screen and (min-width: 1920px) {
+		@media screen and (min-width: 1360px) {
 			display: flex;
 		}
 	}
 
 	.vacancy-box {
 		@media screen and (min-width: 1200px) {
-			max-width: 950px;
+			// max-width: 980px;
 			width: 100%;
 		}
 	}
@@ -22,10 +22,10 @@
 		@media screen and (min-width: 1200px) {
 			margin-bottom: 75px;
 		}
-		@media screen and (min-width: 1920px) {
+		@media screen and (min-width: 1360px) {
 			flex: none;
 			width: 540px;
-			margin-right: 85px;
+			margin-right: 50px;
 		}
 	}
 
@@ -153,30 +153,6 @@
 		@media screen and (min-width: 1024px) {
 			padding: 50px 30px 30px;
 		}
-
-		h3, h4 {
-			margin-bottom: 20px;
-		}
-
-		ol {
-			margin-bottom: 25px !important;
-			@media screen and (min-width: 1024px) {
-				margin-bottom: 30px !important;
-			}
-		}
-
-		li {
-			color: #758BE1 !important;
-		}
-
-		p {
-			color: #758BE1;
-			opacity: 0.7;
-			font-size: 12px;
-			@media screen and (min-width: 1024px) {
-				font-size: 14px;
-			}
-		}
 	}
 
 	&__requirements {
@@ -199,13 +175,43 @@
 		font-weight: 300;
 		text-align: center;
 		padding: 11px 18px;
-		letter-spacing: 0.05em !important;
-		color: #758BE1 !important;
-		font-size: 12px !important;
-		text-transform: unset !important;
-		margin: 0 12px 12px 0 !important;
-		@media screen and (min-width: 1024px) {
-			font-size: 14px !important;
+	}
+
+	.typography {
+
+		.vacancy__skill {
+			letter-spacing: 0.05em;
+			color: #758BE1;
+			font-size: 12px;
+			text-transform: unset;
+			margin: 0 12px 12px 0;
+			@media screen and (min-width: 1024px) {
+				font-size: 14px;
+			}
+		}
+
+		h3, h4 {
+			margin-bottom: 20px;
+		}
+
+		ol {
+			margin-bottom: 25px;
+			@media screen and (min-width: 1024px) {
+				margin-bottom: 30px;
+			}
+		}
+
+		li {
+			color: #758BE1;
+		}
+
+		p {
+			color: #758BE1;
+			opacity: 0.7;
+			font-size: 12px;
+			@media screen and (min-width: 1024px) {
+				font-size: 14px;
+			}
 		}
 	}
 

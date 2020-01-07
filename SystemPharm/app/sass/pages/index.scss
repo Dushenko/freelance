@@ -1,13 +1,7 @@
 .intro-section {
-	padding: 30px 0 60px;
-	@media screen and (min-width: 768px) {
-		padding: 100px 0 75px;
-	}
-	@media screen and (min-width: 1024px) {
-		padding: 100px 0 120px;
-	}
-	@media screen and (min-width: 1920px) {
-		padding: 195px 0 330px;
+	padding: 10vw 0;
+	@media screen and (min-width: 1360px) {
+		padding: 100px 0 150px;
 	}
 
 	.container {
@@ -79,11 +73,11 @@
 	}
 }
 
-.about-section {
-	padding-bottom: 15vw;
+.about-first-section {
+	padding-bottom: 8vw;
 
-	@media screen and (min-width: 1920px) {
-		padding-bottom: 220px;
+	@media screen and (min-width: 1360px) {
+		padding-bottom: 165px;
 	}
 	
 	.link-wrap {
@@ -93,27 +87,201 @@
 }
 
 .partner-section {
-	padding-bottom: 15vw;
+	padding-bottom: 8vw;
 
-	@media screen and (min-width: 1920px) {
-		padding-bottom: 220px;
+	@media screen and (min-width: 1360px) {
+		padding-bottom: 150px;
+	}
+
+	.typography {
+		display: flex;
+		justify-content: flex-end;
 	}
 
 	.partner-wrap {
 		display: flex;
-		justify-content: flex-end;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.partner {
+		position: relative;
+		z-index: 1;
+		transition: all .25s ease;
+
+		&:hover {
+			z-index: 2;
+			transition: all .25s ease;
+			&:before {
+				background-color: #FF006B;
+				opacity: 0.5;
+				transition: all .25s ease;
+			}
+		}
+		
+		img {
+			width: 62%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 122%;
+			height: 122%;
+			border-radius: 50%;
+			transition: all .25s ease;
+			background-color: #FF006B;
+			opacity: 0.5;
+			filter: blur(3px);
+			@media screen and (min-width: 1024px) {
+				background-color: #747474;
+				opacity: 0.17;
+				box-shadow: 0px 11px 75px #000000;
+				filter: blur(0px);
+			}
+		}
+
+		&.big {
+			width: 142px;
+			height: 142px;
+			@media screen and (min-width: 768px) {
+				width: 206px;
+				height: 206px;
+			}
+			@media screen and (min-width: 1024px) {
+				width: 316px;
+				height: 316px;
+			}
+		}
+
+		&.middle {
+			width: 108px;
+			height: 108px;
+			@media screen and (min-width: 768px) {
+				width: 179px;
+				height: 179px;
+			}
+			@media screen and (min-width: 1024px) {
+				width: 220px;
+				height: 220px;
+			}
+		}
+
+		&.small {
+			width: 78px;
+			height: 78px;
+			@media screen and (min-width: 768px) {
+				width: 122px;
+				height: 122px;
+			}
+			@media screen and (min-width: 1024px) {
+				width: 170px;
+				height: 170px;
+			}
+		}
+
+		&.center {
+			margin: auto 0;
+		}
+
+		&.top {
+			margin: 0 0 auto 0;
+		}
+
+		&.bottom {
+			margin: auto 0 0 0;
+		}
+	}
+
+	.empty {
+		width: 80px;
+		height: 80px;
 	}
 }
 
 .vacancy-slider-section {
-	padding-bottom: 15vw;
+	padding-bottom: 8vw;
 
-	@media screen and (min-width: 1920px) {
-		padding-bottom: 220px;
+	@media screen and (min-width: 1360px) {
+		padding-bottom: 200px;
 	}
 
 	.vacancy-wrap {
 		display: flex;
 		justify-content: center;
+		margin-bottom: 60px;
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 100px;
+		}
+	}
+
+	.vacant {
+		width: 152px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		
+		&__img {
+			width: 100px;
+			height: 100px;
+			overflow: hidden;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 15px;
+			@media screen and (min-width: 1360px) {
+				width: 110px;
+				height: 110px;
+				margin-bottom: 20px;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&__name {
+			font-size: 14px;
+			line-height: 1.2;
+			text-align: center;
+			letter-spacing: 0.05em;
+			color: #FFFFFF;
+			margin-bottom: 25px;
+			@media screen and (min-width: 1360px) {
+				font-size: 16px;
+				line-height: 1.6;
+			}
+		}
+
+		&__link {
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			font-size: 15px;
+			color: #FF008A;
+			border: 1px solid #FF008A;
+			border-radius: 50%;
+			padding: 8px;
+			font-weight: 700;
+			@media screen and (min-width: 1360px) {
+				width: 50px;
+				height: 50px;
+				padding: 13px;
+				font-size: 20px;
+			}
+
+			&:hover {
+				background-color: #FF008A;
+				color: #fff;
+			}
+		}
 	}
 }

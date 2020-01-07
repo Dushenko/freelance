@@ -37,6 +37,7 @@
 
 		@media screen and (min-width: 1024px) {
 			font-size: 32px;
+			line-height: 38px;
 		}
 
 		&:before {
@@ -86,6 +87,7 @@
 	}
 
 	h5 {
+		font-weight: 400;
 		font-size: 14px;
 		line-height: 17px;
 		text-transform: unset;
@@ -125,6 +127,22 @@
 			letter-spacing: 0.05em;
 			color: #FFFFFF;
 			list-style: disc;
+			margin-bottom: 10px;
+			@media screen and (min-width: 1024px) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	ul {
+		margin-bottom: 35px;
+
+		li {
+			font-size: 12px;
+			line-height: 1.4;
+			letter-spacing: 0.05em;
+			color: #FFFFFF;
+			list-style: none;
 			margin-bottom: 10px;
 			@media screen and (min-width: 1024px) {
 				font-size: 14px;
