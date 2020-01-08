@@ -249,10 +249,7 @@ body{
   font-weight:400; }
 
 body.overflow{
-    overflow:hidden;
-    position:fixed;
-    top:0;
-    left:0; }
+    overflow:hidden; }
 
 a{
   text-decoration:none;
@@ -1582,7 +1579,7 @@ span{
       width:25px;
       height:25px;
       top:17%;
-      right:-40px;
+      right:-15px;
       background-size:contain;
       background-repeat:no-repeat;
       background-position:center;
@@ -1629,9 +1626,18 @@ span{
     flex-direction:column;
     -webkit-box-align:center;
     align-items:center;
-    -webkit-box-pack:justify;
-    justify-content:space-between;
     margin-bottom:40px; }
+
+@media screen and (min-width: 1024px){
+      .request-section .top-wrap{
+        -webkit-box-pack:justify;
+        justify-content:space-between;
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+        flex-direction:row;
+        margin-bottom:20px;
+        -webkit-box-align:start;
+        align-items:flex-start; } }
 
 .request-section .request-title{
     max-width:615px;
