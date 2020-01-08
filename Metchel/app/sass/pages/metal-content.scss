@@ -1,13 +1,20 @@
 .metal-content-section {
+
 	.metal-content {
-		display: flex;
-		flex-direction: column;
 		position: relative;
 	}
+
+	.metal-nav {
+		@media screen and (min-width: 1024px) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
 	.left-bar {
-		// max-width: 285px;
-		// width: 100%;
-		// background-color: #fcfcfc;
 		padding: 17px 18px;
 		border-radius: 5px;
 		margin-right: 33px;
@@ -23,6 +30,15 @@
 			left: 50%;
 			transform: translateX(-50%);
 		}
+		@media screen and (min-width: 1024px) {
+			position: relative;
+			top: auto;
+			left: auto;
+			max-width: 285px;
+			width: 100%;
+			background-color: #fcfcfc;
+			display: inline;
+		}
 	}
 	.category-wrap {
 		display: flex;
@@ -31,9 +47,16 @@
 		background-color: #1c1358;
 		margin-bottom: 14px;
 		border-radius: 5px;
+		@media screen and (min-width: 1024px) {
+			width: 285px;
+		}
 	}
 	.category-btn {
 		background-color: #1c1358;
+		display: block;
+		@media screen and (min-width: 1024px) {
+			display: none;
+		}
 	}
 	h3 {
 		color: #fff;
@@ -57,9 +80,16 @@
 				color: #c82121;
 				border-bottom: 1px solid #c82121;
 			}
+			@media screen and (min-width: 1024px) {
+				color: #000;
+			}
 		}
 	}
 	.right-content {
+		@media screen and (min-width: 1024px) {
+			width: calc(100% - 310px);
+			margin-left: auto;
+		}
 		.baner-title {
 			margin-bottom: 24px;
 			@media screen and (min-width: 768px) {
