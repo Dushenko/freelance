@@ -1,0 +1,66 @@
+.mainForm {
+	position: relative;
+	&__wrap {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__input {
+		border-radius: 15px;
+		border: 1px solid #ffffff;
+		padding: 6px 16px 7px;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 400;
+		&::placeholder {
+			color: #ffffff;
+			font-size: 14px;
+			font-weight: 300;
+		}
+	}
+	&__select-wrap {
+		border-radius: 15px;
+		border: 1px solid #ffffff;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			width: 6px;
+			height: 6px;
+			top: 50%;
+			transform: translateY(-65%) rotate(135deg);
+			right: 18px;
+			border-top: 2px solid #fff;
+			border-right: 2px solid #fff;
+		}
+		option {
+			color: #000;
+		}
+	}
+
+	&__select {
+		padding: 7px 50px 7px 16px;
+		height: 100%;
+		width: 100%;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 300;
+	}
+}
+
+.main-btn {
+	width: 250px;
+	border-radius: 15px;
+	background-color: transparent;
+	color: #c82121;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	padding: 8px 0 9px;
+	border: 1.5px solid #c82121;;
+	&:hover {
+		background-color: #c82121;
+		color: #fff;
+	}
+}

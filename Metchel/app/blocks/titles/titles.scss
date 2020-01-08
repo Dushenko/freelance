@@ -1,27 +1,73 @@
+.main-title {
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 44px;
+}
 .subtitle {
 	opacity: 0.5;
 	color: #000000;
 	font-size: 16px;
 	font-weight: 300;
 	display: block;
-	margin-bottom: 35px;
+	margin-bottom: 20px;
+	@media screen and (min-width: 768px) {
+		margin-bottom: 35px;
+	}
 }
 
 .section-title {
+	max-width: 530px;
+	width: 100%;
 	color: #000000;
-	font-size: 36px;
+	font-size: 23px;
 	font-weight: 700;
 	display: block;
+	@media screen and (min-width: 768px) {
+		font-size: 36px;
+	}
 }
 
 .sectio-info {
 	opacity: 0.8;
 	color: #000000;
-	font-size: 16px;
+	font-size: 12px;
 	line-height: 28px;
+	@media screen and (min-width: 1024px) {
+		font-size: 16px;
+	}
 }
 .section-subtitle {
 	color: #000000;
-	font-size: 22px;
+	font-size: 16px;
 	font-weight: 600;
+	@media screen and (min-width: 768px) {
+		font-size: 22px;
+	}
+}
+
+.baner-title {
+	position: relative;
+	text-align: left;
+	font-size: 24px;
+	font-weight: 700;
+	@media screen and (min-width: 768px) {
+		font-size: 36px;
+	}
+	&_white {
+		font-size: 20px;
+		color: #000;
+		color: #ffffff;
+		text-align: center;
+		@media screen and (min-width: 768px) {
+			font-size: 36px;
+		}
+	}
+	&_small {
+		font-size: 30px;
+		margin-bottom: 30px;
+		@media screen and (min-width: 768px) {
+			margin-bottom: 80px;
+		}
+	}
 }

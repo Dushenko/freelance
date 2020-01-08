@@ -1,10 +1,28 @@
-.advantage {
-	max-width: 150px;
-	width: 100%;
+.advantages {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 27px;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin: 0 -27px;
+}
+.advantage {
+	width: 50%;
+	@media screen and (min-width: 768px) {
+		width: 33.33%;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 16.66%;
+	}	
+	&__wrap {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 27px 28px;
+		@media screen and (min-width: 1024px) {
+			padding-bottom: 0;
+		}
+	}
 	&__img {
 		width: 65px;
 		height: 65px;
@@ -20,7 +38,7 @@
 	&__info {
 		text-align: center;
 		color: #0d0d0d;
-		font-size: 11px;
+		font-size: 10px;
 		font-weight: 500;
 		line-height: 18px;
 	}

@@ -1,0 +1,43 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.breadCrumbs-section
+			.container
+				.breadCrumbs
+					a(href="index.html").onmain На главную
+					a(href="#") Главная
+					a(href="#") Проекты
+		section.projects-section
+			.container
+				h2.section-title Наши проекты
+				.projects-wrap
+					.item-wrap
+						.projects-item
+							img(src="images/projects1.png", alt="")
+					.item-wrap
+						.projects-item
+							img(src="images/projects2.png", alt="")
+					.item-wrap
+						.projects-item
+							img(src="images/projects3.png", alt="")
+					.item-wrap
+						.projects-item
+							img(src="images/projects4.png", alt="")
+					.item-wrap
+						.projects-item
+							img(src="images/projects5.png", alt="")
+					.item-wrap
+						.projects-item
+							img(src="images/projects6.png", alt="")
+				a(href="#").more Больше фото
+
+
+block footer
+	include ../blocks/footer/footer		
