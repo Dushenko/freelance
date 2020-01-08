@@ -177,20 +177,20 @@ block content
 				.top-wrap
 					h2.request-title Оставьте заявку на нашем сайте до конца акции и 
 						mark получите скидку на заказ 5%
-						|
-					//- .time
-					//- 	.clock-column
-					//- 		p.clock-day.clock-timer
-					//- 		p.clock-label Дней
-					//- 	.clock-column
-					//- 		p.clock-hours.clock-timer
-					//- 		p.clock-label Часов
-					//- 	.clock-column
-					//- 		p.clock-minutes.clock-timer
-					//- 		p.clock-label Минут
-					//- 	.clock-column
-					//- 		p.clock-seconds.clock-timer
-					//- 		p.clock-label Секунд
+					ul.timer
+						li.timer__item
+							span.timer__date#days
+							span.timer__name Дней
+						li.timer__item
+							span.timer__date#hours
+							span.timer__name Часов
+						li.timer__item
+							span.timer__date#minutes
+							span.timer__name Минут
+						li.timer__item
+							span.timer__date#seconds
+							span.timer__name Секунд
+
 				form(action="#" id="#" method="#").mainForm
 					.mainForm__wrap
 						input(type="text" placeholder="Ваше имя...").mainForm__input
@@ -238,8 +238,6 @@ block content
 						button.btn-slide.prev
 						button.btn-slide.next
 						.dots
-
-
 
 		section.contacts-section
 			.container
