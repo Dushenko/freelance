@@ -4,3 +4,56 @@ footer.footer
 		p.footer-text.copyright © 2019 system pharm
 		.footer-img
 			img(src="images/site.svg", alt="")
+
+.mask.js-mask
+
+.modal.modal-information.js-information
+	.information-wrap
+		span Обмеження на отримання інформації
+		p Ви потрапляєте до спеціалізованого видання, що є частиною сайту ПрАТ «Фармацевтична фірма «Дарниця» і призначене для медичних установ та лікарів (надалі – дипломованих медичних спеціалістів) і містить професійну спеціалізовану інформацію про лікарські засоби, в тому числі і про рецептурні препарати, зокрема про їхню назву, характеристику, способи застосування, лікувальні властивості, можливу побічну дію, можливі протипоказання та іншу професійну спеціалізовану інформацію.
+
+		p Інформація про лікарські засоби, в тому числі і про рецептурні препарати ПрАТ «Фармацевтична фірма «Дарниця», призначена виключно для ознайомлення і не є керівництвом для самостійної діагностики чи лікування.
+
+		p Ви підтверджуєте, що є дипломованим медичним спеціалістом і ознайомились з даним обмеженням щодо отримання інформації?
+
+		.information-btn
+			button(type="submit").info-btn.info-btn_yes Да, являюсь
+			button(type="submit").info-btn.info-btn_no нет, не являюсь
+
+.modal.modal-contact.js-contacts
+	.contact-wrap.contact-wrap_line
+		.modal-close.js-modal-close
+		span.thanks-title отправка резюме
+			br
+			| на вакансию
+
+		form(action="#").resumeForm
+			.resumeForm__wrap
+				.resumeForm__input-wrap
+					input(type="text" placeholder="Фамилия").resumeForm__input
+				.resumeForm__input-wrap
+					input(type="text" placeholder="Имя").resumeForm__input
+				.resumeForm__input-wrap
+					input(type="text" placeholder="Email").resumeForm__input
+					span.resumeForm__error.js-error введите корректный email
+				.resumeForm__input-wrap
+					input(type="text" placeholder="Контактный телефон").resumeForm__input
+					span.resumeForm__error.js-error введите корректный номер телефона
+				.resumeForm__file
+					input(type="file").resumeForm__input-file
+					lable().resumeForm__lable-file Добавьте файл резюме
+				p.resumeForm__format Форматы файлов: doc, docx, rtf, txt, odt, pdf (2 Мб максимум)
+
+				.resumeForm__latter-wrap
+					a(href="#").resumeForm__latter Добавить сопроводительное  письмо
+					span.resumeForm__dispensable необязательно
+				
+				button(type="submit").resumeForm__btn отправить резюме
+
+
+.modal.modal-contact.js-thanks
+	.contact-wrap
+		.modal-close.js-modal-close
+
+		span.thanks-title.thanks-title_purple спасибо!
+		p.thanks-text ваше резюме на рассмотрении. В ближайшее время, сотрудники нашей компании свяжутся с вами.

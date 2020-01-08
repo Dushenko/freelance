@@ -420,6 +420,52 @@
           <div class="footer-img"><img src="images/site.svg" alt=""></div>
         </div>
       </footer>
+      <div class="mask js-mask"></div>
+      <div class="modal modal-information js-information">
+        <div class="information-wrap"><span>Обмеження на отримання інформації</span>
+          <p>Ви потрапляєте до спеціалізованого видання, що є частиною сайту ПрАТ «Фармацевтична фірма «Дарниця» і призначене для медичних установ та лікарів (надалі – дипломованих медичних спеціалістів) і містить професійну спеціалізовану інформацію про лікарські засоби, в тому числі і про рецептурні препарати, зокрема про їхню назву, характеристику, способи застосування, лікувальні властивості, можливу побічну дію, можливі протипоказання та іншу професійну спеціалізовану інформацію.</p>
+          <p>Інформація про лікарські засоби, в тому числі і про рецептурні препарати ПрАТ «Фармацевтична фірма «Дарниця», призначена виключно для ознайомлення і не є керівництвом для самостійної діагностики чи лікування.</p>
+          <p>Ви підтверджуєте, що є дипломованим медичним спеціалістом і ознайомились з даним обмеженням щодо отримання інформації?</p>
+          <div class="information-btn">
+            <button class="info-btn info-btn_yes" type="submit">Да, являюсь</button>
+            <button class="info-btn info-btn_no" type="submit">нет, не являюсь</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-contact js-contacts">
+        <div class="contact-wrap contact-wrap_line">
+          <div class="modal-close js-modal-close"></div><span class="thanks-title">отправка резюме<br>на вакансию</span>
+          <form class="resumeForm" action="#">
+            <div class="resumeForm__wrap">
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Фамилия">
+              </div>
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Имя">
+              </div>
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Email"><span class="resumeForm__error js-error">введите корректный email</span>
+              </div>
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Контактный телефон"><span class="resumeForm__error js-error">введите корректный номер телефона</span>
+              </div>
+              <div class="resumeForm__file">
+                <input class="resumeForm__input-file" type="file">
+                <lable class="resumeForm__lable-file">Добавьте файл резюме</lable>
+              </div>
+              <p class="resumeForm__format">Форматы файлов: doc, docx, rtf, txt, odt, pdf (2 Мб максимум)</p>
+              <div class="resumeForm__latter-wrap"><a class="resumeForm__latter" href="#">Добавить сопроводительное  письмо</a><span class="resumeForm__dispensable">необязательно</span></div>
+              <button class="resumeForm__btn" type="submit">отправить резюме</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal-contact js-thanks">
+        <div class="contact-wrap">
+          <div class="modal-close js-modal-close"></div><span class="thanks-title thanks-title_purple">спасибо!</span>
+          <p class="thanks-text">ваше резюме на рассмотрении. В ближайшее время, сотрудники нашей компании свяжутся с вами.</p>
+        </div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs/libs.min.js"></script>

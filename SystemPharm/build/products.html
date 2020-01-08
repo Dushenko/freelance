@@ -34,10 +34,63 @@
       <main class="main">
         <section class="products-section">
           <div class="container container_width">
-            <div class="typography"><span>Продукты</span>
-              <h2>Наша продукция</h2>
-              <div class="select"></div>
+            <div class="products-nav">
+              <div class="typography"><span>Продукты</span>
+                <h2>Наша продукция</h2>
+              </div>
+              <div class="select">
+                <div class="select__head js-select"><span class="select__text">Все</span></div>
+                <ul class="select__list js-select-list">
+                  <li>Все</li>
+                  <li>неврология</li>
+                  <li>эндокринология</li>
+                  <li>урология</li>
+                </ul>
+              </div>
             </div>
+            <div class="products-wrap"><a class="products small bottom" href="product.html">
+                <div class="products__img"><img src="images/production.png" alt=""></div>
+                <div class="products__info">
+                  <h3>фармалипон</h3>
+                  <p>5 флаконов</p>
+                  <p>по 20 мл</p>
+                </div></a><a class="products big" href="product.html">
+                <div class="products__img"><img src="images/prod1.png" alt=""></div>
+                <div class="products__info">
+                  <h3>фармалипон</h3>
+                  <p>5 флаконов</p>
+                  <p>по 20 мл</p>
+                </div></a><a class="products small center" href="product.html">
+                <div class="products__img"><img src="images/production2.png" alt=""></div>
+                <div class="products__info">
+                  <h3>фармалипон</h3>
+                  <p>5 флаконов</p>
+                  <p>по 20 мл</p>
+                </div></a><a class="products middle" href="product.html">
+                <div class="products__img"><img src="images/production3.png" alt=""></div>
+                <div class="products__info">
+                  <h3>фармалипон</h3>
+                  <p>5 флаконов</p>
+                  <p>по 20 мл</p>
+                </div></a><a class="products small" href="product.html">
+                <div class="products__img"><img src="images/production1.png" alt=""></div>
+                <div class="products__info">
+                  <h3>фармалипон</h3>
+                  <p>5 флаконов</p>
+                  <p>по 20 мл</p>
+                </div></a><a class="products small center" href="product.html">
+                <div class="products__img"><img src="images/production2.png" alt=""></div>
+                <div class="products__info">
+                  <h3>фармалипон</h3>
+                  <p>5 флаконов</p>
+                  <p>по 20 мл</p>
+                </div></a><a class="products middle top" href="product.html">
+                <div class="products__img"><img src="images/production3.png" alt=""></div>
+                <div class="products__info">
+                  <h3>фармалипон</h3>
+                  <p>5 флаконов</p>
+                  <p>по 20 мл</p>
+                </div></a></div>
           </div>
         </section>
       </main>
@@ -47,6 +100,52 @@
           <div class="footer-img"><img src="images/site.svg" alt=""></div>
         </div>
       </footer>
+      <div class="mask js-mask"></div>
+      <div class="modal modal-information js-information">
+        <div class="information-wrap"><span>Обмеження на отримання інформації</span>
+          <p>Ви потрапляєте до спеціалізованого видання, що є частиною сайту ПрАТ «Фармацевтична фірма «Дарниця» і призначене для медичних установ та лікарів (надалі – дипломованих медичних спеціалістів) і містить професійну спеціалізовану інформацію про лікарські засоби, в тому числі і про рецептурні препарати, зокрема про їхню назву, характеристику, способи застосування, лікувальні властивості, можливу побічну дію, можливі протипоказання та іншу професійну спеціалізовану інформацію.</p>
+          <p>Інформація про лікарські засоби, в тому числі і про рецептурні препарати ПрАТ «Фармацевтична фірма «Дарниця», призначена виключно для ознайомлення і не є керівництвом для самостійної діагностики чи лікування.</p>
+          <p>Ви підтверджуєте, що є дипломованим медичним спеціалістом і ознайомились з даним обмеженням щодо отримання інформації?</p>
+          <div class="information-btn">
+            <button class="info-btn info-btn_yes" type="submit">Да, являюсь</button>
+            <button class="info-btn info-btn_no" type="submit">нет, не являюсь</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-contact js-contacts">
+        <div class="contact-wrap contact-wrap_line">
+          <div class="modal-close js-modal-close"></div><span class="thanks-title">отправка резюме<br>на вакансию</span>
+          <form class="resumeForm" action="#">
+            <div class="resumeForm__wrap">
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Фамилия">
+              </div>
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Имя">
+              </div>
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Email"><span class="resumeForm__error js-error">введите корректный email</span>
+              </div>
+              <div class="resumeForm__input-wrap">
+                <input class="resumeForm__input" type="text" placeholder="Контактный телефон"><span class="resumeForm__error js-error">введите корректный номер телефона</span>
+              </div>
+              <div class="resumeForm__file">
+                <input class="resumeForm__input-file" type="file">
+                <lable class="resumeForm__lable-file">Добавьте файл резюме</lable>
+              </div>
+              <p class="resumeForm__format">Форматы файлов: doc, docx, rtf, txt, odt, pdf (2 Мб максимум)</p>
+              <div class="resumeForm__latter-wrap"><a class="resumeForm__latter" href="#">Добавить сопроводительное  письмо</a><span class="resumeForm__dispensable">необязательно</span></div>
+              <button class="resumeForm__btn" type="submit">отправить резюме</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal-contact js-thanks">
+        <div class="contact-wrap">
+          <div class="modal-close js-modal-close"></div><span class="thanks-title thanks-title_purple">спасибо!</span>
+          <p class="thanks-text">ваше резюме на рассмотрении. В ближайшее время, сотрудники нашей компании свяжутся с вами.</p>
+        </div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs/libs.min.js"></script>

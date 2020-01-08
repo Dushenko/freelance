@@ -129,15 +129,17 @@
 	}
 
 	.map {
-		flex: none;
-		width: 64%;
-		margin-right: 50px;
+		@media screen and (min-width: 1360px) {
+			flex: none;
+			width: 64%;
+			margin-right: 50px;
+		}
 	}
 
 	.map-content {
-		width: 36%;
 		@media screen and (min-width: 1360px) {
 			padding-top: 80px;
+			width: 36%;
 		}
 
 		.typography {

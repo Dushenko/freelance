@@ -158,14 +158,9 @@
 .team-section {
 	padding: 8vw 0;
 	position: relative;
-	// background-image: url('../images/team-bg.svg');
-	// background-repeat: no-repeat;
-	// background-position: center;
-	// background-size: cover;
-
+	
 	@media screen and (min-width: 1360px) {
 		padding: 120px 0 60px;
-		// background-size: 80%;
 	}
 
 	&:before {
@@ -215,7 +210,6 @@
 			justify-content: center;
 			align-items: center;
 			background: rgba(255, 0, 107, 0.34);
-			filter: blur(1px);
 			span {
 				font-weight: 500;
 				line-height: 1.2;
@@ -228,7 +222,7 @@
 					font-size: 32px;
 				}
 				&:last-child {
-					font-size: 16px;
+					font-size: 14px;
 				}
 			}
 		}
