@@ -3,8 +3,30 @@
 	.section-title {
 		margin-bottom: 47px;
 	}
-}
+	.structures {
+		display: flex;
+		margin: 0 -29px;
+	}
 
+	.structure {
+		padding: 10px 29px;
+		&:hover {
+			background-color: #fff;
+		}
+
+		&__wrap {
+			background-color: #fff;
+		}
+
+		&__img {
+
+		}
+
+		&__info {
+
+		}
+	}
+}
 
 .structures {
 	width: 100%;
@@ -13,7 +35,7 @@
 }
 
 .structure {
-
+	min-height: 270px;
 	&:hover {
 		.structure__wrap {
 			background-color: rgba(223, 223, 223, .6);
@@ -21,6 +43,7 @@
 	}
 
 	&__wrap {
+		height: 100%;
 		padding: 10px;
 		background-color: rgba(223, 223, 223, .35);
 		width: 233px;
@@ -36,23 +59,29 @@
 
 	&__img {
 		width: 100%;
+		height: 200px;
 		margin-bottom: 10px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
 		img{
-			width: auto;
-			height: 190px;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
 		}
 	}
 
 	&__info {
+		width: 100%;
 		padding-right: 25px;
 		color: #000000;
 		font-size: 12px;
 		font-weight: 600;
 		position: relative;
+		min-height: 40px;
+		display: flex;
+		align-items: center;
 		&:after {
 			position: absolute;
 			content: '';

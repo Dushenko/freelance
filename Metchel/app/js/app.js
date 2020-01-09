@@ -15,8 +15,9 @@ $(document).ready(function () {
 			}
 		})
 	}
-
-	$('.category-wrap').click(function(){
-		$('.left-bar').toggleClass('active');
-	});
+	if ($(window).width() < 1024) {
+		$('.category-wrap').click(function(){
+			$('.left-bar').toggleClass('active');
+		});
+	}
 });

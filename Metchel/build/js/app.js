@@ -65,7 +65,7 @@ var second = 1000,
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24;
-var countDown = new Date('Jan 15, 2020 00:00:00').getTime(),
+var countDown = new Date('Feb 15, 2020 00:00:00').getTime(),
     x = setInterval(function () {
   var now = new Date().getTime(),
       distance = countDown - now;
@@ -87,7 +87,9 @@ $(document).ready(function () {
     });
   }
 
-  $('.category-wrap').click(function () {
-    $('.left-bar').toggleClass('active');
-  });
+  if ($(window).width() < 1024) {
+    $('.category-wrap').click(function () {
+      $('.left-bar').toggleClass('active');
+    });
+  }
 });
