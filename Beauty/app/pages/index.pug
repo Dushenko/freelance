@@ -1,0 +1,233 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.lider-section
+			.container
+				h2.section-title ТОР лидеров рынка за Октябрь
+				p.section-description Текст с кратким описанием в одну или несколько строк идет тут. Текст с кратким описанием в одну Текст с кратким
+
+		section.map-section
+			iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d271742.5956573988!2d37.270508322029364!3d55.68500944632623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1578539106174!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="")
+
+		section.post-section
+			.container
+				.post
+					img(src="images/img-1.jpg", alt="")
+
+		section.rating-section
+			.container
+				h2.section-title История рейтингов
+				.rating-nav
+					.rating-filter
+						span Период
+						.select
+							.select__head.js-select
+								span.select__text день
+							.select__list.js-select-list
+								ul
+									li день
+									li неделя
+									li месяц
+									li год
+					.rating-filter
+						span Показывать
+						.select
+							.select__head.js-select
+								span.select__text 10
+							.select__list.js-select-list
+								ul
+									li 10
+									li 20
+									li 30
+									li 40
+				.rating-table
+					.table-col.place
+						p.col-name Место
+						span 1
+						span 2
+						span 3
+						span 4
+						span 5
+						span 6
+						span 7
+						span 8
+						span 9
+						span 10
+					
+					.table-col.company
+						p.col-name Компания
+						.salon
+							.salon__img
+								img(src="images/salon1.jpg", alt="")
+							.salon__info
+								p.salon__name Марина
+								p.salon__text Салон-парикмахерская
+						.salon
+							.salon__img
+								img(src="images/salon2.jpg", alt="")
+							.salon__info
+								p.salon__name Марина
+								p.salon__text Салон-парикмахерская
+						.salon
+							.salon__img
+								img(src="images/salon3.jpg", alt="")
+							.salon__info
+								p.salon__name Марина
+								p.salon__text Салон-парикмахерская
+						.salon
+							.salon__img
+								img(src="images/salon1.jpg", alt="")
+							.salon__info
+								p.salon__name Марина
+								p.salon__text Салон-парикмахерская
+						.salon
+							.salon__img
+								img(src="images/salon2.jpg", alt="")
+							.salon__info
+								p.salon__name Марина
+								p.salon__text Салон-парикмахерская
+						.salon
+							.salon__img
+								img(src="images/salon3.jpg", alt="")
+							.salon__info
+								p.salon__name Марина
+								p.salon__text Салон-парикмахерская
+						.salon
+							.salon__img
+								img(src="images/salon1.jpg", alt="")
+							.salon__info
+								p.salon__name Марина
+								p.salon__text Салон-парикмахерская
+						.salon
+							.salon__img
+								img(src="images/salon1.jpg", alt="")
+							.salon__info
+								p.salon__name Марина
+								p.salon__text Салон-парикмахерская
+						.salon
+							.salon__img
+								img(src="images/salon1.jpg", alt="")
+							.salon__info
+								p.salon__name Марина
+								p.salon__text Салон-парикмахерская
+						.salon
+							.salon__img
+								img(src="images/salon1.jpg", alt="")
+							.salon__info
+								p.salon__name Марина
+								p.salon__text Салон-парикмахерская
+					.table-col.assessment
+						p.col-name Оценка портала
+						span 154
+						span 254
+						span 301
+						span 447
+						span 511
+						span 675
+						span 700
+						span 814
+						span 945
+						span 105
+
+					.table-col.voting
+						p.col-name Голосование
+						.stars
+							.star
+						.stars
+							.star
+							.star
+						.stars
+							.star
+							.star
+							.star
+						.stars
+							.star
+							.star
+							.star
+							.star
+						.stars
+							.star
+							.star
+							.star
+							.star
+							.star
+						.stars
+							.star
+						.stars
+							.star
+							.star
+						.stars
+							.star
+							.star
+							.star
+						.stars
+							.star
+							.star
+							.star
+							.star
+						.stars
+							.star
+							.star
+							.star
+							.star
+							.star
+
+					.table-col.assessment
+						p.col-name Голосов
+						span 154
+						span 254
+						span 301
+						span 447
+						span 511
+						span 675
+						span 700
+						span 814
+						span 945
+						span 105
+
+					.table-col.assessment
+						p.col-name Отзывы
+						span 154
+						span 254
+						span 301
+						span 447
+						span 511
+						span 675
+						span 700
+						span 814
+						span 945
+						span 105
+
+					.table-col.development
+						p.col-name Развитие
+						.schedule
+							img(src="images/graph1.svg", alt="")
+						.schedule
+							img(src="images/graph2.svg", alt="")
+						.schedule
+							img(src="images/graph3.svg", alt="")
+						.schedule
+							img(src="images/graph4.svg", alt="")
+						.schedule
+							img(src="images/graph1.svg", alt="")
+						.schedule
+							img(src="images/graph3.svg", alt="")
+						.schedule
+							img(src="images/graph4.svg", alt="")
+						.schedule
+							img(src="images/graph2.svg", alt="")
+						.schedule
+							img(src="images/graph1.svg", alt="")
+						.schedule
+							img(src="images/graph1.svg", alt="")
+
+
+block footer
+	include ../blocks/footer/footer
