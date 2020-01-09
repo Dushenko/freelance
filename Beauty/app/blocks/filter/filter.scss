@@ -1,8 +1,13 @@
+.rating-filter {
+	display: flex;
+	align-items: center;
+}
+
 .select {
 	position: relative;
 	z-index: 1;
 	margin-left: 15px;
-	width: 90px;
+	min-width: 90px;
 	
 	&__head {
 		position: relative;
@@ -56,6 +61,7 @@
 		}
 
 		li {
+			white-space: nowrap;
 			position: relative;
 			padding: 0 8px;
 			color: #838383;

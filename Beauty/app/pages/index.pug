@@ -13,6 +13,50 @@ block content
 				h2.section-title ТОР лидеров рынка за Октябрь
 				p.section-description Текст с кратким описанием в одну или несколько строк идет тут. Текст с кратким описанием в одну Текст с кратким
 
+				.tabs
+					ul.tabs__list.js-tab-btn
+						li.tabs__btn.tabs__btn_maser 
+							.tabs__img
+								img(src="images/tab1.svg", alt="")
+							span.tabs__name Рейтинги мастеров
+						li.tabs__btn.tabs__btn_salon.active
+							.tabs__img
+								img(src="images/tab2.svg", alt="")
+							span.tabs__name Рейтинги салонов
+					.tabs__content.js-tab-content
+
+					.tabs__content.js-tab-content.active
+						.tab-row
+							.tab-col.schedule-content
+								.rating-filter
+									span Оценки
+									.select
+										.select__head.js-select
+											span.select__text отзывы
+										.select__list.js-select-list
+											ul
+												li отзывы 1
+												li отзывы 2
+												li отзывы 3
+												li отзывы 4
+								.schedule-wrap
+									.schedule-col.crimson.fill-50 
+										span 1
+									.schedule-col.violet.fill-100 
+										span 2
+									.schedule-col.cream.fill-80 
+										span 3
+									.schedule-col.green.fill-75 
+										span 4
+									.schedule-col.pink.fill-100 
+										span 5
+
+								.schedule-border
+
+								h3.schedule-name Лучший маникюр города
+
+							.tab-col
+
 		section.map-section
 			iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d271742.5956573988!2d37.270508322029364!3d55.68500944632623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1578539106174!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="")
 
@@ -123,6 +167,7 @@ block content
 							.salon__info
 								p.salon__name Марина
 								p.salon__text Салон-парикмахерская
+					
 					.table-col.assessment
 						p.col-name Оценка портала
 						span 154
@@ -227,7 +272,6 @@ block content
 							img(src="images/graph1.svg", alt="")
 						.schedule
 							img(src="images/graph1.svg", alt="")
-
 
 block footer
 	include ../blocks/footer/footer
