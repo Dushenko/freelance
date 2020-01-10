@@ -184,8 +184,15 @@
 			font-weight: 300;
 			line-height: 22px;
 			text-decoration: underline;
+			transition: all .3s ease;
+
 			@media screen and (min-width: 1024px) {
 				margin: 0 20px 20px auto;
+			}
+
+			&:hover {
+				text-decoration: none;
+				opacity: 1;
 			}
 		}
 		&__img {
