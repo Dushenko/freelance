@@ -1338,7 +1338,7 @@ span{
       top:0; }
 
 .intro-section{
-  padding:45px 0;
+  padding:45px 0 45px 15px;
   background-repeat:no-repeat;
   background-size:cover;
   display:-webkit-box;
@@ -1348,7 +1348,11 @@ span{
 
 @media screen and (min-width: 900px){
     .intro-section{
-      padding:0; } }
+      padding:0 0 0 45px; } }
+
+@media screen and (min-width: 1200px){
+    .intro-section{
+      padding:0 0 0 80px; } }
 
 .intro-section .container{
     max-width:1440px; }
@@ -2086,8 +2090,8 @@ span{
     background-color:rgba(223, 223, 223, 0.35);
     width:233px;
     min-height:260px;
-    border-right:1px solid #fff;
-    border-bottom:1px solid #fff;
+    border-right:1px solid rgba(255, 255, 255, 0.3);
+    border-bottom:1px solid rgba(255, 255, 255, 0.3);
     display:-webkit-box;
     display:flex;
     -webkit-box-orient:vertical;

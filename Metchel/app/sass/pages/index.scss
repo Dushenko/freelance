@@ -1,11 +1,14 @@
 .intro-section {
-	padding: 45px 0;
+	padding: 45px 0 45px 15px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 	align-items: center;
 	@media screen and (min-width: 900px) {
-		padding: 0;
+		padding: 0 0 0 45px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 0 0 0 80px;
 	}
 	.container {
 		max-width: 1440px;
