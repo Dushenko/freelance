@@ -2,24 +2,13 @@
 	padding: 45px 0 45px 15px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: flex;
-	align-items: center;
 	@media screen and (min-width: 900px) {
 		padding: 0 0 0 45px;
+		display: flex;
+		align-items: center;
 	}
 	@media screen and (min-width: 1200px) {
 		padding: 0 0 0 80px;
-	}
-	.container {
-		max-width: 1440px;
-		@media screen and (min-width: 900px) {
-			display: flex;
-			align-items: center;
-			padding: 0 0 0 25px;
-		}
-		@media screen and (min-width: 1024px) {
-			padding: 0 0 0 25px;
-		}
 	}
 
 	.right-info {
@@ -159,14 +148,29 @@
 		display: flex;
 		flex-direction: column;
 		border-right: 2px solid rgba(255, 255, 255, .2);
+
 		@media screen and (min-width: 768px) {
 			max-width: 277px;
 			width: 100%;
 		}
+
+		&:hover {
+			.card__details {
+
+				text-decoration: none;
+				opacity: 1;
+			}
+			.card__title {
+				opacity: .9;
+			}
+		}
+
 		&:first-child {
 			background-image: url('../images/cart-bg2.png');
 		}
+
 		&__title {
+			transition: all .3s ease;
 			padding: 32px 17px;
 			color: #ffffff;
 			font-size: 13px;
@@ -176,6 +180,7 @@
 			}
 		}
 		&__details {
+			transition: all .3s ease;
 			display: inline;
 			margin: 0 0 20px 15px;
 			opacity: 0.5;
@@ -184,7 +189,7 @@
 			font-weight: 300;
 			line-height: 22px;
 			text-decoration: underline;
-			transition: all .3s ease;
+			
 
 			@media screen and (min-width: 1024px) {
 				margin: 0 20px 20px auto;
@@ -226,7 +231,7 @@
 		@media screen and (min-width: 1024px) {
 			margin: 0;
 		}
-		
+
 	}
 	.advantage {
 		width: 50%;

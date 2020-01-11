@@ -935,7 +935,8 @@ select{
         transition:all .3s ease;
         z-index:-1;
         padding:10px 15px;
-        background-color:#0c005a; } }
+        background-color:#0c005a;
+        display:block; } }
 
 .header-bot .nav .services-menu a{
       white-space:normal !important;
@@ -1653,34 +1654,19 @@ span{
 .intro-section{
   padding:45px 0 45px 15px;
   background-repeat:no-repeat;
-  background-size:cover;
-  display:-webkit-box;
-  display:flex;
-  -webkit-box-align:center;
-  align-items:center; }
+  background-size:cover; }
 
 @media screen and (min-width: 900px){
     .intro-section{
-      padding:0 0 0 45px; } }
+      padding:0 0 0 45px;
+      display:-webkit-box;
+      display:flex;
+      -webkit-box-align:center;
+      align-items:center; } }
 
 @media screen and (min-width: 1200px){
     .intro-section{
       padding:0 0 0 80px; } }
-
-.intro-section .container{
-    max-width:1440px; }
-
-@media screen and (min-width: 900px){
-      .intro-section .container{
-        display:-webkit-box;
-        display:flex;
-        -webkit-box-align:center;
-        align-items:center;
-        padding:0 0 0 25px; } }
-
-@media screen and (min-width: 1024px){
-      .intro-section .container{
-        padding:0 0 0 25px; } }
 
 .intro-section .right-info{
     margin-bottom:40px; }
@@ -1845,10 +1831,19 @@ span{
         max-width:277px;
         width:100%; } }
 
+.suggestions-section .card:hover .card__details{
+      text-decoration:none;
+      opacity:1; }
+
+.suggestions-section .card:hover .card__title{
+      opacity:.9; }
+
 .suggestions-section .card:first-child{
       background-image:url("../images/cart-bg2.png"); }
 
 .suggestions-section .card__title{
+      -webkit-transition:all .3s ease;
+      transition:all .3s ease;
       padding:32px 17px;
       color:#ffffff;
       font-size:13px;
@@ -1859,6 +1854,8 @@ span{
           font-size:24px; } }
 
 .suggestions-section .card__details{
+      -webkit-transition:all .3s ease;
+      transition:all .3s ease;
       display:inline;
       margin:0 0 20px 15px;
       opacity:0.5;
@@ -1866,9 +1863,7 @@ span{
       font-size:12px;
       font-weight:300;
       line-height:22px;
-      text-decoration:underline;
-      -webkit-transition:all .3s ease;
-      transition:all .3s ease; }
+      text-decoration:underline; }
 
 @media screen and (min-width: 1024px){
         .suggestions-section .card__details{
