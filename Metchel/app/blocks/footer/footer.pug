@@ -2,3 +2,18 @@ footer.footer
 	.container
 		p © 2019 Все права защищены
 		p Сайт разработан: ЦЕХ ПРОЖАРКИ БИЗНЕСА
+
+.mask.js-mask
+
+.modal.js-modal
+	span.modal__close Закрыть
+	.modal__top-wrap
+		.logo
+			img(src="images/logo.png", alt="")
+		p.modal__title Введите свои данные, что бы мы с Вами связались!
+	.modal__bot-wrap
+		form(action="#").mainForm
+			.mainForm__input-wrap
+				input(type="text" placeholder="Ваше имя...").mainForm__input
+				input(type="text" placeholder="Ваше номер телефона...").mainForm__input
+			button(type="submit").main-btn Отправить

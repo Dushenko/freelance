@@ -1,6 +1,29 @@
 "use strict";
 
 $(document).ready(function () {
+  //burger
+  if (document.querySelector('.burger-btn')) {
+    $('.burger-btn').click(function () {
+      if ($(this).hasClass('open')) {
+        $(this).removeClass('open');
+        $('.nav').removeClass('active');
+        $('body').removeClass('overflow');
+      } else {
+        $(this).addClass('open');
+        $('.nav').addClass('active');
+        $('body').addClass('overflow');
+      }
+    });
+  }
+
+  if ($(window).width() < 768) {
+    $('.head-services').click(function () {
+      $(this).toggleClass('arrow');
+      $('.services-menu').slideToggle('active');
+    });
+  }
+});
+$(document).ready(function () {
   $('.js-intro-slider').slick({
     dots: true,
     arrows: false,
@@ -72,20 +95,16 @@ var countDown = new Date('Feb 15, 2020 00:00:00').getTime(),
   document.getElementById('days').innerText = Math.floor(distance / day), document.getElementById('hours').innerText = Math.floor(distance % day / hour), document.getElementById('minutes').innerText = Math.floor(distance % hour / minute), document.getElementById('seconds').innerText = Math.floor(distance % minute / second);
 }, second);
 $(document).ready(function () {
-  //burger
-  if (document.querySelector('.burger-btn')) {
-    $('.burger-btn').click(function () {
-      if ($(this).hasClass('open')) {
-        $(this).removeClass('open');
-        $('.nav').removeClass('active');
-        $('body').removeClass('overflow');
-      } else {
-        $(this).addClass('open');
-        $('.nav').addClass('active');
-        $('body').addClass('overflow');
-      }
-    });
-  }
+  // modal
+  $('.call').on('click', function () {
+    $('.js-modal').toggleClass('active');
+    $('.js-mask').toggleClass('active');
+  }); // close
+
+  $('.modal__close').on('click', function () {
+    $('.js-modal').removeClass('active');
+    $('.js-mask').removeClass('active');
+  });
 
   if ($(window).width() < 1024) {
     $('.category-wrap').click(function () {

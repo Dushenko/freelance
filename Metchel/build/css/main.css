@@ -793,30 +793,54 @@ select{
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
     flex-direction:column;
-    -webkit-box-align:center;
-    align-items:center;
-    margin-top:50px; }
+    -webkit-box-align:start;
+    align-items:flex-start;
+    margin-top:80px;
+    padding:0 12px; }
 
 @media screen and (min-width: 768px){
       .header-bot .nav ul{
         -webkit-box-orient:horizontal;
         -webkit-box-direction:normal;
         flex-direction:row;
-        margin:0; } }
+        -webkit-box-align:center;
+        align-items:center;
+        margin:0;
+        padding:0; } }
 
 .header-bot .nav li{
-    margin:0 0 20px; }
+    margin-bottom:5px;
+    width:100%;
+    position:relative; }
 
 @media screen and (min-width: 768px){
       .header-bot .nav li{
-        margin:0 20px 0 0; } }
+        margin:0 20px 0 0; }
+        .header-bot .nav li:after{
+          display:none; } }
+
+.header-bot .nav li:after{
+      position:absolute;
+      content:'';
+      width:15px;
+      height:15px;
+      top:16px;
+      right:0;
+      background-size:contain;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 492.004 492.004' style='enable-background:new 0 0 492.004 492.004;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12 c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028 c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265 c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A"); }
 
 .header-bot .nav li:last-child{
       margin:0; }
 
 .header-bot .nav a{
+    white-space:nowrap;
     color:#fff;
-    font-size:20px; }
+    font-size:16px;
+    width:100%;
+    border-bottom:1px solid rgba(255, 255, 255, 0.2);
+    padding:15px 0; }
 
 .header-bot .nav a:hover{
       color:#c11e1e; }
@@ -824,7 +848,132 @@ select{
 @media screen and (min-width: 768px){
       .header-bot .nav a{
         font-size:14px;
-        color:#1a1a1a; } }
+        color:#1a1a1a;
+        padding:0; } }
+
+.header-bot .nav .head-services{
+    color:#fff;
+    font-size:16px;
+    border-bottom:1px solid rgba(255, 255, 255, 0.2);
+    padding:15px 0;
+    cursor:pointer;
+    position:relative;
+    width:100%; }
+
+@media screen and (min-width: 768px){
+      .header-bot .nav .head-services{
+        font-size:14px;
+        color:#1a1a1a;
+        padding:0 15px 0 0; } }
+
+.header-bot .nav .head-services.arrow:before{
+      -webkit-transform:rotate(90deg);
+      -ms-transform:rotate(90deg);
+      transform:rotate(90deg); }
+
+.header-bot .nav .head-services:after{
+      display:none;
+      position:absolute;
+      content:'';
+      width:10px;
+      height:10px;
+      top:50%;
+      -webkit-transform:translateY(-50%);
+      -ms-transform:translateY(-50%);
+      transform:translateY(-50%);
+      right:0;
+      background-size:contain;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256' style='enable-background:new 0 0 256 256;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpolygon points='225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093 '/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A"); }
+
+@media screen and (min-width: 768px){
+        .header-bot .nav .head-services:after{
+          display:block; } }
+
+.header-bot .nav .head-services:before{
+      -webkit-transition:all .3s ease;
+      transition:all .3s ease;
+      position:absolute;
+      content:'';
+      width:15px;
+      height:15px;
+      top:16px;
+      right:0;
+      background-size:contain;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 492.004 492.004' style='enable-background:new 0 0 492.004 492.004;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12 c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028 c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265 c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A"); }
+
+@media screen and (min-width: 768px){
+        .header-bot .nav .head-services:before{
+          display:none; } }
+
+@media screen and (min-width: 768px){
+      .header-bot .nav .head-services:hover .services-menu{
+        visibility:visible;
+        opacity:1;
+        top:25px;
+        z-index:1; } }
+
+.header-bot .nav .services-menu{
+    position:relative;
+    top:25px;
+    left:0;
+    min-width:300px;
+    box-shadow:5px 7px 6px rgba(0, 0, 0, 0.1);
+    background-color:#1c1358;
+    display:none; }
+
+@media screen and (min-width: 768px){
+      .header-bot .nav .services-menu{
+        min-width:338px;
+        position:absolute;
+        visibility:hidden;
+        opacity:0;
+        -webkit-transition:all .3s ease;
+        transition:all .3s ease;
+        z-index:-1;
+        padding:10px 15px;
+        background-color:#0c005a; } }
+
+.header-bot .nav .services-menu a{
+      white-space:normal !important;
+      width:100%;
+      border-bottom:1px solid rgba(255, 255, 255, 0.2);
+      color:#ffffff;
+      font-size:14px;
+      font-weight:400;
+      padding:13px 0;
+      position:relative;
+      padding-right:50px; }
+
+.header-bot .nav .services-menu a:after{
+        position:absolute;
+        content:'';
+        width:15px;
+        height:15px;
+        top:50%;
+        -webkit-transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+        transform:translateY(-50%);
+        right:0;
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 492.004 492.004' style='enable-background:new 0 0 492.004 492.004;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12 c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028 c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265 c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A"); }
+
+.header-bot .nav .services-menu a:hover{
+        color:#DA3529; }
+
+.header-bot .nav .services-menu:before{
+      position:absolute;
+      content:'';
+      width:340px;
+      height:20px;
+      top:-10px;
+      left:0;
+      background-color:transparent; }
 
 .item{
   padding-left:32px;
@@ -858,6 +1007,167 @@ span{
   display:block;
   font-size:14px;
   color:#1a1a1a; }
+
+.mask{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background:rgba(149, 149, 149, 0.45);
+  z-index:10;
+  display:none; }
+
+.mask.active{
+    display:block; }
+
+.modal{
+  overflow:hidden;
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  z-index:15;
+  max-width:300px;
+  width:100%;
+  box-shadow:5px 7px 32px rgba(0, 0, 0, 0.39);
+  border-radius:5px;
+  background-color:#ffffff; }
+
+@media screen and (min-width: 768px){
+    .modal{
+      max-width:618px; } }
+
+.modal.active{
+    display:block; }
+
+.modal__close{
+    cursor:pointer;
+    position:absolute;
+    padding:0 20px 0 0;
+    top:10px;
+    right:10px;
+    z-index:16;
+    color:#c11e1f;
+    font-size:12px;
+    font-weight:300;
+    text-decoration:underline; }
+
+.modal__close:after{
+      position:absolute;
+      content:'';
+      width:15px;
+      height:15px;
+      top:50%;
+      -webkit-transform:translateY(-50%);
+      -ms-transform:translateY(-50%);
+      transform:translateY(-50%);
+      right:0;
+      background-size:contain;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c11e1f' d='M256,0C114.844,0,0,114.844,0,256s114.844,256,256,256s256-114.844,256-256S397.156,0,256,0z M359.54,329.374 c4.167,4.165,4.167,10.919,0,15.085L344.46,359.54c-4.167,4.165-10.919,4.165-15.086,0L256,286.167l-73.374,73.374 c-4.167,4.165-10.919,4.165-15.086,0l-15.081-15.082c-4.167-4.165-4.167-10.919,0-15.085l73.374-73.375l-73.374-73.374 c-4.167-4.165-4.167-10.919,0-15.085l15.081-15.082c4.167-4.165,10.919-4.165,15.086,0L256,225.832l73.374-73.374 c4.167-4.165,10.919-4.165,15.086,0l15.081,15.082c4.167,4.165,4.167,10.919,0,15.085l-73.374,73.374L359.54,329.374z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A"); }
+
+.modal .logo{
+    margin-bottom:30px; }
+
+.modal__top-wrap{
+    overflow:hidden;
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -webkit-box-align:center;
+    align-items:center;
+    background-color:#f8f8f8;
+    padding:14px 7px 22px; }
+
+@media screen and (min-width: 768px){
+      .modal__top-wrap{
+        padding:14px 15px 22px; } }
+
+.modal__title{
+    color:#000000;
+    font-size:16px;
+    text-align:center;
+    font-weight:700; }
+
+.modal__bot-wrap{
+    overflow:hidden;
+    padding:35px 15px 32px; }
+
+@media screen and (min-width: 768px){
+      .modal__bot-wrap{
+        padding:35px 30px 32px; } }
+
+.modal .mainForm__input{
+    width:250px;
+    border-radius:5px;
+    border:1px solid #ebebeb;
+    padding:10px 10px;
+    color:#000;
+    font-size:15px;
+    font-weight:400; }
+
+@media screen and (min-width: 768px){
+      .modal .mainForm__input{
+        font-size:18px; } }
+
+.modal .mainForm__input::-webkit-input-placeholder{
+      color:#d7d7d7;
+      font-size:15px;
+      font-weight:400; }
+
+.modal .mainForm__input::-ms-input-placeholder{
+      color:#d7d7d7;
+      font-size:15px;
+      font-weight:400; }
+
+.modal .mainForm__input::placeholder{
+      color:#d7d7d7;
+      font-size:15px;
+      font-weight:400; }
+
+@media screen and (min-width: 768px){
+        .modal .mainForm__input::-webkit-input-placeholder{
+          font-size:18px; }
+        .modal .mainForm__input::-ms-input-placeholder{
+          font-size:18px; }
+        .modal .mainForm__input::placeholder{
+          font-size:18px; } }
+
+.modal .mainForm__input-wrap{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column;
+    -webkit-box-align:center;
+    align-items:center; }
+
+@media screen and (min-width: 768px){
+      .modal .mainForm__input-wrap{
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+        flex-direction:row;
+        -webkit-box-pack:justify;
+        justify-content:space-between; } }
+
+.modal .main-btn{
+    display:block;
+    margin:20px auto 0;
+    font-size:20px;
+    font-weight:400;
+    border-radius:25px; }
+
+@media screen and (min-width: 768px){
+      .modal .main-btn{
+        font-size:24px;
+        margin:40px auto 0; } }
 
 .slick-slide{
   float:left;

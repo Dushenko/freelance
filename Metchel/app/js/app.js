@@ -1,20 +1,17 @@
 //=require ../blocks/**/*.js
 $(document).ready(function () {
+	// modal
+	$('.call').on('click', function () {
+		$('.js-modal').toggleClass('active');
+		$('.js-mask').toggleClass('active');
+	});
+
+	// close
+	$('.modal__close').on('click', function () {
+		$('.js-modal').removeClass('active');
+		$('.js-mask').removeClass('active');
+	});
 	
-	//burger
-	if(document.querySelector('.burger-btn')){
-		$('.burger-btn').click(function(){
-			if($(this).hasClass('open')){
-				$(this).removeClass('open');
-				$('.nav').removeClass('active');
-				$('body').removeClass('overflow');
-			} else {
-				$(this).addClass('open');
-				$('.nav').addClass('active');
-				$('body').addClass('overflow');
-			}
-		})
-	}
 	if ($(window).width() < 1024) {
 		$('.category-wrap').click(function(){
 			$('.left-bar').toggleClass('active');

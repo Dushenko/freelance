@@ -25,7 +25,9 @@
             <nav class="nav">
               <ul>
                 <li><a href="">Главная</a></li>
-                <li><a href="">Услуги</a></li>
+                <li class="head-services">Услуги
+                  <div class="services-menu"><a href="#">Производство самосвалов и зерновозов</a><a href="#">Металлоконструкции</a><a href="#">Разработка и изготовление технологического оборудования строительной керамики</a></div>
+                </li>
                 <li><a href="">Наши проекты</a></li>
                 <li><a href="">О нас</a></li>
                 <li><a href="">Контакты</a></li>
@@ -180,8 +182,24 @@
           <p>Сайт разработан: ЦЕХ ПРОЖАРКИ БИЗНЕСА</p>
         </div>
       </footer>
+      <div class="mask js-mask"></div>
+      <div class="modal js-modal"><span class="modal__close">Закрыть</span>
+        <div class="modal__top-wrap">
+          <div class="logo"><img src="images/logo.png" alt=""></div>
+          <p class="modal__title">Введите свои данные, что бы мы с Вами связались!</p>
+        </div>
+        <div class="modal__bot-wrap">
+          <form class="mainForm" action="#">
+            <div class="mainForm__input-wrap">
+              <input class="mainForm__input" type="text" placeholder="Ваше имя...">
+              <input class="mainForm__input" type="text" placeholder="Ваше номер телефона...">
+            </div>
+            <button class="main-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs/libs.min.js"></script>
     <script src="js/app.js"></script>
   </body>
