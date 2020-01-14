@@ -31,12 +31,20 @@
 	}
 
 	.service {
-		width: 25%;
-		padding: 0 15px 20px;
+		width: 100%;
+		padding: 0 15px;
+		margin-bottom: 25px;
+		@media screen and (min-width: 768px) {
+			width: 50%;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 25%;
+		}
 		&__wrap {
 			background-color: #fcfcfc;
 			width: 100%;
-			height: 262px;
+			height: 100%;
+			min-height: 262px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -44,11 +52,15 @@
 		}
 		&__img {
 			width: 100%;
-			height: auto;
+			height: 190px;
 			margin-bottom: 20px;
+			padding: 30px 10px 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			img {
-				width: 100%;
-				height: 100%;
+				// width: 100%;
+				// height: auto;
 			}
 		}
 		&__name {
@@ -57,6 +69,14 @@
 			color: #000000;
 			font-size: 14px;
 			font-weight: 600;
+			margin-bottom: 10px;
+		}
+	}
+	.mainForm {
+		.main-btn {
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
 		}
 	}
 	.mainForm__wrap {
@@ -98,6 +118,7 @@
 }
 
 .material-section {
+	padding-top: 30px;
 
 	.material-wrap {
 		display: flex;

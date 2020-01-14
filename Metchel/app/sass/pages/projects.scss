@@ -1,5 +1,8 @@
 .projects-section {
-	padding: 0 0 100px;
+	padding: 0 0 40px;
+	@media screen and (min-width: 768px) {
+		padding: 0 0 100px;
+	}
 
 	.section-title {
 		margin-bottom: 21px;
@@ -14,14 +17,17 @@
 		margin: 0 -15px;
 	}
 	.item-wrap {
-		padding: 0 15px;
 		width: 100%;
-		margin-bottom: 39px;
-		&:last-child {
-			margin-bottom: 0;
-		}
+		margin-bottom: 25px;
 		@media screen and (min-width: 500px) {
 			width: 50%;
+			padding: 0 15px;
+		}
+		@media screen and (min-width: 768px) {
+			margin-bottom: 40px;
+		}
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 	.projects-item {

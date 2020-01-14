@@ -43,27 +43,22 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: true,
-    infinite: false,
-    focusOnSelect: false,
+    infinite: true,
+    focusOnSelect: true,
     asNavFor: '.js-nav-slider'
   });
   $('.js-nav-slider').slick({
-    slidesToShow: 3,
+    slidesToShow: 7,
     slidesToScroll: 1,
     asNavFor: '.js-main-slider',
     dots: false,
     arrows: true,
-    infinite: false,
+    infinite: true,
     focusOnSelect: true,
     responsive: [{
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3
-      }
-    }, {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 3
+        slidesToShow: 5
       }
     }]
   });
