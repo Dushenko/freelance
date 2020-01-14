@@ -1,0 +1,23 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.main-section
+			.container-short
+				h2.subtitle Титаренко, Руссков, Улымов
+				h1.main-title Коллегия адвокатов
+				a(href="tel:+74999403363").number +7 499 940-33-63
+				p.main-info Коллегия адвокатов «Титаренко, Руссков, Улымов» была создана в 2001 году и объединила судебных юристов, практикующих с 1995 года в области корпоративного права, судебной защиты в спорах по товарным знакам, в области ценных бумаг, вопросам трудового, административного права и в делах о защите интересов компаний по искам потребителей.
+				a(href="#").free Бесплатная консультация
+
+
+
+
+block footer
+	include ../blocks/footer/footer

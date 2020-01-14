@@ -1,0 +1,33 @@
+.case {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+	padding: 0 0 20px;
+	border-bottom: 1px solid #5f6e7d;
+	&__date {
+		font-size: 16px;
+		color: #5f6e7d;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+
+	&__name {
+		color: rgb(95, 110, 125);
+		font-weight: 500;
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	&__description {
+		font-weight: 300;
+		font-size: 14px;
+		color: #5f6e7d;
+		margin-bottom: 30px;
+	}
+
+	&__more {
+		font-weight: 700;
+		font-size: 14px;
+		color: #5f6e7d;
+	}
+}

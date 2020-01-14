@@ -1,0 +1,77 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.lawyers-section
+			.container
+				h2.section-title Наши адвокаты
+				p.lawyers-descr Коллегия адвокатов «Титаренко, Руссков, Улымов» была создана в 2001 году и объединила судебных юристов, практикующих с 1995 года в области корпоративного права, судебной защиты в спорах по товарным знакам, в области ценных бумаг, вопросам трудового, административного права и в делах о защите интересов компаний по искам потребителей
+				.lawyer-wrap
+					.lawyer
+						.lawyer__wrap
+							.lawyer__img
+								img(src="images/lawyer1.jpg", alt="")
+							.lawyer__info
+								h3.lawyer__name ТИТАРЕНКО МАКСИМ
+								span.lawyer__post max@titarenko.ru
+								p.lawyer__description Адвокат, член адвокатской палаты Москвы, работает в Коллегии с 2001 года
+								a(href="#").lawyer__more УЗНАТЬ БОЛЬШЕ
+					.lawyer
+						.lawyer__wrap
+							.lawyer__img
+								img(src="images/lawyer2.jpg", alt="")
+							.lawyer__info
+								h3.lawyer__name РУССКОВ СЕРГЕЙ
+								span.lawyer__post max@titarenko.ru
+								p.lawyer__description Адвокат, член адвокатской палаты Москвы, работает в Коллегии с 2001 года
+								a(href="#").lawyer__more УЗНАТЬ БОЛЬШЕ
+					.lawyer
+						.lawyer__wrap
+							.lawyer__img
+								img(src="images/lawyer3.jpg", alt="")
+							.lawyer__info
+								h3.lawyer__name УЛЫМОВ ОЛЕГ
+								span.lawyer__post max@titarenko.ru
+								p.lawyer__description Адвокат, член адвокатской палаты Москвы, работает в Коллегии с 2001 года
+								a(href="#").lawyer__more УЗНАТЬ БОЛЬШЕ
+					.lawyer
+						.lawyer__wrap
+							.lawyer__img
+								img(src="images/lawyer4.jpg", alt="")
+							.lawyer__info
+								h3.lawyer__name ПОЛЕТАЕВ ИЛЬЯ
+								span.lawyer__post max@titarenko.ru
+								p.lawyer__description Адвокат, член адвокатской палаты Москвы, работает в Коллегии с 2001 года
+								a(href="#").lawyer__more УЗНАТЬ БОЛЬШЕ
+					.lawyer
+						.lawyer__wrap
+							.lawyer__img
+								img(src="images/lawyer5.jpg", alt="")
+							.lawyer__info
+								h3.lawyer__name ШАЛИМОВА ИРИНА
+								span.lawyer__post max@titarenko.ru
+								p.lawyer__description Адвокат, член адвокатской палаты Москвы, работает в Коллегии с 2001 года
+								a(href="#").lawyer__more УЗНАТЬ БОЛЬШЕ
+					.lawyer
+						.lawyer__wrap
+							.lawyer__img
+								img(src="images/lawyer6.jpg", alt="")
+							.lawyer__info
+								h3.lawyer__name МАРЧЕНКО ТАТЬЯНА
+								span.lawyer__post max@titarenko.ru
+								p.lawyer__description Адвокат, член адвокатской палаты Москвы, работает в Коллегии с 2001 года
+								a(href="#").lawyer__more УЗНАТЬ БОЛЬШЕ
+
+
+
+
+
+
+block footer
+	include ../blocks/footer/footer

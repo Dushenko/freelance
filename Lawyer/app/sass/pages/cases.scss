@@ -1,0 +1,12 @@
+.cases-section {
+	padding: 50px 0;
+	background-color: #f0f3f5;
+	.cases-content {
+		display: flex;
+		justify-content: space-between;
+	}
+	.content {
+		max-width: calc(100% - 390px);
+		width: 100%;
+	}
+}

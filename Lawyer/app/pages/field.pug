@@ -1,0 +1,34 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.field-section
+			.container
+				h2.section-title Области практики
+				.field-content
+					a(href="#").field-wrap
+						span.field Споры о возврате/замене технически сложных товаров
+					a(href="#").field-wrap
+						span.field Споры о возмещении вреда, возникшего в результате продажи некачественного товара
+					a(href="#").field-wrap
+						span.field Споры о возмещении вреда здоровью
+					a(href="#").field-wrap
+						span.field Трудовые споры
+					a(href="#").field-wrap
+						span.field Договорные/коммерческие споры
+					a(href="#").field-wrap
+						span.field Административные споры
+					a(href="#").field-wrap
+						span.field Вексельные споры
+
+
+
+
+block footer
+	include ../blocks/footer/footer
