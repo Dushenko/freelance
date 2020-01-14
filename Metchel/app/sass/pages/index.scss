@@ -19,13 +19,19 @@
 			flex: none;
 		}
 		.main-btn {
+			display: block;
+			margin: 0 auto;
 			font-size: 24px;
 			box-shadow: 0 0 24px rgba(0, 0, 0, 0.48);
 			border-radius: 25px;
+			@media screen and (min-width: 375px) {
+				margin: 0;
+			}
 			@media screen and (max-width: 900px) {
 				color: #fff;
 				background-color: #c82121;
 			}
+
 		}
 		ul {
 			max-width: 405px;
@@ -38,9 +44,10 @@
 				color: #ffffff;
 				font-size: 13px;
 				font-weight: 500;
-				margin-bottom: 15px;
+				margin-bottom: 5px;
 				@media screen and (min-width: 768px) {
 					font-size: 18px;
+					margin-bottom: 15px;
 				}
 			}
 			li {
@@ -88,6 +95,7 @@
 		}
 
 		&__wrap {
+			width: 290px;
 			@media screen and (max-width: 900px) {
 				margin: 0 auto;
 				border: none;
@@ -117,11 +125,17 @@
 		}
 	}
 	.left-block {
-		max-width: 465px;
 		width: 100%;
 		margin: 0 0 37px;
 		@media screen and (min-width: 768px) {
 			margin: 0 25px 0 0;
+			max-width: 465px;
+		}
+		.sectio-info {
+			line-height: 1.6;
+			@media screen and (min-width: 1024px) {
+				line-height: 1.8;
+			}
 		}
 		.sectio-info,
 		.title-wrap {
@@ -131,7 +145,10 @@
 			}
 		}
 		.section-subtitle {
-			margin-bottom: 25px;
+			margin: 50px 0 25px;
+			@media screen and (min-width: 1024px) {
+
+			}
 		}
 	}
 	.right-block {
@@ -217,17 +234,27 @@
 }
 
 .process-section {
+	padding: 35px 0 0;
+
+	@media screen and (min-width: 768px) {
+		padding: 60px 0 20px;
+	}
 
 	.advantage {
 		@media screen and (min-width: 1024px) {
 			width: 20%;
 		}
 	}
-	padding: 85px 0;
+
 	.title-wrap  {
-		margin-bottom: 77px;
+		margin-bottom: 45px;
+		@media screen and (min-width: 1024px) {
+			margin-bottom: 77px;
+		}
 	}
+
 	.advantages {
+		justify-content: flex-start;
 		@media screen and (min-width: 1024px) {
 			margin: 0;
 		}
@@ -247,15 +274,59 @@
 				display: none;
 			}
 		}
+		&:nth-child(2) {
+			&:after {
+				transform: translateX(-50%) rotate(90deg);
+				bottom: 17px;
+				top: auto;
+				left: 50%;
+				@media screen and (min-width: 768px) {
+					top: 17%;
+					right: -15px;
+					transform: rotate(0deg);
+					left: auto;
+				}
+			}
+		}
+		&:nth-child(3) {
+			&:after {
+				transform: translateX(-50%) rotate(90deg);
+				bottom: 17px;
+				top: auto;
+				left: 50%;
+				@media screen and (min-width: 768px) {
+					top: 17%;
+					right: -15px;
+					transform: rotate(0deg);
+					left: auto;
+				}
+			}
+		}
+		&:nth-child(4) {
+			&:after {
+				transform: translateX(-50%) rotate(180deg);
+				left: 0;
+				top: 28px;
+				@media screen and (min-width: 768px) {
+					top: 17%;
+					right: -15px;
+					transform: rotate(0deg);
+					left: auto;
+				}
+			}
+		}
 		&:after {
 			position: absolute;
 			content: '';
 			width: 25px;
 			height: 25px;
 			top: 17%;
-			right: 15px;
+			right: -15px;
 			@include bg-img-center;
 			background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%2311055a' d='M423.386,248.299l-256-245.327c-4.208-4.021-10.833-3.958-14.927,0.167l-64,63.998c-2.042,2.042-3.167,4.812-3.125,7.687 c0.042,2.896,1.25,5.625,3.344,7.604l183.792,173.579L88.678,429.586c-2.094,1.979-3.302,4.708-3.344,7.604 c-0.042,2.875,1.083,5.646,3.125,7.687l64,63.998c2.083,2.083,4.813,3.125,7.542,3.125c2.656,0,5.313-0.979,7.385-2.958 l256-245.327c2.094-2.021,3.281-4.792,3.281-7.708C426.667,253.09,425.48,250.319,423.386,248.299z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+		}
+		&__wrap {
+			padding: 0 15px 77px;
 		}
 	}
 }
@@ -286,7 +357,38 @@
 		background-position: bottom center;
 		background-image: url('../images/white.png');
 	}
-
+	.mainForm__input {
+		width: 100%;
+		padding: 12px 15px 13px;
+		margin-bottom: 23px;
+		@media screen and (min-width: 768px) {
+			width: 233px;
+		}
+		@media screen and (min-width: 1065px) {
+			margin-bottom: 0;
+		}
+	}
+	.mainForm__select-wrap { 
+		width: 100%;
+		height: 44px;
+		margin-bottom: 23px;
+		@media screen and (min-width: 768px) {
+			width: 233px;
+		}
+		@media screen and (min-width: 1065px) {
+			margin-bottom: 0;
+		}
+	}
+	.mainForm__select {
+		height: 100%;
+	}
+	.main-btn {
+		width: 100%;
+		padding: 12px 0 13px;
+		@media screen and (min-width: 768px) {
+			width: 233px;
+		}
+	}
 	.container {
 		position: relative;
 		z-index: 1;
@@ -324,12 +426,24 @@
 	padding: 90px 0 44px;
 	.review-wrap {
 		position: relative;
+		@media screen and (min-width: 768px) {
+			margin: 0 -15px;
+		}
 		.my-navigation {
 			position: absolute;
-			right: 0;
-			top: -80px;
+			bottom: -30px;
+			left: 50%;
+			transform: translateX(-50%);
+			@media screen and (min-width: 768px) {
+				right: 0;
+				top: -80px;
+				left: auto;
+				bottom: auto;
+				transform: translateX(0);
+			}
 		}
 	}
+
 	.top-wrap {
 		margin-bottom: 50px;
 		display: flex;
@@ -338,23 +452,35 @@
 	}
 
 	.review {
-		padding: 0 15px 47px;
-		max-width: 556px;
 		width: 100%;
-		margin: 0 auto;
+		margin: 0 auto 30px;
+		overflow: hidden;
+		@media screen and (min-width: 768px) {
+			max-width: 556px;
+			padding: 0 15px;
+			margin: 0 auto;
+		}
 		&__wrap {
 			display: flex;
 			align-items: flex-start;
 			background-color: #fcfcfc;
+			position: relative;
 		}
 		&__info {
-			padding: 37px 0 0 27px;
+			padding: 35px 0 20px 7px;
+			@media screen and (min-width: 768px) {
+				padding: 37px 0 30px 27px;
+			}
 		}
 		&__name {
 			color: #000000;
-			font-size: 24px;
+			font-size: 18px;
 			font-weight: 700;
 			margin-bottom: 30px;
+			width: 180px;
+			@media screen and (min-width: 768px) {
+				font-size: 24px;
+			}
 		}
 		&__description {
 			color: #000000;
@@ -363,9 +489,18 @@
 			line-height: 24px;
 		}
 		&__img {
-			max-width: 167px;
-			width: 100%;
-			height: auto;
+			position: absolute;
+			right: 0;
+			top: -10px;
+			width: 80px;
+			height: 64px;
+			@media screen and (min-width: 768px) {
+				position: relative;
+				max-width: 167px;
+				width: 100%;
+				height: auto;
+				top: 0;
+			}
 			img {
 				width: 100%;
 				height: 100%;
@@ -467,6 +602,10 @@
 	.form-img {
 		max-width: 440px;
 		height: auto;
+		margin: 0 -70px 0 0;
+		@media screen and (min-width: 768px) {
+			margin: 0;
+		}
 		img {
 			width: 100%;
 			height: 100%;

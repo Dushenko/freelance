@@ -18,7 +18,6 @@ $(document).ready(function () {
 		]
 	});
 
-
 	$('.js-main-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -66,7 +65,8 @@ $(document).ready(function () {
 		{
 			breakpoint: 768,
 			settings: {
-				slidesToShow: 1,
+				slidesToShow: 2,
+				vertical: true
 			}
 		}
 		]

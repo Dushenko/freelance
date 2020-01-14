@@ -79,7 +79,8 @@ $(document).ready(function () {
     responsive: [{
       breakpoint: 768,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 2,
+        vertical: true
       }
     }]
   });

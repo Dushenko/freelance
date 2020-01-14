@@ -8,15 +8,18 @@
 		padding: 0;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
 		@media screen and (min-width: 768px) {
 			padding: 0 15px;
+			justify-content: space-between;
+
 		}
 		.logo {
 			width: 112px;
 			height: 30px;
+			margin-left: 15px;
 			@media screen and (min-width: 768px) {
 				display: none;
+				margin-left: 0;
 			}
 			img {
 				width: 100%;
@@ -46,11 +49,13 @@
 		@media screen and (min-width: 1003px) {
 			margin: 0;
 		}
+
 		&_small {
 			padding: 6px 0;
 			display: block;
 			width: 95px;
 			font-size: 9px;
+			margin: 0 15px 0 auto;
 			@media screen and (min-width: 768px) {
 				display: none;
 			}
