@@ -74,14 +74,14 @@
 	}
 	.mainForm {
 		.main-btn {
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 900px) {
 				width: 100%;
 			}
 		}
 	}
 	.mainForm__wrap {
 		margin: 20px 0;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 900px) {
 			margin: 50px 0;
 		}
 	}
@@ -90,8 +90,8 @@
 		border: 1px solid rgba(0, 0, 0, .2);
 		color: #000;
 		margin-bottom: 22px;
-		@media screen and (min-width: 768px) {
-			width: 20%;
+		@media screen and (min-width: 900px) {
+			width: 22%;
 			margin: 0;
 		}
 		&::placeholder {
@@ -105,8 +105,8 @@
 	}
 	.mainForm__select-wrap {
 		width: 100%;
-		@media screen and (min-width: 768px) {
-			width: 20%;
+		@media screen and (min-width: 900px) {
+			width: 22%;
 			margin: 0;
 		}
 		margin-bottom: 22px;
