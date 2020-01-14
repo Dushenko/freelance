@@ -1628,6 +1628,12 @@ span{
   max-height:500px;
   min-height:200px; }
 
+@media screen and (max-width: 1024px){
+    .contacts-page-section .map{
+      width:calc(100% + 30px);
+      position:relative;
+      left:-15px; } }
+
 .equipment-baner-section{
   background-repeat:no-repeat;
   background-size:cover;
@@ -2460,7 +2466,7 @@ span{
   width:100%;
   height:100%;
   z-index:8;
-  top:40px;
+  top:30px;
   left:-150%;
   -webkit-transition:all .5s ease;
   transition:all .5s ease;
@@ -2484,6 +2490,8 @@ span{
       padding:0 18px; } }
 
 .metal-content-section .category-wrap{
+  height:35px;
+  overflow:hidden;
   display:-webkit-box;
   display:flex;
   -webkit-box-pack:center;
@@ -2572,17 +2580,30 @@ span{
     margin-bottom:47px; }
 
 .metal-section .structures{
-    display:-webkit-box;
-    display:flex;
+    width:auto;
     margin:0 -29px; }
 
 .metal-section .structure{
+    width:100%;
     padding:10px 29px; }
+
+@media screen and (min-width: 480px){
+      .metal-section .structure{
+        width:50%; } }
+
+@media screen and (min-width: 768px){
+      .metal-section .structure{
+        width:33.33%; } }
+
+@media screen and (min-width: 1024px){
+      .metal-section .structure{
+        width:25%; } }
 
 .metal-section .structure:hover{
       background-color:#fff; }
 
 .metal-section .structure__wrap{
+      width:auto;
       background-color:#fff; }
 
 .structures{

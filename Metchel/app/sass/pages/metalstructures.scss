@@ -3,27 +3,31 @@
 	.section-title {
 		margin-bottom: 47px;
 	}
+
 	.structures {
-		display: flex;
+		width: auto;
 		margin: 0 -29px;
 	}
 
 	.structure {
+		width: 100%;
 		padding: 10px 29px;
+		@media screen and (min-width: 480px) {
+			width: 50%;
+		}
+		@media screen and (min-width: 768px) {
+			width: 33.33%;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 25%;
+		}
 		&:hover {
 			background-color: #fff;
 		}
 
 		&__wrap {
+			width: auto;
 			background-color: #fff;
-		}
-
-		&__img {
-
-		}
-
-		&__info {
-
 		}
 	}
 }

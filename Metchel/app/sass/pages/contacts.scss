@@ -49,5 +49,10 @@
 		height: 35vw;
 		max-height: 500px;
 		min-height: 200px;
+		@media screen and (max-width: 1024px) {
+			width: calc(100% + 30px);
+			position: relative;
+			left: -15px;
+		}
 	}
 }
