@@ -670,11 +670,11 @@ select{
         .nav a:before{
           top:-21px; } }
 
-.nav a:hover{
+.nav a.active, .nav a:hover{
       -webkit-transition:.3s ease;
       transition:.3s ease; }
 
-.nav a:hover:before{
+.nav a.active:before, .nav a:hover:before{
         opacity:1; }
 
 .logo{
