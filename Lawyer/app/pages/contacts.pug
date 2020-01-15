@@ -8,17 +8,40 @@ block header
 
 block content
 	main.main
-		section.field-section
+		section.contacts-section
 			.container
-				h2.section-title Области практики
-				.field-content
-					a(href="one-field.html").field Споры о возврате/замене технически сложных товаров
-					a(href="one-field.html").field Споры о возмещении вреда, возникшего в результате продажи некачественного товара
-					a(href="one-field.html").field Споры о возмещении вреда здоровью
-					a(href="one-field.html").field Трудовые споры
-					a(href="one-field.html").field Договорные/коммерческие споры
-					a(href="one-field.html").field Административные споры
-					a(href="one-field.html").field Вексельные споры
+				.contacts-wrap
+					.contacts-head
+						p We're here for all criminal offences including sexual offences, driving offences, violet offences, white collar crime and drug offences.
+						p Office: Monday - Friday 8:00 AM to 4:30 PM
+						p 24 HOURS ANYTIME DAY OR NIGHT: (403) 969-9874
+					.contacts-info
+						p.adress 121087, г.Москваб ул. Барклаяб д. 6, стр. 25, офис 5-12, Бизнес центр «‎Бастион»
+
+						.contacts-tel
+							a(href="tel:+74999403363") +7(499) 940-33-63
+							a(href="tel:+74999403383") +7(499) 940-33-83
+							a(href="mailto:max@titarenko.ru") max@titarenko.ru
+					
+					form(action="#").contactForm
+						.contactForm__wrap
+							.contactForm__fild
+								label Ваше имя
+								input(type="text")
+							.contactForm__fild
+								label Email
+								input(type="text")
+							.contactForm__fild
+								label Телефон
+								input(type="text")
+							.contactForm__fild
+								label Сообщение
+								textarea(type="text")
+							.contactForm__fild
+								label Защита от спама
+								.captcha
+									img(src="images/capch.png", alt="")
+							button(type="submit").contactForm__btn Отправить сообщение
 
 
 

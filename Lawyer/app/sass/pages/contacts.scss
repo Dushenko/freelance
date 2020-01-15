@@ -1,0 +1,141 @@
+.contacts-section {
+	padding: 9vw 0;
+	background-color: #5a6c7f;
+	@media screen and (min-width: 1200px) {
+		padding: 120px 0;
+	}
+
+	.contacts-wrap {
+		background-color: #495a68;
+		padding: 15px;
+		max-width: 750px;
+		width: 100%;
+		margin-left: auto;
+		@media screen and (min-width: 768px) {
+			padding: 40px;
+		}
+	}
+
+	.contacts-head {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #5b6e7e;
+		p {
+			color: #fff;
+			font-size: 12px;
+			line-height: 1.4;
+			@media screen and (min-width: 768px) {
+				font-size: 16px;
+			}
+			&:first-child {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.contacts-info {
+		margin-bottom: 30px;
+		@media screen and (min-width: 768px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		p {
+			color: #fff;
+			font-size: 12px;
+			line-height: 1.4;
+			margin-bottom: 15px;
+			@media screen and (min-width: 768px) {
+				font-size: 16px;
+				margin-right: 120px;
+			}
+		}
+	}
+
+	.contacts-tel {
+		display: flex;
+		flex-direction: column;
+
+		a {
+			color: #fff;
+			font-size: 12px;
+			line-height: 1.4;
+			@media screen and (min-width: 768px) {
+				font-size: 16px;
+			}
+
+			&:hover {
+				color: #ccc;
+			}
+		}
+	}
+}
+
+.contactForm {
+	&__fild {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15px;
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+
+	label {
+		color: #fff;
+		font-size: 12px;
+		line-height: 1.4;
+		margin-bottom: 5px;
+		@media screen and (min-width: 768px) {
+			text-align: right;
+			padding-right: 30px;
+			width: 175px;
+			font-size: 16px;
+		}
+	}
+
+	input {
+		width: 100%;
+		background-color: #fff;
+		padding: 8px 10px;
+		color: #000;
+		font-size: 14px;
+		@media screen and (min-width: 768px) {
+			max-width: 495px;
+			margin-left: auto;
+		}
+	}
+
+	textarea {
+		width: 100%;
+		background-color: #fff;
+		padding: 8px 10px;
+		min-height: 85px;
+		color: #000;
+		font-size: 14px;
+		@media screen and (min-width: 768px) {
+			max-width: 495px;
+			margin-left: auto;
+		}
+	}
+
+	&__btn {
+		font-size: 15px;
+		font-weight: 500;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 10px;
+		border: 2px solid #fff;
+		transition: all .3s ease;
+		@media screen and (min-width: 768px) {
+			margin-left: 175px;
+		}
+
+		&:hover {
+			background-color: #fff;
+			color: #5b6e7e;
+		}
+	}
+}
