@@ -9,8 +9,33 @@
 			margin: 0 -10px;
 		}
 	}
+}
 
+.practice {
+	margin-bottom: 50px;
+	h4 {
+		font-size: 16px;
+		color: #5f6e7d;
+		line-height: 1.25;
+		font-weight: 700;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid rgba(0, 0, 0, .2);
+	}
 
+	h5 {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.55;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 1.55;
+		margin-bottom: 25px;
+	}
 }
 
 .field {

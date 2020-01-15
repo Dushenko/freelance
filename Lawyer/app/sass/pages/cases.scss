@@ -1,12 +1,21 @@
 .cases-section {
 	padding: 50px 0;
 	background-color: #f0f3f5;
+
 	.cases-content {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
 	}
+
 	.content {
-		max-width: calc(100% - 390px);
-		width: 100%;
+		@media screen and (min-width: 768px) {
+			max-width: calc(100% - 390px);
+			width: 100%;
+		}
 	}
 }
