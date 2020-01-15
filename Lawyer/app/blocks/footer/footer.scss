@@ -1,15 +1,26 @@
 .footer {
 	
 	.top-foot {
-		padding: 45px 0 60px;
+		padding: 40px 0 0;
+
+		@media screen and (min-width: 768px) {
+			padding: 45px 0 60px;
+		}
 		.container {
 			display: flex;
-			justify-content: space-between;
+			flex-direction: column;
+			@media screen and (min-width: 600px) {
+				flex-direction: row;
+				justify-content: space-between;
+			}
 		}
 	}
 
 	.foot-block {
-		width: 47%;
+		margin-bottom: 30px;
+		@media screen and (min-width: 600px) {
+			width: 47%;
+		}
 	}
 
 	.foot-wrap {
@@ -30,6 +41,7 @@
 		font-size: 14px;
 		color: #666666;
 		margin-bottom: 20px;
+		line-height: 20px;
 	}
 
 	.foot-tel {
@@ -41,22 +53,30 @@
 
 	.schedule {
 		width: 215px;
+		line-height: 20px;
 	}
+
 	.address {
 		width: 240px;
 		margin-bottom: 20px;
+		margin-right: 20px;
+		line-height: 20px;
 	}
 
 	.list {
 		display: flex;
 		flex-direction: column;
+		margin-right: 20px;
 		li {
 			font-weight: 400;
 			font-size: 14px;
+			line-height: 20px;
 			color: #666666;
-			max-width: 255px;
 			width: 100%;
 			margin-bottom: 20px;
+			@media screen and (min-width: 600px) {
+				max-width: 255px;
+			}
 		}
 	}
 

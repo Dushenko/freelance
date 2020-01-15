@@ -18,6 +18,9 @@ body {
 
 	&.overflow {
 		overflow: hidden;
+		position: fixed;
+		top: 0;
+		left: 0;
 	}
 }
 
@@ -89,13 +92,6 @@ select {
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-	
-	@media screen and (max-width: 1024px) {
-		
-	}
-	@media screen and (max-width: 1500px) {
-
-	}
 }
 .container-short {
 	max-width: 980px;
@@ -108,21 +104,6 @@ select {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
-}
-
-.main-title {
-	
-	@media screen and (min-width: 768px) {
-	}
-	@media screen and (min-width: 1024px) {
-	}
-}
-
-.section-title {
-
-	@media screen and (max-width: 768px) {
-		
-	}
 }
 
 //scroll

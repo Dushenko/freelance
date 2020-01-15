@@ -1,18 +1,27 @@
-.subtitle {
-	text-align: center;
-	font-weight: 500;
-	font-size: 18px;
-	text-transform: uppercase;
-	color: #fff;
-}
-
 .main-title {
 	text-align: center;
-	font-size: 72px;
+	font-size: 42px;
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #fff;
 	margin-bottom: 20px;
+	@media screen and (min-width: 768px) {
+		font-size: 55px;
+	}
+	@media screen and (min-width: 1024px) {
+		font-size: 72px;
+	}
+}
+
+.subtitle {
+	text-align: center;
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	@media screen and (min-width: 768px) {
+		font-size: 18px;
+	}
 }
 
 .main-info {
@@ -37,7 +46,11 @@
 	text-align: center;
 	color: #5f6e7d;
 	display: block;
-	font-size: 42px;
+	font-size: 30px;
 	font-weight: 600;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
+	@media screen and (min-width: 768px) {
+		font-size: 42px;
+		margin-bottom: 40px;
+	}
 }
