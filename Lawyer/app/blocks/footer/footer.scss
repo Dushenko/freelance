@@ -30,9 +30,23 @@
 		font-weight: 400;
 		font-size: 14px;
 		color: #666666;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
 		li {
 			display: flex;
 			flex-direction: column;
+		}
+
+		a {
+			border-bottom: 1px solid transparent;
+			&:hover {
+				border-bottom: 1px solid #666666;
+			}
 		}
 	}
 
@@ -66,16 +80,22 @@
 	.list {
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		margin-right: 20px;
+		@media screen and (min-width: 600px) {
+			max-width: 255px;
+		}
 		li {
+			margin-bottom: 20px;
+		}
+		a {
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 20px;
 			color: #666666;
-			width: 100%;
-			margin-bottom: 20px;
-			@media screen and (min-width: 600px) {
-				max-width: 255px;
+			border-bottom: 1px solid transparent;
+			&:hover {
+				border-bottom: 1px solid #666666;
 			}
 		}
 	}
