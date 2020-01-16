@@ -1,15 +1,31 @@
-.card-section {
-	padding: 40px 0;
-	background-color: #E5E5E5;
+.choise-section {
+	padding: 40px 0 0;
+	@media screen and (min-width: 768px) {
+		padding: 60px 0 20px; 
+	}
+	@media screen and (min-width: 768px) {
+		padding: 60px 0 40px; 
+	}
+}
 
-	.card-wrap {
-		display: flex;
-		flex-wrap: wrap;
-		@media screen and (min-width: 480px) {
-			margin: 0 -10px;
-		}
-		@media screen and (min-width: 1024px) {
-			margin: 0 -25px;
-		}
+.advantages-section {
+	position: relative;
+	padding: 40px 0 0;
+	height: 730px;
+	background-image: url('../images/advant-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.services-section {
+	padding: 60px 0 133px;
+}
+
+.card-section {
+	padding: 40px 0 20px;
+	background-color: #E5E5E5;
+	@media screen and (min-width: 1024px) {
+		padding: 84px 0 15px; 
 	}
 }
