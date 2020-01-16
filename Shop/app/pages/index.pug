@@ -1,0 +1,50 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.intro-section(style="background-image: url('images/intro-bg.jpg')")
+
+		section.new-section
+			.container
+				h2.section-title Новинки
+				a(href="#").sub-link Все новинки >
+				.new-product
+					.product-slider.js-product-slider
+						.slider
+							.product
+								.product__img(style="background-image: url('images/new-img.jpg')")
+								h3.product__name Новый чехол для очков
+						.slider
+							.product
+								.product__img(style="background-image: url('images/new-img.jpg')")
+								h3.product__name Новый чехол для очков
+						.slider
+							.product
+								.product__img(style="background-image: url('images/new-img.jpg')")
+								h3.product__name Новый чехол для очков
+						.slider
+							.product
+								.product__img(style="background-image: url('images/new-img.jpg')")
+								h3.product__name Новый чехол для очков
+						.slider
+							.product
+								.product__img(style="background-image: url('images/new-img.jpg')")
+								h3.product__name Новый чехол для очков
+
+		section.know-more-section
+			.container
+				h2.section-title.section-title_big Узнайте больше о Highcraft в Instagram 		
+
+
+
+
+
+
+block footer
+	include ../blocks/footer/footer		
