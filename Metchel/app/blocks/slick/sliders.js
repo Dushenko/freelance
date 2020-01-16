@@ -29,7 +29,7 @@ $(document).ready(function () {
 	});
 
 	$('.js-nav-slider').slick({
-		slidesToShow: 7,
+		slidesToShow: 2,
 		slidesToScroll: 1,
 		asNavFor: '.js-main-slider',
 		dots: false,
@@ -40,7 +40,7 @@ $(document).ready(function () {
 		{
 			breakpoint: 1024,
 			settings: {
-				slidesToShow: 5,
+				slidesToShow: 2,
 			}
 		}
 		]

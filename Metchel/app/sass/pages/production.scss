@@ -38,8 +38,9 @@
 			width: 50%;
 		}
 		@media screen and (min-width: 1024px) {
-			width: 25%;
+			width: 20%;
 		}
+
 		&__wrap {
 			background-color: #fcfcfc;
 			width: 100%;
@@ -50,6 +51,7 @@
 			justify-content: space-between;
 			align-items: center;
 		}
+
 		&__img {
 			width: 100%;
 			height: 190px;
@@ -58,11 +60,14 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+
 			img {
-				// width: 100%;
-				// height: auto;
+				@media screen and (min-width: 1024px) {
+					width: 100%;
+				}
 			}
 		}
+
 		&__name {
 			min-height: 40px;
 			text-align: center;
@@ -176,7 +181,6 @@
 		}
 		&__img {
 			flex: none;
-			// max-width: 244px;
 			width: 100%;
 			height: 100px;
 			margin-bottom: 40px;

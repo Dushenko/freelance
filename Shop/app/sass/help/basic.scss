@@ -15,6 +15,14 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 
 body {
 	font-family: 'Mabry Pro';
+
+	&.overflow {
+		overflow: hidden;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
 }
 
 a {
@@ -95,7 +103,8 @@ select {
 }
 
 .container {
-	max-width: 2330px;
+	// max-width: 2330px;
+	max-width: 1400px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;

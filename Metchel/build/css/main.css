@@ -2726,7 +2726,7 @@ span{
 
 @media screen and (min-width: 1024px){
     .service-section .service{
-      width:25%; } }
+      width:20%; } }
 
 .service-section .service__wrap{
     background-color:#fcfcfc;
@@ -2754,6 +2754,10 @@ span{
     align-items:center;
     -webkit-box-pack:center;
     justify-content:center; }
+
+@media screen and (min-width: 1024px){
+      .service-section .service__img img{
+        width:100%; } }
 
 .service-section .service__name{
     min-height:40px;

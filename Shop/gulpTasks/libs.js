@@ -9,7 +9,7 @@ module.exports = function () {
       .pipe(plumber({ errorHandler: errorHandler('Error in libs task') }))
       .pipe(concat('libs.min.js'))
       .pipe(uglify())
-      .pipe($.gulp.dest('build/libs/'));
+      .pipe($.gulp.dest('build/js/libs/'));
   });
 
 };

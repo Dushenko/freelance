@@ -19,21 +19,75 @@
           <div class="container"><span class="free-delivery">Бесплатная доставка от 3000 рублей</span></div>
         </div>
         <div class="header-bot">
-          <div class="container"><a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
-            <nav class="nav">
-              <ul>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Инфо</a></li>
+          <div class="container"><a class="logo" href="index.html"><img src="images/logo-black.png" alt=""></a>
+            <nav class="nav js-nav">
+              <ul class="main-menu js-main-menu">
+                <li><a href="#">Каталог</a>
+                  <ul class="menu js-menu"><span>Женское</span>
+                    <li><a href="#">Смотреть все</a></li>
+                    <li><a href="#">Сумки
+                        <ul class="sub-menu js-sub-menu">
+                          <li><a href="#">Портфели</a></li>
+                          <li><a href="#">Для ноутбука</a></li>
+                          <li><a href="#">Кросс-боди</a></li>
+                          <li><a href="#">Поясные </a></li>
+                          <li><a href="#">Дорожные </a></li>
+                          <li><a href="#">Тоут</a></li>
+                          <li><a href="#">Планшеты</a></li>
+                          <li><a href="#">Шопперы</a></li>
+                          <li><a href="#">Сумки с ручками</a></li>
+                        </ul></a></li>
+                    <li><a href="#">Рюкзаки</a></li>
+                    <li><a href="#">Кошельки</a></li>
+                    <li><a href="#">Аксессуары</a></li><span>Мужское</span>
+                    <li><a href="#">Смотреть все</a></li>
+                    <li><a href="#">Сумки </a></li>
+                    <li><a href="#">Рюкзаки</a></li>
+                    <li><a href="#">Кошельки </a></li>
+                    <li><a href="#">Аксессуары </a></li>
+                    <li><a href="#">В наличии</a></li>
+                    <li><a href="#">Средство для ухода</a></li>
+                    <li><a href="#">Распродажа</a></li>
+                    <li><a href="#">Подарочный сертификат</a></li>
+                    <li><a href="#">Архив моделей</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Инфо</a>
+                  <ul class="menu js-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">О коже</a></li>
+                    <li><a href="#">Палитра</a></li>
+                    <li><a href="#">Материалы</a></li>
+                    <li><a href="#">Персонализация</a></li>
+                    <li><a href="#">Корпоративные заказы</a></li>
+                  </ul>
+                </li>
                 <li><a href="#">Сервис</a></li>
                 <li><a href="#">Корзина</a></li>
                 <li><a href="tel:+79638888880">+7-963-888-8880</a></li>
               </ul>
             </nav>
+            <div class="burger js-burger"><span></span><span></span><span></span></div>
           </div>
         </div>
       </header>
       <main class="main">
-        <section class="intro-section" style="background-image: url('images/intro-bg.jpg')"></section>
+        <section class="intro-section">
+          <div class="intro-slider js-intro-slider">
+            <div class="slide" style="background-image: url('images/intro-bg.jpg')"></div>
+            <div class="slide" style="background-image: url('images/intro-bg.jpg')"></div>
+            <div class="slide" style="background-image: url('images/intro-bg.jpg')"></div>
+            <div class="slide" style="background-image: url('images/intro-bg.jpg')"></div>
+            <div class="slide" style="background-image: url('images/intro-bg.jpg')"></div>
+          </div>
+        </section>
+        <section class="catalog-section">
+          <div class="container">
+            <h2 class="section-title">Каталог</h2><a class="sub-link" href="#">Смотреть все ></a>
+            <div class="catalog-head"><a class="catalog-link" href="#"><img src="images/m8.jpg" alt=""><span class="catalog-text">женское</span></a><a class="catalog-link" href="#"><img src="images/m9.jpg" alt=""><span class="catalog-text">мужское</span></a></div>
+            <div class="grid"><a class="grid__item grid__item_high" href="#" style="background-image: url('images/m1.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item" href="#" style="background-image: url('images/m2.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item" href="#" style="background-image: url('images/m3.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item grid__item_high" href="#" style="background-image: url('images/m4.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item grid__sizer" href="#" style="background-image: url('images/m5.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item grid__sizer" href="#" style="background-image: url('images/m6.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item grid__item_small" href="#" style="background-image: url('images/m7.jpg')"><span class="grid-text">Сумки</span></a></div>
+          </div>
+        </section>
         <section class="new-section">
           <div class="container">
             <h2 class="section-title">Новинки</h2><a class="sub-link" href="#">Все новинки ></a>
@@ -111,7 +165,8 @@
       </footer>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="libs/libs.min.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+    <script src="js/libs/libs.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

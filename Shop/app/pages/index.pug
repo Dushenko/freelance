@@ -8,7 +8,47 @@ block header
 
 block content
 	main.main
-		section.intro-section(style="background-image: url('images/intro-bg.jpg')")
+		section.intro-section
+			.intro-slider.js-intro-slider
+				.slide(style="background-image: url('images/intro-bg.jpg')")
+					
+				.slide(style="background-image: url('images/intro-bg.jpg')")
+					
+				.slide(style="background-image: url('images/intro-bg.jpg')")
+					
+				.slide(style="background-image: url('images/intro-bg.jpg')")
+					
+				.slide(style="background-image: url('images/intro-bg.jpg')")
+					
+
+		section.catalog-section
+			.container
+				h2.section-title Каталог
+				a(href="#").sub-link Смотреть все >
+				.catalog-head
+					a(href="#").catalog-link
+						img(src="images/m8.jpg", alt="")
+						span.catalog-text женское
+					a(href="#").catalog-link
+						img(src="images/m9.jpg", alt="")
+						span.catalog-text мужское
+
+				.grid
+					
+					a(href="#").grid__item.grid__item_high(style="background-image: url('images/m1.jpg')")
+						span.grid-text Сумки
+					a(href="#").grid__item(style="background-image: url('images/m2.jpg')")
+						span.grid-text Сумки
+					a(href="#").grid__item(style="background-image: url('images/m3.jpg')")
+						span.grid-text Сумки
+					a(href="#").grid__item.grid__item_high(style="background-image: url('images/m4.jpg')")
+						span.grid-text Сумки
+					a(href="#").grid__item.grid__sizer(style="background-image: url('images/m5.jpg')")
+						span.grid-text Сумки
+					a(href="#").grid__item.grid__sizer(style="background-image: url('images/m6.jpg')")
+						span.grid-text Сумки
+					a(href="#").grid__item.grid__item_small(style="background-image: url('images/m7.jpg')")
+						span.grid-text Сумки
 
 		section.new-section
 			.container
@@ -52,11 +92,6 @@ block content
 						img(src="images/inst4.jpg", alt="")
 					a(href="#").instagram
 						img(src="images/inst5.jpg", alt="")
-
-
-
-
-
 
 block footer
 	include ../blocks/footer/footer		
