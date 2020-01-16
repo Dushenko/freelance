@@ -10,12 +10,14 @@
 
 .advantages-section {
 	position: relative;
-	padding: 40px 0 0;
-	height: 730px;
+	padding: 40px 0 20px;
 	background-image: url('../images/advant-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	@media screen and (min-width: 1024px) {
+		padding: 84px 0 15px; 
+	}
 }
 
 .services-section {
@@ -25,7 +27,10 @@
 .card-section {
 	padding: 40px 0 20px;
 	background-color: #E5E5E5;
+	@media screen and (min-width: 768px) {
+		padding: 50px 0; 
+	}
 	@media screen and (min-width: 1024px) {
-		padding: 84px 0 15px; 
+		padding: 70px 0 100px; 
 	}
 }
