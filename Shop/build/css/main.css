@@ -465,30 +465,35 @@ select{
 .slick-loading .slick-track{
     visibility:hidden; }
 
-.intro-slider{
+.product-slider{
   position:relative; }
 
-.intro-slider .slick-dots{
+.product-slider .slick-dots{
     display:-webkit-box;
     display:flex;
     -webkit-box-pack:center;
     justify-content:center;
     -webkit-box-align:center;
     align-items:center;
-    margin:20px auto 0; }
+    margin:20px auto 0;
+    position:absolute;
+    bottom:0;
+    left:65%; }
 
-.intro-slider .slick-dots li{
+.product-slider .slick-dots li{
       font-size:0;
       position:relative;
       margin:0 2px;
       width:30px;
       height:30px;
       background-color:#606060;
-      cursor:pointer; }
+      border-radius:50%;
+      cursor:pointer;
+      margin:0 15px 0 0; }
 
-.intro-slider .slick-dots li.slick-active{
-        height:4px;
-        background-color:white; }
+.product-slider .slick-dots li.slick-active{
+        background-color:#000;
+        box-shadow:0px 1px 5px #000; }
 
 .main-slider{
   position:relative; }
@@ -647,8 +652,20 @@ select{
   margin-bottom:40px; }
 
 .section-title_big{
-    font-size:69px;
+    font-size:26px;
     margin-bottom:77px; }
+
+@media screen and (min-width: 768px){
+      .section-title_big{
+        font-size:36px; } }
+
+@media screen and (min-width: 1024px){
+      .section-title_big{
+        font-size:50px; } }
+
+@media screen and (min-width: 1600px){
+      .section-title_big{
+        font-size:69px; } }
 
 .intro-section{
   width:100%;
@@ -667,27 +684,99 @@ select{
   font-size:42px;
   font-weight:400; }
 
+.new-section{
+  padding-bottom:70px; }
+
+@media screen and (min-width: 1200px){
+    .new-section{
+      padding-bottom:120px; } }
+
+@media screen and (min-width: 1600px){
+    .new-section{
+      padding-bottom:220px; } }
+
+.new-section .sub-link{
+    margin-bottom:100px; }
+
 .new-section .new-product{
-  padding:40px 0; }
+    padding:40px 0; }
 
 .new-section .product-slider{
-  max-width:1900px;
-  width:100%;
-  margin:0 auto; }
+    max-width:1900px;
+    width:100%;
+    margin:0 auto; }
 
 .new-section .product{
-  display:-webkit-box;
-  display:flex;
-  -webkit-box-align:center;
-  align-items:center; }
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-align:center;
+    align-items:center; }
 
 .new-section .product__img{
-    width:57%;
-    height:27vw;
-    background-size:cover;
-    margin-right:110px; }
+      width:57%;
+      height:27vw;
+      background-size:cover;
+      margin-right:110px; }
 
 .new-section .product__name{
-    font-family:"Twentytwelve Sans C";
-    font-size:35px;
-    font-weight:400; }
+      font-family:"Twentytwelve Sans C";
+      font-size:35px;
+      font-weight:400; }
+
+.instagram-section{
+  padding-bottom:70px; }
+
+@media screen and (min-width: 1200px){
+    .instagram-section{
+      padding-bottom:130px; } }
+
+.instagram-section .section-title{
+    margin-bottom:40px; }
+
+@media screen and (min-width: 1200px){
+      .instagram-section .section-title{
+        margin-bottom:90px; } }
+
+.instagram-section .instagram-wrap{
+    display:-webkit-box;
+    display:flex;
+    flex-wrap:wrap; }
+
+@media screen and (min-width: 480px){
+      .instagram-section .instagram-wrap{
+        margin:0 -10px; } }
+
+@media screen and (min-width: 1360px){
+      .instagram-section .instagram-wrap{
+        margin:0 -20px; } }
+
+.instagram-section .instagram{
+    margin-bottom:20px; }
+
+@media screen and (min-width: 480px){
+      .instagram-section .instagram{
+        width:50%;
+        padding:0 10px; } }
+
+@media screen and (min-width: 768px){
+      .instagram-section .instagram{
+        width:33.33%; } }
+
+@media screen and (min-width: 1024px){
+      .instagram-section .instagram{
+        width:20%; } }
+
+@media screen and (min-width: 1360px){
+      .instagram-section .instagram{
+        padding:0 20px; } }
+
+.instagram-section .instagram:hover{
+      -webkit-transform:scale(1.1, 1.1);
+      -ms-transform:scale(1.1, 1.1);
+      transform:scale(1.1, 1.1); }
+
+.instagram-section .instagram img{
+      width:100%;
+      height:100%;
+      -o-object-fit:cover;
+      object-fit:cover; }
