@@ -1,36 +1,193 @@
+.intro-section {
+  background-image: url(../images/main-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0 56px;
+
+  .container {
+    max-width: 912px;
+  }
+
+  .main-title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 44px;
+    color: #ffffff;
+    margin: 0 auto;
+    span {
+      color: #42dfbf;
+    }
+  }
+
+  .intro-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #e0e0e0;
+  }
+
+  .intro-info {
+    background: rgba(51, 51, 51, 0.68);
+    margin: 15px 0;
+    padding: 15px 0 21px 22px;
+    border-left: 1px solid #42dfbf;
+  }
+
+  .intro-news {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.36);
+  }
+
+  .intro-line {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+}
+
 .choise-section {
-	padding: 40px 0 0;
-	@media screen and (min-width: 768px) {
-		padding: 60px 0 20px; 
-	}
-	@media screen and (min-width: 768px) {
-		padding: 60px 0 40px; 
-	}
+  padding: 40px 0 0;
+  @media screen and (min-width: 768px) {
+    padding: 60px 0 20px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 60px 0 40px;
+  }
 }
 
 .advantages-section {
-	position: relative;
-	padding: 40px 0 20px;
-	background-image: url('../images/advant-bg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	@media screen and (min-width: 1024px) {
-		padding: 84px 0 15px; 
-	}
+  position: relative;
+  padding: 40px 0 20px;
+  background-image: url("../images/advant-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media screen and (min-width: 1024px) {
+    padding: 84px 0 15px;
+  }
 }
 
 .services-section {
-	padding: 60px 0 133px;
+  padding: 60px 0 133px;
+
+  .services-wrap {
+    position: relative;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (min-width: 1024px) {
+      width: 46%;
+    }
+
+    &_info {
+      @media screen and (min-width: 1024px) {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  .service-decoration {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 49%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 67%;
+      background: #42dfbf;
+
+      span {
+        width: 17px;
+        height: 17px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: #4e37b2;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+  .service-title {
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    color: #333333;
+
+    span {
+      color: #42dfbf;
+    }
+  }
+
+  .service-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+
+  .service-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 149px;
+    height: 40px;
+    margin: 50px 0;
+    color: #fff;
+    background: #4e37b2;
+    @media screen and (min-width: 320px) {
+      align-self: center;
+    }
+    @media screen and (min-width: 1024px) {
+      align-self: self-start;
+    }
+
+    &:after {
+      content: url("../images/Vector.png");
+      position: absolute;
+      right: -14px;
+      top: 10px;
+    }
+  }
 }
 
 .card-section {
-	padding: 40px 0 20px;
-	background-color: #E5E5E5;
-	@media screen and (min-width: 768px) {
-		padding: 50px 0; 
-	}
-	@media screen and (min-width: 1024px) {
-		padding: 70px 0 100px; 
-	}
+  padding: 40px 0 20px;
+  background-color: #e5e5e5;
+  @media screen and (min-width: 768px) {
+    padding: 50px 0;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 70px 0 100px;
+  }
 }

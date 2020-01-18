@@ -4,7 +4,7 @@
   align-items: flex-start;
 
   @media screen and (min-width: 480px) {
-	margin: 0 -10px;
+    margin: 0 -10px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -14,49 +14,81 @@
 
 .advantage {
   margin-bottom: 20px;
+  position: relative;
   @media screen and (min-width: 480px) {
     width: 50%;
     padding: 0 10px;
   }
   @media screen and (min-width: 768px) {
-	width: 33.33%;
+    width: 33.33%;
   }
   @media screen and (min-width: 1024px) {
-	padding: 0 18px;
-	margin-bottom: 36px;
+    padding: 0 18px;
+    margin-bottom: 36px;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: -12px;
+    top: -18px;
+    opacity: 0.5;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='55' viewBox='0 0 60 55' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='2.06769' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1075' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.147' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.188' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2276' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2686' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='2.06769' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1068' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.1478' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.1888' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2278' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2689' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='2.06769' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1068' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.1478' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.1888' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2278' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2689' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='2.06769' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1068' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.1478' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.1888' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2278' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2689' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='2.06769' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1075' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.147' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.188' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2276' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2686' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='2.06769' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1075' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.147' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.188' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2276' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2686' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3C/svg%3E%0A");
+    @media screen and (min-width: 480px) {
+      left: 1px;
+      top: -17px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 59px;
+      height: 54px;
+      left: -2px;
+      top: -24px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
   }
 
   &__wrap {
-	position: relative;
+    position: relative;
     border-radius: 15px;
-	border: 0.5px solid #fff;
-	padding: 20px;
-	@media screen and (min-width: 1024px) {
-		min-height: 204px;
-		padding: 30px 26px;
-	}
-	&:hover {
-		border-radius: 15px;
-		transition: all .25s ease;
-		background-color: #fff;
-  
-		.advantage__title {
-			color: #4E37B2;
-		}
-  
-		.advantage__text {
-			color: #333333;
-		}
-	}
+    border: 0.5px solid #fff;
+    padding: 20px;
+    z-index: 2;
+    @media screen and (min-width: 1024px) {
+      min-height: 204px;
+      padding: 30px 26px;
+    }
+
+    &:hover {
+      border-radius: 15px;
+      transition: all 0.25s ease;
+      background-color: #fff;
+      z-index: 1;
+
+      .advantage__title {
+        color: #4e37b2;
+      }
+
+      .advantage__text {
+        color: #333333;
+      }
+    }
   }
 
   &__count-wrap {
-	display: flex;
+    display: flex;
     justify-content: center;
-	align-items: center;
+    align-items: center;
     position: absolute;
     right: 10px;
-	top: 10px;
+    top: 10px;
     width: 51px;
     height: 51px;
     border-radius: 50%;
@@ -64,14 +96,14 @@
   }
 
   &__count {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #fff;
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	background-color: #42DFBF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #42dfbf;
   }
 
   &__title {
@@ -79,9 +111,9 @@
     font-style: normal;
     font-weight: 450;
     font-size: 20px;
-	color: #42dfbf;
-	margin-bottom: 15px;
-	padding: 0 50px 0 0;
+    color: #42dfbf;
+    margin-bottom: 15px;
+    padding: 0 50px 0 0;
   }
 
   &__text {
@@ -90,13 +122,13 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 21px;
-	color: #ffffff;
-	@media screen and (min-width: 1024px) {
-    	font-size: 16px;
-	}
-	
-	span {
-		font-weight: 900;
-	}
+    color: #ffffff;
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+    }
+
+    span {
+      font-weight: 900;
+    }
   }
 }
