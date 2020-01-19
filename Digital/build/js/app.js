@@ -1,32 +1,5 @@
 "use strict";
 
-// $(document).ready(function () {
-//   $('.feedback-wrap').slick({
-//     centerMode: true,
-//     centerPadding: '60px',
-//     slidesToShow: 3,
-//     responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         arrows: false,
-//         centerMode: true,
-//         centerPadding: '40px',
-//         slidesToShow: 3
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         arrows: false,
-//         centerMode: true,
-//         centerPadding: '40px',
-//         slidesToShow: 1
-//       }
-//     }
-//     ]
-//   });
-// });
 $(document).ready(function () {
   //select 
   $('.js-select').click(function () {
@@ -54,6 +27,19 @@ $(document).ready(function () {
   $('.service-nav li').click(function () {
     $('.service-nav li').removeClass('active');
     $(this).addClass('active');
+  });
+});
+$(document).ready(function () {
+  $('.js-feedback-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    infinite: true,
+    focusOnSelect: true,
+    vertical: true,
+    centerMode: true // autoplay: true
+
   });
 });
 $(document).ready(function () {});
