@@ -129,6 +129,7 @@
 	}
 
 	.map {
+		position: relative;
 		@media screen and (min-width: 1360px) {
 			flex: none;
 			width: 64%;
@@ -150,16 +151,19 @@
 			}
 		}
 	}
-
+	circle {
+		pointer-events: none;
+	}
 	.region {
 		cursor: pointer;
-		
-		&.active {
-			fill: #FF008A !important;
-		}
 
 		&:hover {
 			fill: #FF008A;
+			opacity: 0.6;
+		}
+		&.active {
+			fill: #FF008A;
+			opacity: 1;
 		}
 	}
 
@@ -172,4 +176,18 @@
 			align-items: flex-start;
 		}
 	}
+}
+
+.cart-label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	pointer-events: none;
 }

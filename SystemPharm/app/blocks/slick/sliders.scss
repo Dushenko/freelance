@@ -10,6 +10,13 @@
 		margin-bottom: 70px;
 	}
 
+	&.bg--hidden {
+		&::before {
+			opacity: 0;
+			// transition: opacity 0.2s ease;
+		}
+	}
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -22,6 +29,7 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
+		transition: opacity 0.3s ease-out;
 
 		@media screen and (min-width: 768px) {
 			width: 1900px;

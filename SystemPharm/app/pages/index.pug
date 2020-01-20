@@ -4,15 +4,16 @@ block head
 	- var pageTitle = '';
 
 block wrapper
-	.wrapper.index-bg
+	.wrapper.index-bg.home-bg
 		block header
 			include ../blocks/header/header
 
 		block content
-			main.main
+			main.main.home-page
 				section.intro-section
+					include ../blocks/pharm-animation/pharm-animation
 					.container.container_width
-						.intro-wrap.typography
+						.intro-wrap.typography.wow.fadeIn
 							span уникальный состав препаратов
 							h1 system pharm
 							p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -22,8 +23,10 @@ block wrapper
 							a(href="#").fb
 							a(href="#").you
 				
-				section.about-first-section
+				section.about-first-section.wow.slideLeft
 					.container
+						.about-first-section-sphere.rellax(data-rellax-speed="5" data-rellax-percentage="0")
+							include ../blocks/sphere/sphere
 						.about-wrap.typography
 							h2 О нас
 							.typography-row
@@ -41,6 +44,10 @@ block wrapper
 				
 				section.partner-section
 					.container
+						.partner-section-sphere.partner-section-sphere--left.rellax(data-rellax-speed="-2" data-rellax-percentage="0.5")
+							include ../blocks/sphere/sphere
+						.partner-section-sphere.partner-section-sphere--right.rellax(data-rellax-speed="3" data-rellax-percentage="0.5")
+							include ../blocks/sphere/sphere
 						.typography
 							h2 Партнеры
 						.partner-wrap

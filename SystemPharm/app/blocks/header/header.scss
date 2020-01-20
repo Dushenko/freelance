@@ -4,10 +4,13 @@
 	z-index: 10;
 
 	@media screen and (min-width: 768px) {
-		padding: 38px 0 0;
+		padding: 35px 0 0;
 	}
 	@media screen and (min-width: 1024px) {
-		padding: 50px 0 0;
+		padding: 42px 0 0;
+	}
+	@media screen and (min-width: 1360px) {
+		padding: 53px 0 0;
 	}
 
 	.container {
@@ -60,6 +63,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	transition: all .25s ease;
 	@media screen and (min-width: 768px) {
 		padding-top: 120px;
@@ -72,6 +76,7 @@
 
 	.soc-wrap {
 		display: flex;
+		margin-bottom: 100px;
 
 		a {
 			margin: 0 30px;
@@ -88,6 +93,9 @@
 	
 	li {
 		margin-bottom: 18px;
+		@media screen and (min-width: 1500px) {
+			margin-bottom: 40px;
+		}
 	}
 
 	a {

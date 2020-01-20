@@ -15,7 +15,10 @@ block wrapper
 					.container.container_width
 						.about-wrap.typography
 							span О НАС
-							h1 Компания system pharm
+							h1 Компания 
+								| 
+								br 
+								| system pharm
 						.about-content
 							.about-info
 								.typography
@@ -29,61 +32,49 @@ block wrapper
 
 							.about-info
 								.typography
-									h3 Производство
+									h2 Производство
 									p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
 
 				section.team-section
 					.container.container_width
 						.typography
 							h2 Наша команда
 						.team-wrap
-							.empty
-							a(href="#").team.small.bottom
-								img(src="images/team3.jpg", alt="")
-							.empty
-							a(href="#").team.big.bottom
-								img(src="images/team1.jpg", alt="")
-							.empty
-							a(href="#").team.ball.middle.top
-								span 30
-								span бухгалтеров
-							.empty
-							a(href="#").team.small.bottom
-								img(src="images/team1.jpg", alt="")
-							.empty
-							a(href="#").team.middle.bottom
-								img(src="images/team3.jpg", alt="")
-							.empty
-							a(href="#").team.middle.bottom
-								img(src="images/team4.jpg", alt="")
-							.empty
-							a(href="#").team.ball.middle.top
-								span 100
-								span продавцов
-							.empty
-							a(href="#").team.big.center
-								img(src="images/team2.jpg", alt="")
-							.empty
-							.empty
-							a(href="#").team.small.center
-								img(src="images/team4.jpg", alt="")
-							.empty
-							.empty
-							.empty
-							.empty
-							.empty
-							a(href="#").team.middle.top
-								img(src="images/team3.jpg", alt="")
-							.empty
-							.empty
-							.empty
-							a(href="#").team.small.top
-								img(src="images/team3.jpg", alt="")
-							.empty
-							a(href="#").team.ball.middle.top
-								span 50+
-								span магазинов
+							a(href="#").team
+								.team__photo
+									img(src="images/team1.jpg", alt="")
+								span.team__name Ольга
+								span.team__name Кравчук
+								spanspan.team__position Директор
+
+							a(href="#").team
+								.team__photo
+									img(src="images/team2.jpg", alt="")
+								span.team__name Дмитрий 
+								span.team__name Нестерук
+								spanspan.team__position Директор
+
+							a(href="#").team
+								.team__photo
+									img(src="images/team3.jpg", alt="")
+								span.team__name Денис 
+								span.team__name Андреев
+								spanspan.team__position Директор
+
+							a(href="#").team
+								.team__photo
+									img(src="images/team3.jpg", alt="")
+								span.team__name Антон
+								span.team__name Горенко
+								spanspan.team__position Директор
+
+							a(href="#").team
+								.team__photo
+									img(src="images/team4.jpg", alt="")
+								span.team__name Антонина
+								span.team__name Гилева
+								spanspan.team__position Директор
+
 
 				section.production-section
 					.container.container_width
@@ -93,19 +84,18 @@ block wrapper
 							a(href="product.html").production
 								.production__img
 									img(src="images/production.png", alt="")
-								h3.production__name Органический селен 100мг
+								h3.production__name Органический селен 
+								h3.production__name 100мг
 							a(href="product.html").production
 								.production__img
-									img(src="images/production1.png", alt="")
-								h3.production__name Органический селен 100мг
+									img(src="images/production.png", alt="")
+								h3.production__name Органический селен 
+								h3.production__name 100мг
 							a(href="product.html").production
 								.production__img
-									img(src="images/production2.png", alt="")
-								h3.production__name Органический селен 100мг
-							a(href="product.html").production
-								.production__img
-									img(src="images/production3.png", alt="")
-								h3.production__name Органический селен 100мг
+									img(src="images/production.png", alt="")
+								h3.production__name Органический селен 
+								h3.production__name 100мг
 
 						.btn-wrap
 							a(href="products.html").section-link Вся продукция

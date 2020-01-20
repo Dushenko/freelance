@@ -34,6 +34,23 @@
 	}
 }
 
+.achievements-sticky {
+	@media screen and (min-width: 1024px) {
+		position: sticky;
+		top: 10px;
+		z-index: 2;
+		&:after {
+			content: '';
+			width: 100%;
+			height: calc(100% - 24px);
+			position: absolute;
+			left: 0;
+			top: -10px;
+			background: rgba(0,0,0,0.6);
+			z-index: -1;
+		}
+	}
+}
 .achievements-wrap {
 	@media screen and (min-width: 768px) {
 		display: flex;

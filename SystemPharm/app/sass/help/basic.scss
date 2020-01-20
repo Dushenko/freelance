@@ -94,13 +94,19 @@ select {
 	width: 100%;
 	min-height: 100vh;
 	position: relative;
-	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 
 	&.index-bg {
-		background-image: url('../images/index-bg.jpg');
+		// background-image: url('../images/index-bg.jpg');
+		background: #000000;
+	}
+}
+
+.main {
+	&.opacity {
+		opacity: 0.75;
 	}
 }
 
@@ -109,6 +115,8 @@ select {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
+	position: relative;
+	z-index: 1;
 
 	&_width {
 		max-width: 1600px;

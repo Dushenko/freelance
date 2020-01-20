@@ -7,10 +7,12 @@
     <title></title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="wrapper index-bg">
+    <div class="wrapper index-bg home-bg">
+      <div class="bg rellax" data-rellax-speed="5" data-rellax-percentage="0.6"></div>
       <header class="header">
         <div class="container container_width"><a class="logo" href="#"><img src="images/logo.svg" alt=""></a>
           <div class="burger-wrap">
@@ -31,18 +33,64 @@
           <div class="soc-wrap"><a class="inst" href="#"></a><a class="fb" href="#"></a><a class="you" href="#"></a></div>
         </div>
       </header>
-      <main class="main">
+      <main class="main home-page">
         <section class="intro-section">
+          <div class="pharm-animation" id="pharm-animation-wrapper">
+            <canvas id="pharm-animation"></canvas>
+          </div>
+          <script>
+            window.requestAnimFrame = (function() {
+            return (
+            window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function(callback) {
+            window.setTimeout(callback);
+            }
+            );
+            });
+          </script>
           <div class="container container_width">
-            <div class="intro-wrap typography"><span>уникальный состав препаратов</span>
+            <div class="intro-wrap typography wow fadeIn"><span>уникальный состав препаратов</span>
               <h1>system pharm</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p><a class="video-link" href="#">смотреть видео </a>
             </div>
             <div class="soc-wrap"><a class="inst" href="#"></a><a class="fb" href="#"></a><a class="you" href="#"></a></div>
           </div>
         </section>
-        <section class="about-first-section">
+        <section class="about-first-section wow slideLeft">
           <div class="container">
+            <div class="about-first-section-sphere rellax" data-rellax-speed="5" data-rellax-percentage="0">
+              <div class="sphere__container">
+                <div class="sphere__wrap">
+                  <div class="sphere__circle sphere__horizontal sphere__c1">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                  <div class="sphere__circle sphere__vertical sphere__c1">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sphere__wrap sphere__r">
+                  <div class="sphere__circle sphere__horizontal sphere__c2">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                  <div class="sphere__circle sphere__vertical sphere__c2">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                  <div class="sphere__circle sphere__center"></div>
+                </div>
+              </div>
+            </div>
             <div class="about-wrap typography">
               <h2>О нас</h2>
               <div class="typography-row">
@@ -63,6 +111,64 @@
         </section>
         <section class="partner-section">
           <div class="container">
+            <div class="partner-section-sphere partner-section-sphere--left rellax" data-rellax-speed="-2" data-rellax-percentage="0.5">
+              <div class="sphere__container">
+                <div class="sphere__wrap">
+                  <div class="sphere__circle sphere__horizontal sphere__c1">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                  <div class="sphere__circle sphere__vertical sphere__c1">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sphere__wrap sphere__r">
+                  <div class="sphere__circle sphere__horizontal sphere__c2">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                  <div class="sphere__circle sphere__vertical sphere__c2">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                  <div class="sphere__circle sphere__center"></div>
+                </div>
+              </div>
+            </div>
+            <div class="partner-section-sphere partner-section-sphere--right rellax" data-rellax-speed="3" data-rellax-percentage="0.5">
+              <div class="sphere__container">
+                <div class="sphere__wrap">
+                  <div class="sphere__circle sphere__horizontal sphere__c1">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                  <div class="sphere__circle sphere__vertical sphere__c1">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sphere__wrap sphere__r">
+                  <div class="sphere__circle sphere__horizontal sphere__c2">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                  <div class="sphere__circle sphere__vertical sphere__c2">
+                    <div class="sphere__wrap-electron">
+                      <div class="sphere__circle sphere__electron"></div>
+                    </div>
+                  </div>
+                  <div class="sphere__circle sphere__center"></div>
+                </div>
+              </div>
+            </div>
             <div class="typography">
               <h2>Партнеры</h2>
             </div>
@@ -182,6 +288,8 @@
           <p class="thanks-text">ваше резюме на рассмотрении. В ближайшее время, сотрудники нашей компании свяжутся с вами.</p>
         </div>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js" integrity="sha256-b9iCa+uXg1ls4OGWXZY7fTQVTEgK46A+Yy6gjTrRg3U=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs/libs.min.js"></script>

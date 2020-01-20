@@ -1,6 +1,15 @@
+.home-page {
+	overflow: hidden;
+	transform: translateY(-93px);
+	padding-top: 93px;
+}
 .intro-section {
 	padding: 10vw 0;
+	position: relative;
 	@media screen and (min-width: 1360px) {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
 		padding: 100px 0 150px;
 	}
 
@@ -8,6 +17,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+		z-index: 2;
+		position: relative;
 	}
 
 	.intro-wrap {
@@ -76,6 +87,13 @@
 .about-first-section {
 	padding-bottom: 8vw;
 
+	&-sphere {
+		opacity: 0.4;
+		position: absolute;
+		left: 95%;
+		top: 5%;
+	}
+
 	@media screen and (min-width: 1360px) {
 		padding-bottom: 165px;
 	}
@@ -108,14 +126,27 @@
 		position: relative;
 		z-index: 1;
 		transition: all .25s ease;
+		animation: myOrbit 10s infinite linear;
+		&:nth-child(2n) {
+			animation-duration: 7s;
+			animation-direction: reverse
+		}
+		&:nth-child(3n) {
+			animation-duration: 5s;
+		}
 
-		&:hover {
-			z-index: 2;
-			transition: all .25s ease;
-			&:before {
-				background-color: #FF006B;
-				opacity: 0.5;
-				transition: all .25s ease;
+		@media screen and (min-width: 1024px) {
+			&:hover {
+				z-index: 2;
+				img {
+					transform: translate(-50%, -50%) scale(1.1);
+				}
+				&:before {
+					background-color: #FF006B;
+					opacity: 0.5;
+					transition: all .25s ease;				
+					transform: translate(-50%, -50%) scale(1.2);
+				}
 			}
 		}
 		
@@ -125,6 +156,7 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			transition: all 0.1s ease;
 		}
 		&:before {
 			content: '';
@@ -202,6 +234,25 @@
 	.empty {
 		width: 80px;
 		height: 80px;
+	}
+
+	.container {
+		z-index: 2;
+		position: relative;
+	}
+
+	&-sphere {
+		position: absolute;
+		opacity: 0.3;
+		z-index: -1;
+		&--left {
+			right: 90%;
+			top: 5%;
+		}
+		&--right {
+			left: 95%;
+			bottom: 30%;
+		}
 	}
 }
 
@@ -285,4 +336,9 @@
 			}
 		}
 	}
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(10px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(10px) rotate(-360deg); }
 }

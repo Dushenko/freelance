@@ -1,0 +1,263 @@
+$background: #222;
+$center-background: #fff;
+
+$border-color: #aaa;
+$border-size: 3px;
+
+$border-color-c2: #666;
+$border-size-c2: 2px;
+
+$size: 250px;
+$size-c2: 140px;
+$size-center: 30px;
+
+$t-wrap-1: 16s;
+$t-wrap-2: 9s;
+
+$t-ho-c1: 9s;
+$t-ve-c1: 7s;
+
+$t-ho-c2: 5s;
+$t-ve-c2: 4s;
+
+$t-el-c1-a: 4s;
+$t-el-c1-b: 2s;
+$t-el-c2-a: 3s;
+$t-el-c2-b: 35s;
+
+.sphere__container{
+    position:relative;
+    margin:auto;
+    width: $size;
+}
+
+.sphere__wrap, .sphere__circle{
+    -webkit-transition: -webkit-transform 500ms linear;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: -moz-transform 500ms linear;
+    -moz-transform-style: preserve-3d;
+    width:$size;
+    height:$size;
+    margin:auto;
+    margin-top:50px;
+    position:absolute;
+}
+
+.sphere__circle{
+    position:absolute;
+    border:$border-size solid $border-color;
+    border-radius: $size;
+    margin:auto;
+}
+
+.sphere__circle.sphere__c2,
+.sphere__circle.sphere__center{
+    border:$border-size-c2 solid $border-color-c2;
+    width: $size-c2;
+    height: $size-c2;
+    top: round( ($size - $size-c2) / 2 );
+    left: round( ($size - $size-c2) / 2 );
+}
+.sphere__circle.sphere__center{
+    background: $center-background;
+    width: $size-center;
+    height: $size-center;
+    top: round( ($size - $size-center) / 2 );
+    left: round( ($size - $size-center) / 2 );
+    box-shadow: 0 0 5px #fff;
+}
+
+.sphere__wrap-electron{
+  border:0px solid  #fff;
+  position:absolute;
+  width:100%;
+  height:100%;
+  -webkit-animation: electron $t-el-c1-a linear infinite;
+  -moz-animation: electron $t-el-c1-a linear infinite;
+}
+
+.sphere__electron{
+  width:12px;
+  height:12px;
+  background: $border-color;
+  left:50%;
+  margin-left:-8px;
+  border:none;
+  top:-7px;
+  -webkit-transform-origin:50% 50%;
+}
+
+.sphere__c2 .sphere__wrap-electron{
+  -webkit-animation: electron $t-el-c2-a linear infinite;
+  -moz-animation: electron $t-el-c2-a linear infinite;
+}
+
+.sphere__c2 .sphere__electron{
+  top:-6px;
+}
+
+
+
+
+.sphere__wrap{
+    border:0px solid $border-color;
+    -webkit-animation: lateral $t-wrap-1 ease-in-out infinite;
+    -moz-animation: lateral $t-wrap-1 ease-in-out infinite;
+}
+
+.sphere__wrap.sphere__r{
+    -webkit-animation: lateralRevert $t-wrap-2 linear infinite;
+    -moz-animation: lateralRevert $t-wrap-2 linear infinite;
+}
+
+
+.sphere__vertical{
+    -webkit-animation: vertical $t-ho-c1 linear infinite;
+    -moz-animation: vertical $t-ho-c1 linear infinite;
+}
+.sphere__horizontal{
+    -webkit-animation: horizontalRevert $t-ve-c1 linear infinite;
+    -moz-animation: horizontalRevert $t-ve-c1 linear infinite;
+}
+
+.sphere__vertical.sphere__c2{
+    -webkit-animation: vertical $t-ho-c2 linear infinite;
+    -moz-animation: vertical $t-ho-c2 linear infinite;
+}
+
+
+.sphere__horizontal.sphere__c2{
+    -webkit-animation: horizontalRevert $t-ve-c2 linear infinite;
+    -moz-animation: horizontalRevert $t-ve-c2 linear infinite;
+}
+
+@-webkit-keyframes electron {
+  from {
+      -webkit-transform: rotateZ(0deg);
+  }
+  to {
+      -webkit-transform: rotateZ(360deg);
+  }
+}
+
+
+
+@-webkit-keyframes horizontal {
+  from {
+      -webkit-transform: rotateY(0deg);
+  }
+  to {
+      -webkit-transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes horizontalRevert {
+  from {
+      -webkit-transform: rotateY(360deg);
+  }
+  to {
+      -webkit-transform: rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes vertical {
+  from {
+      -webkit-transform: rotateX(0deg);
+  }
+  to {
+      -webkit-transform: rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes verticalRevert {
+  from {
+      -webkit-transform: rotateX(360deg);
+  }
+  to {
+      -webkit-transform: rotateX(0deg);
+  }
+}
+
+
+@-webkit-keyframes lateral {
+  from {
+      -webkit-transform: rotateZ(0deg);
+  }
+  to {
+      -webkit-transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes lateralRevert {
+  from {
+      -webkit-transform: rotateZ(360deg);
+  }
+  to {
+      -webkit-transform: rotateZ(0deg);
+  }
+}
+
+@-moz-keyframes electron {
+  from {
+      -moz-transform: rotateZ(0deg);
+  }
+  to {
+      -moz-transform: rotateZ(360deg);
+  }
+}
+
+
+@-moz-keyframes horizontal {
+  from {
+      -moz-transform: rotateY(0deg);
+  }
+  to {
+      -moz-transform: rotateY(360deg);
+  }
+}
+
+@-moz-keyframes horizontalRevert {
+  from {
+      -moz-transform: rotateY(360deg);
+  }
+  to {
+      -moz-transform: rotateY(0deg);
+  }
+}
+
+@-moz-keyframes vertical {
+  from {
+      -moz-transform: rotateX(0deg);
+  }
+  to {
+      -moz-transform: rotateX(360deg);
+  }
+}
+
+@-moz-keyframes verticalRevert {
+  from {
+      -moz-transform: rotateX(360deg);
+  }
+  to {
+      -moz-transform: rotateX(0deg);
+  }
+}
+
+
+@-moz-keyframes lateral {
+  from {
+      -moz-transform: rotateZ(0deg);
+  }
+  to {
+      -moz-transform: rotateZ(360deg);
+  }
+}
+
+@-moz-keyframes lateralRevert {
+  from {
+      -moz-transform: rotateZ(360deg);
+  }
+  to {
+      -moz-transform: rotateZ(0deg);
+  }
+}

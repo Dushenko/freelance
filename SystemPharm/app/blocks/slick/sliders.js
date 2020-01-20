@@ -6,7 +6,7 @@ $(document).ready(function () {
 		dots: false,
 		arrows: true,
 		infinite: true,
-		autoplay: true,
+		// autoplay: true,
 		responsive: [
 		{
 			breakpoint: 768,
@@ -28,6 +28,14 @@ $(document).ready(function () {
 		}
 		]
 	});
+
+	// $('.js-vacancy-slider .slick-arrow').click(() => {
+	// 	$('.vacancy-slider').addClass('bg--hidden');
+	// })
+
+	// $('.js-vacancy-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+	// 	$('.vacancy-slider').removeClass('bg--hidden');
+	// });
 
 	$('.js-news-sliser').slick({
 		slidesToShow: 1,
