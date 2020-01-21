@@ -1,5 +1,5 @@
 .bg {
-    background: url(../../images/bg1.png) repeat-y;
+    background: url('../images/bg1.png') repeat-y;
     background-size: 100%;
     position: absolute;
     left: 0;
@@ -8,6 +8,7 @@
     width: 100%;
     opacity: 0.4;
 }
+
 .home-bg .bg {
     top: 100vh;
     height: calc(100% - 100vh);
