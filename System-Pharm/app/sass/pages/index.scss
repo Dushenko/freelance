@@ -108,11 +108,11 @@
 }
 
 .partner-section {
-	padding-bottom: 8vw;
+	// padding-bottom: 8vw;
 
-	@media screen and (min-width: 1360px) {
-		padding-bottom: 150px;
-	}
+	// @media screen and (min-width: 1360px) {
+	// 	padding-bottom: 150px;
+	// }
 
 	.typography {
 		display: flex;
@@ -260,10 +260,11 @@
 }
 
 .vacancy-slider-section {
-	padding-bottom: 8vw;
+	padding: 8vw 0;
+	position: relative;
 
 	@media screen and (min-width: 1360px) {
-		padding-bottom: 200px;
+		padding: 150px 0 200px;
 	}
 
 	.vacancy-wrap {

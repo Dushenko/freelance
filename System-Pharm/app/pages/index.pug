@@ -5,12 +5,12 @@ block head
 
 block wrapper
 	.wrapper.index-bg
-		canvas.canvas#canvas
+		canvas.canvasSpace#canvasSpace
 		block header
 			include ../blocks/header/header
 
 		block content
-			main.main.home-page
+			main.main
 				section.intro-section
 					//- include ../blocks/pharm-animation/pharm-animation
 					.container.container_width
@@ -77,6 +77,7 @@ block wrapper
 								img(src="images/partner.svg", alt="")
 
 				section.vacancy-slider-section
+					canvas.canvasNeuron#canvas
 					.vacancy-wrap.typography
 						h2 Вакансии
 					.vacancy-slider.js-vacancy-slider
