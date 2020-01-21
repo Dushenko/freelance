@@ -1,0 +1,23 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.error-section
+					.container
+						p.error 404
+						p.error-text Извините!  Страница, которую Вы ищете,  не может быть найдена. 
+						p.error-text Пожалуйста, воспользуйтесь навигацией или формой поиска, чтобы найти интересующую  Вас информацию.
+						a(href="index.html").error-link вернуться на главную
+					
+
+		block footer
+			include ../blocks/footer/footer

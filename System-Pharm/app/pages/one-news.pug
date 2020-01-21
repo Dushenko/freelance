@@ -1,0 +1,43 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main
+
+				section.one-news-section
+					.container
+						.typography
+							span Новости
+							h1 SystemPharm открывает новую точку продажи в Харькове
+							h5 Открытие новой точки
+						
+						.news-sliser.js-news-sliser
+							.slide
+								img(src="images/new-img.jpg", alt="")
+							.slide
+								img(src="images/new-img.jpg", alt="")
+							.slide
+								img(src="images/new-img.jpg", alt="")
+
+						.typography
+							h3 Заголовок
+
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit ameLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit ame
+
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit ameLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit ame
+
+							h3 Подзаголовок
+							
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit ameLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit ame
+
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit ameLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit ame
+
+		block footer
+			include ../blocks/footer/footer

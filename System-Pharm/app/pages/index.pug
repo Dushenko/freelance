@@ -1,0 +1,137 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block wrapper
+	.wrapper.index-bg
+		canvas.canvas#canvas
+		block header
+			include ../blocks/header/header
+
+		block content
+			main.main.home-page
+				section.intro-section
+					//- include ../blocks/pharm-animation/pharm-animation
+					.container.container_width
+						.intro-wrap.typography.wow.fadeIn
+							span уникальный состав препаратов
+							h1 system pharm
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							a(href="#").video-link смотреть видео 
+						.soc-wrap
+							a(href="#").inst
+							a(href="#").fb
+							a(href="#").you
+				
+				section.about-first-section.wow.slideLeft
+					.container
+						.about-first-section-sphere.rellax(data-rellax-speed="5" data-rellax-percentage="0")
+							include ../blocks/sphere/sphere
+						.about-wrap.typography
+							h2 О нас
+							.typography-row
+								.typography-col
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								.typography-col
+									ol
+										li Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+										li Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+										li Ut enim ad minim veniam, quis nostrud
+							.link-wrap
+								a(href="about.html").section-link О развитии
+				
+				section.partner-section
+					.container
+						.partner-section-sphere.partner-section-sphere--left.rellax(data-rellax-speed="-2" data-rellax-percentage="0.5")
+							include ../blocks/sphere/sphere
+						.partner-section-sphere.partner-section-sphere--right.rellax(data-rellax-speed="3" data-rellax-percentage="0.5")
+							include ../blocks/sphere/sphere
+						.typography
+							h2 Партнеры
+						.partner-wrap
+							.empty
+							a(href="#").partner.middle.center
+								img(src="images/partner.svg", alt="")
+							a(href="#").partner.small.top
+								img(src="images/partner.svg", alt="")
+							a(href="#").partner.big.bottom
+								img(src="images/partner.svg", alt="")
+							a(href="#").partner.middle.bottom
+								img(src="images/partner.svg", alt="")
+							a(href="#").partner.small.center
+								img(src="images/partner.svg", alt="")
+							.empty
+							a(href="#").partner.small.center
+								img(src="images/partner.svg", alt="")
+							.empty
+							a(href="#").partner.big.center
+								img(src="images/partner.svg", alt="")
+							a(href="#").partner.small.center
+								img(src="images/partner.svg", alt="")
+							a(href="#").partner.middle.center
+								img(src="images/partner.svg", alt="")
+							a(href="#").partner.small.top
+								img(src="images/partner.svg", alt="")
+
+				section.vacancy-slider-section
+					.vacancy-wrap.typography
+						h2 Вакансии
+					.vacancy-slider.js-vacancy-slider
+						.slide
+							.vacant
+								.vacant__img
+									img(src="images/vacant.jpg", alt="")
+								p.vacant__name Медицинский и фармацевтический представитель
+								a(href="one-vacancy.html").vacant__link +
+						.slide
+							.vacant
+								.vacant__img
+									img(src="images/vacant.jpg", alt="")
+								p.vacant__name Медицинский и фармацевтический представитель
+								a(href="one-vacancy.html").vacant__link +
+						.slide
+							.vacant
+								.vacant__img
+									img(src="images/vacant.jpg", alt="")
+								p.vacant__name Медицинский и фармацевтический представитель
+								a(href="one-vacancy.html").vacant__link +
+						.slide
+							.vacant
+								.vacant__img
+									img(src="images/vacant.jpg", alt="")
+								p.vacant__name Медицинский и фармацевтический представитель
+								a(href="one-vacancy.html").vacant__link +
+						.slide
+							.vacant
+								.vacant__img
+									img(src="images/vacant.jpg", alt="")
+								p.vacant__name Медицинский и фармацевтический представитель
+								a(href="one-vacancy.html").vacant__link +
+						.slide
+							.vacant
+								.vacant__img
+									img(src="images/vacant.jpg", alt="")
+								p.vacant__name Медицинский и фармацевтический представитель
+								a(href="one-vacancy.html").vacant__link +
+						.slide
+							.vacant
+								.vacant__img
+									img(src="images/vacant.jpg", alt="")
+								p.vacant__name Медицинский и фармацевтический представитель
+								a(href="one-vacancy.html").vacant__link +
+						.slide
+							.vacant
+								.vacant__img
+									img(src="images/vacant.jpg", alt="")
+								p.vacant__name Медицинский и фармацевтический представитель
+								a(href="one-vacancy.html").vacant__link +
+					.btn-wrap
+						a(href="vacancy.html").section-link Все вакансии
+
+
+
+		block footer
+			include ../blocks/footer/footer
