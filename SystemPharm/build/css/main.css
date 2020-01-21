@@ -1983,7 +1983,8 @@ select{
         height:120px; } }
 
 .cooperation-section{
-  padding:8vw 0; }
+  padding:8vw 0;
+  overflow:hidden; }
 
 @media screen and (min-width: 1200px){
     .cooperation-section{
