@@ -2557,12 +2557,19 @@ span{
     width:calc(100% - 310px);
     margin-left:auto; } }
 
-.metal-content-section .right-content h2{
-  margin-bottom:24px; }
+.metal-content-section .right-content span.subtitle{
+  text-transform:lowercase; }
+
+.metal-content-section .right-content h2.baner-title{
+  margin-bottom:24px;
+  text-transform:lowercase; }
 
 @media screen and (min-width: 768px){
-    .metal-content-section .right-content h2{
+    .metal-content-section .right-content h2.baner-title{
       margin-bottom:40px; } }
+
+.metal-content-section .right-content h2.baner-title:first-letter{
+    text-transform:uppercase; }
 
 .metal-content-section .right-content h3{
   text-align:left;
@@ -2671,10 +2678,10 @@ span{
     font-weight:600;
     position:relative;
     min-height:40px;
-    display:-webkit-box;
-    display:flex;
-    -webkit-box-align:center;
-    align-items:center; }
+    text-transform:lowercase; }
+
+.structure__info::first-letter{
+      text-transform:uppercase; }
 
 .structure__info:after{
       position:absolute;

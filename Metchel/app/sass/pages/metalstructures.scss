@@ -84,9 +84,12 @@
 		font-weight: 600;
 		position: relative;
 		min-height: 40px;
-		display: flex;
-		align-items: center;
-	
+		text-transform: lowercase;
+
+		&::first-letter {
+			text-transform: uppercase;
+		}
+		
 		&:after {
 			position: absolute;
 			content: '';

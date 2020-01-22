@@ -102,11 +102,19 @@
 			width: calc(100% - 310px);
 			margin-left: auto;
 		}
+		span.subtitle {
+			text-transform: lowercase;
+			
+		}
 
-		h2 {
+		h2.baner-title {
 			margin-bottom: 24px;
+			text-transform: lowercase;
 			@media screen and (min-width: 768px) {
 				margin-bottom: 40px;
+			}
+			&:first-letter {
+				text-transform: uppercase;
 			}
 		}
 
