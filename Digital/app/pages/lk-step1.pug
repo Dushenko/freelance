@@ -12,26 +12,106 @@ block content
 			.container
 				.tabs.js-tabs
 					ul.tabs__list.js-tab-btn
-						li.tabs__item.active My orders
-						li.tabs__item Settings
-						li.tabs__item Affiliate program
-						li.tabs__item Balance
-						li.tabs__item FAQ
-					
+						li.tabs__item.tabs__item_order.active My orders
+						li.tabs__item.tabs__item_settings Settings
+						li.tabs__item.tabs__item_program Affiliate program
+						li.tabs__item.tabs__item_balance Balance
+						li.tabs__item.tabs__item_faq FAQ
+
 					.tabs__wrap
 						.lk-header
-							
+							.user
+								.user__avatar
+									img(src='../../images/lk-img.jpg' alt="")
+								.user__data
+									span.user__name Valeria Lopez
+									span.user__reg Registration since 26 December, 2019
+								.user__info
+									span.user__personal.user__personal_name Username
+									span.user__personal.user__personal_email qwerty@gmail.com
+								span.user__edit
+							.balance-wrap
+								.balance
+									span.balance__my My balance
+									span.balance__current Current balance:
+									span.balance__account $ 135
+								span.balance-add
+									a.balance-add__plus(href="#")
 
 						.tabs__content.active.js-tab-content
-							span sgdfsdfs
 
 						.tabs__content.js-tab-content
-							span sgdfsdfs
-							span sgdfsdfs
-							span sgdfsdfs
+							.settings-wrap
+								.user-info
+									span.settings__title Settings
+									a(href="#").settings__history Check history
+									span.settings__balance Current balance:
+										span $ 234
+
+								.password-wrap
+									form.password
+										.password-field
+											.password-field__change
+												label(for="old").password-field__title Old password
+												.password-field__input
+													input(type="text" id="old" placeholder="")
+
+											.password-field__change
+												label(for="new").password-field__title New password
+												.password-field__input
+													input(type="text" id="new")
+
+											.password-field__change
+												label(for="repeat").password-field__title Repeat New Password
+												.password-field__input
+													input(type="text" id="repeat")
+											
+										button.password-btn Reset password
 
 						.tabs__content.js-tab-content
-							span sgdfsdfs
+							.affiliate-wrap
+								.affiliate 
+									span.affiliate__title Affiliate program
+									.affiliate__info
+										span.affiliate__refferals Referrals: 4
+										span.affiliate__total Total: $23
+								.percent-wrap
+
+									.percent
+										span.percent__amount 10% 
+											span (0 $ - 100 $)
+										.percent__bar
+											.percent__bar_mode
+												span.percent__num 38 $
+
+									.percent
+										span.percent__amount 15% 
+											span (101 $ - 500 $)
+										.percent__bar
+											.percent__bar_mode
+												span.percent__num 250 $
+
+									.percent
+										span.percent__amount 20% 
+											span (501 $ - 1000 $)
+										.percent__bar
+											.percent__bar_mode
+												span.percent__num 0$
+
+
+									.percent
+										span.percent__amount 25% 
+											span (1001 $ - 3000 $)
+										.percent__bar
+											.percent__bar_mode
+												span.percent__num 0$
+
+									.percent
+										span.percent__amount 30% 
+											span (3001 $ - ∞)
+										.percent__bar
+											.percent__bar_mode
+												span.percent__num 0$
 
 						.tabs__content.js-tab-content
 
