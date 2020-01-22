@@ -1,0 +1,37 @@
+.tabs {
+	display: flex;
+	align-items: flex-start;
+
+	&__list {
+		width: 238px;
+		background-color: #fff;
+		margin-right: 15px;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		padding: 20px;
+	}
+
+	&__item {
+
+
+		&_orders {
+
+		}
+	}
+
+	&__wrap {
+		width: calc(100% - 238px);
+	}
+
+	&__content {
+		display: none;
+		background-color: #fff;
+		padding: 20px;
+		width: 100%;
+
+		&.active {
+			display: block;
+		}
+	}
+}

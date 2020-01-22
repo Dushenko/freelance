@@ -4,108 +4,122 @@ footer.footer
 			.feedback-slider.js-feedback-slider
 				.slide
 					.feedback
+
 						.feedback__image
-							img(src="../images/footer-photo.jpg", alt="")
+							img(src="../images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
 								span.customer-rate
-										.star
-										.star
-										.star
-										.star
-										.star
+									.star
+									.star
+									.star
+									.star
+									.star
 							p.customer-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis nunc sed. 
 							span.date 03.12.2018
 
 				.slide
 					.feedback
+
 						.feedback__image
-							img(src="../images/footer-photo.jpg", alt="")
+							img(src="../images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
 								span.customer-rate
-										.star
-										.star
-										.star
-										.star
-										.star
+									.star
+									.star
+									.star
+									.star
+									.star
 							p.customer-text Lorem ipsum dolor sit amet
 							span.date 03.12.2018
 
 				.slide
 					.feedback
+
 						.feedback__image
-							img(src="../images/footer-photo.jpg", alt="")
+							img(src="../images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
 								span.customer-rate
-										.star
-										.star
-										.star
-										.star
-										.star
+									.star
+									.star
+									.star
+									.star
+									.star
 							p.customer-text Lorem ipsum dolor sit amet
 							span.date 03.12.2018
 
 				.slide
 					.feedback
+
 						.feedback__image
-							img(src="../images/footer-photo.jpg", alt="")
+							img(src="../images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
 								span.customer-rate
-										.star
-										.star
-										.star
-										.star
-										.star
+									.star
+									.star
+									.star
+									.star
+									.star
 							p.customer-text Lorem ipsum dolor sit amet
 							span.date 03.12.2018
 
 				.slide
 					.feedback
+
 						.feedback__image
-							img(src="../images/footer-photo.jpg", alt="")
+							img(src="../images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
 								span.customer-rate
-										.star
-										.star
-										.star
-										.star
-										.star
+									.star
+									.star
+									.star
+									.star
+									.star
 							p.customer-text Lorem ipsum dolor sit amet
 							span.date 03.12.2018
 
 				.slide
 					.feedback
+
 						.feedback__image
-							img(src="../images/footer-photo.jpg", alt="")
+							img(src="../images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
 								span.customer-rate
-										.star
-										.star
-										.star
-										.star
-										.star
+									.star
+									.star
+									.star
+									.star
+									.star
 							p.customer-text Lorem ipsum dolor sit amet
 							span.date 03.12.2018
 
-		.feedback-form
-			h3.form-title Leave your feedback about our service.
-			span.form-subtitle Every review is important to us, be it positive or negative
-			
-			.personal-info
-				input.first-name(type="text" placeholder="Your name")
-				input.email(type="text" placeholder="Your email")
+		.feedback-wrap.feedback-wrap_border
+			form(action="#").feedback-form
+				.feedback-form__wrap
+					h3.feedback-form__title Leave your 
+						span feedback 
+						| about our service.
+					span.feedback-form__subtitle Every review is important to us, be it positive or negative
 
-				
+					.feedback-form__field-wrap
+						.feedback-form__field.feedback-form__field_name
+							input(type="text" placeholder="Your name").feedback-form__input
+						.feedback-form__field.feedback-form__field_email
+							input(type="text" placeholder="Your email").feedback-form__input
 
+						textarea(type="text" placeholder="Submit your review").feedback-form__textarea
 
+					include ../rating/rating
+
+					button.feedback-form__btn Submit review

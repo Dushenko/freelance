@@ -48,7 +48,7 @@ $(document).ready(function () {
     asNavFor: '.js-nav-slider'
   });
   $('.js-nav-slider').slick({
-    slidesToShow: 2,
+    slidesToShow: 7,
     slidesToScroll: 1,
     asNavFor: '.js-main-slider',
     dots: false,
@@ -56,9 +56,14 @@ $(document).ready(function () {
     infinite: true,
     focusOnSelect: true,
     responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 5
       }
     }]
   });

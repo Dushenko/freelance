@@ -403,12 +403,36 @@
               </div>
             </div>
           </div>
-          <div class="feedback-form">
-            <h3 class="form-title">Leave your feedback about our service.</h3><span class="form-subtitle">Every review is important to us, be it positive or negative</span>
-            <div class="personal-info">
-              <input class="first-name" type="text" placeholder="Your name">
-              <input class="email" type="text" placeholder="Your email">
-            </div>
+          <div class="feedback-wrap feedback-wrap_border">
+            <form class="feedback-form" action="#">
+              <div class="feedback-form__wrap">
+                <h3 class="feedback-form__title">Leave your <span>feedback </span>about our service.</h3><span class="feedback-form__subtitle">Every review is important to us, be it positive or negative</span>
+                <div class="feedback-form__field-wrap">
+                  <div class="feedback-form__field feedback-form__field_name">
+                    <input class="feedback-form__input" type="text" placeholder="Your name">
+                  </div>
+                  <div class="feedback-form__field feedback-form__field_email">
+                    <input class="feedback-form__input" type="text" placeholder="Your email">
+                  </div>
+                  <textarea class="feedback-form__textarea" type="text" placeholder="Submit your review"></textarea>
+                </div>
+                <div class="rating"><span class="rating__title">Rating*:</span>
+                  <div class="rating__stars-input" id="reviewStars-input">
+                    <input id="star-4" type="radio" name="reviewStars">
+                    <label for="star-4"></label>
+                    <input id="star-3" type="radio" name="reviewStars">
+                    <label for="star-3"></label>
+                    <input id="star-2" type="radio" name="reviewStars">
+                    <label for="star-2"></label>
+                    <input id="star-1" type="radio" name="reviewStars">
+                    <label for="star-1"></label>
+                    <input id="star-0" type="radio" name="reviewStars">
+                    <label for="star-0"></label>
+                  </div>
+                </div>
+                <button class="feedback-form__btn">Submit review</button>
+              </div>
+            </form>
           </div>
         </div>
       </footer>
