@@ -2557,12 +2557,16 @@ span{
     width:calc(100% - 310px);
     margin-left:auto; } }
 
-.metal-content-section .right-content .baner-title{
+.metal-content-section .right-content h2{
   margin-bottom:24px; }
 
 @media screen and (min-width: 768px){
-    .metal-content-section .right-content .baner-title{
+    .metal-content-section .right-content h2{
       margin-bottom:40px; } }
+
+.metal-content-section .right-content h3{
+  text-align:left;
+  margin-bottom:15px; }
 
 .metal-content-section .right-content p{
   color:rgba(0, 0, 0, 0.8);

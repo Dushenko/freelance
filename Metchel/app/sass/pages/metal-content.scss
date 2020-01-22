@@ -96,17 +96,25 @@
 			}
 		}
 	}
+
 	.right-content {
 		@media screen and (min-width: 1024px) {
 			width: calc(100% - 310px);
 			margin-left: auto;
 		}
-		.baner-title {
+
+		h2 {
 			margin-bottom: 24px;
 			@media screen and (min-width: 768px) {
 				margin-bottom: 40px;
 			}
 		}
+
+		h3 {
+			text-align: left;
+			margin-bottom: 15px;
+		}
+
 		p {
 			color: rgba(0, 0, 0, .8);
 			font-size: 13px;
