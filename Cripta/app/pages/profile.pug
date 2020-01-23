@@ -1,0 +1,72 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		.container
+			.main-content
+				.side-bar
+					a(href="index.html").logo
+						img(src="images/logo.svg", alt="")
+					nav.nav
+						ul
+							li
+								a(href="index.html").dash Dashboard
+							li
+								a(href="profile.html").prof.active Profile
+							li
+								a(href="ex.html").ex Exchange
+				.content
+					.burger-btn
+						span
+						span
+						span
+					.block
+						form(action="#").mainForm
+							.mainForm__wrap
+								span.block-title Main information
+								label.mainForm__label Profile name
+								input(type="text" placeholder='John Doe').mainForm__input 
+								button(type='submit').mainForm__btn Save Changes
+					.block
+						form(action="#").mainForm
+							.mainForm__wrap
+								span.block-title Google authenticator
+								.mainForm__df-wrap
+									input(type="checkbox" name="googledet" id="googledet").mainForm__input-check
+									label(for="googledet").mainForm__label-check.js-label
+									span Enable google authenticator
+						.qr-wrap
+							.qr-img
+								img(src="images/qr-code.jpg", alt="")
+							.qr-info
+								p Scan this QR-code in Google Authenticator app or enter this code manualy to the app
+								span C4553C4JLVHI6ZZ0
+					.block
+						span.block-title Connect other accounts
+						.df-wrap
+							.soc
+								.soc__img
+									img(src="images/discord.png", alt="")
+								.soc__info
+									span.soc__title Discord
+									p.soc__desc Cupidatat eu duis cillum ex quis laborum proident occaecat voluptate irure velit magna adipisicing. Anim elit dolor ea amet pariatur adipisicing quis
+									a(href="#").soc__link Connect
+							.soc
+								.soc__img
+									img(src="images/telegram.png", alt="")
+								.soc__info
+									span.soc__title Telegram
+									p.soc__desc Cupidatat eu duis cillum ex quis laborum proident occaecat voluptate irure velit magna adipisicing. Anim elit dolor ea amet pariatur adipisicing quis
+									a(href="#").soc__link Connect
+
+
+
+
+block footer
+	include ../blocks/footer/footer

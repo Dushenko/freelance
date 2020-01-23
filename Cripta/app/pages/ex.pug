@@ -1,0 +1,201 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		.container
+			.main-content
+				.side-bar
+					a(href="index.html").logo
+						img(src="images/logo.svg", alt="")
+					nav.nav
+						ul
+							li
+								a(href="index.html").dash Dashboard
+							li
+								a(href="profile.html").prof Profile
+							li
+								a(href="ex.html").ex.active Exchange
+				.content.content_df
+					.burger-btn
+						span
+						span
+						span
+					.block.pair
+						span.block-title Pair
+						.table
+							.table__titles
+								span Pair
+								span Price
+								span 24h change
+							.table__values.scroll-wrap
+								a(href="#").table__value
+									span.table__pair SOVE/BTC
+									span.table__price 0.00005518
+									span.table__change 0.09%
+								a(href="#").table__value
+									span.table__pair SOVE/BTC
+									span.table__price 0.00005518
+									span.table__change.table__change_red -0.09%
+								a(href="#").table__value
+									span.table__pair SOVE/BTC
+									span.table__price 0.00005518
+									span.table__change 0.09%
+								a(href="#").table__value
+									span.table__pair SOVE/BTC
+									span.table__price 0.00005518
+									span.table__change.table__change_red -0.09%
+								a(href="#").table__value
+									span.table__pair SOVE/BTC
+									span.table__price 0.00005518
+									span.table__change 0.09%
+								a(href="#").table__value
+									span.table__pair SOVE/BTC
+									span.table__price 0.00005518
+									span.table__change.table__change_red -0.09%
+								a(href="#").table__value
+									span.table__pair SOVE/BTC
+									span.table__price 0.00005518
+									span.table__change 0.09%
+								a(href="#").table__value
+									span.table__pair SOVE/BTC
+									span.table__price 0.00005518
+									span.table__change.table__change_red -0.09%
+								a(href="#").table__value
+									span.table__pair SOVE/BTC
+									span.table__price 0.00005518
+									span.table__change 0.09%
+								a(href="#").table__value
+									span.table__pair SOVE/BTC
+									span.table__price 0.00005518
+									span.table__change.table__change_red -0.09%
+					.block.depth
+						span.block-title Depth Chart
+						.chart
+							img(src="images/chart.png", alt="")
+					.block.pair
+						span.block-title Trade History
+						.table
+							.table__titles
+								span Date
+								span Price (BTC)
+								span 24h change
+							.table__values.scroll-wrap
+								a(href="#").table__value
+									span.table__pair 12.08 24:18
+									span.table__price 0.0001000
+									span.table__change 0.22%
+								a(href="#").table__value
+									span.table__pair 12.08 24:18
+									span.table__price 0.0001000
+									span.table__change.table__change_red -0.22%
+								a(href="#").table__value
+									span.table__pair 12.08 24:18
+									span.table__price 0.0001000
+									span.table__change 0.22%
+								a(href="#").table__value
+									span.table__pair 12.08 24:18
+									span.table__price 0.0001000
+									span.table__change.table__change_red -0.22%
+								a(href="#").table__value
+									span.table__pair 12.08 24:18
+									span.table__price 0.0001000
+									span.table__change 0.22%
+								a(href="#").table__value
+									span.table__pair 12.08 24:18
+									span.table__price 0.0001000
+									span.table__change.table__change_red -0.22%
+								a(href="#").table__value
+									span.table__pair 12.08 24:18
+									span.table__price 0.0001000
+									span.table__change 0.22%
+								a(href="#").table__value
+									span.table__pair 12.08 24:18
+									span.table__price 0.0001000
+									span.table__change.table__change_red -0.22%
+								a(href="#").table__value
+									span.table__pair 12.08 24:18
+									span.table__price 0.0001000
+									span.table__change 0.22%
+								a(href="#").table__value
+									span.table__pair 12.08 24:18
+									span.table__price 0.0001000
+									span.table__change.table__change_red -0.22%
+					.block.pair
+						span.block-title Order book
+						.table
+							.table__titles
+								span Price (BTC)
+								span SOVE (SOV)
+								span Price (BTC)
+							.table__values.scroll-wrap
+								a(href="#").table__value
+									span.table__change.table__change_red 0.0001000
+									span.table__pair 2605.951
+									span.table__price 0.0001000
+								a(href="#").table__value
+									span.table__change.table__change_red 0.0001000
+									span.table__pair 2605.951
+									span.table__price 0.0001000
+								a(href="#").table__value
+									span.table__change.table__change_red 0.0001000
+									span.table__pair 2605.951
+									span.table__price 0.0001000
+								span.down 0.00002648 ≈ $0.2294
+								a(href="#").table__value
+									span.table__change 0.0001000
+									span.table__pair 2605.951
+									span.table__price 0.0001000
+								a(href="#").table__value
+									span.table__change 0.0001000
+									span.table__pair 2605.951
+									span.table__price 0.0001000
+								a(href="#").table__value
+									span.table__change 0.0001000
+									span.table__pair 2605.951
+									span.table__price 0.0001000
+					.block.buy
+						.dfs-wrap
+							span.block-title.block-title_green Buy
+							span.block-title SOVE
+						form(action="#").mainForm
+							.mainForm__wrap
+								label.mainForm__label Price
+								input(type="text" placeholder='0.000002642').mainForm__input
+								.mainForm__df-wrap
+									.mainForm__dfc-wrap
+										label.mainForm__label Amount
+										input(type="text" placeholder='amount').mainForm__input
+									.mainForm__dfc-wrap
+										label.mainForm__label Total
+										input(type="text" placeholder='amount').mainForm__input
+								.mainForm__df-wrap
+									button(type='submit').mainForm__btn Buy
+									span.free + 0 SOVE Fee
+					.block.buy
+						.dfs-wrap
+							span.block-title.block-title_red Sell
+							span.block-title SOVE
+						form(action="#").mainForm
+							.mainForm__wrap
+								label.mainForm__label Price
+								input(type="text" placeholder='0.000002642').mainForm__input
+								.mainForm__df-wrap
+									.mainForm__dfc-wrap
+										label.mainForm__label Amount
+										input(type="text" placeholder='amount').mainForm__input
+									.mainForm__dfc-wrap
+										label.mainForm__label Total
+										input(type="text" placeholder='amount').mainForm__input
+								.mainForm__df-wrap
+									button(type='submit').mainForm__btn Sell
+									span.free + 0 BTC Fee
+
+
+block footer
+	include ../blocks/footer/footer

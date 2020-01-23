@@ -118,9 +118,10 @@ select {
 //scroll
 .scroll-wrap::-webkit-scrollbar {
 	width: 3px;
-	background-color: #ccc;
+	height: 1px;
+	background-color: transparent;
 }
 .scroll-wrap::-webkit-scrollbar-thumb {
-	background-color: rgba(0,0,0,0.75);
-	border-radius: 2px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 100px;
 }
