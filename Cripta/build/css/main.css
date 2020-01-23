@@ -418,7 +418,7 @@ select{
   height:100vh;
   background:rgba(1, 14, 52, 0.75);
   box-shadow:1px 0px 25px rgba(0, 0, 0, 0.25);
-  z-index:10;
+  z-index:12;
   display:none; }
 
 .mask.active{
@@ -431,7 +431,7 @@ select{
   -webkit-transform:translate(-50%, -50%);
   -ms-transform:translate(-50%, -50%);
   transform:translate(-50%, -50%);
-  z-index:11;
+  z-index:13;
   max-width:415px;
   width:100%;
   display:none;
@@ -641,9 +641,14 @@ select{
 .nav .ex.active:before, .nav .ex:hover:before{
   background-image:url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox='0 0 24 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.7244 0.0625C15.5814 0.0625 15.4408 0.118823 15.3376 0.231323C15.1126 0.456323 15.1126 0.812427 15.3376 1.01868L16.2561 1.9375H0.75C0.43125 1.9375 0.1875 2.18125 0.1875 2.5V17.5C0.1875 17.8188 0.43125 18.0625 0.75 18.0625H2.625C2.94375 18.0625 3.1875 17.8188 3.1875 17.5C3.1875 17.1812 2.94375 16.9375 2.625 16.9375H1.3125V3.0625H16.2751L15.3563 3.98132C15.1313 4.20632 15.1313 4.56243 15.3563 4.76868C15.4688 4.88118 15.6187 4.9375 15.75 4.9375C15.8813 4.9375 16.0312 4.88118 16.1437 4.76868L18.0187 2.89368C18.0749 2.83743 18.1124 2.7811 18.1311 2.72485C18.2249 2.5186 18.1688 2.27507 18 2.10632L16.125 0.231323C16.0125 0.118823 15.8673 0.0625 15.7244 0.0625ZM21.375 1.9375C21.0562 1.9375 20.8125 2.18125 20.8125 2.5C20.8125 2.81875 21.0562 3.0625 21.375 3.0625H22.6875V16.9375H7.72485L8.64368 16.0187C8.86868 15.7937 8.86868 15.4376 8.64368 15.2313C8.41868 15.0063 8.06257 15.0063 7.85632 15.2313L5.98132 17.1063V17.125C5.94382 17.1812 5.88765 17.2376 5.8689 17.2938C5.77515 17.5001 5.83125 17.7436 6 17.9124L7.875 19.7874C7.9875 19.8999 8.13743 19.9562 8.26868 19.9562C8.39993 19.9562 8.54985 19.8999 8.66235 19.7874C8.88735 19.5624 8.88735 19.2062 8.66235 19L7.7439 18.0812H23.25C23.5688 18.0812 23.8125 17.8374 23.8125 17.5187V2.5C23.8125 2.18125 23.5688 1.9375 23.25 1.9375H21.375ZM12 6.25C9.9375 6.25 8.25 7.9375 8.25 10C8.25 12.0625 9.9375 13.75 12 13.75C14.0625 13.75 15.75 12.0625 15.75 10C15.75 7.9375 14.0625 6.25 12 6.25ZM12 7.375C13.4438 7.375 14.625 8.55625 14.625 10C14.625 11.4438 13.4438 12.625 12 12.625C10.5562 12.625 9.375 11.4438 9.375 10C9.375 8.55625 10.5562 7.375 12 7.375Z' fill='%231FF5FF'/%3E%3C/svg%3E%0A"); }
 
+.content-wrap{
+  overflow:hidden;
+  overflow-x:auto;
+  padding:68px 15px 0;
+  margin-right:15px; }
+
 .content{
-  padding:68px 24px 0;
-  width:100%; }
+  width:1055px; }
 
 .content_df{
     display:-webkit-box;
@@ -722,12 +727,17 @@ select{
 
 .mainForm__btn{
   width:113px;
-  padding:13px 0;
+  padding:11px 0;
   background:#1FF5FF;
   border-radius:8px;
   font-weight:700;
   font-size:13px;
+  border:2px solid #1FF5FF;
   color:#01012C; }
+
+.mainForm__btn:hover{
+    background-color:transparent;
+    color:#1FF5FF; }
 
 .mainForm__label-check{
   cursor:pointer;
@@ -792,6 +802,8 @@ select{
 
 @media screen and (min-width: 768px){
     .qr-wrap{
+      display:-webkit-box;
+      display:flex;
       -webkit-box-orient:horizontal;
       -webkit-box-direction:normal;
       flex-direction:row;
@@ -985,7 +997,8 @@ select{
 .pair{
   max-width:250px;
   width:100%;
-  max-height:300px;
+  min-height:300px;
+  height:300px;
   padding:16px 0; }
 
 .pair .block-title{
@@ -999,7 +1012,9 @@ select{
 
 .depth{
   max-width:503px;
-  width:100%; }
+  width:100%;
+  min-height:300px;
+  height:300px; }
 
 .down{
   font-weight:500;
@@ -1026,7 +1041,9 @@ select{
 
 .buy{
   max-width:376px;
-  width:100%; }
+  width:100%;
+  min-height:300px;
+  height:300px; }
 
 .buy .mainForm__df-wrap{
     -webkit-box-pack:justify;
@@ -1289,8 +1306,13 @@ select{
   font-weight:700;
   font-size:13px;
   color:#01012C;
-  padding:13px 5px;
-  margin-right:16px; }
+  padding:11px 5px;
+  margin-right:16px;
+  border:2px solid #1FF5FF; }
+
+.widthr:hover{
+    background-color:transparent;
+    color:#1FF5FF; }
 
 .mnIn{
   font-weight:700;
@@ -1303,6 +1325,10 @@ select{
   border-radius:8px;
   margin-right:16px; }
 
+.mnIn:hover{
+    background-color:#1FF5FF;
+    color:#01012C; }
+
 .start{
   font-weight:700;
   font-size:13px;
@@ -1314,7 +1340,14 @@ select{
   border-radius:8px;
   margin-right:40px; }
 
+.start:hover{
+    background-color:#1FF5FF;
+    color:#01012C; }
+
 .staking{
   font-weight:700;
   font-size:13px;
   color:#1FF5FF; }
+
+.staking:hover{
+    color:#FF5D58; }

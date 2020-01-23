@@ -37,14 +37,6 @@
 }
 
 .nav {
-	ul {
-
-	}
-
-	li {
-
-	}
-
 	a {
 		width: 100%;
 		font-style: normal;
@@ -111,9 +103,15 @@
 	}
 }
 
+.content-wrap {
+	overflow: hidden;
+	overflow-x: auto;
+	padding: 68px 15px 0;
+	margin-right: 15px;
+}
+
 .content {
-	padding: 68px 24px 0;
-	width: 100%;
+	width: 1055px;
 
 	&_df {
 		display: flex;
@@ -185,12 +183,17 @@
 
 	&__btn {
 		width: 113px;
-		padding: 13px 0;
+		padding: 11px 0;
 		background: #1FF5FF;
 		border-radius: 8px;
 		font-weight: 700;
 		font-size: 13px;
+		border: 2px solid #1FF5FF;
 		color: #01012C;
+		&:hover {
+			background-color: transparent;
+			color: #1FF5FF;
+		}
 	}
 
 	&__label-check {
@@ -252,6 +255,7 @@
 	margin-top: 25px;
 	display: none;
 	@media screen and (min-width: 768px) {
+		display: flex;
 		flex-direction: row;
 		align-items: center;
 	}
@@ -443,7 +447,8 @@
 .pair {
 	max-width: 250px;
 	width: 100%;
-	max-height: 300px;
+	min-height: 300px;
+	height: 300px;
 	padding: 16px 0;
 	.block-title {
 		padding: 0 16px;
@@ -459,6 +464,8 @@
 .depth {
 	max-width: 503px;
 	width: 100%;
+	min-height: 300px;
+	height: 300px;
 }
 
 .down {
@@ -484,7 +491,8 @@
 .buy {
 	max-width: 376px;
 	width: 100%;
-
+	min-height: 300px;
+	height: 300px;
 	.mainForm__df-wrap {
 		justify-content: space-between;
 		.mainForm__dfc-wrap {
@@ -729,8 +737,13 @@
 	font-weight: 700;
 	font-size: 13px;
 	color: #01012C;
-	padding: 13px 5px;
+	padding: 11px 5px;
 	margin-right: 16px;
+	border: 2px solid #1FF5FF;
+	&:hover {
+		background-color: transparent;
+		color: #1FF5FF;
+	}
 }
 
 .mnIn {
@@ -743,6 +756,10 @@
 	border: 2px solid #1FF5FF;
 	border-radius: 8px;
 	margin-right: 16px;
+	&:hover {
+		background-color: #1FF5FF;
+		color: #01012C;
+	}
 }
 
 .start {
@@ -755,10 +772,17 @@
 	color: #1FF5FF;
 	border-radius: 8px;
 	margin-right: 40px;
+	&:hover {
+		background-color: #1FF5FF;
+		color: #01012C;
+	}
 }
 
 .staking {
 	font-weight: 700;
 	font-size: 13px;
 	color: #1FF5FF;
+	&:hover {
+		color: #FF5D58;
+	}
 }

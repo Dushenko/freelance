@@ -3,15 +3,6 @@
 //=require ../blocks/**/*.js
 $(document).ready(function () {
   // modal
-  $('.call').on('click', function () {
-    $('.js-modal').toggleClass('active');
-    $('.js-mask').toggleClass('active');
-  }); // close
-
-  $('.modal__close').on('click', function () {
-    $('.js-modal').removeClass('active');
-    $('.js-mask').removeClass('active');
-  });
   $('.burger-btn').click(function () {
     $(this).toggleClass('open');
     $('.side-bar').toggleClass('active');
@@ -22,5 +13,21 @@ $(document).ready(function () {
   $('.js-element').click(function () {
     $(this).next().slideToggle();
     $(this).toggleClass('active');
+  });
+  $('.js-signIn').click(function () {
+    $('.js-modal').removeClass('active');
+    $('.js-mask').removeClass('active');
+  });
+  $('.js-widthr').click(function () {
+    $('.js-modal-widthr').addClass('active');
+    $('.js-mask').addClass('active');
+  });
+  $('.js-mnIn').click(function () {
+    $('.js-modal-mnIn').addClass('active');
+    $('.js-mask').addClass('active');
+  });
+  $('.js-mask').click(function () {
+    $(this).removeClass('active');
+    $('.js-modal').removeClass('active');
   });
 });

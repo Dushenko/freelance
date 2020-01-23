@@ -8,6 +8,10 @@ block header
 
 block content
 	main.main
+		.burger-btn
+			span
+			span
+			span
 		.container
 			.main-content
 				.side-bar
@@ -21,175 +25,172 @@ block content
 								a(href="profile.html").prof Profile
 							li
 								a(href="ex.html").ex Exchange
-				.content
-					.burger-btn
-						span
-						span
-						span
-					.titles
-						span.coin-wrap Coin/detail
-						span.element__roi ROI
-						span.element__price Price $/BTC
-						span.element__month Month. price change
-						span.element__nodes Nodes
-						span.element__volume Volume
-						span.element__score Score
-					.element.js-element
-						.coin-wrap
-							.dfs-wrap
-								.img-title
+				.content-wrap.scroll-wrap
+					.content
+						.titles
+							span.coin-wrap Coin/detail
+							span.element__roi ROI
+							span.element__price Price $/BTC
+							span.element__month Month. price change
+							span.element__nodes Nodes
+							span.element__volume Volume
+							span.element__score Score
+						.element.js-element
+							.coin-wrap
+								.dfs-wrap
+									.img-title
+										img(src="images/title-img.png", alt="")
+									span.element__coin SOVE (Soverain)
+							span.element__roi 6.68%
+							span.element__price 0.00036063 BTC ≈ $3.2669
+							span.element__month -0.18 %
+							span.element__nodes 4,623
+							span.element__volume $1,259,944,346
+							span.element__score 198498
+						.element-full
+							.method
+								.method__img
 									img(src="images/title-img.png", alt="")
-								span.element__coin SOVE (Soverain)
-						span.element__roi 6.68%
-						span.element__price 0.00036063 BTC ≈ $3.2669
-						span.element__month -0.18 %
-						span.element__nodes 4,623
-						span.element__volume $1,259,944,346
-						span.element__score 198498
-					.element-full
-						.method
-							.method__img
-								img(src="images/title-img.png", alt="")
-							.method__block
-								span.method__title Deposit Address:
-								span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
-							.method__block
-								span.method__title Balance:
-								span.method__info 132515
-							.method__block
-								span.method__title Locked:
-								span.method__info 6516
-							a(href="#").widthr Withdrawal
-							a(href="#").mnIn MnInvest
-							a(href="#").start StartNode
-							a(href="#").staking Staking
-						.method
-							.method__img
-								img(src="images/title-img2.png", alt="")
-							.method__block
-								span.method__title Deposit Address:
-								span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
-							.method__block
-								span.method__title Balance:
-								span.method__info 132515
-							.method__block
-								span.method__title Locked:
-								span.method__info 6516
-							a(href="#").widthr Withdrawal
+								.method__block
+									span.method__title Deposit Address:
+									span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
+								.method__block
+									span.method__title Balance:
+									span.method__info 132515
+								.method__block
+									span.method__title Locked:
+									span.method__info 6516
+								a(href="#").widthr.js-widthr Withdrawal
+								a(href="#").mnIn.js-mnIn MnInvest
+								a(href="#").start StartNode
+								a(href="#").staking Staking
+							.method
+								.method__img
+									img(src="images/title-img2.png", alt="")
+								.method__block
+									span.method__title Deposit Address:
+									span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
+								.method__block
+									span.method__title Balance:
+									span.method__info 132515
+								.method__block
+									span.method__title Locked:
+									span.method__info 6516
+								a(href="#").widthr.js-widthr Withdrawal
 
-						.graph-wrap
-							.graph
-								span.block-title Your income
-								.graph-img
-									img(src="images/graph1.png", alt="")
-							.graph
-								span.block-title ROI
-								.graph-img
-									img(src="images/graph2.png", alt="")
-					.element.js-element
-						.coin-wrap
-							.dfs-wrap
-								.img-title
+							.graph-wrap
+								.graph
+									span.block-title Your income
+									.graph-img
+										img(src="images/graph1.png", alt="")
+								.graph
+									span.block-title ROI
+									.graph-img
+										img(src="images/graph2.png", alt="")
+						.element.js-element
+							.coin-wrap
+								.dfs-wrap
+									.img-title
+										img(src="images/title-img.png", alt="")
+									span.element__coin SOVE (Soverain)
+							span.element__roi 6.68%
+							span.element__price 0.00036063 BTC ≈ $3.2669
+							span.element__month -0.18 %
+							span.element__nodes 4,623
+							span.element__volume $1,259,944,346
+							span.element__score 198498
+						.element-full
+							.method
+								.method__img
 									img(src="images/title-img.png", alt="")
-								span.element__coin SOVE (Soverain)
-						span.element__roi 6.68%
-						span.element__price 0.00036063 BTC ≈ $3.2669
-						span.element__month -0.18 %
-						span.element__nodes 4,623
-						span.element__volume $1,259,944,346
-						span.element__score 198498
-					.element-full
-						.method
-							.method__img
-								img(src="images/title-img.png", alt="")
-							.method__block
-								span.method__title Deposit Address:
-								span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
-							.method__block
-								span.method__title Balance:
-								span.method__info 132515
-							.method__block
-								span.method__title Locked:
-								span.method__info 6516
-							a(href="#").widthr Withdrawal
-							a(href="#").mnIn MnInvest
-							a(href="#").start StartNode
-							a(href="#").staking Staking
-						.method
-							.method__img
-								img(src="images/title-img2.png", alt="")
-							.method__block
-								span.method__title Deposit Address:
-								span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
-							.method__block
-								span.method__title Balance:
-								span.method__info 132515
-							.method__block
-								span.method__title Locked:
-								span.method__info 6516
-							a(href="#").widthr Withdrawal
+								.method__block
+									span.method__title Deposit Address:
+									span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
+								.method__block
+									span.method__title Balance:
+									span.method__info 132515
+								.method__block
+									span.method__title Locked:
+									span.method__info 6516
+								a(href="#").widthr.js-widthr Withdrawal
+								a(href="#").mnIn.js-mnIn MnInvest
+								a(href="#").start StartNode
+								a(href="#").staking Staking
+							.method
+								.method__img
+									img(src="images/title-img2.png", alt="")
+								.method__block
+									span.method__title Deposit Address:
+									span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
+								.method__block
+									span.method__title Balance:
+									span.method__info 132515
+								.method__block
+									span.method__title Locked:
+									span.method__info 6516
+								a(href="#").widthr.js-widthr Withdrawal
 
-						.graph-wrap
-							.graph
-								span.block-title Your income
-								.graph-img
-									img(src="images/graph1.png", alt="")
-							.graph
-								span.block-title ROI
-								.graph-img
-									img(src="images/graph2.png", alt="")
-					.element.js-element
-						.coin-wrap
-							.dfs-wrap
-								.img-title
+							.graph-wrap
+								.graph
+									span.block-title Your income
+									.graph-img
+										img(src="images/graph1.png", alt="")
+								.graph
+									span.block-title ROI
+									.graph-img
+										img(src="images/graph2.png", alt="")
+						.element.js-element
+							.coin-wrap
+								.dfs-wrap
+									.img-title
+										img(src="images/title-img.png", alt="")
+									span.element__coin SOVE (Soverain)
+							span.element__roi 6.68%
+							span.element__price 0.00036063 BTC ≈ $3.2669
+							span.element__month -0.18 %
+							span.element__nodes 4,623
+							span.element__volume $1,259,944,346
+							span.element__score 198498
+						.element-full
+							.method
+								.method__img
 									img(src="images/title-img.png", alt="")
-								span.element__coin SOVE (Soverain)
-						span.element__roi 6.68%
-						span.element__price 0.00036063 BTC ≈ $3.2669
-						span.element__month -0.18 %
-						span.element__nodes 4,623
-						span.element__volume $1,259,944,346
-						span.element__score 198498
-					.element-full
-						.method
-							.method__img
-								img(src="images/title-img.png", alt="")
-							.method__block
-								span.method__title Deposit Address:
-								span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
-							.method__block
-								span.method__title Balance:
-								span.method__info 132515
-							.method__block
-								span.method__title Locked:
-								span.method__info 6516
-							a(href="#").widthr Withdrawal
-							a(href="#").mnIn MnInvest
-							a(href="#").start StartNode
-							a(href="#").staking Staking
-						.method
-							.method__img
-								img(src="images/title-img2.png", alt="")
-							.method__block
-								span.method__title Deposit Address:
-								span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
-							.method__block
-								span.method__title Balance:
-								span.method__info 132515
-							.method__block
-								span.method__title Locked:
-								span.method__info 6516
-							a(href="#").widthr Withdrawal
+								.method__block
+									span.method__title Deposit Address:
+									span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
+								.method__block
+									span.method__title Balance:
+									span.method__info 132515
+								.method__block
+									span.method__title Locked:
+									span.method__info 6516
+								a(href="#").widthr.js-widthr Withdrawal
+								a(href="#").mnIn.js-mnIn MnInvest
+								a(href="#").start StartNode
+								a(href="#").staking Staking
+							.method
+								.method__img
+									img(src="images/title-img2.png", alt="")
+								.method__block
+									span.method__title Deposit Address:
+									span.method__info 5651gfgf8gf8g9f1gf1gfse8rt4ter8g
+								.method__block
+									span.method__title Balance:
+									span.method__info 132515
+								.method__block
+									span.method__title Locked:
+									span.method__info 6516
+								a(href="#").widthr.js-widthr Withdrawal
 
-						.graph-wrap
-							.graph
-								span.block-title Your income
-								.graph-img
-									img(src="images/graph1.png", alt="")
-							.graph
-								span.block-title ROI
-								.graph-img
-									img(src="images/graph2.png", alt="")
+							.graph-wrap
+								.graph
+									span.block-title Your income
+									.graph-img
+										img(src="images/graph1.png", alt="")
+								.graph
+									span.block-title ROI
+									.graph-img
+										img(src="images/graph2.png", alt="")
 
 
 block footer
