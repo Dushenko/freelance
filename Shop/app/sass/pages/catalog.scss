@@ -1,0 +1,123 @@
+.menu-section {
+	background-color: #000;
+	padding: 10px 0 5px;
+}
+
+.product-menu {
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+		margin: 0 25px 5px 0;
+	}
+
+	a {
+		font-size: 18px;
+		color: #fff;
+		border-bottom: 2px solid transparent;
+		font-family: "Twentytwelve Sans C";
+		white-space: nowrap;
+
+		&.active,
+		&:hover {
+			border-bottom: 2px solid #fff;
+		}
+	}
+}
+
+.filter-section {
+	padding: 8vw 0;
+	@media screen and (min-width: 1360px) {
+		padding: 150px 0;
+	}
+
+	.container {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.left-bar {
+		width: 250px;
+		margin-right: 25px;
+	}
+
+	.filter-results {
+		width: calc(100% - 250px);
+		display: flex;
+		flex-wrap: wrap;
+
+		@media screen and (min-width: 480px) {
+			margin: 0 -10px;
+		}
+		@media screen and (min-width: 768px) {
+			margin: 0 -15px;
+		}
+	}
+}
+
+.product-link {
+	width: 100%;
+	margin-bottom: 20px;
+	@media screen and (min-width: 480px) {
+		width: 50%;
+		padding: 0 10px;
+	}
+	@media screen and (min-width: 768px) {
+		width: 33.33%;
+		padding: 0 15px;
+		margin-bottom: 30px;
+	}
+
+	&:hover {
+		.product-link__info {
+			opacity: 1;
+		}
+	}
+
+	&__wrap {
+		position: relative;
+
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	&__info {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		display: flex;
+		flex-direction: column;
+		opacity: 0;
+		transition: all .3s ease;
+		z-index: 1;
+		color: #000;
+	}
+
+	&__name {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	&__price  {
+		font-size: 15px;
+		font-weight: 400;
+	}
+}
+
+.filter {
+	display: flex;
+	flex-direction: column;
+
+	.filter-list {
+		display: none;
+	}
+
+	.filter-name {
+		font-weight: 400;
+		font-size: 18px;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+}

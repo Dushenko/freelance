@@ -12,8 +12,8 @@ block content
 			.container
 				.tabs.js-tabs
 					ul.tabs__list.js-tab-btn
-						li.tabs__item.tabs__item_order.active My orders
-						li.tabs__item.tabs__item_settings Settings
+						li.tabs__item.tabs__item_order My orders
+						li.tabs__item.tabs__item_settings.active Settings
 						li.tabs__item.tabs__item_program Affiliate program
 						li.tabs__item.tabs__item_balance Balance
 						li.tabs__item.tabs__item_faq FAQ
@@ -30,6 +30,7 @@ block content
 									span.user__personal.user__personal_name Username
 									span.user__personal.user__personal_email qwerty@gmail.com
 								span.user__edit
+
 							.balance-wrap
 								.balance
 									span.balance__my My balance
@@ -38,59 +39,66 @@ block content
 								span.balance-add
 									a.balance-add__plus(href="#")
 
-						.tabs__content.active.js-tab-content
-
 						.tabs__content.js-tab-content
+							.orders-wrap
+								.user-info
+									span.user-info__title.tabs__item.tabs__item_settings.active Settings
+
+									.user-info__wrap
+										a(href="#").user-info__history My orders
+										span.user-info__data Items in cart:
+											span 4
+
+						.tabs__content.js-tab-content.active
 							.settings-wrap
 								.user-info
-									span.settings__title Settings
-									a(href="#").settings__history Check history
-									span.settings__balance Current balance:
-										span $ 234
+									span.user-info__title.tabs__item.tabs__item_settings.active Settings
 
-								.password-wrap
-									form.password
-										.password-field
-											.password-field__change
-												label(for="old").password-field__title Old password
-												.password-field__input
-													input(type="text" id="old" placeholder="")
+									.user-info__wrap
+										a(href="#").user-info__history Check history
+										span.user-info__data Current balance:
+											span $ 234
 
-											.password-field__change
-												label(for="new").password-field__title New password
-												.password-field__input
-													input(type="text" id="new")
+								form(action="#").lk-form
+									.lk-form__wrap
+										.lk-form__row
+											.lk-form__field
+												label.lk-form__label Old password
+												input(type="password" placeholder="••••••••••" id="old").lk-form__input
 
-											.password-field__change
-												label(for="repeat").password-field__title Repeat New Password
-												.password-field__input
-													input(type="text" id="repeat")
+											.lk-form__field
+												label.lk-form__label New password
+												input(type="password" placeholder="••••••••••" id="new").lk-form__input
+
+											.lk-form__field
+												label.lk-form__label Repeat New Password
+												input(type="password" placeholder="••••••••••" id="repeat").lk-form__input
 											
-										button.password-btn Reset password
+										button(type="submit").lk-form__btn Reset password
 
 						.tabs__content.js-tab-content
 							.affiliate-wrap
-								.affiliate 
-									span.affiliate__title Affiliate program
-									.affiliate__info
-										span.affiliate__refferals Referrals: 4
-										span.affiliate__total Total: $23
+								.user-info
+									span.user-info__title.tabs__item.tabs__item_program.active Affiliate program
+									.user-info__wrap
+										span.user-info__data Referrals:
+											span 4
+										span.user-info__data Total:
+											span $ 23
+								
 								.percent-wrap
-
 									.percent
 										span.percent__amount 10% 
 											span (0 $ - 100 $)
 										.percent__bar
 											.percent__bar_mode
 												span.percent__num 38 $
-
 									.percent
 										span.percent__amount 15% 
 											span (101 $ - 500 $)
 										.percent__bar
 											.percent__bar_mode
 												span.percent__num 250 $
-
 									.percent
 										span.percent__amount 20% 
 											span (501 $ - 1000 $)
@@ -114,5 +122,52 @@ block content
 												span.percent__num 0$
 
 						.tabs__content.js-tab-content
+							.balances-wrap
+								.user-info
+									span.user-info__title.tabs__item.tabs__item_balance Balance
+									.user-info__wrap
+										span.user-info__data Referrals:
+											span 4
+										span.user-info__data Total:
+											span $ 23
+
+								form(action="#").lk-form.lk-form_withdrawal
+									.lk-form__wrap
+										.lk-form__row
+											.lk-form__field
+												label.lk-form__label Select system
+												.lk-form__select-wrap
+													select.lk-form__select 
+														option(value="") Paypal
+														option(value="") Qiwi
+														option(value="") Yandex
+
+											.lk-form__field
+												label.lk-form__label Amount
+												input(type="text" placeholder="100$").lk-form__input
+												
+											button(type="submit").lk-form__btn Request a withdrawal: 121 $
 
 						.tabs__content.js-tab-content
+							.faq-wrap
+								.user-info
+									span.user-info__title.tabs__item.tabs__item_faq FAQ
+
+								.accordion
+									.title
+										p.text Why is buying Followers so important?
+									.content
+										p All top Instagram stars spend a lot of money to promote their accounts using fake subscribers. What's the reason for this kind of a wrapping? It's all about visual perception. Most users, when deciding to follow a particular account, pay attention to the number of followers. The same applies to the various brands that decide to cooperate with you. The number of followers is a measure of your Instagram success.
+									.title
+										p.text Why is buying Followers so important?
+									.content
+										p All top Instagram stars spend a lot of money to promote their accounts using fake subscribers. What's the reason for this kind of a wrapping? It's all about visual perception. Most users, when deciding to follow a particular account, pay attention to the number of followers. The same applies to the various brands that decide to cooperate with you. The number of followers is a measure of your Instagram success.
+									.title
+										p.text Why is buying Followers so important?
+									.content
+										p All top Instagram stars spend a lot of money to promote their accounts using fake subscribers. What's the reason for this kind of a wrapping? It's all about visual perception. Most users, when deciding to follow a particular account, pay attention to the number of followers. The same applies to the various brands that decide to cooperate with you. The number of followers is a measure of your Instagram success.
+									.title
+										p.text Why is buying Followers so important?
+									.content
+										p All top Instagram stars spend a lot of money to promote their accounts using fake subscribers. What's the reason for this kind of a wrapping? It's all about visual perception. Most users, when deciding to follow a particular account, pay attention to the number of followers. The same applies to the various brands that decide to cooperate with you. The number of followers is a measure of your Instagram success.
+

@@ -1,0 +1,144 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.menu-section
+			.container
+				ul.product-menu
+					li
+						a(href="#") Все изделия
+					li
+						a(href="#") Женское
+					li
+						a(href="#") Мужское
+					li
+						a(href="#").active Сумки
+					li
+						a(href="#") Рюкзаки
+					li
+						a(href="#") Кошельки
+					li
+						a(href="#") Аксессуары
+					li
+						a(href="#") Сертификаты
+					li
+						a(href="#") Уход
+					li
+						a(href="#") Распродажа
+					li
+						a(href="#") Архив моделей
+
+		section.filter-section
+			.container
+				.left-bar
+					form(action="#").search-form
+						.search-form__wrap
+							input(type="text" plaсeholder="Поиск").search-form__input
+
+					.filter
+						span.filter-name.js-filter-name Вид
+						ul.filter-list
+							li
+								a(href="#") Портфели
+							li
+								a(href="#") Для ноутбука
+							li
+								a(href="#") Кросс-боди
+							li
+								a(href="#") Поясные 
+							li
+								a(href="#") Дорожные 
+							li
+								a(href="#") Тоут
+							li
+								a(href="#") Планшеты
+							li
+								a(href="#") Шопперы
+							li
+								a(href="#") Сумки с ручками
+
+						span.filter-name.js-filter-name Цена
+						ul.filter-list
+							li
+								a(href="#") Портфели
+							li
+								a(href="#") Для ноутбука
+							li
+								a(href="#") Кросс-боди
+				
+						span.filter-name.js-filter-name Цвет
+
+						span.filter-name.js-filter-name Пол
+
+						span.filter-name.js-filter-name Материал
+				
+				.filter-results
+					a(href="#").product-link
+						.product-link__wrap
+							img(src="images/1.jpg", alt="")
+							.product-link__info
+								span.product-link__name Allford
+								span.product-link__price 10800 руб
+					a(href="#").product-link
+						.product-link__wrap
+							img(src="images/2.png", alt="")
+							.product-link__info
+								span.product-link__name Allford
+								span.product-link__price 10800 руб
+					a(href="#").product-link
+						.product-link__wrap
+							img(src="images/3.png", alt="")
+							.product-link__info
+								span.product-link__name Allford
+								span.product-link__price 10800 руб
+					a(href="#").product-link
+						.product-link__wrap
+							img(src="images/4.png", alt="")
+							.product-link__info
+								span.product-link__name Allford
+								span.product-link__price 10800 руб
+					a(href="#").product-link
+						.product-link__wrap
+							img(src="images/5.png", alt="")
+							.product-link__info
+								span.product-link__name Allford
+								span.product-link__price 10800 руб
+					a(href="#").product-link
+						.product-link__wrap
+							img(src="images/3.png", alt="")
+							.product-link__info
+								span.product-link__name Allford
+								span.product-link__price 10800 руб
+					a(href="#").product-link
+						.product-link__wrap
+							img(src="images/2.png", alt="")
+							.product-link__info
+								span.product-link__name Allford
+								span.product-link__price 10800 руб
+					a(href="#").product-link
+						.product-link__wrap
+							img(src="images/3.png", alt="")
+							.product-link__info
+								span.product-link__name Allford
+								span.product-link__price 10800 руб
+					a(href="#").product-link
+						.product-link__wrap
+							img(src="images/4.png", alt="")
+							.product-link__info
+								span.product-link__name Allford
+								span.product-link__price 10800 руб
+
+
+
+
+
+
+
+block footer
+	include ../blocks/footer/footer	

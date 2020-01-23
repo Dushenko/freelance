@@ -9,4 +9,9 @@ $(document).ready(function () {
 			percentPosition: true
 		});
 	};
+
+	$('.js-filter-name').click(function(){
+		$(this).next().slideToggle();
+	});
+
 });

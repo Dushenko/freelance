@@ -1,0 +1,142 @@
+.lk-form {
+
+	&_support {
+		.lk-form__row {
+			margin: 0 -35px;
+		}
+		.lk-form__column {
+			width: 50%;
+			padding: 0 35px;
+		}
+		.lk-form__field {
+			margin-bottom: 20px;
+		}
+		.lk-form__input {
+			width: 364px !important;
+		}
+		.lk-form__btn {
+			min-width: 231px;
+		}
+	}
+
+	&_withdrawal {
+		.lk-form__select-wrap {
+			width: 266px;
+			margin-right: 15px;
+		}
+		.lk-form__input {
+			width: 138px !important;
+			margin-right: 15px;
+		}
+		.lk-form__btn {
+			width: 355px;
+			height: 44px;
+			margin-top: auto;
+		}
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 27px;
+
+		.lk-form__input {
+			width: 222px;
+		}
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__field {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__label {
+		font-size: 14px;
+		line-height: 19px;
+		color: #333333;
+		margin-bottom: 8px;
+	}
+
+	&__input {
+		padding: 13px 15px;
+		border: 1px solid #ececec;
+		border-radius: 5px;
+		font-size: 14px;
+		width: 100%;
+		color: #333333;
+
+		&::placeholder {
+			font-weight: 300;
+			font-size: 14px;
+			color: #C4C4C4;
+		}
+	}
+
+	&__btn {
+		min-width: 222px;
+		padding: 13px;
+		background-color: #42dfbf;
+		font-size: 16px;
+		color: #ffffff;
+		border-radius: 6px;
+		margin-left: auto;
+		display: block;
+		text-align: center;
+	}
+
+	&__select-wrap {
+		position: relative;
+		width: 100%;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 8px;
+			height: 6px;
+			right: 15px;
+			top: calc(50% - 3px);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 5L0.535899 0.5L7.4641 0.5L4 5Z' fill='%23333333'/%3E%3C/svg%3E%0A");
+		}
+	}
+
+	&__select {
+		padding: 13px 15px;
+		border: 1px solid #ececec;
+		border-radius: 5px;
+		width: 100%;
+		font-size: 14px;
+		color: #333333;
+	}
+
+	&__textarea {
+		font-size: 14px;
+		color: #333333;
+		padding: 12px 15px;
+		width: 100%;
+		min-height: 135px;
+		border: 1px solid #ECECEC;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		&::placeholder {
+			font-weight: 300;
+			font-size: 14px;
+			color: #C4C4C4;
+		}
+	}
+}
+
+.support-wrap {
+	background-color: #fff;
+	padding: 20px 46px;
+	border-radius: 15px;
+	max-width: 892px;
+	width: 100%;
+	margin: 0 auto;
+}

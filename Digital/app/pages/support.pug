@@ -1,0 +1,45 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.lk-section
+			.container
+				.support-wrap
+					.user-info
+						span.user-info__title Online support user guide
+
+					form(action="#").lk-form.lk-form_support
+						.lk-form__wrap
+							.lk-form__row
+								.lk-form__column
+									.lk-form__field
+										label.lk-form__label Email
+										input(type="text" placeholder="gmail@com").lk-form__input
+
+									.lk-form__field
+										label.lk-form__label Transaction ID
+										input(type="text" placeholder="gmail@com").lk-form__input
+
+									.lk-form__field
+										label.lk-form__label Instagram username
+										input(type="text" placeholder="Enter your instagram username").lk-form__input
+
+								.lk-form__column
+									.lk-form__field
+										label.lk-form__label  Select subjec
+										.lk-form__select-wrap
+											select.lk-form__select
+												option(value="") Claim
+												option(value="") Service
+
+									.lk-form__field
+										label.lk-form__label Your message
+										textarea.lk-form__textarea(name="" placeholder="Enter your message")
+
+									button(type="submit").lk-form__btn Submit
