@@ -55,4 +55,7 @@ $(document).ready(function () {
   $('.js-filter-name').click(function () {
     $(this).next().slideToggle();
   });
+  $('.js-mob-filter').click(function () {
+    $('.js-filter-form').slideToggle();
+  });
 });

@@ -14,4 +14,8 @@ $(document).ready(function () {
 		$(this).next().slideToggle();
 	});
 
+	$('.js-mob-filter').click(function(){
+		$('.js-filter-form').slideToggle();
+	});
+
 });

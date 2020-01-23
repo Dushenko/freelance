@@ -39,105 +39,161 @@ block content
 				.left-bar
 					form(action="#").search-form
 						.search-form__wrap
-							input(type="text" plaсeholder="Поиск").search-form__input
+							input(type="text" placeholder="Поиск...").search-form__input
 
 					.filter
-						span.filter-name.js-filter-name Вид
-						ul.filter-list
-							li
-								a(href="#") Портфели
-							li
-								a(href="#") Для ноутбука
-							li
-								a(href="#") Кросс-боди
-							li
-								a(href="#") Поясные 
-							li
-								a(href="#") Дорожные 
-							li
-								a(href="#") Тоут
-							li
-								a(href="#") Планшеты
-							li
-								a(href="#") Шопперы
-							li
-								a(href="#") Сумки с ручками
+						span.mob-filter.js-mob-filter Фильтр+
+						form(action="#").filter-form.js-filter-form
+							.filter-form__wrap
+								span.filter-form__filter-name.js-filter-name Вид
+								.filter-form__filter-ul
+									.filter-form__filter-field
+										input(type="text" placeholder="Поиск")
+										input(type="checkbox" id="f1" name="" value="").filter-form__input
+										label(for="f1").filter-form__label Портфели
+										input(type="checkbox" id="f2" name="" value="").filter-form__input
+										label(for="f2").filter-form__label Для ноутбука
+										input(type="checkbox" id="f3" name="" value="").filter-form__input
+										label(for="f3").filter-form__label Кросс-боди
+										input(type="checkbox" id="f4" name="" value="").filter-form__input
+										label(for="f4").filter-form__label Поясные 
+										input(type="checkbox" id="f5" name="" value="").filter-form__input
+										label(for="f5").filter-form__label Дорожные 
+										input(type="checkbox" id="f6" name="" value="").filter-form__input
+										label(for="f6").filter-form__label Тоут
+										input(type="checkbox" id="f7" name="" value="").filter-form__input
+										label(for="f7").filter-form__label Планшеты
+										input(type="checkbox" id="f8" name="" value="").filter-form__input
+										label(for="f8").filter-form__label Шопперы
+										input(type="checkbox" id="f9" name="" value="").filter-form__input
+										label(for="f9").filter-form__label Сумки с ручками
 
-						span.filter-name.js-filter-name Цена
-						ul.filter-list
-							li
-								a(href="#") Портфели
-							li
-								a(href="#") Для ноутбука
-							li
-								a(href="#") Кросс-боди
-				
-						span.filter-name.js-filter-name Цвет
+								span.filter-form__filter-name.js-filter-name Цена
+								.filter-form__filter-ul
+									.range-slider-wrap.underline
+										.range-slider
+											input(type="text" value="").js-range-slider
+										.extra-controls.form-inline
+											.form-group
+												div.form-group-col
+													input(type="text" value="0").js-input-from.form-control
+													span грн
+													span - 
+												div.form-group-col
+													input(type="text" value="0").js-input-to.form-control
+													span грн
+									
+								span.filter-form__filter-name.js-filter-name Цвет
+								.filter-form__filter-ul
+									.filter-form__filter-field
+										input(type="checkbox" id="c1" name="" value="").filter-form__input
+										label(for="c1").filter-form__label Черный 
+										input(type="checkbox" id="c2" name="" value="").filter-form__input
+										label(for="c2").filter-form__label Алый
+										input(type="checkbox" id="c3" name="" value="").filter-form__input
+										label(for="c3").filter-form__label Пыльно-серый
+										input(type="checkbox" id="c4" name="" value="").filter-form__input
+										label(for="c4").filter-form__label Измурудный
+										input(type="checkbox" id="c5" name="" value="").filter-form__input
+										label(for="c5").filter-form__label Винный
+										input(type="checkbox" id="c6" name="" value="").filter-form__input
+										label(for="c6").filter-form__label Коричневый
+										input(type="checkbox" id="c7" name="" value="").filter-form__input
+										label(for="c7").filter-form__label Коньячный
+										input(type="checkbox" id="c8" name="" value="").filter-form__input
+										label(for="c8").filter-form__label Синий
+										input(type="checkbox" id="c9" name="" value="").filter-form__input
+										label(for="c9").filter-form__label Морская волна
 
-						span.filter-name.js-filter-name Пол
+								span.filter-form__filter-name.js-filter-name Пол
+								.filter-form__filter-ul
+									.filter-form__filter-field
+										input(type="checkbox" id="g1" name="" value="").filter-form__input
+										label(for="g1").filter-form__label Mужской 
+										input(type="checkbox" id="g2" name="" value="").filter-form__input
+										label(for="g2").filter-form__label Женский 
 
-						span.filter-name.js-filter-name Материал
+								span.filter-form__filter-name.js-filter-name Материал
+								.filter-form__filter-ul
+									.filter-form__filter-field
+										input(type="checkbox" id="m1" name="" value="").filter-form__input
+										label(for="m1").filter-form__label Материал 1
+										input(type="checkbox" id="m2" name="" value="").filter-form__input
+										label(for="m2").filter-form__label Материал 2
 				
 				.filter-results
 					a(href="#").product-link
 						.product-link__wrap
 							img(src="images/1.jpg", alt="")
-							.product-link__info
-								span.product-link__name Allford
-								span.product-link__price 10800 руб
+							.product-link__bottom
+								.product-link__info
+									span.product-link__name Allford
+									span.product-link__price 10800 руб
+								span.product-link__color + цвета
 					a(href="#").product-link
 						.product-link__wrap
 							img(src="images/2.png", alt="")
-							.product-link__info
-								span.product-link__name Allford
-								span.product-link__price 10800 руб
+							.product-link__bottom
+								.product-link__info
+									span.product-link__name Allford
+									span.product-link__price 10800 руб
+								span.product-link__color + цвета
 					a(href="#").product-link
 						.product-link__wrap
 							img(src="images/3.png", alt="")
-							.product-link__info
-								span.product-link__name Allford
-								span.product-link__price 10800 руб
+							.product-link__bottom
+								.product-link__info
+									span.product-link__name Allford
+									span.product-link__price 10800 руб
+								span.product-link__color + цвета
 					a(href="#").product-link
 						.product-link__wrap
 							img(src="images/4.png", alt="")
-							.product-link__info
-								span.product-link__name Allford
-								span.product-link__price 10800 руб
+							.product-link__bottom
+								.product-link__info
+									span.product-link__name Allford
+									span.product-link__price 10800 руб
+								span.product-link__color + цвета
 					a(href="#").product-link
 						.product-link__wrap
 							img(src="images/5.png", alt="")
-							.product-link__info
-								span.product-link__name Allford
-								span.product-link__price 10800 руб
+							.product-link__bottom
+								.product-link__info
+									span.product-link__name Allford
+									span.product-link__price 10800 руб
+								span.product-link__color + цвета
 					a(href="#").product-link
 						.product-link__wrap
 							img(src="images/3.png", alt="")
-							.product-link__info
-								span.product-link__name Allford
-								span.product-link__price 10800 руб
+							.product-link__bottom
+								.product-link__info
+									span.product-link__name Allford
+									span.product-link__price 10800 руб
+								span.product-link__color + цвета
 					a(href="#").product-link
 						.product-link__wrap
 							img(src="images/2.png", alt="")
-							.product-link__info
-								span.product-link__name Allford
-								span.product-link__price 10800 руб
+							.product-link__bottom
+								.product-link__info
+									span.product-link__name Allford
+									span.product-link__price 10800 руб
+								span.product-link__color + цвета
 					a(href="#").product-link
 						.product-link__wrap
 							img(src="images/3.png", alt="")
-							.product-link__info
-								span.product-link__name Allford
-								span.product-link__price 10800 руб
+							.product-link__bottom
+								.product-link__info
+									span.product-link__name Allford
+									span.product-link__price 10800 руб
+								span.product-link__color + цвета
 					a(href="#").product-link
 						.product-link__wrap
 							img(src="images/4.png", alt="")
-							.product-link__info
-								span.product-link__name Allford
-								span.product-link__price 10800 руб
-
-
-
-
-
+							.product-link__bottom
+								.product-link__info
+									span.product-link__name Allford
+									span.product-link__price 10800 руб
+								span.product-link__color + цвета
 
 
 block footer

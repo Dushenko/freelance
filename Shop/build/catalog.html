@@ -104,55 +104,139 @@
             <div class="left-bar">
               <form class="search-form" action="#">
                 <div class="search-form__wrap">
-                  <input class="search-form__input" type="text" plaсeholder="Поиск">
+                  <input class="search-form__input" type="text" placeholder="Поиск...">
                 </div>
               </form>
-              <div class="filter"><span class="filter-name js-filter-name">Вид</span>
-                <ul class="filter-list">
-                  <li><a href="#">Портфели</a></li>
-                  <li><a href="#">Для ноутбука</a></li>
-                  <li><a href="#">Кросс-боди</a></li>
-                  <li><a href="#">Поясные </a></li>
-                  <li><a href="#">Дорожные </a></li>
-                  <li><a href="#">Тоут</a></li>
-                  <li><a href="#">Планшеты</a></li>
-                  <li><a href="#">Шопперы</a></li>
-                  <li><a href="#">Сумки с ручками</a></li>
-                </ul><span class="filter-name js-filter-name">Цена</span>
-                <ul class="filter-list">
-                  <li><a href="#">Портфели</a></li>
-                  <li><a href="#">Для ноутбука</a></li>
-                  <li><a href="#">Кросс-боди</a></li>
-                </ul><span class="filter-name js-filter-name">Цвет</span><span class="filter-name js-filter-name">Пол</span><span class="filter-name js-filter-name">Материал</span>
+              <div class="filter"><span class="mob-filter js-mob-filter">Фильтр+</span>
+                <form class="filter-form js-filter-form" action="#">
+                  <div class="filter-form__wrap"><span class="filter-form__filter-name js-filter-name">Вид</span>
+                    <div class="filter-form__filter-ul">
+                      <div class="filter-form__filter-field">
+                        <input type="text" placeholder="Поиск">
+                        <input class="filter-form__input" type="checkbox" id="f1" name="" value="">
+                        <label class="filter-form__label" for="f1">Портфели</label>
+                        <input class="filter-form__input" type="checkbox" id="f2" name="" value="">
+                        <label class="filter-form__label" for="f2">Для ноутбука</label>
+                        <input class="filter-form__input" type="checkbox" id="f3" name="" value="">
+                        <label class="filter-form__label" for="f3">Кросс-боди</label>
+                        <input class="filter-form__input" type="checkbox" id="f4" name="" value="">
+                        <label class="filter-form__label" for="f4">Поясные </label>
+                        <input class="filter-form__input" type="checkbox" id="f5" name="" value="">
+                        <label class="filter-form__label" for="f5">Дорожные </label>
+                        <input class="filter-form__input" type="checkbox" id="f6" name="" value="">
+                        <label class="filter-form__label" for="f6">Тоут</label>
+                        <input class="filter-form__input" type="checkbox" id="f7" name="" value="">
+                        <label class="filter-form__label" for="f7">Планшеты</label>
+                        <input class="filter-form__input" type="checkbox" id="f8" name="" value="">
+                        <label class="filter-form__label" for="f8">Шопперы</label>
+                        <input class="filter-form__input" type="checkbox" id="f9" name="" value="">
+                        <label class="filter-form__label" for="f9">Сумки с ручками</label>
+                      </div>
+                    </div><span class="filter-form__filter-name js-filter-name">Цена</span>
+                    <div class="filter-form__filter-ul">
+                      <div class="range-slider-wrap underline">
+                        <div class="range-slider">
+                          <input class="js-range-slider" type="text" value="">
+                        </div>
+                        <div class="extra-controls form-inline">
+                          <div class="form-group">
+                            <div class="form-group-col">
+                              <input class="js-input-from form-control" type="text" value="0"><span>грн</span><span>- </span>
+                            </div>
+                            <div class="form-group-col">
+                              <input class="js-input-to form-control" type="text" value="0"><span>грн</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><span class="filter-form__filter-name js-filter-name">Цвет</span>
+                    <div class="filter-form__filter-ul">
+                      <div class="filter-form__filter-field">
+                        <input class="filter-form__input" type="checkbox" id="c1" name="" value="">
+                        <label class="filter-form__label" for="c1">Черный </label>
+                        <input class="filter-form__input" type="checkbox" id="c2" name="" value="">
+                        <label class="filter-form__label" for="c2">Алый</label>
+                        <input class="filter-form__input" type="checkbox" id="c3" name="" value="">
+                        <label class="filter-form__label" for="c3">Пыльно-серый</label>
+                        <input class="filter-form__input" type="checkbox" id="c4" name="" value="">
+                        <label class="filter-form__label" for="c4">Измурудный</label>
+                        <input class="filter-form__input" type="checkbox" id="c5" name="" value="">
+                        <label class="filter-form__label" for="c5">Винный</label>
+                        <input class="filter-form__input" type="checkbox" id="c6" name="" value="">
+                        <label class="filter-form__label" for="c6">Коричневый</label>
+                        <input class="filter-form__input" type="checkbox" id="c7" name="" value="">
+                        <label class="filter-form__label" for="c7">Коньячный</label>
+                        <input class="filter-form__input" type="checkbox" id="c8" name="" value="">
+                        <label class="filter-form__label" for="c8">Синий</label>
+                        <input class="filter-form__input" type="checkbox" id="c9" name="" value="">
+                        <label class="filter-form__label" for="c9">Морская волна</label>
+                      </div>
+                    </div><span class="filter-form__filter-name js-filter-name">Пол</span>
+                    <div class="filter-form__filter-ul">
+                      <div class="filter-form__filter-field">
+                        <input class="filter-form__input" type="checkbox" id="g1" name="" value="">
+                        <label class="filter-form__label" for="g1">Mужской </label>
+                        <input class="filter-form__input" type="checkbox" id="g2" name="" value="">
+                        <label class="filter-form__label" for="g2">Женский </label>
+                      </div>
+                    </div><span class="filter-form__filter-name js-filter-name">Материал</span>
+                    <div class="filter-form__filter-ul">
+                      <div class="filter-form__filter-field">
+                        <input class="filter-form__input" type="checkbox" id="m1" name="" value="">
+                        <label class="filter-form__label" for="m1">Материал 1</label>
+                        <input class="filter-form__input" type="checkbox" id="m2" name="" value="">
+                        <label class="filter-form__label" for="m2">Материал 2</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
             <div class="filter-results"><a class="product-link" href="#">
                 <div class="product-link__wrap"><img src="images/1.jpg" alt="">
-                  <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div>
+                  <div class="product-link__bottom">
+                    <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div><span class="product-link__color">+ цвета</span>
+                  </div>
                 </div></a><a class="product-link" href="#">
                 <div class="product-link__wrap"><img src="images/2.png" alt="">
-                  <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div>
+                  <div class="product-link__bottom">
+                    <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div><span class="product-link__color">+ цвета</span>
+                  </div>
                 </div></a><a class="product-link" href="#">
                 <div class="product-link__wrap"><img src="images/3.png" alt="">
-                  <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div>
+                  <div class="product-link__bottom">
+                    <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div><span class="product-link__color">+ цвета</span>
+                  </div>
                 </div></a><a class="product-link" href="#">
                 <div class="product-link__wrap"><img src="images/4.png" alt="">
-                  <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div>
+                  <div class="product-link__bottom">
+                    <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div><span class="product-link__color">+ цвета</span>
+                  </div>
                 </div></a><a class="product-link" href="#">
                 <div class="product-link__wrap"><img src="images/5.png" alt="">
-                  <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div>
+                  <div class="product-link__bottom">
+                    <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div><span class="product-link__color">+ цвета</span>
+                  </div>
                 </div></a><a class="product-link" href="#">
                 <div class="product-link__wrap"><img src="images/3.png" alt="">
-                  <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div>
+                  <div class="product-link__bottom">
+                    <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div><span class="product-link__color">+ цвета</span>
+                  </div>
                 </div></a><a class="product-link" href="#">
                 <div class="product-link__wrap"><img src="images/2.png" alt="">
-                  <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div>
+                  <div class="product-link__bottom">
+                    <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div><span class="product-link__color">+ цвета</span>
+                  </div>
                 </div></a><a class="product-link" href="#">
                 <div class="product-link__wrap"><img src="images/3.png" alt="">
-                  <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div>
+                  <div class="product-link__bottom">
+                    <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div><span class="product-link__color">+ цвета</span>
+                  </div>
                 </div></a><a class="product-link" href="#">
                 <div class="product-link__wrap"><img src="images/4.png" alt="">
-                  <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div>
+                  <div class="product-link__bottom">
+                    <div class="product-link__info"><span class="product-link__name">Allford</span><span class="product-link__price">10800 руб</span></div><span class="product-link__color">+ цвета</span>
+                  </div>
                 </div></a></div>
           </div>
         </section>

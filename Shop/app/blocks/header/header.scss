@@ -216,7 +216,7 @@
 	span {
 		width: 30px;
 		height: 2px;
-		background: #000;
+		background: #fff;
 		transition: all .25s ease;
 		position: relative;
 
@@ -231,7 +231,7 @@
 
 	&.active {
 		span {
-
+			background: #000;
 			&:nth-child(1) {
 				top: 2px;
 				margin-bottom: 0;
