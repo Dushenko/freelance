@@ -1,6 +1,9 @@
 .footer {
 	background-color: #000;
-	padding: 40px 0 0;
+	padding: 40px 0 90px;
+	@media screen and (min-width: 950px) {
+		padding: 40px 0 0;
+	}
 	.tel {
 		color: #fefefe;
 		font-size: 18px;
@@ -35,6 +38,29 @@
 			border-bottom: 2px solid transparent;
 			&:hover {
 				border-bottom: 2px solid #fff;
+			}
+		}
+
+		.abs-link {
+			@media screen and (max-width: 480px) {
+				position: absolute;
+				left: 30px;
+				margin-bottom: 0;
+				a {
+					font-size: 14px;
+				}
+			}
+		}
+
+		.public {
+			@media screen and (max-width: 480px) {
+				bottom: 20px;
+			}
+		}
+
+		.policy {
+			@media screen and (max-width: 480px) {
+				bottom: 45px;
 			}
 		}
 	}

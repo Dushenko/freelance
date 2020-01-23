@@ -300,7 +300,11 @@ select{
 
 .footer{
   background-color:#000;
-  padding:40px 0 0; }
+  padding:40px 0 90px; }
+
+@media screen and (min-width: 950px){
+    .footer{
+      padding:40px 0 0; } }
 
 .footer .tel{
     color:#fefefe;
@@ -340,6 +344,22 @@ select{
 
 .footer .list a:hover{
         border-bottom:2px solid #fff; }
+
+@media screen and (max-width: 480px){
+      .footer .list .abs-link{
+        position:absolute;
+        left:30px;
+        margin-bottom:0; }
+        .footer .list .abs-link a{
+          font-size:14px; } }
+
+@media screen and (max-width: 480px){
+      .footer .list .public{
+        bottom:20px; } }
+
+@media screen and (max-width: 480px){
+      .footer .list .policy{
+        bottom:45px; } }
 
 .footer .soc-links{
     display:-webkit-box;
@@ -778,12 +798,13 @@ select{
   width:236px; }
 
 .range-slider-wrap .form-group{
+    margin-bottom:10px;
     display:-webkit-box;
     display:flex;
     -webkit-box-align:center;
     align-items:center;
-    -webkit-box-pack:start;
-    justify-content:flex-start; }
+    -webkit-box-pack:justify;
+    justify-content:space-between; }
 
 .range-slider-wrap .form-group-col{
     display:-webkit-box;
@@ -803,7 +824,7 @@ select{
       font-weight:600; }
 
 .range-slider-wrap .form-group-col input{
-      width:40px;
+      width:50px;
       margin-right:3px; }
 
 .irs{

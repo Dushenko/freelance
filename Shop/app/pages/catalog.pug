@@ -45,10 +45,9 @@ block content
 						span.mob-filter.js-mob-filter Фильтр+
 						form(action="#").filter-form.js-filter-form
 							.filter-form__wrap
-								span.filter-form__filter-name.js-filter-name Вид
+								span.filter-form__filter-name.js-filter-name Все
 								.filter-form__filter-ul
 									.filter-form__filter-field
-										input(type="text" placeholder="Поиск")
 										input(type="checkbox" id="f1" name="" value="").filter-form__input
 										label(for="f1").filter-form__label Портфели
 										input(type="checkbox" id="f2" name="" value="").filter-form__input
@@ -71,17 +70,17 @@ block content
 								span.filter-form__filter-name.js-filter-name Цена
 								.filter-form__filter-ul
 									.range-slider-wrap.underline
-										.range-slider
-											input(type="text" value="").js-range-slider
 										.extra-controls.form-inline
 											.form-group
 												div.form-group-col
 													input(type="text" value="0").js-input-from.form-control
-													span грн
-													span - 
+													span руб.
 												div.form-group-col
 													input(type="text" value="0").js-input-to.form-control
-													span грн
+													span руб.
+										.range-slider
+											input(type="text" value="").js-range-slider
+										
 									
 								span.filter-form__filter-name.js-filter-name Цвет
 								.filter-form__filter-ul

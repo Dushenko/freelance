@@ -109,10 +109,9 @@
               </form>
               <div class="filter"><span class="mob-filter js-mob-filter">Фильтр+</span>
                 <form class="filter-form js-filter-form" action="#">
-                  <div class="filter-form__wrap"><span class="filter-form__filter-name js-filter-name">Вид</span>
+                  <div class="filter-form__wrap"><span class="filter-form__filter-name js-filter-name">Все</span>
                     <div class="filter-form__filter-ul">
                       <div class="filter-form__filter-field">
-                        <input type="text" placeholder="Поиск">
                         <input class="filter-form__input" type="checkbox" id="f1" name="" value="">
                         <label class="filter-form__label" for="f1">Портфели</label>
                         <input class="filter-form__input" type="checkbox" id="f2" name="" value="">
@@ -135,18 +134,18 @@
                     </div><span class="filter-form__filter-name js-filter-name">Цена</span>
                     <div class="filter-form__filter-ul">
                       <div class="range-slider-wrap underline">
-                        <div class="range-slider">
-                          <input class="js-range-slider" type="text" value="">
-                        </div>
                         <div class="extra-controls form-inline">
                           <div class="form-group">
                             <div class="form-group-col">
-                              <input class="js-input-from form-control" type="text" value="0"><span>грн</span><span>- </span>
+                              <input class="js-input-from form-control" type="text" value="0"><span>руб.</span>
                             </div>
                             <div class="form-group-col">
-                              <input class="js-input-to form-control" type="text" value="0"><span>грн</span>
+                              <input class="js-input-to form-control" type="text" value="0"><span>руб.</span>
                             </div>
                           </div>
+                        </div>
+                        <div class="range-slider">
+                          <input class="js-range-slider" type="text" value="">
                         </div>
                       </div>
                     </div><span class="filter-form__filter-name js-filter-name">Цвет</span>
@@ -263,8 +262,8 @@
             <ul class="list">
               <li><a href="#">Контакты</a></li>
               <li><a href="#">Реквизиты</a></li>
-              <li><a href="#">Публичная оферта</a></li>
-              <li><a href="#">Политика конфеденциальности</a></li>
+              <li class="public abs-link"><a href="#">Публичная оферта</a></li>
+              <li class="policy abs-link"><a href="#">Политика конфеденциальности</a></li>
             </ul>
             <div class="soc-links"><a class="inst" href="#"></a><a class="fb" href="#"></a><a class="vk" href="#"></a></div>
           </div>
