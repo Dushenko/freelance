@@ -33,7 +33,10 @@
 	&__head {
 		min-height: 90px;
 		border-radius: 15px;
-		background: #4E37B2;
+		background-size: 150%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url('../images/card.png');
 		padding: 20px;
 		display: flex;
 		justify-content: center;

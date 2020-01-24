@@ -32,8 +32,8 @@
           <div class="container">
             <div class="tabs js-tabs">
               <ul class="tabs__list js-tab-btn">
-                <li class="tabs__item tabs__item_order">My orders</li>
-                <li class="tabs__item tabs__item_settings active">Settings</li>
+                <li class="tabs__item tabs__item_order active">My orders</li>
+                <li class="tabs__item tabs__item_settings">Settings</li>
                 <li class="tabs__item tabs__item_program">Affiliate program</li>
                 <li class="tabs__item tabs__item_balance">Balance</li>
                 <li class="tabs__item tabs__item_faq">FAQ</li>
@@ -49,14 +49,52 @@
                     <div class="balance"><span class="balance__my">My balance</span><span class="balance__current">Current balance:</span><span class="balance__account">$ 135</span></div><span class="balance-add"><a class="balance-add__plus" href="#"></a></span>
                   </div>
                 </div>
-                <div class="tabs__content js-tab-content">
+                <div class="tabs__content js-tab-content active">
                   <div class="orders-wrap">
-                    <div class="user-info"><span class="user-info__title tabs__item tabs__item_settings active">Settings</span>
-                      <div class="user-info__wrap"><a class="user-info__history" href="#">My orders</a><span class="user-info__data">Items in cart:<span>4</span></span></div>
+                    <div class="user-info"><span class="user-info__title tabs__item tabs__item_order active">My orders</span>
+                      <div class="user-info__wrap"><span class="user-info__data">Items in cart:<span>4</span></span></div>
+                    </div>
+                    <div class="cart-warp">
+                      <div class="cart"> <span class="cart-title">Showing <span>(4)</span></span>
+                        <form class="lk-form lk-form_search" action="#">
+                          <div class="lk-form__wrap">
+                            <div class="lk-form__field">
+                              <button class="lk-form__search-btn" type="submit"></button>
+                              <input class="lk-form__input" type="text" placeholder="Search">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="order-wrap">
+                        <div class="order">
+                          <div class="order__info"><span class="order__id">ID</span><span class="order__items">Items</span><span class="order__status">Status</span><span class="order__price">Order price</span><span class="order__date">Created At</span></div>
+                          <div class="shop-cart"><span class="shop-cart__id">4592<span class="shop-cart__delete"></span></span>
+                            <div class="shop-cart__items">
+                              <div class="shop-cart__item"><span>250 </span>followers - <span>6.99$</span></div>
+                              <div class="shop-cart__item"><span>250 </span>followers - <span>6.99$</span></div>
+                            </div><span class="shop-cart__status">Create, not paid</span><span class="shop-cart__price">$ 12.98</span><span class="shop-cart__date">16 January, 2020</span>
+                          </div>
+                          <div class="shop-cart"><span class="shop-cart__id">4592<span class="shop-cart__delete"></span></span>
+                            <div class="shop-cart__items">
+                              <div class="shop-cart__item"><span>250 </span>followers - <span>6.99$</span></div>
+                            </div><span class="shop-cart__status">Create, not paid</span><span class="shop-cart__price">$ 12.98</span><span class="shop-cart__date">16 January, 2020</span>
+                          </div>
+                          <div class="shop-cart"><span class="shop-cart__id">4592<span class="shop-cart__delete"></span></span>
+                            <div class="shop-cart__items">
+                              <div class="shop-cart__item"><span>250 </span>followers - <span>6.99$</span></div>
+                            </div><span class="shop-cart__status">Create, not paid</span><span class="shop-cart__price">$ 12.98</span><span class="shop-cart__date">16 January, 2020</span>
+                          </div>
+                          <div class="shop-cart"><span class="shop-cart__id">4592<span class="shop-cart__delete"></span></span>
+                            <div class="shop-cart__items">
+                              <div class="shop-cart__item"><span>250 </span>followers - <span>6.99$</span></div>
+                            </div><span class="shop-cart__status">Create, not paid</span><span class="shop-cart__price">$ 12.98</span><span class="shop-cart__date">16 January, 2020</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="tabs__content js-tab-content active">
+                <div class="tabs__content js-tab-content">
                   <div class="settings-wrap">
                     <div class="user-info"><span class="user-info__title tabs__item tabs__item_settings active">Settings</span>
                       <div class="user-info__wrap"><a class="user-info__history" href="#">Check history</a><span class="user-info__data">Current balance:<span>$ 234</span></span></div>

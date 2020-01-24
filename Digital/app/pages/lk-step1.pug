@@ -12,8 +12,8 @@ block content
 			.container
 				.tabs.js-tabs
 					ul.tabs__list.js-tab-btn
-						li.tabs__item.tabs__item_order My orders
-						li.tabs__item.tabs__item_settings.active Settings
+						li.tabs__item.tabs__item_order.active My orders
+						li.tabs__item.tabs__item_settings Settings
 						li.tabs__item.tabs__item_program Affiliate program
 						li.tabs__item.tabs__item_balance Balance
 						li.tabs__item.tabs__item_faq FAQ
@@ -39,17 +39,87 @@ block content
 								span.balance-add
 									a.balance-add__plus(href="#")
 
-						.tabs__content.js-tab-content
+						.tabs__content.js-tab-content.active
 							.orders-wrap
 								.user-info
-									span.user-info__title.tabs__item.tabs__item_settings.active Settings
-
+									span.user-info__title.tabs__item.tabs__item_order.active My orders
 									.user-info__wrap
-										a(href="#").user-info__history My orders
 										span.user-info__data Items in cart:
 											span 4
 
-						.tabs__content.js-tab-content.active
+								.cart-warp
+									.cart 
+										span.cart-title Showing 
+											span (4)
+
+										form(action="#").lk-form.lk-form_search
+											.lk-form__wrap
+												.lk-form__field
+													button(type="submit").lk-form__search-btn
+													input(type="text" placeholder="Search").lk-form__input
+
+									.order-wrap
+										.order
+											.order__info
+												span.order__id ID
+												span.order__items Items
+												span.order__status Status
+												span.order__price Order price
+												span.order__date Created At
+
+											.shop-cart
+												span.shop-cart__id 4592
+													span.shop-cart__delete
+												.shop-cart__items
+													.shop-cart__item
+														span 250 
+														| followers - 
+														span 6.99$
+													.shop-cart__item
+														span 250 
+														| followers - 
+														span 6.99$
+												span.shop-cart__status Create, not paid
+												span.shop-cart__price $ 12.98
+												span.shop-cart__date 16 January, 2020
+
+											.shop-cart
+												span.shop-cart__id 4592
+													span.shop-cart__delete
+												.shop-cart__items
+													.shop-cart__item
+														span 250 
+														| followers - 
+														span 6.99$
+												span.shop-cart__status Create, not paid
+												span.shop-cart__price $ 12.98
+												span.shop-cart__date 16 January, 2020
+
+											.shop-cart
+												span.shop-cart__id 4592
+													span.shop-cart__delete
+												.shop-cart__items
+													.shop-cart__item
+														span 250 
+														| followers - 
+														span 6.99$
+												span.shop-cart__status Create, not paid
+												span.shop-cart__price $ 12.98
+												span.shop-cart__date 16 January, 2020
+
+											.shop-cart
+												span.shop-cart__id 4592
+													span.shop-cart__delete
+												.shop-cart__items
+													.shop-cart__item
+														span 250 
+														| followers - 
+														span 6.99$
+												span.shop-cart__status Create, not paid
+												span.shop-cart__price $ 12.98
+												span.shop-cart__date 16 January, 2020
+
+						.tabs__content.js-tab-content
 							.settings-wrap
 								.user-info
 									span.user-info__title.tabs__item.tabs__item_settings.active Settings
@@ -73,7 +143,7 @@ block content
 											.lk-form__field
 												label.lk-form__label Repeat New Password
 												input(type="password" placeholder="••••••••••" id="repeat").lk-form__input
-											
+
 										button(type="submit").lk-form__btn Reset password
 
 						.tabs__content.js-tab-content
@@ -85,7 +155,7 @@ block content
 											span 4
 										span.user-info__data Total:
 											span $ 23
-								
+
 								.percent-wrap
 									.percent
 										span.percent__amount 10% 
@@ -145,7 +215,7 @@ block content
 											.lk-form__field
 												label.lk-form__label Amount
 												input(type="text" placeholder="100$").lk-form__input
-												
+
 											button(type="submit").lk-form__btn Request a withdrawal: 121 $
 
 						.tabs__content.js-tab-content

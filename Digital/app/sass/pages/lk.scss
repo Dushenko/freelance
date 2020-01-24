@@ -7,7 +7,7 @@
 	margin: -80px 0 0 0;
 	position: relative;
 	padding: 140px 0 56px;
-	font-family: 'Open Sans';
+	font-family: "Open Sans";
 
 	.container {
 		max-width: 1135px;
@@ -203,7 +203,7 @@
 		opacity: 0.1;
 
 		&:hover {
-			transition: opacity .25s ease;
+			transition: opacity 0.25s ease;
 			opacity: 1;
 			cursor: pointer;
 		}
@@ -221,25 +221,14 @@
 	}
 }
 
-// .affiliate {
-// 	display: flex;
-// 	justify-content: space-between;
-// 	border-bottom: 1px solid #d9d9d9;
-// 	padding-bottom: 20px;
-// 	margin-bottom: 32px;
-
-// 	&__title {
-// 		margin-left: 30px;
-// 	}
-
-// 	&__info {
-// 		display: flex;
-// 	}
-
-// 	.affiliate__refferals {
-// 		margin-right: 30px;
-// 	}
-// }
+.orders-wrap {
+	.user-info {
+		margin-bottom: 0;
+		margin: 0 -35px;
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+}
 
 .percent-wrap {
 	margin-bottom: 33px;
@@ -311,4 +300,3 @@
 		}
 	}
 }
-

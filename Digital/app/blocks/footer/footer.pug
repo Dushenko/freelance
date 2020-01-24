@@ -87,23 +87,6 @@ footer.footer
 							p.customer-text Lorem ipsum dolor sit amet
 							span.date 03.12.2018
 
-				.slide
-					.feedback
-
-						.feedback__image
-							img(src="../images/footer-photo.jpg" alt="")
-						.feedback__info
-							.customer-info
-								span.customer-name Veleria Lopez
-								span.customer-rate
-									.star
-									.star
-									.star
-									.star
-									.star
-							p.customer-text Lorem ipsum dolor sit amet
-							span.date 03.12.2018
-
 		.feedback-wrap.feedback-wrap_border
 			form(action="#").feedback-form
 				.feedback-form__wrap
@@ -123,3 +106,53 @@ footer.footer
 					include ../rating/rating
 
 					button.feedback-form__btn Submit review
+
+.mask.js-mask
+
+.modal.js-modal-step1
+	.modal__wrap
+		.modal__header
+			.modal__info.modal__info_violet
+				span.modal__icon 1
+				span.modal__subheading Information
+
+			.modal__info.modal__info_gray
+				span.modal__icon 2
+				span.modal__subheading Select service
+
+		.modal__text
+			h3.modal__title Buy 
+				span 500 
+				| Instagram followers
+			span.modal__subtitle Fill in the data for the purchase
+
+		form(action="#").lk-form
+			.lk-form__wrap
+				.lk-form__field.user-icon
+					label.lk-form__label Instagram username
+					input(type="text" placeholder="Enter your instagram username").lk-form__input
+
+				.lk-form__field.email-icon
+					label.lk-form__label Email
+					input(type="text" placeholder="gmail@com").lk-form__input
+
+			button.lk-form__modal-btn(type="submit") Select account
+
+.modal.js-modal-step2
+	.modal__wrap
+		.modal__header
+			.modal__info.modal__info_confirm
+				span.modal__icon 1
+				span.modal__subheading Information
+
+			.modal__info.modal__info_violet
+				span.modal__icon 2
+				span.modal__subheading Select service
+
+
+
+
+
+
+
+

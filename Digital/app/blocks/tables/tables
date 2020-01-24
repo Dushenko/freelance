@@ -1,0 +1,109 @@
+.cart {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 13px 0;
+
+.cart-title {
+span {
+color: #4832ae;
+}
+}
+}
+
+.order-wrap {
+margin: 0 -35px;
+}
+
+.order {
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+color: #333333;
+
+&__info {
+display: flex;
+border-top: 1px solid #D9D9D9;
+padding: 15px 35px;
+font-weight: 600;
+}
+
+&__id {
+width: 14%;
+}
+
+&__items {
+width: 27.5%;
+}
+
+&__status {
+width: 24%;
+}
+
+&__price {
+width: 20.5%;
+}
+
+&__date {
+display: flex;
+justify-content: flex-end;
+width: 18%;
+}
+}
+
+.shop-cart {
+display: flex;
+padding: 15px 35px;
+border-top: 1px solid #D9D9D9;
+
+&__id {
+width: 14%;
+}
+
+&__delete {
+display: inline-block;
+width: 11px;
+height: 15px;
+margin-left: 5px;
+cursor: pointer;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-image: url("data:image/svg+xml,%3Csvg width='12' height='15' viewBox='0 0 12 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.78813 12.3C5.92126 12.3 6.0293 12.1922 6.0293 12.0589V4.10018C6.0293 3.96681 5.92126 3.85901 5.78813 3.85901C5.655 3.85901 5.54696 3.96681 5.54696 4.10018V12.0589C5.54696 12.1922 5.655 12.3 5.78813 12.3Z' fill='%23FF0000'/%3E%3Cpath d='M3.37636 12.3C3.50949 12.3 3.61753 12.1922 3.61753 12.0589V4.10018C3.61753 3.96681 3.50949 3.85901 3.37636 3.85901C3.24324 3.85901 3.13519 3.96681 3.13519 4.10018V12.0589C3.13519 12.1922 3.24324 12.3 3.37636 12.3Z' fill='%23FF0000'/%3E%3Cpath d='M8.19972 12.3C8.33284 12.3 8.44089 12.1922 8.44089 12.0589V4.10018C8.44089 3.96681 8.33284 3.85901 8.19972 3.85901C8.06659 3.85901 7.95854 3.96681 7.95854 4.10018V12.0589C7.95854 12.1922 8.06659 12.3 8.19972 12.3Z' fill='%23FF0000'/%3E%3Cpath d='M11.3351 1.44703H7.94807C7.92155 1.14557 7.82869 0.637177 7.51083 0.310871C7.30969 0.104669 7.05453 0 6.75258 0H4.3411C4.03915 0 3.78399 0.104669 3.58286 0.310871C3.26499 0.637177 3.17214 1.14557 3.14561 1.44703H0.241172C0.108045 1.44703 0 1.55484 0 1.68821C0 1.82157 0.108045 1.92938 0.241172 1.92938H0.733405L1.19525 13.0284C1.20417 13.4437 1.46271 14.2292 2.37892 14.2292H9.19735C10.1136 14.2292 10.3721 13.4437 10.3808 13.0334L10.8429 1.92938H11.3351C11.4682 1.92938 11.5763 1.82157 11.5763 1.68821C11.5763 1.55484 11.4682 1.44703 11.3351 1.44703ZM3.92918 0.646583C4.03722 0.536126 4.17204 0.482345 4.3411 0.482345H6.75258C6.92165 0.482345 7.05646 0.536126 7.16451 0.646583C7.35865 0.845068 7.43655 1.19429 7.46356 1.44703H3.63037C3.65738 1.19429 3.73528 0.845068 3.92918 0.646583ZM9.89868 13.0182C9.89723 13.0928 9.86395 13.7468 9.19735 13.7468H2.37892C1.71956 13.7468 1.68001 13.0916 1.67735 13.0132L1.21599 1.92938H10.36L9.89868 13.0182Z' fill='%23FF0000'/%3E%3C/svg%3E%0A");
+}
+
+&__items {
+display: flex;
+flex-direction: column;
+margin-bottom: -10px;
+width: 27.5%;
+}
+
+&__item {
+margin-bottom: 10px;
+span {
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+color: #333333;
+}
+}
+
+&__status {
+width: 24%;
+color: #FEA022;
+}
+
+&__price {
+width: 20.5%;
+color: #42DFBF;
+font-weight: 600;
+}
+
+&__date {
+display: flex;
+justify-content: flex-end;
+width: 18%;
+color: #D9D9D9;
+}
+}

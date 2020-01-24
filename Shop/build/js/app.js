@@ -15,13 +15,8 @@ $(document).ready(function () {
   ;
 
   if ($(window).width() < 900) {
-    $('.js-main-menu li').click(function () {
-      $(this).find('.js-menu').slideDown();
-      $(this).addClass('toggle');
-    });
-    $('.toggle').click(function () {
-      $(this).find('.js-menu').slideUp();
-      $(this).removeClass('toggle');
+    $('.js-main-menu li').not('.js-menu').click(function () {
+      $(this).find('.js-menu').slideToggle();
     });
   }
 
