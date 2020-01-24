@@ -99,13 +99,13 @@
             </ul>
           </div>
         </section>
-        <section class="filter-section">
+        <section class="filter-section filter-section_product">
           <div class="container">
             <div class="left-bar">
               <div class="product-bar">
-                <div class="filter"><span class="mob-filter js-mob-filter">Фильтр+</span>
+                <div class="filter">
                   <form class="filter-form js-filter-form" action="#">
-                    <div class="filter-form__wrap"><span class="product-name">Allford</span><span class="product-size">34х27х11 см</span>
+                    <div class="filter-form__wrap"><span class="product-name product-name_mob">Allford</span><span class="product-size">34х27х11 см</span>
                       <div class="filter-form__color-wrap">
                         <input type="radio" id="color1" name="color" value="">
                         <label class="color-label" for="color1" style="background-color: #265d3c"></label>
@@ -139,11 +139,18 @@
                       </div>
                       <div class="filter-form__service">
                         <input type="checkbox" id="ser1" name="" value="">
-                        <label class="service-label" for="ser1">Тиснение инициалов +200 р</label>
-                        <input type="checkbox" id="ser2" name="" value="">
-                        <label class="service-label" for="ser2">Дополнительный поклад на карман +350 p</label>
-                        <input type="checkbox" id="ser3" name="" value="">
-                        <label class="service-label" for="ser3">Молния на внутренний карман  +290 р</label>
+                        <label class="service-label" for="ser1">Тиснение инициалов +200 р<a href="#"></a></label>
+                        <div class="filter-form__symbol"><img src="images/symbol.png" alt=""></div><span class="filter-form__symbol-text">Добавить символ</span>
+                        <div class="filter-form__symbol-img"><img src="images/sl.png" alt=""></div>
+                        <div class="filter-form__input-text">
+                          <input type="text" placeholder="ВВЕДИТЕ ДО 10 СИМВОЛОВ">
+                        </div>
+                        <div class="filter-form__wrap">
+                          <input type="checkbox" id="ser2" name="" value="">
+                          <label class="service-label" for="ser2">Дополнительный поклад на карман +350 p<a href="#"></a></label>
+                          <input type="checkbox" id="ser3" name="" value="">
+                          <label class="service-label" for="ser3">Молния на внутренний карман  +290 р<a href="#"></a></label>
+                        </div>
                       </div>
                       <div class="filter-tabs">
                         <div class="filter-tab">
@@ -175,16 +182,23 @@
                           </div>
                         </div>
                       </div>
+                      <div class="filter-form__buy-wrap"><span>10800 рублей</span>
+                        <button type="submit">Купить</button>
+                      </div>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
-            <div class="product-images">
-              <div class="product-img"><img src="images/11.jpg" alt=""></div>
-              <div class="product-img"><img src="images/12.jpg" alt=""></div>
-              <div class="product-img"><img src="images/13.jpg" alt=""></div>
-              <div class="product-img"><img src="images/14.jpg" alt=""></div>
+            <div class="product-images"><span class="mob-filter js-mob-filter"><span class="product-name">Allford</span></span>
+              <div class="product-images-wrap">
+                <div class="product-images-slider js-images-slider">
+                  <div class="product-img"><img src="images/11.jpg" alt=""></div>
+                  <div class="product-img"><img src="images/12.jpg" alt=""></div>
+                  <div class="product-img"><img src="images/13.jpg" alt=""></div>
+                  <div class="product-img"><img src="images/14.jpg" alt=""></div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

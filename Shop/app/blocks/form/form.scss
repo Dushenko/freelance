@@ -30,6 +30,7 @@
 	&__wrap {
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	&__filter-ul {
@@ -96,7 +97,7 @@
 
 	&__service {
 		label {
-			display: block;
+			display: inline-block;
 			position: relative;
 			padding-left: 20px;
 			font-size: 11px;
@@ -121,6 +122,88 @@
 				transform: translateY(-50%);
 				font-size: 18px;
 				opacity: 0;
+			}
+
+			a {
+				position: absolute;
+				top: -5px;
+				right: -20px;
+				width: 15px;
+				height: 15px;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				background-image: url('../images/ph.svg');
+			}
+		}
+	}
+
+	&__symbol {
+		width: 70px;
+		height: 70px;
+		margin-bottom: 15px;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__symbol-text {
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 300;
+		margin-bottom: 15px;
+		display: block;
+	}
+
+	&__symbol-img {
+		margin-bottom: 10px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__input-text {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #454545;
+
+		input {
+			width: 100%;
+			padding: 5px;
+			border: 2px solid #000;
+		}
+	}
+
+	&__buy-wrap {
+		display: flex;
+		flex-direction: column;
+		margin-top: 30px;
+		width: 100%;
+		@media screen and (min-width: 600px) {
+			margin-top: 80px;
+		}
+		span {
+			color: #000000;
+			font-size: 16px;
+			font-weight: 300;
+			margin-bottom: 10px;
+		}
+
+		button {
+			padding: 5px 50px;
+			color: #000000;
+			font-size: 18px;
+			border: 2px solid #839481;
+			text-align: center;
+			@media screen and (max-width: 600px) {
+				width: 100%;
+				display: block;
+			}
+
+			&:hover {
+				color: #fff;
+				background-color: #839481;
 			}
 		}
 	}

@@ -37,6 +37,16 @@
 		padding: 150px 0;
 	}
 
+	&_product {
+		.container {
+			display: flex;
+			flex-direction: column-reverse;
+			@media screen and (min-width: 600px) {
+				flex-direction: row;
+			}
+		}
+	}
+
 	.container {
 		@media screen and (min-width: 600px) {
 			display: flex;
@@ -66,10 +76,16 @@
 	}
 
 	.product-images {
+		margin-bottom: 50px;
 		display: flex;
 		flex-direction: column;
 		@media screen and (min-width: 600px) {
+			width: calc(90% - 250px);
+			margin-bottom: 0;
+		}
+		@media screen and (min-width: 1024px) {
 			width: calc(70% - 250px);
+			margin-bottom: 0;
 		}
 	}
 
@@ -89,20 +105,21 @@
 		@media screen and (min-width: 600px) {
 			display: none;
 		}
+
+		.product-name {
+			border-bottom: none;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
 	}
 }
 
 .product-bar {
 	display: flex;
 	flex-direction: column;
-	.product-name {
-		color: #000000;
-		font-family: "Twentytwelve Sans C";
-		font-size: 35px;
-		font-weight: 400;
-		padding-bottom: 15px;
-		margin-bottom: 15px;
-		border-bottom: 1px solid #454545;
+
+	.filter-form {
+		display: block;
 	}
 
 	.product-size {
@@ -145,6 +162,10 @@
 	}
 }
 
+.filter-tabs {
+	width: 100%;
+}
+
 .filter-tab {
 	padding: 5px 0;
 	border-bottom: 1px solid #454545;
@@ -152,7 +173,7 @@
 	&:first-child {
 		border-top: 1px solid #454545;
 	}
-	
+
 	&__head {
 		cursor: pointer;
 		padding: 2px 10px 2px 18px;
@@ -276,6 +297,23 @@
 	&__price  {
 		font-size: 15px;
 		font-weight: 400;
+	}
+}
+
+.product-name {
+	color: #000000;
+	font-family: "Twentytwelve Sans C";
+	font-size: 35px;
+	font-weight: 400;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #454545;
+
+	&_mob {
+		display: none;
+		@media screen and (min-width: 600px) {
+			display: block;
+		}
 	}
 }
 

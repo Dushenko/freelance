@@ -289,6 +289,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 body{
   font-family:'Fira Sans'; }
 
+body.overflow{
+    overflow:hidden; }
+
 a{
   text-decoration:none;
   display:inline-block;
@@ -584,6 +587,32 @@ select{
 .side-bar.active{
     left:0; }
 
+.side-bar .bar-nav{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:center;
+    justify-content:center;
+    margin-top:30px; }
+
+.side-bar .bar-nav span{
+      width:113px;
+      padding:11px 0;
+      background:#1FF5FF;
+      border-radius:8px;
+      font-weight:700;
+      font-size:13px;
+      border:2px solid #1FF5FF;
+      color:#01012C;
+      text-align:center;
+      margin:0 5px;
+      cursor:pointer;
+      -webkit-transition:all .3s ease;
+      transition:all .3s ease; }
+
+.side-bar .bar-nav span:hover{
+        background-color:transparent;
+        color:#1FF5FF; }
+
 .logo{
   margin:25px 70px 32px;
   width:130px;
@@ -644,11 +673,12 @@ select{
 .content-wrap{
   overflow:hidden;
   overflow-x:auto;
-  padding:68px 15px 0;
+  padding:50px 0 0;
   margin-right:15px; }
 
 .content{
-  width:1055px; }
+  width:1055px;
+  padding:50px 15px 30px; }
 
 .content_df{
     display:-webkit-box;

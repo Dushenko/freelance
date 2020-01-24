@@ -1,4 +1,4 @@
-.mask.js-mask.active
+.mask.js-mask
 
 .modal.js-modal.js-modal-mnIn
 	.modal__wrap
@@ -88,7 +88,7 @@
 				span.table__price 5651gfgf8gf8g9f1gf1gfse8rt4
 				span.table__price 2000.00
 
-.modal.js-modal.active
+.modal.js-modal.js-modal-in
 	a(href="index.html").logo
 		img(src="images/logo.svg", alt="")
 	.modal__wrap
@@ -101,7 +101,33 @@
 				input(type="password" placeholder='Password').mainForm__input
 				.mainForm__df-wrap
 					button(type='submit').mainForm__btn.js-signIn Sign In
-					a(href="#").modal__link Sign Up
+	.modal__soc
+		span.modal__soc-sign or sign in with
+		.df-wrap
+			a(href="#").modal__soc-link
+				.modal__img-wrap
+					img(src="images/discord.png", alt="")
+				span.modal__soc-name Discord
+			a(href="#").modal__soc-link
+				.modal__img-wrap
+					img(src="images/telegram.png", alt="")
+				span.modal__soc-name Telegram
+
+.modal.js-modal.js-modal-up
+	a(href="index.html").logo
+		img(src="images/logo.svg", alt="")
+	.modal__wrap
+		span.modal__title Sign up to your account
+		form(action="#").mainForm
+			.mainForm__wrap
+				label.mainForm__label Login
+				input(type="text" placeholder='NewUsEr99').mainForm__input
+				label.mainForm__label Password
+				input(type="password" placeholder='Password').mainForm__input
+				label.mainForm__label Confirm password
+				input(type="password" placeholder='Password').mainForm__input
+				.mainForm__df-wrap
+					button(type='submit').mainForm__btn.js-signIn Sign Up
 	.modal__soc
 		span.modal__soc-sign or sign in with
 		.df-wrap

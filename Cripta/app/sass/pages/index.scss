@@ -24,6 +24,32 @@
 	&.active {
 		left: 0;
 	}
+
+	.bar-nav {
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+
+		span {
+			width: 113px;
+			padding: 11px 0;
+			background: #1FF5FF;
+			border-radius: 8px;
+			font-weight: 700;
+			font-size: 13px;
+			border: 2px solid #1FF5FF;
+			color: #01012C;
+			text-align: center;
+			margin: 0 5px;
+			cursor: pointer;
+			transition: all .3s ease;
+
+			&:hover {
+				background-color: transparent;
+				color: #1FF5FF;
+			}
+		}
+	}
 }
 
 .logo {
@@ -106,12 +132,13 @@
 .content-wrap {
 	overflow: hidden;
 	overflow-x: auto;
-	padding: 68px 15px 0;
+	padding: 50px 0 0;
 	margin-right: 15px;
 }
 
 .content {
 	width: 1055px;
+	padding: 50px 15px 30px;
 
 	&_df {
 		display: flex;
@@ -248,7 +275,6 @@
 		}
 	}
 }
-
 
 .qr-wrap {
 	flex-direction: column;
@@ -555,11 +581,11 @@
 	}
 }
 
-
 .coin-wrap {
 	width: 140px;
 	flex: none;
 }
+
 .element__roi {
 	width: 55px;
 	text-align: right;
@@ -704,11 +730,13 @@
 		color: #FFFFFF;
 	}
 }
+
 .graph-wrap {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 10px;
 }
+
 .graph {
 	max-width: 490px;
 	width: 100%;
@@ -726,7 +754,6 @@
 		width: 100%;
 		height: 100%;
 	}
-
 }
 
 .widthr {

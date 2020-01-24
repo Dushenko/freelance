@@ -18,6 +18,13 @@
 	}
 }
 
+.product-images-slider {
+	.slick-dots {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
 .product-slider {
 	position: relative;
 

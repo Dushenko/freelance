@@ -34,15 +34,14 @@ block content
 					li
 						a(href="#") Архив моделей
 
-		section.filter-section
+		section.filter-section.filter-section_product
 			.container
 				.left-bar
 					.product-bar
 						.filter
-							span.mob-filter.js-mob-filter Фильтр+
 							form(action="#").filter-form.js-filter-form
 								.filter-form__wrap
-									span.product-name Allford
+									span.product-name.product-name_mob Allford
 									span.product-size 34х27х11 см
 									.filter-form__color-wrap
 										input(type="radio" id="color1" name="color" value="")
@@ -81,10 +80,26 @@ block content
 									.filter-form__service
 										input(type="checkbox" id="ser1" name="" value="")
 										label(for="ser1").service-label Тиснение инициалов +200 р
-										input(type="checkbox" id="ser2" name="" value="")
-										label(for="ser2").service-label Дополнительный поклад на карман +350 p
-										input(type="checkbox" id="ser3" name="" value="")
-										label(for="ser3").service-label Молния на внутренний карман  +290 р
+											a(href="#")
+
+										.filter-form__symbol
+											img(src="images/symbol.png", alt="")
+			
+										span.filter-form__symbol-text Добавить символ
+										
+										.filter-form__symbol-img
+											img(src="images/sl.png", alt="")
+
+										.filter-form__input-text
+											input(type="text" placeholder="ВВЕДИТЕ ДО 10 СИМВОЛОВ")
+										
+										.filter-form__wrap
+											input(type="checkbox" id="ser2" name="" value="")
+											label(for="ser2").service-label Дополнительный поклад на карман +350 p
+												a(href="#")
+											input(type="checkbox" id="ser3" name="" value="")
+											label(for="ser3").service-label Молния на внутренний карман  +290 р
+												a(href="#")
 
 									.filter-tabs
 										.filter-tab
@@ -122,16 +137,24 @@ block content
 
 												p Больше читайте 
 													a(href="#") тут.
-				
+									
+									.filter-form__buy-wrap
+										span 10800 рублей
+										button(type="submit") Купить
+
 				.product-images
-					.product-img
-						img(src="images/11.jpg", alt="")
-					.product-img
-						img(src="images/12.jpg", alt="")
-					.product-img
-						img(src="images/13.jpg", alt="")
-					.product-img
-						img(src="images/14.jpg", alt="")
+					span.mob-filter.js-mob-filter
+						span.product-name Allford
+					.product-images-wrap
+						.product-images-slider.js-images-slider
+							.product-img
+								img(src="images/11.jpg", alt="")
+							.product-img
+								img(src="images/12.jpg", alt="")
+							.product-img
+								img(src="images/13.jpg", alt="")
+							.product-img
+								img(src="images/14.jpg", alt="")
 							
 
 		section.instagram-section

@@ -1,13 +1,31 @@
 "use strict";
 
 $(document).ready(function () {
-  $('.js-main-menu li').hover(function () {
-    $(this).find('.js-menu').toggleClass('active');
-  });
   $('.js-menu li').click(function () {
     $(this).find('.js-sub-menu').slideToggle();
     $(this).toggleClass('active');
-  }); //burger
+  });
+
+  if ($(window).width() > 900) {
+    $('.js-main-menu li').hover(function () {
+      $(this).find('.js-menu').toggleClass('active');
+    });
+  }
+
+  ;
+
+  if ($(window).width() < 900) {
+    $('.js-main-menu li').click(function () {
+      $(this).find('.js-menu').slideDown();
+      $(this).addClass('toggle');
+    });
+    $('.toggle').click(function () {
+      $(this).find('.js-menu').slideUp();
+      $(this).removeClass('toggle');
+    });
+  }
+
+  ; //burger
 
   if (document.querySelector('.js-burger')) {
     $('.js-burger').click(function () {
@@ -39,6 +57,24 @@ $(document).ready(function () {
     arrows: false,
     infinite: true,
     focusOnSelect: false
+  });
+  $('.js-images-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    infinite: true,
+    focusOnSelect: false,
+    responsive: [{
+      breakpoint: 3000,
+      settings: "unslick"
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
   });
 });
 $(document).ready(function () {

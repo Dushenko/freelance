@@ -1,10 +1,4 @@
 .header {
-	// position: absolute;
-	// top: 0;
-	// left: 0;
-	// right: 0;
-	z-index: 1;
-
 	.header-top {
 		padding: 10px 0;
 		border-bottom: 2px solid #000;
@@ -60,6 +54,7 @@
 		height: 100vh;
 		padding: 30px 15px;
 		z-index: 1;
+
 		@media screen and (min-width: 768px) {
 			top: 50px;
 		}
@@ -80,11 +75,20 @@
 	}
 
 	.main-menu {
+		width: 280px;
+		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		overflow: hidden;
+		overflow-y: auto;
+		height: calc(100vh - 100px);
+
 		@media screen and (min-width: 900px) {
 			flex-direction: row;
+			width: auto;
+			height: auto;
+			overflow: visible;
 		}
 
 		li {
@@ -92,9 +96,11 @@
 			margin: 0 0 20px;
 			border-bottom: 2px solid transparent;
 			cursor: pointer;
+			text-align: center;
 			@media screen and (min-width: 900px) {
 				padding: 30px 15px;
 				margin: 0;
+				text-align: left;
 			}
 			&:last-child {
 				margin-right: 0;
@@ -128,24 +134,33 @@
 	}
 
 	.menu {
-		position: absolute;
-		top: 70px;
-		left: -20px;
-		padding: 25px 20px 20px;
-		background-color: #fff;
-		opacity: 0;
-		visibility: hidden;
-		transition: all .3s ease;
+		display: none;
+		padding-top: 10px;
+		@media screen and (min-width: 900px) {
+			position: absolute;
+			top: 70px;
+			left: -20px;
+			padding: 25px 20px 20px;
+			background-color: #fff;
+			opacity: 0;
+			visibility: hidden;
+			transition: all .3s ease;
+			display: block;
+		}
 		
 		&.active {
-			top: 80px;
-			opacity: 1;
-			visibility: visible;
-			display: flex;
-			flex-direction: column;
+			display: block;
+			@media screen and (min-width: 900px) {
+				top: 80px;
+				opacity: 1;
+				visibility: visible;
+				display: flex;
+				flex-direction: column;
+			}
 		}
 
 		span {
+			display: block;
 			font-family: "Twentytwelve Sans C";
 			font-size: 22px;
 			font-weight: 700;
