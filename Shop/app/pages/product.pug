@@ -1,0 +1,154 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.menu-section
+			.container
+				ul.product-menu
+					li
+						a(href="#") Все изделия
+					li
+						a(href="#") Женское
+					li
+						a(href="#") Мужское
+					li
+						a(href="#").active Сумки
+					li
+						a(href="#") Рюкзаки
+					li
+						a(href="#") Кошельки
+					li
+						a(href="#") Аксессуары
+					li
+						a(href="#") Сертификаты
+					li
+						a(href="#") Уход
+					li
+						a(href="#") Распродажа
+					li
+						a(href="#") Архив моделей
+
+		section.filter-section
+			.container
+				.left-bar
+					.product-bar
+						.filter
+							span.mob-filter.js-mob-filter Фильтр+
+							form(action="#").filter-form.js-filter-form
+								.filter-form__wrap
+									span.product-name Allford
+									span.product-size 34х27х11 см
+									.filter-form__color-wrap
+										input(type="radio" id="color1" name="color" value="")
+										label(for="color1").color-label(style="background-color: #265d3c")
+										input(type="radio" id="color2" name="color" value="")
+										label(for="color2").color-label(style="background-color: #750679")
+										input(type="radio" id="color3" name="color" value="")
+										label(for="color3").color-label(style="background-color: #9a6606")
+										input(type="radio" id="color4" name="color" value="")
+										label(for="color4").color-label(style="background-color: #282724")
+										input(type="radio" id="color5" name="color" value="")
+										label(for="color5").color-label(style="background-color: #909493")
+										input(type="radio" id="color6" name="color" value="")
+										label(for="color6").color-label(style="background-color: #00417c")
+									span.product-color Цвет: винный винтаж
+									span.product-time Изготовление: 6 недель
+									p.product-text Надежный портфель с объемным карманом и крепкими ручками. Регулируемый плечевой ремень в комплекте. Внутри подкладка на ваш выбор.
+									span.product-info Индивидуальные дополнения:
+									span.product-info Выберите подклад:
+									.filter-form__material-wrap
+										input(type="radio" id="material1" name="material" value="")
+										label(for="material1").material-label(style="background-image: url('images/с1.png')")
+										input(type="radio" id="material2" name="material" value="")
+										label(for="material2").material-label(style="background-image: url('images/с2.png')")
+										input(type="radio" id="material3" name="material" value="")
+										label(for="material3").material-label(style="background-image: url('images/с3.png')")
+										input(type="radio" id="material4" name="material" value="")
+										label(for="material4").material-label(style="background-image: url('images/с4.png')")
+										input(type="radio" id="material5" name="material" value="")
+										label(for="material5").material-label(style="background-image: url('images/с5.png')")
+										input(type="radio" id="material6" name="material" value="")
+										label(for="material6").material-label(style="background-image: url('images/с6.png')")
+										input(type="radio" id="material7" name="material" value="")
+										label(for="material7").material-label(style="background-image: url('images/с3.png')")
+									
+									.filter-form__service
+										input(type="checkbox" id="ser1" name="" value="")
+										label(for="ser1").service-label Тиснение инициалов +200 р
+										input(type="checkbox" id="ser2" name="" value="")
+										label(for="ser2").service-label Дополнительный поклад на карман +350 p
+										input(type="checkbox" id="ser3" name="" value="")
+										label(for="ser3").service-label Молния на внутренний карман  +290 р
+
+									.filter-tabs
+										.filter-tab
+											.filter-tab__head
+												span ХАРАКТЕРИСТИКИ
+											.filter-tab__content
+												p Кожа винтажной выделки, используемая при создании этого изделия, обладает рядом свойст.Винтажная кожа самая матовая в представленной линейке, благодаря чему смотрится самобытно, как и должна выглядеть натуральная кожа в своем первозданном виде.
+
+												p Больше читайте 
+													a(href="#") тут.
+
+										.filter-tab
+											.filter-tab__head
+												span ТИП КОЖИ
+											.filter-tab__content
+												p Кожа винтажной выделки, используемая при создании этого изделия, обладает рядом свойст.Винтажная кожа самая матовая в представленной линейке, благодаря чему смотрится самобытно, как и должна выглядеть натуральная кожа в своем первозданном виде.
+
+												p Больше читайте 
+													a(href="#") тут.
+
+										.filter-tab
+											.filter-tab__head
+												span РАЗМЕРЫ
+											.filter-tab__content
+												p Кожа винтажной выделки, используемая при создании этого изделия, обладает рядом свойст.Винтажная кожа самая матовая в представленной линейке, благодаря чему смотрится самобытно, как и должна выглядеть натуральная кожа в своем первозданном виде.
+
+												p Больше читайте 
+													a(href="#") тут.
+
+										.filter-tab
+											.filter-tab__head
+												span ДОСТАВКА
+											.filter-tab__content
+												p Кожа винтажной выделки, используемая при создании этого изделия, обладает рядом свойст.Винтажная кожа самая матовая в представленной линейке, благодаря чему смотрится самобытно, как и должна выглядеть натуральная кожа в своем первозданном виде.
+
+												p Больше читайте 
+													a(href="#") тут.
+				
+				.product-images
+					.product-img
+						img(src="images/11.jpg", alt="")
+					.product-img
+						img(src="images/12.jpg", alt="")
+					.product-img
+						img(src="images/13.jpg", alt="")
+					.product-img
+						img(src="images/14.jpg", alt="")
+							
+
+		section.instagram-section
+			.container
+				h2.section-title.section-title_big Вам также могут понравиться
+
+				.instagram-wrap
+					a(href="#").instagram
+						img(src="images/1.jpg", alt="")
+					a(href="#").instagram
+						img(src="images/2.png", alt="")
+					a(href="#").instagram
+						img(src="images/3.png", alt="")
+					a(href="#").instagram
+						img(src="images/4.png", alt="")
+					a(href="#").instagram
+						img(src="images/5.png", alt="")
+
+block footer
+	include ../blocks/footer/footer	

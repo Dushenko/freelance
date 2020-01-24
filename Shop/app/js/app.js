@@ -18,4 +18,9 @@ $(document).ready(function () {
 		$('.js-filter-form').slideToggle();
 	});
 
+	$('.filter-tab__head').click(function(){
+		$(this).next().slideToggle();
+		$(this).toggleClass('active');
+	});
+
 });

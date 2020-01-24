@@ -58,4 +58,8 @@ $(document).ready(function () {
   $('.js-mob-filter').click(function () {
     $('.js-filter-form').slideToggle();
   });
+  $('.filter-tab__head').click(function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('active');
+  });
 });
