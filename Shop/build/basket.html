@@ -83,7 +83,75 @@
       </header>
       <main class="main">
         <section class="basket-section">
-          <div class="container"></div>
+          <div class="container">
+            <h2 class="basket-title">Корзина</h2>
+            <div class="basket-wrap">
+              <div class="basket-header border"><span class="prod-width">Товар</span><span class="name-width">Описание</span><span class="avai-width">Наличие</span><span class="price-width">Цена за единицу</span><span class="count-width">Кол-во</span><span class="count-width">Всего</span></div>
+              <div class="basket-row border">
+                <div class="basket-img"><img src="images/13.jpg" alt=""></div>
+                <div class="basket-info">
+                  <div class="basket-product">
+                    <div class="basket-name-wrap name-width"><span class="basket-name">Alford винный Vintage</span><span class="basket-sub-name">Подкладка №44</span></div><span class="availability avai-width">В наличии</span><span class="basket-price price-width">10800 руб</span>
+                    <form class="priceForm count-width" action="#">
+                      <div class="priceForm__counter">
+                        <input class="priceForm__arrow priceForm__minus" id="minus" type="button" value="">
+                        <input id="quantity" type="number" value="1" name="quantity" readonly>
+                        <input class="priceForm__arrow priceForm__plus" id="plus" type="button" value="">
+                      </div>
+                      <div class="priceForm__field"><span id="total-price"></span><strong class="skuBestPrice">10800</strong><span class="priceForm__currency">руб</span></div>
+                    </form>
+                    <div class="basket-remove"></div>
+                  </div>
+                  <div class="basket-product">
+                    <div class="basket-name-wrap name-width"><span class="basket-sub-name">Дополнительный карман на подкладку</span></div><span class="availability avai-width"></span><span class="basket-price price-width"> </span>
+                    <div class="price-form count-width"><span>380 руб</span></div>
+                    <div class="basket-remove"> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-row border">
+                <div class="basket-img"><img src="images/1.jpg" alt=""></div>
+                <div class="basket-info">
+                  <div class="basket-product">
+                    <div class="basket-name-wrap name-width"><span class="basket-name">Тиснение инициалов:<span class="initial">happy</span></span></div><span class="availability avai-width"></span><span class="basket-price price-width"> </span>
+                    <div class="price-form count-width"><span>200 руб</span></div>
+                    <div class="basket-remove"> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-row border">
+                <div class="basket-img"><img src="images/m1.jpg" alt=""></div>
+                <div class="basket-info">
+                  <div class="basket-product">
+                    <div class="basket-name-wrap name-width"><span class="basket-name">Картхолдер коричневый Vintage</span></div><span class="availability avai-width"> </span><span class="basket-price price-width">650 руб</span>
+                    <form class="priceForm count-width" action="#">
+                      <div class="priceForm__counter">
+                        <input class="priceForm__arrow priceForm__minus" id="minus" type="button" value="">
+                        <input id="quantity" type="number" value="1" name="quantity" readonly>
+                        <input class="priceForm__arrow priceForm__plus" id="plus" type="button" value="">
+                      </div>
+                      <div class="priceForm__field"><span id="total-price"></span><strong class="skuBestPrice">200</strong><span class="priceForm__currency">руб</span></div>
+                    </form>
+                    <div class="basket-remove"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="all-prise"><span>Всего товаров</span><span>13950 руб</span></div>
+              <div class="basket-details">
+                <div class="certificate-wrap"><span>Подарочный сертификат</span>
+                  <form class="certificate-form" action="#">
+                    <input type="text">
+                    <button type="submit">Добавить</button>
+                  </form>
+                </div>
+                <div class="stock-wrap">
+                  <div class="stock-row"><span>Cкидка</span><span>520 руб</span></div>
+                  <div class="stock-row"><span class="all-stock">Итого</span><span>13430 руб</span></div>
+                </div>
+              </div>
+              <div class="basket-nav"><a class="left-arrow" href="#">Продолжить покупки</a><a class="right-arrow" href="#">Указать адресс доставки</a></div>
+            </div>
+          </div>
         </section>
       </main>
     </div>

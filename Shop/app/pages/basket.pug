@@ -10,4 +10,115 @@ block content
 	main.main
 		section.basket-section
 			.container
-				
+				h2.basket-title Корзина
+				.basket-wrap
+					.basket-header.border
+						span.prod-width Товар
+						span.name-width Описание
+						span.avai-width Наличие
+						span.price-width Цена за единицу
+						span.count-width Кол-во
+						span.count-width Всего
+					
+					.basket-row.border
+						.basket-img
+							img(src="images/13.jpg", alt="")
+						.basket-info
+							.basket-product
+								.basket-name-wrap.name-width
+									span.basket-name Alford винный Vintage
+									span.basket-sub-name Подкладка №44
+
+								span.availability.avai-width В наличии
+
+								span.basket-price.price-width 10800 руб
+
+								form(action="#").priceForm.count-width
+									.priceForm__counter
+										input.priceForm__arrow.priceForm__minus#minus(type="button" value="")
+										input#quantity(type="number" value="1" name="quantity" readonly)
+										input.priceForm__arrow.priceForm__plus#plus(type="button" value="")
+									.priceForm__field
+										span#total-price
+										strong.skuBestPrice 10800
+										span.priceForm__currency руб
+
+								.basket-remove
+
+							.basket-product
+								.basket-name-wrap.name-width
+									span.basket-sub-name Дополнительный карман на подкладку
+
+								span.availability.avai-width
+
+								span.basket-price.price-width 
+
+								.price-form.count-width
+									span 380 руб
+
+								.basket-remove 
+
+					.basket-row.border
+						.basket-img
+							img(src="images/1.jpg", alt="")
+						.basket-info
+							.basket-product
+								.basket-name-wrap.name-width
+									span.basket-name Тиснение инициалов:
+										span.initial happy
+
+								span.availability.avai-width
+
+								span.basket-price.price-width 
+
+								.price-form.count-width
+									span 200 руб
+
+								.basket-remove 
+						
+					.basket-row.border
+						.basket-img
+							img(src="images/m1.jpg", alt="")
+						.basket-info
+							.basket-product
+								.basket-name-wrap.name-width
+									span.basket-name Картхолдер коричневый Vintage
+
+								span.availability.avai-width 
+
+								span.basket-price.price-width 650 руб
+
+								form(action="#").priceForm.count-width
+									.priceForm__counter
+										input.priceForm__arrow.priceForm__minus#minus(type="button" value="")
+										input#quantity(type="number" value="1" name="quantity" readonly)
+										input.priceForm__arrow.priceForm__plus#plus(type="button" value="")
+									.priceForm__field
+										span#total-price
+										strong.skuBestPrice 200
+										span.priceForm__currency руб
+
+								.basket-remove
+					
+					.all-prise
+						span Всего товаров
+						span 13950 руб
+
+					.basket-details
+						.certificate-wrap
+							span Подарочный сертификат
+							form(action="#").certificate-form
+								input(type="text")
+								button(type="submit") Добавить
+
+						.stock-wrap
+							.stock-row
+								span Cкидка
+								span 520 руб
+							.stock-row
+								span.all-stock Итого
+								span 13430 руб
+
+					.basket-nav
+						a(href="#").left-arrow Продолжить покупки
+						a(href="#").right-arrow Указать адресс доставки
