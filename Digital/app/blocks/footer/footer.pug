@@ -6,7 +6,7 @@ footer.footer
 					.feedback
 
 						.feedback__image
-							img(src="../images/footer-photo.jpg" alt="")
+							img(src="images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
@@ -23,7 +23,7 @@ footer.footer
 					.feedback
 
 						.feedback__image
-							img(src="../images/footer-photo.jpg" alt="")
+							img(src="images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
@@ -40,7 +40,7 @@ footer.footer
 					.feedback
 
 						.feedback__image
-							img(src="../images/footer-photo.jpg" alt="")
+							img(src="images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
@@ -57,7 +57,7 @@ footer.footer
 					.feedback
 
 						.feedback__image
-							img(src="../images/footer-photo.jpg" alt="")
+							img(src="images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
@@ -74,7 +74,7 @@ footer.footer
 					.feedback
 
 						.feedback__image
-							img(src="../images/footer-photo.jpg" alt="")
+							img(src="images/footer-photo.jpg" alt="")
 						.feedback__info
 							.customer-info
 								span.customer-name Veleria Lopez
@@ -109,7 +109,7 @@ footer.footer
 
 .mask.js-mask
 
-.modal.js-modal-step1
+.modal.scroll-wrap.js-modal-step1
 	.modal__wrap
 		.modal__header
 			.modal__info.modal__info_violet
@@ -119,12 +119,11 @@ footer.footer
 			.modal__info.modal__info_gray
 				span.modal__icon 2
 				span.modal__subheading Select service
-
-		.modal__text
-			h3.modal__title Buy 
-				span 500 
-				| Instagram followers
-			span.modal__subtitle Fill in the data for the purchase
+		
+		h3.modal__title Buy 
+			span 500 
+			| Instagram followers
+		span.modal__subtitle Fill in the data for the purchase
 
 		form(action="#").lk-form
 			.lk-form__wrap
@@ -136,23 +135,125 @@ footer.footer
 					label.lk-form__label Email
 					input(type="text" placeholder="gmail@com").lk-form__input
 
-			button.lk-form__modal-btn(type="submit") Select account
+			button(type="submit").lk-form__modal-btn Select account
 
-.modal.js-modal-step2
+.modal.scroll-wrap.js-modal-step2
 	.modal__wrap
 		.modal__header
 			.modal__info.modal__info_confirm
-				span.modal__icon 1
+				span.modal__icon 
 				span.modal__subheading Information
 
 			.modal__info.modal__info_violet
 				span.modal__icon 2
 				span.modal__subheading Select service
 
+		.modal__user
+			.modal__image 
+				img(src="images/lk-img.jpg" alt="")
+			.modal__user-info
+				.modal__inner
+					span.modal__username @Instagram.username38
+					span.modal__refresh
+				.modal__details
+					.modal__posts
+						span.modal__number 56
+						span.modal__social Posts
+					.modal__followers
+						span.modal__number 335
+						span.modal__social Followers
+					.modal__following 
+						span.modal__number 423
+						span.modal__social Following
+		
+		form(action="#").lk-form
+			.lk-form__wrap
+				.modal__plan 
+					.modal__plan-info
+						span.modal__plan-type Standard
+						span.modal__package Package: 
+							span 250 
+								span followers
+						span.modal__price Price: 
+							span 4,99 $
 
+					label.switch
+						input(type="checkbox")
+						span.slider
 
+				.modal__plan 
+					.modal__plan-info
+						span.modal__plan-type Premium
+						span.modal__package Package: 
+							span 250 
+								span followers
+						span.modal__price Price: 
+							span 4,99 $
 
+					label.switch
+						input(type="checkbox")
+						span.slider
 
+				.modal__links
+					button(type="submit").lk-form__modal-btn Buy now 
+					button(type="submit").lk-form__basket-btn
 
+		a(href="#").modal__rules By purchasing, you agree with rules
 
+.modal.scroll-wrap.modal_basket.js-modal-step3
+	.modal__cart-wrap
+		form(action="#").lk-form
+			.lk-form__wrap
+				.modal__cart
+					span.modal__my-cart My Cart (2)
+					span.modal__clear Clear cart:
+						span.shop-cart__delete
 
+				.modal__cart-container
+					.modal__cart-item
+						.modal__image 
+							img(src="images/cart.jpg" alt="")
+						
+						.modal__cart-info
+							.modal__user-info
+								.modal__inner
+									span.modal__username @Instagram.username38
+									span.modal__refresh
+							.modal__plan.modal__plan_cart
+								.modal__plan-info
+									span.modal__plan-type Standard
+										span.shop-cart__delete
+									span.modal__package Package: 
+										span 250 
+											span followers
+					span.modal__price Price: 
+							span 4,99 $
+
+				.modal__cart-container
+					.modal__cart-item
+						.modal__image 
+							img(src="images/cart.jpg" alt="")
+						
+						.modal__cart-info
+							.modal__user-info
+								.modal__inner
+									span.modal__username @Instagram.username38
+									span.modal__refresh
+							.modal__plan.modal__plan_cart
+								.modal__plan-info
+									span.modal__plan-type Standard
+										span.shop-cart__delete
+									span.modal__package Package: 
+										span 250 
+											span followers
+					span.modal__price Price: 
+							span 4,99 $
+
+				.modal__total
+					span.modal__pay To pay:
+					span.modal__total-price 12,98 $
+
+				button(type="submit").lk-form__modal-btn.lk-form__modal-btn_payment Proceed to payment
+				button(type="submit").lk-form__modal-btn.lk-form__modal-btn_transparent Go to shopping
+
+				a.modal__rules By purchasing, you agree with rules

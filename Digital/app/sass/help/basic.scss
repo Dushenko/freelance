@@ -103,10 +103,10 @@ select {
 
 //scroll
 .scroll-wrap::-webkit-scrollbar {
-	width: 3px;
+	width: 4px;
 	background-color: #ccc;
 }
 .scroll-wrap::-webkit-scrollbar-thumb {
-	background-color: rgba(0,0,0,0.75);
+	background-color: #4e37b2;
 	border-radius: 2px;
 }
