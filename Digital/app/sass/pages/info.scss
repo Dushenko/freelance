@@ -29,7 +29,7 @@
   display: block;
   font-size: 16px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 700;
   color: #333333;
   margin-bottom: 20px;
 }
@@ -129,26 +129,34 @@
 .affiliate-list {
 
   ul {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     li {
-      line-height: 18px;
+      line-height: 21px;
     }
   }
 
   ol {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
     li {
       position: relative;
+      padding-left: 39px;
 
       &:before {
-        
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 1px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #D9D9D9;
       }
     }
   }
 
   mark {
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 
