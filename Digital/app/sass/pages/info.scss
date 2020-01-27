@@ -126,24 +126,30 @@
   }
 }
 
-.affiliate {
-    padding: 20px 61px 41px 42px;
-    background: #ffffff;
-    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.18);
-    border-radius: 15px;
+.affiliate-list {
 
-  &__header {
-    font-size: 16px;
-    line-height: 21px;
-    margin-bottom: 10px;
+  ul {
+    margin-bottom: 15px;
+    li {
+      line-height: 18px;
+    }
   }
 
-  &__text {
-      span {
-        font-weight: 600;
+  ol {
+    margin-bottom: 15px;
+
+    li {
+      position: relative;
+
+      &:before {
+        
       }
+    }
   }
 
+  mark {
+    font-weight: 500;
+  }
 }
 
 

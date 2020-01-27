@@ -149,7 +149,7 @@ block content
 						.tabs__content.js-tab-content
 							.affiliate-wrap
 								.user-info
-									span.user-info__title.tabs__item.tabs__item_program.active Affiliate program
+									span.user-info__title.program-icon Affiliate program
 									.user-info__wrap
 										span.user-info__data Referrals:
 											span 4
@@ -160,36 +160,42 @@ block content
 									.percent
 										span.percent__amount 10% 
 											span (0 $ - 100 $)
-										.percent__bar
-											.percent__bar_mode
+										.percent__line
+											.percent__bar(style="width: 38%")
 												span.percent__num 38 $
-									.percent
-										span.percent__amount 15% 
-											span (101 $ - 500 $)
-										.percent__bar
-											.percent__bar_mode
-												span.percent__num 250 $
-									.percent
-										span.percent__amount 20% 
-											span (501 $ - 1000 $)
-										.percent__bar
-											.percent__bar_mode
-												span.percent__num 0$
-
 
 									.percent
 										span.percent__amount 25% 
 											span (1001 $ - 3000 $)
-										.percent__bar
-											.percent__bar_mode
-												span.percent__num 0$
+										.percent__line
+											span.percent__num 0$
+
+									.percent
+										span.percent__amount 15% 
+											span (101 $ - 500 $)
+										.percent__line
+											.percent__bar(style="width: 50%")
+												span.percent__num 250 $
 
 									.percent
 										span.percent__amount 30% 
 											span (3001 $ - ∞)
-										.percent__bar
-											.percent__bar_mode
-												span.percent__num 0$
+										.percent__line
+											span.percent__num 0$
+
+									.percent
+										span.percent__amount 20% 
+											span (501 $ - 1000 $)
+										.percent__line
+											span.percent__num 0$
+
+									.percent
+										a(href="#").percent-link Cashout: 
+											span 350,80 $
+
+									
+
+									
 
 								.cart
 									span.cart-title My Refferals
@@ -198,32 +204,38 @@ block content
 										.lk-form__wrap
 											.lk-form__field
 												button(type="submit").lk-form__search-btn
-												input(type="text" placeholder="Search").lk-form__input
+												input(type="text" placeholder="Search ID").lk-form__input
+
 								.order
 									.order__info
 										span.order__id ID
-										span.order__items Items
-										span.order__price Order price
+										span.order__user User
+										span.order__amount Amount
 										span.order__date Created At
 
 								.shop-cart
 									span.shop-cart__id 4592
-										span.shop-cart__delete
-									.shop-cart__items
-										.shop-cart__item
-											span 250 
-											| followers - 
-											span 6.99$
-										.shop-cart__item
-											span 250 
-											| followers - 
-											span 6.99$
-									span.shop-cart__price $ 12.98
+									span.shop-cart__user Username
+									span.shop-cart__amount $ 70
 									span.shop-cart__date 16 January, 2020
 
+								.shop-cart
+									span.shop-cart__id 4592
+									span.shop-cart__user Username
+									span.shop-cart__amount $ 70
+									span.shop-cart__date 16 January, 2020
 
+								.shop-cart
+									span.shop-cart__id 4592
+									span.shop-cart__user Username
+									span.shop-cart__amount $ 70
+									span.shop-cart__date 16 January, 2020
 
-
+								.shop-cart
+									span.shop-cart__id 4592
+									span.shop-cart__user Username
+									span.shop-cart__amount $ 70
+									span.shop-cart__date 16 January, 2020
 
 						.tabs__content.js-tab-content
 							.balances-wrap
