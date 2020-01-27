@@ -1,0 +1,25 @@
+extends ../layouts/default
+
+block head
+    - var pageTitle = '';
+
+block header
+    include ../blocks/header/header
+
+block content
+    main.main
+        section.info-section
+            .container
+                .info-wrap
+                    .user-info
+                        span.user-info__title.refund-icon Refund Policy
+                    
+                    ul.rules-list
+                        li We ask you to read this policy carefully.
+                        li Digital products Once your digital product has been confirmed and shipped to you, we do not refund it.
+                        li In case of difficulties in obtaining or downloading digital products, please contact us immediately.
+
+                    .contact-us
+                        span.contact-us__header Contact us:
+                        p.contact-us__text We ask you to contact us if you have any questions about our return policy:
+                        a(href="mailto:suport@addpopular.com").contact-us__email suport@addpopular.com

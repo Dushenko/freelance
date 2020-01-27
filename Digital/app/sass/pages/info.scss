@@ -1,0 +1,149 @@
+.info-section {
+  background-image: url("../images/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  margin: -80px 0 0 0;
+  position: relative;
+  padding: 140px 0 56px;
+  font-family: "Futura PT";
+
+  .container {
+    max-width: 892px;
+  }
+}
+
+.info-wrap {
+  padding: 20px 15px 32px 15px;
+  background-color: #fff;
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.18);
+  border-radius: 15px;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 61px 32px 47px;
+  }
+}
+
+.policy-title {
+  display: block;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.rules-wrap {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.rules {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    background: rgba(78, 55, 178, 0.52);
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    color: #ffffff;
+    border-radius: 50%;
+    @media screen and (min-width: 768px) {
+      width: 49px;
+      height: 49px;
+      font-size: 18px;
+    }
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+  }
+}
+
+.company-info {
+  a {
+    color: #000;
+    font-weight: 700;
+    &:hover {
+      color: rgb(78, 55, 178);
+    }
+  }
+}
+
+.rules-list {
+  li {
+    margin-bottom: 20px;
+    line-height: 19px;
+  }
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    line-height: 19px;
+    margin-bottom: 5px;
+  }
+
+  &__email {
+    font-weight: 400;
+    color: #000;
+    font-family: 'Futura PT';
+
+    &:hover {
+      color: #4e37b2;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      margin-right: 8px;
+      width: 14px;
+      height: 11px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.36'%3E%3Cpath d='M7.00041 7.61558L5.26841 5.96631L0.316406 10.5845C0.496406 10.7662 0.739406 10.8793 1.00741 10.8793L12.9934 10.8793C13.2604 10.8793 13.5024 10.7662 13.6814 10.5845L8.73241 5.96631L7.00041 7.61558Z' fill='black'/%3E%3Cpath d='M13.6853 0.294824C13.5053 0.112055 13.2633 0 12.9943 0L1.00834 0C0.741336 0 0.499336 0.113143 0.319336 0.297L7.00134 6.52747L13.6853 0.294824Z' fill='black'/%3E%3Cpath d='M0 0.954712L0 9.99308L4.833 5.52503L0 0.954712Z' fill='black'/%3E%3Cpath d='M9.16699 5.52536L14 9.99342L14 0.951782L9.16699 5.52536Z' fill='black'/%3E%3C/g%3E%3C/svg%3E");
+    }
+  }
+}
+
+.affiliate {
+    padding: 20px 61px 41px 42px;
+    background: #ffffff;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.18);
+    border-radius: 15px;
+
+  &__header {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+      span {
+        font-weight: 600;
+      }
+  }
+
+}
+
+
