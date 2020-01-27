@@ -1,0 +1,92 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.basket-section
+			.container
+				h2.basket-title Доставка
+				.certificate-wrap.certificate-wrap_border
+					span Личные данные
+				
+				form(action="#").delivery-form
+					.delivery-form__wrap
+						.delivery-form__row
+							input(type="text" placeholder="Имя")
+							input(type="text" placeholder="Фамилия")
+
+						.delivery-form__row
+							input(type="text" placeholder="Номер мобильного телефона")
+							input(type="text" placeholder="Дата рождения")
+						input(type="text" placeholder="Email")
+				
+				.certificate-wrap.certificate-wrap_border
+					span Адресс доставки
+				
+				form(action="#").delivery-form
+					.delivery-form__wrap
+						.delivery-form__row
+							input(type="text" placeholder="Страна")
+							input(type="text" placeholder="Город/Регион")
+
+						.delivery-form__row
+							input(type="text" placeholder="Улица")
+							.delivery-form__col
+								input(type="text" placeholder="Дом/Корпус")
+								input(type="text" placeholder="Квартира")
+
+				.certificate-wrap.certificate-wrap_border
+					span Способ доставки
+				
+				.delivery-method
+					form(action="#").delivery-form
+						.delivery-form__wrap
+							.delivery-form__method-wrap
+								span.delivery-form__title Выберите удобный для вас способ доставки
+								.delivery-form__method
+									input(type="radio" id="m1" value="m1" name="m1")
+									label(for="m1") Курьерской службой сдэк/dpd
+										span до двери
+										br
+										span срок доставки увеличивается на 1-2 рабочих дня
+									span 390 руб
+								.delivery-form__method
+									input(type="radio" id="m2" value="m2" name="m1")
+									label(for="m2") Курьерской службой сдэк/dpd
+										span до пункта выдачи
+										br
+										span выбрать близжайший пункт
+									span БЕСПЛАТНО
+								.delivery-form__method
+									input(type="radio" id="m3" value="m3" name="m1")
+									label(for="m3") Почтой России
+										span до отделения Почты России
+									span БЕСПЛАТНО
+
+							span.delivery-form__sub-title Комментарий к заказу
+							textarea(type="text").delivery-form__textarea
+									
+					.delivery-price
+						.price-row
+							span Всего товаров
+							span 13500 руб
+						.price-row
+							span Скидка 
+							span 350 руб
+						.price-row
+							span ВСЕГО
+							span 13150 руб
+								
+
+				
+				
+				.basket-nav
+					a(href="#").left-arrow Назад
+					a(href="#").right-arrow Оплатить заказ
+
+	include ../blocks/modal/modal

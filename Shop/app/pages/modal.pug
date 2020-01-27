@@ -1,0 +1,12 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.modal-section
+			include ../blocks/modal/modal

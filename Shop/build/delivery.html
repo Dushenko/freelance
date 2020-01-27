@@ -82,97 +82,70 @@
         </div>
       </header>
       <main class="main">
-        <section class="intro-section">
-          <div class="intro-slider js-intro-slider">
-            <div class="slide" style="background-image: url('images/intro-bg.jpg')"></div>
-            <div class="slide" style="background-image: url('images/intro-bg.jpg')"></div>
-            <div class="slide" style="background-image: url('images/intro-bg.jpg')"></div>
-            <div class="slide" style="background-image: url('images/intro-bg.jpg')"></div>
-            <div class="slide" style="background-image: url('images/intro-bg.jpg')"></div>
-          </div>
-        </section>
-        <section class="catalog-section">
+        <section class="basket-section">
           <div class="container">
-            <h2 class="section-title">Каталог</h2><a class="sub-link" href="#">Смотреть все ></a>
-            <div class="catalog-head"><a class="catalog-link" href="#"><img src="images/m8.jpg" alt=""><span class="catalog-text">женское</span></a><a class="catalog-link" href="#"><img src="images/m9.jpg" alt=""><span class="catalog-text">мужское</span></a></div>
-            <div class="grid"><a class="grid__item grid__item_high" href="#" style="background-image: url('images/m1.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item" href="#" style="background-image: url('images/m2.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item" href="#" style="background-image: url('images/m3.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item grid__item_high" href="#" style="background-image: url('images/m4.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item grid__sizer" href="#" style="background-image: url('images/m5.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item grid__sizer" href="#" style="background-image: url('images/m6.jpg')"><span class="grid-text">Сумки</span></a><a class="grid__item grid__item_small" href="#" style="background-image: url('images/m7.jpg')"><span class="grid-text">Сумки</span></a></div>
-          </div>
-        </section>
-        <section class="new-section">
-          <div class="container">
-            <h2 class="section-title">Новинки</h2><a class="sub-link" href="#">Все новинки ></a>
-            <div class="new-product">
-              <div class="product-slider js-product-slider">
-                <div class="slider">
-                  <div class="product">
-                    <div class="product__img" style="background-image: url('images/new-img.jpg')"></div>
-                    <h3 class="product__name">Новый чехол для очков</h3>
-                  </div>
+            <h2 class="basket-title">Доставка</h2>
+            <div class="certificate-wrap certificate-wrap_border"><span>Личные данные</span></div>
+            <form class="delivery-form" action="#">
+              <div class="delivery-form__wrap">
+                <div class="delivery-form__row">
+                  <input type="text" placeholder="Имя">
+                  <input type="text" placeholder="Фамилия">
                 </div>
-                <div class="slider">
-                  <div class="product">
-                    <div class="product__img" style="background-image: url('images/new-img.jpg')"></div>
-                    <h3 class="product__name">Новый чехол для очков</h3>
-                  </div>
+                <div class="delivery-form__row">
+                  <input type="text" placeholder="Номер мобильного телефона">
+                  <input type="text" placeholder="Дата рождения">
                 </div>
-                <div class="slider">
-                  <div class="product">
-                    <div class="product__img" style="background-image: url('images/new-img.jpg')"></div>
-                    <h3 class="product__name">Новый чехол для очков</h3>
-                  </div>
+                <input type="text" placeholder="Email">
+              </div>
+            </form>
+            <div class="certificate-wrap certificate-wrap_border"><span>Адресс доставки</span></div>
+            <form class="delivery-form" action="#">
+              <div class="delivery-form__wrap">
+                <div class="delivery-form__row">
+                  <input type="text" placeholder="Страна">
+                  <input type="text" placeholder="Город/Регион">
                 </div>
-                <div class="slider">
-                  <div class="product">
-                    <div class="product__img" style="background-image: url('images/new-img.jpg')"></div>
-                    <h3 class="product__name">Новый чехол для очков</h3>
-                  </div>
-                </div>
-                <div class="slider">
-                  <div class="product">
-                    <div class="product__img" style="background-image: url('images/new-img.jpg')"></div>
-                    <h3 class="product__name">Новый чехол для очков</h3>
+                <div class="delivery-form__row">
+                  <input type="text" placeholder="Улица">
+                  <div class="delivery-form__col">
+                    <input type="text" placeholder="Дом/Корпус">
+                    <input type="text" placeholder="Квартира">
                   </div>
                 </div>
               </div>
+            </form>
+            <div class="certificate-wrap certificate-wrap_border"><span>Способ доставки</span></div>
+            <div class="delivery-method">
+              <form class="delivery-form" action="#">
+                <div class="delivery-form__wrap">
+                  <div class="delivery-form__method-wrap"><span class="delivery-form__title">Выберите удобный для вас способ доставки</span>
+                    <div class="delivery-form__method">
+                      <input type="radio" id="m1" value="m1" name="m1">
+                      <label for="m1">Курьерской службой сдэк/dpd<span>до двери</span><br><span>срок доставки увеличивается на 1-2 рабочих дня</span></label><span>390 руб</span>
+                    </div>
+                    <div class="delivery-form__method">
+                      <input type="radio" id="m2" value="m2" name="m1">
+                      <label for="m2">Курьерской службой сдэк/dpd<span>до пункта выдачи</span><br><span>выбрать близжайший пункт</span></label><span>БЕСПЛАТНО</span>
+                    </div>
+                    <div class="delivery-form__method">
+                      <input type="radio" id="m3" value="m3" name="m1">
+                      <label for="m3">Почтой России<span>до отделения Почты России</span></label><span>БЕСПЛАТНО</span>
+                    </div>
+                  </div><span class="delivery-form__sub-title">Комментарий к заказу</span>
+                  <textarea class="delivery-form__textarea" type="text"></textarea>
+                </div>
+              </form>
+              <div class="delivery-price">
+                <div class="price-row"><span>Всего товаров</span><span>13500 руб</span></div>
+                <div class="price-row"><span>Скидка </span><span>350 руб</span></div>
+                <div class="price-row"><span>ВСЕГО</span><span>13150 руб</span></div>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="instagram-section">
-          <div class="container">
-            <h2 class="section-title section-title_big">Узнайте больше о Highcraft в Instagram</h2>
-            <div class="instagram-wrap"><a class="instagram" href="#"><img src="images/inst1.jpg" alt=""></a><a class="instagram" href="#"><img src="images/inst2.jpg" alt=""></a><a class="instagram" href="#"><img src="images/inst3.jpg" alt=""></a><a class="instagram" href="#"><img src="images/inst4.jpg" alt=""></a><a class="instagram" href="#"><img src="images/inst5.jpg" alt=""></a></div>
+            <div class="basket-nav"><a class="left-arrow" href="#">Назад</a><a class="right-arrow" href="#">Оплатить заказ</a></div>
           </div>
         </section>
       </main>
-      <footer class="footer">
-        <div class="container"><a class="tel" href="tel:+79638888880">+7-963-888-8880</a>
-          <div class="list-wrap">
-            <ul class="list">
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">О коже</a></li>
-              <li><a href="#">Палитра</a></li>
-              <li><a href="#">Материалы</a></li>
-              <li><a href="#">Персонализация</a></li>
-              <li><a href="#">Корпоративные заказы</a></li>
-            </ul>
-            <ul class="list">
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Оплата</a></li>
-              <li><a href="#">Гарантии</a></li>
-              <li><a href="#">Возврат</a></li>
-              <li><a href="#">Частые вопросы</a></li>
-            </ul>
-            <ul class="list">
-              <li><a href="#">Контакты</a></li>
-              <li><a href="#">Реквизиты</a></li>
-              <li class="public abs-link"><a href="#">Публичная оферта</a></li>
-              <li class="policy abs-link"><a href="#">Политика конфеденциальности</a></li>
-            </ul>
-            <div class="soc-links"><a class="inst" href="#"></a><a class="fb" href="#"></a><a class="vk" href="#"></a></div>
-          </div>
-        </div>
-      </footer>
       <div class="mask js-mask"></div>
       <div class="modal js-dont-modal">
         <div class="modal__wrap"><span class="modal__close"></span><span class="modal__title modal__title_upper">Не спеши...</span>

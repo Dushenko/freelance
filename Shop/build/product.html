@@ -22,7 +22,7 @@
           <div class="container"><a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
             <nav class="nav js-nav">
               <ul class="main-menu js-main-menu">
-                <li><a href="#">Каталог</a>
+                <li><a href="catalog.html">Каталог</a>
                   <ul class="menu js-menu"><span>Женское</span>
                     <li><a href="#">Смотреть все</a></li>
                     <li><a href="#">Сумки
@@ -66,14 +66,14 @@
                   <ul class="menu js-menu">
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Оплата</a></li>
-                    <li><a href="#">Доставка</a></li>
+                    <li><a href="pay.html">Оплата</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
                     <li><a href="#">Гарантии</a></li>
                     <li><a href="#">Возврат</a></li>
                     <li><a href="#">Частые вопросы</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Корзина</a></li>
+                <li><a href="basket.html">Корзина</a></li>
                 <li><a href="tel:+79638888880">+7-963-888-8880</a></li>
               </ul>
             </nav>
@@ -238,6 +238,46 @@
           </div>
         </div>
       </footer>
+      <div class="mask js-mask"></div>
+      <div class="modal js-dont-modal">
+        <div class="modal__wrap"><span class="modal__close"></span><span class="modal__title modal__title_upper">Не спеши...</span>
+          <div class="modal__text-wrap">
+            <p class="modal__text">Ведь при покупке сумки или рюкзака <br>мы делаем скидку<br></p>20% на любые кошельки
+          </div>
+          <div class="modal__nav basket-nav"><a class="left-arrow" href="#">Посмотреть кошельки</a><a class="right-arrow" href="#">Оформить заказ</a></div>
+        </div>
+      </div>
+      <div class="modal js-delivery-modal">
+        <div class="modal__wrap"><span class="modal__close"></span><span class="modal__title">Бесплатная доставка до пункта выдачи от 3000 рублей</span>
+          <div class="modal__text-wrap">
+            <p class="modal__text">Вам не зватает совсем чуть-чуть до бусплатной доставки.</p>
+            <p class="modal__text">Желаете преобрести что-нибудь еще?</p>
+          </div>
+          <div class="modal__nav basket-nav"><a class="left-arrow" href="#">Подобрать товары</a><a class="right-arrow" href="#">Оформить заказ</a></div>
+        </div>
+      </div>
+      <div class="modal js-info-modal">
+        <div class="modal__wrap"><span class="modal__close"></span><span class="modal__title">Пожалуйста выберите подклад. В этом изделии он по умолчанию.</span></div>
+      </div>
+      <div class="modal js-basket-modal">
+        <div class="modal__wrap"><span class="modal__close"></span><span class="modal__title">Корзина</span>
+          <div class="modal-basket">
+            <div class="modal-basket__wrap">
+              <div class="modal-basket__img"><img src="images/13.jpg" alt=""></div>
+              <div class="modal-basket__info"><span class="modal-basket__name">Alford винный Vintage</span>
+                <div class="modal-basket__info-row"><span>Колличество</span><span>2</span></div>
+                <div class="modal-basket__info-row"><span>Тиснение инициалов</span><span>1</span></div>
+                <div class="modal-basket__info-row"><span>Дополнительный карман на молнии</span><span>1</span></div>
+                <div class="modal-basket__info-row"><span>ИТОГО</span><span>12500 руб</span></div>
+              </div>
+            </div>
+            <div class="modal-basket__footer">
+              <div class="modal-basket__info-row"><span>ИТОГО</span><span>12500 руб</span></div>
+            </div>
+          </div>
+          <div class="modal__nav basket-nav"><a class="left-arrow" href="#">Продолжить покупки</a><a class="right-arrow" href="#">Оформить заказ</a></div>
+        </div>
+      </div>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>

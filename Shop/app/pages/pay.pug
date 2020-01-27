@@ -1,0 +1,22 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.basket-section
+			.container
+				h2.basket-title Оплата
+				.certificate-wrap.certificate-wrap_border
+					span Выберите способ оплаты
+				.pay-links
+					a(href="#") Оплата банковской картой
+					a(href="#") Оплата после согласования с менеджером
+				.basket-nav.basket-nav_margin
+					a(href="#").left-arrow Назад
+
+	include ../blocks/modal/modal

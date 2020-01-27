@@ -35,9 +35,11 @@ block content
 
 								form(action="#").priceForm.count-width
 									.priceForm__counter
-										input.priceForm__arrow.priceForm__minus#minus(type="button" value="")
+										label.priceForm__arrow.priceForm__minus#minus
+											input(type="button")
 										input#quantity(type="number" value="1" name="quantity" readonly)
-										input.priceForm__arrow.priceForm__plus#plus(type="button" value="")
+										label.priceForm__arrow.priceForm__plus#plus
+											input(type="button")
 									.priceForm__field
 										span#total-price
 										strong.skuBestPrice 10800
@@ -90,9 +92,11 @@ block content
 
 								form(action="#").priceForm.count-width
 									.priceForm__counter
-										input.priceForm__arrow.priceForm__minus#minus(type="button" value="")
+										label.priceForm__arrow.priceForm__minus#minus
+											input(type="button")
 										input#quantity(type="number" value="1" name="quantity" readonly)
-										input.priceForm__arrow.priceForm__plus#plus(type="button" value="")
+										label.priceForm__arrow.priceForm__plus#plus
+											input(type="button")
 									.priceForm__field
 										span#total-price
 										strong.skuBestPrice 200
@@ -122,3 +126,6 @@ block content
 					.basket-nav
 						a(href="#").left-arrow Продолжить покупки
 						a(href="#").right-arrow Указать адресс доставки
+
+	include ../blocks/modal/modal
+	
