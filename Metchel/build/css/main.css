@@ -1173,6 +1173,9 @@ span{
         font-size:24px;
         margin:40px auto 0; } }
 
+.js-call{
+  cursor:pointer; }
+
 .slick-slide{
   float:left;
   min-height:1px;
