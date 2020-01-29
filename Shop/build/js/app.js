@@ -71,7 +71,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 $(document).ready(function () {
   function updatePrice() {
-    var priceProduct = parseFloat($.trim($('.skuBestPrice').html().replace(",", "").replace("R$", "")));
+    var priceInputElement = $('.skuBestPrice');
+    if (!priceInputElement.length) return;
+    var priceProduct = parseFloat($.trim(priceInputElement.html().replace(",", "").replace("R$", "")));
     var convertion = priceProduct.toFixed(0);
     var price = parseFloat($("#quantity").val());
     var total = (convertion * price).toFixed(0);

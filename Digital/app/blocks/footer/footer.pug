@@ -1,111 +1,28 @@
 footer.footer
-	.container 
-		.feedback-wrap
-			.feedback-slider.js-feedback-slider
-				.slide
-					.feedback
+	.container
+		.footer-wrap
+			a(href="#").footer-img
+				img(src="images/Addpopular.svg", alt="")
 
-						.feedback__image
-							img(src="images/footer-photo.jpg" alt="")
-						.feedback__info
-							.customer-info
-								span.customer-name Veleria Lopez
-								span.customer-rate
-									.star
-									.star
-									.star
-									.star
-									.star
-							p.customer-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis nunc sed. 
-							span.date 03.12.2018
+			p.footer-text We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.
+			a(href="mailto:suport@addpopular.com").contact-us__email suport@addpopular.com
 
-				.slide
-					.feedback
-
-						.feedback__image
-							img(src="images/footer-photo.jpg" alt="")
-						.feedback__info
-							.customer-info
-								span.customer-name Veleria Lopez
-								span.customer-rate
-									.star
-									.star
-									.star
-									.star
-									.star
-							p.customer-text Lorem ipsum dolor sit amet
-							span.date 03.12.2018
-
-				.slide
-					.feedback
-
-						.feedback__image
-							img(src="images/footer-photo.jpg" alt="")
-						.feedback__info
-							.customer-info
-								span.customer-name Veleria Lopez
-								span.customer-rate
-									.star
-									.star
-									.star
-									.star
-									.star
-							p.customer-text Lorem ipsum dolor sit amet
-							span.date 03.12.2018
-
-				.slide
-					.feedback
-
-						.feedback__image
-							img(src="images/footer-photo.jpg" alt="")
-						.feedback__info
-							.customer-info
-								span.customer-name Veleria Lopez
-								span.customer-rate
-									.star
-									.star
-									.star
-									.star
-									.star
-							p.customer-text Lorem ipsum dolor sit amet
-							span.date 03.12.2018
-
-				.slide
-					.feedback
-
-						.feedback__image
-							img(src="images/footer-photo.jpg" alt="")
-						.feedback__info
-							.customer-info
-								span.customer-name Veleria Lopez
-								span.customer-rate
-									.star
-									.star
-									.star
-									.star
-									.star
-							p.customer-text Lorem ipsum dolor sit amet
-							span.date 03.12.2018
-
-		.feedback-wrap.feedback-wrap_border
-			form(action="#").feedback-form
-				.feedback-form__wrap
-					h3.feedback-form__title Leave your 
-						span feedback 
-						| about our service.
-					span.feedback-form__subtitle Every review is important to us, be it positive or negative
-
-					.feedback-form__field-wrap
-						.feedback-form__field.feedback-form__field_name
-							input(type="text" placeholder="Your name").feedback-form__input
-						.feedback-form__field.feedback-form__field_email
-							input(type="text" placeholder="Your email").feedback-form__input
-
-						textarea(type="text" placeholder="Submit your review").feedback-form__textarea
-
-					include ../rating/rating
-
-					button.feedback-form__btn Submit review
+			nav.footer-nav
+				ul.footer-links
+					li 
+						a(href="#") Feedback
+					li 
+						a(href="#") How it works
+					li
+						a(href="#").active FAQ
+					li 
+						a(href="#") Privacy Policy
+					li 
+						a(href="#") Refund Policy
+					li 
+						a(href="#") Affiliate program
+			
+			span.rights ©  2020 . All Rights Reserved.
 
 .mask.js-mask
 
@@ -119,7 +36,7 @@ footer.footer
 			.modal__info.modal__info_gray
 				span.modal__icon 2
 				span.modal__subheading Select service
-		
+
 		h3.modal__title Buy 
 			span 500 
 			| Instagram followers
@@ -135,7 +52,7 @@ footer.footer
 					label.lk-form__label Email
 					input(type="text" placeholder="gmail@com").lk-form__input
 
-			button(type="submit").lk-form__modal-btn Select account
+			button(type="submit").lk-form__modal-btn.js-step2 Select account
 
 .modal.scroll-wrap.js-modal-step2
 	.modal__wrap
@@ -147,25 +64,25 @@ footer.footer
 			.modal__info.modal__info_violet
 				span.modal__icon 2
 				span.modal__subheading Select service
-
-		.modal__user
-			.modal__image 
-				img(src="images/lk-img.jpg" alt="")
-			.modal__user-info
-				.modal__inner
-					span.modal__username @Instagram.username38
-					span.modal__refresh
-				.modal__details
-					.modal__posts
-						span.modal__number 56
-						span.modal__social Posts
-					.modal__followers
-						span.modal__number 335
-						span.modal__social Followers
-					.modal__following 
-						span.modal__number 423
-						span.modal__social Following
 		
+		.user-card
+			.user-card__image 
+				img(src="images/cart.jpg" alt="")
+			.user-card__info
+				.user-card__inner
+					span.user-card__username @Instagram.username38
+					span.user-card__refresh
+				.user-card__details
+					.user-card__posts
+						span.user-card__number 56
+						span.user-card__social Posts
+					.user-card__followers
+						span.user-card__number 335
+						span.user-card__social Followers
+					.user-card__following 
+						span.user-card__number 423
+						span.user-card__social Following
+
 		form(action="#").lk-form
 			.lk-form__wrap
 				.modal__plan 
@@ -193,15 +110,38 @@ footer.footer
 					label.switch
 						input(type="checkbox")
 						span.slider
+				
+				.choose
+					label.choose__service
+						input(type="radio" name="social" value="1000 likes").choose__radio
+						span.choose__text + 1 000 likes
+						span.choose__price + 7,99 $
+
+					label.choose__service
+						input(type="radio" name="social" value="2000 likes").choose__radio
+						span.choose__text + 2 000 likes
+						span.choose__price + 13,99 $
+
+					label.choose__service
+						input(type="radio" name="social" value="200 comments").choose__radio
+						span.choose__text + 200 comments
+						span.choose__price + 13,99 $
+
+				.methods
+					span.methods__text Method payments:
+					label.methods__paypal
+						input(type="radio" name="payment" value="paypal").choose__radio
+					label.methods__creditcard
+						input(type="radio" name="payment" value="creditcard").choose__radio
 
 				.modal__links
-					button(type="submit").lk-form__modal-btn Buy now 
+					button(type="submit").lk-form__modal-btn.js-method-btn Buy now 
 					button(type="submit").lk-form__basket-btn
 
 		a(href="#").modal__rules By purchasing, you agree with rules
 
 .modal.scroll-wrap.modal_basket.js-modal-step3
-	.modal__cart-wrap
+	.modal__wrap
 		form(action="#").lk-form
 			.lk-form__wrap
 				.modal__cart
@@ -209,51 +149,101 @@ footer.footer
 					span.modal__clear Clear cart:
 						span.shop-cart__delete
 
-				.modal__cart-container
-					.modal__cart-item
-						.modal__image 
-							img(src="images/cart.jpg" alt="")
-						
-						.modal__cart-info
-							.modal__user-info
-								.modal__inner
-									span.modal__username @Instagram.username38
-									span.modal__refresh
-							.modal__plan.modal__plan_cart
-								.modal__plan-info
-									span.modal__plan-type Standard
-										span.shop-cart__delete
-									span.modal__package Package: 
-										span 250 
-											span followers
-					span.modal__price Price: 
+				.user-card
+					.user-card__image 
+						img(src="images/cart.jpg" alt="")
+					.user-card__info
+						.user-card__inner
+							span.user-card__username @Instagram.username38
+							span.user-card__refresh
+						.user-card__plan-info
+							span.user-card__plan-type Standard
+							span.user-card__delete
+						.user-card__package-wrap
+							span.user-card__package Package: 
+							span.user-card__package-count 250
+							span.user-card__package-followers followers
+						span.user-card__price Price: 
 							span 4,99 $
 
-				.modal__cart-container
-					.modal__cart-item
-						.modal__image 
-							img(src="images/cart.jpg" alt="")
-						
-						.modal__cart-info
-							.modal__user-info
-								.modal__inner
-									span.modal__username @Instagram.username38
-									span.modal__refresh
-							.modal__plan.modal__plan_cart
-								.modal__plan-info
-									span.modal__plan-type Standard
-										span.shop-cart__delete
-									span.modal__package Package: 
-										span 250 
-											span followers
-					span.modal__price Price: 
+				.user-card
+					.user-card__image 
+						img(src="images/cart.jpg" alt="")
+					.user-card__info
+						.user-card__inner
+							span.user-card__username @Instagram.username38
+							span.user-card__refresh
+						.user-card__plan-info
+							span.user-card__plan-type Standard
+							span.user-card__delete
+						.user-card__package-wrap
+							span.user-card__package Package: 
+							span.user-card__package-count 250
+							span.user-card__package-followers followers
+						span.user-card__price Price: 
 							span 4,99 $
 
 				.modal__total
 					span.modal__pay To pay:
 					span.modal__total-price 12,98 $
 
+				.methods
+					span.methods__text Method payments:
+					label.methods__paypal
+						input(type="radio" name="payment" value="paypal").choose__radio
+					label.methods__creditcard
+						input(type="radio" name="payment" value="creditcard").choose__radio
+
+
 				button(type="submit").lk-form__modal-btn.lk-form__modal-btn_payment Proceed to payment
 				button(type="submit").lk-form__modal-btn.lk-form__modal-btn_transparent Go to shopping
 
 				a.modal__rules By purchasing, you agree with rules
+
+.modal.scroll-wrap.js-modal-login
+	.modal__wrap
+		.modal__img
+			img(src="images/log-in.jpg", alt="")
+
+		span.modal__title Log in
+		span.modal__subtitle Enter your details to log in
+			
+		form(action="#").lk-form
+			.lk-form__wrap
+				.lk-form__field.user-icon
+					label.lk-form__label Your username
+					input(type="text" placeholder="Username").lk-form__input
+				.lk-form__field.password-icon
+					label.lk-form__label Password
+					input(type="text" placeholder="Password").lk-form__input 
+			.password
+				label.password__remember Remember me
+					input(type="checkbox" name="social" value="1000 likes").choose__radio
+				a(href="#").password__recover Forgot password?
+
+			button(type="submit").lk-form__modal-btn Sign In
+			button(type="submit").lk-form__modal-btn.js-reg-open Create Account
+
+.modal.scroll-wrap.js-modal-reg
+	.modal__wrap
+		.modal__img
+			img(src="images/sign-up.jpg", alt="")
+
+		span.modal__title Sign Up
+		span.modal__subtitle Fill in your registration details
+
+		form(action="#").lk-form
+			.lk-form__wrap
+				.lk-form__field.user-icon
+					label.lk-form__label Your username
+					input(type="text" placeholder="Username").lk-form__input
+
+				.lk-form__field.email-icon
+					label.lk-form__label Email
+					input(type="text" placeholder="Email").lk-form__input
+
+				.lk-form__field.password-icon
+					label.lk-form__label Password
+					input(type="text" placeholder="Password").lk-form__input 
+
+			button(type="submit").lk-form__modal-btn Sign Up

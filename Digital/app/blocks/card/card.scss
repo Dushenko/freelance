@@ -65,8 +65,16 @@
 	&__text {
 		font-size: 14px;
 		line-height: 18px;
-		text-align: center;
 		color: #333333;
 		margin-bottom: 10px;
+	}
+
+	&__list {
+		margin: 20px;
+		font-size: 14px;
+		line-height: 18px;
+		color: #333333;
+		margin-bottom: 10px;
+		list-style-type: disc;
 	}
 }
