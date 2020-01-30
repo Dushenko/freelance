@@ -16,4 +16,11 @@ $(document).ready(function () {
 		$('.modal').fadeOut();
 	});
 
+
+	//product popup
+	$('.production').click( function() {
+		$('.js-information').fadeIn();
+		$('.js-mask').fadeIn();
+	});
+
 });

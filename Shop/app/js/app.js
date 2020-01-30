@@ -24,5 +24,24 @@ $(document).ready(function () {
 	});
 
 	
+	//to-top
+	$(function() {
+		$(window).scroll(function() {
+			if($(this).scrollTop() != 0) {
+				$('.back-top').fadeIn();
+				$('.header-bot').addClass('active');
+			} else {
+				$('.back-top').fadeOut();
+				$('.header-bot').removeClass('active');
+			}
+		});
+		$('.back-top').click(function() {
+			$('body,html').animate({scrollTop:0},1500);
+		});
+	});
+
+	//Intense
+	var elements = document.querySelectorAll( '.demo-image' );
+	Intense( elements );
 
 });

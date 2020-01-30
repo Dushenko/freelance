@@ -2,6 +2,7 @@
 	padding: 40px 0;
 	background-color: rgb(243, 242, 238);
 	min-height: calc(100vh - 101px);
+	font-weight: 300;
 	@media screen and (min-width: 768px) {
 		min-height: calc(100vh - 110px);
 	}
@@ -20,14 +21,14 @@
 	}
 
 	.basket-wrap {
-		border-top: 2px solid rgb(201, 202, 197);
+		border-top: 2px solid #c3c3c3;
 		@media screen and (min-width: 1024px) {
 			border: none;
 		}
 	}
 
 	.border {
-		border-bottom: 2px solid rgb(201, 202, 197);
+		border-bottom: 2px solid #c3c3c3;
 	}
 
 	.basket-header {
@@ -50,9 +51,8 @@
 		align-items: flex-start;
 		color: #000;
 		font-size: 16px;
-		font-weight: 400;
-		border-left: 2px solid rgb(201, 202, 197);
-		border-right: 2px solid rgb(201, 202, 197);
+		border-left: 2px solid #c3c3c3;
+		border-right: 2px solid #c3c3c3;
 		@media screen and (min-width: 1024px) {
 			border-left: none;
 			border-right: none;
@@ -170,8 +170,8 @@
 		display: flex;
 		justify-content: flex-end;
 		padding: 8px 10px;
-		border-left: 2px solid rgb(201, 202, 197);
-		border-right: 2px solid rgb(201, 202, 197);
+		border-left: 2px solid #c3c3c3;
+		border-right: 2px solid #c3c3c3;
 
 		@media screen and (min-width: 1024px) {
 			padding: 8px 65px 8px 0;
@@ -225,7 +225,7 @@
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 40px;
-	border: 2px solid rgb(201, 202, 197);
+	border: 2px solid #c3c3c3;
 
 	@media screen and (min-width: 1024px) {
 		flex-direction: row;
@@ -248,10 +248,16 @@
 			justify-content: flex-end;
 			width: 100%;
 			padding: 8px 10px;
-			border-top: 1px solid rgb(201, 202, 197);
+			border-top: 2px solid #c3c3c3;
 			@media screen and (min-width: 1024px) {
 				padding: 8px 65px 8px 150px;
 				width: auto;
+			}
+			span {
+				min-width: 74px;
+				&:first-child {
+					text-align: right;
+				}
 			}
 
 			&:first-child {
@@ -261,10 +267,19 @@
 			}
 		}
 	}
+}
 
-	.all-stock {
-		color: rgb(201, 202, 197);
-		text-transform: uppercase;
+.all-stock {
+	color: #7c9580;
+	text-transform: uppercase;
+}
+
+.ofer {
+	text-align: right;
+
+	.ofer-link {
+		color: #044769;
+		border-bottom: 1px solid #044769;
 	}
 }
 
@@ -274,7 +289,7 @@
 
 	&_border {
 		margin-bottom: 30px;
-		border-bottom: 2px solid rgb(201, 202, 197);
+		border-bottom: 2px solid #c3c3c3;
 
 		span {
 			margin-bottom: 5px !important;
@@ -303,7 +318,7 @@
 	input {
 		height: 40px;
 		color: #000;
-		border: 2px solid rgb(201, 202, 197);
+		border: 2px solid #c3c3c3;
 		text-align: center;
 		margin: 0 10px 15px;
 		width: calc(100% - 20px);
@@ -317,14 +332,14 @@
 	button {
 		height: 40px;
 		width: 120px;
-		border: 2px solid rgb(201, 202, 197);
+		border: 2px solid #c3c3c3;
 		text-align: center;
 		text-transform: uppercase;
 		transition: all .3s ease;
 		margin: 0 10px 0 auto;
 
 		&:hover {
-			background-color: rgb(201, 202, 197);
+			background-color: #c3c3c3;
 		}
 	}
 }
@@ -348,7 +363,7 @@
 		color: #000;
 		text-transform: uppercase;
 		height: 40px;
-		border: 2px solid rgb(201, 202, 197);
+		border: 2px solid #c3c3c3;
 		text-align: center;
 		text-transform: uppercase;
 		transition: all .3s ease;
@@ -369,7 +384,7 @@
 			position: absolute;
 			font-size: 45px;
 			font-weight: 300;
-			color: rgb(201, 202, 197);
+			color: #c3c3c3;
 		}
 
 		&.left-arrow {
@@ -381,20 +396,22 @@
 		}
 
 		&.right-arrow {
+			border: 2px solid #7c9580;
 			&:before {
 				top: -10px;
 				right: 10px;
 				content: '›';
+				color: #7c9580;
 			}
 		}
 
-		&:hover {
-			background-color: rgb(201, 202, 197);
+		// &:hover {
+		// 	background-color: #7c9580;;
 
-			&:before {
-				color: #000;
-			}
-		}
+		// 	&:before {
+		// 		color: #000;
+		// 	}
+		// }
 	}
 }
 
@@ -409,7 +426,7 @@
 		width: 100%;
 		color: #000;
 		margin-bottom: 10px;
-		border: 2px solid rgb(201, 202, 197);
+		border: 2px solid #c3c3c3;
 		@media screen and (min-width: 1024px) {
 			font-size: 16px;
 			max-width: 500px;
@@ -417,7 +434,7 @@
 			padding-left: 90px;
 		}
 		&:hover {
-			background-color: rgb(201, 202, 197);
+			background-color: #c3c3c3;
 			color: #fff;
 		}
 	}
@@ -443,7 +460,7 @@
 		display: flex;
 		padding-bottom: 10px;
 		margin-bottom: 10px;
-		border-bottom: 2px solid rgb(201, 202, 197);
+		border-bottom: 2px solid #c3c3c3;
 	}
 
 	span {

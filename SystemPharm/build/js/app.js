@@ -2240,6 +2240,11 @@ $(document).ready(function () {
   $('.js-mask').click(function () {
     $(this).fadeOut();
     $('.modal').fadeOut();
+  }); //product popup
+
+  $('.production').click(function () {
+    $('.js-information').fadeIn();
+    $('.js-mask').fadeIn();
   });
 }); // particlesJS("particles-js", {
 //     "particles": {
@@ -2347,7 +2352,7 @@ $(document).ready(function () {
 //     "retina_detect": true
 //   });
 
-window.onload = function () {
+$(document).ready(function () {
   var c = init("pharm-animation").c,
       canvas = init("pharm-animation").canvas,
       doc = document.querySelector('body'),
@@ -2657,8 +2662,7 @@ window.onload = function () {
   });
   loop();
   setInterval(loop, 1000 / 60);
-};
-
+});
 $(document).ready(function () {
   //select 
   $('.js-select').click(function () {

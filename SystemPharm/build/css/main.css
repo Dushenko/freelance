@@ -232,9 +232,6 @@ html.overflow{
 body{
   font-family:'Lato'; }
 
-body.overflow{
-    overflow:hidden; }
-
 a{
   text-decoration:none;
   display:inline-block;
@@ -301,6 +298,9 @@ select{
 
 .container_width{
     max-width:1600px; }
+
+.overflow{
+  overflow:hidden; }
 
 .btn-wrap{
   display:-webkit-box;
@@ -406,14 +406,6 @@ select{
         font-size:14px;
         margin-bottom:0; } }
 
-@media screen and (min-width: 1024px){
-      .footer .footer-text{
-        font-size:16px; } }
-
-@media screen and (min-width: 1200px){
-      .footer .footer-text{
-        font-size:19px; } }
-
 .footer .site-map:hover{
     color:#FF008A; }
 
@@ -430,12 +422,8 @@ select{
       -ms-transform:translateX(-50%);
       transform:translateX(-50%); } }
 
-.footer .footer-img{
-    width:33px;
-    height:33px; }
-
 .footer .footer-img img{
-      width:100%; }
+    width:100%; }
 
 .header{
   position:relative;
@@ -481,15 +469,20 @@ select{
     cursor:pointer;
     width:29px;
     height:29px;
-    margin-right:34px;
+    margin-right:70px;
     background-size:96%;
     background-position:center;
     background-repeat:no-repeat;
+    -webkit-transition:all .25s ease;
+    transition:all .25s ease;
     background-image:url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.7261 18.239H19.4162L18.952 17.7913C20.5769 15.9011 21.5552 13.4471 21.5552 10.7776C21.5552 4.82504 16.7301 0 10.7776 0C4.82504 0 0 4.82504 0 10.7776C0 16.7301 4.82504 21.5552 10.7776 21.5552C13.4471 21.5552 15.9011 20.5769 17.7913 18.952L18.239 19.4162V20.7261L26.5294 29L29 26.5294L20.7261 18.239ZM10.7776 18.239C6.64894 18.239 3.31618 14.9062 3.31618 10.7776C3.31618 6.64894 6.64894 3.31618 10.7776 3.31618C14.9062 3.31618 18.239 6.64894 18.239 10.7776C18.239 14.9062 14.9062 18.239 10.7776 18.239Z' fill='white'/%3E%3C/svg%3E%0A"); }
 
 @media screen and (min-width: 768px){
       .header .search{
-        margin-right:46px; } }
+        margin-right:70px; } }
+
+.header .search:hover{
+      background-image:url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.7261 18.239H19.4162L18.952 17.7913C20.5769 15.9011 21.5552 13.4471 21.5552 10.7776C21.5552 4.82504 16.7301 0 10.7776 0C4.82504 0 0 4.82504 0 10.7776C0 16.7301 4.82504 21.5552 10.7776 21.5552C13.4471 21.5552 15.9011 20.5769 17.7913 18.952L18.239 19.4162V20.7261L26.5294 29L29 26.5294L20.7261 18.239ZM10.7776 18.239C6.64894 18.239 3.31618 14.9062 3.31618 10.7776C3.31618 6.64894 6.64894 3.31618 10.7776 3.31618C14.9062 3.31618 18.239 6.64894 18.239 10.7776C18.239 14.9062 14.9062 18.239 10.7776 18.239Z' fill='%23FF008A'/%3E%3C/svg%3E%0A"); }
 
 .nav{
   position:fixed;
@@ -590,6 +583,7 @@ select{
     background-image:url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.0573 2.38196C16.4694 1.48224 15.384 1.11523 13.3111 1.11523H5.78641C3.66605 1.11523 2.56224 1.50591 1.97655 2.4638C1.40552 3.39775 1.40552 4.77384 1.40552 6.6784V12.4775C1.40552 16.1673 2.08304 18.0406 5.78641 18.0406H13.3111C15.1088 18.0406 16.1049 17.7168 16.7493 16.9228C17.4102 16.1086 17.6921 14.7791 17.6921 12.4775V6.6784C17.6921 4.66988 17.648 3.28567 17.0573 2.38196ZM12.513 9.71762C12.3395 9.83436 8.44465 12.0167 8.44465 12.0167C8.36826 12.0681 8.28473 12.0936 8.2013 12.0936C8.10683 12.0936 8.01258 12.0609 7.9291 11.9958C7.77191 11.8732 7.67592 11.6538 7.67592 11.4172V6.83381C7.67592 6.59761 7.77164 6.37847 7.92852 6.25577C8.08545 6.13307 8.28063 6.12469 8.44344 6.23359L12.5118 8.51786C12.6857 8.63406 12.7949 8.86511 12.7951 9.1172C12.7953 9.36949 12.6866 9.60088 12.513 9.71762Z' stroke='%23FF008A'/%3E%3C/svg%3E%0A"); }
 
 .burger{
+  position:fixed;
   width:32px;
   cursor:pointer;
   display:-webkit-box;
@@ -598,7 +592,8 @@ select{
   -webkit-box-direction:normal;
   flex-direction:column;
   -webkit-box-align:center;
-  align-items:center; }
+  align-items:center;
+  margin-left:65px; }
 
 .burger span{
     width:32px;
@@ -619,8 +614,10 @@ select{
     .burger:hover{
       -webkit-transition:all .25s ease;
       transition:all .25s ease; }
-      .burger:hover span:nth-child(2){
-        width:17px; } }
+      .burger:hover span{
+        background:#FF008A; }
+        .burger:hover span:nth-child(2){
+          width:17px; } }
 
 .burger.active span:nth-child(1){
     top:11px;
@@ -1664,7 +1661,8 @@ select{
       padding:0 15px; } }
 
 .about-section{
-  padding:8vw 0; }
+  padding:8vw 0;
+  overflow:hidden; }
 
 @media screen and (min-width: 1360px){
     .about-section{
@@ -1825,6 +1823,14 @@ select{
 @media screen and (min-width: 1024px){
           .about-section .about-info .typography h2{
             width:305px; } }
+
+@media screen and (min-width: 1024px){
+        .about-section .about-info .typography p{
+          font-size:14px; } }
+
+@media screen and (min-width: 1360px){
+        .about-section .about-info .typography p{
+          font-size:16px; } }
 
 .about-section .about-img{
     width:100%;
@@ -2314,10 +2320,6 @@ select{
     flex-wrap:wrap;
     margin:0 -12px; } }
 
-@media screen and (min-width: 1200px){
-  .achievements-wrap{
-    margin:0 -40px; } }
-
 .achievement{
   margin-bottom:15px; }
 
@@ -2337,6 +2339,12 @@ select{
     .achievement{
       padding:0 40px;
       min-height:310px; } }
+
+.achievement:first-child{
+    padding-left:0; }
+
+.achievement:last-child{
+    padding-right:0; }
 
 .achievement__wrap{
     height:100%;
@@ -2591,7 +2599,9 @@ select{
       -webkit-transform:translateY(-50%);
       -ms-transform:translateY(-50%);
       transform:translateY(-50%);
-      background-size:contain;
+      background-size:95%;
+      background-repeat:no-repeat;
+      background-position:center;
       background-image:url("data:image/svg+xml,%3Csvg width='47' height='48' viewBox='0 0 47 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.1294 23.5671C28.7867 23.9537 28.7867 24.9043 28.1294 25.2909L22.1486 28.809C21.482 29.2012 20.6416 28.7205 20.6416 27.9471L20.6416 20.9109C20.6416 20.1375 21.482 19.6568 22.1486 20.049L28.1294 23.5671Z' stroke='white' stroke-width='2'/%3E%3Ccircle cx='23.5' cy='24.0781' r='23' stroke='%23FF419F'/%3E%3C/svg%3E%0A"); }
 
 .intro-section .soc-wrap{
@@ -2686,7 +2696,8 @@ select{
           transition:all .25s ease;
           -webkit-transform:translate(-50%, -50%) scale(1.2);
           -ms-transform:translate(-50%, -50%) scale(1.2);
-          transform:translate(-50%, -50%) scale(1.2); } }
+          transform:translate(-50%, -50%) scale(1.2);
+          box-shadow:0 0 10px 10px #FF006B; } }
 
 .partner-section .partner img{
       width:62%;
@@ -3581,8 +3592,7 @@ select{
 
 .vacancy_one .vacancy__info{
     background:transparent;
-    box-shadow:none;
-    padding:0; }
+    box-shadow:none; }
 
 .vacancy_one .vacancy__info p{
       color:#fff;
@@ -3650,7 +3660,8 @@ select{
     -webkit-transition:all 0.2s ease;
     transition:all 0.2s ease;
     box-shadow:0px 0px 0px;
-    border-radius:12px; }
+    border-radius:12px;
+    padding:15px; }
 
 @media screen and (min-width: 768px){
       .vacancy__info{

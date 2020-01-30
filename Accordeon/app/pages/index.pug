@@ -1,0 +1,121 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		.accordion-container.scroll-wrap
+			.accordion-wrap
+				.accordion
+					.accordion__header
+						h3.accordion__name Intensive Group
+						span.accordion__week 20 ac. hours a week
+						span.accordion__price 1 week from 
+							span € 168
+						span.accordion__icon +
+						
+					.accordion__description
+						.accordion__content
+							.accordion__table
+								.accordion__row
+									.accordion__week Daytime
+									.accordion__price ac. hour 
+										span € 20
+								.accordion__row
+									.accordion__week Evening 
+									.accordion__price ac. hour 
+										span € 25
+								.accordion__row
+									.accordion__week Saturday 
+									.accordion__price ac. hour 
+										span € 25
+								.accordion__row
+									.accordion__week Business Russian
+									.accordion__price ac. hour 
+										span € 25
+								.accordion__row
+									.accordion__week At student's place
+									.accordion__price ac. hour 
+										span € 30
+							a(href="#").accordion__link Book now
+
+							ul.accordion__list
+								li The payment is made оn the first day of the program. No pre-payment is required. 
+									a(href="#") Book now — pay later
+									| !
+								li You can combine group and individual classes on your choice! 
+								li Payment is made in rubles according to the exchange rate of the Central bank on the day of payment. Modes of payment: by card (Visa/Mastercard) in the office of the school or in the bank upon receipt of the invoice
+								li School is closed for Christmas holidays from December 21, 2019 to January 5, 2020
+
+				.accordion
+					.accordion__header
+						h3.accordion__name Evening Group
+						span.accordion__week 6 ac. hours a week	
+						span.accordion__price 1 week from 
+							span € 60
+						span.accordion__icon +
+						
+					.accordion__description
+						.accordion__content
+
+				.accordion
+					.accordion__header
+						h3.accordion__name Weekend Group
+						span.accordion__week 6 ac. hours a week	
+						span.accordion__price 1 week from 
+							span € 60
+						span.accordion__icon +
+						
+					.accordion__description
+						.accordion__content
+
+				.accordion
+					.accordion__header
+						h3.accordion__name Individual lessons
+						span.accordion__week up to 30 ac. hours a week
+						span.accordion__price ac. hour 
+							span € 20
+						span.accordion__icon +
+						
+					.accordion__description
+						.accordion__content
+
+				.accordion
+					.accordion__header
+						h3.accordion__name Accommodation
+						span.accordion__week Single room in shared flat or Russian host family
+						span.accordion__price 1 week from 
+							span € 145
+						span.accordion__icon +
+						
+					.accordion__description
+						.accordion__content
+
+				.accordion
+					.accordion__header
+						h3.accordion__name Transfer
+						span.accordion__week Airport pick-up or transfer to airport	
+						span.accordion__price  from 
+							span € 40
+						span.accordion__icon +
+						
+					.accordion__description
+						.accordion__content
+
+				.accordion
+					.accordion__header
+						h3.accordion__name Visa
+						span.accordion__week Single/multi-entry study visa
+						span.accordion__price 
+							span € 40
+						span.accordion__icon +
+						
+					.accordion__description
+						.accordion__content
+					
+block footer
+	include ../blocks/footer/footer		

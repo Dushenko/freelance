@@ -1,5 +1,5 @@
 .menu-section {
-	background-color: #000;
+	background-color: #171717;
 	padding: 10px 0 5px;
 	display: none;
 	@media screen and (min-width: 600px) {
@@ -24,9 +24,13 @@
 		@media screen and (min-width: 1024px) {
 			font-size: 18px;
 		}
-		&.active,
-		&:hover {
+		&.active {
 			border-bottom: 2px solid #fff;
+		}
+
+		&:hover {
+			color: #f1b9be;
+			border-bottom: 2px solid #f1b9be;
 		}
 	}
 }
@@ -34,7 +38,7 @@
 .filter-section {
 	padding: 8vw 0;
 	@media screen and (min-width: 1360px) {
-		padding: 150px 0;
+		padding: 100px 0;
 	}
 
 	&_product {
@@ -245,6 +249,10 @@
 		.product-link__info {
 			opacity: 1;
 		}
+
+		.product-link__color {
+			opacity: 1;
+		}
 	}
 
 	&__wrap {
@@ -271,7 +279,8 @@
 		color: #000;
 		font-size: 16px;
 		@media screen and (min-width: 600px) {
-			display: none;
+			opacity: 0;
+			margin-left: auto;
 		}
 	}
 

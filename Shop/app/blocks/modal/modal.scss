@@ -64,6 +64,11 @@
 		&_upper {
 			text-transform: uppercase;
 		}
+
+		&_normal {
+			font-weight: 400;
+			margin-bottom: 0;
+		}
 	}
 
 	&__text-wrap {

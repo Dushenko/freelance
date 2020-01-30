@@ -1,4 +1,9 @@
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
 	.header-top {
 		padding: 10px 0;
 		border-bottom: 2px solid #000;
@@ -30,8 +35,17 @@
 
 	.header-bot {
 		background-color: transparent;
-		background: #7c9581;
+		background-color: #7c9581;
 		padding: 15px 0;
+
+		&.active {
+			background-color: #7c9581;
+		}
+
+		&_transparent {
+			transition: background-color .3s ease-in-out;
+			background-color: transparent;
+		}
 
 		@media screen and (min-width: 900px) {
 			padding: 0;
@@ -146,6 +160,10 @@
 			visibility: hidden;
 			transition: all .3s ease;
 			display: block;
+			max-height: calc(100vh - 160px);
+			height: auto;
+			overflow: hidden;
+			overflow-y: auto;
 		}
 		
 		&.active {

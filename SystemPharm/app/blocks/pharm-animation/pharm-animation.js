@@ -1,4 +1,4 @@
-window.onload = function() {
+$(document).ready(function() {
     let c = init("pharm-animation").c,
         canvas = init("pharm-animation").canvas,
         doc = document.querySelector('body'),
@@ -324,4 +324,4 @@ window.onload = function() {
     
     loop();
     setInterval(loop, 1000 / 60);
-    }
+    })

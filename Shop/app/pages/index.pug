@@ -4,7 +4,7 @@ block head
 	- var pageTitle = '';
 
 block header
-	include ../blocks/header/header
+	include ../blocks/header/index-header
 
 block content
 	main.main
@@ -24,7 +24,7 @@ block content
 		section.catalog-section
 			.container
 				h2.section-title Каталог
-				a(href="#").sub-link Смотреть все >
+				a(href="catalog.html").sub-link Смотреть все >
 				.catalog-head
 					a(href="#").catalog-link
 						img(src="images/m8.jpg", alt="")
@@ -79,7 +79,7 @@ block content
 
 		section.instagram-section
 			.container
-				h2.section-title.section-title_big Узнайте больше о Highcraft в Instagram
+				a(href="https://www.instagram.com/highcraft.co/").section-title.section-title_big Узнайте больше о Highcraft в Instagram
 
 				.instagram-wrap
 					a(href="#").instagram

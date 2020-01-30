@@ -126,11 +126,11 @@ select {
 }
 
 //scroll
-.scroll-wrap::-webkit-scrollbar {
+.js-menu::-webkit-scrollbar {
 	width: 3px;
 	background-color: #ccc;
 }
-.scroll-wrap::-webkit-scrollbar-thumb {
+.js-menu::-webkit-scrollbar-thumb {
 	background-color: rgba(0,0,0,0.75);
 	border-radius: 2px;
 }

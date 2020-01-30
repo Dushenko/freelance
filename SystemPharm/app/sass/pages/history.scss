@@ -58,7 +58,7 @@
 		margin: 0 -12px;
 	}
 	@media screen and (min-width: 1200px) {
-		margin: 0 -40px;
+		// margin: 0 -40px;
 	}
 }
 
@@ -77,6 +77,13 @@
 	@media screen and (min-width: 1200px) {
 		padding: 0 40px;
 		min-height: 310px;
+	}
+
+	&:first-child {
+		padding-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
 	}
 
 	&__wrap {

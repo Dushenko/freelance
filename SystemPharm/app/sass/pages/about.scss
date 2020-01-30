@@ -1,5 +1,6 @@
 .about-section {
 	padding: 8vw 0;
+	overflow: hidden;
 
 	@media screen and (min-width: 1360px) {
 		padding: 193px 0 60px;
@@ -148,6 +149,15 @@
 				width: 290px;
 				@media screen and (min-width: 1024px) {
 					width: 305px;
+				}
+			}
+
+			p {
+				@media screen and (min-width: 1024px) {
+					font-size: 14px;
+				}
+				@media screen and (min-width: 1360px) {
+					font-size: 16px;
 				}
 			}
 		}

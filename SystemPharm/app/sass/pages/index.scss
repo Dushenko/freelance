@@ -58,7 +58,9 @@
 			top: 50%;
 			left: 0;
 			transform: translateY(-50%);
-			background-size: contain;
+			background-size: 95%;
+			background-repeat: no-repeat;
+			background-position: center;
 			background-image: url("data:image/svg+xml,%3Csvg width='47' height='48' viewBox='0 0 47 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.1294 23.5671C28.7867 23.9537 28.7867 24.9043 28.1294 25.2909L22.1486 28.809C21.482 29.2012 20.6416 28.7205 20.6416 27.9471L20.6416 20.9109C20.6416 20.1375 21.482 19.6568 22.1486 20.049L28.1294 23.5671Z' stroke='white' stroke-width='2'/%3E%3Ccircle cx='23.5' cy='24.0781' r='23' stroke='%23FF419F'/%3E%3C/svg%3E%0A");
 		}
 	}
@@ -146,6 +148,7 @@
 					opacity: 0.5;
 					transition: all .25s ease;				
 					transform: translate(-50%, -50%) scale(1.2);
+					box-shadow: 0 0 10px 10px #FF006B;
 				}
 			}
 		}
@@ -171,6 +174,7 @@
 			background-color: #FF006B;
 			opacity: 0.5;
 			filter: blur(3px);
+
 			@media screen and (min-width: 1024px) {
 				background-color: #747474;
 				opacity: 0.17;
@@ -339,6 +343,6 @@
 }
 
 @keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(10px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(10px) rotate(-360deg); }
+	from { transform: rotate(0deg) translateX(10px) rotate(0deg); }
+	to   { transform: rotate(360deg) translateX(10px) rotate(-360deg); }
 }
