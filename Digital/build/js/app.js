@@ -117,8 +117,16 @@ $(document).ready(function () {
     infinite: true,
     focusOnSelect: true,
     vertical: true,
-    centerMode: true // autoplay: true
-
+    centerMode: true,
+    // autoplay: true
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        vertical: false,
+        slidesToShow: 1,
+        centerMode: false
+      }
+    }]
   });
 });
 $(document).ready(function () {

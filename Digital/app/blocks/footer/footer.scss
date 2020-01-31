@@ -6,8 +6,12 @@
   color: #e0e0e0;
 
   .container {
-    padding: 36px 15px 18px;
+    padding: 40px 15px 44px;
     margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      padding: 36px 15px 18px;
+    }
   }
 }
 
@@ -49,11 +53,12 @@
 }
 
 .footer-nav {
-  width: 100%;
-  margin: 0 auto 22px;
+  display: none;
 
-  @media screen and (min-width: 468px) {
+  @media screen and (min-width: 768px){
+    display: block;
     width: 54%;
+    margin: 0 auto 22px;
   }
 }
 

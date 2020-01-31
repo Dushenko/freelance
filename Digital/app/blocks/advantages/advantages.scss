@@ -2,9 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: flex-end;
 
   @media screen and (min-width: 480px) {
     margin: 0 -10px;
+    justify-content: unset;
   }
 
   @media screen and (min-width: 1024px) {
@@ -15,6 +17,9 @@
 .advantage {
   margin-bottom: 20px;
   position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  
   @media screen and (min-width: 480px) {
     width: 50%;
     padding: 0 10px;
@@ -33,7 +38,7 @@
     width: 49px;
     height: 49px;
     position: absolute;
-    left: -12px;
+    left: 0px;
     top: -18px;
     opacity: 0.5;
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='55' viewBox='0 0 60 55' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='2.06769' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1075' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.147' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.188' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2276' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2686' cy='2.06769' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='2.06769' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1068' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.1478' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.1888' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2278' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2689' cy='12.0403' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='2.06769' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1068' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.1478' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.1888' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2278' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2689' cy='22.013' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='2.06769' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1068' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.1478' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.1888' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2278' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2689' cy='31.9857' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='2.06769' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1075' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.147' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.188' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2276' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2686' cy='41.959' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='2.06769' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='13.1075' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='24.147' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='35.188' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='46.2276' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3Cellipse cx='57.2686' cy='51.9358' rx='2.06769' ry='2.06769' fill='%2342DFBF'/%3E%3C/svg%3E%0A");
