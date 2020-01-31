@@ -13,6 +13,12 @@
 
 	li {
 		margin: 0 25px 5px 0;
+
+		&.purple {
+			a {
+				color: #f1b9be;
+			}
+		}
 	}
 
 	a {
@@ -29,8 +35,8 @@
 		}
 
 		&:hover {
-			color: #f1b9be;
-			border-bottom: 2px solid #f1b9be;
+			color: #fff;
+			border-bottom: 2px solid #fff;
 		}
 	}
 }
@@ -95,8 +101,11 @@
 
 	.product-img {
 		margin-bottom: 30px;
-		img {
-			width: 100%;
+		transition: all .3s ease;
+		background-size: 100%;
+		&:hover {
+			transition: all .3s ease;
+			background-size: 110%;
 		}
 	}
 
@@ -192,7 +201,7 @@
 			font-size: 20px;
 			font-weight: 300;
 		}
-		
+
 
 		&.active {
 			&:before {

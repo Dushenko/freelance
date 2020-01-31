@@ -9,6 +9,7 @@ $(document).ready(function () {
 	if($(window).width() > 900){
 		$('.js-main-menu li').hover(function(){
 			$(this).find('.js-menu').toggleClass('active');
+			// $('.header-bot').toggleClass('active');
 		});
 	};
 

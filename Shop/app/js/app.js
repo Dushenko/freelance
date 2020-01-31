@@ -30,9 +30,12 @@ $(document).ready(function () {
 			if($(this).scrollTop() != 0) {
 				$('.back-top').fadeIn();
 				$('.header-bot').addClass('active');
+				$('.logo').addClass('logo-black');
 			} else {
 				$('.back-top').fadeOut();
 				$('.header-bot').removeClass('active');
+				$('.logo').removeClass('logo-black');
+				
 			}
 		});
 		$('.back-top').click(function() {

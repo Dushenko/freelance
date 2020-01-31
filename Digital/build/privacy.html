@@ -29,15 +29,19 @@
         </div>
         <div class="burger-menu js-burger-menu">
           <div class="burger-menu__wrap">
-            <div class="burger-menu__user active">
+            <div class="burger-menu__user burger-menu__user_login active">
               <div class="burger-menu__img burger-menu__img_signed"><img src="images/lk-img.jpg" alt=""></div><span class="burger-menu__name">Valeria Lopez</span><span class="burger-menu__registration">Registration since 26 December, 2019</span><span class="burger-menu__profile burger-menu__profile_name">Username</span><span class="burger-menu__profile burger-menu__profile_email">qwerty@gmail.com</span><a class="burger-menu__settings" href="#"></a>
             </div>
             <div class="burger-menu__user">
-              <div class="burger-menu__img"><img src="images/login.svg" alt=""></div>
-              <button class="burger-menu__button active" type="submit">Log in</button>
-              <button class="burger-menu__button" type="submit">Create account</button>
+              <div class="burger-menu__img"><img src="images/login.svg" alt=""></div><span class="burger-menu__button js-sign-in active">Log in</span><span class="burger-menu__button js-reg-open">Create account</span>
             </div>
-            <div class="burger-menu__links"><a class="burger-menu__link burger-menu__link_refund" href="#">Refund Policy</a><a class="burger-menu__link burger-menu__link_privacy" href="#">Privacy Policy</a><a class="burger-menu__link burger-menu__link_faq" href="#">FAQ</a><a class="burger-menu__link burger-menu__link_feed" href="#">Feedback</a><a class="burger-menu__link burger-menu__link_logout" href="#">Logout</a></div>
+            <ul class="user-nav">
+              <li><a class="refund" href="#">Refund Policy</a></li>
+              <li><a class="privacy" href="#">Privacy Policy</a></li>
+              <li> <a class="faq" href="#">FAQ</a></li>
+              <li> <a class="feed" href="#">Feedback</a></li>
+              <li> <a class="logout" href="#">Logout</a></li>
+            </ul>
           </div>
         </div>
       </header>

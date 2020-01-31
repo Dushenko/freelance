@@ -8,7 +8,7 @@ $(document).ready(function () {
 
   if ($(window).width() > 900) {
     $('.js-main-menu li').hover(function () {
-      $(this).find('.js-menu').toggleClass('active');
+      $(this).find('.js-menu').toggleClass('active'); // $('.header-bot').toggleClass('active');
     });
   }
 
@@ -178,9 +178,11 @@ $(document).ready(function () {
       if ($(this).scrollTop() != 0) {
         $('.back-top').fadeIn();
         $('.header-bot').addClass('active');
+        $('.logo').addClass('logo-black');
       } else {
         $('.back-top').fadeOut();
         $('.header-bot').removeClass('active');
+        $('.logo').removeClass('logo-black');
       }
     });
     $('.back-top').click(function () {

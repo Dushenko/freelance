@@ -24,7 +24,7 @@ header.header
 
 	.burger-menu.js-burger-menu
 		.burger-menu__wrap
-			.burger-menu__user.active
+			.burger-menu__user.burger-menu__user_login.active
 				.burger-menu__img.burger-menu__img_signed
 					img(src="images/lk-img.jpg", alt="")
 				span.burger-menu__name Valeria Lopez
@@ -36,12 +36,17 @@ header.header
 			.burger-menu__user
 				.burger-menu__img
 					img(src="images/login.svg", alt="")
-				button(type="submit").burger-menu__button.active Log in
-				button(type="submit").burger-menu__button Create account
+				span.burger-menu__button.js-sign-in.active Log in
+				span.burger-menu__button.js-reg-open Create account
 
-			.burger-menu__links
-				a(href="#").burger-menu__link.burger-menu__link_refund Refund Policy
-				a(href="#").burger-menu__link.burger-menu__link_privacy Privacy Policy
-				a(href="#").burger-menu__link.burger-menu__link_faq FAQ
-				a(href="#").burger-menu__link.burger-menu__link_feed Feedback
-				a(href="#").burger-menu__link.burger-menu__link_logout Logout
+			ul.user-nav
+				li
+					a(href="#").refund Refund Policy
+				li
+					a(href="#").privacy Privacy Policy
+				li 
+					a(href="#").faq FAQ
+				li 
+					a(href="#").feed Feedback
+				li 
+					a(href="#").logout Logout
