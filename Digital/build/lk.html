@@ -60,11 +60,15 @@
                 <div class="lk-header">
                   <div class="user">
                     <div class="user__avatar"><img src="images/lk-img.jpg" alt=""></div>
-                    <div class="user__data"><span class="user__name">Valeria Lopez</span><span class="user__reg">Registration since 26 December, 2019</span></div>
-                    <div class="user__info"><span class="user__personal user__personal_name">Username</span><span class="user__personal user__personal_email">qwerty@gmail.com</span></div><span class="user__edit"></span>
+                    <div class="user__wrap">
+                      <div class="user__data"><span class="user__name">Valeria Lopez</span><span class="user__reg">Registration since 26 December, 2019</span></div>
+                      <div class="user__info"><span class="user__personal user__personal_name">Username</span><span class="user__personal user__personal_email">qwerty@gmail.com</span></div>
+                    </div><span class="user__edit"></span>
                   </div>
                   <div class="balance-wrap">
-                    <div class="balance"><span class="balance__my">My balance</span><span class="balance__current">Current balance:</span><span class="balance__account">$ 135</span></div><span class="balance-add"><a class="balance-add__plus" href="#"></a></span>
+                    <div class="balance"><span class="balance__my">My balance</span>
+                      <div class="balance__wrap"><span class="balance__current">Current balance:</span><span class="balance__account">$ 135</span></div>
+                    </div><span class="balance-add"><a class="balance-add__plus" href="#"></a></span>
                   </div>
                 </div>
                 <div class="tabs__content js-tab-content active">
@@ -83,30 +87,30 @@
                           </div>
                         </form>
                       </div>
-                      <div class="order-wrap">
-                        <div class="order">
-                          <div class="order__info"><span class="order__id">ID</span><span class="order__items">Items</span><span class="order__status">Status</span><span class="order__price">Order price</span><span class="order__date">Created At</span></div>
-                          <div class="shop-cart"><span class="shop-cart__id">4592<span class="shop-cart__delete"></span></span>
-                            <div class="shop-cart__items">
-                              <div class="shop-cart__item"><span>250 </span>followers - <span>6.99$</span></div>
-                              <div class="shop-cart__item"><span>250 </span>followers - <span>6.99$</span></div>
-                            </div><span class="shop-cart__status">Create, not paid</span><span class="shop-cart__price">$ 12.98</span><span class="shop-cart__date">16 January, 2020</span>
-                          </div>
-                          <div class="shop-cart"><span class="shop-cart__id">4592<span class="shop-cart__delete"></span></span>
-                            <div class="shop-cart__items">
-                              <div class="shop-cart__item"><span>250 </span>followers - <span>6.99$</span></div>
-                            </div><span class="shop-cart__status">Create, not paid</span><span class="shop-cart__price">$ 12.98</span><span class="shop-cart__date">16 January, 2020</span>
-                          </div>
-                          <div class="shop-cart"><span class="shop-cart__id">4592<span class="shop-cart__delete"></span></span>
-                            <div class="shop-cart__items">
-                              <div class="shop-cart__item"><span>250 </span>followers - <span>6.99$</span></div>
-                            </div><span class="shop-cart__status">Create, not paid</span><span class="shop-cart__price">$ 12.98</span><span class="shop-cart__date">16 January, 2020</span>
-                          </div>
-                          <div class="shop-cart"><span class="shop-cart__id">4592<span class="shop-cart__delete"></span></span>
-                            <div class="shop-cart__items">
-                              <div class="shop-cart__item"><span>250 </span>followers - <span>6.99$</span></div>
-                            </div><span class="shop-cart__status">Create, not paid</span><span class="shop-cart__price">$ 12.98</span><span class="shop-cart__date">16 January, 2020</span>
-                          </div>
+                    </div>
+                    <div class="table-wrap">
+                      <div class="table">
+                        <div class="table__head"><span class="table__id">ID</span><span class="table__items">Items</span><span class="table__status">Status</span><span class="table__price">Order price</span><span class="table__date">Created At</span></div>
+                        <div class="table__row"><span class="table__id">4592<span class="table__delete"></span></span>
+                          <div class="table__items">
+                            <div class="table__item"><span>250 </span>followers - <span>6.99$</span></div>
+                            <div class="table__item"><span>250 </span>followers - <span>6.99$</span></div>
+                          </div><span class="table__status">Create, not paid</span><span class="table__price">$ 12.98</span><span class="table__date">16 January, 2020</span>
+                        </div>
+                        <div class="table__row"><span class="table__id">4592<span class="table__delete"></span></span>
+                          <div class="table__items">
+                            <div class="table__item"><span>250 </span>followers - <span>6.99$</span></div>
+                          </div><span class="table__status">Create, not paid</span><span class="table__price">$ 12.98</span><span class="table__date">16 January, 2020</span>
+                        </div>
+                        <div class="table__row"><span class="table__id">4592<span class="table__delete"></span></span>
+                          <div class="table__items">
+                            <div class="table__item"><span>250 </span>followers - <span>6.99$</span></div>
+                          </div><span class="table__status">Create, not paid</span><span class="table__price">$ 12.98</span><span class="table__date">16 January, 2020</span>
+                        </div>
+                        <div class="table__row"><span class="table__id">4592<span class="table__delete"></span></span>
+                          <div class="table__items">
+                            <div class="table__item"><span>250 </span>followers - <span>6.99$</span></div>
+                          </div><span class="table__status">Create, not paid</span><span class="table__price">$ 12.98</span><span class="table__date">16 January, 2020</span>
                         </div>
                       </div>
                     </div>
@@ -175,13 +179,15 @@
                         </div>
                       </form>
                     </div>
-                    <div class="order">
-                      <div class="order__info"><span class="order__id">ID</span><span class="order__user">User</span><span class="order__amount">Amount</span><span class="order__date">Created At</span></div>
+                    <div class="table-wrap">
+                      <div class="table">
+                        <div class="table__head"><span class="table__id">ID</span><span class="table__user">User</span><span class="table__amount">Amount</span><span class="table__date">Created At</span></div>
+                        <div class="table__row"><span class="table__id">4592</span><span class="table__user">Username</span><span class="table__amount">$ 70</span><span class="table__date">16 January, 2020</span></div>
+                        <div class="table__row"><span class="table__id">4592</span><span class="table__user">Username</span><span class="table__amount">$ 70</span><span class="table__date">16 January, 2020</span></div>
+                        <div class="table__row"><span class="table__id">4592</span><span class="table__user">Username</span><span class="table__amount">$ 70</span><span class="table__date">16 January, 2020</span></div>
+                        <div class="table__row"><span class="table__id">4592</span><span class="table__user">Username</span><span class="table__amount">$ 70</span><span class="table__date">16 January, 2020</span></div>
+                      </div>
                     </div>
-                    <div class="shop-cart"><span class="shop-cart__id">4592</span><span class="shop-cart__user">Username</span><span class="shop-cart__amount">$ 70</span><span class="shop-cart__date">16 January, 2020</span></div>
-                    <div class="shop-cart"><span class="shop-cart__id">4592</span><span class="shop-cart__user">Username</span><span class="shop-cart__amount">$ 70</span><span class="shop-cart__date">16 January, 2020</span></div>
-                    <div class="shop-cart"><span class="shop-cart__id">4592</span><span class="shop-cart__user">Username</span><span class="shop-cart__amount">$ 70</span><span class="shop-cart__date">16 January, 2020</span></div>
-                    <div class="shop-cart"><span class="shop-cart__id">4592</span><span class="shop-cart__user">Username</span><span class="shop-cart__amount">$ 70</span><span class="shop-cart__date">16 January, 2020</span></div>
                   </div>
                 </div>
                 <div class="tabs__content js-tab-content">

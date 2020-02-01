@@ -23,19 +23,21 @@ block content
 							.user
 								.user__avatar
 									img(src='images/lk-img.jpg' alt="")
-								.user__data
-									span.user__name Valeria Lopez
-									span.user__reg Registration since 26 December, 2019
-								.user__info
-									span.user__personal.user__personal_name Username
-									span.user__personal.user__personal_email qwerty@gmail.com
+								.user__wrap
+									.user__data
+										span.user__name Valeria Lopez
+										span.user__reg Registration since 26 December, 2019
+									.user__info
+										span.user__personal.user__personal_name Username
+										span.user__personal.user__personal_email qwerty@gmail.com
 								span.user__edit
 
 							.balance-wrap
 								.balance
 									span.balance__my My balance
-									span.balance__current Current balance:
-									span.balance__account $ 135
+									.balance__wrap
+										span.balance__current Current balance:
+										span.balance__account $ 135
 								span.balance-add
 									a.balance-add__plus(href="#")
 
@@ -58,66 +60,66 @@ block content
 													button(type="submit").lk-form__search-btn
 													input(type="text" placeholder="Search").lk-form__input
 
-									.order-wrap
-										.order
-											.order__info
-												span.order__id ID
-												span.order__items Items
-												span.order__status Status
-												span.order__price Order price
-												span.order__date Created At
+								.table-wrap
+									.table
+										.table__head
+											span.table__id ID
+											span.table__items Items
+											span.table__status Status
+											span.table__price Order price
+											span.table__date Created At
 
-											.shop-cart
-												span.shop-cart__id 4592
-													span.shop-cart__delete
-												.shop-cart__items
-													.shop-cart__item
-														span 250 
-														| followers - 
-														span 6.99$
-													.shop-cart__item
-														span 250 
-														| followers - 
-														span 6.99$
-												span.shop-cart__status Create, not paid
-												span.shop-cart__price $ 12.98
-												span.shop-cart__date 16 January, 2020
+										.table__row
+											span.table__id 4592
+												span.table__delete
+											.table__items
+												.table__item
+													span 250 
+													| followers - 
+													span 6.99$
+												.table__item
+													span 250 
+													| followers - 
+													span 6.99$
+											span.table__status Create, not paid
+											span.table__price $ 12.98
+											span.table__date 16 January, 2020
 
-											.shop-cart
-												span.shop-cart__id 4592
-													span.shop-cart__delete
-												.shop-cart__items
-													.shop-cart__item
-														span 250 
-														| followers - 
-														span 6.99$
-												span.shop-cart__status Create, not paid
-												span.shop-cart__price $ 12.98
-												span.shop-cart__date 16 January, 2020
+										.table__row
+											span.table__id 4592
+												span.table__delete
+											.table__items
+												.table__item
+													span 250 
+													| followers - 
+													span 6.99$
+											span.table__status Create, not paid
+											span.table__price $ 12.98
+											span.table__date 16 January, 2020
 
-											.shop-cart
-												span.shop-cart__id 4592
-													span.shop-cart__delete
-												.shop-cart__items
-													.shop-cart__item
-														span 250 
-														| followers - 
-														span 6.99$
-												span.shop-cart__status Create, not paid
-												span.shop-cart__price $ 12.98
-												span.shop-cart__date 16 January, 2020
+										.table__row
+											span.table__id 4592
+												span.table__delete
+											.table__items
+												.table__item
+													span 250 
+													| followers - 
+													span 6.99$
+											span.table__status Create, not paid
+											span.table__price $ 12.98
+											span.table__date 16 January, 2020
 
-											.shop-cart
-												span.shop-cart__id 4592
-													span.shop-cart__delete
-												.shop-cart__items
-													.shop-cart__item
-														span 250 
-														| followers - 
-														span 6.99$
-												span.shop-cart__status Create, not paid
-												span.shop-cart__price $ 12.98
-												span.shop-cart__date 16 January, 2020
+										.table__row
+											span.table__id 4592
+												span.table__delete
+											.table__items
+												.table__item
+													span 250 
+													| followers - 
+													span 6.99$
+											span.table__status Create, not paid
+											span.table__price $ 12.98
+											span.table__date 16 January, 2020
 
 						.tabs__content.js-tab-content
 							.settings-wrap
@@ -193,10 +195,6 @@ block content
 										a(href="#").percent-link Cashout: 
 											span 350,80 $
 
-
-
-
-
 								.cart
 									span.cart-title My Refferals
 										span (4)
@@ -205,37 +203,38 @@ block content
 											.lk-form__field
 												button(type="submit").lk-form__search-btn
 												input(type="text" placeholder="Search ID").lk-form__input
+								
+								.table-wrap
+									.table
+										.table__head
+											span.table__id ID
+											span.table__user User
+											span.table__amount Amount
+											span.table__date Created At
 
-								.order
-									.order__info
-										span.order__id ID
-										span.order__user User
-										span.order__amount Amount
-										span.order__date Created At
+										.table__row
+											span.table__id 4592
+											span.table__user Username
+											span.table__amount $ 70
+											span.table__date 16 January, 2020
 
-								.shop-cart
-									span.shop-cart__id 4592
-									span.shop-cart__user Username
-									span.shop-cart__amount $ 70
-									span.shop-cart__date 16 January, 2020
+										.table__row
+											span.table__id 4592
+											span.table__user Username
+											span.table__amount $ 70
+											span.table__date 16 January, 2020
 
-								.shop-cart
-									span.shop-cart__id 4592
-									span.shop-cart__user Username
-									span.shop-cart__amount $ 70
-									span.shop-cart__date 16 January, 2020
+										.table__row
+											span.table__id 4592
+											span.table__user Username
+											span.table__amount $ 70
+											span.table__date 16 January, 2020
 
-								.shop-cart
-									span.shop-cart__id 4592
-									span.shop-cart__user Username
-									span.shop-cart__amount $ 70
-									span.shop-cart__date 16 January, 2020
-
-								.shop-cart
-									span.shop-cart__id 4592
-									span.shop-cart__user Username
-									span.shop-cart__amount $ 70
-									span.shop-cart__date 16 January, 2020
+										.table__row
+											span.table__id 4592
+											span.table__user Username
+											span.table__amount $ 70
+											span.table__date 16 January, 2020
 
 						.tabs__content.js-tab-content
 							.balances-wrap

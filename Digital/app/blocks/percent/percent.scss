@@ -1,15 +1,22 @@
 .percent-wrap {
 	margin-bottom: 33px;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-direction: column;
+	@media screen and (min-width: 650px) {
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 .percent {
-	width: 47%;
+	width: 100%;
 	margin-bottom: 15px;
 	display: flex;
 	flex-direction: column;
+	@media screen and (min-width: 650px) {
+		width: 47%;
+	}
 
 	&__amount {
 		display: flex;
