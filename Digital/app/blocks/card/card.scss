@@ -6,6 +6,7 @@
 	@media screen and (min-width: 480px) {
 		margin: 0 -10px;
 	}
+	
 	@media screen and (min-width: 1024px) {
 		margin: 0 -24px;
 	}
@@ -84,10 +85,13 @@
 
 	&__list {
 		margin: 20px;
-		font-size: 14px;
 		line-height: 18px;
 		color: #333333;
 		margin-bottom: 10px;
-		list-style-type: disc;
+
+		li {
+			list-style-type: disc;
+			font-size: 14px;
+		}
 	}
 }

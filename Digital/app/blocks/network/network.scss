@@ -1,103 +1,127 @@
 .network-wrap {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -5px;
-	cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  cursor: pointer;
 
-	&.instagram {
-		.network__wrap {
-			background: linear-gradient(130.46deg, #5a6de3 0%, #e6456f 100%);
-		}
-	}
+  &.instagram {
+    .network__wrap {
+      background: linear-gradient(130.46deg, #5a6de3 0%, #e6456f 100%);
+    }
+  }
 
-	&.facebook {
-		.network__wrap {
-			background: #2061F7;
-		}
-	}
+  &.facebook {
+    .network__wrap {
+      background: #2061f7;
+    }
+  }
+
+  &.youtube {
+    .network__wrap {
+      background: #ff0101;
+    }
+  }
+
+  &.twitter {
+    .network__wrap {
+      background: #1da1f2;
+    }
+  }
+
+  &.twitch {
+    .network__wrap {
+      background: #9147ff;
+    }
+  }
+
+  &.tiktok {
+    .network__wrap {
+      background: #373737;
+    }
+  }
 }
 
 .network {
-	padding: 0 5px;
-	margin: 0 0 10px 0;
-	width: 100%;
-	@media screen and (min-width: 440px) {
-		width: 50%;
-	}
-	@media screen and (min-width: 620px) {
-		width: 33.33%;
-	}
-	@media screen and (min-width: 620px) {
-		width: 33.33%;
-	}
-	@media screen and (min-width: 900px) {
-		width: 25%;
-	}
+  padding: 0 5px;
+  margin: 0 0 10px 0;
+  width: 100%;
+  @media screen and (min-width: 440px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 620px) {
+    width: 33.33%;
+  }
+  @media screen and (min-width: 620px) {
+    width: 33.33%;
+  }
+  @media screen and (min-width: 900px) {
+    width: 25%;
+  }
 
-	&__wrap {
-		color: #ffffff;
-		display: flex;
-		flex-direction: column;
-		overflow: hidden;
-		border-radius: 15px;
-		padding: 13px 15px 19px;
-		box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.18);
-	}
+  &__wrap {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 13px 15px 19px;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.18);
+  }
 
-	&__head {
-		display: flex;
-		align-items: flex-end;
-		margin-bottom: 10px;
-		line-height: 1;
-	}
+  &__head {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
 
-	&__count {
-		font-weight: 600;
-		font-size: 26px;
-		margin-right: 7px;
-	}
+  &__count {
+    font-weight: 600;
+    font-size: 26px;
+    margin-right: 7px;
+  }
 
-	&__followers {
-		font-weight: 300;
-		font-size: 14px;
-		margin: 0 0 2px;
-	}
+  &__followers {
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0 0 2px;
+  }
 
-	&__benefits {
-		padding-left: 17px;
-		padding-bottom: 17px;
-		margin-bottom: 15px;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+  &__benefits {
+    padding-left: 17px;
+    padding-bottom: 17px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
-		li {
-			font-size: 14px;
-			line-height: 18px;
-			color: #ffffff;
-			list-style-type: circle;
-		}
-	}
+    li {
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+      list-style-type: circle;
+    }
+  }
 
-	&__price-wrap {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+  &__price-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-	&__price {
-		font-weight: 600;
-		font-size: 20px;
-		color: #ffffff;
-	}
+  &__price {
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+  }
 
-	&__basket {
-		width: 35px;
-		height: 28px;
-		border: 1px solid #fff;
-		border-radius: 5px;
-		position: relative;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 52%;
-		background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.9375 2.62474C14.875 2.56225 14.8125 2.49973 14.6875 2.49973H2.8125L2.49999 0.874746C2.49999 0.749736 2.31249 0.624756 2.18748 0.624756H0.31248C0.12501 0.624727 0 0.749736 0 0.937236C0 1.12474 0.12501 1.24975 0.31251 1.24975H1.93752L3.43752 8.87475C3.62502 9.87475 4.56252 10.6247 5.56251 10.6247H12.75C12.9375 10.6247 13.0625 10.4997 13.0625 10.3122C13.0625 10.1247 12.9375 9.99973 12.75 9.99973H5.625C5.12499 9.99973 4.62501 9.74974 4.37499 9.31222L13.5 8.06224C13.625 8.06224 13.75 7.93723 13.75 7.81224L15 2.81224C15 2.81224 15 2.68723 14.9375 2.62474ZM13.1875 7.49974L4.06248 8.68723L2.93748 3.06223H14.25L13.1875 7.49974Z' fill='white'/%3E%3Cpath d='M5.31249 11.25C4.43751 11.25 3.75 11.9375 3.75 12.8125C3.75 13.6875 4.43751 14.375 5.31249 14.375C6.1875 14.375 6.87498 13.6875 6.87498 12.8125C6.87501 11.9375 6.1875 11.25 5.31249 11.25ZM5.31249 13.75C4.81248 13.75 4.37499 13.3125 4.37499 12.8125C4.37499 12.3125 4.81248 11.875 5.31249 11.875C5.8125 11.875 6.24999 12.3125 6.24999 12.8125C6.24999 13.3125 5.8125 13.75 5.31249 13.75Z' fill='white'/%3E%3Cpath d='M11.5625 11.25C10.6875 11.25 10 11.9375 10 12.8125C10 13.6875 10.6875 14.375 11.5625 14.375C12.4375 14.375 13.125 13.6875 13.125 12.8125C13.125 11.9375 12.4375 11.25 11.5625 11.25ZM11.5625 13.75C11.0625 13.75 10.625 13.3125 10.625 12.8125C10.625 12.3125 11.0625 11.875 11.5625 11.875C12.0625 11.875 12.5 12.3125 12.5 12.8125C12.5 13.3125 12.0625 13.75 11.5625 13.75Z' fill='white'/%3E%3C/svg%3E ");
-	}
+  &__basket {
+    width: 35px;
+    height: 28px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 52%;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.9375 2.62474C14.875 2.56225 14.8125 2.49973 14.6875 2.49973H2.8125L2.49999 0.874746C2.49999 0.749736 2.31249 0.624756 2.18748 0.624756H0.31248C0.12501 0.624727 0 0.749736 0 0.937236C0 1.12474 0.12501 1.24975 0.31251 1.24975H1.93752L3.43752 8.87475C3.62502 9.87475 4.56252 10.6247 5.56251 10.6247H12.75C12.9375 10.6247 13.0625 10.4997 13.0625 10.3122C13.0625 10.1247 12.9375 9.99973 12.75 9.99973H5.625C5.12499 9.99973 4.62501 9.74974 4.37499 9.31222L13.5 8.06224C13.625 8.06224 13.75 7.93723 13.75 7.81224L15 2.81224C15 2.81224 15 2.68723 14.9375 2.62474ZM13.1875 7.49974L4.06248 8.68723L2.93748 3.06223H14.25L13.1875 7.49974Z' fill='white'/%3E%3Cpath d='M5.31249 11.25C4.43751 11.25 3.75 11.9375 3.75 12.8125C3.75 13.6875 4.43751 14.375 5.31249 14.375C6.1875 14.375 6.87498 13.6875 6.87498 12.8125C6.87501 11.9375 6.1875 11.25 5.31249 11.25ZM5.31249 13.75C4.81248 13.75 4.37499 13.3125 4.37499 12.8125C4.37499 12.3125 4.81248 11.875 5.31249 11.875C5.8125 11.875 6.24999 12.3125 6.24999 12.8125C6.24999 13.3125 5.8125 13.75 5.31249 13.75Z' fill='white'/%3E%3Cpath d='M11.5625 11.25C10.6875 11.25 10 11.9375 10 12.8125C10 13.6875 10.6875 14.375 11.5625 14.375C12.4375 14.375 13.125 13.6875 13.125 12.8125C13.125 11.9375 12.4375 11.25 11.5625 11.25ZM11.5625 13.75C11.0625 13.75 10.625 13.3125 10.625 12.8125C10.625 12.3125 11.0625 11.875 11.5625 11.875C12.0625 11.875 12.5 12.3125 12.5 12.8125C12.5 13.3125 12.0625 13.75 11.5625 13.75Z' fill='white'/%3E%3C/svg%3E ");
+  }
 }

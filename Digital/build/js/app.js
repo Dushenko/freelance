@@ -24,6 +24,20 @@ $(document).ready(function () {
 
   accordion();
 });
+$(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() != 0) {
+      $('.btn-up').fadeIn();
+    } else {
+      $('.btn-up').fadeOut();
+    }
+  });
+  $('.btn-up').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 1500);
+  });
+});
 $(document).ready(function () {
   //burger
   if (document.querySelector('.js-burger')) {
@@ -84,6 +98,11 @@ $(document).ready(function () {
   $('.js-select').click(function () {
     $(this).toggleClass('active');
     $('.js-select-list').slideToggle();
+  }); //select service
+
+  $('.js-serv-select').click(function () {
+    $(this).toggleClass('active');
+    $('.js-serv-list').slideToggle();
   }); //close custom select
 
   $(function ($) {

@@ -6,6 +6,12 @@ $(document).ready(function () {
 		$('.js-select-list').slideToggle();
 	});
 
+	//select service
+	$('.js-serv-select').click( function () {
+		$(this).toggleClass('active');
+		$('.js-serv-list').slideToggle();
+	});
+
 	//close custom select
 	$(function($){
 		$(document).mouseup(function (e){

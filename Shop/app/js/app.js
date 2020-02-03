@@ -35,7 +35,6 @@ $(document).ready(function () {
 				$('.back-top').fadeOut();
 				$('.header-bot').removeClass('active');
 				$('.logo').removeClass('logo-black');
-				
 			}
 		});
 		$('.back-top').click(function() {
