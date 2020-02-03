@@ -24,20 +24,6 @@ $(document).ready(function () {
 
   accordion();
 });
-$(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() != 0) {
-      $('.btn-up').fadeIn();
-    } else {
-      $('.btn-up').fadeOut();
-    }
-  });
-  $('.btn-up').click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 1500);
-  });
-});
 $(document).ready(function () {
   //burger
   if (document.querySelector('.js-burger')) {
@@ -98,26 +84,30 @@ $(document).ready(function () {
   $('.js-select').click(function () {
     $(this).toggleClass('active');
     $('.js-select-list').slideToggle();
+  });
+  $('.js-select-list li').click(function () {
+    var selected = $(this).text();
+    $('.js-select-text').text(selected);
   }); //select service
 
   $('.js-serv-select').click(function () {
     $(this).toggleClass('active');
     $('.js-serv-list').slideToggle();
+  });
+  $('.js-serv-list li').click(function () {
+    var selectedServ = $(this).text();
+    $('.js-serv-text').text(selectedServ);
   }); //close custom select
 
   $(function ($) {
     $(document).mouseup(function (e) {
-      var div = $(".js-select");
+      var div = $(".select__head");
 
       if (!div.is(e.target) && div.has(e.target).length === 0) {
         div.removeClass('active');
-        $('.js-select-list').slideUp();
+        $('.select__list').slideUp();
       }
     });
-  });
-  $('.js-select-list li').click(function () {
-    var selected = $(this).text();
-    $('.select__text').text(selected);
   });
 });
 $(document).ready(function () {
@@ -156,4 +146,19 @@ $(document).ready(function () {
     });
   });
 });
-$(document).ready(function () {});
+$(document).ready(function () {
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() != 0) {
+        $('.btn-up').fadeIn();
+      } else {
+        $('.btn-up').fadeOut();
+      }
+    });
+    $('.btn-up').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 1500);
+    });
+  });
+});

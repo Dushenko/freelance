@@ -66,9 +66,9 @@
   display: flex;
   justify-content: space-between;
 
-    li {
-        text-align: center;
-    }
+  li {
+    text-align: center;
+  }
 
   a {
     color: #fff;
@@ -83,7 +83,7 @@
 .btn-up {
   display: block;
   position: fixed;
-  bottom: 44px;
+  bottom: 15px;
   right: 15px;
   border-radius: 50%;
   width: 43px;
@@ -96,7 +96,8 @@
   animation: button 3s linear infinite;
 
   @media screen and (min-width: 768px) {
-    display: none;
+    bottom: 30px;
+    right: 30px;
   }
 }
 
