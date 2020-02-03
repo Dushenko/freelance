@@ -1,0 +1,22 @@
+@keyframes animation {
+	0%{
+		transform: translate(0, 200px);
+		opacity: 0;
+	}
+
+	100%{
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+.mov {
+	opacity: 0;
+	// position: relative;
+	// transform: translate(0, 200px);
+	&.anim {
+		animation-name: animation;
+		animation-duration: .5s;
+		animation-fill-mode: forwards;
+	}
+}
