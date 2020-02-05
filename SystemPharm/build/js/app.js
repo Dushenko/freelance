@@ -24,7 +24,17 @@ $(document).ready(function () {
         $('html').addClass('overflow');
       }
     });
-  }
+  } //lang
+
+
+  $(".lang__wrap a").click(function () {
+    var clicked = $(this).html();
+    $('.lang__current').html(clicked);
+    $('.lang__wrap').removeClass('active');
+  });
+  $('.lang__current').click(function () {
+    $('.lang__wrap').toggleClass('active');
+  });
 });
 $(document).ready(function () {//     $('.region').each((id, el) => {
   //         $(el).attr('data-region', id);

@@ -40,15 +40,15 @@
 		cursor: pointer;
 		width: 29px;
 		height: 29px;
-		margin-right: 70px;
+		margin-right: 20px;
 		background-size: 96%;
 		background-position: center;
 		background-repeat: no-repeat;
 		transition: all .25s ease;
 		background-image: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.7261 18.239H19.4162L18.952 17.7913C20.5769 15.9011 21.5552 13.4471 21.5552 10.7776C21.5552 4.82504 16.7301 0 10.7776 0C4.82504 0 0 4.82504 0 10.7776C0 16.7301 4.82504 21.5552 10.7776 21.5552C13.4471 21.5552 15.9011 20.5769 17.7913 18.952L18.239 19.4162V20.7261L26.5294 29L29 26.5294L20.7261 18.239ZM10.7776 18.239C6.64894 18.239 3.31618 14.9062 3.31618 10.7776C3.31618 6.64894 6.64894 3.31618 10.7776 3.31618C14.9062 3.31618 18.239 6.64894 18.239 10.7776C18.239 14.9062 14.9062 18.239 10.7776 18.239Z' fill='white'/%3E%3C/svg%3E%0A");
-		@media screen and (min-width: 768px) {
-			margin-right: 70px;
-		}
+		// @media screen and (min-width: 768px) {
+		// 	margin-right: 70px;
+		// }
 
 		&:hover {
 			background-image: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.7261 18.239H19.4162L18.952 17.7913C20.5769 15.9011 21.5552 13.4471 21.5552 10.7776C21.5552 4.82504 16.7301 0 10.7776 0C4.82504 0 0 4.82504 0 10.7776C0 16.7301 4.82504 21.5552 10.7776 21.5552C13.4471 21.5552 15.9011 20.5769 17.7913 18.952L18.239 19.4162V20.7261L26.5294 29L29 26.5294L20.7261 18.239ZM10.7776 18.239C6.64894 18.239 3.31618 14.9062 3.31618 10.7776C3.31618 6.64894 6.64894 3.31618 10.7776 3.31618C14.9062 3.31618 18.239 6.64894 18.239 10.7776C18.239 14.9062 14.9062 18.239 10.7776 18.239Z' fill='%23FF008A'/%3E%3C/svg%3E%0A");
@@ -158,6 +158,57 @@
 	}
 }
 
+.lang {
+	margin-right: 55px;
+	position: relative;
+
+	&__current {
+		font-family: 'Lato';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		transition: all .3s ease;
+		cursor: pointer;
+		width: 30px;
+		display: block;
+
+		&:hover {
+			color: #FF008A;
+		}
+	}
+
+	&__wrap {
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 0;
+
+		&.active {
+			display: flex;
+			flex-direction: column;
+		}
+
+		a {
+			font-family: 'Lato';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+
+			&:hover {
+				color: #FF008A;
+			}
+		}
+	}
+}
+
 .burger {
 	position: fixed;
 	width: 32px;
@@ -165,7 +216,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-left: 65px;
+	margin-left: 100px;
 
 	span {
 		width: 32px;

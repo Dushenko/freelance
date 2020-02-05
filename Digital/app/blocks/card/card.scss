@@ -1,7 +1,11 @@
 .card-wrap {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
+	display: none;
+
+	&.active {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
 
 	@media screen and (min-width: 480px) {
 		margin: 0 -10px;
@@ -42,9 +46,8 @@
 		@media screen and (min-width: 768px){
 			min-height: 90px;
 			background-repeat: no-repeat;
-			background-position: center;
-			background-size: 150%;
-			background-image: url('../images/card.png');
+			background-size: cover;
+			background-image: url('../images/card-bg.svg');
 		}
 
 		@media screen and (min-width: 1024px) {

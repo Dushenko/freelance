@@ -39,18 +39,19 @@
 		position: sticky;
 		top: 10px;
 		z-index: 2;
-		&:after {
-			content: '';
-			width: 100%;
-			height: calc(100% - 24px);
-			position: absolute;
-			left: 0;
-			top: -10px;
-			background: rgba(0,0,0,0.6);
-			z-index: -1;
-		}
+		// &:after {
+		// 	content: '';
+		// 	width: 100%;
+		// 	height: calc(100% - 24px);
+		// 	position: absolute;
+		// 	left: 0;
+		// 	top: -10px;
+		// 	background: rgba(0,0,0,0.6);
+		// 	z-index: -1;
+		// }
 	}
 }
+
 .achievements-wrap {
 	@media screen and (min-width: 768px) {
 		display: flex;
@@ -58,7 +59,7 @@
 		margin: 0 -12px;
 	}
 	@media screen and (min-width: 1200px) {
-		// margin: 0 -40px;
+		// margin: 0 -20px;
 	}
 }
 
@@ -72,11 +73,10 @@
 	}
 	@media screen and (min-width: 1024px) {
 		width: 33.33%;
-		min-height: 230px;
+		min-height: 205px;
 	}
 	@media screen and (min-width: 1200px) {
-		padding: 0 40px;
-		min-height: 310px;
+		padding: 0 20px;
 	}
 
 	&:first-child {
@@ -96,7 +96,7 @@
 		display: flex;
 		flex-direction: column;
 		@media screen and (min-width: 1200px) {
-			padding: 55px 40px;
+			padding: 20px;
 		}
 	}
 
@@ -107,10 +107,6 @@
 		text-transform: uppercase;
 		color: #FF008A;
 		margin-bottom: 15px;
-		@media screen and (min-width: 1200px) {
-			font-size: 64px;
-			margin-bottom: 25px;
-		}
 	}
 
 	&__name {
@@ -119,9 +115,6 @@
 		text-transform: uppercase;
 		color: #FFFFFF;
 		margin-bottom: 20px;
-		@media screen and (min-width: 1200px) {
-			font-size: 22px;
-		}
 	}
 
 	&__info {
@@ -132,8 +125,8 @@
 		color: #FFFFFF;
 		opacity: 0.4;
 		@media screen and (min-width: 1200px) {
-			font-size: 18px;
-			line-height: 22px;
+			font-size: 16px;
+			line-height: 20px;
 		}
 	}
 
@@ -149,10 +142,8 @@
 		background-size: 50%;
 		background-position: center;
 		@media screen and (min-width: 1200px) {
-			top: 32px;
-			right: 32px;
-			width: 55px;
-			height: 55px;
+			width: 45px;
+			height: 45px;
 		}
 
 		&_point {
@@ -180,7 +171,10 @@
 		padding: 48px 0 0 0;
 	}
 	@media screen and (min-width: 1024px) {
-		padding: 220px 0 0;
+		padding: 260px 0 0;
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 330px 0 0;
 	}
 	@media screen and (min-width: 1920px) {
 		padding: 256px 0 0;

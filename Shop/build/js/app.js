@@ -1,10 +1,22 @@
 "use strict";
 
 $(document).ready(function () {
+
+  $(window).scroll(() => {
+    const currentHeight = $(window).scrollTop() + $(window).height() + 100;
+
+    if (currentHeight >= $('.instagram-section').offset().top) {
+      $('.filter-form__buy-wrap').addClass('static');
+    } else {
+      $('.filter-form__buy-wrap').removeClass('static');
+    }
+  });
+
   $('.js-menu li').click(function () {
     $(this).find('.js-sub-menu').slideToggle();
     $(this).toggleClass('active');
   });
+
 
   if ($(window).width() > 900) {
     $('.js-main-menu li').hover(function () {
