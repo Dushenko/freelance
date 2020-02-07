@@ -314,19 +314,32 @@ select{
     font-size:17px;
     font-weight:500; }
 
-.accordion__price{
+.accordion__price-wrap{
     margin:0 40px 0 auto;
     color:#666c71;
     font-size:14px;
-    font-weight:400; }
+    font-weight:400;
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-align:end;
+    align-items:flex-end; }
 
-.accordion__price span{
+.accordion__price-wrap span:nth-child(2){
       font-weight:500;
       color:#030330;
       font-size:17px;
-      margin-left:5px; }
+      margin:0 0 0 5px;
+      line-height: 1; }
+
+.accordion__price-wrap span:nth-child(3){
+      min-width:60px; }
 
 .accordion__icon{
+    outline:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
     display:block;
     font-size:40px;
     line-height:1;
