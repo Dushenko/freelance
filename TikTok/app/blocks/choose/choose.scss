@@ -1,0 +1,56 @@
+.choose-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.choose {
+	background: #FFFFFF;
+	border: 1px solid #DEDEDE;
+	padding: 15px;
+	@media screen and (min-width: 768px) {
+		padding: 25px;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 33.33%;
+	}
+	@media screen and (min-width: 1360px) {
+		padding: 25px 27px 40px 45px;
+	}
+
+	&__head {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	&__img {
+		width: 45px;
+		height: 45px;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__dot {
+		width: 25px;
+		height: 25px;
+		background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12.5' cy='12.5' r='6.5' fill='%235E2AD7'/%3E%3Ccircle cx='12.5' cy='12.5' r='12' stroke='%235E2AD7'/%3E%3C/svg%3E%0A");
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 26px;
+		color: #141414;
+		margin-bottom: 14px;
+	}
+
+	&__text {
+		max-width: 262px;
+		width: 100%;
+		font-size: 16px;
+		line-height: 19px;
+		color: #141414;
+	}
+}

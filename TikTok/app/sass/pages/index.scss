@@ -45,3 +45,11 @@
 		}
 	}
 }
+
+.choose-section {
+	padding: 40px 0;
+	background-color: #F8F8F8;
+	@media screen and (min-width: 1360px) {
+		padding: 46px 0 94px;
+	}
+}

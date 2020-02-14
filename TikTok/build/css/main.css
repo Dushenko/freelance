@@ -280,6 +280,63 @@ select{
 .main-btn:hover{
     box-shadow:none; }
 
+.choose-wrap{
+  display:-webkit-box;
+  display:flex;
+  flex-wrap:wrap; }
+
+.choose{
+  background:#FFFFFF;
+  border:1px solid #DEDEDE;
+  padding:15px; }
+
+@media screen and (min-width: 768px){
+    .choose{
+      padding:25px; } }
+
+@media screen and (min-width: 1024px){
+    .choose{
+      width:33.33%; } }
+
+@media screen and (min-width: 1360px){
+    .choose{
+      padding:25px 27px 40px 45px; } }
+
+.choose__head{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-align:start;
+    align-items:flex-start;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
+    margin-bottom:20px; }
+
+.choose__img{
+    width:45px;
+    height:45px; }
+
+.choose__img img{
+      width:100%; }
+
+.choose__dot{
+    width:25px;
+    height:25px;
+    background-image:url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12.5' cy='12.5' r='6.5' fill='%235E2AD7'/%3E%3Ccircle cx='12.5' cy='12.5' r='12' stroke='%235E2AD7'/%3E%3C/svg%3E%0A"); }
+
+.choose__title{
+    font-weight:700;
+    font-size:22px;
+    line-height:26px;
+    color:#141414;
+    margin-bottom:14px; }
+
+.choose__text{
+    max-width:262px;
+    width:100%;
+    font-size:16px;
+    line-height:19px;
+    color:#141414; }
+
 .header{
   padding:36px 0 68px; }
 
@@ -319,6 +376,18 @@ select{
       color:#FFFFFF;
       background-color:#774CDA;
       box-shadow:0px 1px 12px rgba(119, 76, 218, 0.62); }
+
+.section-title{
+  font-weight:700;
+  font-size:35px;
+  line-height:42px;
+  color:#141414;
+  margin-bottom:40px;
+  text-align:center; }
+
+@media screen and (min-width: 1360px){
+    .section-title{
+      margin-bottom:70px; } }
 
 .intro-section{
   padding-bottom:8vw; }
@@ -366,3 +435,11 @@ select{
 
 .intro-section .intro-img img{
       width:100%; }
+
+.choose-section{
+  padding:40px 0;
+  background-color:#F8F8F8; }
+
+@media screen and (min-width: 1360px){
+    .choose-section{
+      padding:46px 0 94px; } }
