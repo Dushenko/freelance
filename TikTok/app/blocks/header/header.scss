@@ -1,0 +1,46 @@
+.header {
+	padding: 36px 0 68px;
+	.container {
+		display: flex;
+		align-items: center;
+	}
+
+	.nav {
+		margin: 0 32px 0 auto;
+	}
+
+	.nav-list {
+		display: flex;
+		li {
+			margin-left: 52px;
+		}
+
+		a {
+			font-family: 'Museo Sans Cyrl';
+			font-size: 14px;
+			color: #141414;
+
+			&:hover {
+
+			}
+		}
+	}
+
+	.sign-btn {
+		font-family: 'Museo Sans Cyrl';
+		font-size: 14px;
+		color: #774CDA;
+		padding: 15px 33px;
+		border-radius: 29px;
+		margin-left: 13px;
+		cursor: pointer;
+		transition: all .3s ease-in-out;
+
+		&:hover,
+		&.active {
+			color: #FFFFFF;
+			background-color: #774CDA;
+			box-shadow: 0px 1px 12px rgba(119, 76, 218, 0.62);
+		}
+	}
+}

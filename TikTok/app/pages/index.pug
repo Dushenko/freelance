@@ -1,0 +1,22 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main.main
+		section.intro-section
+			.container
+				.intro-wrap
+					h1 Rise to stardom and start earning real money with 
+						mark TikTok
+					p The first automatic promotion service on TT in the whole world. Get your spin-off and open a new sales channel!
+					a(href="#").main-btn Try for free
+				.intro-img
+					img(src="images/intro.svg", alt="")
+
+block footer
+	include ../blocks/footer/footer		
