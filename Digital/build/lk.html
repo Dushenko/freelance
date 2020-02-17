@@ -55,6 +55,8 @@
                 <li class="tabs__item tabs__item_program">Affiliate program</li>
                 <li class="tabs__item tabs__item_balance">Balance</li>
                 <li class="tabs__item tabs__item_faq">FAQ</li>
+                <li class="tabs__item tabs__item_payment">Add payment system</li>
+                <li class="tabs__item tabs__item_log">Logout</li>
               </ul>
               <div class="tabs__wrap">
                 <div class="lk-header">
@@ -192,7 +194,7 @@
                 </div>
                 <div class="tabs__content js-tab-content">
                   <div class="balances-wrap">
-                    <div class="user-info"><span class="user-info__title tabs__item tabs__item_balance">Balance</span>
+                    <div class="user-info"><span class="user-info__title tabs__item tabs__item_balance active">Balance</span>
                       <div class="user-info__wrap"><span class="user-info__data">Referrals:<span>4</span></span><span class="user-info__data">Total:<span>$ 23</span></span></div>
                     </div>
                     <form class="lk-form lk-form_withdrawal" action="#">
@@ -219,7 +221,7 @@
                 </div>
                 <div class="tabs__content js-tab-content">
                   <div class="faq-wrap">
-                    <div class="user-info"><span class="user-info__title tabs__item tabs__item_faq">FAQ</span></div>
+                    <div class="user-info"><span class="user-info__title tabs__item tabs__item_faq active">FAQ</span></div>
                     <div class="accordion">
                       <div class="title">
                         <p class="text">Why is buying Followers so important?</p>
@@ -246,6 +248,31 @@
                         <p>All top Instagram stars spend a lot of money to promote their accounts using fake subscribers. What's the reason for this kind of a wrapping? It's all about visual perception. Most users, when deciding to follow a particular account, pay attention to the number of followers. The same applies to the various brands that decide to cooperate with you. The number of followers is a measure of your Instagram success.</p>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="tabs__content js-tab-content">
+                  <div class="balances-wrap">
+                    <div class="user-info"><span class="user-info__title tabs__item tabs__item_payment active">Add payment system</span></div>
+                    <form class="lk-form lk-form_withdrawal" action="#">
+                      <div class="lk-form__wrap">
+                        <div class="lk-form__row">
+                          <div class="lk-form__field">
+                            <label class="lk-form__label">Select system</label>
+                            <div class="lk-form__select-wrap">
+                              <select class="lk-form__select">
+                                <option class="paypal" value="1">Paypal</option>
+                                <option class="creditcard" value="2">CreditCard</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="lk-form__field">
+                            <label class="lk-form__label">Amount</label>
+                            <input class="lk-form__input" type="text" placeholder="100$">
+                          </div>
+                          <button class="lk-form__btn" type="submit">Add</button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>

@@ -17,6 +17,8 @@ block content
 						li.tabs__item.tabs__item_program Affiliate program
 						li.tabs__item.tabs__item_balance Balance
 						li.tabs__item.tabs__item_faq FAQ
+						li.tabs__item.tabs__item_payment Add payment system
+						li.tabs__item.tabs__item_log Logout
 
 					.tabs__wrap
 						.lk-header
@@ -239,7 +241,7 @@ block content
 						.tabs__content.js-tab-content
 							.balances-wrap
 								.user-info
-									span.user-info__title.tabs__item.tabs__item_balance Balance
+									span.user-info__title.tabs__item.tabs__item_balance.active Balance
 									.user-info__wrap
 										span.user-info__data Referrals:
 											span 4
@@ -265,7 +267,7 @@ block content
 						.tabs__content.js-tab-content
 							.faq-wrap
 								.user-info
-									span.user-info__title.tabs__item.tabs__item_faq FAQ
+									span.user-info__title.tabs__item.tabs__item_faq.active FAQ
 
 								.accordion
 									.title
@@ -284,4 +286,25 @@ block content
 										p.text Why is buying Followers so important?
 									.content
 										p All top Instagram stars spend a lot of money to promote their accounts using fake subscribers. What's the reason for this kind of a wrapping? It's all about visual perception. Most users, when deciding to follow a particular account, pay attention to the number of followers. The same applies to the various brands that decide to cooperate with you. The number of followers is a measure of your Instagram success.
+
+						.tabs__content.js-tab-content
+							.balances-wrap
+								.user-info
+									span.user-info__title.tabs__item.tabs__item_payment.active Add payment system
+
+								form(action="#").lk-form.lk-form_withdrawal
+									.lk-form__wrap
+										.lk-form__row
+											.lk-form__field
+												label.lk-form__label Select system
+												.lk-form__select-wrap
+													select.lk-form__select
+														option(value="1").paypal Paypal
+														option(value="2").creditcard CreditCard
+
+											.lk-form__field
+												label.lk-form__label Amount
+												input(type="text" placeholder="100$").lk-form__input
+
+											button(type="submit").lk-form__btn Add
 
