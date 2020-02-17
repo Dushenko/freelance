@@ -1,0 +1,28 @@
+.partner {
+	width: 100%;
+	margin-bottom: 20px;
+	@media screen and (min-width: 560px) {
+		width: 50%;
+		padding: 0 6px;
+	}
+	@media screen and (min-width: 768px) {
+		width: 33.33%;
+	}
+
+	&:hover {
+		.partner__wrap {
+			box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.30);
+		}
+	}
+
+	&__wrap {
+		min-height: 110px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #FFFFFF;
+		box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.13);
+		border-radius: 10px;
+		transition: all .3s ease;
+	}
+}
