@@ -1,0 +1,145 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = '';
+
+block content
+	main.main
+		section.top-section
+			.container
+				.top
+					.circle
+					.custom
+						span.custom-name Customer service
+						span.status (online)
+					.user
+						span.user-mail mailuser@gmail.com
+						.paid
+							span.paid-title Paid period:
+							span.status 3 days
+		section.lk-section
+			.container
+				.account
+					.account__avatar
+						img(src="images/avatar.jpg", alt="")
+					.account__info
+						h3.account__name Usernameaccount123
+						.account__sub-info
+							.account__sub
+								span.account__sub-title Subscriber:
+								span.account__quantity 138
+							.account__sub
+								span.account__sub-title Likes:
+								span.account__quantity 523	
+					.account__btns
+						span.account__btn Add account
+						span.account__btn Change account
+				.setting-wrap
+					.setBlock
+						.help-wrap
+							span.setBlock__title Promotion setting
+							span.help
+						form(action="#").mainForm
+							.mainForm__wrap
+								.mainForm__filter
+									.mainForm__checkbox
+										input(type="checkbox" name="autosub" id="autosub").mainForm__input-check
+										label(for="autosub").mainForm__label-check
+									.help-wrap
+										span.mainForm__set-name Auto subscription
+										span.help
+								.mainForm__filter
+									.mainForm__checkbox
+										input(type="checkbox" name="mass" id="mass").mainForm__input-check
+										label(for="mass").mainForm__label-check
+									.help-wrap
+										span.mainForm__set-name Mass like
+										span.help
+								.mainForm__filter
+									.mainForm__checkbox
+										input(type="checkbox" name="comments" id="comments").mainForm__input-check
+										label(for="comments").mainForm__label-check
+									.help-wrap
+										span.mainForm__set-name Like Comments
+										span.help
+								.mainForm__filter
+									.mainForm__checkbox
+										input(type="checkbox" name="unsub" id="unsub").mainForm__input-check
+										label(for="unsub").mainForm__label-check
+									.help-wrap
+										span.mainForm__set-name Auto Unsubscribe
+										span.help
+								.mainForm__filter
+									.mainForm__checkbox
+										input(type="checkbox" name="answer" id="answer").mainForm__input-check
+										label(for="answer").mainForm__label-check
+									.help-wrap
+										span.mainForm__set-name Auto Answer
+										span.setting
+
+					.setBlock
+						.help-wrap
+							span.setBlock__title Competitive launch
+							span.help
+						.help-wrap.help-wrap_mt
+							span.setting.setting_green
+							span.filter-set Filtering settings
+						form(action="#").mainForm
+							.mainForm__wrap
+								.mainForm__input-wrap
+									label(for="#").mainForm__label Enter competitor nickname:
+									.help-wrap
+										input(type="text").mainForm__input
+										button(type="submit").mainForm__btn-plus +
+						.setBlock__nick
+							span.nick nicknametiktok37
+							span.close
+						.setBlock__nick
+							span.nick nicknametiktok37
+							span.close
+						.setBlock__nick
+							span.nick nicknametiktok37
+							span.close
+						span.show-all Show all
+
+					.setBlock
+						.help-wrap
+							span.setBlock__title Hashtag Launch
+							span.help
+						.help-wrap.help-wrap_mt
+							span.setting.setting_green
+							span.filter-set Filtering settings
+						form(action="#").mainForm
+							.mainForm__wrap
+								.mainForm__input-wrap
+									label(for="#").mainForm__label.mainForm__label_grid Enter Hashtag
+									.help-wrap
+										input(type="text").mainForm__input
+										button(type="submit").mainForm__btn-plus +
+						.setBlock__nick
+							span.nick #likes
+							span.close
+						.setBlock__nick
+							span.nick #something
+							span.close
+						.setBlock__nick
+							span.nick #forest
+							span.close
+						span.show-all Show all
+
+					.setBlock
+						span.setBlock__title Hashtag Launch
+						p.setBlock__descr Get a lot of likes for each post from real users automatically. This will increase your reach at times, activate subscribers and help you get into the tops of hashtags and trends!
+						form(action="#").mainForm
+							.mainForm__wrap
+								.mainForm__filter.mainForm__filter_nb
+									.mainForm__checkbox
+										input(type="checkbox" name="receive" id="receive").mainForm__input-check
+										label(for="receive").mainForm__label-check
+									span.mainForm__set-name Receive likes and views
+
+
+
+
+block footer
+	include ../blocks/footer/footer		
