@@ -74,6 +74,10 @@
 			padding: 15px 35px;
 		}
 
+		&:last-child {
+			border-bottom: 1px solid #D9D9D9;
+		}
+
 		.table__items {
 			display: flex;
 			flex-direction: column;

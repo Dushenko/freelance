@@ -1,0 +1,43 @@
+.mainForm {
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+	}
+
+	&__input {
+		border: 0.5px solid #E7E7E7;
+		box-sizing: border-box;
+		border-radius: 27px;
+		max-width: 215px;
+		width: 100%;
+		margin-right: 20px;
+		padding: 18px 30px;
+		font-weight: 300;
+		font-size: 16px;
+		color: #000;
+	}
+
+	&__btn {
+		border-radius: 27px;
+		max-width: 215px;
+		width: 100%;
+		background: #774CDA;
+		padding: 18px 10px;
+		font-family: Museo Sans Cyrl;
+		font-size: 18px;
+		color: #FFFFFF;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			width: 20px;
+			height: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 20px;
+			@include bg-img-center;
+			background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.001 2.90361e-05C5.95604 -0.000699399 2.3091 2.43578 0.761194 6.17295C-0.786421 9.91027 0.0696256 14.2118 2.93074 17.0712C6.83569 20.9763 13.1666 20.9763 17.0714 17.0712C20.9762 13.1665 20.9762 6.83554 17.0714 2.93053C15.2004 1.04883 12.6545 -0.00638122 10.001 2.90361e-05ZM10.001 19.0715C5.00064 19.0715 0.930626 15.0013 0.930626 10.0009C0.930626 5.00046 5.00064 0.930389 10.001 0.930389C15.0014 0.930389 19.0715 5.00046 19.0715 10.0009C19.0715 15.0013 15.0014 19.0715 10.001 19.0715Z' fill='white'/%3E%3Cpath d='M14.7543 6.92243L8.74927 12.6624L5.47455 9.39227C5.29346 9.21118 4.99991 9.21118 4.81868 9.39227C4.63759 9.5735 4.63759 9.86706 4.81868 10.0483L8.41434 13.644C8.5016 13.7317 8.62077 13.7804 8.74461 13.7788C8.86465 13.7799 8.98018 13.733 9.06555 13.6485L15.3962 7.59697C15.5797 7.41908 15.5857 7.12654 15.4097 6.94137C15.2334 6.75635 14.941 6.7479 14.7543 6.92243Z' fill='white'/%3E%3C/svg%3E%0A");
+		}
+	}
+}
